@@ -102,6 +102,79 @@ def collect_schedule():
     print(f"schedule: wrote {len(rows)} days ({rows[0]['date']}..{rows[-1]['date']})")
 
 
+# Data-only context for the other three WDW parks (same schedule endpoint).
+# Magic Kingdom's file keeps its ride-specific Lightning Lane columns
+# (ll_tron_usd, ll_mine_train_usd) because forecast.py reads them; the other
+# parks use a generic schema that captures up to three single-ride LL prices
+# by name, whatever rides Disney prices that day.
+OTHER_PARKS = [
+    ("EPCOT", "47f90d2c-e191-4239-a466-5892ef59a88b", "park_schedule_epcot.csv"),
+    ("Hollywood Studios", "288747d1-8b4f-4a64-867e-ea7c9b27bad8", "park_schedule_hollywood_studios.csv"),
+    ("Animal Kingdom", "1c84a229-8862-4648-9c71-378ddd2c7693", "park_schedule_animal_kingdom.csv"),
+]
+
+GENERIC_FIELDS = ["date", "open", "close", "operating_mins", "early_entry",
+                  "has_ticketed_event", "ticketed_event_desc",
+                  "ticketed_event_start", "ticketed_event_end",
+                  "ll_multipass_usd", "ll_premier_usd",
+                  "ll_single_1_name", "ll_single_1_usd",
+                  "ll_single_2_name", "ll_single_2_usd",
+                  "ll_single_3_name", "ll_single_3_usd",
+                  "ll_soldout_count"]
+
+
+def collect_schedule_generic(park_name, park_id, out_name):
+    data = fetch_json(f"https://api.themeparks.wiki/v1/entity/{park_id}/schedule")
+    if not data:
+        print(f"{park_name}: schedule unavailable this run, keeping previous file")
+        return
+    by_date = {}
+    for s in data.get("schedule", []):
+        d = by_date.setdefault(s["date"], {k: "" for k in GENERIC_FIELDS})
+        d["date"] = s["date"]
+        d["has_ticketed_event"] = 0
+        d["ll_soldout_count"] = 0
+        if s["type"] == "OPERATING":
+            d["open"], d["close"] = hhmm(s.get("openingTime")), hhmm(s.get("closingTime"))
+            try:
+                o = datetime.fromisoformat(s["openingTime"])
+                c = datetime.fromisoformat(s["closingTime"])
+                d["operating_mins"] = int((c - o).total_seconds() // 60)
+            except Exception:
+                pass
+            singles = []
+            for p in s.get("purchases", []) or []:
+                price = ((p.get("price") or {}).get("amount") or 0) / 100
+                name = p.get("name", "")
+                if "Multi Pass" in name:
+                    d["ll_multipass_usd"] = price
+                elif "Premier Pass" in name:
+                    d["ll_premier_usd"] = price
+                elif name:
+                    singles.append((name, price))
+                if not p.get("available", True):
+                    d["ll_soldout_count"] += 1
+            for i, (name, price) in enumerate(sorted(singles)[:3], 1):
+                d[f"ll_single_{i}_name"] = name
+                d[f"ll_single_{i}_usd"] = price
+        elif s["type"] == "TICKETED_EVENT":
+            desc = s.get("description", "")
+            if desc == "Early Entry":
+                d["early_entry"] = hhmm(s.get("openingTime"))
+            else:
+                d["has_ticketed_event"] = 1
+                d["ticketed_event_desc"] = desc
+                d["ticketed_event_start"] = hhmm(s.get("openingTime"))
+                d["ticketed_event_end"] = hhmm(s.get("closingTime"))
+    rows = [by_date[d] for d in sorted(by_date)]
+    out = os.path.join(ROOT, "data", out_name)
+    with open(out, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=GENERIC_FIELDS)
+        w.writeheader()
+        w.writerows(rows)
+    print(f"{park_name} schedule: wrote {len(rows)} days -> {out_name}")
+
+
 def collect_weather():
     params = {
         "latitude": LAT, "longitude": LON, "timezone": "America/New_York",
@@ -143,4 +216,9 @@ def collect_weather():
 
 if __name__ == "__main__":
     collect_schedule()
+    for park_name, park_id, out_name in OTHER_PARKS:
+        try:
+            collect_schedule_generic(park_name, park_id, out_name)
+        except Exception as e:
+            print(f"{park_name}: schedule failed ({e}); keeping previous file")
     collect_weather()
