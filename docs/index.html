@@ -26,14 +26,16 @@ td.h{font-weight:600}.rng{display:block;font-weight:400;font-size:.72rem;color:v
 <div id="banner"></div>
 <div class="ctx" id="ctx" style="display:none"></div>
 <div class="acc" id="acc"></div>
-<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30 min</th><th>+60 min</th><th>+90 min</th><th>+2 hr</th><th>People in line (est.)</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30 min</th><th>+60 min</th><th>+90 min</th><th>+2 hr</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
 <h2>What the model is learning from</h2>
 <div id="factors"><p class="factors">Factor rankings appear after the first model beats the “same as now” baseline on unseen time.</p></div>
-<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Accuracy is measured on the newest 20% of time the model never trained on. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. “People in line” = assumed ride capacity × wait; edit capacity.json to tune it.</p>
+<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Model selection uses the newest 20% of time, with a forecast-horizon gap before training ends. This is preliminary backtesting, not independent prospective validation. MAE is average absolute error, not a confidence interval. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. Queue scenarios = posted wait × assumed hourly capacity × standby share. These are uncalibrated ranges, not measured headcounts or park attendance. Edit capacity.json to tune them. Historical change-log replay is identified separately from live samples. Powered by ThemeParks.wiki.</p>
 <script>
 const heat=m=>m>=60?'var(--c3)':m>=40?'var(--c2)':m>=20?'var(--c1)':'var(--c0)';
 fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
-  document.getElementById('sub').textContent='Updated '+new Date(d.updated).toLocaleString()+' · '+d.samples.toLocaleString()+' samples collected';
+  document.getElementById('sub').textContent='Updated '+new Date(d.updated).toLocaleString()+' · '+d.samples.toLocaleString()+' records ('+(d.history_samples||0).toLocaleString()+' historical replay)';
+  const age=(Date.now()-new Date(d.last_sample).getTime())/60000;
+  if(age>15)document.getElementById('banner').innerHTML='<div class="banner">Collection delayed: latest sample is '+Math.round(age)+' minutes old. These forecasts start from that sample, not from now.</div>';
   if(d.demo)document.getElementById('banner').innerHTML='<div class="banner">Demo numbers. Live collection replaces them after the first scheduled run.</div>';
   const c=d.context||{};
   if(c.date){
@@ -48,14 +50,15 @@ fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   document.getElementById('acc').innerHTML=[['30','+30 min'],['60','+60 min'],['90','+90 min'],['120','+2 hr']].map(([h,l])=>{
     const m=d.metrics[h]||{};const ok=m.mae!=null&&m.model&&m.model.indexOf('gradient')===0;
     const shown=m.mae!=null;
-    return `<div><span>${l} accuracy</span><b>${shown?'±'+m.mae+' min':'—'}</b>`+
-      `<span>${shown?m.within10+'% within 10 min':'collecting data'}</span>`+
+    return `<div><span>${l} accuracy</span><b>${shown?m.mae+' min MAE':'—'}</b>`+
+      `<span>${m.model||'collecting data'}</span><span>${shown?m.within10+'% within 10 min':'collecting data'}</span>`+
       `<span>${shown&&m.mape_ge20!=null?'Error '+m.mape_ge20+'% on 20+ min waits':''}</span>`+
       `<span>${shown&&m.improvement_pct!=null?m.improvement_pct+'% better than “same as now”':(m.model||'')}</span></div>`}).join('');
   document.getElementById('rows').innerHTML=d.rides.map(r=>`<tr><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
-    ['f30','f60','f90','f120'].map(k=>`<td class="h" style="background:${heat(r[k])}">${r[k]}${r[k+'_lo']!=null?`<span class="rng">${r[k+'_lo']}–${r[k+'_hi']}</span>`:''}</td>`).join('')+`<td>~${r.people.toLocaleString()}</td></tr>`).join('');
+    ['f30','f60','f90','f120'].map(k=>`<td class="h" style="background:${heat(r[k])}">${r[k]}${r[k+'_lo']!=null?`<span class="rng">${r[k+'_lo']}–${r[k+'_hi']}</span>`:''}</td>`).join('')+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
   const f=[['30','+30'],['60','+60'],['90','+90'],['120','+120']].filter(([h])=>(d.metrics[h]||{}).top_features)
     .map(([h,l])=>`<p class="factors"><b>${l} min:</b> ${(d.metrics[h].top_features||[]).join(', ')}</p>`).join('');
   if(f)document.getElementById('factors').innerHTML=f;
 }).catch(()=>{document.getElementById('sub').textContent='Could not load data.json. Serve this folder from GitHub Pages or a local web server.'});
 </script></body></html>
+

@@ -45,7 +45,7 @@ WEATHER = os.path.join(ROOT, "data", "weather_hourly.csv")
 OUT = os.path.join(ROOT, "docs", "data.json")
 CAP = os.path.join(ROOT, "capacity.json")
 HORIZONS = {30: 6, 60: 12, 90: 18, 120: 24}   # minutes -> 5-minute steps
-DEFAULT_CAPACITY = 1400
+DEFAULT_CAPACITY = None
 MIN_TRAIN_ROWS = 800          # pooled ride-rows before a model may ship
 MIN_QUANTILE_ROWS = 3000      # pooled rows before interval models ship
 TRAIN_WINDOW_DAYS = 60        # train on the most recent 60 days only:
@@ -117,19 +117,24 @@ def calendar_frame(ts_index):
 # ---------- loading ----------
 
 def load_waits():
-    df = pd.read_csv(CSV, parse_dates=["ts_utc"])
-    df["ts"] = df["ts_utc"].dt.floor("5min").dt.tz_convert("America/New_York")
-    return df
+    frames = [pd.read_csv(CSV)]
+    history = os.path.join(ROOT, "data", "history.csv.gz")
+    if os.path.exists(history):
+        frames.insert(0, pd.read_csv(history))
+    df = pd.concat(frames, ignore_index=True)
+    df["ts_utc"] = pd.to_datetime(df["ts_utc"], utc=True, format="mixed")
+    df["ts"] = df["ts_utc"].dt.ceil("5min").dt.tz_convert("America/New_York")
+    return df.sort_values("ts_utc").drop_duplicates(["ride_id", "ts"], keep="last")
 
 def per_ride_frames(df):
     parts = []
     for (rid, name), g in df.groupby(["ride_id", "name"]):
         g = g.set_index("ts").sort_index()
-        wait = g.loc[g["status"] == "OPERATING", "wait"].resample("5min").mean()
+        wait = g["wait"].where(g["status"] == "OPERATING").resample("5min").last()
         down = (g["status"] == "DOWN").astype(float).resample("5min").max()
         full = wait.index.union(down.index)
-        wait = wait.reindex(full).interpolate(limit=3)
-        down = down.reindex(full).fillna(0)
+        wait = wait.reindex(full)  # Never fill targets or features from future observations.
+        down = down.reindex(full)  # Missing observations are not proof of operation.
         f = pd.DataFrame({"wait": wait})
         f["lag_5"] = wait.shift(1)
         f["lag_15"] = wait.shift(3)
@@ -291,9 +296,11 @@ def main():
         d = feat.dropna(subset=["wait", f"y{h}"]).sort_index()
         if len(d):
             d = d[d.index >= d.index.max() - pd.Timedelta(days=TRAIN_WINDOW_DAYS)]
-        entry = {"train_rows": int(len(d)), "test_rows": 0, "model": "persistence (still collecting)"}
+        valid_times = np.sort(d.index.unique())
+        cut = valid_times[int(len(valid_times) * 0.8)] if len(valid_times) >= 10 else None
+        entry = {"available_pairs": int(len(d)), "train_rows": 0, "test_rows": 0, "model": "persistence (still collecting)"}
         if cut is not None and len(d) >= MIN_TRAIN_ROWS:
-            tr, te = d[d.index < cut], d[d.index >= cut]
+            tr, te = d[d.index + pd.Timedelta(minutes=h) < cut], d[d.index >= cut]
             if len(tr) >= MIN_TRAIN_ROWS * 0.5 and len(te) >= 50:
                 # Drop features that are all-missing or constant in the
                 # training window (e.g. weather before its first successful
@@ -306,7 +313,7 @@ def main():
                                                   categorical_features=cat)
                 m.fit(tr[cols], tr[f"y{h}"])
                 s = score(m.predict(te[cols]), te[f"y{h}"].values, te["wait"].values)
-                entry.update(s, test_rows=int(len(te)))
+                entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)), evaluation="chronological holdout with horizon embargo")
                 try:
                     sample = te.sample(min(2000, len(te)), random_state=0)
                     pi = permutation_importance(m, sample[cols], sample[f"y{h}"],
@@ -334,10 +341,11 @@ def main():
                         except Exception as e:
                             print(f"quantile {h}: {e}")
                 else:
+                    entry["candidate_mae"] = s["mae"]
+                    entry.update(score(te["wait"], te[f"y{h}"], te["wait"]))
                     entry["model"] = "persistence (model did not beat baseline)"
         elif len(d):
-            entry.update(score(d["wait"].values, d[f"y{h}"].values, d["wait"].values))
-            entry["test_rows"] = int(len(d))
+            entry["available_pairs"] = int(len(d))  # Too few observations for a holdout claim.
         metrics[str(h)] = entry
 
     rides = []
@@ -355,7 +363,16 @@ def main():
                 lo, hi, icols = intervals[h]
                 row[f"f{h}_lo"] = int(max(0, round(float(lo.predict(pd.DataFrame([r])[icols])[0]))))
                 row[f"f{h}_hi"] = int(max(row[f"f{h}_lo"], round(float(hi.predict(pd.DataFrame([r])[icols])[0]))))
-        row["people"] = int(round(cap.get(r["name"], DEFAULT_CAPACITY) * r["wait"] / 60))
+        profile = cap.get(r["name"])
+        row["people"] = None
+        if isinstance(profile, dict):
+            throughput = profile["hourly_capacity_range"]
+            share = profile["standby_share_range"]
+            row["people_lo"] = round(throughput[0] * share[0] * r["wait"] / 60)
+            row["people_hi"] = round(throughput[1] * share[1] * r["wait"] / 60)
+            row["people_basis"] = "Uncalibrated operating scenario; not measured attendance"
+        elif isinstance(profile, (int, float)):
+            row["people"] = round(profile * r["wait"] / 60)
         rides.append(row)
     rides.sort(key=lambda x: -x["now"])
 
@@ -378,7 +395,8 @@ def main():
     ctx["is_party_night"] = bool(now["is_party_night"].max()) if len(now) else False
 
     out = {"updated": datetime.now(timezone.utc).isoformat(),
-           "last_sample": str(latest_ts), "samples": int(len(raw)),
+           "last_sample": raw["ts_utc"].max().isoformat(), "samples": int(len(raw)),
+           "history_samples": int(raw.get("source", pd.Series(dtype=str)).eq("themeparks.wiki history replay").sum()),
            "rides": rides, "metrics": metrics, "context": ctx, "demo": False}
     json.dump(out, open(OUT, "w"), indent=1)
     print(f"wrote {len(rides)} rides; shipped models: {list(models) or 'none yet'}; "
@@ -386,3 +404,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

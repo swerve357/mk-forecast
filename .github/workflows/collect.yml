@@ -1,6 +1,9 @@
 name: collect-and-forecast
 on:
-  schedule: [{ cron: "*/5 * * * *" }]
+  schedule: [{ cron: "2-59/5 * * * *" }]
+  push:
+    branches: [main]
+    paths: ["scripts/**", "capacity.json", "requirements.txt", ".github/workflows/collect.yml"]
   workflow_dispatch:
 permissions:
   contents: write
@@ -8,11 +11,12 @@ concurrency: { group: collect, cancel-in-progress: false }
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
-      - run: pip install pandas scikit-learn
+      - run: pip install -r requirements.txt
       - run: python scripts/collect.py
       - run: python scripts/collect_context.py || true
       - run: python scripts/forecast.py
@@ -20,3 +24,4 @@ jobs:
           git config user.name "collector"; git config user.email "collector@users.noreply.github.com"
           git add data docs/data.json
           git diff --cached --quiet || (git commit -m "data $(date -u +%FT%TZ)" && git pull --rebase && git push)
+
