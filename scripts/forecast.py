@@ -1,1 +1,427 @@
-IiIiTWFnaWMgS2luZ2RvbSB3YWl0IGZvcmVjYXN0IHYyIC0gcHJvb2Ytb2YtY29uY2VwdCBsZWFybmluZyBlbmdpbmUuCgpUcmFpbnMgb25lIGdyYWRpZW50LWJvb3N0aW5nIG1vZGVsIHBlciBob3Jpem9uICgzMC82MC85MC8xMjAgbWluKSBvbgpkYXRhL3dhaXRzLmNzdiBwbHVzIHRoZSBjb250ZXh0IGZhY3RvcnMgdGhlIG1vZGVsIGlzIGFsbG93ZWQgdG8gbGVhcm4gZnJvbToKCiAgcmlkZSBkeW5hbWljcyAgIGN1cnJlbnQgd2FpdCwgbGFncyA1bS4uMjRoLCAxNS8zMC1taW4gdHJlbmQsIHJvbGxpbmcKICAgICAgICAgICAgICAgICAgbWVhbi9zdGQsIGRvd250aW1lIGluIHRoZSBsYXN0IGhvdXIsIGp1c3QtcmVvcGVuZWQgZmxhZwogIHBhcmstd2lkZSAgICAgICBtZWFuIC8gcDkwIHdhaXQgYWNyb3NzIGFsbCByaWRlcywgc2hhcmUgb2YgcmlkZXMgYnVzeQogIHBhcmsgaG91cnMgICAgICBvcGVuL2Nsb3NlIHRoYXQgZGF5LCBtaW51dGVzIHNpbmNlIG9wZW4gLyB0byBjbG9zZSwKICAgICAgICAgICAgICAgICAgb3BlcmF0aW5nIGRheSBsZW5ndGgsIEVhcmx5IEVudHJ5LCBlYXJseSBjbG9zZQogIHNwZWNpYWwgZXZlbnRzICBjdXJhdGVkIGRhdGEvZXZlbnRzLmNzdiAoQ2hyaXN0bWFzIHBhcnRpZXMsIGhvbGlkYXlzKQogICAgICAgICAgICAgICAgICArIHRpY2tldGVkLWV2ZW50IGZsYWdzIGZyb20gdGhlIHNjaGVkdWxlIGZlZWQKICBEaXNuZXkgZGVtYW5kICAgdGhhdCBkYXkncyBMaWdodG5pbmcgTGFuZSBwcmljZXMgZnJvbSB0aGUgc2NoZWR1bGUgZmVlZAogICAgICAgICAgICAgICAgICAoTXVsdGkgLyBQcmVtaWVyIC8gVFJPTiAvIE1pbmUgVHJhaW4pIGFuZCBzb2xkLW91dCBjb3VudAogIHdlYXRoZXIgICAgICAgICBPcGVuLU1ldGVvIGhvdXJseTogdGVtcCwgZmVlbHMtbGlrZSwgaHVtaWRpdHksIHJhaW4sCiAgICAgICAgICAgICAgICAgIHJhaW4gcHJvYmFiaWxpdHksIHN0b3JtIGNvZGUsIHdpbmQvZ3VzdHMgKGRhdGEvd2VhdGhlcl9ob3VybHkuY3N2KQogIGNhbGVuZGFyICAgICAgICBob3VyIChzaW4vY29zKSwgZGF5IG9mIHdlZWssIHdlZWtlbmQsIFVTIGhvbGlkYXlzLAogICAgICAgICAgICAgICAgICBzY2hvb2wtYnJlYWsgd2luZG93cywgZGF5cyB1bnRpbCBDaHJpc3RtYXMKClZhbGlkYXRpb24gaXMgYSBzdHJpY3QgdGltZSBzcGxpdDogdHJhaW4gb24gdGhlIGZpcnN0IDgwJSBvZiAqdGltZSosCnNjb3JlIG9uIHRoZSBsYXN0IDIwJSwgYW5kIGFsd2F5cyBjb21wYXJlIGFnYWluc3QgdGhlIHBlcnNpc3RlbmNlCmJhc2VsaW5lICgnd2FpdCB3aWxsIGJlIHRoZSBzYW1lIGFzIG5vdycpLiBBIGhvcml6b24gb25seSBzaGlwcyBpdHMKbW9kZWwgd2hlbiBpdCBiZWF0cyB0aGF0IGJhc2VsaW5lIG9uIHVuc2VlbiB0aW1lOyBvdGhlcndpc2UgdGhlCmRhc2hib2FyZCBmYWxscyBiYWNrIHRvIHBlcnNpc3RlbmNlIGFuZCBzYXlzIHNvLgoKRXJyb3IgaXMgcmVwb3J0ZWQgdGhyZWUgd2F5cyBiZWNhdXNlIHBvc3RlZCB3YWl0cyBhcmUgcm91bmRlZCB0byA1IG1pbjoKTUFFIGluIG1pbnV0ZXMsICUgd2l0aGluIDEwIG1pbnV0ZXMsIGFuZCBNQVBFIGNvbXB1dGVkIG9ubHkgd2hlcmUgdGhlCnRydWUgd2FpdCBpcyA+PSAyMCBtaW4gKHBlcmNlbnRhZ2VzIG9uIGEgNS0gb3IgMTAtbWluIHdhaXQgYXJlIG5vaXNlKS4KCldpdGggZW5vdWdoIHJvd3MgaXQgYWxzbyB0cmFpbnMgMTB0aC85MHRoIHBlcmNlbnRpbGUgbW9kZWxzIHNvIHRoZQpkYXNoYm9hcmQgY2FuIHNob3cgYSByYW5nZSwgYW5kIHJ1bnMgcGVybXV0YXRpb24gaW1wb3J0YW5jZSBzbyB3ZSBjYW4Kc2VlIHdoaWNoIGZhY3RvcnMgdGhlIGVuZ2luZSBhY3R1YWxseSBsZWFybmVkIGZyb20uCiIiIgppbXBvcnQganNvbiwgb3MKZnJvbSBkYXRldGltZSBpbXBvcnQgZGF0ZSwgZGF0ZXRpbWUsIHRpbWVkZWx0YSwgdGltZXpvbmUKaW1wb3J0IG51bXB5IGFzIG5wLCBwYW5kYXMgYXMgcGQKZnJvbSBza2xlYXJuLmVuc2VtYmxlIGltcG9ydCBIaXN0R3JhZGllbnRCb29zdGluZ1JlZ3Jlc3Nvcgpmcm9tIHNrbGVhcm4uaW5zcGVjdGlvbiBpbXBvcnQgcGVybXV0YXRpb25faW1wb3J0YW5jZQoKUk9PVCA9IG9zLnBhdGguam9pbihvcy5wYXRoLmRpcm5hbWUoX19maWxlX18pLCAiLi4iKQpDU1YgPSBvcy5wYXRoLmpvaW4oUk9PVCwgImRhdGEiLCAid2FpdHMuY3N2IikKU0NIRUQgPSBvcy5wYXRoLmpvaW4oUk9PVCwgImRhdGEiLCAicGFya19zY2hlZHVsZS5jc3YiKQpFVkVOVFMgPSBvcy5wYXRoLmpvaW4oUk9PVCwgImRhdGEiLCAiZXZlbnRzLmNzdiIpCldFQVRIRVIgPSBvcy5wYXRoLmpvaW4oUk9PVCwgImRhdGEiLCAid2VhdGhlcl9ob3VybHkuY3N2IikKT1VUID0gb3MucGF0aC5qb2luKFJPT1QsICJkb2NzIiwgImRhdGEuanNvbiIpCkNBUCA9IG9zLnBhdGguam9pbihST09ULCAiY2FwYWNpdHkuanNvbiIpCkhPUklaT05TID0gezMwOiA2LCA2MDogMTIsIDkwOiAxOCwgMTIwOiAyNH0gICAjIG1pbnV0ZXMgLT4gNS1taW51dGUgc3RlcHMKREVGQVVMVF9DQVBBQ0lUWSA9IE5vbmUKTUlOX1RSQUlOX1JPV1MgPSA4MDAgICAgICAgICAgIyBwb29sZWQgcmlkZS1yb3dzIGJlZm9yZSBhIG1vZGVsIG1heSBzaGlwCk1JTl9RVUFOVElMRV9ST1dTID0gMzAwMCAgICAgICMgcG9vbGVkIHJvd3MgYmVmb3JlIGludGVydmFsIG1vZGVscyBzaGlwClRSQUlOX1dJTkRPV19EQVlTID0gNjAgICAgICAgICMgdHJhaW4gb24gdGhlIG1vc3QgcmVjZW50IDYwIGRheXMgb25seToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBib3VuZHMgdGhlIDUtbWluIHJldHJhaW4gY29zdCBhcyBkYXRhIGdyb3dzCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgYW5kIGxldHMgdGhlIGVuZ2luZSBhZGFwdCB0byB0aGUgc2Vhc29uCgpYX0NPTFMgPSBbCiAgICAid2FpdCIsICJsYWdfNSIsICJsYWdfMTUiLCAibGFnXzMwIiwgImxhZ182MCIsICJsYWdfMTIwIiwgImxhZ195ZGF5IiwKICAgICJkaWZmXzE1IiwgImRpZmZfMzAiLCAicm9sbF9tZWFuXzMwIiwgInJvbGxfbWVhbl82MCIsICJyb2xsX3N0ZF82MCIsCiAgICAiZG93bl9taW5zXzYwIiwgInJlb3BlbmVkXzMwIiwKICAgICJwYXJrX21lYW4iLCAicGFya19wOTAiLCAicGFya19mcmFjX2J1c3kiLAogICAgImhvdXJfc2luIiwgImhvdXJfY29zIiwgImRvdyIsICJpc193ZWVrZW5kIiwKICAgICJtaW5zX3NpbmNlX29wZW4iLCAibWluc190b19jbG9zZSIsICJvcGVyYXRpbmdfbWlucyIsICJlYXJseV9lbnRyeSIsCiAgICAiaXNfZWFybHlfY2xvc2UiLCAiaGFzX3RpY2tldGVkX2V2ZW50IiwKICAgICJsbF9tdWx0aXBhc3MiLCAibGxfcHJlbWllciIsICJsbF90cm9uIiwgImxsX21pbmVfdHJhaW4iLCAibGxfc29sZG91dCIsCiAgICAiaXNfcGFydHlfbmlnaHQiLCAiaXNfaG9saWRheSIsICJpc19zY2hvb2xfYnJlYWsiLAogICAgIm1pbnNfdG9fcGFydHlfc3RhcnQiLCAiaXNfcGFydHlfZW50cnlfd2luZG93IiwgImlzX3BhcnR5X2hvdXJzIiwKICAgICJkYXlzX3VudGlsX2NocmlzdG1hcyIsCiAgICAidGVtcF9mIiwgImZlZWxzX2YiLCAiaHVtaWRpdHkiLCAicHJlY2lwX2luIiwgInByZWNpcF9wcm9iIiwKICAgICJpc19yYWluaW5nIiwgImlzX3N0b3JtIiwgIndpbmRfbXBoIiwgImd1c3RfbXBoIiwKICAgICJyaWRlX2NvZGUiLApdCgojIC0tLS0tLS0tLS0gY2FsZW5kYXIgaGVscGVycyAtLS0tLS0tLS0tCgpkZWYgbnRoX3dlZWtkYXkoeWVhciwgbW9udGgsIHdlZWtkYXksIG4pOgogICAgZCA9IGRhdGUoeWVhciwgbW9udGgsIDEpCiAgICByZXR1cm4gZCArIHRpbWVkZWx0YShkYXlzPSgod2Vla2RheSAtIGQud2Vla2RheSgpKSAlIDcpICsgNyAqIChuIC0gMSkpCgpkZWYgbGFzdF93ZWVrZGF5KHllYXIsIG1vbnRoLCB3ZWVrZGF5KToKICAgIGQgPSAoZGF0ZSh5ZWFyLCBtb250aCArIDEsIDEpIC0gdGltZWRlbHRhKGRheXM9MSkpIGlmIG1vbnRoIDwgMTIgZWxzZSBkYXRlKHllYXIsIDEyLCAzMSkKICAgIHJldHVybiBkIC0gdGltZWRlbHRhKGRheXM9KGQud2Vla2RheSgpIC0gd2Vla2RheSkgJSA3KQoKZGVmIHVzX2hvbGlkYXlzKHllYXIpOgogICAgZml4ZWQgPSBbZGF0ZSh5ZWFyLCAxLCAxKSwgZGF0ZSh5ZWFyLCA2LCAxOSksIGRhdGUoeWVhciwgNywgNCksCiAgICAgICAgICAgICBkYXRlKHllYXIsIDExLCAxMSksIGRhdGUoeWVhciwgMTIsIDI1KV0KICAgIGZsb2F0aW5nID0gW250aF93ZWVrZGF5KHllYXIsIDEsIDAsIDMpLCBudGhfd2Vla2RheSh5ZWFyLCAyLCAwLCAzKSwKICAgICAgICAgICAgICAgIGxhc3Rfd2Vla2RheSh5ZWFyLCA1LCAwKSwgbnRoX3dlZWtkYXkoeWVhciwgOSwgMCwgMSksCiAgICAgICAgICAgICAgICBudGhfd2Vla2RheSh5ZWFyLCAxMCwgMCwgMiksIG50aF93ZWVrZGF5KHllYXIsIDExLCAzLCA0KV0KICAgIHJldHVybiBzZXQoZml4ZWQgKyBmbG9hdGluZykKCmRlZiB0aGFua3NnaXZpbmcoeWVhcik6CiAgICByZXR1cm4gbnRoX3dlZWtkYXkoeWVhciwgMTEsIDMsIDQpCgpkZWYgY2FsZW5kYXJfZnJhbWUodHNfaW5kZXgpOgogICAgZGF0ZXMgPSB0c19pbmRleC5kYXRlCiAgICBvdXQgPSBwZC5EYXRhRnJhbWUoaW5kZXg9dHNfaW5kZXgpCiAgICBob3VyID0gdHNfaW5kZXguaG91ciArIHRzX2luZGV4Lm1pbnV0ZSAvIDYwLjAKICAgIG91dFsiaG91cl9zaW4iXSA9IG5wLnNpbigyICogbnAucGkgKiBob3VyIC8gMjQpCiAgICBvdXRbImhvdXJfY29zIl0gPSBucC5jb3MoMiAqIG5wLnBpICogaG91ciAvIDI0KQogICAgb3V0WyJkb3ciXSA9IHRzX2luZGV4LmRheW9md2VlawogICAgb3V0WyJpc193ZWVrZW5kIl0gPSAodHNfaW5kZXguZGF5b2Z3ZWVrID49IDUpLmFzdHlwZShpbnQpCiAgICBob2wsIGJyaywgZHRjID0gW10sIFtdLCBbXQogICAgY2FjaGUgPSB7fQogICAgZm9yIGQgaW4gZGF0ZXM6CiAgICAgICAgaWYgZC55ZWFyIG5vdCBpbiBjYWNoZToKICAgICAgICAgICAgY2FjaGVbZC55ZWFyXSA9ICh1c19ob2xpZGF5cyhkLnllYXIpLCB0aGFua3NnaXZpbmcoZC55ZWFyKSkKICAgICAgICBob2xzLCB0ZyA9IGNhY2hlW2QueWVhcl0KICAgICAgICBob2wuYXBwZW5kKDEgaWYgZCBpbiBob2xzIGVsc2UgMCkKICAgICAgICB4bWFzX2JyZWFrID0gKGQubW9udGggPT0gMTIgYW5kIGQuZGF5ID49IDE5KSBvciAoZC5tb250aCA9PSAxIGFuZCBkLmRheSA8PSAzKQogICAgICAgIHRnX2JyZWFrID0gdGcgLSB0aW1lZGVsdGEoZGF5cz0xKSA8PSBkIDw9IHRnICsgdGltZWRlbHRhKGRheXM9MykKICAgICAgICBicmsuYXBwZW5kKDEgaWYgKHhtYXNfYnJlYWsgb3IgdGdfYnJlYWspIGVsc2UgMCkKICAgICAgICBkdGMuYXBwZW5kKChkYXRlKGQueWVhciwgMTIsIDI1KSAtIGQpLmRheXMpCiAgICBvdXRbImlzX2hvbGlkYXkiXSA9IGhvbAogICAgb3V0WyJpc19zY2hvb2xfYnJlYWsiXSA9IGJyawogICAgb3V0WyJkYXlzX3VudGlsX2NocmlzdG1hcyJdID0gZHRjCiAgICByZXR1cm4gb3V0CgojIC0tLS0tLS0tLS0gbG9hZGluZyAtLS0tLS0tLS0tCgpkZWYgbG9hZF93YWl0cygpOgogICAgZnJhbWVzID0gW3BkLnJlYWRfY3N2KENTVildCiAgICBoaXN0b3J5ID0gb3MucGF0aC5qb2luKFJPT1QsICJkYXRhIiwgImhpc3RvcnkuY3N2Lmd6IikKICAgIGlmIG9zLnBhdGguZXhpc3RzKGhpc3RvcnkpOgogICAgICAgIGZyYW1lcy5pbnNlcnQoMCwgcGQucmVhZF9jc3YoaGlzdG9yeSkpCiAgICBkZiA9IHBkLmNvbmNhdChmcmFtZXMsIGlnbm9yZV9pbmRleD1UcnVlKQogICAgZGZbInRzX3V0YyJdID0gcGQudG9fZGF0ZXRpbWUoZGZbInRzX3V0YyJdLCB1dGM9VHJ1ZSwgZm9ybWF0PSJtaXhlZCIpCiAgICBkZlsidHMiXSA9IGRmWyJ0c191dGMiXS5kdC5jZWlsKCI1bWluIikuZHQudHpfY29udmVydCgiQW1lcmljYS9OZXdfWW9yayIpCiAgICByZXR1cm4gZGYuc29ydF92YWx1ZXMoInRzX3V0YyIpLmRyb3BfZHVwbGljYXRlcyhbInJpZGVfaWQiLCAidHMiXSwga2VlcD0ibGFzdCIpCgpkZWYgcGVyX3JpZGVfZnJhbWVzKGRmKToKICAgIHBhcnRzID0gW10KICAgIGZvciAocmlkLCBuYW1lKSwgZyBpbiBkZi5ncm91cGJ5KFsicmlkZV9pZCIsICJuYW1lIl0pOgogICAgICAgIGcgPSBnLnNldF9pbmRleCgidHMiKS5zb3J0X2luZGV4KCkKICAgICAgICB3YWl0ID0gZ1sid2FpdCJdLndoZXJlKGdbInN0YXR1cyJdID09ICJPUEVSQVRJTkciKS5yZXNhbXBsZSgiNW1pbiIpLmxhc3QoKQogICAgICAgIGRvd24gPSAoZ1sic3RhdHVzIl0gPT0gIkRPV04iKS5hc3R5cGUoZmxvYXQpLnJlc2FtcGxlKCI1bWluIikubWF4KCkKICAgICAgICBmdWxsID0gd2FpdC5pbmRleC51bmlvbihkb3duLmluZGV4KQogICAgICAgIHdhaXQgPSB3YWl0LnJlaW5kZXgoZnVsbCkgICMgTmV2ZXIgZmlsbCB0YXJnZXRzIG9yIGZlYXR1cmVzIGZyb20gZnV0dXJlIG9ic2VydmF0aW9ucy4KICAgICAgICBkb3duID0gZG93bi5yZWluZGV4KGZ1bGwpICAjIE1pc3Npbmcgb2JzZXJ2YXRpb25zIGFyZSBub3QgcHJvb2Ygb2Ygb3BlcmF0aW9uLgogICAgICAgIGYgPSBwZC5EYXRhRnJhbWUoeyJ3YWl0Ijogd2FpdH0pCiAgICAgICAgZlsibGFnXzUiXSA9IHdhaXQuc2hpZnQoMSkKICAgICAgICBmWyJsYWdfMTUiXSA9IHdhaXQuc2hpZnQoMykKICAgICAgICBmWyJsYWdfMzAiXSA9IHdhaXQuc2hpZnQoNikKICAgICAgICBmWyJsYWdfNjAiXSA9IHdhaXQuc2hpZnQoMTIpCiAgICAgICAgZlsibGFnXzEyMCJdID0gd2FpdC5zaGlmdCgyNCkKICAgICAgICBmWyJsYWdfeWRheSJdID0gd2FpdC5zaGlmdCgyODgpICAgICAgICMgc2FtZSB0aW1lIHllc3RlcmRheQogICAgICAgIGZbImRpZmZfMTUiXSA9IHdhaXQgLSBmWyJsYWdfMTUiXQogICAgICAgIGZbImRpZmZfMzAiXSA9IHdhaXQgLSBmWyJsYWdfMzAiXQogICAgICAgIGZbInJvbGxfbWVhbl8zMCJdID0gd2FpdC5yb2xsaW5nKDYpLm1lYW4oKQogICAgICAgIGZbInJvbGxfbWVhbl82MCJdID0gd2FpdC5yb2xsaW5nKDEyKS5tZWFuKCkKICAgICAgICBmWyJyb2xsX3N0ZF82MCJdID0gd2FpdC5yb2xsaW5nKDEyKS5zdGQoKQogICAgICAgIGZbImRvd25fbWluc182MCJdID0gZG93bi5yb2xsaW5nKDEyKS5zdW0oKSAqIDUKICAgICAgICBqdXN0X3VwID0gKChkb3duLnNoaWZ0KDEpID09IDEpICYgKGRvd24gPT0gMCkgJiB3YWl0Lm5vdG5hKCkpLmFzdHlwZShmbG9hdCkKICAgICAgICBmWyJyZW9wZW5lZF8zMCJdID0ganVzdF91cC5yb2xsaW5nKDYpLm1heCgpCiAgICAgICAgZlsicmlkZV9pZCJdLCBmWyJuYW1lIl0gPSByaWQsIG5hbWUKICAgICAgICBmb3IgaCwgcyBpbiBIT1JJWk9OUy5pdGVtcygpOgogICAgICAgICAgICBmW2YieXtofSJdID0gd2FpdC5zaGlmdCgtcykKICAgICAgICBwYXJ0cy5hcHBlbmQoZikKICAgIG91dCA9IHBkLmNvbmNhdChwYXJ0cykKICAgIG91dFsicmlkZV9jb2RlIl0gPSBvdXRbInJpZGVfaWQiXS5hc3R5cGUoImNhdGVnb3J5IikuY2F0LmNvZGVzCiAgICByZXR1cm4gb3V0CgpkZWYgYWRkX2NvbnRleHQoZmVhdCk6CiAgICAjIE5PVEU6IHRpbWVzdGFtcHMgcmVwZWF0IGFjcm9zcyByaWRlcywgc28gYSBwbGFpbiBpbmRleCBqb2luIHdvdWxkCiAgICAjIGNhcnRlc2lhbi1kdXBsaWNhdGUgcm93cy4gQXNzaWduIGNhbGVuZGFyIGNvbHVtbnMgcG9zaXRpb25hbGx5LgogICAgY2FsID0gY2FsZW5kYXJfZnJhbWUoZmVhdC5pbmRleCkKICAgIGZvciBjIGluIGNhbC5jb2x1bW5zOgogICAgICAgIGZlYXRbY10gPSBjYWxbY10udG9fbnVtcHkoKQogICAgIyBwYXJrLXdpZGUgcHJlc3N1cmUsIHNhbWUgdGltZXN0YW1wIGFjcm9zcyByaWRlcwogICAgYnlfdHMgPSBmZWF0Lmdyb3VwYnkobGV2ZWw9MClbIndhaXQiXQogICAgZmVhdFsicGFya19tZWFuIl0gPSBieV90cy50cmFuc2Zvcm0oIm1lYW4iKQogICAgZmVhdFsicGFya19wOTAiXSA9IGJ5X3RzLnRyYW5zZm9ybShsYW1iZGEgczogcy5xdWFudGlsZSgwLjkpKQogICAgZmVhdFsicGFya19mcmFjX2J1c3kiXSA9IGJ5X3RzLnRyYW5zZm9ybShsYW1iZGEgczogKHMgPj0gNDApLm1lYW4oKSkKICAgIGZlYXRbImRhdGVfc3RyIl0gPSBmZWF0LmluZGV4LnN0cmZ0aW1lKCIlWS0lbS0lZCIpCiAgICBmZWF0WyJob3VyX2tleSJdID0gZmVhdC5pbmRleC5zdHJmdGltZSgiJVktJW0tJWRUJUg6MDAiKQoKICAgICMgcGFyayBzY2hlZHVsZSAoaG91cnMgKyBMaWdodG5pbmcgTGFuZSBkZW1hbmQgcHJpY2VzKQogICAgc2NoZWRfY29scyA9IFsibWluc19zaW5jZV9vcGVuIiwgIm1pbnNfdG9fY2xvc2UiLCAib3BlcmF0aW5nX21pbnMiLAogICAgICAgICAgICAgICAgICAiZWFybHlfZW50cnkiLCAiaXNfZWFybHlfY2xvc2UiLCAiaGFzX3RpY2tldGVkX2V2ZW50IiwKICAgICAgICAgICAgICAgICAgImxsX211bHRpcGFzcyIsICJsbF9wcmVtaWVyIiwgImxsX3Ryb24iLCAibGxfbWluZV90cmFpbiIsCiAgICAgICAgICAgICAgICAgICJsbF9zb2xkb3V0IiwgIl9vcGVuX21pbiIsICJfY2xvc2VfbWluIiwgIl9ldmVudF9zdGFydF9taW4iXQogICAgaWYgb3MucGF0aC5leGlzdHMoU0NIRUQpOgogICAgICAgIHMgPSBwZC5yZWFkX2NzdihTQ0hFRCwgZHR5cGU9eyJkYXRlIjogc3RyfSkKICAgICAgICBkZWYgbWlucyh4KToKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgaCwgbSA9IHN0cih4KS5zcGxpdCgiOiIpWzoyXQogICAgICAgICAgICAgICAgcmV0dXJuIGludChoKSAqIDYwICsgaW50KG0pCiAgICAgICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgICAgICByZXR1cm4gbnAubmFuCiAgICAgICAgc1siX29wZW4iXSA9IHNbIm9wZW4iXS5tYXAobWlucykKICAgICAgICBzWyJfY2xvc2UiXSA9IHNbImNsb3NlIl0ubWFwKG1pbnMpCiAgICAgICAgc1siX2V2Il0gPSBzWyJ0aWNrZXRlZF9ldmVudF9zdGFydCJdLm1hcChtaW5zKQogICAgICAgIGRheV9taW4gPSBmZWF0LmluZGV4LmhvdXIgKiA2MCArIGZlYXQuaW5kZXgubWludXRlCiAgICAgICAgaWR4ID0gcy5zZXRfaW5kZXgoImRhdGUiKQogICAgICAgIGZlYXRbIl9vcGVuX21pbiJdID0gZmVhdFsiZGF0ZV9zdHIiXS5tYXAoaWR4WyJfb3BlbiJdKQogICAgICAgIGZlYXRbIl9jbG9zZV9taW4iXSA9IGZlYXRbImRhdGVfc3RyIl0ubWFwKGlkeFsiX2Nsb3NlIl0pCiAgICAgICAgZmVhdFsibWluc19zaW5jZV9vcGVuIl0gPSBkYXlfbWluIC0gZmVhdFsiX29wZW5fbWluIl0KICAgICAgICBmZWF0WyJtaW5zX3RvX2Nsb3NlIl0gPSBmZWF0WyJfY2xvc2VfbWluIl0gLSBkYXlfbWluCiAgICAgICAgZmVhdFsib3BlcmF0aW5nX21pbnMiXSA9IGZlYXRbImRhdGVfc3RyIl0ubWFwKGlkeFsib3BlcmF0aW5nX21pbnMiXSkKICAgICAgICBmZWF0WyJlYXJseV9lbnRyeSJdID0gZmVhdFsiZGF0ZV9zdHIiXS5tYXAoCiAgICAgICAgICAgIGlkeFsiZWFybHlfZW50cnkiXS5maWxsbmEoIiIpLm5lKCIiKS5hc3R5cGUoaW50KSkKICAgICAgICBmZWF0WyJpc19lYXJseV9jbG9zZSJdID0gKGZlYXRbIl9jbG9zZV9taW4iXSA8PSAxOCAqIDYwKS5hc3R5cGUoZmxvYXQpCiAgICAgICAgZmVhdFsiaGFzX3RpY2tldGVkX2V2ZW50Il0gPSBmZWF0WyJkYXRlX3N0ciJdLm1hcCgKICAgICAgICAgICAgaWR4WyJoYXNfdGlja2V0ZWRfZXZlbnQiXS5maWxsbmEoMCkpCiAgICAgICAgZm9yIHNyYywgZHN0IGluIFsoImxsX211bHRpcGFzc191c2QiLCAibGxfbXVsdGlwYXNzIiksICgibGxfcHJlbWllcl91c2QiLCAibGxfcHJlbWllciIpLAogICAgICAgICAgICAgICAgICAgICAgICAgKCJsbF90cm9uX3VzZCIsICJsbF90cm9uIiksICgibGxfbWluZV90cmFpbl91c2QiLCAibGxfbWluZV90cmFpbiIpLAogICAgICAgICAgICAgICAgICAgICAgICAgKCJsbF9zb2xkb3V0X2NvdW50IiwgImxsX3NvbGRvdXQiKV06CiAgICAgICAgICAgIGZlYXRbZHN0XSA9IGZlYXRbImRhdGVfc3RyIl0ubWFwKGlkeFtzcmNdKQogICAgICAgIGZlYXRbIl9ldmVudF9zdGFydF9taW4iXSA9IGZlYXRbImRhdGVfc3RyIl0ubWFwKGlkeFsiX2V2Il0pCiAgICBlbHNlOgogICAgICAgIGZvciBjIGluIHNjaGVkX2NvbHM6CiAgICAgICAgICAgIGZlYXRbY10gPSBucC5uYW4KCiAgICAjIGN1cmF0ZWQgc3BlY2lhbCBldmVudHMgKENocmlzdG1hcyBwYXJ0aWVzLCBob2xpZGF5cykKICAgIGZlYXRbImlzX3BhcnR5X25pZ2h0Il0gPSAwCiAgICBmZWF0WyJfcGFydHlfc3RhcnRfbWluIl0gPSBucC5uYW4KICAgIGlmIG9zLnBhdGguZXhpc3RzKEVWRU5UUyk6CiAgICAgICAgZXYgPSBwZC5yZWFkX2NzdihFVkVOVFMsIGR0eXBlPXsiZGF0ZSI6IHN0cn0pCiAgICAgICAgcGFydHkgPSBldltldlsia2luZCJdID09ICJjaHJpc3RtYXNfcGFydHkiXQogICAgICAgIGZlYXRbImlzX3BhcnR5X25pZ2h0Il0gPSBmZWF0WyJkYXRlX3N0ciJdLmlzaW4oc2V0KHBhcnR5WyJkYXRlIl0pKS5hc3R5cGUoaW50KQogICAgICAgIHBzID0gcGFydHkuc2V0X2luZGV4KCJkYXRlIilbInBhcnR5X3N0YXJ0Il0uZHJvcG5hKCkKICAgICAgICBkZWYgbWluczIoeCk6CiAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgIGgsIG0gPSBzdHIoeCkuc3BsaXQoIjoiKVs6Ml0KICAgICAgICAgICAgICAgIHJldHVybiBpbnQoaCkgKiA2MCArIGludChtKQogICAgICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICAgICAgcmV0dXJuIG5wLm5hbgogICAgICAgIGZlYXRbIl9wYXJ0eV9zdGFydF9taW4iXSA9IGZlYXRbImRhdGVfc3RyIl0ubWFwKHBzLm1hcChtaW5zMikpCiAgICAjIHNjaGVkdWxlJ3MgdGlja2V0ZWQgZXZlbnQgYWxzbyBwcm92ZXMgYSBwYXJ0eS9ldmVudCBuaWdodAogICAgZmVhdFsiaXNfcGFydHlfbmlnaHQiXSA9IG5wLm1heGltdW0oZmVhdFsiaXNfcGFydHlfbmlnaHQiXSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZlYXRbImhhc190aWNrZXRlZF9ldmVudCJdLmZpbGxuYSgwKSkKICAgIHN0YXJ0ID0gZmVhdFsiX3BhcnR5X3N0YXJ0X21pbiJdLmZpbGxuYShmZWF0WyJfZXZlbnRfc3RhcnRfbWluIl0pCiAgICBkYXlfbWluID0gZmVhdC5pbmRleC5ob3VyICogNjAgKyBmZWF0LmluZGV4Lm1pbnV0ZQogICAgZmVhdFsibWluc190b19wYXJ0eV9zdGFydCJdID0gbnAud2hlcmUoZmVhdFsiaXNfcGFydHlfbmlnaHQiXSA9PSAxLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3RhcnQgLSBkYXlfbWluLCBucC5uYW4pCiAgICBmZWF0WyJpc19wYXJ0eV9lbnRyeV93aW5kb3ciXSA9ICgoZmVhdFsiaXNfcGFydHlfbmlnaHQiXSA9PSAxKSAmCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAoZmVhdFsibWluc190b19wYXJ0eV9zdGFydCJdIDw9IDE4MCkgJgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKGZlYXRbIm1pbnNfdG9fcGFydHlfc3RhcnQiXSA+IDApKS5hc3R5cGUoaW50KQogICAgZmVhdFsiaXNfcGFydHlfaG91cnMiXSA9ICgoZmVhdFsiaXNfcGFydHlfbmlnaHQiXSA9PSAxKSAmCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIChmZWF0WyJtaW5zX3RvX3BhcnR5X3N0YXJ0Il0gPD0gMCkpLmFzdHlwZShpbnQpCgogICAgIyB3ZWF0aGVyLCBqb2luZWQgb24gdGhlIGxvY2FsIGhvdXIKICAgIHdtYXAgPSB7InRlbXBlcmF0dXJlXzJtIjogInRlbXBfZiIsICJhcHBhcmVudF90ZW1wZXJhdHVyZSI6ICJmZWVsc19mIiwKICAgICAgICAgICAgInJlbGF0aXZlX2h1bWlkaXR5XzJtIjogImh1bWlkaXR5IiwgInByZWNpcGl0YXRpb24iOiAicHJlY2lwX2luIiwKICAgICAgICAgICAgInByZWNpcGl0YXRpb25fcHJvYmFiaWxpdHkiOiAicHJlY2lwX3Byb2IiLCAid2luZF9zcGVlZF8xMG0iOiAid2luZF9tcGgiLAogICAgICAgICAgICAid2luZF9ndXN0c18xMG0iOiAiZ3VzdF9tcGgiLCAid2VhdGhlcl9jb2RlIjogIl93Y29kZSJ9CiAgICBpZiBvcy5wYXRoLmV4aXN0cyhXRUFUSEVSKToKICAgICAgICB3ID0gcGQucmVhZF9jc3YoV0VBVEhFUiwgZHR5cGU9eyJob3VyX2xvY2FsIjogc3RyfSkKICAgICAgICB3aWR4ID0gdy5zZXRfaW5kZXgoImhvdXJfbG9jYWwiKQogICAgICAgIGZvciBzcmMsIGRzdCBpbiB3bWFwLml0ZW1zKCk6CiAgICAgICAgICAgIGZlYXRbZHN0XSA9IHBkLnRvX251bWVyaWMoZmVhdFsiaG91cl9rZXkiXS5tYXAod2lkeFtzcmNdKSwgZXJyb3JzPSJjb2VyY2UiKQogICAgICAgIGZlYXRbImlzX3JhaW5pbmciXSA9IChmZWF0WyJwcmVjaXBfaW4iXS5maWxsbmEoMCkgPiAwLjAxKS5hc3R5cGUoZmxvYXQpCiAgICAgICAgZmVhdFsiaXNfc3Rvcm0iXSA9IChmZWF0WyJfd2NvZGUiXS5maWxsbmEoMCkgPj0gOTUpLmFzdHlwZShmbG9hdCkKICAgIGVsc2U6CiAgICAgICAgZm9yIGRzdCBpbiBsaXN0KHdtYXAudmFsdWVzKCkpICsgWyJpc19yYWluaW5nIiwgImlzX3N0b3JtIl06CiAgICAgICAgICAgIGZlYXRbZHN0XSA9IG5wLm5hbgogICAgZm9yIGMgaW4gWF9DT0xTOgogICAgICAgIGlmIGMgbm90IGluIGZlYXQuY29sdW1uczoKICAgICAgICAgICAgZmVhdFtjXSA9IG5wLm5hbgogICAgcmV0dXJuIGZlYXQKCiMgLS0tLS0tLS0tLSBtZXRyaWNzIC0tLS0tLS0tLS0KCmRlZiBzY29yZShwcmVkLCB0cnVlLCBiYXNlX3ByZWQpOgogICAgcHJlZCwgdHJ1ZSwgYmFzZV9wcmVkID0gbnAuYXNhcnJheShwcmVkLCBmbG9hdCksIG5wLmFzYXJyYXkodHJ1ZSwgZmxvYXQpLCBucC5hc2FycmF5KGJhc2VfcHJlZCwgZmxvYXQpCiAgICBlcnIgPSBucC5hYnMocHJlZCAtIHRydWUpCiAgICBiZXJyID0gbnAuYWJzKGJhc2VfcHJlZCAtIHRydWUpCiAgICBnZTIwID0gdHJ1ZSA+PSAyMAogICAgcmV0dXJuIHsKICAgICAgICAibWFlIjogcm91bmQoZmxvYXQoZXJyLm1lYW4oKSksIDEpLAogICAgICAgICJybXNlIjogcm91bmQoZmxvYXQobnAuc3FydCgoKHByZWQgLSB0cnVlKSAqKiAyKS5tZWFuKCkpKSwgMSksCiAgICAgICAgIndpdGhpbjEwIjogcm91bmQoZmxvYXQoKGVyciA8PSAxMCkubWVhbigpICogMTAwKSksCiAgICAgICAgIm1hcGVfZ2UyMCI6IHJvdW5kKGZsb2F0KChlcnJbZ2UyMF0gLyB0cnVlW2dlMjBdKS5tZWFuKCkgKiAxMDApLCAxKSBpZiBnZTIwLmFueSgpIGVsc2UgTm9uZSwKICAgICAgICAiYmlhcyI6IHJvdW5kKGZsb2F0KChwcmVkIC0gdHJ1ZSkubWVhbigpKSwgMSksCiAgICAgICAgImJhc2VsaW5lX21hZSI6IHJvdW5kKGZsb2F0KGJlcnIubWVhbigpKSwgMSksCiAgICAgICAgImJhc2VsaW5lX21hcGVfZ2UyMCI6IHJvdW5kKGZsb2F0KChiZXJyW2dlMjBdIC8gdHJ1ZVtnZTIwXSkubWVhbigpICogMTAwKSwgMSkgaWYgZ2UyMC5hbnkoKSBlbHNlIE5vbmUsCiAgICAgICAgImltcHJvdmVtZW50X3BjdCI6IHJvdW5kKGZsb2F0KCgxIC0gZXJyLm1lYW4oKSAvIGJlcnIubWVhbigpKSAqIDEwMCksIDEpIGlmIGJlcnIubWVhbigpIGVsc2UgTm9uZSwKICAgIH0KCiMgLS0tLS0tLS0tLSBtYWluIC0tLS0tLS0tLS0KCmRlZiBtYWluKCk6CiAgICBpZiBub3Qgb3MucGF0aC5leGlzdHMoQ1NWKToKICAgICAgICBwcmludCgibm8gZGF0YSB5ZXQiKTsgcmV0dXJuCiAgICByYXcgPSBsb2FkX3dhaXRzKCkKICAgIGlmIHJhdy5lbXB0eToKICAgICAgICBwcmludCgibm8gcm93cyB5ZXQiKTsgcmV0dXJuCiAgICBmZWF0ID0gYWRkX2NvbnRleHQocGVyX3JpZGVfZnJhbWVzKHJhdykpCiAgICBjYXAgPSBqc29uLmxvYWQob3BlbihDQVApKSBpZiBvcy5wYXRoLmV4aXN0cyhDQVApIGVsc2Uge30KICAgIGxhdGVzdF90cyA9IGZlYXQuaW5kZXgubWF4KCkKICAgIG5vdyA9IGZlYXRbZmVhdC5pbmRleCA9PSBsYXRlc3RfdHNdLmRyb3BuYShzdWJzZXQ9WyJ3YWl0Il0pCiAgICBjYXRfaWR4ID0gW1hfQ09MUy5pbmRleCgicmlkZV9jb2RlIildCiAgICB1bmlxX3RpbWVzID0gbnAuc29ydChmZWF0LmluZGV4LnVuaXF1ZSgpKQogICAgY3V0ID0gdW5pcV90aW1lc1tpbnQobGVuKHVuaXFfdGltZXMpICogMC44KV0gaWYgbGVuKHVuaXFfdGltZXMpID49IDEwIGVsc2UgTm9uZQoKICAgIG1ldHJpY3MsIG1vZGVscywgaW50ZXJ2YWxzID0ge30sIHt9LCB7fQogICAgcmlkZV9zY29yZXMgPSB7fSAgICMgcGVyLXJpZGUgaG9sZG91dCBzY29yZSBmb3IgdGhlIGRhc2hib2FyZCAoKzEyMCBvbmx5KQogICAgZm9yIGggaW4gSE9SSVpPTlM6CiAgICAgICAgZCA9IGZlYXQuZHJvcG5hKHN1YnNldD1bIndhaXQiLCBmInl7aH0iXSkuc29ydF9pbmRleCgpCiAgICAgICAgaWYgbGVuKGQpOgogICAgICAgICAgICBkID0gZFtkLmluZGV4ID49IGQuaW5kZXgubWF4KCkgLSBwZC5UaW1lZGVsdGEoZGF5cz1UUkFJTl9XSU5ET1dfREFZUyldCiAgICAgICAgdmFsaWRfdGltZXMgPSBucC5zb3J0KGQuaW5kZXgudW5pcXVlKCkpCiAgICAgICAgY3V0ID0gdmFsaWRfdGltZXNbaW50KGxlbih2YWxpZF90aW1lcykgKiAwLjgpXSBpZiBsZW4odmFsaWRfdGltZXMpID49IDEwIGVsc2UgTm9uZQogICAgICAgIGVudHJ5ID0geyJhdmFpbGFibGVfcGFpcnMiOiBpbnQobGVuKGQpKSwgInRyYWluX3Jvd3MiOiAwLCAidGVzdF9yb3dzIjogMCwgIm1vZGVsIjogInBlcnNpc3RlbmNlIChzdGlsbCBjb2xsZWN0aW5nKSJ9CiAgICAgICAgaWYgY3V0IGlzIG5vdCBOb25lIGFuZCBsZW4oZCkgPj0gTUlOX1RSQUlOX1JPV1M6CiAgICAgICAgICAgIHRyLCB0ZSA9IGRbZC5pbmRleCArIHBkLlRpbWVkZWx0YShtaW51dGVzPWgpIDwgY3V0XSwgZFtkLmluZGV4ID49IGN1dF0KICAgICAgICAgICAgaWYgbGVuKHRyKSA+PSBNSU5fVFJBSU5fUk9XUyAqIDAuNSBhbmQgbGVuKHRlKSA+PSA1MDoKICAgICAgICAgICAgICAgICMgRHJvcCBmZWF0dXJlcyB0aGF0IGFyZSBhbGwtbWlzc2luZyBvciBjb25zdGFudCBpbiB0aGUKICAgICAgICAgICAgICAgICMgdHJhaW5pbmcgd2luZG93IChlLmcuIHdlYXRoZXIgYmVmb3JlIGl0cyBmaXJzdCBzdWNjZXNzZnVsCiAgICAgICAgICAgICAgICAjIGNvbGxlY3Rpb24pOiB0aGV5IGNhcnJ5IG5vIHNpZ25hbCBhbmQgc29tZSB2ZXJzaW9ucyBvZgogICAgICAgICAgICAgICAgIyB0aGUgYmlubmVyIGNob2tlIG9uIGEgc2luZ2xlIGRpc3RpbmN0IHZhbHVlLgogICAgICAgICAgICAgICAgY29scyA9IFtjIGZvciBjIGluIFhfQ09MUyBpZiB0cltjXS5ub3RuYSgpLmFueSgpCiAgICAgICAgICAgICAgICAgICAgICAgIGFuZCAoYyA9PSAicmlkZV9jb2RlIiBvciB0cltjXS5udW5pcXVlKGRyb3BuYT1UcnVlKSA+IDEpXQogICAgICAgICAgICAgICAgY2F0ID0gW2NvbHMuaW5kZXgoInJpZGVfY29kZSIpXSBpZiAicmlkZV9jb2RlIiBpbiBjb2xzIGVsc2UgTm9uZQogICAgICAgICAgICAgICAgbSA9IEhpc3RHcmFkaWVudEJvb3N0aW5nUmVncmVzc29yKG1heF9pdGVyPTI1MCwgbGVhcm5pbmdfcmF0ZT0wLjA3LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNhdGVnb3JpY2FsX2ZlYXR1cmVzPWNhdCkKICAgICAgICAgICAgICAgIG0uZml0KHRyW2NvbHNdLCB0cltmInl7aH0iXSkKICAgICAgICAgICAgICAgIHMgPSBzY29yZShtLnByZWRpY3QodGVbY29sc10pLCB0ZVtmInl7aH0iXS52YWx1ZXMsIHRlWyJ3YWl0Il0udmFsdWVzKQogICAgICAgICAgICAgICAgZW50cnkudXBkYXRlKHMsIHRyYWluX3Jvd3M9aW50KGxlbih0cikpLCB0ZXN0X3Jvd3M9aW50KGxlbih0ZSkpLCBldmFsdWF0aW9uPSJjaHJvbm9sb2dpY2FsIGhvbGRvdXQgd2l0aCBob3Jpem9uIGVtYmFyZ28iKQogICAgICAgICAgICAgICAgaWYgaCA9PSAxMjA6CiAgICAgICAgICAgICAgICAgICAgIyBTY29yZSB0aGUgcHJlZGljdG9yIHRoYXQgd2lsbCBhY3R1YWxseSBzaGlwICh0aGUgbW9kZWwKICAgICAgICAgICAgICAgICAgICAjIGlmIGl0IHdvbiwgZWxzZSBwZXJzaXN0ZW5jZSksIHBlciByaWRlLCBmb3IgdGhlCiAgICAgICAgICAgICAgICAgICAgIyBkYXNoYm9hcmQncyAiKzIgaHIgc2NvcmUiIGNvbHVtbi4KICAgICAgICAgICAgICAgICAgICBzaGlwcGVkX3ByZWQgPSAobS5wcmVkaWN0KHRlW2NvbHNdKSBpZiBzWyJtYWUiXSA8IHNbImJhc2VsaW5lX21hZSJdCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsc2UgdGVbIndhaXQiXS52YWx1ZXMpCiAgICAgICAgICAgICAgICAgICAgdG1wID0gcGQuRGF0YUZyYW1lKHsibmFtZSI6IHRlWyJuYW1lIl0udmFsdWVzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImVyciI6IG5wLmFicyhucC5hc2FycmF5KHNoaXBwZWRfcHJlZCwgZmxvYXQpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0gdGVbZiJ5e2h9Il0udmFsdWVzKX0pCiAgICAgICAgICAgICAgICAgICAgcmlkZV9zY29yZXNbaF0gPSB7CiAgICAgICAgICAgICAgICAgICAgICAgIG46IHsibWFlIjogcm91bmQoZmxvYXQoZ1siZXJyIl0ubWVhbigpKSwgMSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAid2l0aGluMTAiOiByb3VuZChmbG9hdCgoZ1siZXJyIl0gPD0gMTApLm1lYW4oKSAqIDEwMCkpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgInBhaXJzIjogaW50KGxlbihnKSl9CiAgICAgICAgICAgICAgICAgICAgICAgIGZvciBuLCBnIGluIHRtcC5ncm91cGJ5KCJuYW1lIikgaWYgbGVuKGcpID49IDMwfQogICAgICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgICAgIHNhbXBsZSA9IHRlLnNhbXBsZShtaW4oMjAwMCwgbGVuKHRlKSksIHJhbmRvbV9zdGF0ZT0wKQogICAgICAgICAgICAgICAgICAgIHBpID0gcGVybXV0YXRpb25faW1wb3J0YW5jZShtLCBzYW1wbGVbY29sc10sIHNhbXBsZVtmInl7aH0iXSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbl9yZXBlYXRzPTMsIHJhbmRvbV9zdGF0ZT0wLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzY29yaW5nPSJuZWdfbWVhbl9hYnNvbHV0ZV9lcnJvciIpCiAgICAgICAgICAgICAgICAgICAgb3JkZXIgPSBucC5hcmdzb3J0KHBpLmltcG9ydGFuY2VzX21lYW4pWzo6LTFdCiAgICAgICAgICAgICAgICAgICAgZW50cnlbInRvcF9mZWF0dXJlcyJdID0gW2NvbHNbaV0gZm9yIGkgaW4gb3JkZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgcGkuaW1wb3J0YW5jZXNfbWVhbltpXSA+IDBdWzo2XQogICAgICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgICAgICAgICAgICAgIHByaW50KGYiaW1wb3J0YW5jZSB7aH06IHtlfSIpCiAgICAgICAgICAgICAgICBpZiBzWyJtYWUiXSA8IHNbImJhc2VsaW5lX21hZSJdOiAgICMgb25seSBzaGlwIGEgbW9kZWwgdGhhdCB3aW5zCiAgICAgICAgICAgICAgICAgICAgbS5maXQoZFtjb2xzXSwgZFtmInl7aH0iXSkKICAgICAgICAgICAgICAgICAgICBtb2RlbHNbaF0gPSAobSwgY29scykKICAgICAgICAgICAgICAgICAgICBlbnRyeVsibW9kZWwiXSA9ICJncmFkaWVudCBib29zdGluZyIKICAgICAgICAgICAgICAgICAgICBpZiBsZW4oZCkgPj0gTUlOX1FVQU5USUxFX1JPV1M6CiAgICAgICAgICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvID0gSGlzdEdyYWRpZW50Qm9vc3RpbmdSZWdyZXNzb3IoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9zcz0icXVhbnRpbGUiLCBxdWFudGlsZT0wLjEsIG1heF9pdGVyPTE1MCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsZWFybmluZ19yYXRlPTAuMDcsIGNhdGVnb3JpY2FsX2ZlYXR1cmVzPWNhdCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhpID0gSGlzdEdyYWRpZW50Qm9vc3RpbmdSZWdyZXNzb3IoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9zcz0icXVhbnRpbGUiLCBxdWFudGlsZT0wLjksIG1heF9pdGVyPTE1MCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsZWFybmluZ19yYXRlPTAuMDcsIGNhdGVnb3JpY2FsX2ZlYXR1cmVzPWNhdCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvLmZpdChkW2NvbHNdLCBkW2YieXtofSJdKTsgaGkuZml0KGRbY29sc10sIGRbZiJ5e2h9Il0pCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpbnRlcnZhbHNbaF0gPSAobG8sIGhpLCBjb2xzKQogICAgICAgICAgICAgICAgICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludChmInF1YW50aWxlIHtofToge2V9IikKICAgICAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAgICAgZW50cnlbImNhbmRpZGF0ZV9tYWUiXSA9IHNbIm1hZSJdCiAgICAgICAgICAgICAgICAgICAgZW50cnkudXBkYXRlKHNjb3JlKHRlWyJ3YWl0Il0sIHRlW2YieXtofSJdLCB0ZVsid2FpdCJdKSkKICAgICAgICAgICAgICAgICAgICBlbnRyeVsibW9kZWwiXSA9ICJwZXJzaXN0ZW5jZSAobW9kZWwgZGlkIG5vdCBiZWF0IGJhc2VsaW5lKSIKICAgICAgICBlbGlmIGxlbihkKToKICAgICAgICAgICAgZW50cnlbImF2YWlsYWJsZV9wYWlycyJdID0gaW50KGxlbihkKSkgICMgVG9vIGZldyBvYnNlcnZhdGlvbnMgZm9yIGEgaG9sZG91dCBjbGFpbS4KICAgICAgICBtZXRyaWNzW3N0cihoKV0gPSBlbnRyeQoKICAgIHJpZGVzID0gW10KICAgIGZvciBfLCByIGluIG5vdy5yZXNldF9pbmRleCgpLml0ZXJyb3dzKCk6CiAgICAgICAgcm93ID0geyJuYW1lIjogclsibmFtZSJdLCAibm93IjogaW50KHJvdW5kKHJbIndhaXQiXSkpLAogICAgICAgICAgICAgICAidHJlbmQzMCI6IGludChyb3VuZChyWyJkaWZmXzMwIl0pKSBpZiBwZC5ub3RuYShyLmdldCgiZGlmZl8zMCIpKSBlbHNlIDB9CiAgICAgICAgZm9yIGggaW4gSE9SSVpPTlM6CiAgICAgICAgICAgIGlmIGggaW4gbW9kZWxzOgogICAgICAgICAgICAgICAgbWRsLCBtY29scyA9IG1vZGVsc1toXQogICAgICAgICAgICAgICAgcCA9IGZsb2F0KG1kbC5wcmVkaWN0KHBkLkRhdGFGcmFtZShbcl0pW21jb2xzXSlbMF0pCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBwID0gZmxvYXQoclsid2FpdCJdKQogICAgICAgICAgICByb3dbZiJme2h9Il0gPSBpbnQobWF4KDAsIHJvdW5kKHApKSkKICAgICAgICAgICAgaWYgaCBpbiBpbnRlcnZhbHM6CiAgICAgICAgICAgICAgICBsbywgaGksIGljb2xzID0gaW50ZXJ2YWxzW2hdCiAgICAgICAgICAgICAgICByb3dbZiJme2h9X2xvIl0gPSBpbnQobWF4KDAsIHJvdW5kKGZsb2F0KGxvLnByZWRpY3QocGQuRGF0YUZyYW1lKFtyXSlbaWNvbHNdKVswXSkpKSkKICAgICAgICAgICAgICAgIHJvd1tmImZ7aH1faGkiXSA9IGludChtYXgocm93W2YiZntofV9sbyJdLCByb3VuZChmbG9hdChoaS5wcmVkaWN0KHBkLkRhdGFGcmFtZShbcl0pW2ljb2xzXSlbMF0pKSkpCiAgICAgICAgc2MgPSByaWRlX3Njb3Jlcy5nZXQoMTIwLCB7fSkuZ2V0KHJbIm5hbWUiXSkKICAgICAgICBpZiBzYzoKICAgICAgICAgICAgcm93WyJzY29yZTEyMF9tYWUiXSA9IHNjWyJtYWUiXQogICAgICAgICAgICByb3dbInNjb3JlMTIwX2luMTAiXSA9IHNjWyJ3aXRoaW4xMCJdCiAgICAgICAgICAgIHJvd1sic2NvcmUxMjBfcGFpcnMiXSA9IHNjWyJwYWlycyJdCiAgICAgICAgcHJvZmlsZSA9IGNhcC5nZXQoclsibmFtZSJdKQogICAgICAgIHJvd1sicGVvcGxlIl0gPSBOb25lCiAgICAgICAgaWYgaXNpbnN0YW5jZShwcm9maWxlLCBkaWN0KToKICAgICAgICAgICAgdGhyb3VnaHB1dCA9IHByb2ZpbGVbImhvdXJseV9jYXBhY2l0eV9yYW5nZSJdCiAgICAgICAgICAgIHNoYXJlID0gcHJvZmlsZVsic3RhbmRieV9zaGFyZV9yYW5nZSJdCiAgICAgICAgICAgIHJvd1sicGVvcGxlX2xvIl0gPSByb3VuZCh0aHJvdWdocHV0WzBdICogc2hhcmVbMF0gKiByWyJ3YWl0Il0gLyA2MCkKICAgICAgICAgICAgcm93WyJwZW9wbGVfaGkiXSA9IHJvdW5kKHRocm91Z2hwdXRbMV0gKiBzaGFyZVsxXSAqIHJbIndhaXQiXSAvIDYwKQogICAgICAgICAgICByb3dbInBlb3BsZV9iYXNpcyJdID0gIlVuY2FsaWJyYXRlZCBvcGVyYXRpbmcgc2NlbmFyaW87IG5vdCBtZWFzdXJlZCBhdHRlbmRhbmNlIgogICAgICAgIGVsaWYgaXNpbnN0YW5jZShwcm9maWxlLCAoaW50LCBmbG9hdCkpOgogICAgICAgICAgICByb3dbInBlb3BsZSJdID0gcm91bmQocHJvZmlsZSAqIHJbIndhaXQiXSAvIDYwKQogICAgICAgIHJpZGVzLmFwcGVuZChyb3cpCiAgICByaWRlcy5zb3J0KGtleT1sYW1iZGEgeDogLXhbIm5vdyJdKQoKICAgICMgY29udGV4dCBzbmFwc2hvdCBmb3IgdGhlIGRhc2hib2FyZCBoZWFkZXIgKGxhdGVzdCBkYXkpCiAgICBjdHggPSB7ImRhdGUiOiBzdHIobGF0ZXN0X3RzLmRhdGUoKSl9CiAgICBpZiBvcy5wYXRoLmV4aXN0cyhTQ0hFRCk6CiAgICAgICAgcyA9IHBkLnJlYWRfY3N2KFNDSEVELCBkdHlwZT17ImRhdGUiOiBzdHJ9KQogICAgICAgIHRvZGF5ID0gc1tzWyJkYXRlIl0gPT0gY3R4WyJkYXRlIl1dCiAgICAgICAgaWYgbGVuKHRvZGF5KToKICAgICAgICAgICAgdCA9IHRvZGF5Lmlsb2NbMF0KICAgICAgICAgICAgY3R4LnVwZGF0ZSh7Im9wZW4iOiB0WyJvcGVuIl0sICJjbG9zZSI6IHRbImNsb3NlIl0sCiAgICAgICAgICAgICAgICAgICAgICAgICJlYXJseV9lbnRyeSI6IHRbImVhcmx5X2VudHJ5Il0sCiAgICAgICAgICAgICAgICAgICAgICAgICJ0aWNrZXRlZF9ldmVudCI6IHRbInRpY2tldGVkX2V2ZW50X2Rlc2MiXSBpZiBwZC5ub3RuYSh0WyJ0aWNrZXRlZF9ldmVudF9kZXNjIl0pIGVsc2UgIiIsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbF9tdWx0aXBhc3NfdXNkIjogTm9uZSBpZiBwZC5pc25hKHRbImxsX211bHRpcGFzc191c2QiXSkgZWxzZSBmbG9hdCh0WyJsbF9tdWx0aXBhc3NfdXNkIl0pfSkKICAgIGlmIG9zLnBhdGguZXhpc3RzKEVWRU5UUyk6CiAgICAgICAgZXYgPSBwZC5yZWFkX2NzdihFVkVOVFMsIGR0eXBlPXsiZGF0ZSI6IHN0cn0pCiAgICAgICAgZSA9IGV2W2V2WyJkYXRlIl0gPT0gY3R4WyJkYXRlIl1dCiAgICAgICAgaWYgbGVuKGUpOgogICAgICAgICAgICBjdHhbImV2ZW50Il0gPSBlLmlsb2NbMF1bImV2ZW50Il0KICAgIGN0eFsiaXNfcGFydHlfbmlnaHQiXSA9IGJvb2wobm93WyJpc19wYXJ0eV9uaWdodCJdLm1heCgpKSBpZiBsZW4obm93KSBlbHNlIEZhbHNlCgogICAgb3V0ID0geyJ1cGRhdGVkIjogZGF0ZXRpbWUubm93KHRpbWV6b25lLnV0YykuaXNvZm9ybWF0KCksCiAgICAgICAgICAgImxhc3Rfc2FtcGxlIjogcmF3WyJ0c191dGMiXS5tYXgoKS5pc29mb3JtYXQoKSwgInNhbXBsZXMiOiBpbnQobGVuKHJhdykpLAogICAgICAgICAgICJoaXN0b3J5X3NhbXBsZXMiOiBpbnQocmF3LmdldCgic291cmNlIiwgcGQuU2VyaWVzKGR0eXBlPXN0cikpLmVxKCJ0aGVtZXBhcmtzLndpa2kgaGlzdG9yeSByZXBsYXkiKS5zdW0oKSksCiAgICAgICAgICAgInJpZGVzIjogcmlkZXMsICJtZXRyaWNzIjogbWV0cmljcywgImNvbnRleHQiOiBjdHgsICJkZW1vIjogRmFsc2V9CiAgICBqc29uLmR1bXAob3V0LCBvcGVuKE9VVCwgInciKSwgaW5kZW50PTEpCiAgICBwcmludChmIndyb3RlIHtsZW4ocmlkZXMpfSByaWRlczsgc2hpcHBlZCBtb2RlbHM6IHtsaXN0KG1vZGVscykgb3IgJ25vbmUgeWV0J307ICIKICAgICAgICAgIGYiaW50ZXJ2YWxzOiB7bGlzdChpbnRlcnZhbHMpIG9yICdub25lJ30iKQoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQoK
+"""Magic Kingdom wait forecast v2 - proof-of-concept learning engine.
+
+Trains one gradient-boosting model per horizon (30/60/90/120 min) on
+data/waits.csv plus the context factors the model is allowed to learn from:
+
+  ride dynamics   current wait, lags 5m..24h, 15/30-min trend, rolling
+                  mean/std, downtime in the last hour, just-reopened flag
+  park-wide       mean / p90 wait across all rides, share of rides busy
+  park hours      open/close that day, minutes since open / to close,
+                  operating day length, Early Entry, early close
+  special events  curated data/events.csv (Christmas parties, holidays)
+                  + ticketed-event flags from the schedule feed
+  Disney demand   that day's Lightning Lane prices from the schedule feed
+                  (Multi / Premier / TRON / Mine Train) and sold-out count
+  weather         Open-Meteo hourly: temp, feels-like, humidity, rain,
+                  rain probability, storm code, wind/gusts (data/weather_hourly.csv)
+  calendar        hour (sin/cos), day of week, weekend, US holidays,
+                  school-break windows, days until Christmas
+
+Validation is a strict time split: train on the first 80% of *time*,
+score on the last 20%, and always compare against the persistence
+baseline ('wait will be the same as now'). A horizon only ships its
+model when it beats that baseline on unseen time; otherwise the
+dashboard falls back to persistence and says so.
+
+Error is reported three ways because posted waits are rounded to 5 min:
+MAE in minutes, % within 10 minutes, and MAPE computed only where the
+true wait is >= 20 min (percentages on a 5- or 10-min wait are noise).
+
+With enough rows it also trains 10th/90th percentile models so the
+dashboard can show a range, and runs permutation importance so we can
+see which factors the engine actually learned from.
+"""
+import json, os
+from datetime import date, datetime, timedelta, timezone
+import numpy as np, pandas as pd
+from sklearn.ensemble import HistGradientBoostingRegressor
+from sklearn.inspection import permutation_importance
+
+ROOT = os.path.join(os.path.dirname(__file__), "..")
+CSV = os.path.join(ROOT, "data", "waits.csv")
+SCHED = os.path.join(ROOT, "data", "park_schedule.csv")
+EVENTS = os.path.join(ROOT, "data", "events.csv")
+WEATHER = os.path.join(ROOT, "data", "weather_hourly.csv")
+OUT = os.path.join(ROOT, "docs", "data.json")
+CAP = os.path.join(ROOT, "capacity.json")
+HORIZONS = {30: 6, 60: 12, 90: 18, 120: 24}   # minutes -> 5-minute steps
+DEFAULT_CAPACITY = None
+MIN_TRAIN_ROWS = 800          # pooled ride-rows before a model may ship
+MIN_QUANTILE_ROWS = 3000      # pooled rows before interval models ship
+TRAIN_WINDOW_DAYS = 60        # train on the most recent 60 days only:
+                              # bounds the 5-min retrain cost as data grows
+                              # and lets the engine adapt to the season
+
+X_COLS = [
+    "wait", "lag_5", "lag_15", "lag_30", "lag_60", "lag_120", "lag_yday",
+    "diff_15", "diff_30", "roll_mean_30", "roll_mean_60", "roll_std_60",
+    "down_mins_60", "reopened_30",
+    "park_mean", "park_p90", "park_frac_busy",
+    "hour_sin", "hour_cos", "dow", "is_weekend",
+    "mins_since_open", "mins_to_close", "operating_mins", "early_entry",
+    "is_early_close", "has_ticketed_event",
+    "ll_multipass", "ll_premier", "ll_tron", "ll_mine_train", "ll_soldout",
+    "is_party_night", "is_holiday", "is_school_break",
+    "mins_to_party_start", "is_party_entry_window", "is_party_hours",
+    "days_until_christmas",
+    "temp_f", "feels_f", "humidity", "precip_in", "precip_prob",
+    "is_raining", "is_storm", "wind_mph", "gust_mph",
+    "ride_code",
+]
+
+# ---------- calendar helpers ----------
+
+def nth_weekday(year, month, weekday, n):
+    d = date(year, month, 1)
+    return d + timedelta(days=((weekday - d.weekday()) % 7) + 7 * (n - 1))
+
+def last_weekday(year, month, weekday):
+    d = (date(year, month + 1, 1) - timedelta(days=1)) if month < 12 else date(year, 12, 31)
+    return d - timedelta(days=(d.weekday() - weekday) % 7)
+
+def us_holidays(year):
+    fixed = [date(year, 1, 1), date(year, 6, 19), date(year, 7, 4),
+             date(year, 11, 11), date(year, 12, 25)]
+    floating = [nth_weekday(year, 1, 0, 3), nth_weekday(year, 2, 0, 3),
+                last_weekday(year, 5, 0), nth_weekday(year, 9, 0, 1),
+                nth_weekday(year, 10, 0, 2), nth_weekday(year, 11, 3, 4)]
+    return set(fixed + floating)
+
+def thanksgiving(year):
+    return nth_weekday(year, 11, 3, 4)
+
+def calendar_frame(ts_index):
+    dates = ts_index.date
+    out = pd.DataFrame(index=ts_index)
+    hour = ts_index.hour + ts_index.minute / 60.0
+    out["hour_sin"] = np.sin(2 * np.pi * hour / 24)
+    out["hour_cos"] = np.cos(2 * np.pi * hour / 24)
+    out["dow"] = ts_index.dayofweek
+    out["is_weekend"] = (ts_index.dayofweek >= 5).astype(int)
+    hol, brk, dtc = [], [], []
+    cache = {}
+    for d in dates:
+        if d.year not in cache:
+            cache[d.year] = (us_holidays(d.year), thanksgiving(d.year))
+        hols, tg = cache[d.year]
+        hol.append(1 if d in hols else 0)
+        xmas_break = (d.month == 12 and d.day >= 19) or (d.month == 1 and d.day <= 3)
+        tg_break = tg - timedelta(days=1) <= d <= tg + timedelta(days=3)
+        brk.append(1 if (xmas_break or tg_break) else 0)
+        dtc.append((date(d.year, 12, 25) - d).days)
+    out["is_holiday"] = hol
+    out["is_school_break"] = brk
+    out["days_until_christmas"] = dtc
+    return out
+
+# ---------- loading ----------
+
+def load_waits():
+    frames = [pd.read_csv(CSV)]
+    history = os.path.join(ROOT, "data", "history.csv.gz")
+    if os.path.exists(history):
+        frames.insert(0, pd.read_csv(history))
+    df = pd.concat(frames, ignore_index=True)
+    df["ts_utc"] = pd.to_datetime(df["ts_utc"], utc=True, format="mixed")
+    df["ts"] = df["ts_utc"].dt.ceil("5min").dt.tz_convert("America/New_York")
+    return df.sort_values("ts_utc").drop_duplicates(["ride_id", "ts"], keep="last")
+
+def per_ride_frames(df):
+    parts = []
+    for (rid, name), g in df.groupby(["ride_id", "name"]):
+        g = g.set_index("ts").sort_index()
+        wait = g["wait"].where(g["status"] == "OPERATING").resample("5min").last()
+        down = (g["status"] == "DOWN").astype(float).resample("5min").max()
+        full = wait.index.union(down.index)
+        wait = wait.reindex(full)  # Never fill targets or features from future observations.
+        down = down.reindex(full)  # Missing observations are not proof of operation.
+        f = pd.DataFrame({"wait": wait})
+        f["lag_5"] = wait.shift(1)
+        f["lag_15"] = wait.shift(3)
+        f["lag_30"] = wait.shift(6)
+        f["lag_60"] = wait.shift(12)
+        f["lag_120"] = wait.shift(24)
+        f["lag_yday"] = wait.shift(288)       # same time yesterday
+        f["diff_15"] = wait - f["lag_15"]
+        f["diff_30"] = wait - f["lag_30"]
+        f["roll_mean_30"] = wait.rolling(6).mean()
+        f["roll_mean_60"] = wait.rolling(12).mean()
+        f["roll_std_60"] = wait.rolling(12).std()
+        f["down_mins_60"] = down.rolling(12).sum() * 5
+        just_up = ((down.shift(1) == 1) & (down == 0) & wait.notna()).astype(float)
+        f["reopened_30"] = just_up.rolling(6).max()
+        f["ride_id"], f["name"] = rid, name
+        for h, s in HORIZONS.items():
+            f[f"y{h}"] = wait.shift(-s)
+        parts.append(f)
+    out = pd.concat(parts)
+    out["ride_code"] = out["ride_id"].astype("category").cat.codes
+    return out
+
+def add_context(feat):
+    # NOTE: timestamps repeat across rides, so a plain index join would
+    # cartesian-duplicate rows. Assign calendar columns positionally.
+    cal = calendar_frame(feat.index)
+    for c in cal.columns:
+        feat[c] = cal[c].to_numpy()
+    # park-wide pressure, same timestamp across rides
+    by_ts = feat.groupby(level=0)["wait"]
+    feat["park_mean"] = by_ts.transform("mean")
+    feat["park_p90"] = by_ts.transform(lambda s: s.quantile(0.9))
+    feat["park_frac_busy"] = by_ts.transform(lambda s: (s >= 40).mean())
+    feat["date_str"] = feat.index.strftime("%Y-%m-%d")
+    feat["hour_key"] = feat.index.strftime("%Y-%m-%dT%H:00")
+
+    # park schedule (hours + Lightning Lane demand prices)
+    sched_cols = ["mins_since_open", "mins_to_close", "operating_mins",
+                  "early_entry", "is_early_close", "has_ticketed_event",
+                  "ll_multipass", "ll_premier", "ll_tron", "ll_mine_train",
+                  "ll_soldout", "_open_min", "_close_min", "_event_start_min"]
+    if os.path.exists(SCHED):
+        s = pd.read_csv(SCHED, dtype={"date": str})
+        def mins(x):
+            try:
+                h, m = str(x).split(":")[:2]
+                return int(h) * 60 + int(m)
+            except Exception:
+                return np.nan
+        s["_open"] = s["open"].map(mins)
+        s["_close"] = s["close"].map(mins)
+        s["_ev"] = s["ticketed_event_start"].map(mins)
+        day_min = feat.index.hour * 60 + feat.index.minute
+        idx = s.set_index("date")
+        feat["_open_min"] = feat["date_str"].map(idx["_open"])
+        feat["_close_min"] = feat["date_str"].map(idx["_close"])
+        feat["mins_since_open"] = day_min - feat["_open_min"]
+        feat["mins_to_close"] = feat["_close_min"] - day_min
+        feat["operating_mins"] = feat["date_str"].map(idx["operating_mins"])
+        feat["early_entry"] = feat["date_str"].map(
+            idx["early_entry"].fillna("").ne("").astype(int))
+        feat["is_early_close"] = (feat["_close_min"] <= 18 * 60).astype(float)
+        feat["has_ticketed_event"] = feat["date_str"].map(
+            idx["has_ticketed_event"].fillna(0))
+        for src, dst in [("ll_multipass_usd", "ll_multipass"), ("ll_premier_usd", "ll_premier"),
+                         ("ll_tron_usd", "ll_tron"), ("ll_mine_train_usd", "ll_mine_train"),
+                         ("ll_soldout_count", "ll_soldout")]:
+            feat[dst] = feat["date_str"].map(idx[src])
+        feat["_event_start_min"] = feat["date_str"].map(idx["_ev"])
+    else:
+        for c in sched_cols:
+            feat[c] = np.nan
+
+    # curated special events (Christmas parties, holidays)
+    feat["is_party_night"] = 0
+    feat["_party_start_min"] = np.nan
+    if os.path.exists(EVENTS):
+        ev = pd.read_csv(EVENTS, dtype={"date": str})
+        party = ev[ev["kind"] == "christmas_party"]
+        feat["is_party_night"] = feat["date_str"].isin(set(party["date"])).astype(int)
+        ps = party.set_index("date")["party_start"].dropna()
+        def mins2(x):
+            try:
+                h, m = str(x).split(":")[:2]
+                return int(h) * 60 + int(m)
+            except Exception:
+                return np.nan
+        feat["_party_start_min"] = feat["date_str"].map(ps.map(mins2))
+    # schedule's ticketed event also proves a party/event night
+    feat["is_party_night"] = np.maximum(feat["is_party_night"],
+                                        feat["has_ticketed_event"].fillna(0))
+    start = feat["_party_start_min"].fillna(feat["_event_start_min"])
+    day_min = feat.index.hour * 60 + feat.index.minute
+    feat["mins_to_party_start"] = np.where(feat["is_party_night"] == 1,
+                                           start - day_min, np.nan)
+    feat["is_party_entry_window"] = ((feat["is_party_night"] == 1) &
+                                     (feat["mins_to_party_start"] <= 180) &
+                                     (feat["mins_to_party_start"] > 0)).astype(int)
+    feat["is_party_hours"] = ((feat["is_party_night"] == 1) &
+                              (feat["mins_to_party_start"] <= 0)).astype(int)
+
+    # weather, joined on the local hour
+    wmap = {"temperature_2m": "temp_f", "apparent_temperature": "feels_f",
+            "relative_humidity_2m": "humidity", "precipitation": "precip_in",
+            "precipitation_probability": "precip_prob", "wind_speed_10m": "wind_mph",
+            "wind_gusts_10m": "gust_mph", "weather_code": "_wcode"}
+    if os.path.exists(WEATHER):
+        w = pd.read_csv(WEATHER, dtype={"hour_local": str})
+        widx = w.set_index("hour_local")
+        for src, dst in wmap.items():
+            feat[dst] = pd.to_numeric(feat["hour_key"].map(widx[src]), errors="coerce")
+        feat["is_raining"] = (feat["precip_in"].fillna(0) > 0.01).astype(float)
+        feat["is_storm"] = (feat["_wcode"].fillna(0) >= 95).astype(float)
+    else:
+        for dst in list(wmap.values()) + ["is_raining", "is_storm"]:
+            feat[dst] = np.nan
+    for c in X_COLS:
+        if c not in feat.columns:
+            feat[c] = np.nan
+    return feat
+
+# ---------- metrics ----------
+
+def score(pred, true, base_pred):
+    pred, true, base_pred = np.asarray(pred, float), np.asarray(true, float), np.asarray(base_pred, float)
+    err = np.abs(pred - true)
+    berr = np.abs(base_pred - true)
+    ge20 = true >= 20
+    return {
+        "mae": round(float(err.mean()), 1),
+        "rmse": round(float(np.sqrt(((pred - true) ** 2).mean())), 1),
+        "within10": round(float((err <= 10).mean() * 100)),
+        "mape_ge20": round(float((err[ge20] / true[ge20]).mean() * 100), 1) if ge20.any() else None,
+        "bias": round(float((pred - true).mean()), 1),
+        "baseline_mae": round(float(berr.mean()), 1),
+        "baseline_mape_ge20": round(float((berr[ge20] / true[ge20]).mean() * 100), 1) if ge20.any() else None,
+        "improvement_pct": round(float((1 - err.mean() / berr.mean()) * 100), 1) if berr.mean() else None,
+    }
+
+# ---------- main ----------
+
+def main():
+    if not os.path.exists(CSV):
+        print("no data yet"); return
+    raw = load_waits()
+    if raw.empty:
+        print("no rows yet"); return
+    feat = add_context(per_ride_frames(raw))
+    cap = json.load(open(CAP)) if os.path.exists(CAP) else {}
+    latest_ts = feat.index.max()
+    now = feat[feat.index == latest_ts].dropna(subset=["wait"])
+    cat_idx = [X_COLS.index("ride_code")]
+    uniq_times = np.sort(feat.index.unique())
+    cut = uniq_times[int(len(uniq_times) * 0.8)] if len(uniq_times) >= 10 else None
+
+    metrics, models, intervals = {}, {}, {}
+    ride_scores = {}   # per-ride holdout score for the dashboard (+120 only)
+    for h in HORIZONS:
+        d = feat.dropna(subset=["wait", f"y{h}"]).sort_index()
+        if len(d):
+            d = d[d.index >= d.index.max() - pd.Timedelta(days=TRAIN_WINDOW_DAYS)]
+        valid_times = np.sort(d.index.unique())
+        cut = valid_times[int(len(valid_times) * 0.8)] if len(valid_times) >= 10 else None
+        entry = {"available_pairs": int(len(d)), "train_rows": 0, "test_rows": 0, "model": "persistence (still collecting)"}
+        if cut is not None and len(d) >= MIN_TRAIN_ROWS:
+            tr, te = d[d.index + pd.Timedelta(minutes=h) < cut], d[d.index >= cut]
+            if len(tr) >= MIN_TRAIN_ROWS * 0.5 and len(te) >= 50:
+                # Drop features that are all-missing or constant in the
+                # training window (e.g. weather before its first successful
+                # collection): they carry no signal and some versions of
+                # the binner choke on a single distinct value.
+                cols = [c for c in X_COLS if tr[c].notna().any()
+                        and (c == "ride_code" or tr[c].nunique(dropna=True) > 1)]
+                cat = [cols.index("ride_code")] if "ride_code" in cols else None
+                m = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
+                                                  categorical_features=cat)
+                m.fit(tr[cols], tr[f"y{h}"])
+                s = score(m.predict(te[cols]), te[f"y{h}"].values, te["wait"].values)
+                entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)), evaluation="chronological holdout with horizon embargo")
+                if h == 120:
+                    # Score the predictor that will actually ship (the model
+                    # if it won, else persistence), per ride, for the
+                    # dashboard's "+2 hr score" column.
+                    shipped_pred = (m.predict(te[cols]) if s["mae"] < s["baseline_mae"]
+                                    else te["wait"].values)
+                    tmp = pd.DataFrame({"name": te["name"].values,
+                                        "err": np.abs(np.asarray(shipped_pred, float)
+                                                      - te[f"y{h}"].values)})
+                    ride_scores[h] = {
+                        n: {"mae": round(float(g["err"].mean()), 1),
+                            "within10": round(float((g["err"] <= 10).mean() * 100)),
+                            "pairs": int(len(g))}
+                        for n, g in tmp.groupby("name") if len(g) >= 30}
+                try:
+                    sample = te.sample(min(2000, len(te)), random_state=0)
+                    pi = permutation_importance(m, sample[cols], sample[f"y{h}"],
+                                                n_repeats=3, random_state=0,
+                                                scoring="neg_mean_absolute_error")
+                    order = np.argsort(pi.importances_mean)[::-1]
+                    entry["top_features"] = [cols[i] for i in order
+                                             if pi.importances_mean[i] > 0][:6]
+                except Exception as e:
+                    print(f"importance {h}: {e}")
+                if s["mae"] < s["baseline_mae"]:   # only ship a model that wins
+                    m.fit(d[cols], d[f"y{h}"])
+                    models[h] = (m, cols)
+                    entry["model"] = "gradient boosting"
+                    if len(d) >= MIN_QUANTILE_ROWS:
+                        try:
+                            lo = HistGradientBoostingRegressor(
+                                loss="quantile", quantile=0.1, max_iter=150,
+                                learning_rate=0.07, categorical_features=cat)
+                            hi = HistGradientBoostingRegressor(
+                                loss="quantile", quantile=0.9, max_iter=150,
+                                learning_rate=0.07, categorical_features=cat)
+                            lo.fit(d[cols], d[f"y{h}"]); hi.fit(d[cols], d[f"y{h}"])
+                            intervals[h] = (lo, hi, cols)
+                        except Exception as e:
+                            print(f"quantile {h}: {e}")
+                else:
+                    entry["candidate_mae"] = s["mae"]
+                    entry.update(score(te["wait"], te[f"y{h}"], te["wait"]))
+                    entry["model"] = "persistence (model did not beat baseline)"
+        elif len(d):
+            entry["available_pairs"] = int(len(d))  # Too few observations for a holdout claim.
+        metrics[str(h)] = entry
+
+    rides = []
+    for _, r in now.reset_index().iterrows():
+        row = {"name": r["name"], "now": int(round(r["wait"])),
+               "trend30": int(round(r["diff_30"])) if pd.notna(r.get("diff_30")) else 0}
+        for h in HORIZONS:
+            if h in models:
+                mdl, mcols = models[h]
+                p = float(mdl.predict(pd.DataFrame([r])[mcols])[0])
+            else:
+                p = float(r["wait"])
+            row[f"f{h}"] = int(max(0, round(p)))
+            if h in intervals:
+                lo, hi, icols = intervals[h]
+                row[f"f{h}_lo"] = int(max(0, round(float(lo.predict(pd.DataFrame([r])[icols])[0]))))
+                row[f"f{h}_hi"] = int(max(row[f"f{h}_lo"], round(float(hi.predict(pd.DataFrame([r])[icols])[0]))))
+        sc = ride_scores.get(120, {}).get(r["name"])
+        if sc:
+            row["score120_mae"] = sc["mae"]
+            row["score120_in10"] = sc["within10"]
+            row["score120_pairs"] = sc["pairs"]
+        profile = cap.get(r["name"])
+        row["people"] = None
+        if isinstance(profile, dict):
+            throughput = profile["hourly_capacity_range"]
+            share = profile["standby_share_range"]
+            row["people_lo"] = round(throughput[0] * share[0] * r["wait"] / 60)
+            row["people_hi"] = round(throughput[1] * share[1] * r["wait"] / 60)
+            row["people_basis"] = "Uncalibrated operating scenario; not measured attendance"
+        elif isinstance(profile, (int, float)):
+            row["people"] = round(profile * r["wait"] / 60)
+        rides.append(row)
+    rides.sort(key=lambda x: -x["now"])
+
+    # context snapshot for the dashboard header (latest day)
+    ctx = {"date": str(latest_ts.date())}
+    if os.path.exists(SCHED):
+        s = pd.read_csv(SCHED, dtype={"date": str})
+        today = s[s["date"] == ctx["date"]]
+        if len(today):
+            t = today.iloc[0]
+            ctx.update({"open": t["open"], "close": t["close"],
+                        "early_entry": t["early_entry"],
+                        "ticketed_event": t["ticketed_event_desc"] if pd.notna(t["ticketed_event_desc"]) else "",
+                        "ll_multipass_usd": None if pd.isna(t["ll_multipass_usd"]) else float(t["ll_multipass_usd"])})
+    if os.path.exists(EVENTS):
+        ev = pd.read_csv(EVENTS, dtype={"date": str})
+        e = ev[ev["date"] == ctx["date"]]
+        if len(e):
+            ctx["event"] = e.iloc[0]["event"]
+    ctx["is_party_night"] = bool(now["is_party_night"].max()) if len(now) else False
+
+    out = {"updated": datetime.now(timezone.utc).isoformat(),
+           "last_sample": raw["ts_utc"].max().isoformat(), "samples": int(len(raw)),
+           "history_samples": int(raw.get("source", pd.Series(dtype=str)).eq("themeparks.wiki history replay").sum()),
+           "rides": rides, "metrics": metrics, "context": ctx, "demo": False}
+    json.dump(out, open(OUT, "w"), indent=1)
+    print(f"wrote {len(rides)} rides; shipped models: {list(models) or 'none yet'}; "
+          f"intervals: {list(intervals) or 'none'}")
+
+if __name__ == "__main__":
+    main()
+
