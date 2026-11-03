@@ -268,6 +268,7 @@ def score(pred, true, base_pred):
         "mae": round(float(err.mean()), 1),
         "rmse": round(float(np.sqrt(((pred - true) ** 2).mean())), 1),
         "within10": round(float((err <= 10).mean() * 100)),
+        "within5": round(float((err <= 5).mean() * 100)),
         "mape_ge20": round(float((err[ge20] / true[ge20]).mean() * 100), 1) if ge20.any() else None,
         "bias": round(float((pred - true).mean()), 1),
         "baseline_mae": round(float(berr.mean()), 1),
@@ -327,6 +328,7 @@ def main():
                     ride_scores[h] = {
                         n: {"mae": round(float(g["err"].mean()), 1),
                             "within10": round(float((g["err"] <= 10).mean() * 100)),
+                            "within5": round(float((g["err"] <= 5).mean() * 100)),
                             "pairs": int(len(g))}
                         for n, g in tmp.groupby("name") if len(g) >= 30}
                 try:
@@ -382,6 +384,7 @@ def main():
         if sc:
             row["score120_mae"] = sc["mae"]
             row["score120_in10"] = sc["within10"]
+            row["score120_in5"] = sc["within5"]
             row["score120_pairs"] = sc["pairs"]
         profile = cap.get(r["name"])
         row["people"] = None
