@@ -130,10 +130,9 @@ def collect_schedule_generic(park_name, park_id, out_name):
         return
     by_date = {}
     for s in data.get("schedule", []):
-        d = by_date.setdefault(s["date"], {k: "" for k in GENERIC_FIELDS})
-        d["date"] = s["date"]
-        d["has_ticketed_event"] = 0
-        d["ll_soldout_count"] = 0
+        d = by_date.setdefault(s["date"], {
+            **{k: "" for k in GENERIC_FIELDS},
+            "date": s["date"], "has_ticketed_event": 0, "ll_soldout_count": 0})
         if s["type"] == "OPERATING":
             d["open"], d["close"] = hhmm(s.get("openingTime")), hhmm(s.get("closingTime"))
             try:
