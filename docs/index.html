@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Kingdom wait forecast</title>
+<style>
+:root{--bg:#f3f6f8;--panel:#fff;--ink:#14202b;--mute:#5b6b79;--line:#dbe3e9;--c0:#d7efe9;--c1:#f6e7b4;--c2:#f4c19b;--c3:#e98f8f}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1820;--panel:#16222d;--ink:#e8eef3;--mute:#93a4b3;--line:#263645;--c0:#15423f;--c1:#51471a;--c2:#6b3f1f;--c3:#6e2a2a}}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;padding:max(16px,env(safe-area-inset-top)) 16px 32px;max-width:920px;margin:0 auto}
+h1{font-size:1.35rem;margin:8px 0 2px}h2{font-size:1rem;margin:18px 0 6px}.sub{color:var(--mute);margin:0 0 14px;font-size:.9rem}
+.banner{background:var(--c1);padding:8px 12px;border-radius:6px;margin-bottom:12px;font-size:.9rem}
+.ctx{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:12px;font-size:.9rem}
+.acc{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+@media (max-width:640px){.acc{grid-template-columns:repeat(2,1fr)}}
+.acc div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.acc b{display:block;font-size:1.15rem;font-variant-numeric:tabular-nums}.acc span{color:var(--mute);font-size:.78rem;display:block}
+.wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
+th{font-weight:600;color:var(--mute);font-size:.8rem}tr:last-child td{border-bottom:0}
+td.h{font-weight:600}.rng{display:block;font-weight:400;font-size:.72rem;color:var(--mute)}
+.factors{color:var(--mute);font-size:.85rem;margin:2px 0}
+</style></head><body>
+<h1>Magic Kingdom wait forecast</h1>
+<p class="sub" id="sub">Loading…</p>
+<div id="banner"></div>
+<div class="ctx" id="ctx" style="display:none"></div>
+<div class="acc" id="acc"></div>
+<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30 min</th><th>+60 min</th><th>+90 min</th><th>+2 hr</th><th>People in line (est.)</th></tr></thead><tbody id="rows"></tbody></table></div>
+<h2>What the model is learning from</h2>
+<div id="factors"><p class="factors">Factor rankings appear after the first model beats the “same as now” baseline on unseen time.</p></div>
+<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Accuracy is measured on the newest 20% of time the model never trained on. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. “People in line” = assumed ride capacity × wait; edit capacity.json to tune it.</p>
+<script>
+const heat=m=>m>=60?'var(--c3)':m>=40?'var(--c2)':m>=20?'var(--c1)':'var(--c0)';
+fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  document.getElementById('sub').textContent='Updated '+new Date(d.updated).toLocaleString()+' · '+d.samples.toLocaleString()+' samples collected';
+  if(d.demo)document.getElementById('banner').innerHTML='<div class="banner">Demo numbers. Live collection replaces them after the first scheduled run.</div>';
+  const c=d.context||{};
+  if(c.date){
+    const bits=[c.date];
+    if(c.open)bits.push('Park hours '+c.open+'–'+c.close);
+    if(c.early_entry)bits.push('Early Entry '+c.early_entry);
+    if(c.event)bits.push(c.event);
+    else if(c.is_party_night)bits.push('Ticketed event tonight');
+    if(c.ll_multipass_usd)bits.push('Lightning Lane Multi Pass $'+c.ll_multipass_usd);
+    const el=document.getElementById('ctx');el.style.display='block';el.textContent=bits.join(' · ');
+  }
+  document.getElementById('acc').innerHTML=[['30','+30 min'],['60','+60 min'],['90','+90 min'],['120','+2 hr']].map(([h,l])=>{
+    const m=d.metrics[h]||{};const ok=m.mae!=null&&m.model&&m.model.indexOf('gradient')===0;
+    const shown=m.mae!=null;
+    return `<div><span>${l} accuracy</span><b>${shown?'±'+m.mae+' min':'—'}</b>`+
+      `<span>${shown?m.within10+'% within 10 min':'collecting data'}</span>`+
+      `<span>${shown&&m.mape_ge20!=null?'Error '+m.mape_ge20+'% on 20+ min waits':''}</span>`+
+      `<span>${shown&&m.improvement_pct!=null?m.improvement_pct+'% better than “same as now”':(m.model||'')}</span></div>`}).join('');
+  document.getElementById('rows').innerHTML=d.rides.map(r=>`<tr><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
+    ['f30','f60','f90','f120'].map(k=>`<td class="h" style="background:${heat(r[k])}">${r[k]}${r[k+'_lo']!=null?`<span class="rng">${r[k+'_lo']}–${r[k+'_hi']}</span>`:''}</td>`).join('')+`<td>~${r.people.toLocaleString()}</td></tr>`).join('');
+  const f=[['30','+30'],['60','+60'],['90','+90'],['120','+120']].filter(([h])=>(d.metrics[h]||{}).top_features)
+    .map(([h,l])=>`<p class="factors"><b>${l} min:</b> ${(d.metrics[h].top_features||[]).join(', ')}</p>`).join('');
+  if(f)document.getElementById('factors').innerHTML=f;
+}).catch(()=>{document.getElementById('sub').textContent='Could not load data.json. Serve this folder from GitHub Pages or a local web server.'});
+</script></body></html>
