@@ -502,6 +502,18 @@ def main():
     print(f"wrote {len(rides)} rides; shipped models: {list(models) or 'none yet'}; "
           f"intervals: {list(intervals) or 'none'}")
 
+    # ---- manager bots (shadow mode; fail-safe: a bot can never break
+    # the forecast run, and in shadow mode it changes no prediction) ----
+    try:
+        import subprocess, sys as _sys
+        _bot = os.path.join(ROOT, "scripts", "closure_bot.py")
+        if os.path.exists(_bot):
+            _r = subprocess.run([_sys.executable, _bot], timeout=180,
+                                capture_output=True, text=True)
+            print((_r.stdout or "").strip() or f"closure_bot rc={_r.returncode}")
+    except Exception as ex:
+        print(f"closure_bot hook: {ex}")
+
 if __name__ == "__main__":
     main()
 
