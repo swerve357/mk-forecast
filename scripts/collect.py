@@ -22,6 +22,32 @@ PARKS = [
 ]
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
+# ts_utc is OUR pull DTG (exact, to the second, one stamp per poll).
+# src_updated_utc is the source's own per-ride lastUpdated from the API
+# payload (millisecond precision): when ThemeParks.wiki last refreshed
+# that ride's posted value. Two collectors polling at different moments
+# record different ts_utc but the SAME src_updated_utc for the same
+# posted value, which is what makes cross-source confirmation possible.
+HEADER = ["ts_utc", "ride_id", "name", "status", "wait", "src_updated_utc"]
+
+
+def ensure_header(out):
+    """Create the file with HEADER, or one-time migrate an older file by
+    appending the new column (empty for legacy rows). Returns True if the
+    file was just created and still needs its header written on append."""
+    if not os.path.exists(out):
+        return True
+    with open(out, newline="") as f:
+        rows = list(csv.reader(f))
+    if rows and rows[0] == HEADER:
+        return False
+    with open(out, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(HEADER)
+        for r in rows[1:] if rows else []:
+            w.writerow((r + [""] * len(HEADER))[:len(HEADER)])
+    return False
+
 
 def collect_park(name, park_id, filename):
     url = f"https://api.themeparks.wiki/v1/entity/{park_id}/live"
@@ -34,13 +60,14 @@ def collect_park(name, park_id, filename):
         if e.get("entityType") != "ATTRACTION":
             continue
         wait = ((e.get("queue") or {}).get("STANDBY") or {}).get("waitTime")
-        rows.append([ts, e["id"], e["name"], e.get("status", ""), "" if wait is None else wait])
+        rows.append([ts, e["id"], e["name"], e.get("status", ""),
+                     "" if wait is None else wait, e.get("lastUpdated", "")])
     out = os.path.join(DATA_DIR, filename)
-    new = not os.path.exists(out)
+    new = ensure_header(out)
     with open(out, "a", newline="") as f:
         w = csv.writer(f)
         if new:
-            w.writerow(["ts_utc", "ride_id", "name", "status", "wait"])
+            w.writerow(HEADER)
         w.writerows(rows)
     print(f"{name}: {ts} wrote {len(rows)} rides -> {filename}")
     return len(rows)
