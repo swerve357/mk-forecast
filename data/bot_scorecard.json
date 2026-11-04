@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-04T21:35:40.173221+00:00",
+ "updated": "2026-11-04T21:40:59.713668+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Main Street Vehicles": "2026-11-04 16:10:00-05:00",
-  "Under the Sea - Journey of The Little Mermaid": "2026-11-04 16:05:00-05:00"
+  "Main Street Vehicles": "2026-11-04 16:10:00-05:00"
  },
- "decisions_open": 1,
+ "decisions_open": 2,
  "graded_all": {
   "n": 40,
   "wins": 6,
@@ -34,8 +33,19 @@
    "mae_shadow": 11.0
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 1,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 0,
+ "last_decisions": [
+  {
+   "id": "cb-42",
+   "type": "D2",
+   "event_ride": "Under the Sea - Journey of The Little Mermaid",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
+   "horizon": 30,
+   "base": 20.0,
+   "shadow": 10.0,
+   "reason": "reopened after 40 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
