@@ -43,6 +43,7 @@ SCHED = os.path.join(ROOT, "data", "park_schedule.csv")
 EVENTS = os.path.join(ROOT, "data", "events.csv")
 WEATHER = os.path.join(ROOT, "data", "weather_hourly.csv")
 OUT = os.path.join(ROOT, "docs", "data.json")
+PREDLOG = os.path.join(ROOT, "data", "pred_log.csv")
 CAP = os.path.join(ROOT, "capacity.json")
 HORIZONS = {30: 6, 60: 12, 90: 18, 120: 24}   # minutes -> 5-minute steps
 DEFAULT_CAPACITY = None
@@ -410,6 +411,60 @@ def main():
         rides.append(row)
     rides.sort(key=lambda x: -x["now"])
 
+    # ---- prediction log + last-4-hours lookback (the dashboard proof view) ----
+    # Every run appends the predictions it just made (per ride and horizon,
+    # stamped with the target time they are FOR) to data/pred_log.csv, pruned
+    # to the last 8 hours. The lookback joins past predictions to the waits
+    # actually posted at their target times, so the dashboard can show
+    # predicted-vs-actual side by side for the last 4 hours — good or bad,
+    # including how fast predictions recover after a closure or spike.
+    lookback = {}
+    try:
+        lts = pd.Timestamp(latest_ts)
+        lts = lts.tz_localize("UTC") if lts.tzinfo is None else lts.tz_convert("UTC")
+        new_rows = [{"made_at": lts.isoformat(), "name": row["name"], "horizon": h,
+                     "target": (lts + pd.Timedelta(minutes=h)).isoformat(),
+                     "pred": row[f"f{h}"]}
+                    for row in rides for h in HORIZONS]
+        log = pd.DataFrame(new_rows)
+        if os.path.exists(PREDLOG):
+            log = pd.concat([pd.read_csv(PREDLOG), log], ignore_index=True)
+        log["made_at"] = pd.to_datetime(log["made_at"], utc=True)
+        log["target"] = pd.to_datetime(log["target"], utc=True)
+        cutoff = lts - pd.Timedelta(hours=8)
+        log = (log.drop_duplicates(subset=["made_at", "name", "horizon"], keep="last")
+                  .loc[lambda x: x["made_at"] >= cutoff]
+                  .sort_values(["made_at", "name", "horizon"]))
+        log.to_csv(PREDLOG, index=False)
+
+        f2 = feat[["name", "wait"]].reset_index()
+        act = f2.pivot_table(index=f2.columns[0], columns="name",
+                             values="wait", aggfunc="last")
+        act.index = pd.to_datetime(act.index, utc=True)
+        win = act.index[(act.index >= lts - pd.Timedelta(hours=4)) & (act.index <= lts)]
+        slots = win[::3]   # every 15 minutes across the last 4 hours
+        pred_idx = log.set_index(["name", "horizon", "target"])["pred"].to_dict()
+        for row in rides:
+            name = row["name"]
+            if name not in act.columns:
+                continue
+            entries = []
+            for T in slots:
+                a = act.at[T, name] if T in act.index else np.nan
+                if pd.isna(a):
+                    continue
+                e = {"t": T.tz_convert("America/New_York").strftime("%H:%M"),
+                     "actual": int(round(a))}
+                for h in HORIZONS:
+                    p = pred_idx.get((name, h, T))
+                    if p is not None and pd.notna(p):
+                        e[f"p{h}"] = int(p)
+                entries.append(e)
+            if entries:
+                lookback[name] = entries
+    except Exception as ex:
+        print(f"lookback: {ex}")
+
     # context snapshot for the dashboard header (latest day)
     ctx = {"date": str(latest_ts.date())}
     if os.path.exists(SCHED):
@@ -431,7 +486,8 @@ def main():
     out = {"updated": datetime.now(timezone.utc).isoformat(),
            "last_sample": raw["ts_utc"].max().isoformat(), "samples": int(len(raw)),
            "history_samples": int(raw.get("source", pd.Series(dtype=str)).eq("themeparks.wiki history replay").sum()),
-           "rides": rides, "metrics": metrics, "context": ctx, "demo": False}
+           "rides": rides, "metrics": metrics, "context": ctx, "demo": False,
+           "lookback": lookback}
     json.dump(out, open(OUT, "w"), indent=1)
     print(f"wrote {len(rides)} rides; shipped models: {list(models) or 'none yet'}; "
           f"intervals: {list(intervals) or 'none'}")
