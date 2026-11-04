@@ -419,9 +419,11 @@ def main():
     # predicted-vs-actual side by side for the last 4 hours — good or bad,
     # including how fast predictions recover after a closure or spike.
     lookback = {}
+    lb_debug = []
+    lts = pd.Timestamp(latest_ts)
+    lts = lts.tz_localize("UTC") if lts.tzinfo is None else lts.tz_convert("UTC")
+    log = pd.DataFrame(columns=["made_at", "name", "horizon", "target", "pred"])
     try:
-        lts = pd.Timestamp(latest_ts)
-        lts = lts.tz_localize("UTC") if lts.tzinfo is None else lts.tz_convert("UTC")
         new_rows = [{"made_at": lts.isoformat(), "name": row["name"], "horizon": h,
                      "target": (lts + pd.Timedelta(minutes=h)).isoformat(),
                      "pred": row[f"f{h}"]}
@@ -436,13 +438,19 @@ def main():
                   .loc[lambda x: x["made_at"] >= cutoff]
                   .sort_values(["made_at", "name", "horizon"]))
         log.to_csv(PREDLOG, index=False)
-
+        lb_debug.append(f"log rows {len(log)}")
+    except Exception as ex:
+        lb_debug.append(f"log EXC {type(ex).__name__}: {ex}")
+        print(f"predlog: {ex}")
+    try:
         f2 = feat[["name", "wait"]].reset_index()
         act = f2.pivot_table(index=f2.columns[0], columns="name",
                              values="wait", aggfunc="last")
         act.index = pd.to_datetime(act.index, utc=True)
+        lb_debug.append(f"act {act.shape} idx {act.index.min()}..{act.index.max()}")
         win = act.index[(act.index >= lts - pd.Timedelta(hours=4)) & (act.index <= lts)]
         slots = win[::3]   # every 15 minutes across the last 4 hours
+        lb_debug.append(f"slots {len(slots)}")
         pred_idx = log.set_index(["name", "horizon", "target"])["pred"].to_dict()
         for row in rides:
             name = row["name"]
@@ -462,7 +470,9 @@ def main():
                 entries.append(e)
             if entries:
                 lookback[name] = entries
+        lb_debug.append(f"lookback rides {len(lookback)}")
     except Exception as ex:
+        lb_debug.append(f"lookback EXC {type(ex).__name__}: {ex}")
         print(f"lookback: {ex}")
 
     # context snapshot for the dashboard header (latest day)
@@ -487,7 +497,7 @@ def main():
            "last_sample": raw["ts_utc"].max().isoformat(), "samples": int(len(raw)),
            "history_samples": int(raw.get("source", pd.Series(dtype=str)).eq("themeparks.wiki history replay").sum()),
            "rides": rides, "metrics": metrics, "context": ctx, "demo": False,
-           "lookback": lookback}
+           "lookback": lookback, "lookback_debug": "; ".join(lb_debug)}
     json.dump(out, open(OUT, "w"), indent=1)
     print(f"wrote {len(rides)} rides; shipped models: {list(models) or 'none yet'}; "
           f"intervals: {list(intervals) or 'none'}")
