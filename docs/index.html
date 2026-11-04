@@ -15,7 +15,7 @@ h1{font-size:1.35rem;margin:8px 0 2px}h2{font-size:1rem;margin:18px 0 6px}.sub{c
 .acc div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .acc b{display:block;font-size:1.15rem;font-variant-numeric:tabular-nums}.acc span{color:var(--mute);font-size:.78rem;display:block}
 .wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
-table{border-collapse:collapse;width:100%;min-width:520px;font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;min-width:660px;font-variant-numeric:tabular-nums}
 th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
 th{font-weight:600;color:var(--mute);font-size:.8rem}tr:last-child td{border-bottom:0}
 td.h{font-weight:600}td.sc{white-space:nowrap}.rng{display:block;font-weight:400;font-size:.72rem;color:var(--mute);white-space:nowrap}
@@ -38,8 +38,8 @@ tbody#rows tr{cursor:pointer}
 <div class="ctx" id="mission" style="display:none;font-size:.98rem"></div>
 <div class="ctx" id="ctx" style="display:none"></div>
 <p class="sub" style="margin:0 0 8px">Wait color key (minutes): <span style="background:var(--c0);padding:1px 8px;border-radius:4px">0–19</span> <span style="background:var(--c1);padding:1px 8px;border-radius:4px">20–39</span> <span style="background:var(--c2);padding:1px 8px;border-radius:4px">40–59</span> <span style="background:var(--c3);padding:1px 8px;border-radius:4px">60+</span></p>
-<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
-<p class="sub" style="margin-top:8px">Tap a ride for the full picture — the +30/+60/+90 stepping-stone forecasts, its scorecard, and the last 4 hours of predicted-vs-posted.</p>
+<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30</th><th>+60</th><th>+90</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="sub" style="margin-top:8px">Tap a ride for the breakdown — its full scorecard at every horizon and the last 4 hours of predicted-vs-posted.</p>
 <div id="rideModal" class="modal" style="display:none" onclick="if(event.target===this)closeRide()">
  <div class="sheet">
   <button type="button" class="x" onclick="closeRide()" aria-label="Close">✕</button>
@@ -126,11 +126,12 @@ fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   const m120=d.metrics['120']||{};
   const mel=document.getElementById('mission');mel.style.display='block';
   mel.innerHTML='<b>The goal: call the posted wait 2 hours out with 2% error.</b> '+(m120.mae!=null?
-    `Right now the +2 hr forecast stands at <b>${m120.mape_ge20}% error</b> on 20+ min waits · ${m120.mae} min average miss · ${m120.within5}% within 5 min · ${m120.improvement_pct}% better than “same as now” (${m120.model||''}). The +30/+60/+90 forecasts are the stepping stones that build confidence in the +2 hr call — they live in each ride’s scorecard.`:
+    `Right now the +2 hr forecast stands at <b>${m120.mape_ge20}% error</b> on 20+ min waits · ${m120.mae} min average miss · ${m120.within5}% within 5 min · ${m120.improvement_pct}% better than “same as now” (${m120.model||''}). The +30/+60/+90 forecasts in the table are the stepping stones that build confidence in the +2 hr call; tap any ride for its full scorecard and the last 4 hours of calls.`:
     'The +2 hr model is still collecting the data it needs to ship.');
   RIDES=d.rides;LOOKBACK=d.lookback||{};
+  const fc=h=>r=>`<td class="h" style="background:${heat(r['f'+h])}">${r['f'+h]}${r['f'+h+'_lo']!=null?`<span class="rng">${r['f'+h+'_lo']}–${r['f'+h+'_hi']}</span>`:''}</td>`;
   document.getElementById('rows').innerHTML=d.rides.map((r,i)=>`<tr onclick="openRide(${i})"><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
-    `<td class="h" style="background:${heat(r.f120)}">${r.f120}${r.f120_lo!=null?`<span class="rng">${r.f120_lo}–${r.f120_hi}</span>`:''}</td>`+`<td class="sc">${r.score120_mae!=null?'±'+r.score120_mae+' min'+(r.score120_in10!=null?`<span class="rng">${r.score120_in5!=null?r.score120_in5+'% in 5 · ':''}${r.score120_in10}% in 10</span>`:''):'—'}</td>`+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
+    fc(30)(r)+fc(60)(r)+fc(90)(r)+fc(120)(r)+`<td class="sc">${r.score120_mae!=null?'±'+r.score120_mae+' min'+(r.score120_in10!=null?`<span class="rng">${r.score120_in5!=null?r.score120_in5+'% in 5 · ':''}${r.score120_in10}% in 10</span>`:''):'—'}</td>`+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
   const f=[['30','+30'],['60','+60'],['90','+90'],['120','+120']].filter(([h])=>(d.metrics[h]||{}).top_features)
     .map(([h,l])=>`<p class="factors"><b>${l} min:</b> ${(d.metrics[h].top_features||[]).join(', ')}</p>`).join('');
   if(f)document.getElementById('factors').innerHTML=f;
