@@ -293,7 +293,7 @@ def main():
     cut = uniq_times[int(len(uniq_times) * 0.8)] if len(uniq_times) >= 10 else None
 
     metrics, models, intervals = {}, {}, {}
-    ride_scores = {}   # per-ride holdout score for the dashboard (+120 only)
+    ride_scores = {}   # per-ride holdout scores for the dashboard (all horizons)
     for h in HORIZONS:
         d = feat.dropna(subset=["wait", f"y{h}"]).sort_index()
         if len(d):
@@ -323,21 +323,20 @@ def main():
                     return np.clip(np.round(p / 5.0) * 5, 0, None)
                 s = score(ship_pred(te, m), te[f"y{h}"].values, te["wait"].values)
                 entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)), evaluation="chronological holdout with horizon embargo")
-                if h == 120:
-                    # Score the predictor that will actually ship (the model
-                    # if it won, else persistence), per ride, for the
-                    # dashboard's "+2 hr score" column.
-                    shipped_pred = (ship_pred(te, m) if s["mae"] < s["baseline_mae"]
-                                    else te["wait"].values)
-                    tmp = pd.DataFrame({"name": te["name"].values,
-                                        "err": np.abs(np.asarray(shipped_pred, float)
-                                                      - te[f"y{h}"].values)})
-                    ride_scores[h] = {
-                        n: {"mae": round(float(g["err"].mean()), 1),
-                            "within10": round(float((g["err"] <= 10).mean() * 100)),
-                            "within5": round(float((g["err"] <= 5).mean() * 100)),
-                            "pairs": int(len(g))}
-                        for n, g in tmp.groupby("name") if len(g) >= 30}
+                # Score the predictor that will actually ship (the model if
+                # it won, else persistence), per ride, for the dashboard's
+                # per-horizon score columns.
+                shipped_pred = (ship_pred(te, m) if s["mae"] < s["baseline_mae"]
+                                else te["wait"].values)
+                tmp = pd.DataFrame({"name": te["name"].values,
+                                    "err": np.abs(np.asarray(shipped_pred, float)
+                                                  - te[f"y{h}"].values)})
+                ride_scores[h] = {
+                    n: {"mae": round(float(g["err"].mean()), 1),
+                        "within10": round(float((g["err"] <= 10).mean() * 100)),
+                        "within5": round(float((g["err"] <= 5).mean() * 100)),
+                        "pairs": int(len(g))}
+                    for n, g in tmp.groupby("name") if len(g) >= 30}
                 try:
                     sample = te.sample(min(2000, len(te)), random_state=0)
                     pi = permutation_importance(m, sample[cols], sample[f"y{h}"] - sample["wait"],
@@ -391,12 +390,13 @@ def main():
                 hi_p = max(0.0, round((base + float(hi.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5)
                 row[f"f{h}_lo"] = int(lo_p)
                 row[f"f{h}_hi"] = int(max(lo_p, hi_p))
-        sc = ride_scores.get(120, {}).get(r["name"])
-        if sc:
-            row["score120_mae"] = sc["mae"]
-            row["score120_in10"] = sc["within10"]
-            row["score120_in5"] = sc["within5"]
-            row["score120_pairs"] = sc["pairs"]
+        for h in HORIZONS:
+            sc = ride_scores.get(h, {}).get(r["name"])
+            if sc:
+                row[f"score{h}_mae"] = sc["mae"]
+                row[f"score{h}_in10"] = sc["within10"]
+                row[f"score{h}_in5"] = sc["within5"]
+                row[f"score{h}_pairs"] = sc["pairs"]
         profile = cap.get(r["name"])
         row["people"] = None
         if isinstance(profile, dict):
