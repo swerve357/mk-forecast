@@ -313,14 +313,21 @@ def main():
                 cat = [cols.index("ride_code")] if "ride_code" in cols else None
                 m = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
                                                   categorical_features=cat)
-                m.fit(tr[cols], tr[f"y{h}"])
-                s = score(m.predict(te[cols]), te[f"y{h}"].values, te["wait"].values)
+                # Delta target + round-to-5 (adopted 2026-11-03 after A/B:
+                # the model learns the CHANGE from the current wait, and
+                # predictions snap to Disney's 5-minute posted steps. The
+                # ship gate below scores exactly this shipped form.)
+                m.fit(tr[cols], tr[f"y{h}"] - tr["wait"])
+                def ship_pred(frame, model):
+                    p = frame["wait"].values + model.predict(frame[cols])
+                    return np.clip(np.round(p / 5.0) * 5, 0, None)
+                s = score(ship_pred(te, m), te[f"y{h}"].values, te["wait"].values)
                 entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)), evaluation="chronological holdout with horizon embargo")
                 if h == 120:
                     # Score the predictor that will actually ship (the model
                     # if it won, else persistence), per ride, for the
                     # dashboard's "+2 hr score" column.
-                    shipped_pred = (m.predict(te[cols]) if s["mae"] < s["baseline_mae"]
+                    shipped_pred = (ship_pred(te, m) if s["mae"] < s["baseline_mae"]
                                     else te["wait"].values)
                     tmp = pd.DataFrame({"name": te["name"].values,
                                         "err": np.abs(np.asarray(shipped_pred, float)
@@ -333,7 +340,7 @@ def main():
                         for n, g in tmp.groupby("name") if len(g) >= 30}
                 try:
                     sample = te.sample(min(2000, len(te)), random_state=0)
-                    pi = permutation_importance(m, sample[cols], sample[f"y{h}"],
+                    pi = permutation_importance(m, sample[cols], sample[f"y{h}"] - sample["wait"],
                                                 n_repeats=3, random_state=0,
                                                 scoring="neg_mean_absolute_error")
                     order = np.argsort(pi.importances_mean)[::-1]
@@ -342,9 +349,9 @@ def main():
                 except Exception as e:
                     print(f"importance {h}: {e}")
                 if s["mae"] < s["baseline_mae"]:   # only ship a model that wins
-                    m.fit(d[cols], d[f"y{h}"])
+                    m.fit(d[cols], d[f"y{h}"] - d["wait"])
                     models[h] = (m, cols)
-                    entry["model"] = "gradient boosting"
+                    entry["model"] = "gradient boosting (delta+round5)"
                     if len(d) >= MIN_QUANTILE_ROWS:
                         try:
                             lo = HistGradientBoostingRegressor(
@@ -353,7 +360,7 @@ def main():
                             hi = HistGradientBoostingRegressor(
                                 loss="quantile", quantile=0.9, max_iter=150,
                                 learning_rate=0.07, categorical_features=cat)
-                            lo.fit(d[cols], d[f"y{h}"]); hi.fit(d[cols], d[f"y{h}"])
+                            lo.fit(d[cols], d[f"y{h}"] - d["wait"]); hi.fit(d[cols], d[f"y{h}"] - d["wait"])
                             intervals[h] = (lo, hi, cols)
                         except Exception as e:
                             print(f"quantile {h}: {e}")
@@ -372,14 +379,18 @@ def main():
         for h in HORIZONS:
             if h in models:
                 mdl, mcols = models[h]
-                p = float(mdl.predict(pd.DataFrame([r])[mcols])[0])
+                p = float(r["wait"]) + float(mdl.predict(pd.DataFrame([r])[mcols])[0])
+                p = max(0.0, round(p / 5.0) * 5)
             else:
                 p = float(r["wait"])
-            row[f"f{h}"] = int(max(0, round(p)))
+            row[f"f{h}"] = int(p)
             if h in intervals:
                 lo, hi, icols = intervals[h]
-                row[f"f{h}_lo"] = int(max(0, round(float(lo.predict(pd.DataFrame([r])[icols])[0]))))
-                row[f"f{h}_hi"] = int(max(row[f"f{h}_lo"], round(float(hi.predict(pd.DataFrame([r])[icols])[0]))))
+                base = float(r["wait"])
+                lo_p = max(0.0, round((base + float(lo.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5)
+                hi_p = max(0.0, round((base + float(hi.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5)
+                row[f"f{h}_lo"] = int(lo_p)
+                row[f"f{h}_hi"] = int(max(lo_p, hi_p))
         sc = ride_scores.get(120, {}).get(r["name"])
         if sc:
             row["score120_mae"] = sc["mae"]
