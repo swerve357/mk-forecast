@@ -15,25 +15,74 @@ h1{font-size:1.35rem;margin:8px 0 2px}h2{font-size:1rem;margin:18px 0 6px}.sub{c
 .acc div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .acc b{display:block;font-size:1.15rem;font-variant-numeric:tabular-nums}.acc span{color:var(--mute);font-size:.78rem;display:block}
 .wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
-table{border-collapse:collapse;width:100%;min-width:1060px;font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;min-width:520px;font-variant-numeric:tabular-nums}
 th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
 th{font-weight:600;color:var(--mute);font-size:.8rem}tr:last-child td{border-bottom:0}
 td.h{font-weight:600}td.sc{white-space:nowrap}.rng{display:block;font-weight:400;font-size:.72rem;color:var(--mute);white-space:nowrap}
 .factors{color:var(--mute);font-size:.85rem;margin:2px 0}
+.modal{position:fixed;inset:0;background:rgba(8,15,22,.55);display:flex;align-items:flex-end;justify-content:center;z-index:50}
+@media (min-width:640px){.modal{align-items:center;padding:20px}}
+.sheet{background:var(--panel);color:var(--ink);border-radius:14px 14px 0 0;width:100%;max-width:540px;max-height:88vh;overflow:auto;padding:18px;position:relative;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+@media (min-width:640px){.sheet{border-radius:14px}}
+.sheet h2{margin:0 28px 4px 0;font-size:1.15rem}
+.sheet .x{position:absolute;top:10px;right:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:6px;font:inherit;font-size:.95rem;line-height:1;padding:5px 10px;cursor:pointer}
+.sheet table{min-width:0;font-size:.9rem}
+.sheet th,.sheet td{padding:6px 8px}
+.rng2{font-weight:400;font-size:.75rem;color:var(--mute);white-space:nowrap}
+tbody#rows tr{cursor:pointer}
 </style></head><body>
 <h1>Magic Kingdom wait forecast</h1>
 <p class="sub" id="sub">Loading…</p>
 <p style="margin:0 0 12px"><button type="button" onclick="location.reload()" style="font:inherit;font-size:.9rem;padding:6px 14px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);cursor:pointer">↻ Update</button></p>
 <div id="banner"></div>
+<div class="ctx" id="mission" style="display:none;font-size:.98rem"></div>
 <div class="ctx" id="ctx" style="display:none"></div>
-<div class="acc" id="acc"></div>
 <p class="sub" style="margin:0 0 8px">Wait color key (minutes): <span style="background:var(--c0);padding:1px 8px;border-radius:4px">0–19</span> <span style="background:var(--c1);padding:1px 8px;border-radius:4px">20–39</span> <span style="background:var(--c2);padding:1px 8px;border-radius:4px">40–59</span> <span style="background:var(--c3);padding:1px 8px;border-radius:4px">60+</span></p>
-<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30 min</th><th>+30 score</th><th>+60 min</th><th>+60 score</th><th>+90 min</th><th>+90 score</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="sub" style="margin-top:8px">Tap a ride for the full picture — the +30/+60/+90 stepping-stone forecasts, its scorecard, and the last 4 hours of predicted-vs-posted.</p>
+<div id="rideModal" class="modal" style="display:none" onclick="if(event.target===this)closeRide()">
+ <div class="sheet">
+  <button type="button" class="x" onclick="closeRide()" aria-label="Close">✕</button>
+  <h2 id="rdTitle"></h2>
+  <div id="rdBody"></div>
+ </div>
+</div>
 <h2>What the model is learning from</h2>
 <div id="factors"><p class="factors">Factor rankings appear after the first model beats the “same as now” baseline on unseen time.</p></div>
-<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Model selection uses the newest 20% of time, with a forecast-horizon gap before training ends. This is preliminary backtesting, not independent prospective validation. MAE is average absolute error, not a confidence interval. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. Queue scenarios = posted wait × assumed hourly capacity × standby share. These are uncalibrated ranges, not measured headcounts or park attendance. Edit capacity.json to tune them. Historical change-log replay is identified separately from live samples. Each score column sits right of its forecast and is per ride, from the same validation holdout: ± is the average minutes between that horizon’s prediction and the actual wait (lower is better), and the percentages are how often that prediction landed within 5 and within 10 minutes of the actual wait (higher is better). Both should improve as live data replaces replayed history. Powered by ThemeParks.wiki.</p>
+<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Model selection uses the newest 20% of time, with a forecast-horizon gap before training ends. This is preliminary backtesting, not independent prospective validation. MAE is average absolute error, not a confidence interval. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. Queue scenarios = posted wait × assumed hourly capacity × standby share. These are uncalibrated ranges, not measured headcounts or park attendance. Edit capacity.json to tune them. Historical change-log replay is identified separately from live samples. The “+2 hr score” column is per ride, from the same validation holdout: ± is the average minutes between the +2 hr prediction and the actual wait (lower is better), and the percentages are how often that prediction landed within 5 and within 10 minutes of the actual wait (higher is better). Tap a ride for its full scorecard at every horizon and the last 4 hours of predicted-vs-posted. Both should improve as live data replaces replayed history. Powered by ThemeParks.wiki.</p>
 <script>
 const heat=m=>m>=60?'var(--c3)':m>=40?'var(--c2)':m>=20?'var(--c1)':'var(--c0)';
+let RIDES=[];
+let LOOKBACK={};
+function closeRide(){document.getElementById('rideModal').style.display='none'}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeRide()});
+function openRide(i){
+  const r=RIDES[i];if(!r)return;
+  const t=r.trend30||0;
+  const trend=t>0?'up '+t+' over the last 30 min':t<0?'down '+(-t)+' over the last 30 min':'steady over the last 30 min';
+  const q=r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString()+' people in the standby queue (scenario)':r.people!=null?'~'+r.people.toLocaleString()+' people in the standby queue (scenario)':'queue scenario not configured for this ride';
+  const rows=[['+30 min','f30',30],['+60 min','f60',60],['+90 min','f90',90],['+2 hr','f120',120]].map(([l,k,h])=>{
+    const lo=r[k+'_lo'],sm=r['score'+h+'_mae'],s5=r['score'+h+'_in5'],s10=r['score'+h+'_in10'],pr=r['score'+h+'_pairs'];
+    return `<tr><td>${l}</td><td class="h">${r[k]}${lo!=null?` <span class="rng2">${lo}–${r[k+'_hi']}</span>`:''}</td><td>${sm!=null?'±'+sm+' min':'—'}</td><td>${s5!=null?s5+'%':'—'}</td><td>${s10!=null?s10+'%':'—'}</td><td>${pr!=null?pr:'—'}</td></tr>`}).join('');
+  const lb=LOOKBACK[r.name]||[];
+  const errBg=e=>e<=5?'var(--c0)':e<=10?'var(--c1)':e<=15?'var(--c2)':'var(--c3)';
+  const lbCell=h=>e=>e['p'+h]!=null?`<td style="background:${errBg(Math.abs(e['p'+h]-e.actual))}">${e['p'+h]}</td>`:'<td>—</td>';
+  const lbHtml=lb.length?
+    `<h2 style="margin:16px 0 6px;font-size:1rem">Last 4 hours — what we predicted vs what posted</h2>`+
+    `<table><thead><tr><th>Time</th><th>Posted</th><th>+30</th><th>+60</th><th>+90</th><th>+2 hr</th></tr></thead><tbody>`+
+    lb.map(e=>`<tr><td>${e.t}</td><td class="h">${e.actual}</td>${lbCell(30)(e)}${lbCell(60)(e)}${lbCell(90)(e)}${lbCell(120)(e)}</tr>`).join('')+
+    `</tbody></table>`+
+    `<p class="sub" style="margin:8px 0 0">Each cell is the prediction made for that exact time, shaded by its miss (green ≤5 min, yellow ≤10, orange ≤15, red beyond). After a closure or a spike the misses flare — how fast the row settles back to green is the bounce-back, and that reaction is the real product.</p>`:
+    `<p class="sub" style="margin:12px 0 0">The last-4-hours proof view is still filling in — every run logs its predictions, so this builds through the day.</p>`;
+  document.getElementById('rdTitle').textContent=r.name;
+  document.getElementById('rdBody').innerHTML=
+    `<p class="sub" style="margin:0 0 4px">Now <b>${r.now} min</b> · ${trend}</p>`+
+    `<p class="sub" style="margin:0 0 10px">${q}</p>`+
+    `<table><thead><tr><th>Horizon</th><th>Forecast</th><th>Avg miss</th><th>% in 5</th><th>% in 10</th><th>Tests</th></tr></thead><tbody>${rows}</tbody></table>`+
+    `<p class="sub" style="margin:10px 0 0">Scores come from the same validation holdout the ship gate uses, scoring the predictor that actually ships at each horizon (the trained model where it won, “same as now” where it didn’t). Tests = validation predictions behind the score; ranges are the model’s 10th–90th percentile where shown.</p>`+
+    lbHtml;
+  document.getElementById('rideModal').style.display='flex';
+}
 fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
   document.getElementById('sub').textContent='Updated '+new Date(d.updated).toLocaleString()+' · '+d.samples.toLocaleString()+' records ('+(d.history_samples||0).toLocaleString()+' historical replay)';
   const age=(Date.now()-new Date(d.last_sample).getTime())/60000;
@@ -49,18 +98,14 @@ fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
     if(c.ll_multipass_usd)bits.push('Lightning Lane Multi Pass $'+c.ll_multipass_usd);
     const el=document.getElementById('ctx');el.style.display='block';el.textContent=bits.join(' · ');
   }
-  document.getElementById('acc').innerHTML=[['30','+30 min'],['60','+60 min'],['90','+90 min'],['120','+2 hr']].map(([h,l])=>{
-    const m=d.metrics[h]||{};const ok=m.mae!=null&&m.model&&m.model.indexOf('gradient')===0;
-    const shown=m.mae!=null;
-    return `<div><span>${l} accuracy</span><b>${shown?m.mae+' min MAE':'—'}</b>`+
-      `<span>${m.model||'collecting data'}</span><span>${shown?m.within10+'% within 10 min':'collecting data'}</span>`+
-      `<span>${shown&&m.within5!=null?m.within5+'% within 5 min':''}</span>`+
-      `<span>${shown&&m.mape_ge20!=null?'Error '+m.mape_ge20+'% on 20+ min waits':''}</span>`+
-      `<span>${shown&&m.improvement_pct!=null?m.improvement_pct+'% better than “same as now”':(m.model||'')}</span></div>`}).join('');
-  const scCell=(r,h)=>{const m=r['score'+h+'_mae'],i10=r['score'+h+'_in10'],i5=r['score'+h+'_in5'];
-    return `<td class="sc">${m!=null?'±'+m+' min'+(i10!=null?`<span class="rng">${i5!=null?i5+'% in 5 · ':''}${i10}% in 10</span>`:''):'—'}</td>`};
-  document.getElementById('rows').innerHTML=d.rides.map(r=>`<tr><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
-    [['f30',30],['f60',60],['f90',90],['f120',120]].map(([k,h])=>`<td class="h" style="background:${heat(r[k])}">${r[k]}${r[k+'_lo']!=null?`<span class="rng">${r[k+'_lo']}–${r[k+'_hi']}</span>`:''}</td>`+scCell(r,h)).join('')+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
+  const m120=d.metrics['120']||{};
+  const mel=document.getElementById('mission');mel.style.display='block';
+  mel.innerHTML='<b>The goal: call the posted wait 2 hours out with 2% error.</b> '+(m120.mae!=null?
+    `Right now the +2 hr forecast stands at <b>${m120.mape_ge20}% error</b> on 20+ min waits · ${m120.mae} min average miss · ${m120.within5}% within 5 min · ${m120.improvement_pct}% better than “same as now” (${m120.model||''}). The +30/+60/+90 forecasts are the stepping stones that build confidence in the +2 hr call — they live in each ride’s scorecard.`:
+    'The +2 hr model is still collecting the data it needs to ship.');
+  RIDES=d.rides;LOOKBACK=d.lookback||{};
+  document.getElementById('rows').innerHTML=d.rides.map((r,i)=>`<tr onclick="openRide(${i})"><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
+    `<td class="h" style="background:${heat(r.f120)}">${r.f120}${r.f120_lo!=null?`<span class="rng">${r.f120_lo}–${r.f120_hi}</span>`:''}</td>`+`<td class="sc">${r.score120_mae!=null?'±'+r.score120_mae+' min'+(r.score120_in10!=null?`<span class="rng">${r.score120_in5!=null?r.score120_in5+'% in 5 · ':''}${r.score120_in10}% in 10</span>`:''):'—'}</td>`+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
   const f=[['30','+30'],['60','+60'],['90','+90'],['120','+120']].filter(([h])=>(d.metrics[h]||{}).top_features)
     .map(([h,l])=>`<p class="factors"><b>${l} min:</b> ${(d.metrics[h].top_features||[]).join(', ')}</p>`).join('');
   if(f)document.getElementById('factors').innerHTML=f;
