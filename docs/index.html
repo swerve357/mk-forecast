@@ -15,10 +15,10 @@ h1{font-size:1.35rem;margin:8px 0 2px}h2{font-size:1rem;margin:18px 0 6px}.sub{c
 .acc div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .acc b{display:block;font-size:1.15rem;font-variant-numeric:tabular-nums}.acc span{color:var(--mute);font-size:.78rem;display:block}
 .wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
-table{border-collapse:collapse;width:100%;min-width:640px;font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;min-width:1060px;font-variant-numeric:tabular-nums}
 th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
 th{font-weight:600;color:var(--mute);font-size:.8rem}tr:last-child td{border-bottom:0}
-td.h{font-weight:600}.rng{display:block;font-weight:400;font-size:.72rem;color:var(--mute)}
+td.h{font-weight:600}td.sc{white-space:nowrap}.rng{display:block;font-weight:400;font-size:.72rem;color:var(--mute);white-space:nowrap}
 .factors{color:var(--mute);font-size:.85rem;margin:2px 0}
 </style></head><body>
 <h1>Magic Kingdom wait forecast</h1>
@@ -28,10 +28,10 @@ td.h{font-weight:600}.rng{display:block;font-weight:400;font-size:.72rem;color:v
 <div class="ctx" id="ctx" style="display:none"></div>
 <div class="acc" id="acc"></div>
 <p class="sub" style="margin:0 0 8px">Wait color key (minutes): <span style="background:var(--c0);padding:1px 8px;border-radius:4px">0–19</span> <span style="background:var(--c1);padding:1px 8px;border-radius:4px">20–39</span> <span style="background:var(--c2);padding:1px 8px;border-radius:4px">40–59</span> <span style="background:var(--c3);padding:1px 8px;border-radius:4px">60+</span></p>
-<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30 min</th><th>+60 min</th><th>+90 min</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30 min</th><th>+30 score</th><th>+60 min</th><th>+60 score</th><th>+90 min</th><th>+90 score</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
 <h2>What the model is learning from</h2>
 <div id="factors"><p class="factors">Factor rankings appear after the first model beats the “same as now” baseline on unseen time.</p></div>
-<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Model selection uses the newest 20% of time, with a forecast-horizon gap before training ends. This is preliminary backtesting, not independent prospective validation. MAE is average absolute error, not a confidence interval. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. Queue scenarios = posted wait × assumed hourly capacity × standby share. These are uncalibrated ranges, not measured headcounts or park attendance. Edit capacity.json to tune them. Historical change-log replay is identified separately from live samples. The “+2 hr score” column is per ride, from the same validation holdout: ± is the average minutes between the +2 hr prediction and the actual wait (lower is better), and the percentages are how often that prediction landed within 5 and within 10 minutes of the actual wait (higher is better). Both should improve as live data replaces replayed history. Powered by ThemeParks.wiki.</p>
+<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Model selection uses the newest 20% of time, with a forecast-horizon gap before training ends. This is preliminary backtesting, not independent prospective validation. MAE is average absolute error, not a confidence interval. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. Queue scenarios = posted wait × assumed hourly capacity × standby share. These are uncalibrated ranges, not measured headcounts or park attendance. Edit capacity.json to tune them. Historical change-log replay is identified separately from live samples. Each score column sits right of its forecast and is per ride, from the same validation holdout: ± is the average minutes between that horizon’s prediction and the actual wait (lower is better), and the percentages are how often that prediction landed within 5 and within 10 minutes of the actual wait (higher is better). Both should improve as live data replaces replayed history. Powered by ThemeParks.wiki.</p>
 <script>
 const heat=m=>m>=60?'var(--c3)':m>=40?'var(--c2)':m>=20?'var(--c1)':'var(--c0)';
 fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
@@ -57,8 +57,10 @@ fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
       `<span>${shown&&m.within5!=null?m.within5+'% within 5 min':''}</span>`+
       `<span>${shown&&m.mape_ge20!=null?'Error '+m.mape_ge20+'% on 20+ min waits':''}</span>`+
       `<span>${shown&&m.improvement_pct!=null?m.improvement_pct+'% better than “same as now”':(m.model||'')}</span></div>`}).join('');
+  const scCell=(r,h)=>{const m=r['score'+h+'_mae'],i10=r['score'+h+'_in10'],i5=r['score'+h+'_in5'];
+    return `<td class="sc">${m!=null?'±'+m+' min'+(i10!=null?`<span class="rng">${i5!=null?i5+'% in 5 · ':''}${i10}% in 10</span>`:''):'—'}</td>`};
   document.getElementById('rows').innerHTML=d.rides.map(r=>`<tr><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
-    ['f30','f60','f90','f120'].map(k=>`<td class="h" style="background:${heat(r[k])}">${r[k]}${r[k+'_lo']!=null?`<span class="rng">${r[k+'_lo']}–${r[k+'_hi']}</span>`:''}</td>`).join('')+`<td>${r.score120_mae!=null?'±'+r.score120_mae+' min'+(r.score120_in10!=null?`<span class="rng">${r.score120_in5!=null?r.score120_in5+'% within 5 · ':''}${r.score120_in10}% within 10 min</span>`:''):'—'}</td>`+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
+    [['f30',30],['f60',60],['f90',90],['f120',120]].map(([k,h])=>`<td class="h" style="background:${heat(r[k])}">${r[k]}${r[k+'_lo']!=null?`<span class="rng">${r[k+'_lo']}–${r[k+'_hi']}</span>`:''}</td>`+scCell(r,h)).join('')+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
   const f=[['30','+30'],['60','+60'],['90','+90'],['120','+120']].filter(([h])=>(d.metrics[h]||{}).top_features)
     .map(([h,l])=>`<p class="factors"><b>${l} min:</b> ${(d.metrics[h].top_features||[]).join(', ')}</p>`).join('');
   if(f)document.getElementById('factors').innerHTML=f;
