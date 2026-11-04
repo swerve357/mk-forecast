@@ -1,14 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-04T17:10:57.680946+00:00",
+ "updated": "2026-11-04T17:16:03.552782+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Space Mountain": "2026-11-04 10:35:00-05:00",
-  "Walt Disney World Railroad - Fantasyland": "2026-11-04 10:55:00-05:00",
-  "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-04 10:55:00-05:00"
+  "Space Mountain": "2026-11-04 10:35:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 2,
  "graded_all": {
   "n": 0
  },
@@ -20,8 +18,29 @@
    "n": 0
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 2,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-1",
+   "type": "D2",
+   "event_ride": "Walt Disney World Railroad - Fantasyland",
+   "ride": "Walt Disney World Railroad - Fantasyland",
+   "horizon": 30,
+   "base": 25.0,
+   "shadow": 20.0,
+   "reason": "reopened after 85 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-2",
+   "type": "D2",
+   "event_ride": "Walt Disney World Railroad - Main Street, U.S.A.",
+   "ride": "Walt Disney World Railroad - Main Street, U.S.A.",
+   "horizon": 30,
+   "base": 25.0,
+   "shadow": 20.0,
+   "reason": "reopened after 85 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
