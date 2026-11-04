@@ -431,8 +431,8 @@ def main():
         log = pd.DataFrame(new_rows)
         if os.path.exists(PREDLOG):
             log = pd.concat([pd.read_csv(PREDLOG), log], ignore_index=True)
-        log["made_at"] = pd.to_datetime(log["made_at"], utc=True)
-        log["target"] = pd.to_datetime(log["target"], utc=True)
+        log["made_at"] = pd.to_datetime(log["made_at"], utc=True, format="mixed")
+        log["target"] = pd.to_datetime(log["target"], utc=True, format="mixed")
         cutoff = lts - pd.Timedelta(hours=8)
         log = (log.drop_duplicates(subset=["made_at", "name", "horizon"], keep="last")
                   .loc[lambda x: x["made_at"] >= cutoff]
