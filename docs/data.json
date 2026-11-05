@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-05T04:35:55.900554+00:00",
- "last_sample": "2026-11-05T04:35:29+00:00",
- "samples": 27625,
+ "updated": "2026-11-05T04:40:52.016119+00:00",
+ "last_sample": "2026-11-05T04:40:29+00:00",
+ "samples": 27661,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -11,14 +11,14 @@
    "test_rows": 3954,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.3,
-   "rmse": 7.0,
-   "within10": 92,
+   "rmse": 6.9,
+   "within10": 93,
    "within5": 78,
-   "mape_ge20": 18.7,
-   "bias": -0.3,
+   "mape_ge20": 18.6,
+   "bias": -0.0,
    "baseline_mae": 5.2,
    "baseline_mape_ge20": 24.3,
-   "improvement_pct": 16.9,
+   "improvement_pct": 17.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -26,7 +26,7 @@
     "hour_cos",
     "diff_30",
     "lag_60",
-    "lag_120"
+    "lag_yday"
    ]
   },
   "60": {
@@ -39,10 +39,10 @@
    "within10": 91,
    "within5": 77,
    "mape_ge20": 21.0,
-   "bias": -0.4,
+   "bias": -0.3,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.6,
-   "improvement_pct": 26.1,
+   "improvement_pct": 25.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_60"
+    "diff_15"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 10710,
    "test_rows": 3575,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.6,
-   "rmse": 7.2,
-   "within10": 91,
+   "mae": 4.8,
+   "rmse": 7.4,
+   "within10": 90,
    "within5": 77,
-   "mape_ge20": 19.8,
+   "mape_ge20": 20.5,
    "bias": -0.1,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.8,
-   "improvement_pct": 27.3,
+   "improvement_pct": 24.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -86,11 +86,11 @@
    "rmse": 7.4,
    "within10": 90,
    "within5": 74,
-   "mape_ge20": 21.4,
-   "bias": 0.1,
+   "mape_ge20": 20.9,
+   "bias": 0.0,
    "baseline_mae": 7.3,
    "baseline_mape_ge20": 31.6,
-   "improvement_pct": 30.4,
+   "improvement_pct": 30.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -113,7 +113,7 @@
  },
  "demo": false,
  "lookback": {},
- "lookback_debug": "log rows 8312; act (823, 31) idx 2026-10-30 04:00:00+00:00..2026-11-05 03:05:00+00:00; slots 10; lookback rides 0",
+ "lookback_debug": "log rows 8200; act (823, 31) idx 2026-10-30 04:00:00+00:00..2026-11-05 03:05:00+00:00; slots 10; lookback rides 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-05T04:36:08.616194+00:00",
