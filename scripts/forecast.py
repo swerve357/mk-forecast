@@ -498,14 +498,16 @@ def main():
                 "date": str(lts.tz_convert(et).date()), "graded": int(len(m)),
                 "exact": int(round(float((err == 0).mean() * 100))),
                 "in5": int(round(float((err <= 5).mean() * 100))),
-                "in10": int(round(float((err <= 10).mean() * 100)))})
+                "in10": int(round(float((err <= 10).mean() * 100))),
+                "in15": int(round(float((err <= 15).mean() * 100)))})
             for hh, g in m.groupby("horizon"):
                 e2 = (g["pred"] - g["actual"]).abs()
                 today_stats.setdefault("by_horizon", {})[str(int(hh))] = {
                     "graded": int(len(g)),
                     "exact": int(round(float((e2 == 0).mean() * 100))),
                     "in5": int(round(float((e2 <= 5).mean() * 100))),
-                    "in10": int(round(float((e2 <= 10).mean() * 100)))}
+                    "in10": int(round(float((e2 <= 10).mean() * 100))),
+                    "in15": int(round(float((e2 <= 15).mean() * 100)))}
         lb_debug.append(f"today graded {today_stats.get('graded', 0)}")
     except Exception as ex:
         lb_debug.append(f"lookback EXC {type(ex).__name__}: {ex}")
