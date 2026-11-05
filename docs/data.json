@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-05T11:15:48.413325+00:00",
- "last_sample": "2026-11-05T11:15:28+00:00",
- "samples": 30505,
+ "updated": "2026-11-05T11:20:58.415892+00:00",
+ "last_sample": "2026-11-05T11:20:32+00:00",
+ "samples": 30541,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -10,15 +10,15 @@
    "train_rows": 12025,
    "test_rows": 3954,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.2,
+   "mae": 4.3,
    "rmse": 6.9,
-   "within10": 93,
+   "within10": 92,
    "within5": 78,
-   "mape_ge20": 18.7,
-   "bias": -0.3,
+   "mape_ge20": 18.6,
+   "bias": -0.2,
    "baseline_mae": 5.2,
    "baseline_mape_ge20": 24.3,
-   "improvement_pct": 17.7,
+   "improvement_pct": 17.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -26,7 +26,7 @@
     "hour_cos",
     "diff_30",
     "lag_60",
-    "roll_std_60"
+    "hour_sin"
    ]
   },
   "60": {
@@ -37,12 +37,12 @@
    "mae": 4.6,
    "rmse": 7.2,
    "within10": 91,
-   "within5": 77,
-   "mape_ge20": 20.1,
-   "bias": -0.3,
+   "within5": 76,
+   "mape_ge20": 20.9,
+   "bias": -0.5,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.6,
-   "improvement_pct": 26.1,
+   "improvement_pct": 26.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_60"
+    "diff_15"
    ]
   },
   "90": {
@@ -61,12 +61,12 @@
    "mae": 4.6,
    "rmse": 7.2,
    "within10": 91,
-   "within5": 78,
-   "mape_ge20": 20.1,
-   "bias": -0.1,
+   "within5": 77,
+   "mape_ge20": 19.4,
+   "bias": -0.0,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.8,
-   "improvement_pct": 27.3,
+   "improvement_pct": 27.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -82,15 +82,15 @@
    "train_rows": 10090,
    "test_rows": 3426,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.0,
-   "rmse": 7.5,
-   "within10": 90,
-   "within5": 74,
-   "mape_ge20": 21.7,
-   "bias": -0.2,
+   "mae": 5.1,
+   "rmse": 7.4,
+   "within10": 91,
+   "within5": 75,
+   "mape_ge20": 21.6,
+   "bias": 0.0,
    "baseline_mae": 7.3,
    "baseline_mape_ge20": 31.6,
-   "improvement_pct": 31.5,
+   "improvement_pct": 30.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -98,7 +98,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_120"
+    "roll_mean_60"
    ]
   }
  },
