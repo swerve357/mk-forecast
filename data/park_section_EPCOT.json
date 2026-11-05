@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-05T02:16:05.110222+00:00",
- "last_sample": "2026-11-05T02:15:32+00:00",
- "samples": 13906,
+ "updated": "2026-11-05T02:41:14.769046+00:00",
+ "last_sample": "2026-11-05T02:40:35+00:00",
+ "samples": 14076,
  "history_samples": 0,
  "rides": [],
  "metrics": {
@@ -23,10 +23,10 @@
    "top_features": [
     "ride_code",
     "wait",
-    "lag_60",
     "roll_mean_60",
-    "roll_std_60",
-    "roll_mean_30"
+    "lag_60",
+    "roll_mean_30",
+    "roll_std_60"
    ],
    "candidate_mae": 3.3
   },
@@ -61,14 +61,14 @@
    "test_rows": 657,
    "model": "gradient boosting (delta+round5)",
    "mae": 3.6,
-   "rmse": 7.8,
+   "rmse": 7.7,
    "within10": 91,
    "within5": 83,
-   "mape_ge20": 24.8,
+   "mape_ge20": 24.1,
    "bias": 0.5,
    "baseline_mae": 3.8,
    "baseline_mape_ge20": 24.2,
-   "improvement_pct": 3.6,
+   "improvement_pct": 5.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -85,14 +85,14 @@
    "test_rows": 627,
    "model": "gradient boosting (delta+round5)",
    "mae": 3.7,
-   "rmse": 7.7,
+   "rmse": 7.6,
    "within10": 91,
    "within5": 84,
-   "mape_ge20": 24.8,
+   "mape_ge20": 24.5,
    "bias": -0.2,
    "baseline_mae": 3.8,
    "baseline_mape_ge20": 24.4,
-   "improvement_pct": 1.5,
+   "improvement_pct": 1.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
