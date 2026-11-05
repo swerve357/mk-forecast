@@ -1,330 +1,485 @@
 {
- "updated": "2026-11-05T16:46:25.293118+00:00",
- "last_sample": "2026-11-05T16:45:41+00:00",
- "samples": 19754,
+ "updated": "2026-11-05T17:16:15.685111+00:00",
+ "last_sample": "2026-11-05T17:15:32+00:00",
+ "samples": 19958,
  "history_samples": 0,
  "rides": [
   {
    "name": "Guardians of the Galaxy: Cosmic Rewind",
-   "now": 60,
-   "trend30": -15,
-   "f30": 60,
-   "f30_lo": 50,
-   "f30_hi": 70,
-   "score30_mae": 6.4,
-   "score30_in5": 60,
-   "score30_in10": 84,
-   "score30_pairs": 58,
-   "f60": 70,
-   "f60_lo": 55,
-   "f60_hi": 75,
-   "score60_mae": 9.8,
-   "score60_in5": 38,
-   "score60_in10": 70,
+   "now": 105,
+   "trend30": 45,
+   "why": {
+    "lag60": 75,
+    "lag120": 55,
+    "lag_yday": 85,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
+   "f30": 80,
+   "f30_lo": 65,
+   "f30_hi": 115,
+   "score30_mae": 9.2,
+   "score30_in5": 57,
+   "score30_in10": 72,
+   "score30_pairs": 60,
+   "f60": 65,
+   "f60_lo": 60,
+   "f60_hi": 105,
+   "score60_mae": 12.0,
+   "score60_in5": 32,
+   "score60_in10": 59,
    "score60_pairs": 56,
-   "f90": 70,
-   "f90_lo": 55,
-   "f90_hi": 75,
-   "score90_mae": 10.0,
-   "score90_in5": 33,
-   "score90_in10": 77,
-   "score90_pairs": 52,
-   "f120": 55,
-   "f120_lo": 45,
-   "f120_hi": 65,
-   "score120_mae": 11.5,
-   "score120_in5": 27,
-   "score120_in10": 53,
-   "score120_pairs": 49,
-   "people": null
-  },
-  {
-   "name": "Soarin' Across America",
-   "now": 50,
-   "trend30": 20,
-   "f30": 35,
-   "f30_lo": 35,
-   "f30_hi": 55,
-   "score30_mae": 5.3,
-   "score30_in5": 69,
-   "score30_in10": 83,
-   "score30_pairs": 58,
-   "f60": 40,
-   "f60_lo": 35,
-   "f60_hi": 55,
-   "score60_mae": 7.1,
-   "score60_in5": 52,
-   "score60_in10": 79,
-   "score60_pairs": 56,
-   "f90": 30,
-   "f90_lo": 30,
-   "f90_hi": 45,
-   "score90_mae": 7.8,
-   "score90_in5": 67,
-   "score90_in10": 79,
-   "score90_pairs": 52,
-   "f120": 40,
-   "f120_lo": 35,
-   "f120_hi": 45,
-   "score120_mae": 4.8,
-   "score120_in5": 82,
-   "score120_in10": 88,
-   "score120_pairs": 49,
+   "f90": 80,
+   "f90_lo": 70,
+   "f90_hi": 105,
+   "score90_mae": 11.8,
+   "score90_in5": 34,
+   "score90_in10": 72,
+   "score90_pairs": 53,
+   "f120": 85,
+   "f120_lo": 75,
+   "f120_hi": 105,
+   "score120_mae": 12.8,
+   "score120_in5": 24,
+   "score120_in10": 42,
+   "score120_pairs": 50,
    "people": null
   },
   {
    "name": "Frozen Ever After",
    "now": 50,
-   "trend30": -10,
+   "trend30": 0,
+   "why": {
+    "lag60": 60,
+    "lag120": 60,
+    "lag_yday": 60,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
    "f30": 60,
    "f30_lo": 50,
    "f30_hi": 65,
-   "score30_mae": 11.4,
+   "score30_mae": 10.4,
    "score30_in5": 48,
-   "score30_in10": 66,
-   "score30_pairs": 58,
+   "score30_in10": 67,
+   "score30_pairs": 60,
    "f60": 55,
    "f60_lo": 45,
    "f60_hi": 60,
-   "score60_mae": 14.4,
-   "score60_in5": 25,
-   "score60_in10": 48,
+   "score60_mae": 14.6,
+   "score60_in5": 32,
+   "score60_in10": 46,
    "score60_pairs": 56,
    "f90": 55,
    "f90_lo": 45,
-   "f90_hi": 65,
-   "score90_mae": 11.2,
-   "score90_in5": 50,
-   "score90_in10": 73,
-   "score90_pairs": 52,
-   "f120": 60,
+   "f90_hi": 60,
+   "score90_mae": 10.2,
+   "score90_in5": 57,
+   "score90_in10": 72,
+   "score90_pairs": 53,
+   "f120": 55,
    "f120_lo": 45,
-   "f120_hi": 60,
-   "score120_mae": 8.0,
-   "score120_in5": 53,
-   "score120_in10": 76,
-   "score120_pairs": 49,
+   "f120_hi": 55,
+   "score120_mae": 9.5,
+   "score120_in5": 56,
+   "score120_in10": 66,
+   "score120_pairs": 50,
    "people": null
   },
   {
    "name": "Remy's Ratatouille Adventure",
    "now": 40,
-   "trend30": -15,
-   "f30": 45,
-   "f30_lo": 40,
+   "trend30": 0,
+   "why": {
+    "lag60": 55,
+    "lag120": 30,
+    "lag_yday": 35,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
+   "f30": 50,
+   "f30_lo": 35,
    "f30_hi": 50,
-   "score30_mae": 8.4,
-   "score30_in5": 48,
-   "score30_in10": 83,
-   "score30_pairs": 58,
-   "f60": 45,
-   "f60_lo": 40,
+   "score30_mae": 9.6,
+   "score30_in5": 33,
+   "score30_in10": 78,
+   "score30_pairs": 60,
+   "f60": 50,
+   "f60_lo": 35,
    "f60_hi": 50,
-   "score60_mae": 8.8,
-   "score60_in5": 45,
-   "score60_in10": 73,
+   "score60_mae": 9.3,
+   "score60_in5": 39,
+   "score60_in10": 77,
    "score60_pairs": 56,
-   "f90": 50,
-   "f90_lo": 40,
-   "f90_hi": 55,
-   "score90_mae": 6.4,
-   "score90_in5": 58,
-   "score90_in10": 92,
-   "score90_pairs": 52,
-   "f120": 55,
-   "f120_lo": 40,
-   "f120_hi": 60,
-   "score120_mae": 7.9,
-   "score120_in5": 53,
-   "score120_in10": 73,
-   "score120_pairs": 49,
+   "f90": 45,
+   "f90_lo": 30,
+   "f90_hi": 50,
+   "score90_mae": 5.9,
+   "score90_in5": 68,
+   "score90_in10": 91,
+   "score90_pairs": 53,
+   "f120": 50,
+   "f120_lo": 30,
+   "f120_hi": 50,
+   "score120_mae": 7.6,
+   "score120_in5": 46,
+   "score120_in10": 76,
+   "score120_pairs": 50,
+   "people": null
+  },
+  {
+   "name": "Soarin' Across America",
+   "now": 40,
+   "trend30": -10,
+   "why": {
+    "lag60": 30,
+    "lag120": 30,
+    "lag_yday": 35,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
+   "f30": 40,
+   "f30_lo": 35,
+   "f30_hi": 45,
+   "score30_mae": 5.0,
+   "score30_in5": 70,
+   "score30_in10": 87,
+   "score30_pairs": 60,
+   "f60": 40,
+   "f60_lo": 35,
+   "f60_hi": 50,
+   "score60_mae": 6.2,
+   "score60_in5": 62,
+   "score60_in10": 77,
+   "score60_pairs": 56,
+   "f90": 40,
+   "f90_lo": 30,
+   "f90_hi": 40,
+   "score90_mae": 7.5,
+   "score90_in5": 64,
+   "score90_in10": 75,
+   "score90_pairs": 53,
+   "f120": 40,
+   "f120_lo": 30,
+   "f120_hi": 40,
+   "score120_mae": 4.2,
+   "score120_in5": 82,
+   "score120_in10": 82,
+   "score120_pairs": 50,
    "people": null
   },
   {
    "name": "The Seas with Nemo & Friends",
-   "now": 40,
-   "trend30": 5,
-   "f30": 40,
-   "f30_lo": 35,
-   "f30_hi": 45,
-   "score30_mae": 3.2,
-   "score30_in5": 82,
-   "score30_in10": 88,
-   "score30_pairs": 49,
-   "f60": 45,
-   "f60_lo": 30,
-   "f60_hi": 50,
-   "score60_mae": 4.4,
-   "score60_in5": 73,
-   "score60_in10": 86,
-   "score60_pairs": 49,
-   "f90": 25,
-   "f90_lo": 15,
-   "f90_hi": 50,
-   "score90_mae": 2.4,
-   "score90_in5": 89,
-   "score90_in10": 93,
-   "score90_pairs": 45,
-   "f120": 20,
-   "f120_lo": 15,
-   "f120_hi": 50,
-   "score120_mae": 2.3,
-   "score120_in5": 86,
-   "score120_in10": 95,
-   "score120_pairs": 44,
-   "people": null
-  },
-  {
-   "name": "Spaceship Earth",
-   "now": 30,
-   "trend30": 0,
-   "f30": 20,
-   "f30_lo": 25,
+   "now": 35,
+   "trend30": -5,
+   "why": {
+    "lag60": 35,
+    "lag120": 20,
+    "lag_yday": 45,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
+   "f30": 35,
+   "f30_lo": 30,
    "f30_hi": 35,
-   "score30_mae": 2.8,
-   "score30_in5": 95,
-   "score30_in10": 97,
-   "score30_pairs": 58,
-   "f60": 20,
-   "f60_lo": 15,
-   "f60_hi": 35,
-   "score60_mae": 3.9,
-   "score60_in5": 88,
-   "score60_in10": 93,
-   "score60_pairs": 56,
-   "f90": 15,
-   "f90_lo": 15,
-   "f90_hi": 30,
-   "score90_mae": 3.6,
-   "score90_in5": 92,
-   "score90_in10": 92,
-   "score90_pairs": 52,
-   "f120": 15,
-   "f120_lo": 10,
-   "f120_hi": 30,
-   "score120_mae": 4.4,
-   "score120_in5": 86,
-   "score120_in10": 92,
-   "score120_pairs": 49,
+   "score30_mae": 3.8,
+   "score30_in5": 76,
+   "score30_in10": 86,
+   "score30_pairs": 51,
+   "f60": 35,
+   "f60_lo": 20,
+   "f60_hi": 45,
+   "score60_mae": 5.0,
+   "score60_in5": 69,
+   "score60_in10": 84,
+   "score60_pairs": 49,
+   "f90": 20,
+   "f90_lo": 20,
+   "f90_hi": 40,
+   "score90_mae": 2.5,
+   "score90_in5": 91,
+   "score90_in10": 93,
+   "score90_pairs": 46,
+   "f120": 20,
+   "f120_lo": 5,
+   "f120_hi": 40,
+   "score120_mae": 4.1,
+   "score120_in5": 82,
+   "score120_in10": 93,
+   "score120_pairs": 45,
    "people": null
   },
   {
    "name": "Living with the Land",
    "now": 25,
-   "trend30": -15,
+   "trend30": 0,
+   "why": {
+    "lag60": 40,
+    "lag120": 20,
+    "lag_yday": 20,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
    "f30": 25,
    "f30_lo": 20,
-   "f30_hi": 40,
-   "score30_mae": 4.5,
-   "score30_in5": 68,
-   "score30_in10": 86,
-   "score30_pairs": 50,
-   "f60": 20,
-   "f60_lo": 15,
+   "f30_hi": 30,
+   "score30_mae": 5.1,
+   "score30_in5": 67,
+   "score30_in10": 83,
+   "score30_pairs": 52,
+   "f60": 25,
+   "f60_lo": 10,
    "f60_hi": 30,
-   "score60_mae": 2.9,
-   "score60_in5": 83,
-   "score60_in10": 94,
+   "score60_mae": 3.0,
+   "score60_in5": 81,
+   "score60_in10": 96,
    "score60_pairs": 48,
    "f90": 20,
-   "f90_lo": 15,
+   "f90_lo": 10,
    "f90_hi": 30,
-   "score90_mae": 2.8,
-   "score90_in5": 84,
-   "score90_in10": 86,
-   "score90_pairs": 44,
+   "score90_mae": 3.9,
+   "score90_in5": 78,
+   "score90_in10": 84,
+   "score90_pairs": 45,
    "f120": 20,
    "f120_lo": 10,
    "f120_hi": 25,
-   "score120_mae": 1.0,
-   "score120_in5": 95,
-   "score120_in10": 95,
-   "score120_pairs": 43,
+   "score120_mae": 2.3,
+   "score120_in5": 86,
+   "score120_in10": 93,
+   "score120_pairs": 44,
+   "people": null
+  },
+  {
+   "name": "Gran Fiesta Tour Starring The Three Caballeros",
+   "now": 20,
+   "trend30": 15,
+   "why": {
+    "lag60": 5,
+    "lag120": 5,
+    "lag_yday": 0,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
+   "f30": 20,
+   "f30_lo": 10,
+   "f30_hi": 25,
+   "score30_mae": 3.1,
+   "score30_in5": 88,
+   "score30_in10": 88,
+   "score30_pairs": 51,
+   "f60": 15,
+   "f60_lo": 10,
+   "f60_hi": 25,
+   "score60_mae": 4.1,
+   "score60_in5": 83,
+   "score60_in10": 91,
+   "score60_pairs": 47,
+   "f90": 15,
+   "f90_lo": 5,
+   "f90_hi": 25,
+   "score90_mae": 4.4,
+   "score90_in5": 86,
+   "score90_in10": 86,
+   "score90_pairs": 44,
+   "f120": 15,
+   "f120_lo": 5,
+   "f120_hi": 25,
+   "score120_mae": 3.6,
+   "score120_in5": 86,
+   "score120_in10": 86,
+   "score120_pairs": 42,
+   "people": null
+  },
+  {
+   "name": "Spaceship Earth",
+   "now": 20,
+   "trend30": -10,
+   "why": {
+    "lag60": 30,
+    "lag120": 20,
+    "lag_yday": 20,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
+   "f30": 20,
+   "f30_lo": 15,
+   "f30_hi": 30,
+   "score30_mae": 3.9,
+   "score30_in5": 88,
+   "score30_in10": 93,
+   "score30_pairs": 60,
+   "f60": 20,
+   "f60_lo": 15,
+   "f60_hi": 25,
+   "score60_mae": 3.2,
+   "score60_in5": 93,
+   "score60_in10": 93,
+   "score60_pairs": 56,
+   "f90": 15,
+   "f90_lo": 5,
+   "f90_hi": 25,
+   "score90_mae": 2.8,
+   "score90_in5": 92,
+   "score90_in10": 92,
+   "score90_pairs": 53,
+   "f120": 10,
+   "f120_lo": 5,
+   "f120_hi": 20,
+   "score120_mae": 4.0,
+   "score120_in5": 84,
+   "score120_in10": 92,
+   "score120_pairs": 50,
    "people": null
   },
   {
    "name": "Turtle Talk With Crush",
    "now": 20,
-   "trend30": 5,
+   "trend30": 0,
+   "why": {
+    "lag60": 15,
+    "lag120": 15,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
    "f30": 20,
-   "f30_lo": 20,
-   "f30_hi": 20,
-   "score30_mae": 0.1,
+   "f30_lo": 15,
+   "f30_hi": 25,
+   "score30_mae": 0.8,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 37,
+   "score30_pairs": 39,
    "f60": 20,
    "f60_lo": 15,
-   "f60_hi": 25,
-   "score60_mae": 0.1,
+   "f60_hi": 20,
+   "score60_mae": 0.7,
    "score60_in5": 100,
    "score60_in10": 100,
    "score60_pairs": 35,
    "f90": 15,
    "f90_lo": 10,
-   "f90_hi": 25,
-   "score90_mae": 0.0,
+   "f90_hi": 20,
+   "score90_mae": 1.2,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 33,
+   "score90_pairs": 34,
    "f120": 15,
    "f120_lo": 10,
    "f120_hi": 20,
-   "score120_mae": 0.0,
+   "score120_mae": 0.6,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 32,
+   "score120_pairs": 31,
    "people": null
   },
   {
    "name": "Journey Into Imagination With Figment",
    "now": 20,
    "trend30": 0,
-   "f30": 10,
-   "f30_lo": 15,
+   "why": {
+    "lag60": 20,
+    "lag120": 5,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
+   "f30": 15,
+   "f30_lo": 10,
    "f30_hi": 25,
-   "score30_mae": 2.2,
-   "score30_in5": 88,
+   "score30_mae": 2.7,
+   "score30_in5": 85,
    "score30_in10": 98,
-   "score30_pairs": 51,
+   "score30_pairs": 53,
    "f60": 15,
-   "f60_lo": 10,
+   "f60_lo": 5,
    "f60_hi": 20,
-   "score60_mae": 2.6,
-   "score60_in5": 80,
+   "score60_mae": 2.9,
+   "score60_in5": 82,
    "score60_in10": 98,
    "score60_pairs": 49,
    "f90": 10,
    "f90_lo": 5,
    "f90_hi": 20,
-   "score90_mae": 1.6,
-   "score90_in5": 98,
+   "score90_mae": 2.4,
+   "score90_in5": 91,
    "score90_in10": 98,
-   "score90_pairs": 45,
+   "score90_pairs": 46,
    "f120": 5,
-   "f120_lo": 5,
+   "f120_lo": 0,
    "f120_hi": 20,
-   "score120_mae": 1.3,
-   "score120_in5": 91,
+   "score120_mae": 2.7,
+   "score120_in5": 75,
    "score120_in10": 100,
-   "score120_pairs": 43,
+   "score120_pairs": 44,
    "people": null
   },
   {
    "name": "Mission: SPACE",
    "now": 15,
-   "trend30": -5,
+   "trend30": 0,
+   "why": {
+    "lag60": 20,
+    "lag120": 15,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
    "f30": 15,
-   "f30_lo": 15,
+   "f30_lo": 10,
    "f30_hi": 15,
-   "score30_mae": 0.4,
+   "score30_mae": 0.5,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 58,
+   "score30_pairs": 60,
    "f60": 15,
    "f60_lo": 15,
    "f60_hi": 15,
-   "score60_mae": 0.6,
+   "score60_mae": 0.8,
    "score60_in5": 100,
    "score60_in10": 100,
    "score60_pairs": 56,
@@ -334,27 +489,38 @@
    "score90_mae": 0.7,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 52,
-   "f120": 20,
+   "score90_pairs": 53,
+   "f120": 15,
    "f120_lo": 10,
    "f120_hi": 15,
-   "score120_mae": 1.1,
+   "score120_mae": 1.5,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 49,
+   "score120_pairs": 50,
    "people": null
   },
   {
    "name": "Canada Far and Wide in Circle-Vision 360",
    "now": 15,
    "trend30": 0,
+   "why": {
+    "lag60": 15,
+    "lag120": 15,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
    "f30": 15,
    "f30_lo": 15,
    "f30_hi": 15,
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 52,
+   "score30_pairs": 54,
    "f60": 15,
    "f60_lo": 15,
    "f60_hi": 15,
@@ -364,24 +530,35 @@
    "score60_pairs": 50,
    "f90": 15,
    "f90_lo": 15,
-   "f90_hi": 15,
+   "f90_hi": 20,
    "score90_mae": 0.0,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 46,
+   "score90_pairs": 47,
    "f120": 15,
    "f120_lo": 15,
    "f120_hi": 15,
    "score120_mae": 0.2,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 43,
+   "score120_pairs": 44,
    "people": null
   },
   {
    "name": "Beauty and the Beast Sing-Along",
    "now": 15,
    "trend30": 0,
+   "why": {
+    "lag60": 15,
+    "lag120": 15,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
    "f30": 15,
    "f30_lo": 15,
    "f30_hi": 15,
@@ -390,7 +567,7 @@
    "f60_hi": 15,
    "f90": 15,
    "f90_lo": 15,
-   "f90_hi": 15,
+   "f90_hi": 20,
    "f120": 15,
    "f120_lo": 15,
    "f120_hi": 15,
@@ -400,13 +577,24 @@
    "name": "Reflections of China",
    "now": 15,
    "trend30": 0,
+   "why": {
+    "lag60": 15,
+    "lag120": 15,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 31,
+    "park_busy": 12,
+    "mins_open": 200,
+    "mins_close": 520
+   },
    "f30": 15,
    "f30_lo": 15,
    "f30_hi": 15,
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 38,
+   "score30_pairs": 40,
    "f60": 15,
    "f60_lo": 15,
    "f60_hi": 15,
@@ -416,150 +604,116 @@
    "score60_pairs": 38,
    "f90": 15,
    "f90_lo": 15,
-   "f90_hi": 15,
-   "score90_mae": 0.0,
+   "f90_hi": 20,
+   "score90_mae": 0.1,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 34,
+   "score90_pairs": 35,
    "f120": 15,
    "f120_lo": 15,
    "f120_hi": 15,
    "score120_mae": 0.3,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 36,
-   "people": null
-  },
-  {
-   "name": "Gran Fiesta Tour Starring The Three Caballeros",
-   "now": 5,
-   "trend30": 0,
-   "f30": 5,
-   "f30_lo": 0,
-   "f30_hi": 5,
-   "score30_mae": 1.7,
-   "score30_in5": 100,
-   "score30_in10": 100,
-   "score30_pairs": 49,
-   "f60": 5,
-   "f60_lo": 5,
-   "f60_hi": 10,
-   "score60_mae": 2.1,
-   "score60_in5": 100,
-   "score60_in10": 100,
-   "score60_pairs": 47,
-   "f90": 5,
-   "f90_lo": 0,
-   "f90_hi": 10,
-   "score90_mae": 2.6,
-   "score90_in5": 91,
-   "score90_in10": 100,
-   "score90_pairs": 43,
-   "f120": 5,
-   "f120_lo": 5,
-   "f120_hi": 10,
-   "score120_mae": 1.7,
-   "score120_in5": 100,
-   "score120_in10": 100,
-   "score120_pairs": 41,
+   "score120_pairs": 32,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 3965,
-   "train_rows": 3167,
-   "test_rows": 709,
+   "available_pairs": 4049,
+   "train_rows": 3227,
+   "test_rows": 741,
    "model": "gradient boosting (delta+round5)",
-   "mae": 3.9,
-   "rmse": 7.6,
-   "within10": 90,
-   "within5": 80,
-   "mape_ge20": 22.7,
-   "bias": -0.9,
-   "baseline_mae": 4.2,
-   "baseline_mape_ge20": 25.5,
-   "improvement_pct": 7.3,
+   "mae": 4.5,
+   "rmse": 8.3,
+   "within10": 88,
+   "within5": 77,
+   "mape_ge20": 24.4,
+   "bias": -1.3,
+   "baseline_mae": 4.6,
+   "baseline_mape_ge20": 26.1,
+   "improvement_pct": 2.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
     "hour_sin",
-    "roll_mean_30",
     "lag_60",
-    "lag_15"
+    "roll_mean_30",
+    "hour_cos"
    ]
   },
   "60": {
-   "available_pairs": 3720,
-   "train_rows": 2866,
-   "test_rows": 675,
+   "available_pairs": 3776,
+   "train_rows": 2926,
+   "test_rows": 676,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.8,
-   "rmse": 8.7,
-   "within10": 86,
+   "mae": 5.1,
+   "rmse": 9.3,
+   "within10": 85,
    "within5": 73,
-   "mape_ge20": 26.9,
-   "bias": -0.7,
-   "baseline_mae": 5.6,
-   "baseline_mape_ge20": 35.0,
-   "improvement_pct": 14.6,
+   "mape_ge20": 27.6,
+   "bias": -0.8,
+   "baseline_mae": 5.9,
+   "baseline_mape_ge20": 35.3,
+   "improvement_pct": 14.4,
+   "evaluation": "chronological holdout with horizon embargo",
+   "top_features": [
+    "wait",
+    "ride_code",
+    "hour_sin",
+    "roll_mean_30",
+    "diff_30",
+    "lag_30"
+   ]
+  },
+  "90": {
+   "available_pairs": 3559,
+   "train_rows": 2667,
+   "test_rows": 625,
+   "model": "gradient boosting (delta+round5)",
+   "mae": 4.3,
+   "rmse": 8.0,
+   "within10": 89,
+   "within5": 80,
+   "mape_ge20": 23.2,
+   "bias": -1.7,
+   "baseline_mae": 5.8,
+   "baseline_mape_ge20": 33.4,
+   "improvement_pct": 24.9,
+   "evaluation": "chronological holdout with horizon embargo",
+   "top_features": [
+    "wait",
+    "ride_code",
+    "hour_sin",
+    "roll_mean_30",
+    "hour_cos",
+    "diff_30"
+   ]
+  },
+  "120": {
+   "available_pairs": 3316,
+   "train_rows": 2369,
+   "test_rows": 588,
+   "model": "gradient boosting (delta+round5)",
+   "mae": 4.6,
+   "rmse": 8.2,
+   "within10": 85,
+   "within5": 76,
+   "mape_ge20": 25.1,
+   "bias": -1.9,
+   "baseline_mae": 6.6,
+   "baseline_mape_ge20": 37.9,
+   "improvement_pct": 30.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
     "hour_sin",
     "roll_mean_60",
-    "lag_yday",
-    "roll_mean_30"
-   ]
-  },
-  "90": {
-   "available_pairs": 3475,
-   "train_rows": 2593,
-   "test_rows": 613,
-   "model": "gradient boosting (delta+round5)",
-   "mae": 4.3,
-   "rmse": 8.2,
-   "within10": 90,
-   "within5": 80,
-   "mape_ge20": 23.8,
-   "bias": -1.7,
-   "baseline_mae": 5.6,
-   "baseline_mape_ge20": 34.8,
-   "improvement_pct": 23.6,
-   "evaluation": "chronological holdout with horizon embargo",
-   "top_features": [
-    "wait",
-    "ride_code",
-    "hour_sin",
-    "lag_120",
     "hour_cos",
     "roll_mean_30"
-   ]
-  },
-  "120": {
-   "available_pairs": 3244,
-   "train_rows": 2294,
-   "test_rows": 591,
-   "model": "gradient boosting (delta+round5)",
-   "mae": 4.1,
-   "rmse": 7.9,
-   "within10": 88,
-   "within5": 80,
-   "mape_ge20": 22.4,
-   "bias": -2.3,
-   "baseline_mae": 5.8,
-   "baseline_mape_ge20": 36.7,
-   "improvement_pct": 30.6,
-   "evaluation": "chronological holdout with horizon embargo",
-   "top_features": [
-    "ride_code",
-    "wait",
-    "hour_sin",
-    "lag_60",
-    "hour_cos",
-    "roll_mean_60"
    ]
   }
  },
@@ -640,74 +794,18 @@
     "p30": 75,
     "p60": 55,
     "p90": 65
-   }
-  ],
-  "Soarin' Across America": [
-   {
-    "t": "08:40",
-    "actual": 5
    },
    {
-    "t": "08:55",
-    "actual": 5
+    "t": "12:05",
+    "actual": 95
    },
    {
-    "t": "09:10",
-    "actual": 5
-   },
-   {
-    "t": "09:25",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "09:40",
-    "actual": 5
-   },
-   {
-    "t": "09:55",
-    "actual": 25,
-    "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "10:10",
-    "actual": 30
-   },
-   {
-    "t": "10:25",
-    "actual": 35,
-    "p30": 25,
-    "p60": 5,
-    "p90": 20
-   },
-   {
-    "t": "10:40",
-    "actual": 40
-   },
-   {
-    "t": "10:55",
-    "actual": 40,
-    "p60": 25,
-    "p90": 15,
-    "p120": 20
-   },
-   {
-    "t": "11:20",
-    "actual": 30,
-    "p30": 45,
-    "p60": 35
-   },
-   {
-    "t": "11:35",
-    "actual": 40
-   },
-   {
-    "t": "11:50",
-    "actual": 50,
-    "p30": 30,
-    "p60": 45,
-    "p90": 40
+    "t": "12:20",
+    "actual": 105,
+    "p30": 60,
+    "p60": 60,
+    "p90": 60,
+    "p120": 65
    }
   ],
   "Frozen Ever After": [
@@ -776,6 +874,18 @@
     "p30": 60,
     "p60": 65,
     "p90": 55
+   },
+   {
+    "t": "12:05",
+    "actual": 55
+   },
+   {
+    "t": "12:20",
+    "actual": 50,
+    "p30": 60,
+    "p60": 65,
+    "p90": 55,
+    "p120": 65
    }
   ],
   "Remy's Ratatouille Adventure": [
@@ -844,6 +954,98 @@
     "p30": 55,
     "p60": 50,
     "p90": 45
+   },
+   {
+    "t": "12:05",
+    "actual": 40
+   },
+   {
+    "t": "12:20",
+    "actual": 40,
+    "p30": 45,
+    "p60": 45,
+    "p90": 45,
+    "p120": 35
+   }
+  ],
+  "Soarin' Across America": [
+   {
+    "t": "08:40",
+    "actual": 5
+   },
+   {
+    "t": "08:55",
+    "actual": 5
+   },
+   {
+    "t": "09:10",
+    "actual": 5
+   },
+   {
+    "t": "09:25",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5
+   },
+   {
+    "t": "09:55",
+    "actual": 25,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "10:10",
+    "actual": 30
+   },
+   {
+    "t": "10:25",
+    "actual": 35,
+    "p30": 25,
+    "p60": 5,
+    "p90": 20
+   },
+   {
+    "t": "10:40",
+    "actual": 40
+   },
+   {
+    "t": "10:55",
+    "actual": 40,
+    "p60": 25,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "11:20",
+    "actual": 30,
+    "p30": 45,
+    "p60": 35
+   },
+   {
+    "t": "11:35",
+    "actual": 40
+   },
+   {
+    "t": "11:50",
+    "actual": 50,
+    "p30": 30,
+    "p60": 45,
+    "p90": 40
+   },
+   {
+    "t": "12:05",
+    "actual": 40
+   },
+   {
+    "t": "12:20",
+    "actual": 40,
+    "p30": 35,
+    "p60": 40,
+    "p90": 50,
+    "p120": 40
    }
   ],
   "The Seas with Nemo & Friends": [
@@ -893,6 +1095,146 @@
     "p30": 35,
     "p60": 55,
     "p90": 45
+   },
+   {
+    "t": "12:05",
+    "actual": 40
+   },
+   {
+    "t": "12:20",
+    "actual": 35,
+    "p30": 40,
+    "p60": 40,
+    "p90": 45,
+    "p120": 45
+   }
+  ],
+  "Living with the Land": [
+   {
+    "t": "09:25",
+    "actual": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5
+   },
+   {
+    "t": "09:55",
+    "actual": 20,
+    "p30": 5
+   },
+   {
+    "t": "10:10",
+    "actual": 20
+   },
+   {
+    "t": "10:25",
+    "actual": 30,
+    "p30": 20,
+    "p60": 5
+   },
+   {
+    "t": "10:40",
+    "actual": 30
+   },
+   {
+    "t": "10:55",
+    "actual": 35,
+    "p60": 20,
+    "p90": 20
+   },
+   {
+    "t": "11:20",
+    "actual": 40,
+    "p30": 30,
+    "p60": 20
+   },
+   {
+    "t": "11:35",
+    "actual": 25
+   },
+   {
+    "t": "11:50",
+    "actual": 25,
+    "p30": 40,
+    "p60": 35,
+    "p90": 25
+   },
+   {
+    "t": "12:05",
+    "actual": 30
+   },
+   {
+    "t": "12:20",
+    "actual": 25,
+    "p30": 25,
+    "p60": 35,
+    "p90": 20,
+    "p120": 15
+   }
+  ],
+  "Gran Fiesta Tour Starring The Three Caballeros": [
+   {
+    "t": "09:25",
+    "actual": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5
+   },
+   {
+    "t": "09:55",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "10:10",
+    "actual": 5
+   },
+   {
+    "t": "10:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "10:40",
+    "actual": 5
+   },
+   {
+    "t": "10:55",
+    "actual": 5,
+    "p60": 5,
+    "p90": 5
+   },
+   {
+    "t": "11:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "11:35",
+    "actual": 5
+   },
+   {
+    "t": "11:50",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5
+   },
+   {
+    "t": "12:05",
+    "actual": 20
+   },
+   {
+    "t": "12:20",
+    "actual": 20,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
    }
   ],
   "Spaceship Earth": [
@@ -961,58 +1303,18 @@
     "p30": 30,
     "p60": 30,
     "p90": 25
-   }
-  ],
-  "Living with the Land": [
-   {
-    "t": "09:25",
-    "actual": 5
    },
    {
-    "t": "09:40",
-    "actual": 5
-   },
-   {
-    "t": "09:55",
-    "actual": 20,
-    "p30": 5
-   },
-   {
-    "t": "10:10",
+    "t": "12:05",
     "actual": 20
    },
    {
-    "t": "10:25",
-    "actual": 30,
+    "t": "12:20",
+    "actual": 20,
     "p30": 20,
-    "p60": 5
-   },
-   {
-    "t": "10:40",
-    "actual": 30
-   },
-   {
-    "t": "10:55",
-    "actual": 35,
-    "p60": 20,
-    "p90": 20
-   },
-   {
-    "t": "11:20",
-    "actual": 40,
-    "p30": 30,
-    "p60": 20
-   },
-   {
-    "t": "11:35",
-    "actual": 25
-   },
-   {
-    "t": "11:50",
-    "actual": 25,
-    "p30": 40,
-    "p60": 35,
-    "p90": 25
+    "p60": 25,
+    "p90": 20,
+    "p120": 20
    }
   ],
   "Turtle Talk With Crush": [
@@ -1048,6 +1350,18 @@
     "p30": 15,
     "p60": 20,
     "p90": 15
+   },
+   {
+    "t": "12:05",
+    "actual": 20
+   },
+   {
+    "t": "12:20",
+    "actual": 20,
+    "p30": 20,
+    "p60": 20,
+    "p90": 20,
+    "p120": 15
    }
   ],
   "Journey Into Imagination With Figment": [
@@ -1100,6 +1414,18 @@
     "p30": 20,
     "p60": 20,
     "p90": 15
+   },
+   {
+    "t": "12:05",
+    "actual": 20
+   },
+   {
+    "t": "12:20",
+    "actual": 20,
+    "p30": 10,
+    "p60": 15,
+    "p90": 15,
+    "p120": 10
    }
   ],
   "Mission: SPACE": [
@@ -1168,6 +1494,18 @@
     "p30": 20,
     "p60": 15,
     "p90": 15
+   },
+   {
+    "t": "12:05",
+    "actual": 15
+   },
+   {
+    "t": "12:20",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Canada Far and Wide in Circle-Vision 360": [
@@ -1224,6 +1562,18 @@
     "p30": 15,
     "p60": 15,
     "p90": 15
+   },
+   {
+    "t": "12:05",
+    "actual": 15
+   },
+   {
+    "t": "12:20",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Beauty and the Beast Sing-Along": [
@@ -1255,6 +1605,18 @@
     "p30": 15,
     "p60": 15,
     "p90": 15
+   },
+   {
+    "t": "12:05",
+    "actual": 15
+   },
+   {
+    "t": "12:20",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Reflections of China": [
@@ -1286,60 +1648,53 @@
     "p30": 15,
     "p60": 15,
     "p90": 15
-   }
-  ],
-  "Gran Fiesta Tour Starring The Three Caballeros": [
-   {
-    "t": "09:25",
-    "actual": 5
    },
    {
-    "t": "09:40",
-    "actual": 5
+    "t": "12:05",
+    "actual": 15
    },
    {
-    "t": "09:55",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "10:10",
-    "actual": 5
-   },
-   {
-    "t": "10:25",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "10:40",
-    "actual": 5
-   },
-   {
-    "t": "10:55",
-    "actual": 5,
-    "p60": 5,
-    "p90": 5
-   },
-   {
-    "t": "11:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "11:35",
-    "actual": 5
-   },
-   {
-    "t": "11:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5
+    "t": "12:20",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ]
+ },
+ "today": {
+  "date": "2026-11-05",
+  "graded": 251,
+  "exact": 41,
+  "in5": 63,
+  "in10": 78,
+  "by_horizon": {
+   "30": {
+    "graded": 85,
+    "exact": 45,
+    "in5": 66,
+    "in10": 81
+   },
+   "60": {
+    "graded": 70,
+    "exact": 41,
+    "in5": 59,
+    "in10": 73
+   },
+   "90": {
+    "graded": 55,
+    "exact": 42,
+    "in5": 75,
+    "in10": 84
+   },
+   "120": {
+    "graded": 41,
+    "exact": 32,
+    "in5": 51,
+    "in10": 76
+   }
+  }
  },
  "park_label": "EPCOT"
 }
