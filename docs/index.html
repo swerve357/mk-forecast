@@ -30,9 +30,13 @@ td.h{font-weight:600}td.sc{white-space:nowrap}.rng{display:block;font-weight:400
 .sheet th,.sheet td{padding:6px 8px}
 .rng2{font-weight:400;font-size:.75rem;color:var(--mute);white-space:nowrap}
 tbody#rows tr{cursor:pointer}
+.pk{font:inherit;font-size:.9rem;padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);cursor:pointer}
+.pk.on{font-weight:700;border-color:var(--ink)}
+.pk:disabled{opacity:.45;cursor:default}
 </style></head><body>
-<h1>Magic Kingdom wait forecast</h1>
+<h1 id="title">Magic Kingdom wait forecast</h1>
 <p class="sub" id="sub">Loading…</p>
+<div id="parks" style="margin:0 0 10px;display:flex;gap:6px;flex-wrap:wrap"></div>
 <p style="margin:0 0 12px"><button type="button" onclick="location.reload()" style="font:inherit;font-size:.9rem;padding:6px 14px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);cursor:pointer">↻ Update</button></p>
 <div id="banner"></div>
 <div class="ctx" id="mission" style="display:none;font-size:.98rem"></div>
@@ -108,8 +112,22 @@ function openRide(i){
     lbHtml;
   document.getElementById('rideModal').style.display='flex';
 }
-fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
-  document.getElementById('sub').textContent='Updated '+new Date(d.updated).toLocaleString()+' · '+d.samples.toLocaleString()+' records ('+(d.history_samples||0).toLocaleString()+' historical replay)';
+let DATA=null,CUR='MK';
+const PARKLIST=[['MK','Magic Kingdom'],['EPCOT','EPCOT'],['HS','Hollywood Studios'],['AK','Animal Kingdom']];
+function parkData(k){return k==='MK'?DATA:(DATA.parks||{})[k]}
+function drawParks(){
+  document.getElementById('parks').innerHTML=PARKLIST.map(([k,l])=>{
+    const has=!!parkData(k);
+    return `<button type="button" class="pk${CUR===k?' on':''}" ${has?`onclick="switchPark('${k}')"`:''} ${has?'':'disabled'}>${l}${has?'':' · data collecting'}</button>`;
+  }).join('');
+}
+function switchPark(k){if(!parkData(k))return;CUR=k;drawParks();render(parkData(k));}
+function render(d){
+  const label=CUR==='MK'?'Magic Kingdom':(d.park_label||CUR);
+  document.getElementById('title').textContent=label+' wait forecast';
+  document.title=label+' wait forecast';
+  document.getElementById('sub').textContent='Updated '+new Date(d.updated).toLocaleString()+' · '+d.samples.toLocaleString()+' records'+((d.history_samples||0)>0?' ('+d.history_samples.toLocaleString()+' historical replay)':'');
+  document.getElementById('banner').innerHTML='';
   const age=(Date.now()-new Date(d.last_sample).getTime())/60000;
   if(age>15)document.getElementById('banner').innerHTML='<div class="banner">Collection delayed: latest sample is '+Math.round(age)+' minutes old. These forecasts start from that sample, not from now.</div>';
   if(d.demo)document.getElementById('banner').innerHTML='<div class="banner">Demo numbers. Live collection replaces them after the first scheduled run.</div>';
@@ -122,11 +140,11 @@ fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
     else if(c.is_party_night)bits.push('Ticketed event tonight');
     if(c.ll_multipass_usd)bits.push('Lightning Lane Multi Pass $'+c.ll_multipass_usd);
     const el=document.getElementById('ctx');el.style.display='block';el.textContent=bits.join(' · ');
-  }
+  }else{document.getElementById('ctx').style.display='none';}
   const m120=d.metrics['120']||{};
   const mel=document.getElementById('mission');mel.style.display='block';
   mel.innerHTML='<b>The goal: call the posted wait 2 hours out with 2% error.</b> '+(m120.mae!=null?
-    `Right now the +2 hr forecast stands at <b>${m120.mape_ge20}% error</b> on 20+ min waits · ${m120.mae} min average miss · ${m120.within5}% within 5 min · ${m120.improvement_pct}% better than “same as now” (${m120.model||''}). The +30/+60/+90 forecasts in the table are the stepping stones that build confidence in the +2 hr call; tap any ride for its full scorecard and the last 4 hours of calls.`:
+    `Right now ${CUR==='MK'?'the':label+'’s'} +2 hr forecast stands at <b>${m120.mape_ge20}% error</b> on 20+ min waits · ${m120.mae} min average miss · ${m120.within5}% within 5 min · ${m120.improvement_pct}% better than “same as now” (${m120.model||''}). Each park has its own engine, trained only on that park's data and held to the same ship gate. The +30/+60/+90 forecasts in the table are the stepping stones that build confidence in the +2 hr call; tap any ride for its full scorecard and the last 4 hours of calls.`:
     'The +2 hr model is still collecting the data it needs to ship.');
   RIDES=d.rides;LOOKBACK=d.lookback||{};
   const fc=h=>r=>`<td class="h" style="background:${heat(r['f'+h])}">${r['f'+h]}${r['f'+h+'_lo']!=null?`<span class="rng">${r['f'+h+'_lo']}–${r['f'+h+'_hi']}</span>`:''}</td>`;
@@ -134,7 +152,8 @@ fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
     fc(30)(r)+fc(60)(r)+fc(90)(r)+fc(120)(r)+`<td class="sc">${r.score120_mae!=null?'±'+r.score120_mae+' min'+(r.score120_in10!=null?`<span class="rng">${r.score120_in5!=null?r.score120_in5+'% in 5 · ':''}${r.score120_in10}% in 10</span>`:''):'—'}</td>`+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
   const f=[['30','+30'],['60','+60'],['90','+90'],['120','+120']].filter(([h])=>(d.metrics[h]||{}).top_features)
     .map(([h,l])=>`<p class="factors"><b>${l} min:</b> ${(d.metrics[h].top_features||[]).join(', ')}</p>`).join('');
-  if(f)document.getElementById('factors').innerHTML=f;
-}).catch(()=>{document.getElementById('sub').textContent='Could not load data.json. Serve this folder from GitHub Pages or a local web server.'});
+  document.getElementById('factors').innerHTML=f||'<p class="factors">Factor rankings appear after the first model beats the “same as now” baseline on unseen time.</p>';
+}
+fetch('data.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{DATA=d;drawParks();render(d);}).catch(()=>{document.getElementById('sub').textContent='Could not load data.json. Serve this folder from GitHub Pages or a local web server.'});
 </script></body></html>
 
