@@ -30,6 +30,7 @@ td.h{font-weight:600}td.sc{white-space:nowrap}.rng{display:block;font-weight:400
 .sheet th,.sheet td{padding:6px 8px}
 .rng2{font-weight:400;font-size:.75rem;color:var(--mute);white-space:nowrap}
 tbody#rows tr{cursor:pointer}
+@media (max-width:640px){#todaygrid{grid-template-columns:1fr !important}}
 .pk{font:inherit;font-size:.9rem;padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);cursor:pointer}
 .pk.on{font-weight:700;border-color:var(--ink)}
 .pk:disabled{opacity:.45;cursor:default}
@@ -41,7 +42,13 @@ tbody#rows tr{cursor:pointer}
 <div id="banner"></div>
 <div class="ctx" id="mission" style="display:none;font-size:.98rem"></div>
 <div class="ctx" id="ctx" style="display:none"></div>
-<div class="ctx" id="today" style="display:none"></div>
+<div id="todaywrap" style="display:none">
+ <div id="todaygrid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+  <div class="ctx" style="margin-bottom:0" id="todaybands"></div>
+  <div class="ctx" style="margin-bottom:0" id="todayscore"></div>
+ </div>
+ <p class="sub" style="margin:6px 0 12px">Graded live, not backtested: every call is frozen when it's made and scored against the wait actually posted at its target time. Resets at midnight — early in the day the rate swings on few calls before it settles.</p>
+</div>
 <p class="sub" style="margin:0 0 8px">Wait color key (minutes): <span style="background:var(--c0);padding:1px 8px;border-radius:4px">0–19</span> <span style="background:var(--c1);padding:1px 8px;border-radius:4px">20–39</span> <span style="background:var(--c2);padding:1px 8px;border-radius:4px">40–59</span> <span style="background:var(--c3);padding:1px 8px;border-radius:4px">60+</span></p>
 <div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30</th><th>+60</th><th>+90</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
 <p class="sub" style="margin-top:8px">Tap a ride for the breakdown — its full scorecard at every horizon and the last 4 hours of predicted-vs-posted.</p>
@@ -178,16 +185,30 @@ function render(d){
     `Right now ${CUR==='MK'?'the':label+'’s'} +2 hr forecast stands at <b>${m120.mape_ge20}% error</b> on 20+ min waits · ${m120.mae} min average miss · ${m120.within5}% within 5 min · ${m120.improvement_pct}% better than “same as now” (${m120.model||''}). Each park has its own engine, trained only on that park's data and held to the same ship gate. The +30/+60/+90 forecasts in the table are the stepping stones that build confidence in the +2 hr call; tap any ride for its full scorecard and the last 4 hours of calls.`:
     'The +2 hr model is still collecting the data it needs to ship.');
   const ts=d.today||{};
-  const tel=document.getElementById('today');
-  if(ts.graded){
+  const tw=document.getElementById('todaywrap');
+  if(ts.graded && ts.in15!=null){
+    tw.style.display='block';
+    const over=100-ts.in15;
+    const seg=(w,c)=>w>0?`<span style="display:block;height:100%;width:${w}%;background:${c}"></span>`:'';
+    const bar=`<div style="display:flex;height:14px;border-radius:4px;overflow:hidden;margin:8px 0 10px">${seg(ts.exact,'#2f9e68')}${seg(ts.in5-ts.exact,'#7fb069')}${seg(ts.in10-ts.in5,'#e0b62e')}${seg(ts.in15-ts.in10,'#e08a3c')}${seg(over,'#d64545')}</div>`;
+    const brow=(c,l,v)=>`<div style="display:flex;align-items:center;gap:8px;margin:3px 0"><span style="width:11px;height:11px;border-radius:3px;background:${c};flex:none"></span><span style="flex:1">${l}</span><b>${v}%</b></div>`;
+    document.getElementById('todaybands').innerHTML=
+      `<b>Today's calls — ${ts.graded.toLocaleString()} graded</b>`+bar+
+      brow('#2f9e68','Exact',ts.exact)+
+      brow('#7fb069','Within 5 min',ts.in5)+
+      brow('#e0b62e','Within 10 min',ts.in10)+
+      brow('#e08a3c','Within 15 min',ts.in15)+
+      brow('#d64545','Over 15 min',over);
     const bh=ts.by_horizon||{};
-    const seg=h=>bh[h]?`<b>${h==='120'?'+2 hr':'+'+h}:</b> ${bh[h].exact}% exact · ${bh[h].in5}% in 5`:null;
-    const segs=['30','60','90','120'].map(seg).filter(Boolean).join(' &nbsp;·&nbsp; ');
-    tel.style.display='block';
-    tel.innerHTML=`<b>Today's prediction rate so far:</b> ${ts.graded.toLocaleString()} graded calls — <b>${ts.exact}% exact</b> · ${ts.in5}% within 5 min · ${ts.in10}% within 10 min`+
-      (segs?`<span style="display:block;margin-top:2px">${segs}</span>`:'')+
-      `<span style="display:block;margin-top:2px;color:var(--mute);font-size:.82rem">Graded live, not backtested: every call is frozen when it's made and scored against the wait actually posted at its target time. Resets at midnight — early in the day the rate swings on few calls before it settles.</span>`;
-  }else{tel.style.display='none';}
+    const qcol=v=>v>=45?'#2f9e68':v>=35?'#7fb069':v>=25?'#e0b62e':v>=15?'#e08a3c':'#d64545';
+    const hrow=h=>bh[h]?`<div style="display:flex;align-items:center;gap:8px;margin:3px 0"><span style="flex:1">${h==='120'?'+2 hr':'+'+h+' min'} exact</span><b style="color:${qcol(bh[h].exact)}">${bh[h].exact}%</b></div>`:'';
+    const mape=((d.metrics||{})['120']||{}).mape_ge20;
+    document.getElementById('todayscore').innerHTML=
+      `<b>Overall score</b>`+
+      `<div style="font-size:2rem;font-weight:700;line-height:1.15;color:${qcol(ts.exact)}">${ts.exact}% <span style="font-size:1rem;font-weight:600">exact</span></div>`+
+      ['30','60','90','120'].map(hrow).join('')+
+      (mape!=null?`<div style="display:flex;align-items:center;gap:8px;margin:6px 0 3px;border-top:1px solid var(--line);padding-top:6px"><span style="flex:1">+2 hr error (20+ min waits)</span><b>${mape}%</b></div>`:'');
+  }else{tw.style.display='none';}
   RIDES=d.rides;LOOKBACK=d.lookback||{};METRICS=d.metrics||{};CTXG=d.context||{};
   const fc=h=>r=>`<td class="h" style="background:${heat(r['f'+h])}">${r['f'+h]}${r['f'+h+'_lo']!=null?`<span class="rng">${r['f'+h+'_lo']}–${r['f'+h+'_hi']}</span>`:''}</td>`;
   document.getElementById('rows').innerHTML=d.rides.map((r,i)=>`<tr onclick="openRide(${i})"><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
