@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-05T06:25:55.284688+00:00",
- "last_sample": "2026-11-05T06:25:29+00:00",
- "samples": 28417,
+ "updated": "2026-11-05T06:30:43.142273+00:00",
+ "last_sample": "2026-11-05T06:30:28+00:00",
+ "samples": 28453,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -10,15 +10,15 @@
    "train_rows": 12025,
    "test_rows": 3954,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.3,
-   "rmse": 7.0,
+   "mae": 4.2,
+   "rmse": 6.9,
    "within10": 92,
    "within5": 79,
-   "mape_ge20": 18.5,
-   "bias": -0.2,
+   "mape_ge20": 18.7,
+   "bias": -0.3,
    "baseline_mae": 5.2,
    "baseline_mape_ge20": 24.3,
-   "improvement_pct": 16.9,
+   "improvement_pct": 17.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -26,7 +26,7 @@
     "hour_cos",
     "diff_30",
     "lag_60",
-    "diff_15"
+    "hour_sin"
    ]
   },
   "60": {
@@ -34,23 +34,23 @@
    "train_rows": 11378,
    "test_rows": 3752,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.6,
-   "rmse": 7.2,
-   "within10": 92,
+   "mae": 4.7,
+   "rmse": 7.3,
+   "within10": 91,
    "within5": 77,
-   "mape_ge20": 20.3,
+   "mape_ge20": 20.6,
    "bias": -0.2,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.6,
-   "improvement_pct": 26.6,
+   "improvement_pct": 25.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
     "diff_30",
-    "hour_sin",
-    "diff_15"
+    "lag_60",
+    "hour_sin"
    ]
   },
   "90": {
@@ -61,12 +61,12 @@
    "mae": 4.6,
    "rmse": 7.2,
    "within10": 91,
-   "within5": 77,
-   "mape_ge20": 20.7,
-   "bias": -0.3,
+   "within5": 78,
+   "mape_ge20": 20.4,
+   "bias": -0.5,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.8,
-   "improvement_pct": 27.9,
+   "improvement_pct": 28.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -74,7 +74,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_120"
+    "roll_mean_60"
    ]
   },
   "120": {
@@ -82,15 +82,15 @@
    "train_rows": 10090,
    "test_rows": 3426,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.0,
-   "rmse": 7.4,
+   "mae": 4.8,
+   "rmse": 7.2,
    "within10": 90,
-   "within5": 75,
-   "mape_ge20": 21.8,
-   "bias": -0.2,
+   "within5": 76,
+   "mape_ge20": 21.0,
+   "bias": -0.3,
    "baseline_mae": 7.3,
    "baseline_mape_ge20": 31.6,
-   "improvement_pct": 31.1,
+   "improvement_pct": 34.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -98,7 +98,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_60"
+    "roll_mean_60"
    ]
   }
  },
@@ -113,7 +113,7 @@
  },
  "demo": false,
  "lookback": {},
- "lookback_debug": "log rows 5820; act (823, 31) idx 2026-10-30 04:00:00+00:00..2026-11-05 03:05:00+00:00; slots 3; lookback rides 0",
+ "lookback_debug": "log rows 5704; act (823, 31) idx 2026-10-30 04:00:00+00:00..2026-11-05 03:05:00+00:00; slots 3; lookback rides 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-05T06:26:07.709916+00:00",
