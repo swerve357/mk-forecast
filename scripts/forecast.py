@@ -514,6 +514,19 @@ def main():
     except Exception as ex:
         print(f"closure_bot hook: {ex}")
 
+    # ---- per-park engines (fail-safe, same guarantee as the bots:
+    # each park's engine trains only on its own data, retrains at most
+    # every ~30 min, and can never break or delay the MK forecast) ----
+    try:
+        import subprocess, sys as _sys
+        _eng = os.path.join(ROOT, "scripts", "park_engine.py")
+        if os.path.exists(_eng):
+            _r = subprocess.run([_sys.executable, _eng, "EPCOT"], timeout=600,
+                                capture_output=True, text=True)
+            print((_r.stdout or "").strip() or f"park_engine rc={_r.returncode}")
+    except Exception as ex:
+        print(f"park_engine hook: {ex}")
+
 if __name__ == "__main__":
     main()
 
