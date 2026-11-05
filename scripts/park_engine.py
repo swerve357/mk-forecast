@@ -202,6 +202,16 @@ def run_park(park):
     for _, r in now.reset_index().iterrows():
         row = {"name": r["name"], "now": int(round(r["wait"])),
                "trend30": int(round(r["diff_30"])) if pd.notna(r.get("diff_30")) else 0}
+        def _n(v):
+            return int(round(v)) if pd.notna(v) else None
+        # Live inputs behind this ride's calls — powers the dashboard's
+        # "why this call" panel (the model's actual evidence, not a story).
+        row["why"] = {"lag60": _n(r.get("lag_60")), "lag120": _n(r.get("lag_120")),
+                      "lag_yday": _n(r.get("lag_yday")), "down60": _n(r.get("down_mins_60")),
+                      "reopened": bool(r.get("reopened_30")) if pd.notna(r.get("reopened_30")) else False,
+                      "park_mean": _n(r.get("park_mean")),
+                      "park_busy": int(round(float(r["park_frac_busy"]) * 100)) if pd.notna(r.get("park_frac_busy")) else None,
+                      "mins_open": _n(r.get("mins_since_open")), "mins_close": _n(r.get("mins_to_close"))}
         for h in F.HORIZONS:
             if h in models:
                 mdl, mcols = models[h]
@@ -240,7 +250,7 @@ def run_park(park):
             log = pd.concat([pd.read_csv(log_path), log], ignore_index=True)
         log["made_at"] = pd.to_datetime(log["made_at"], utc=True, format="mixed")
         log["target"] = pd.to_datetime(log["target"], utc=True, format="mixed")
-        cutoff = lts - pd.Timedelta(hours=8)
+        cutoff = lts - pd.Timedelta(hours=30)   # keep a full day + margin for the daily rate
         log = (log.drop_duplicates(subset=["made_at", "name", "horizon"], keep="last")
                   .loc[lambda x: x["made_at"] >= cutoff]
                   .sort_values(["made_at", "name", "horizon"]))
@@ -248,6 +258,7 @@ def run_park(park):
     except Exception as ex:
         print(f"{park} predlog: {ex}")
     lookback = {}
+    today_stats = {}
     try:
         f2 = feat[["name", "wait"]].reset_index()
         act = f2.pivot_table(index=f2.columns[0], columns="name",
@@ -274,6 +285,28 @@ def run_park(park):
                 entries.append(e)
             if entries:
                 lookback[name] = entries
+
+        # ---- today's running prediction rate (same design as MK) ----
+        et = "America/New_York"
+        day0 = lts.tz_convert(et).normalize().tz_convert("UTC")
+        due = log[(log["target"] >= day0) & (log["target"] <= lts)]
+        acts = act.stack().rename("actual").reset_index()
+        acts.columns = ["target", "name", "actual"]
+        mm = due.merge(acts, on=["name", "target"], how="inner").dropna(subset=["actual"])
+        if len(mm):
+            err = (mm["pred"] - mm["actual"]).abs()
+            today_stats.update({
+                "date": str(lts.tz_convert(et).date()), "graded": int(len(mm)),
+                "exact": int(round(float((err == 0).mean() * 100))),
+                "in5": int(round(float((err <= 5).mean() * 100))),
+                "in10": int(round(float((err <= 10).mean() * 100)))})
+            for hh, g in mm.groupby("horizon"):
+                e2 = (g["pred"] - g["actual"]).abs()
+                today_stats.setdefault("by_horizon", {})[str(int(hh))] = {
+                    "graded": int(len(g)),
+                    "exact": int(round(float((e2 == 0).mean() * 100))),
+                    "in5": int(round(float((e2 <= 5).mean() * 100))),
+                    "in10": int(round(float((e2 <= 10).mean() * 100)))}
     except Exception as ex:
         print(f"{park} lookback: {ex}")
 
@@ -295,7 +328,8 @@ def run_park(park):
                "last_sample": raw["ts_utc"].max().isoformat(),
                "samples": int(len(raw)), "history_samples": 0,
                "rides": rides, "metrics": metrics, "context": ctx,
-               "demo": False, "lookback": lookback, "park_label": cfg["label"]}
+               "demo": False, "lookback": lookback, "today": today_stats,
+               "park_label": cfg["label"]}
 
     # Store the section on disk (in data/, which the workflow commits):
     # forecast.py rewrites docs/data.json wholesale on every MK run, so
