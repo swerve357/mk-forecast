@@ -376,6 +376,16 @@ def main():
     for _, r in now.reset_index().iterrows():
         row = {"name": r["name"], "now": int(round(r["wait"])),
                "trend30": int(round(r["diff_30"])) if pd.notna(r.get("diff_30")) else 0}
+        def _n(v):
+            return int(round(v)) if pd.notna(v) else None
+        # Live inputs behind this ride's calls — powers the dashboard's
+        # "why this call" panel (the model's actual evidence, not a story).
+        row["why"] = {"lag60": _n(r.get("lag_60")), "lag120": _n(r.get("lag_120")),
+                      "lag_yday": _n(r.get("lag_yday")), "down60": _n(r.get("down_mins_60")),
+                      "reopened": bool(r.get("reopened_30")) if pd.notna(r.get("reopened_30")) else False,
+                      "park_mean": _n(r.get("park_mean")),
+                      "park_busy": int(round(float(r["park_frac_busy"]) * 100)) if pd.notna(r.get("park_frac_busy")) else None,
+                      "mins_open": _n(r.get("mins_since_open")), "mins_close": _n(r.get("mins_to_close"))}
         for h in HORIZONS:
             if h in models:
                 mdl, mcols = models[h]
@@ -419,6 +429,7 @@ def main():
     # predicted-vs-actual side by side for the last 4 hours — good or bad,
     # including how fast predictions recover after a closure or spike.
     lookback = {}
+    today_stats = {}
     lb_debug = []
     lts = pd.Timestamp(latest_ts)
     lts = lts.tz_localize("UTC") if lts.tzinfo is None else lts.tz_convert("UTC")
@@ -433,7 +444,7 @@ def main():
             log = pd.concat([pd.read_csv(PREDLOG), log], ignore_index=True)
         log["made_at"] = pd.to_datetime(log["made_at"], utc=True, format="mixed")
         log["target"] = pd.to_datetime(log["target"], utc=True, format="mixed")
-        cutoff = lts - pd.Timedelta(hours=8)
+        cutoff = lts - pd.Timedelta(hours=30)   # keep a full day + margin for the daily rate
         log = (log.drop_duplicates(subset=["made_at", "name", "horizon"], keep="last")
                   .loc[lambda x: x["made_at"] >= cutoff]
                   .sort_values(["made_at", "name", "horizon"]))
@@ -471,6 +482,31 @@ def main():
             if entries:
                 lookback[name] = entries
         lb_debug.append(f"lookback rides {len(lookback)}")
+
+        # ---- today's running prediction rate (prospective, live-graded):
+        # every call whose target time falls today (ET) and has come due,
+        # scored against the wait actually posted at that time. ----
+        et = "America/New_York"
+        day0 = lts.tz_convert(et).normalize().tz_convert("UTC")
+        due = log[(log["target"] >= day0) & (log["target"] <= lts)]
+        acts = act.stack().rename("actual").reset_index()
+        acts.columns = ["target", "name", "actual"]
+        m = due.merge(acts, on=["name", "target"], how="inner").dropna(subset=["actual"])
+        if len(m):
+            err = (m["pred"] - m["actual"]).abs()
+            today_stats.update({
+                "date": str(lts.tz_convert(et).date()), "graded": int(len(m)),
+                "exact": int(round(float((err == 0).mean() * 100))),
+                "in5": int(round(float((err <= 5).mean() * 100))),
+                "in10": int(round(float((err <= 10).mean() * 100)))})
+            for hh, g in m.groupby("horizon"):
+                e2 = (g["pred"] - g["actual"]).abs()
+                today_stats.setdefault("by_horizon", {})[str(int(hh))] = {
+                    "graded": int(len(g)),
+                    "exact": int(round(float((e2 == 0).mean() * 100))),
+                    "in5": int(round(float((e2 <= 5).mean() * 100))),
+                    "in10": int(round(float((e2 <= 10).mean() * 100)))}
+        lb_debug.append(f"today graded {today_stats.get('graded', 0)}")
     except Exception as ex:
         lb_debug.append(f"lookback EXC {type(ex).__name__}: {ex}")
         print(f"lookback: {ex}")
@@ -497,7 +533,8 @@ def main():
            "last_sample": raw["ts_utc"].max().isoformat(), "samples": int(len(raw)),
            "history_samples": int(raw.get("source", pd.Series(dtype=str)).eq("themeparks.wiki history replay").sum()),
            "rides": rides, "metrics": metrics, "context": ctx, "demo": False,
-           "lookback": lookback, "lookback_debug": "; ".join(lb_debug)}
+           "lookback": lookback, "today": today_stats,
+           "lookback_debug": "; ".join(lb_debug)}
     json.dump(out, open(OUT, "w"), indent=1)
     print(f"wrote {len(rides)} rides; shipped models: {list(models) or 'none yet'}; "
           f"intervals: {list(intervals) or 'none'}")
