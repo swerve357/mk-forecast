@@ -1,14 +1,21 @@
 """Poll ThemeParks.wiki for live waits at all four Walt Disney World parks
 and append one CSV per park.
 
-Magic Kingdom stays in data/waits.csv (the forecast pipeline reads it).
-The other three parks are collected data-only for now, into
-data/waits_epcot.csv, data/waits_hollywood_studios.csv and
-data/waits_animal_kingdom.csv, in the identical row format, so their
-history is already banked when forecasting expands beyond Magic Kingdom.
+Collection strategy (Dan's call, 2026-11-06): ONE call to the Walt
+Disney World resort entity's /live feed returns every park's entities
+at a single instant — all four parks banked together each cycle, so a
+cycle that runs long can never lose one park's data while keeping
+another's. The payload is sliced by parkId into the same per-park CSVs
+as always. If the resort call fails — or a park's slice comes back
+empty — that park falls back to its own /live call, preserving the
+original per-park failure isolation.
 
-Failure policy: one park's outage never loses the others — each park is
-collected independently, and the run only fails if every park fails.
+Magic Kingdom stays in data/waits.csv (the forecast pipeline reads it);
+the other parks write data/waits_epcot.csv, data/waits_hollywood_studios.csv
+and data/waits_animal_kingdom.csv in the identical row format.
+
+Failure policy: one park's outage never loses the others — the run only
+fails if every park fails.
 """
 import csv, json, os, urllib.request
 from datetime import datetime, timezone
@@ -20,6 +27,9 @@ PARKS = [
     ("Hollywood Studios", "288747d1-8b4f-4a64-867e-ea7c9b27bad8", "waits_hollywood_studios.csv"),
     ("Animal Kingdom", "1c84a229-8862-4648-9c71-378ddd2c7693", "waits_animal_kingdom.csv"),
 ]
+# The resort entity's /live feed spans all six WDW parks (we slice out
+# our four; water parks and untagged resort entities are ignored).
+RESORT_ID = "e957da41-3552-4cf6-b636-5babc5cbc4e5"
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
 # ts_utc is OUR pull DTG (exact, to the second, one stamp per poll).
@@ -49,12 +59,17 @@ def ensure_header(out):
     return False
 
 
-def collect_park(name, park_id, filename):
-    url = f"https://api.themeparks.wiki/v1/entity/{park_id}/live"
+def fetch_live(entity_id):
+    url = f"https://api.themeparks.wiki/v1/entity/{entity_id}/live"
     req = urllib.request.Request(url, headers={"User-Agent": "mk-forecast/0.1"})
     with urllib.request.urlopen(req, timeout=30) as r:
-        data = json.load(r)
-    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        return json.load(r)
+
+
+def write_park(name, data, filename, ts):
+    """Append one park's ATTRACTION rows from a /live payload (the whole
+    park payload, or this park's slice of the resort payload), then run
+    the showtime tracker on the same entities."""
     rows = []
     for e in data.get("liveData", []):
         if e.get("entityType") != "ATTRACTION":
@@ -81,14 +96,38 @@ def collect_park(name, park_id, filename):
     return len(rows)
 
 
+def collect_park_fallback(name, park_id, filename, ts):
+    """The original per-park call, used when the resort feed fails or a
+    park's slice comes back empty."""
+    data = fetch_live(park_id)
+    return write_park(name, data, filename, ts)
+
+
 def main():
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    slices = {}
+    try:
+        resort = fetch_live(RESORT_ID)
+        for e in resort.get("liveData", []):
+            slices.setdefault(e.get("parkId"), []).append(e)
+        print(f"resort call ok: {len(resort.get('liveData', []))} entities")
+    except Exception as e:
+        print(f"resort call FAILED ({e}) — falling back to per-park calls")
     ok = 0
     for name, park_id, filename in PARKS:
         try:
-            collect_park(name, park_id, filename)
+            ents = slices.get(park_id) or []
+            if len(ents) < 10:
+                raise ValueError(f"resort slice too small ({len(ents)})")
+            write_park(name, {"liveData": ents}, filename, ts)
             ok += 1
         except Exception as e:
-            print(f"{name}: FAILED ({e})")
+            print(f"{name}: resort slice unusable ({e}); per-park fallback")
+            try:
+                collect_park_fallback(name, park_id, filename, ts)
+                ok += 1
+            except Exception as e2:
+                print(f"{name}: FAILED ({e2})")
     if ok == 0:
         raise SystemExit("all parks failed to collect")
     print(f"collected {ok}/{len(PARKS)} parks")
