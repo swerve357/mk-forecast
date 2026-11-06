@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-06T08:10:43.031063+00:00",
- "last_sample": "2026-11-06T08:10:28+00:00",
- "samples": 39397,
+ "updated": "2026-11-06T08:15:55.190676+00:00",
+ "last_sample": "2026-11-06T08:15:30+00:00",
+ "samples": 39433,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -11,11 +11,11 @@
    "test_rows": 4819,
    "model": "gradient boosting (delta+round5)",
    "mae": 3.9,
-   "rmse": 6.5,
+   "rmse": 6.6,
    "within10": 93,
-   "within5": 82,
-   "mape_ge20": 17.7,
-   "bias": 0.2,
+   "within5": 81,
+   "mape_ge20": 18.0,
+   "bias": 0.1,
    "baseline_mae": 4.9,
    "baseline_mape_ge20": 23.6,
    "improvement_pct": 19.9,
@@ -26,7 +26,7 @@
     "hour_cos",
     "lag_yday",
     "diff_30",
-    "roll_mean_30"
+    "roll_std_60"
    ]
   },
   "60": {
@@ -42,7 +42,7 @@
    "bias": 1.1,
    "baseline_mae": 5.7,
    "baseline_mape_ge20": 26.4,
-   "improvement_pct": 25.9,
+   "improvement_pct": 25.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "diff_15"
+    "lag_30"
    ]
   },
   "90": {
@@ -59,11 +59,11 @@
    "test_rows": 4445,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.3,
-   "rmse": 6.8,
-   "within10": 93,
-   "within5": 79,
-   "mape_ge20": 17.9,
-   "bias": 1.2,
+   "rmse": 6.9,
+   "within10": 92,
+   "within5": 78,
+   "mape_ge20": 17.6,
+   "bias": 1.1,
    "baseline_mae": 5.9,
    "baseline_mape_ge20": 27.1,
    "improvement_pct": 27.1,
@@ -74,7 +74,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "roll_mean_60"
+    "lag_120"
    ]
   },
   "120": {
@@ -86,11 +86,11 @@
    "rmse": 6.9,
    "within10": 92,
    "within5": 76,
-   "mape_ge20": 17.1,
-   "bias": 1.7,
+   "mape_ge20": 17.7,
+   "bias": 1.8,
    "baseline_mae": 6.7,
    "baseline_mape_ge20": 29.7,
-   "improvement_pct": 33.4,
+   "improvement_pct": 33.5,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -98,7 +98,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_yday"
+    "lag_60"
    ]
   }
  },
