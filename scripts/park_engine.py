@@ -231,12 +231,18 @@ def run_park(park):
                 row[f"score{h}_in5"] = sc["within5"]
                 row[f"score{h}_in10"] = sc["within10"]
                 row[f"score{h}_pairs"] = sc["pairs"]
+            # The shipped change-from-now per horizon. Between retrains,
+            # refresh_park() re-issues calls as current wait + this delta,
+            # so the park logs calls every cycle like MK does.
+            row[f"d{h}"] = row[f"f{h}"] - row["now"]
+            if f"f{h}_lo" in row:
+                row[f"d{h}_lo"] = row[f"f{h}_lo"] - row[f"f{h}"]
+                row[f"d{h}_hi"] = row[f"f{h}_hi"] - row[f"f{h}"]
         row["people"] = None
         rides.append(row)
     rides.sort(key=lambda x: -x["now"])
 
     # ---- prediction log + lookback (same design as MK) ----
-    log_path = os.path.join(ROOT, cfg["log"])
     lts = pd.Timestamp(latest_ts)
     lts = lts.tz_localize("UTC") if lts.tzinfo is None else lts.tz_convert("UTC")
     log = pd.DataFrame(columns=["made_at", "name", "horizon", "target", "pred"])
@@ -245,16 +251,7 @@ def run_park(park):
                      "target": (lts + pd.Timedelta(minutes=h)).isoformat(),
                      "pred": row[f"f{h}"]}
                     for row in rides for h in F.HORIZONS]
-        log = pd.DataFrame(new_rows)
-        if os.path.exists(log_path):
-            log = pd.concat([pd.read_csv(log_path), log], ignore_index=True)
-        log["made_at"] = pd.to_datetime(log["made_at"], utc=True, format="mixed")
-        log["target"] = pd.to_datetime(log["target"], utc=True, format="mixed")
-        cutoff = lts - pd.Timedelta(hours=30)   # keep a full day + margin for the daily rate
-        log = (log.drop_duplicates(subset=["made_at", "name", "horizon"], keep="last")
-                  .loc[lambda x: x["made_at"] >= cutoff]
-                  .sort_values(["made_at", "name", "horizon"]))
-        log.to_csv(log_path, index=False)
+        log = _append_log(cfg, new_rows, lts)
     except Exception as ex:
         print(f"{park} predlog: {ex}")
     lookback = {}
@@ -265,7 +262,13 @@ def run_park(park):
                              values="wait", aggfunc="last")
         act.index = pd.to_datetime(act.index, utc=True)
         win = act.index[(act.index >= lts - pd.Timedelta(hours=4)) & (act.index <= lts)]
-        slots = win[::3]
+        # Rows on the 15-min grid PLUS every real call target in the
+        # window: a call made for 10:20 must be visible even though the
+        # grid's rows sit at :15/:30/:45.
+        extra = log.loc[(log["target"] >= lts - pd.Timedelta(hours=4))
+                        & (log["target"] <= lts), "target"].unique()
+        slots = sorted(set(win[::3].tolist())
+                       | set(pd.to_datetime(extra, utc=True).tolist()))
         pred_idx = log.set_index(["name", "horizon", "target"])["pred"].to_dict()
         stat = raw.groupby(["ts", "name"])["status"].last().unstack()
         stat.index = pd.to_datetime(stat.index, utc=True)
@@ -355,6 +358,86 @@ def run_park(park):
     return section
 
 
+def _append_log(cfg, new_rows, lts):
+    """Append prediction rows to a park's log, dedupe on
+    (made_at, name, horizon), prune to 30h, return the merged log."""
+    log_path = os.path.join(ROOT, cfg["log"])
+    log = pd.DataFrame(new_rows)
+    if os.path.exists(log_path):
+        log = pd.concat([pd.read_csv(log_path), log], ignore_index=True)
+    log["made_at"] = pd.to_datetime(log["made_at"], utc=True, format="mixed")
+    log["target"] = pd.to_datetime(log["target"], utc=True, format="mixed")
+    cutoff = lts - pd.Timedelta(hours=30)   # a full day + margin for the daily rate
+    log = (log.drop_duplicates(subset=["made_at", "name", "horizon"], keep="last")
+              .loc[lambda x: x["made_at"] >= cutoff]
+              .sort_values(["made_at", "name", "horizon"]))
+    log.to_csv(log_path, index=False)
+    return log
+
+
+def refresh_park(park):
+    """Between retrains (this runs every forecast cycle): re-issue the
+    standing model's calls from the latest posted waits — prediction =
+    current wait + the delta shipped at the last retrain, rounded to 5 —
+    append them to the park's prediction log, and refresh the stored
+    section's displayed numbers to match. MK logs calls every cycle
+    because it retrains every cycle; the parks retrain every ~25 min,
+    so without this their calls would exist only at retrain moments and
+    most lookback squares would have nothing to grade."""
+    cfg = PARKS[park]
+    sp = section_path(park)
+    if not os.path.exists(sp):
+        return
+    section = json.load(open(sp))
+    rides = section.get("rides") or []
+    if not rides or "d30" not in rides[0]:
+        return  # section predates delta storage; its next retrain adds them
+    raw = load_park_waits(os.path.join(ROOT, cfg["waits"]))
+    if not len(raw):
+        return
+    gts = raw["ts"].max()
+    snap = raw[raw["ts"] == gts]
+    cur = {r["name"]: float(r["wait"]) for _, r in snap.iterrows()
+           if pd.notna(r["wait"])}
+    if not cur:
+        return  # park is posting no waits right now (closed / overnight)
+    lts = pd.Timestamp(gts).tz_convert("UTC")
+    prev = raw[raw["ts"] == gts - pd.Timedelta(minutes=30)]
+    prev_map = {r["name"]: float(r["wait"]) for _, r in prev.iterrows()
+                if pd.notna(r["wait"])}
+    new_rows = []
+    for row in rides:
+        w = cur.get(row["name"])
+        if w is None:
+            continue
+        row["now"] = int(round(w))
+        if row["name"] in prev_map:
+            row["trend30"] = int(round(w - prev_map[row["name"]]))
+        for h in F.HORIZONS:
+            d = row.get(f"d{h}")
+            if d is None:
+                continue
+            p = int(max(0.0, round((w + d) / 5.0) * 5))
+            row[f"f{h}"] = p
+            if f"d{h}_lo" in row:
+                row[f"f{h}_lo"] = int(max(0.0, round((p + row[f"d{h}_lo"]) / 5.0) * 5))
+                row[f"f{h}_hi"] = int(max(0.0, round((p + row[f"d{h}_hi"]) / 5.0) * 5))
+            new_rows.append({"made_at": lts.isoformat(), "name": row["name"],
+                             "horizon": h,
+                             "target": (lts + pd.Timedelta(minutes=h)).isoformat(),
+                             "pred": p})
+    if not new_rows:
+        return
+    _append_log(cfg, new_rows, lts)
+    rides.sort(key=lambda x: -x["now"])
+    section["rides"] = rides
+    section["updated"] = datetime.now(timezone.utc).isoformat()
+    section["last_sample"] = raw["ts_utc"].max().isoformat()
+    json.dump(section, open(sp, "w"), indent=1)
+    print(f"{park}: refreshed calls for {len(new_rows) // len(F.HORIZONS)} rides "
+          f"from standing deltas")
+
+
 def section_path(park):
     return os.path.join(ROOT, "data", f"park_section_{park}.json")
 
@@ -390,6 +473,7 @@ def main():
         except Exception:
             state = {}
     now_utc = datetime.now(timezone.utc)
+    retrained = set()
     for park in wanted:
         last = state.get(park)
         due = True
@@ -403,6 +487,7 @@ def main():
             continue
         try:
             run_park(park)
+            retrained.add(park)
             state[park] = now_utc.isoformat()
             # Save progress per park: if the calling run is cut short,
             # finished parks stay done and only the rest remain due.
@@ -412,6 +497,15 @@ def main():
                 pass
         except Exception as ex:   # one park's engine never blocks the others
             print(f"{park} engine EXC (swallowed): {type(ex).__name__}: {ex}")
+    # Parks that did not retrain this cycle still issue fresh calls from
+    # their standing model's deltas, so every park logs every cycle.
+    for park in wanted:
+        if park in retrained:
+            continue
+        try:
+            refresh_park(park)
+        except Exception as ex:   # a refresh never blocks the others
+            print(f"{park} refresh EXC (swallowed): {type(ex).__name__}: {ex}")
     attach()
 
 
