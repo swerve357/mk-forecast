@@ -15,7 +15,7 @@ h1{font-size:1.35rem;margin:8px 0 2px}h2{font-size:1rem;margin:18px 0 6px}.sub{c
 .acc div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .acc b{display:block;font-size:1.15rem;font-variant-numeric:tabular-nums}.acc span{color:var(--mute);font-size:.78rem;display:block}
 .wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
-table{border-collapse:collapse;width:100%;min-width:660px;font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;min-width:470px;font-variant-numeric:tabular-nums}
 th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
 th{font-weight:600;color:var(--mute);font-size:.8rem}tr:last-child td{border-bottom:0}
 td.h{font-weight:600}td.sc{white-space:nowrap}.rng{display:block;font-weight:400;font-size:.72rem;color:var(--mute);white-space:nowrap}
@@ -50,8 +50,8 @@ tbody#rows tr{cursor:pointer}
  <p class="sub" style="margin:6px 0 12px">Graded live, not backtested: every call is frozen when it's made and scored against the wait actually posted at its target time. Resets at midnight — early in the day the rate swings on few calls before it settles.</p>
 </div>
 <p class="sub" style="margin:0 0 8px">Wait color key (minutes): <span style="background:var(--c0);padding:1px 8px;border-radius:4px">0–19</span> <span style="background:var(--c1);padding:1px 8px;border-radius:4px">20–39</span> <span style="background:var(--c2);padding:1px 8px;border-radius:4px">40–59</span> <span style="background:var(--c3);padding:1px 8px;border-radius:4px">60+</span></p>
-<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30</th><th>+60</th><th>+90</th><th>+2 hr</th><th>+2 hr score</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
-<p class="sub" style="margin-top:8px">Tap a ride for the breakdown — its full scorecard at every horizon and the last 4 hours of predicted-vs-posted.</p>
+<div class="wrap"><table><thead><tr><th>Ride</th><th>Now</th><th>+30</th><th>+60</th><th>Standby queue scenario</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="sub" style="margin-top:8px">Tap a ride for the breakdown — its full scorecard at both horizons and the last 4 hours of predicted-vs-posted.</p>
 <div id="rideModal" class="modal" style="display:none" onclick="if(event.target===this)closeRide()">
  <div class="sheet">
   <button type="button" class="x" onclick="closeRide()" aria-label="Close">✕</button>
@@ -61,7 +61,7 @@ tbody#rows tr{cursor:pointer}
 </div>
 <h2>What the model is learning from</h2>
 <div id="factors"><p class="factors">Factor rankings appear after the first model beats the “same as now” baseline on unseen time.</p></div>
-<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Model selection uses the newest 20% of time, with a forecast-horizon gap before training ends. This is preliminary backtesting, not independent prospective validation. MAE is average absolute error, not a confidence interval. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. Queue scenarios = posted wait × assumed hourly capacity × standby share. These are uncalibrated ranges, not measured headcounts or park attendance. Edit capacity.json to tune them. Historical change-log replay is identified separately from live samples. The “+2 hr score” column is per ride, from the same validation holdout: ± is the average minutes between the +2 hr prediction and the actual wait (lower is better), and the percentages are how often that prediction landed within 5 and within 10 minutes of the actual wait (higher is better). Tap a ride for its full scorecard at every horizon and the last 4 hours of predicted-vs-posted. Both should improve as live data replaces replayed history. Powered by ThemeParks.wiki.</p>
+<p class="sub" style="margin-top:12px">Minutes are posted waits, not stopwatch waits. Ranges, when shown, are the model’s 10th–90th percentile. Model selection uses the newest 20% of time, with a forecast-horizon gap before training ends. This is preliminary backtesting, not independent prospective validation. MAE is average absolute error, not a confidence interval. MAPE counts only rides whose true wait was 20+ min — percentages on a 5-min wait are noise. Queue scenarios = posted wait × assumed hourly capacity × standby share. These are uncalibrated ranges, not measured headcounts or park attendance. Edit capacity.json to tune them. Historical change-log replay is identified separately from live samples. Tap a ride for its full scorecard at both horizons and the last 4 hours of predicted-vs-posted. Both should improve as live data replaces replayed history. Powered by ThemeParks.wiki.</p>
 <script>
 const heat=m=>m>=60?'var(--c3)':m>=40?'var(--c2)':m>=20?'var(--c1)':'var(--c0)';
 let RIDES=[];
@@ -77,7 +77,7 @@ function openRide(i){
   const t=r.trend30||0;
   const trend=t>0?'up '+t+' over the last 30 min':t<0?'down '+(-t)+' over the last 30 min':'steady over the last 30 min';
   const q=r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString()+' people in the standby queue (scenario)':r.people!=null?'~'+r.people.toLocaleString()+' people in the standby queue (scenario)':'queue scenario not configured for this ride';
-  const rows=[['+30 min','f30',30],['+60 min','f60',60],['+90 min','f90',90],['+2 hr','f120',120]].map(([l,k,h])=>{
+  const rows=[['+30 min','f30',30],['+60 min','f60',60]].map(([l,k,h])=>{
     const lo=r[k+'_lo'],sm=r['score'+h+'_mae'],s5=r['score'+h+'_in5'],s10=r['score'+h+'_in10'],pr=r['score'+h+'_pairs'];
     return `<tr><td>${l}</td><td class="h">${r[k]}${lo!=null?` <span class="rng2">${lo}–${r[k+'_hi']}</span>`:''}</td><td>${sm!=null?'±'+sm+' min':'—'}</td><td>${s5!=null?s5+'%':'—'}</td><td>${s10!=null?s10+'%':'—'}</td><td>${pr!=null?pr:'—'}</td></tr>`}).join('');
   const lb=LOOKBACK[r.name]||[];
@@ -89,7 +89,7 @@ function openRide(i){
     return `<td style="background:${errBg(Math.abs(d))}">${e['p'+h]}<span style="display:block;font-size:.68rem;opacity:.85">${miss}</span></td>`};
   const lbCellClosed=h=>e=>e['p'+h]==null?'<td>**</td>':`<td style="opacity:.55">${e['p'+h]}</td>`;
   const graded=[];
-  lb.forEach(e=>{if(e.actual==null)return;[30,60,90,120].forEach(h=>{if(e['p'+h]!=null)graded.push({t:e.t,h,p:e['p'+h],a:e.actual,m:Math.abs(e['p'+h]-e.actual)})})});
+  lb.forEach(e=>{if(e.actual==null)return;[30,60].forEach(h=>{if(e['p'+h]!=null)graded.push({t:e.t,h,p:e['p'+h],a:e.actual,m:Math.abs(e['p'+h]-e.actual)})})});
   const lbA=lb.filter(e=>e.actual!=null);
   let story='';
   if(lbA.length>1){
@@ -101,10 +101,10 @@ function openRide(i){
       const worst=graded.reduce((x,y)=>y.m>x.m?y:x);
       if(worst.m<=5)story+='Every graded call landed within 5 min — a clean window.';
       else{
-        const hl=worst.h===120?'2-hour':worst.h+'-min';
+        const hl=worst.h+'-min';
         story+=`Our worst moment was ${worst.t}: the ${hl} call of ${worst.p} missed the posted ${worst.a} by ${worst.m} min. `;
         const wi=lbA.findIndex(e=>e.t===worst.t);
-        const rec=lbA.slice(wi+1).find(e=>[30,60,90,120].some(h=>e['p'+h]!=null&&Math.abs(e['p'+h]-e.actual)<=5));
+        const rec=lbA.slice(wi+1).find(e=>[30,60].some(h=>e['p'+h]!=null&&Math.abs(e['p'+h]-e.actual)<=5));
         story+=rec?`By ${rec.t} a call was back within 5 — that recovery is the bounce-back.`:'We have not settled back within 5 yet — still recovering.';
       }
     }else story+='The calls for this window are still filling in.';
@@ -112,8 +112,8 @@ function openRide(i){
   const lbHtml=lb.length?
     `<h2 style="margin:16px 0 6px;font-size:1rem">Last 4 hours — posted vs our calls</h2>`+
     (story?`<p style="margin:0 0 8px">${story}</p>`:'')+
-    `<table><thead><tr><th>Time</th><th>Posted</th><th>30m call</th><th>60m call</th><th>90m call</th><th>2h call</th></tr></thead><tbody>`+
-    lb.map(e=>e.closed?`<tr><td>${e.t}</td><td class="h">*</td>${lbCellClosed(30)(e)}${lbCellClosed(60)(e)}${lbCellClosed(90)(e)}${lbCellClosed(120)(e)}</tr>`:`<tr><td>${e.t}</td><td class="h">${e.actual}</td>${lbCell(30)(e)}${lbCell(60)(e)}${lbCell(90)(e)}${lbCell(120)(e)}</tr>`).join('')+
+    `<table><thead><tr><th>Time</th><th>Posted</th><th>30m call</th><th>60m call</th></tr></thead><tbody>`+
+    lb.map(e=>e.closed?`<tr><td>${e.t}</td><td class="h">*</td>${lbCellClosed(30)(e)}${lbCellClosed(60)(e)}</tr>`:`<tr><td>${e.t}</td><td class="h">${e.actual}</td>${lbCell(30)(e)}${lbCell(60)(e)}</tr>`).join('')+
     `</tbody></table>`+
     `<p class="sub" style="margin:8px 0 0">Read across a row: “Posted” is what the sign showed at that time, and each call is what we predicted for that same time, made that many minutes before it. The small number under a call is how far it landed from posted (− we called it low, + we called it high). Shading: green within 5 min, yellow within 10, orange within 15, red beyond. After a closure or a spike the cells flare — how fast they settle back to green is the bounce-back, and that reaction is the real product.</p>`+
     `<p class="sub" style="margin:6px 0 0"><b>Key:</b> * the ride was closed or down at that time — no wait was posted, so calls for that time can't be graded (shown faded). &nbsp;** no call on record for that time — a prediction cycle was missed.</p>`:
@@ -122,8 +122,8 @@ function openRide(i){
   let whyHtml='';
   if(w){
     const chg=h=>{const d=r['f'+h]-r.now;return (d>0?'+':'')+d};
-    const d120=r.f120-r.now;
-    const move=d120>0?`expects it to climb ${d120} more by the +2 hr mark`:d120<0?`expects it to ease ${-d120} by the +2 hr mark`:'expects it to hold steady through the +2 hr mark';
+    const d60=r.f60-r.now;
+    const move=d60>0?`expects it to climb ${d60} more by the +60 mark`:d60<0?`expects it to ease ${-d60} by the +60 mark`:'expects it to hold steady through the +60 mark';
     const press=w.park_busy==null?'':w.park_busy>=50?' The park is busy':w.park_busy>=30?' The park is moderately busy':' The park is on the quieter side';
     const cell=(l,v)=>`<tr><td>${l}</td><td class="h">${v}</td></tr>`;
     const inputs=
@@ -136,12 +136,12 @@ function openRide(i){
       cell('Reopened in the last 30 min',w.reopened?'yes':'no')+
       cell('Into the park day',fmtDur(w.mins_open))+
       cell('Until park close',fmtDur(w.mins_close));
-    const tf=((METRICS['120']||{}).top_features||[]).map(featName).filter((v,i,a)=>a.indexOf(v)===i).slice(0,5);
+    const tf=((METRICS['60']||{}).top_features||[]).map(featName).filter((v,i,a)=>a.indexOf(v)===i).slice(0,5);
     whyHtml=`<h2 style="margin:16px 0 6px;font-size:1rem">Why this call</h2>`+
       `<p style="margin:0 0 8px">The model doesn't predict the wait — it predicts the <b>change</b> from ${r.now} min, then rounds to the nearest 5. Right now it ${move}.${press?press+'.':''}</p>`+
       `<table><tbody>${inputs}</tbody></table>`+
-      `<p class="sub" style="margin:8px 0 0">Predicted change from now: +30 ${chg(30)} · +60 ${chg(60)} · +90 ${chg(90)} · +2 hr ${chg(120)} min.</p>`+
-      (tf.length?`<p class="sub" style="margin:4px 0 0">For the +2 hr call park-wide, the model is weighting most: ${tf.join(' · ')}.</p>`:'');
+      `<p class="sub" style="margin:8px 0 0">Predicted change from now: +30 ${chg(30)} · +60 ${chg(60)} min.</p>`+
+      (tf.length?`<p class="sub" style="margin:4px 0 0">For the +60 call park-wide, the model is weighting most: ${tf.join(' · ')}.</p>`:'');
   }
   document.getElementById('rdTitle').textContent=r.name;
   document.getElementById('rdBody').innerHTML=
@@ -207,21 +207,19 @@ function render(d){
     const qcol=v=>v>=45?'#2f9e68':v>=35?'#7fb069':v>=25?'#e0b62e':v>=15?'#e08a3c':'#d64545';
     const hrow=h=>bh[h]?`<div style="display:flex;align-items:center;gap:8px;margin:3px 0"><span style="flex:1">${h==='120'?'+2 hr':'+'+h+' min'} exact</span><b style="color:${qcol(bh[h].exact)}">${bh[h].exact}%</b></div>`:'';
     const mape60=((d.metrics||{})['60']||{}).mape_ge20;
-    const mape120=((d.metrics||{})['120']||{}).mape_ge20;
     const erow=(l,v)=>v!=null?`<div style="display:flex;align-items:center;gap:8px;margin:3px 0"><span style="flex:1">${l}</span><b>${v}%</b></div>`:'';
     document.getElementById('todayscore').innerHTML=
       `<b>Overall score</b>`+
       `<div style="font-size:2rem;font-weight:700;line-height:1.15;color:${qcol(ts.exact)}">${ts.exact}% <span style="font-size:1rem;font-weight:600">exact</span></div>`+
-      ['30','60','90','120'].map(hrow).join('')+
+      ['30','60'].map(hrow).join('')+
       `<div style="border-top:1px solid var(--line);margin-top:6px;padding-top:6px">`+
-      erow('+60 error (20+ min waits) — proving ground',mape60)+
-      erow('+2 hr error (20+ min waits) — the mission',mape120)+`</div>`;
+      erow('+60 error (20+ min waits) — proving ground',mape60)+`</div>`;
   }else{tw.style.display='none';}
   RIDES=d.rides;LOOKBACK=d.lookback||{};METRICS=d.metrics||{};CTXG=d.context||{};
   const fc=h=>r=>`<td class="h" style="background:${heat(r['f'+h])}">${r['f'+h]}${r['f'+h+'_lo']!=null?`<span class="rng">${r['f'+h+'_lo']}–${r['f'+h+'_hi']}</span>`:''}</td>`;
   document.getElementById('rows').innerHTML=d.rides.map((r,i)=>`<tr onclick="openRide(${i})"><td>${r.name}</td><td class="h" style="background:${heat(r.now)}">${r.now}</td>`+
-    fc(30)(r)+fc(60)(r)+fc(90)(r)+fc(120)(r)+`<td class="sc">${r.score120_mae!=null?'±'+r.score120_mae+' min'+(r.score120_in10!=null?`<span class="rng">${r.score120_in5!=null?r.score120_in5+'% in 5 · ':''}${r.score120_in10}% in 10</span>`:''):'—'}</td>`+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
-  const f=[['30','+30'],['60','+60'],['90','+90'],['120','+120']].filter(([h])=>(d.metrics[h]||{}).top_features)
+    fc(30)(r)+fc(60)(r)+`<td>${r.people_lo!=null?r.people_lo.toLocaleString()+'–'+r.people_hi.toLocaleString():r.people!=null?'~'+r.people.toLocaleString():'Not configured'}</td></tr>`).join('');
+  const f=[['30','+30'],['60','+60']].filter(([h])=>(d.metrics[h]||{}).top_features)
     .map(([h,l])=>`<p class="factors"><b>${l} min:</b> ${(d.metrics[h].top_features||[]).join(', ')}</p>`).join('');
   document.getElementById('factors').innerHTML=f||'<p class="factors">Factor rankings appear after the first model beats the “same as now” baseline on unseen time.</p>';
 }
