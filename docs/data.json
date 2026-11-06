@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-06T08:41:02.119633+00:00",
- "last_sample": "2026-11-06T08:40:34+00:00",
- "samples": 39613,
+ "updated": "2026-11-06T08:46:01.746854+00:00",
+ "last_sample": "2026-11-06T08:45:34+00:00",
+ "samples": 39649,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -10,23 +10,23 @@
    "train_rows": 15050,
    "test_rows": 4819,
    "model": "gradient boosting (delta+round5)",
-   "mae": 3.8,
-   "rmse": 6.6,
+   "mae": 3.9,
+   "rmse": 6.5,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.0,
-   "bias": 0.1,
+   "mape_ge20": 17.6,
+   "bias": 0.4,
    "baseline_mae": 4.9,
    "baseline_mape_ge20": 23.6,
-   "improvement_pct": 20.7,
+   "improvement_pct": 19.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
-    "lag_yday",
     "diff_30",
-    "roll_mean_30"
+    "lag_yday",
+    "hour_sin"
    ]
   },
   "60": {
@@ -37,12 +37,12 @@
    "mae": 4.2,
    "rmse": 6.7,
    "within10": 93,
-   "within5": 79,
-   "mape_ge20": 18.2,
-   "bias": 1.1,
+   "within5": 80,
+   "mape_ge20": 18.0,
+   "bias": 0.9,
    "baseline_mae": 5.7,
    "baseline_mape_ge20": 26.4,
-   "improvement_pct": 26.4,
+   "improvement_pct": 26.5,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_30"
+    "diff_15"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 13347,
    "test_rows": 4445,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.4,
-   "rmse": 7.0,
-   "within10": 92,
-   "within5": 78,
-   "mape_ge20": 18.5,
-   "bias": 1.3,
+   "mae": 4.3,
+   "rmse": 6.9,
+   "within10": 93,
+   "within5": 79,
+   "mape_ge20": 17.9,
+   "bias": 1.1,
    "baseline_mae": 5.9,
    "baseline_mape_ge20": 27.1,
-   "improvement_pct": 25.7,
+   "improvement_pct": 28.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -82,15 +82,15 @@
    "train_rows": 12590,
    "test_rows": 4261,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.3,
-   "rmse": 6.7,
-   "within10": 93,
-   "within5": 78,
-   "mape_ge20": 17.2,
-   "bias": 1.5,
+   "mae": 4.5,
+   "rmse": 6.9,
+   "within10": 92,
+   "within5": 76,
+   "mape_ge20": 17.6,
+   "bias": 1.9,
    "baseline_mae": 6.7,
    "baseline_mape_ge20": 29.7,
-   "improvement_pct": 35.0,
+   "improvement_pct": 32.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -98,7 +98,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_60"
+    "roll_mean_60"
    ]
   }
  },
