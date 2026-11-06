@@ -1,42 +1,52 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-06T15:01:06.599398+00:00",
+ "updated": "2026-11-06T15:05:46.865473+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-05 17:10:00-05:00",
-  "Enchanted Tales with Belle": "2026-11-05 19:40:00-05:00",
-  "The Hall of Presidents": "2026-11-05 20:05:00-05:00"
+  "Enchanted Tales with Belle": "2026-11-05 19:40:00-05:00"
  },
- "decisions_open": 4,
+ "decisions_open": 2,
  "graded_all": {
-  "n": 144,
-  "wins": 29,
+  "n": 147,
+  "wins": 31,
   "losses": 93,
-  "ties": 22,
-  "mae_base": 5.73,
-  "mae_shadow": 8.54
+  "ties": 23,
+  "mae_base": 5.71,
+  "mae_shadow": 8.4
  },
  "by_type": {
   "D1": {
-   "n": 95,
-   "wins": 16,
+   "n": 97,
+   "wins": 18,
    "losses": 79,
    "ties": 0,
-   "mae_base": 5.74,
-   "mae_shadow": 9.05
+   "mae_base": 5.72,
+   "mae_shadow": 8.87
   },
   "D2": {
-   "n": 49,
+   "n": 50,
    "wins": 13,
    "losses": 14,
-   "ties": 22,
-   "mae_base": 5.71,
-   "mae_shadow": 7.55
+   "ties": 23,
+   "mae_base": 5.7,
+   "mae_shadow": 7.5
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 0,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 3,
+ "last_decisions": [
+  {
+   "id": "cb-157",
+   "type": "D2",
+   "event_ride": "The Hall of Presidents",
+   "ride": "The Hall of Presidents",
+   "horizon": 30,
+   "base": 15.0,
+   "shadow": 15.0,
+   "reason": "reopened after 845 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
