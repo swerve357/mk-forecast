@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-06T05:56:13.335653+00:00",
- "last_sample": "2026-11-06T05:55:35+00:00",
- "samples": 25058,
+ "updated": "2026-11-06T06:21:19.523932+00:00",
+ "last_sample": "2026-11-06T06:20:37+00:00",
+ "samples": 25228,
  "history_samples": 0,
  "rides": [],
  "metrics": {
@@ -24,34 +24,34 @@
     "ride_code",
     "wait",
     "lag_60",
-    "roll_mean_60",
     "roll_std_60",
-    "hour_cos"
+    "roll_mean_30",
+    "roll_mean_60"
    ],
-   "candidate_mae": 4.9
+   "candidate_mae": 4.3
   },
   "60": {
    "available_pairs": 5168,
    "train_rows": 3942,
    "test_rows": 1058,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.0,
-   "rmse": 8.5,
+   "mae": 4.7,
+   "rmse": 8.6,
    "within10": 89,
-   "within5": 80,
-   "mape_ge20": 18.9,
-   "bias": 0.7,
+   "within5": 79,
+   "mape_ge20": 18.2,
+   "bias": 0.2,
    "baseline_mae": 5.2,
    "baseline_mape_ge20": 20.6,
-   "improvement_pct": 4.4,
+   "improvement_pct": 9.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
-    "wait",
     "ride_code",
+    "wait",
     "lag_60",
+    "roll_mean_30",
     "lag_yday",
-    "hour_cos",
-    "roll_mean_60"
+    "hour_cos"
    ]
   },
   "90": {
@@ -59,21 +59,21 @@
    "train_rows": 3670,
    "test_rows": 992,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.2,
-   "rmse": 9.0,
-   "within10": 87,
-   "within5": 76,
-   "mape_ge20": 23.1,
-   "bias": 1.7,
+   "mae": 5.0,
+   "rmse": 8.8,
+   "within10": 89,
+   "within5": 78,
+   "mape_ge20": 21.5,
+   "bias": 2.0,
    "baseline_mae": 5.8,
    "baseline_mape_ge20": 22.4,
-   "improvement_pct": 10.9,
+   "improvement_pct": 14.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
-    "diff_30",
     "lag_yday",
+    "diff_30",
     "lag_60",
     "lag_120"
    ]
@@ -83,23 +83,23 @@
    "train_rows": 3412,
    "test_rows": 944,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.8,
+   "mae": 4.7,
    "rmse": 8.5,
    "within10": 89,
-   "within5": 79,
-   "mape_ge20": 20.6,
-   "bias": 1.4,
+   "within5": 80,
+   "mape_ge20": 20.0,
+   "bias": 1.6,
    "baseline_mae": 6.0,
    "baseline_mape_ge20": 22.2,
-   "improvement_pct": 20.4,
+   "improvement_pct": 21.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
     "diff_30",
     "lag_60",
-    "roll_mean_60",
-    "hour_cos"
+    "hour_cos",
+    "roll_mean_60"
    ]
   }
  },
