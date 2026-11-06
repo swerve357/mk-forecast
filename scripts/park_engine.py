@@ -267,6 +267,8 @@ def run_park(park):
         win = act.index[(act.index >= lts - pd.Timedelta(hours=4)) & (act.index <= lts)]
         slots = win[::3]
         pred_idx = log.set_index(["name", "horizon", "target"])["pred"].to_dict()
+        stat = raw.groupby(["ts", "name"])["status"].last().unstack()
+        stat.index = pd.to_datetime(stat.index, utc=True)
         for row in rides:
             name = row["name"]
             if name not in act.columns:
@@ -275,6 +277,16 @@ def run_park(park):
             for T in slots:
                 a = act.at[T, name] if T in act.index else np.nan
                 if pd.isna(a):
+                    # Closed/down at this slot: mark it (dashboard shows *)
+                    st = stat.at[T, name] if (name in stat.columns and T in stat.index) else None
+                    if st in ("CLOSED", "DOWN", "REFURBISHMENT"):
+                        e = {"t": T.tz_convert("America/New_York").strftime("%H:%M"),
+                             "closed": 1}
+                        for h in F.HORIZONS:
+                            p = pred_idx.get((name, h, T))
+                            if p is not None and pd.notna(p):
+                                e[f"p{h}"] = int(p)
+                        entries.append(e)
                     continue
                 e = {"t": T.tz_convert("America/New_York").strftime("%H:%M"),
                      "actual": int(round(a))}
