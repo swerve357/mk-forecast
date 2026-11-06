@@ -183,12 +183,13 @@ function render(d){
     const el=document.getElementById('ctx');el.style.display='block';el.textContent=bits.join(' · ');
   }else{document.getElementById('ctx').style.display='none';}
   const m60=d.metrics['60']||{};
-  const m120=d.metrics['120']||{};
   const mel=document.getElementById('mission');mel.style.display='block';
-  mel.innerHTML='<b>The proving ground: call the posted wait 1 hour out.</b> The mission stays 2% error at 2 hours — we master +60 first, then expand. '+(m60.mae!=null?
-    `Right now ${CUR==='MK'?'the':label+'’s'} +60 forecast stands at <b>${m60.mape_ge20}% error</b> on 20+ min waits · ${m60.mae} min average miss · ${m60.within5}% within 5 min · ${m60.improvement_pct}% better than “same as now” (${m60.model||''}).`+(m120.mae!=null?` The +2 hr call — the mission — stands at <b>${m120.mape_ge20}% error</b> · ${m120.mae} min average miss.`:'')+` Each park has its own engine, trained only on that park's data and held to the same ship gate; tap any ride for its full scorecard and the last 4 hours of calls.`:
+  mel.innerHTML='<b>The proving ground: call the posted wait 1 hour out.</b> Master the hour first — then we expand. '+(m60.mae!=null?
+    `Right now ${CUR==='MK'?'the':label+'’s'} +60 forecast stands at <b>${m60.mape_ge20}% error</b> on 20+ min waits · ${m60.mae} min average miss · ${m60.within5}% within 5 min · ${m60.improvement_pct}% better than “same as now” (${m60.model||''}). Each park has its own engine, trained only on that park's data and held to the same ship gate; tap any ride for its full scorecard and the last 4 hours of calls.`:
     'The +60 model is still collecting the data it needs to ship.');
-  const ts=d.today||{};
+  const ts0=d.today||{};
+  const bh0=ts0.by_horizon||{};
+  const ts=(bh0['30']&&bh0['60']&&(bh0['30'].graded+bh0['60'].graded)>0)?(()=>{const g=bh0['30'].graded+bh0['60'].graded;const w=k=>Math.round((bh0['30'][k]*bh0['30'].graded+bh0['60'][k]*bh0['60'].graded)/g);return {date:ts0.date,graded:g,exact:w('exact'),in5:w('in5'),in10:w('in10'),in15:w('in15'),by_horizon:bh0}})():ts0;
   const tw=document.getElementById('todaywrap');
   if(ts.graded && ts.in15!=null){
     tw.style.display='block';
