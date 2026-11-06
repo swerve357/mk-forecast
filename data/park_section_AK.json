@@ -1,52 +1,52 @@
 {
- "updated": "2026-11-06T19:16:00.352229+00:00",
- "last_sample": "2026-11-06T19:15:30+00:00",
- "samples": 14272,
+ "updated": "2026-11-06T19:21:35.242109+00:00",
+ "last_sample": "2026-11-06T19:20:30+00:00",
+ "samples": 14368,
  "history_samples": 0,
  "rides": [
   {
    "name": "Avatar Flight of Passage",
-   "now": 60,
-   "trend30": 5,
+   "now": 55,
+   "trend30": -5,
    "why": {
-    "lag60": 40,
+    "lag60": 45,
     "lag120": 50,
-    "lag_yday": 35,
+    "lag_yday": 30,
     "down60": 0,
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
-   "f30": 60,
-   "score30_mae": 8.6,
-   "score30_in5": 56,
-   "score30_in10": 73,
-   "score30_pairs": 84,
+   "f30": 55,
+   "score30_mae": 8.4,
+   "score30_in5": 55,
+   "score30_in10": 75,
+   "score30_pairs": 85,
    "d30": 0,
-   "f60": 40,
+   "f60": 45,
    "f60_lo": 35,
    "f60_hi": 55,
-   "score60_mae": 8.6,
-   "score60_in5": 49,
-   "score60_in10": 79,
-   "score60_pairs": 80,
-   "d60": -20,
-   "d60_lo": -5,
-   "d60_hi": 15,
-   "f90": 25,
-   "score90_mae": 7.0,
-   "score90_in5": 55,
-   "score90_in10": 84,
-   "score90_pairs": 76,
-   "d90": -35,
-   "f120": 30,
-   "score120_mae": 9.6,
-   "score120_in5": 49,
-   "score120_in10": 66,
-   "score120_pairs": 71,
-   "d120": -30,
+   "score60_mae": 10.7,
+   "score60_in5": 37,
+   "score60_in10": 68,
+   "score60_pairs": 81,
+   "d60": -10,
+   "d60_lo": -10,
+   "d60_hi": 10,
+   "f90": 40,
+   "score90_mae": 8.1,
+   "score90_in5": 48,
+   "score90_in10": 83,
+   "score90_pairs": 77,
+   "d90": -15,
+   "f120": 40,
+   "score120_mae": 11.2,
+   "score120_in5": 35,
+   "score120_in10": 58,
+   "score120_pairs": 72,
+   "d120": -15,
    "people": null
   },
   {
@@ -56,41 +56,41 @@
    "why": {
     "lag60": 40,
     "lag120": 45,
-    "lag_yday": 35,
+    "lag_yday": 30,
     "down60": 0,
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 35,
-   "score30_mae": 8.2,
-   "score30_in5": 52,
+   "score30_mae": 8.0,
+   "score30_in5": 55,
    "score30_in10": 79,
-   "score30_pairs": 84,
+   "score30_pairs": 85,
    "d30": 0,
-   "f60": 35,
+   "f60": 30,
    "f60_lo": 30,
-   "f60_hi": 35,
-   "score60_mae": 7.7,
-   "score60_in5": 57,
-   "score60_in10": 80,
-   "score60_pairs": 80,
-   "d60": 0,
-   "d60_lo": -5,
-   "d60_hi": 0,
+   "f60_hi": 40,
+   "score60_mae": 7.0,
+   "score60_in5": 63,
+   "score60_in10": 84,
+   "score60_pairs": 81,
+   "d60": -5,
+   "d60_lo": 0,
+   "d60_hi": 10,
    "f90": 35,
    "score90_mae": 7.8,
-   "score90_in5": 54,
-   "score90_in10": 80,
-   "score90_pairs": 76,
+   "score90_in5": 55,
+   "score90_in10": 83,
+   "score90_pairs": 77,
    "d90": 0,
    "f120": 30,
-   "score120_mae": 7.4,
-   "score120_in5": 46,
-   "score120_in10": 85,
-   "score120_pairs": 71,
+   "score120_mae": 7.6,
+   "score120_in5": 51,
+   "score120_in10": 82,
+   "score120_pairs": 72,
    "d120": -5,
    "people": null
   },
@@ -106,19 +106,23 @@
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 35,
+   "score30_mae": 4.1,
+   "score30_in5": 76,
+   "score30_in10": 82,
+   "score30_pairs": 34,
    "d30": 0,
-   "f60": 30,
-   "f60_lo": 25,
-   "f60_hi": 40,
-   "d60": -5,
+   "f60": 25,
+   "f60_lo": 20,
+   "f60_hi": 35,
+   "d60": -10,
    "d60_lo": -5,
    "d60_hi": 10,
-   "f90": 35,
-   "d90": 0,
+   "f90": 30,
+   "d90": -5,
    "f120": 35,
    "d120": 0,
    "people": null
@@ -135,82 +139,82 @@
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 25,
-   "score30_mae": 7.5,
-   "score30_in5": 55,
-   "score30_in10": 86,
-   "score30_pairs": 64,
+   "score30_mae": 7.6,
+   "score30_in5": 53,
+   "score30_in10": 87,
+   "score30_pairs": 70,
    "d30": 0,
-   "f60": 20,
+   "f60": 15,
    "f60_lo": 15,
    "f60_hi": 25,
-   "score60_mae": 9.6,
-   "score60_in5": 48,
-   "score60_in10": 66,
-   "score60_pairs": 58,
-   "d60": -5,
-   "d60_lo": -5,
-   "d60_hi": 5,
+   "score60_mae": 9.5,
+   "score60_in5": 47,
+   "score60_in10": 69,
+   "score60_pairs": 64,
+   "d60": -10,
+   "d60_lo": 0,
+   "d60_hi": 10,
    "f90": 15,
-   "score90_mae": 12.6,
-   "score90_in5": 21,
-   "score90_in10": 54,
-   "score90_pairs": 52,
+   "score90_mae": 12.2,
+   "score90_in5": 33,
+   "score90_in10": 52,
+   "score90_pairs": 58,
    "d90": -10,
    "f120": 10,
-   "score120_mae": 9.6,
-   "score120_in5": 39,
-   "score120_in10": 67,
-   "score120_pairs": 46,
+   "score120_mae": 10.1,
+   "score120_in5": 37,
+   "score120_in10": 60,
+   "score120_pairs": 52,
    "d120": -15,
    "people": null
   },
   {
    "name": "Kali River Rapids",
    "now": 20,
-   "trend30": -10,
+   "trend30": -5,
    "why": {
-    "lag60": 25,
-    "lag120": 10,
+    "lag60": 30,
+    "lag120": 25,
     "lag_yday": 20,
     "down60": 0,
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 20,
-   "score30_mae": 3.0,
-   "score30_in5": 86,
+   "score30_mae": 3.5,
+   "score30_in5": 85,
    "score30_in10": 93,
-   "score30_pairs": 58,
+   "score30_pairs": 59,
    "d30": 0,
    "f60": 15,
-   "f60_lo": 5,
-   "f60_hi": 25,
-   "score60_mae": 6.2,
-   "score60_in5": 79,
-   "score60_in10": 87,
-   "score60_pairs": 52,
+   "f60_lo": 10,
+   "f60_hi": 20,
+   "score60_mae": 6.6,
+   "score60_in5": 70,
+   "score60_in10": 83,
+   "score60_pairs": 53,
    "d60": -5,
-   "d60_lo": -10,
-   "d60_hi": 10,
+   "d60_lo": -5,
+   "d60_hi": 5,
    "f90": 15,
-   "score90_mae": 6.2,
-   "score90_in5": 69,
+   "score90_mae": 6.0,
+   "score90_in5": 63,
    "score90_in10": 96,
-   "score90_pairs": 48,
+   "score90_pairs": 49,
    "d90": -5,
-   "f120": 15,
-   "score120_mae": 5.0,
-   "score120_in5": 79,
-   "score120_in10": 100,
-   "score120_pairs": 43,
-   "d120": -5,
+   "f120": 20,
+   "score120_mae": 6.1,
+   "score120_in5": 66,
+   "score120_in10": 91,
+   "score120_pairs": 44,
+   "d120": 0,
    "people": null
   },
   {
@@ -225,81 +229,81 @@
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 15,
    "score30_mae": 0.4,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 84,
+   "score30_pairs": 85,
    "d30": 0,
    "f60": 15,
    "f60_lo": 15,
    "f60_hi": 15,
-   "score60_mae": 2.9,
-   "score60_in5": 88,
-   "score60_in10": 91,
-   "score60_pairs": 80,
+   "score60_mae": 2.2,
+   "score60_in5": 86,
+   "score60_in10": 100,
+   "score60_pairs": 81,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
    "f90": 15,
-   "score90_mae": 3.0,
+   "score90_mae": 2.7,
    "score90_in5": 91,
    "score90_in10": 100,
-   "score90_pairs": 76,
+   "score90_pairs": 77,
    "d90": 0,
    "f120": 15,
-   "score120_mae": 2.4,
+   "score120_mae": 3.1,
    "score120_in5": 90,
    "score120_in10": 100,
-   "score120_pairs": 71,
+   "score120_pairs": 72,
    "d120": 0,
    "people": null
   },
   {
    "name": "Expedition Everest - Legend of the Forbidden Mountain",
-   "now": 10,
-   "trend30": -5,
+   "now": 15,
+   "trend30": 0,
    "why": {
     "lag60": 30,
-    "lag120": 35,
+    "lag120": 20,
     "lag_yday": 10,
     "down60": 0,
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
-   "f30": 10,
-   "score30_mae": 6.7,
-   "score30_in5": 53,
-   "score30_in10": 82,
-   "score30_pairs": 83,
+   "f30": 15,
+   "score30_mae": 6.5,
+   "score30_in5": 54,
+   "score30_in10": 85,
+   "score30_pairs": 85,
    "d30": 0,
-   "f60": 15,
-   "f60_lo": 5,
+   "f60": 10,
+   "f60_lo": 10,
    "f60_hi": 15,
-   "score60_mae": 4.6,
-   "score60_in5": 75,
+   "score60_mae": 4.3,
+   "score60_in5": 78,
    "score60_in10": 100,
-   "score60_pairs": 79,
-   "d60": 5,
-   "d60_lo": -10,
-   "d60_hi": 0,
+   "score60_pairs": 80,
+   "d60": -5,
+   "d60_lo": 0,
+   "d60_hi": 5,
    "f90": 10,
-   "score90_mae": 4.5,
-   "score90_in5": 80,
-   "score90_in10": 99,
-   "score90_pairs": 75,
-   "d90": 0,
-   "f120": 5,
-   "score120_mae": 5.0,
-   "score120_in5": 77,
-   "score120_in10": 96,
-   "score120_pairs": 71,
+   "score90_mae": 4.3,
+   "score90_in5": 83,
+   "score90_in10": 97,
+   "score90_pairs": 76,
+   "d90": -5,
+   "f120": 10,
+   "score120_mae": 4.4,
+   "score120_in5": 79,
+   "score120_in10": 97,
+   "score120_pairs": 72,
    "d120": -5,
    "people": null
   },
@@ -315,14 +319,14 @@
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 5,
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 52,
+   "score30_pairs": 58,
    "d30": 0,
    "f60": 5,
    "f60_lo": 5,
@@ -330,7 +334,7 @@
    "score60_mae": 0.0,
    "score60_in5": 100,
    "score60_in10": 100,
-   "score60_pairs": 46,
+   "score60_pairs": 52,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -338,13 +342,13 @@
    "score90_mae": 0.0,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 40,
+   "score90_pairs": 46,
    "d90": 0,
    "f120": 5,
    "score120_mae": 0.0,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 34,
+   "score120_pairs": 40,
    "d120": 0,
    "people": null
   },
@@ -354,42 +358,42 @@
    "trend30": 0,
    "why": {
     "lag60": 5,
-    "lag120": 5,
+    "lag120": 15,
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 5,
-   "score30_mae": 2.9,
-   "score30_in5": 77,
-   "score30_in10": 92,
-   "score30_pairs": 52,
+   "score30_mae": 2.6,
+   "score30_in5": 79,
+   "score30_in10": 93,
+   "score30_pairs": 58,
    "d30": 0,
-   "f60": 10,
+   "f60": 5,
    "f60_lo": 5,
-   "f60_hi": 5,
-   "score60_mae": 4.2,
-   "score60_in5": 70,
-   "score60_in10": 93,
-   "score60_pairs": 46,
-   "d60": 5,
-   "d60_lo": -5,
-   "d60_hi": -5,
+   "f60_hi": 10,
+   "score60_mae": 4.0,
+   "score60_in5": 75,
+   "score60_in10": 94,
+   "score60_pairs": 52,
+   "d60": 0,
+   "d60_lo": 0,
+   "d60_hi": 5,
    "f90": 10,
-   "score90_mae": 4.2,
-   "score90_in5": 68,
-   "score90_in10": 92,
-   "score90_pairs": 40,
+   "score90_mae": 3.7,
+   "score90_in5": 78,
+   "score90_in10": 93,
+   "score90_pairs": 46,
    "d90": 5,
    "f120": 5,
-   "score120_mae": 3.4,
-   "score120_in5": 74,
-   "score120_in10": 91,
-   "score120_pairs": 34,
+   "score120_mae": 3.8,
+   "score120_in5": 75,
+   "score120_in10": 92,
+   "score120_pairs": 40,
    "d120": 0,
    "people": null
   },
@@ -405,14 +409,14 @@
     "reopened": false,
     "park_mean": 22,
     "park_busy": 6,
-    "mins_open": 355,
-    "mins_close": 305
+    "mins_open": 385,
+    "mins_close": 275
    },
    "f30": 5,
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 61,
+   "score30_pairs": 67,
    "d30": 0,
    "f60": 5,
    "f60_lo": 5,
@@ -420,39 +424,39 @@
    "score60_mae": 0.0,
    "score60_in5": 100,
    "score60_in10": 100,
-   "score60_pairs": 55,
+   "score60_pairs": 61,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
    "f90": 5,
-   "score90_mae": 0.2,
+   "score90_mae": 0.0,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 49,
+   "score90_pairs": 55,
    "d90": 0,
    "f120": 5,
-   "score120_mae": 0.1,
+   "score120_mae": 0.0,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 43,
+   "score120_pairs": 49,
    "d120": 0,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 3346,
-   "train_rows": 2666,
-   "test_rows": 651,
+   "available_pairs": 3405,
+   "train_rows": 2690,
+   "test_rows": 686,
    "model": "persistence (model did not beat baseline)",
-   "mae": 4.5,
-   "rmse": 7.6,
-   "within10": 88,
+   "mae": 4.4,
+   "rmse": 7.4,
+   "within10": 89,
    "within5": 74,
-   "mape_ge20": 23.3,
-   "bias": -0.5,
-   "baseline_mae": 4.5,
-   "baseline_mape_ge20": 23.3,
+   "mape_ge20": 23.0,
+   "bias": -0.4,
+   "baseline_mae": 4.4,
+   "baseline_mape_ge20": 23.0,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
@@ -460,24 +464,24 @@
     "wait",
     "roll_std_60",
     "hour_sin",
-    "diff_30",
-    "lag_yday"
+    "lag_yday",
+    "diff_30"
    ],
-   "candidate_mae": 4.9
+   "candidate_mae": 5.0
   },
   "60": {
-   "available_pairs": 3118,
-   "train_rows": 2456,
-   "test_rows": 600,
+   "available_pairs": 3172,
+   "train_rows": 2484,
+   "test_rows": 629,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.5,
-   "rmse": 8.2,
-   "within10": 86,
+   "mae": 5.4,
+   "rmse": 8.5,
+   "within10": 87,
    "within5": 71,
-   "mape_ge20": 23.4,
-   "bias": -3.3,
-   "baseline_mae": 6.3,
-   "baseline_mape_ge20": 31.0,
+   "mape_ge20": 23.7,
+   "bias": -3.2,
+   "baseline_mae": 6.2,
+   "baseline_mape_ge20": 30.7,
    "improvement_pct": 13.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
@@ -486,55 +490,55 @@
     "hour_sin",
     "diff_30",
     "diff_15",
-    "hour_cos"
+    "lag_60"
    ]
   },
   "90": {
-   "available_pairs": 2896,
-   "train_rows": 2213,
-   "test_rows": 554,
+   "available_pairs": 2952,
+   "train_rows": 2263,
+   "test_rows": 585,
    "model": "gradient boosting (delta+round5)",
    "mae": 5.5,
-   "rmse": 8.0,
+   "rmse": 8.1,
    "within10": 87,
    "within5": 69,
-   "mape_ge20": 23.1,
-   "bias": -3.5,
-   "baseline_mae": 7.2,
-   "baseline_mape_ge20": 34.3,
-   "improvement_pct": 23.7,
+   "mape_ge20": 23.7,
+   "bias": -3.7,
+   "baseline_mae": 7.1,
+   "baseline_mape_ge20": 33.3,
+   "improvement_pct": 23.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
     "hour_sin",
     "diff_30",
-    "diff_15",
-    "hour_cos"
+    "temp_f",
+    "roll_std_60"
    ]
   },
   "120": {
-   "available_pairs": 2661,
-   "train_rows": 1970,
-   "test_rows": 500,
+   "available_pairs": 2721,
+   "train_rows": 2017,
+   "test_rows": 535,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.3,
-   "rmse": 7.9,
-   "within10": 87,
-   "within5": 69,
-   "mape_ge20": 22.7,
-   "bias": -3.0,
+   "mae": 5.7,
+   "rmse": 8.3,
+   "within10": 84,
+   "within5": 67,
+   "mape_ge20": 24.3,
+   "bias": -3.5,
    "baseline_mae": 8.1,
    "baseline_mape_ge20": 39.0,
-   "improvement_pct": 34.4,
+   "improvement_pct": 30.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
     "hour_sin",
-    "roll_mean_60",
-    "diff_15",
-    "lag_30"
+    "lag_30",
+    "lag_5",
+    "hour_cos"
    ]
   }
  },
@@ -550,25 +554,6 @@
  "demo": false,
  "lookback": {
   "Avatar Flight of Passage": [
-   {
-    "t": "09:55",
-    "actual": 55
-   },
-   {
-    "t": "10:10",
-    "actual": 55
-   },
-   {
-    "t": "10:15",
-    "actual": 40,
-    "p30": 55
-   },
-   {
-    "t": "10:20",
-    "actual": 40,
-    "p60": 35,
-    "p90": 50
-   },
    {
     "t": "10:25",
     "actual": 35
@@ -728,28 +713,48 @@
     "p30": 45,
     "p60": 45,
     "p90": 40
+   },
+   {
+    "t": "14:00",
+    "actual": 60,
+    "p30": 50,
+    "p60": 45,
+    "p120": 45
+   },
+   {
+    "t": "14:05",
+    "actual": 60,
+    "p30": 50,
+    "p60": 65
+   },
+   {
+    "t": "14:10",
+    "actual": 60,
+    "p30": 50,
+    "p60": 55
+   },
+   {
+    "t": "14:15",
+    "actual": 60,
+    "p30": 55,
+    "p60": 55
+   },
+   {
+    "t": "14:20",
+    "actual": 60,
+    "p30": 55,
+    "p60": 55
+   },
+   {
+    "t": "14:25",
+    "actual": 55,
+    "p30": 60,
+    "p60": 35,
+    "p90": 50,
+    "p120": 35
    }
   ],
   "Na'vi River Journey": [
-   {
-    "t": "09:55",
-    "actual": 40
-   },
-   {
-    "t": "10:10",
-    "actual": 35
-   },
-   {
-    "t": "10:15",
-    "actual": 30,
-    "p30": 45
-   },
-   {
-    "t": "10:20",
-    "actual": 30,
-    "p60": 30,
-    "p90": 40
-   },
    {
     "t": "10:25",
     "actual": 30
@@ -909,28 +914,226 @@
     "p30": 40,
     "p60": 35,
     "p90": 30
+   },
+   {
+    "t": "14:00",
+    "actual": 35,
+    "p30": 40,
+    "p60": 35,
+    "p120": 35
+   },
+   {
+    "t": "14:05",
+    "actual": 35,
+    "p30": 40,
+    "p60": 40
+   },
+   {
+    "t": "14:10",
+    "actual": 35,
+    "p30": 40,
+    "p60": 40
+   },
+   {
+    "t": "14:15",
+    "actual": 35,
+    "p30": 35,
+    "p60": 45
+   },
+   {
+    "t": "14:20",
+    "actual": 35,
+    "p30": 35,
+    "p60": 45
+   },
+   {
+    "t": "14:25",
+    "actual": 35,
+    "p30": 35,
+    "p60": 30,
+    "p90": 40,
+    "p120": 40
+   }
+  ],
+  "Bluey's Wild World at Conservation Station": [
+   {
+    "t": "10:25",
+    "actual": 15
+   },
+   {
+    "t": "10:40",
+    "actual": 15
+   },
+   {
+    "t": "10:45",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "10:50",
+    "actual": 15
+   },
+   {
+    "t": "10:55",
+    "actual": 15
+   },
+   {
+    "t": "11:10",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "11:15",
+    "actual": 15,
+    "p60": 20,
+    "p90": 20
+   },
+   {
+    "t": "11:20",
+    "actual": 15
+   },
+   {
+    "t": "11:25",
+    "actual": 15
+   },
+   {
+    "t": "11:35",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "11:40",
+    "actual": 35,
+    "p60": 20
+   },
+   {
+    "t": "11:45",
+    "actual": 35,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "11:55",
+    "actual": 35
+   },
+   {
+    "t": "12:05",
+    "actual": 35,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "12:10",
+    "actual": 35,
+    "p90": 20
+   },
+   {
+    "t": "12:15",
+    "actual": 35,
+    "p120": 20
+   },
+   {
+    "t": "12:25",
+    "actual": 35
+   },
+   {
+    "t": "12:30",
+    "actual": 35,
+    "p30": 40
+   },
+   {
+    "t": "12:35",
+    "actual": 35,
+    "p60": 15,
+    "p90": 20
+   },
+   {
+    "t": "12:40",
+    "closed": 1,
+    "p120": 25
+   },
+   {
+    "t": "12:55",
+    "closed": 1,
+    "p30": 35
+   },
+   {
+    "t": "13:00",
+    "closed": 1,
+    "p60": 35
+   },
+   {
+    "t": "13:05",
+    "closed": 1,
+    "p90": 20,
+    "p120": 30
+   },
+   {
+    "t": "13:10",
+    "closed": 1
+   },
+   {
+    "t": "13:25",
+    "closed": 1,
+    "p60": 35
+   },
+   {
+    "t": "13:30",
+    "closed": 1,
+    "p90": 35
+   },
+   {
+    "t": "13:35",
+    "actual": 35,
+    "p120": 35
+   },
+   {
+    "t": "13:40",
+    "actual": 35
+   },
+   {
+    "t": "13:45",
+    "actual": 35
+   },
+   {
+    "t": "13:50",
+    "actual": 25
+   },
+   {
+    "t": "13:55",
+    "actual": 25,
+    "p90": 45
+   },
+   {
+    "t": "14:00",
+    "actual": 35,
+    "p120": 40
+   },
+   {
+    "t": "14:05",
+    "actual": 35
+   },
+   {
+    "t": "14:10",
+    "actual": 35
+   },
+   {
+    "t": "14:15",
+    "actual": 35
+   },
+   {
+    "t": "14:20",
+    "actual": 35
+   },
+   {
+    "t": "14:25",
+    "actual": 35,
+    "p30": 25,
+    "p120": 40
    }
   ],
   "Kilimanjaro Safaris": [
-   {
-    "t": "09:55",
-    "actual": 60
-   },
-   {
-    "t": "10:10",
-    "actual": 60
-   },
-   {
-    "t": "10:15",
-    "actual": 60,
-    "p30": 65
-   },
-   {
-    "t": "10:20",
-    "actual": 60,
-    "p60": 40,
-    "p90": 50
-   },
    {
     "t": "10:25",
     "actual": 55
@@ -1090,27 +1293,48 @@
     "p30": 40,
     "p60": 30,
     "p90": 20
+   },
+   {
+    "t": "14:00",
+    "actual": 30,
+    "p30": 40,
+    "p60": 30,
+    "p120": 20
+   },
+   {
+    "t": "14:05",
+    "actual": 25,
+    "p30": 35,
+    "p60": 30
+   },
+   {
+    "t": "14:10",
+    "actual": 25,
+    "p30": 35,
+    "p60": 30
+   },
+   {
+    "t": "14:15",
+    "actual": 25,
+    "p30": 35,
+    "p60": 25
+   },
+   {
+    "t": "14:20",
+    "actual": 25,
+    "p30": 30,
+    "p60": 30
+   },
+   {
+    "t": "14:25",
+    "actual": 25,
+    "p30": 30,
+    "p60": 25,
+    "p90": 25,
+    "p120": 15
    }
   ],
   "Kali River Rapids": [
-   {
-    "t": "09:55",
-    "actual": 5
-   },
-   {
-    "t": "10:10",
-    "actual": 5
-   },
-   {
-    "t": "10:15",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "10:20",
-    "actual": 10,
-    "p60": 5
-   },
    {
     "t": "10:25",
     "actual": 10
@@ -1269,196 +1493,48 @@
     "p30": 30,
     "p60": 15,
     "p90": 10
-   }
-  ],
-  "Bluey's Wild World at Conservation Station": [
-   {
-    "t": "09:55",
-    "actual": 15
    },
    {
-    "t": "10:10",
-    "actual": 15
+    "t": "14:00",
+    "actual": 25,
+    "p30": 30,
+    "p60": 15,
+    "p120": 15
    },
    {
-    "t": "10:15",
-    "actual": 15,
-    "p30": 15
-   },
-   {
-    "t": "10:20",
-    "actual": 15
-   },
-   {
-    "t": "10:25",
-    "actual": 15
-   },
-   {
-    "t": "10:40",
-    "actual": 15
-   },
-   {
-    "t": "10:45",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15
-   },
-   {
-    "t": "10:50",
-    "actual": 15
-   },
-   {
-    "t": "10:55",
-    "actual": 15
-   },
-   {
-    "t": "11:10",
-    "actual": 15,
-    "p30": 15
-   },
-   {
-    "t": "11:15",
-    "actual": 15,
-    "p60": 20,
-    "p90": 20
-   },
-   {
-    "t": "11:20",
-    "actual": 15
-   },
-   {
-    "t": "11:25",
-    "actual": 15
-   },
-   {
-    "t": "11:35",
-    "actual": 15,
-    "p30": 15
-   },
-   {
-    "t": "11:40",
-    "actual": 35,
+    "t": "14:05",
+    "actual": 25,
+    "p30": 30,
     "p60": 20
    },
    {
-    "t": "11:45",
-    "actual": 35,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "11:55",
-    "actual": 35
-   },
-   {
-    "t": "12:05",
-    "actual": 35,
-    "p30": 15,
-    "p60": 15
-   },
-   {
-    "t": "12:10",
-    "actual": 35,
-    "p90": 20
-   },
-   {
-    "t": "12:15",
-    "actual": 35,
-    "p120": 20
-   },
-   {
-    "t": "12:25",
-    "actual": 35
-   },
-   {
-    "t": "12:30",
-    "actual": 35,
-    "p30": 40
-   },
-   {
-    "t": "12:35",
-    "actual": 35,
-    "p60": 15,
-    "p90": 20
-   },
-   {
-    "t": "12:40",
-    "closed": 1,
-    "p120": 25
-   },
-   {
-    "t": "12:55",
-    "closed": 1,
-    "p30": 35
-   },
-   {
-    "t": "13:00",
-    "closed": 1,
-    "p60": 35
-   },
-   {
-    "t": "13:05",
-    "closed": 1,
-    "p90": 20,
-    "p120": 30
-   },
-   {
-    "t": "13:10",
-    "closed": 1
-   },
-   {
-    "t": "13:25",
-    "closed": 1,
-    "p60": 35
-   },
-   {
-    "t": "13:30",
-    "closed": 1,
-    "p90": 35
-   },
-   {
-    "t": "13:35",
-    "actual": 35,
-    "p120": 35
-   },
-   {
-    "t": "13:40",
-    "actual": 35
-   },
-   {
-    "t": "13:45",
-    "actual": 35
-   },
-   {
-    "t": "13:50",
-    "actual": 25
-   },
-   {
-    "t": "13:55",
+    "t": "14:10",
     "actual": 25,
-    "p90": 45
+    "p30": 30,
+    "p60": 20
+   },
+   {
+    "t": "14:15",
+    "actual": 20,
+    "p30": 30,
+    "p60": 20
+   },
+   {
+    "t": "14:20",
+    "actual": 20,
+    "p30": 30,
+    "p60": 20
+   },
+   {
+    "t": "14:25",
+    "actual": 20,
+    "p30": 25,
+    "p60": 20,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Zootopia: Better Zoogether!": [
-   {
-    "t": "09:55",
-    "actual": 10
-   },
-   {
-    "t": "10:10",
-    "actual": 10
-   },
-   {
-    "t": "10:15",
-    "actual": 10,
-    "p30": 10
-   },
-   {
-    "t": "10:20",
-    "actual": 10,
-    "p60": 10,
-    "p90": 15
-   },
    {
     "t": "10:25",
     "actual": 10
@@ -1618,28 +1694,48 @@
     "p30": 15,
     "p60": 15,
     "p90": 15
+   },
+   {
+    "t": "14:00",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p120": 20
+   },
+   {
+    "t": "14:05",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "14:10",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "14:15",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "14:20",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "14:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Expedition Everest - Legend of the Forbidden Mountain": [
-   {
-    "t": "09:55",
-    "actual": 15
-   },
-   {
-    "t": "10:10",
-    "actual": 20
-   },
-   {
-    "t": "10:15",
-    "actual": 25,
-    "p30": 10
-   },
-   {
-    "t": "10:20",
-    "actual": 25,
-    "p60": 5,
-    "p90": 15
-   },
    {
     "t": "10:25",
     "actual": 25
@@ -1799,27 +1895,48 @@
     "p30": 30,
     "p60": 15,
     "p90": 15
+   },
+   {
+    "t": "14:00",
+    "actual": 15,
+    "p30": 20,
+    "p60": 15,
+    "p120": 25
+   },
+   {
+    "t": "14:05",
+    "actual": 15,
+    "p30": 20,
+    "p60": 15
+   },
+   {
+    "t": "14:10",
+    "actual": 10,
+    "p30": 20,
+    "p60": 15
+   },
+   {
+    "t": "14:15",
+    "actual": 10,
+    "p30": 20,
+    "p60": 15
+   },
+   {
+    "t": "14:20",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "14:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 20,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Maharajah Jungle Trek": [
-   {
-    "t": "09:55",
-    "actual": 5
-   },
-   {
-    "t": "10:10",
-    "actual": 5
-   },
-   {
-    "t": "10:15",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "10:20",
-    "actual": 5,
-    "p60": 5
-   },
    {
     "t": "10:25",
     "actual": 5
@@ -1978,27 +2095,48 @@
     "p30": 5,
     "p60": 5,
     "p90": 5
+   },
+   {
+    "t": "14:00",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p120": 5
+   },
+   {
+    "t": "14:05",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:15",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
    }
   ],
   "Wildlife Express Train": [
-   {
-    "t": "09:55",
-    "actual": 5
-   },
-   {
-    "t": "10:10",
-    "actual": 5
-   },
-   {
-    "t": "10:15",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "10:20",
-    "actual": 5,
-    "p60": 5
-   },
    {
     "t": "10:25",
     "actual": 5
@@ -2157,28 +2295,48 @@
     "p30": 5,
     "p60": 10,
     "p90": 15
+   },
+   {
+    "t": "14:00",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10,
+    "p120": 10
+   },
+   {
+    "t": "14:05",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10
+   },
+   {
+    "t": "14:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10
+   },
+   {
+    "t": "14:15",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10
+   },
+   {
+    "t": "14:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10
+   },
+   {
+    "t": "14:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
    }
   ],
   "Gorilla Falls Exploration Trail": [
-   {
-    "t": "09:55",
-    "actual": 5
-   },
-   {
-    "t": "10:10",
-    "actual": 5
-   },
-   {
-    "t": "10:15",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "10:20",
-    "actual": 5,
-    "p60": 5,
-    "p90": 5
-   },
    {
     "t": "10:25",
     "actual": 5
@@ -2338,44 +2496,83 @@
     "p30": 5,
     "p60": 5,
     "p90": 5
+   },
+   {
+    "t": "14:00",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p120": 5
+   },
+   {
+    "t": "14:05",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:15",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "14:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
    }
   ]
  },
  "today": {
   "date": "2026-11-06",
-  "graded": 385,
-  "exact": 45,
-  "in5": 71,
-  "in10": 87,
-  "in15": 95,
+  "graded": 523,
+  "exact": 46,
+  "in5": 74,
+  "in10": 89,
+  "in15": 96,
   "by_horizon": {
    "30": {
-    "graded": 147,
-    "exact": 48,
-    "in5": 81,
-    "in10": 92,
-    "in15": 97
+    "graded": 202,
+    "exact": 49,
+    "in5": 80,
+    "in10": 94,
+    "in15": 98
    },
    "60": {
-    "graded": 92,
-    "exact": 46,
-    "in5": 70,
-    "in10": 83,
-    "in15": 92
+    "graded": 146,
+    "exact": 47,
+    "in5": 77,
+    "in10": 88,
+    "in15": 95
    },
    "90": {
-    "graded": 83,
-    "exact": 40,
-    "in5": 54,
-    "in10": 82,
+    "graded": 92,
+    "exact": 41,
+    "in5": 59,
+    "in10": 84,
     "in15": 93
    },
    "120": {
-    "graded": 63,
-    "exact": 44,
+    "graded": 83,
+    "exact": 42,
     "in5": 71,
-    "in10": 87,
-    "in15": 97
+    "in10": 88,
+    "in15": 96
    }
   }
  },
