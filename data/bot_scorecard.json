@@ -1,68 +1,93 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-06T14:00:50.399274+00:00",
+ "updated": "2026-11-06T14:05:46.714632+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-05 17:10:00-05:00",
   "Big Thunder Mountain Railroad": "2026-11-05 22:10:00-05:00",
-  "Casey Jr. Splash 'N' Soak Station": "2026-11-05 18:10:00-05:00",
-  "Cinderella Castle": "2026-11-05 22:05:00-05:00",
-  "Country Bear Musical Jamboree": "2026-11-05 22:10:00-05:00",
   "Enchanted Tales with Belle": "2026-11-05 19:40:00-05:00",
-  "Haunted Mansion": "2026-11-05 22:10:00-05:00",
-  "Jingle Cruise": "2026-11-05 22:10:00-05:00",
-  "Main Street Vehicles": "2026-11-05 16:10:00-05:00",
-  "Mickey's PhilharMagic": "2026-11-05 22:10:00-05:00",
-  "Monsters, Inc. Laugh Floor": "2026-11-05 21:10:00-05:00",
-  "Pirates of the Caribbean": "2026-11-05 22:10:00-05:00",
-  "Swiss Family Treehouse": "2026-11-05 22:10:00-05:00",
-  "TRON Lightcycle / Run": "2026-11-05 22:10:00-05:00",
-  "The Hall of Presidents": "2026-11-05 20:05:00-05:00",
-  "The Magic Carpets of Aladdin": "2026-11-05 22:10:00-05:00",
-  "Walt Disney World Railroad - Fantasyland": "2026-11-05 18:35:00-05:00",
-  "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-05 18:35:00-05:00",
-  "Walt Disney's Enchanted Tiki Room": "2026-11-05 22:10:00-05:00"
+  "The Hall of Presidents": "2026-11-05 20:05:00-05:00"
  },
- "decisions_open": 14,
+ "decisions_open": 12,
  "graded_all": {
-  "n": 124,
-  "wins": 22,
-  "losses": 87,
-  "ties": 15,
-  "mae_base": 5.85,
-  "mae_shadow": 8.99
+  "n": 133,
+  "wins": 25,
+  "losses": 90,
+  "ties": 18,
+  "mae_base": 5.86,
+  "mae_shadow": 8.76
  },
  "by_type": {
   "D1": {
-   "n": 91,
+   "n": 93,
    "wins": 14,
-   "losses": 77,
+   "losses": 79,
    "ties": 0,
-   "mae_base": 5.49,
-   "mae_shadow": 8.96
+   "mae_base": 5.59,
+   "mae_shadow": 9.09
   },
   "D2": {
-   "n": 33,
-   "wins": 8,
-   "losses": 10,
-   "ties": 15,
-   "mae_base": 6.82,
-   "mae_shadow": 9.09
+   "n": 40,
+   "wins": 11,
+   "losses": 11,
+   "ties": 18,
+   "mae_base": 6.5,
+   "mae_shadow": 8.0
   }
  },
- "new_decisions_this_run": 1,
- "graded_this_run": 0,
+ "new_decisions_this_run": 7,
+ "graded_this_run": 9,
  "last_decisions": [
   {
-   "id": "cb-146",
+   "id": "cb-149",
    "type": "D2",
-   "event_ride": "Seven Dwarfs Mine Train",
-   "ride": "Seven Dwarfs Mine Train",
+   "event_ride": "TRON Lightcycle / Run",
+   "ride": "TRON Lightcycle / Run",
    "horizon": 30,
-   "base": 45.0,
-   "shadow": 40.0,
-   "reason": "reopened after 655 min down; shadow = first posted wait at reopen"
+   "base": 55.0,
+   "shadow": 30.0,
+   "reason": "reopened after 660 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-150",
+   "type": "D2",
+   "event_ride": "The Magic Carpets of Aladdin",
+   "ride": "The Magic Carpets of Aladdin",
+   "horizon": 30,
+   "base": 5.0,
+   "shadow": 5.0,
+   "reason": "reopened after 660 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-151",
+   "type": "D2",
+   "event_ride": "Walt Disney World Railroad - Fantasyland",
+   "ride": "Walt Disney World Railroad - Fantasyland",
+   "horizon": 30,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "reopened after 875 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-152",
+   "type": "D2",
+   "event_ride": "Walt Disney World Railroad - Main Street, U.S.A.",
+   "ride": "Walt Disney World Railroad - Main Street, U.S.A.",
+   "horizon": 30,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "reopened after 875 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-153",
+   "type": "D2",
+   "event_ride": "Walt Disney's Enchanted Tiki Room",
+   "ride": "Walt Disney's Enchanted Tiki Room",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 660 min down; shadow = first posted wait at reopen"
   }
  ],
  "debug": ""
