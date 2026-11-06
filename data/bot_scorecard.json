@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-06T16:56:01.959156+00:00",
+ "updated": "2026-11-06T17:00:59.437418+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-05 17:10:00-05:00",
-  "Mickey's PhilharMagic": "2026-11-06 11:15:00-05:00"
+  "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-05 17:10:00-05:00"
  },
- "decisions_open": 1,
+ "decisions_open": 2,
  "graded_all": {
   "n": 150,
   "wins": 31,
@@ -34,8 +33,19 @@
    "mae_shadow": 7.08
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-160",
+   "type": "D2",
+   "event_ride": "Mickey's PhilharMagic",
+   "ride": "Mickey's PhilharMagic",
+   "horizon": 30,
+   "base": 15.0,
+   "shadow": 15.0,
+   "reason": "reopened after 50 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
