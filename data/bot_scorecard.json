@@ -1,22 +1,21 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-06T14:40:52.606059+00:00",
+ "updated": "2026-11-06T14:45:56.185671+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-05 17:10:00-05:00",
   "Enchanted Tales with Belle": "2026-11-05 19:40:00-05:00",
-  "Monsters, Inc. Laugh Floor": "2026-11-06 09:35:00-05:00",
   "The Hall of Presidents": "2026-11-05 20:05:00-05:00"
  },
  "decisions_open": 4,
  "graded_all": {
-  "n": 143,
+  "n": 144,
   "wins": 29,
-  "losses": 92,
+  "losses": 93,
   "ties": 22,
-  "mae_base": 5.77,
-  "mae_shadow": 8.53
+  "mae_base": 5.73,
+  "mae_shadow": 8.54
  },
  "by_type": {
   "D1": {
@@ -28,16 +27,27 @@
    "mae_shadow": 9.05
   },
   "D2": {
-   "n": 48,
+   "n": 49,
    "wins": 13,
-   "losses": 13,
+   "losses": 14,
    "ties": 22,
-   "mae_base": 5.83,
-   "mae_shadow": 7.5
+   "mae_base": 5.71,
+   "mae_shadow": 7.55
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 7,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 1,
+ "last_decisions": [
+  {
+   "id": "cb-156",
+   "type": "D2",
+   "event_ride": "Monsters, Inc. Laugh Floor",
+   "ride": "Monsters, Inc. Laugh Floor",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 15 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
