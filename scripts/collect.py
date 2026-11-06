@@ -70,6 +70,14 @@ def collect_park(name, park_id, filename):
             w.writerow(HEADER)
         w.writerows(rows)
     print(f"{name}: {ts} wrote {len(rows)} rides -> {filename}")
+    # Showtime tracker: same payload, zero extra API calls. Fail-safe —
+    # a tracker problem must never cost us wait data.
+    try:
+        import showtimes as _shows
+        n = _shows.track(name, data, ts)
+        print(f"{name}: showtime tracker ok ({n} change events)")
+    except Exception as e:
+        print(f"{name}: showtime tracker skipped ({e})")
     return len(rows)
 
 
