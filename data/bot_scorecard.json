@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-06T19:20:58.392537+00:00",
+ "updated": "2026-11-06T19:26:02.517491+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Pirates of the Caribbean": "2026-11-06 13:35:00-05:00",
-  "The Many Adventures of Winnie the Pooh": "2026-11-06 14:00:00-05:00"
+  "Pirates of the Caribbean": "2026-11-06 13:35:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 1,
  "graded_all": {
   "n": 152,
   "wins": 31,
@@ -34,8 +33,19 @@
    "mae_shadow": 7.18
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-161",
+   "type": "D2",
+   "event_ride": "The Many Adventures of Winnie the Pooh",
+   "ride": "The Many Adventures of Winnie the Pooh",
+   "horizon": 30,
+   "base": 35.0,
+   "shadow": 10.0,
+   "reason": "reopened after 30 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
