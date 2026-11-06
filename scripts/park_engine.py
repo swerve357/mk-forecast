@@ -404,12 +404,14 @@ def main():
         try:
             run_park(park)
             state[park] = now_utc.isoformat()
+            # Save progress per park: if the calling run is cut short,
+            # finished parks stay done and only the rest remain due.
+            try:
+                json.dump(state, open(STATE, "w"), indent=1)
+            except Exception:
+                pass
         except Exception as ex:   # one park's engine never blocks the others
             print(f"{park} engine EXC (swallowed): {type(ex).__name__}: {ex}")
-    try:
-        json.dump(state, open(STATE, "w"), indent=1)
-    except Exception:
-        pass
     attach()
 
 
