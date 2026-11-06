@@ -463,6 +463,8 @@ def main():
         slots = win[::3]   # every 15 minutes across the last 4 hours
         lb_debug.append(f"slots {len(slots)}")
         pred_idx = log.set_index(["name", "horizon", "target"])["pred"].to_dict()
+        stat = raw.groupby(["ts", "name"])["status"].last().unstack()
+        stat.index = pd.to_datetime(stat.index, utc=True)
         for row in rides:
             name = row["name"]
             if name not in act.columns:
@@ -471,6 +473,18 @@ def main():
             for T in slots:
                 a = act.at[T, name] if T in act.index else np.nan
                 if pd.isna(a):
+                    # No posted wait at this slot: if the ride was closed
+                    # or down, mark it (dashboard shows *) so the gap reads
+                    # as the ride's state, not missing data.
+                    st = stat.at[T, name] if (name in stat.columns and T in stat.index) else None
+                    if st in ("CLOSED", "DOWN", "REFURBISHMENT"):
+                        e = {"t": T.tz_convert("America/New_York").strftime("%H:%M"),
+                             "closed": 1}
+                        for h in HORIZONS:
+                            p = pred_idx.get((name, h, T))
+                            if p is not None and pd.notna(p):
+                                e[f"p{h}"] = int(p)
+                        entries.append(e)
                     continue
                 e = {"t": T.tz_convert("America/New_York").strftime("%H:%M"),
                      "actual": int(round(a))}
