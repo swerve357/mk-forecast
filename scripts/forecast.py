@@ -574,8 +574,8 @@ def main():
         import subprocess, sys as _sys
         _eng = os.path.join(ROOT, "scripts", "park_engine.py")
         if os.path.exists(_eng):
-            _r = subprocess.run([_sys.executable, _eng, "EPCOT"], timeout=600,
-                                capture_output=True, text=True)
+            _r = subprocess.run([_sys.executable, _eng, "EPCOT", "HS", "AK"],
+                                timeout=600, capture_output=True, text=True)
             print((_r.stdout or "").strip() or f"park_engine rc={_r.returncode}")
     except Exception as ex:
         print(f"park_engine hook: {ex}")
