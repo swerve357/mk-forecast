@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-07T10:35:57.865582+00:00",
- "last_sample": "2026-11-07T10:35:30+00:00",
- "samples": 50773,
+ "updated": "2026-11-07T10:40:58.102476+00:00",
+ "last_sample": "2026-11-07T10:40:32+00:00",
+ "samples": 50809,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -11,14 +11,14 @@
    "test_rows": 5606,
    "model": "gradient boosting (delta+round5)",
    "mae": 3.8,
-   "rmse": 6.5,
+   "rmse": 6.6,
    "within10": 93,
    "within5": 82,
-   "mape_ge20": 17.7,
-   "bias": -1.0,
+   "mape_ge20": 17.9,
+   "bias": -1.1,
    "baseline_mae": 5.0,
    "baseline_mape_ge20": 23.7,
-   "improvement_pct": 23.4,
+   "improvement_pct": 23.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -26,7 +26,7 @@
     "hour_cos",
     "diff_30",
     "lag_60",
-    "lag_120"
+    "lag_yday"
    ]
   },
   "60": {
@@ -34,15 +34,15 @@
    "train_rows": 17331,
    "test_rows": 5349,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.0,
+   "mae": 3.9,
    "rmse": 6.6,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.4,
-   "bias": -1.0,
+   "mape_ge20": 18.3,
+   "bias": -1.1,
    "baseline_mae": 5.6,
    "baseline_mape_ge20": 25.3,
-   "improvement_pct": 29.1,
+   "improvement_pct": 29.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_yday"
+    "lag_30"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 16349,
    "test_rows": 5111,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.0,
-   "rmse": 6.6,
+   "mae": 3.9,
+   "rmse": 6.5,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.6,
-   "bias": -1.3,
+   "mape_ge20": 18.3,
+   "bias": -1.1,
    "baseline_mae": 5.7,
    "baseline_mape_ge20": 24.9,
-   "improvement_pct": 30.0,
+   "improvement_pct": 31.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -74,7 +74,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "roll_mean_60"
+    "lag_yday"
    ]
   },
   "120": {
@@ -86,11 +86,11 @@
    "rmse": 6.5,
    "within10": 93,
    "within5": 80,
-   "mape_ge20": 19.5,
-   "bias": -1.2,
+   "mape_ge20": 19.0,
+   "bias": -1.0,
    "baseline_mae": 6.4,
    "baseline_mape_ge20": 27.7,
-   "improvement_pct": 36.7,
+   "improvement_pct": 37.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
