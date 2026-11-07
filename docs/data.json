@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-07T09:35:53.760602+00:00",
- "last_sample": "2026-11-07T09:35:28+00:00",
- "samples": 50341,
+ "updated": "2026-11-07T09:40:54.651981+00:00",
+ "last_sample": "2026-11-07T09:40:32+00:00",
+ "samples": 50377,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -10,23 +10,23 @@
    "train_rows": 18325,
    "test_rows": 5606,
    "model": "gradient boosting (delta+round5)",
-   "mae": 3.7,
-   "rmse": 6.4,
-   "within10": 94,
+   "mae": 3.8,
+   "rmse": 6.6,
+   "within10": 93,
    "within5": 82,
-   "mape_ge20": 17.3,
-   "bias": -1.0,
+   "mape_ge20": 17.8,
+   "bias": -0.9,
    "baseline_mae": 5.0,
    "baseline_mape_ge20": 23.7,
-   "improvement_pct": 25.2,
+   "improvement_pct": 22.7,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
     "diff_30",
-    "lag_yday",
-    "lag_60"
+    "lag_120",
+    "lag_yday"
    ]
   },
   "60": {
@@ -42,7 +42,7 @@
    "bias": -1.1,
    "baseline_mae": 5.6,
    "baseline_mape_ge20": 25.3,
-   "improvement_pct": 30.5,
+   "improvement_pct": 30.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -59,14 +59,14 @@
    "test_rows": 5111,
    "model": "gradient boosting (delta+round5)",
    "mae": 3.9,
-   "rmse": 6.5,
+   "rmse": 6.4,
    "within10": 93,
    "within5": 81,
    "mape_ge20": 18.2,
-   "bias": -1.3,
+   "bias": -1.0,
    "baseline_mae": 5.7,
    "baseline_mape_ge20": 24.9,
-   "improvement_pct": 31.0,
+   "improvement_pct": 30.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -74,7 +74,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_120"
+    "lag_yday"
    ]
   },
   "120": {
@@ -87,10 +87,10 @@
    "within10": 93,
    "within5": 80,
    "mape_ge20": 19.0,
-   "bias": -1.3,
+   "bias": -1.1,
    "baseline_mae": 6.4,
    "baseline_mape_ge20": 27.7,
-   "improvement_pct": 38.3,
+   "improvement_pct": 37.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
