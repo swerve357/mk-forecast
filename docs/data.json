@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-07T10:10:43.886915+00:00",
- "last_sample": "2026-11-07T10:10:27+00:00",
- "samples": 50593,
+ "updated": "2026-11-07T10:15:56.342415+00:00",
+ "last_sample": "2026-11-07T10:15:32+00:00",
+ "samples": 50629,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -12,21 +12,21 @@
    "model": "gradient boosting (delta+round5)",
    "mae": 3.8,
    "rmse": 6.5,
-   "within10": 94,
+   "within10": 93,
    "within5": 82,
-   "mape_ge20": 17.8,
-   "bias": -0.9,
+   "mape_ge20": 17.7,
+   "bias": -1.0,
    "baseline_mae": 5.0,
    "baseline_mape_ge20": 23.7,
-   "improvement_pct": 23.5,
+   "improvement_pct": 23.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
     "diff_30",
-    "lag_60",
-    "lag_120"
+    "lag_yday",
+    "lag_60"
    ]
   },
   "60": {
@@ -35,14 +35,14 @@
    "test_rows": 5349,
    "model": "gradient boosting (delta+round5)",
    "mae": 3.9,
-   "rmse": 6.6,
+   "rmse": 6.5,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.3,
-   "bias": -1.2,
+   "mape_ge20": 18.4,
+   "bias": -1.1,
    "baseline_mae": 5.6,
    "baseline_mape_ge20": 25.3,
-   "improvement_pct": 29.5,
+   "improvement_pct": 30.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "diff_15"
+    "lag_yday"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 16349,
    "test_rows": 5111,
    "model": "gradient boosting (delta+round5)",
-   "mae": 3.9,
-   "rmse": 6.4,
+   "mae": 4.0,
+   "rmse": 6.5,
    "within10": 93,
    "within5": 81,
    "mape_ge20": 18.3,
    "bias": -1.3,
    "baseline_mae": 5.7,
    "baseline_mape_ge20": 24.9,
-   "improvement_pct": 31.3,
+   "improvement_pct": 30.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -83,11 +83,11 @@
    "test_rows": 4889,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.0,
-   "rmse": 6.4,
+   "rmse": 6.5,
    "within10": 93,
    "within5": 80,
-   "mape_ge20": 19.0,
-   "bias": -1.2,
+   "mape_ge20": 18.9,
+   "bias": -1.1,
    "baseline_mae": 6.4,
    "baseline_mape_ge20": 27.7,
    "improvement_pct": 37.4,
@@ -98,7 +98,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_60"
+    "lag_120"
    ]
   }
  },
