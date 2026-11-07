@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-07T06:40:53.951067+00:00",
- "last_sample": "2026-11-07T06:40:31+00:00",
- "samples": 49081,
+ "updated": "2026-11-07T06:45:44.026102+00:00",
+ "last_sample": "2026-11-07T06:45:26+00:00",
+ "samples": 49117,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -12,13 +12,13 @@
    "model": "gradient boosting (delta+round5)",
    "mae": 3.8,
    "rmse": 6.5,
-   "within10": 94,
-   "within5": 82,
-   "mape_ge20": 17.4,
-   "bias": -0.9,
+   "within10": 93,
+   "within5": 81,
+   "mape_ge20": 17.8,
+   "bias": -0.8,
    "baseline_mae": 5.0,
    "baseline_mape_ge20": 23.7,
-   "improvement_pct": 23.5,
+   "improvement_pct": 22.7,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -26,7 +26,7 @@
     "hour_cos",
     "diff_30",
     "lag_60",
-    "lag_120"
+    "lag_yday"
    ]
   },
   "60": {
@@ -37,12 +37,12 @@
    "mae": 3.9,
    "rmse": 6.5,
    "within10": 93,
-   "within5": 82,
-   "mape_ge20": 18.2,
-   "bias": -1.2,
+   "within5": 81,
+   "mape_ge20": 18.5,
+   "bias": -1.1,
    "baseline_mae": 5.6,
    "baseline_mape_ge20": 25.3,
-   "improvement_pct": 30.4,
+   "improvement_pct": 29.7,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -59,14 +59,14 @@
    "test_rows": 5111,
    "model": "gradient boosting (delta+round5)",
    "mae": 3.9,
-   "rmse": 6.5,
+   "rmse": 6.4,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.5,
-   "bias": -1.3,
+   "mape_ge20": 18.0,
+   "bias": -1.1,
    "baseline_mae": 5.7,
    "baseline_mape_ge20": 24.9,
-   "improvement_pct": 30.8,
+   "improvement_pct": 30.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -74,7 +74,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_yday"
+    "lag_120"
    ]
   },
   "120": {
@@ -82,15 +82,15 @@
    "train_rows": 15449,
    "test_rows": 4889,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.1,
-   "rmse": 6.6,
-   "within10": 92,
-   "within5": 80,
-   "mape_ge20": 19.4,
-   "bias": -1.0,
+   "mae": 4.0,
+   "rmse": 6.5,
+   "within10": 93,
+   "within5": 81,
+   "mape_ge20": 19.1,
+   "bias": -1.1,
    "baseline_mae": 6.4,
    "baseline_mape_ge20": 27.7,
-   "improvement_pct": 36.2,
+   "improvement_pct": 37.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -114,12 +114,12 @@
  "demo": false,
  "lookback": {},
  "today": {},
- "lookback_debug": "log rows 19960; act (1143, 31) idx 2026-10-30 04:00:00+00:00..2026-11-07 03:05:00+00:00; slots 2; lookback rides 0; today graded 0",
+ "lookback_debug": "log rows 19860; act (1143, 31) idx 2026-10-30 04:00:00+00:00..2026-11-07 03:05:00+00:00; slots 2; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-07T06:16:16.069925+00:00",
-   "last_sample": "2026-11-07T06:15:32+00:00",
-   "samples": 34952,
+   "updated": "2026-11-07T06:45:53.679939+00:00",
+   "last_sample": "2026-11-07T06:45:26+00:00",
+   "samples": 35156,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -236,9 +236,9 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-07T06:16:31.498652+00:00",
-   "last_sample": "2026-11-07T06:15:32+00:00",
-   "samples": 13364,
+   "updated": "2026-11-07T06:46:02.554113+00:00",
+   "last_sample": "2026-11-07T06:45:26+00:00",
+   "samples": 13442,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -354,9 +354,9 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-07T06:16:41.752121+00:00",
-   "last_sample": "2026-11-07T06:15:32+00:00",
-   "samples": 16448,
+   "updated": "2026-11-07T06:46:08.622551+00:00",
+   "last_sample": "2026-11-07T06:45:26+00:00",
+   "samples": 16544,
    "history_samples": 0,
    "rides": [],
    "metrics": {
