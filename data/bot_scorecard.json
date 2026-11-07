@@ -1,12 +1,10 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-07T20:56:05.589623+00:00",
+ "updated": "2026-11-07T21:01:09.969394+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
- "active_spells": {
-  "Tomorrowland Transit Authority PeopleMover": "2026-11-07 15:45:00-05:00"
- },
- "decisions_open": 0,
+ "active_spells": {},
+ "decisions_open": 1,
  "graded_all": {
   "n": 224,
   "wins": 55,
@@ -33,8 +31,19 @@
    "mae_shadow": 6.59
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-234",
+   "type": "D2",
+   "event_ride": "Tomorrowland Transit Authority PeopleMover",
+   "ride": "Tomorrowland Transit Authority PeopleMover",
+   "horizon": 30,
+   "base": 30.0,
+   "shadow": 30.0,
+   "reason": "reopened after 20 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
