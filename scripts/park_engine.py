@@ -149,7 +149,9 @@ def run_park(park):
 
                 def ship_pred(frame, model):
                     p = frame["wait"].values + model.predict(frame[cols])
-                    return np.clip(np.round(p / 5.0) * 5, 0, None)
+                    # Posted waits never go below 5 (verified across all
+                    # banked data), so predictions floor at 5, not 0.
+                    return np.clip(np.round(p / 5.0) * 5, 5, None)
                 s = F.score(ship_pred(te, m), te[f"y{h}"].values, te["wait"].values)
                 entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)),
                              evaluation="chronological holdout with horizon embargo")
@@ -216,15 +218,15 @@ def run_park(park):
             if h in models:
                 mdl, mcols = models[h]
                 p = float(r["wait"]) + float(mdl.predict(pd.DataFrame([r])[mcols])[0])
-                p = max(0.0, round(p / 5.0) * 5)
+                p = max(5.0, round(p / 5.0) * 5)
             else:
-                p = float(r["wait"])
+                p = max(5.0, float(r["wait"]))
             row[f"f{h}"] = int(p)
             if h in intervals:
                 lo, hi, icols = intervals[h]
                 base = float(r["wait"])
-                row[f"f{h}_lo"] = int(max(0.0, round((base + float(lo.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5))
-                row[f"f{h}_hi"] = int(max(0.0, round((base + float(hi.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5))
+                row[f"f{h}_lo"] = int(max(5.0, round((base + float(lo.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5))
+                row[f"f{h}_hi"] = int(max(5.0, round((base + float(hi.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5))
             sc = ride_scores.get(h, {}).get(r["name"])
             if sc:
                 row[f"score{h}_mae"] = sc["mae"]
@@ -417,11 +419,11 @@ def refresh_park(park):
             d = row.get(f"d{h}")
             if d is None:
                 continue
-            p = int(max(0.0, round((w + d) / 5.0) * 5))
+            p = int(max(5.0, round((w + d) / 5.0) * 5))
             row[f"f{h}"] = p
             if f"d{h}_lo" in row:
-                row[f"f{h}_lo"] = int(max(0.0, round((p + row[f"d{h}_lo"]) / 5.0) * 5))
-                row[f"f{h}_hi"] = int(max(0.0, round((p + row[f"d{h}_hi"]) / 5.0) * 5))
+                row[f"f{h}_lo"] = int(max(5.0, round((p + row[f"d{h}_lo"]) / 5.0) * 5))
+                row[f"f{h}_hi"] = int(max(5.0, round((p + row[f"d{h}_hi"]) / 5.0) * 5))
             new_rows.append({"made_at": lts.isoformat(), "name": row["name"],
                              "horizon": h,
                              "target": (lts + pd.Timedelta(minutes=h)).isoformat(),
