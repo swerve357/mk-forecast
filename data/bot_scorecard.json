@@ -1,11 +1,10 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-08T02:51:03.453305+00:00",
+ "updated": "2026-11-08T02:55:59.315791+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-07 17:10:00-05:00",
-  "Buzz Lightyear\u2019s Space Ranger Spin": "2026-11-07 21:40:00-05:00",
   "Casey Jr. Splash 'N' Soak Station": "2026-11-07 18:05:00-05:00",
   "Enchanted Tales with Belle": "2026-11-07 19:40:00-05:00",
   "Main Street Vehicles": "2026-11-07 16:10:00-05:00",
@@ -13,7 +12,7 @@
   "Walt Disney World Railroad - Fantasyland": "2026-11-07 18:35:00-05:00",
   "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-07 18:35:00-05:00"
  },
- "decisions_open": 18,
+ "decisions_open": 19,
  "graded_all": {
   "n": 246,
   "wins": 57,
@@ -40,58 +39,18 @@
    "mae_shadow": 6.68
   }
  },
- "new_decisions_this_run": 18,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
  "last_decisions": [
   {
-   "id": "cb-269",
-   "type": "D1",
+   "id": "cb-274",
+   "type": "D2",
    "event_ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "ride": "Tomorrowland Speedway",
-   "horizon": 60,
-   "base": 10.0,
-   "shadow": 15.0,
-   "reason": "Buzz Lightyear\u2019s Space Ranger Spin (posted 45) down 15 min; same-land displacement +5"
-  },
-  {
-   "id": "cb-270",
-   "type": "D1",
-   "event_ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "ride": "Tomorrowland Speedway",
-   "horizon": 90,
-   "base": 10.0,
-   "shadow": 15.0,
-   "reason": "Buzz Lightyear\u2019s Space Ranger Spin (posted 45) down 15 min; same-land displacement +5"
-  },
-  {
-   "id": "cb-271",
-   "type": "D1",
-   "event_ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "ride": "Tomorrowland Transit Authority PeopleMover",
+   "ride": "Buzz Lightyear\u2019s Space Ranger Spin",
    "horizon": 30,
-   "base": 15.0,
+   "base": 35.0,
    "shadow": 20.0,
-   "reason": "Buzz Lightyear\u2019s Space Ranger Spin (posted 45) down 15 min; same-land displacement +5"
-  },
-  {
-   "id": "cb-272",
-   "type": "D1",
-   "event_ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "ride": "Tomorrowland Transit Authority PeopleMover",
-   "horizon": 60,
-   "base": 15.0,
-   "shadow": 20.0,
-   "reason": "Buzz Lightyear\u2019s Space Ranger Spin (posted 45) down 15 min; same-land displacement +5"
-  },
-  {
-   "id": "cb-273",
-   "type": "D1",
-   "event_ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "ride": "Tomorrowland Transit Authority PeopleMover",
-   "horizon": 90,
-   "base": 20.0,
-   "shadow": 25.0,
-   "reason": "Buzz Lightyear\u2019s Space Ranger Spin (posted 45) down 15 min; same-land displacement +5"
+   "reason": "reopened after 20 min down; shadow = first posted wait at reopen"
   }
  ],
  "debug": ""
