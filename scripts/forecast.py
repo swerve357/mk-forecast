@@ -321,7 +321,10 @@ def main():
                 m.fit(tr[cols], tr[f"y{h}"] - tr["wait"])
                 def ship_pred(frame, model):
                     p = frame["wait"].values + model.predict(frame[cols])
-                    return np.clip(np.round(p / 5.0) * 5, 0, None)
+                    # Posted waits never go below 5 (verified across all
+                    # banked data), so predictions floor at 5, not 0: a 0
+                    # call is a guaranteed miss of 5+ on any operating ride.
+                    return np.clip(np.round(p / 5.0) * 5, 5, None)
                 s = score(ship_pred(te, m), te[f"y{h}"].values, te["wait"].values)
                 entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)), evaluation="chronological holdout with horizon embargo")
                 # Score the predictor that will actually ship (the model if
@@ -390,15 +393,15 @@ def main():
             if h in models:
                 mdl, mcols = models[h]
                 p = float(r["wait"]) + float(mdl.predict(pd.DataFrame([r])[mcols])[0])
-                p = max(0.0, round(p / 5.0) * 5)
+                p = max(5.0, round(p / 5.0) * 5)
             else:
-                p = float(r["wait"])
+                p = max(5.0, float(r["wait"]))
             row[f"f{h}"] = int(p)
             if h in intervals:
                 lo, hi, icols = intervals[h]
                 base = float(r["wait"])
-                lo_p = max(0.0, round((base + float(lo.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5)
-                hi_p = max(0.0, round((base + float(hi.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5)
+                lo_p = max(5.0, round((base + float(lo.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5)
+                hi_p = max(5.0, round((base + float(hi.predict(pd.DataFrame([r])[icols])[0])) / 5.0) * 5)
                 row[f"f{h}_lo"] = int(lo_p)
                 row[f"f{h}_hi"] = int(max(lo_p, hi_p))
         for h in HORIZONS:
