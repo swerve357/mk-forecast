@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-08T04:50:40.917985+00:00",
- "last_sample": "2026-11-08T04:50:24+00:00",
- "samples": 58657,
+ "updated": "2026-11-08T04:56:01.609043+00:00",
+ "last_sample": "2026-11-08T04:55:32+00:00",
+ "samples": 58693,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -10,15 +10,15 @@
    "train_rows": 21745,
    "test_rows": 6590,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.6,
+   "mae": 4.7,
    "rmse": 7.6,
    "within10": 90,
    "within5": 77,
-   "mape_ge20": 22.0,
-   "bias": -2.3,
+   "mape_ge20": 22.4,
+   "bias": -2.4,
    "baseline_mae": 5.3,
    "baseline_mape_ge20": 25.4,
-   "improvement_pct": 13.5,
+   "improvement_pct": 11.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -35,14 +35,14 @@
    "test_rows": 6305,
    "model": "gradient boosting (delta+round5)",
    "mae": 5.1,
-   "rmse": 8.3,
+   "rmse": 8.4,
    "within10": 89,
-   "within5": 75,
-   "mape_ge20": 23.8,
-   "bias": -2.5,
+   "within5": 76,
+   "mape_ge20": 24.0,
+   "bias": -2.6,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.9,
-   "improvement_pct": 18.2,
+   "improvement_pct": 19.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_yday"
+    "lag_30"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 19505,
    "test_rows": 6003,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.3,
-   "rmse": 8.5,
+   "mae": 5.5,
+   "rmse": 8.7,
    "within10": 88,
-   "within5": 75,
-   "mape_ge20": 25.1,
-   "bias": -2.9,
+   "within5": 74,
+   "mape_ge20": 25.2,
+   "bias": -3.0,
    "baseline_mae": 6.7,
    "baseline_mape_ge20": 29.7,
-   "improvement_pct": 21.2,
+   "improvement_pct": 18.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -82,15 +82,15 @@
    "train_rows": 18477,
    "test_rows": 5750,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.4,
-   "rmse": 8.6,
-   "within10": 88,
+   "mae": 5.5,
+   "rmse": 8.7,
+   "within10": 87,
    "within5": 73,
-   "mape_ge20": 26.2,
-   "bias": -3.1,
+   "mape_ge20": 26.6,
+   "bias": -3.2,
    "baseline_mae": 7.1,
    "baseline_mape_ge20": 30.6,
-   "improvement_pct": 24.8,
+   "improvement_pct": 23.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -103,55 +103,19 @@
   }
  },
  "context": {
-  "date": "2026-11-07",
-  "open": "09:00",
-  "close": "23:00",
-  "early_entry": "08:30",
-  "ticketed_event": "",
-  "ll_multipass_usd": 42.0,
+  "date": "2026-11-08",
+  "open": "08:00",
+  "close": "18:00",
+  "early_entry": "07:30",
+  "ticketed_event": "Special Ticketed Event",
+  "ll_multipass_usd": 39.0,
+  "event": "Mickey's Very Merry Christmas Party",
   "is_party_night": false
  },
  "demo": false,
  "lookback": {},
- "today": {
-  "date": "2026-11-07",
-  "graded": 16514,
-  "exact": 44,
-  "in5": 75,
-  "in10": 88,
-  "in15": 95,
-  "by_horizon": {
-   "30": {
-    "graded": 4400,
-    "exact": 48,
-    "in5": 77,
-    "in10": 91,
-    "in15": 97
-   },
-   "60": {
-    "graded": 4212,
-    "exact": 45,
-    "in5": 74,
-    "in10": 88,
-    "in15": 95
-   },
-   "90": {
-    "graded": 4032,
-    "exact": 42,
-    "in5": 74,
-    "in10": 87,
-    "in15": 94
-   },
-   "120": {
-    "graded": 3870,
-    "exact": 41,
-    "in5": 73,
-    "in10": 87,
-    "in15": 94
-   }
-  }
- },
- "lookback_debug": "log rows 23668; act (1317, 31) idx 2026-10-30 04:00:00+00:00..2026-11-08 04:05:00+00:00; slots 13; lookback rides 0; today graded 16514",
+ "today": {},
+ "lookback_debug": "log rows 23556; act (1317, 31) idx 2026-10-30 04:00:00+00:00..2026-11-08 04:05:00+00:00; slots 13; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-08T04:41:23.353451+00:00",
@@ -310,8 +274,8 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-08T04:50:41.902223+00:00",
-   "last_sample": "2026-11-08T04:50:24+00:00",
+   "updated": "2026-11-08T04:56:03.291010+00:00",
+   "last_sample": "2026-11-08T04:55:32+00:00",
    "samples": 16861,
    "history_samples": 0,
    "rides": [
@@ -742,7 +706,7 @@
     {
      "name": "Alien Swirling Saucers",
      "now": 5,
-     "trend30": -5,
+     "trend30": 0,
      "why": {
       "lag60": 5,
       "lag120": 5,
