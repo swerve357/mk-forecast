@@ -1,41 +1,30 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-08T12:35:45.433015+00:00",
+ "updated": "2026-11-08T12:41:03.526585+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "\"it's a small world\"": "2026-11-07 23:10:00-05:00",
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-07 17:10:00-05:00",
-  "Astro Orbiter": "2026-11-07 23:10:00-05:00",
   "Big Thunder Mountain Railroad": "2026-11-07 23:10:00-05:00",
   "Casey Jr. Splash 'N' Soak Station": "2026-11-07 18:05:00-05:00",
   "Cinderella Castle": "2026-11-07 23:05:00-05:00",
   "Country Bear Musical Jamboree": "2026-11-07 23:10:00-05:00",
-  "Dumbo the Flying Elephant": "2026-11-07 23:10:00-05:00",
   "Enchanted Tales with Belle": "2026-11-07 19:40:00-05:00",
   "Haunted Mansion": "2026-11-07 23:10:00-05:00",
   "Jingle Cruise": "2026-11-07 23:10:00-05:00",
   "Main Street Vehicles": "2026-11-07 16:10:00-05:00",
   "Mickey's PhilharMagic": "2026-11-07 23:10:00-05:00",
   "Monsters, Inc. Laugh Floor": "2026-11-07 22:10:00-05:00",
-  "Peter Pan's Flight": "2026-11-07 23:10:00-05:00",
   "Pirates of the Caribbean": "2026-11-07 23:10:00-05:00",
-  "Prince Charming Regal Carrousel": "2026-11-07 23:10:00-05:00",
-  "Seven Dwarfs Mine Train": "2026-11-07 23:10:00-05:00",
-  "Space Mountain": "2026-11-07 23:10:00-05:00",
   "Swiss Family Treehouse": "2026-11-07 23:10:00-05:00",
   "TRON Lightcycle / Run": "2026-11-07 23:10:00-05:00",
-  "The Barnstormer": "2026-11-07 23:10:00-05:00",
   "The Hall of Presidents": "2026-11-07 21:10:00-05:00",
   "The Magic Carpets of Aladdin": "2026-11-07 23:10:00-05:00",
-  "Tomorrowland Speedway": "2026-11-07 23:10:00-05:00",
-  "Tomorrowland Transit Authority PeopleMover": "2026-11-07 23:10:00-05:00",
-  "Under the Sea - Journey of The Little Mermaid": "2026-11-07 23:10:00-05:00",
   "Walt Disney World Railroad - Fantasyland": "2026-11-07 18:35:00-05:00",
   "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-07 18:35:00-05:00",
   "Walt Disney's Enchanted Tiki Room": "2026-11-07 23:10:00-05:00"
  },
- "decisions_open": 6,
+ "decisions_open": 16,
  "graded_all": {
   "n": 257,
   "wins": 59,
@@ -62,58 +51,58 @@
    "mae_shadow": 6.61
   }
  },
- "new_decisions_this_run": 6,
+ "new_decisions_this_run": 10,
  "graded_this_run": 0,
  "last_decisions": [
   {
-   "id": "cb-276",
+   "id": "cb-286",
    "type": "D2",
-   "event_ride": "Mad Tea Party",
-   "ride": "Mad Tea Party",
+   "event_ride": "Space Mountain",
+   "ride": "Space Mountain",
+   "horizon": 30,
+   "base": 20.0,
+   "shadow": 15.0,
+   "reason": "reopened after 515 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-287",
+   "type": "D2",
+   "event_ride": "The Barnstormer",
+   "ride": "The Barnstormer",
    "horizon": 30,
    "base": 5.0,
    "shadow": 5.0,
-   "reason": "reopened after 510 min down; shadow = first posted wait at reopen"
+   "reason": "reopened after 515 min down; shadow = first posted wait at reopen"
   },
   {
-   "id": "cb-277",
-   "type": "D1",
-   "event_ride": "TRON Lightcycle / Run",
-   "ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "horizon": 30,
-   "base": 20.0,
-   "shadow": 25.0,
-   "reason": "TRON Lightcycle / Run (posted 75) down 510 min; same-land displacement +5"
-  },
-  {
-   "id": "cb-278",
-   "type": "D1",
-   "event_ride": "TRON Lightcycle / Run",
-   "ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "horizon": 60,
-   "base": 20.0,
-   "shadow": 25.0,
-   "reason": "TRON Lightcycle / Run (posted 75) down 510 min; same-land displacement +5"
-  },
-  {
-   "id": "cb-279",
-   "type": "D1",
-   "event_ride": "TRON Lightcycle / Run",
-   "ride": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "horizon": 90,
-   "base": 30.0,
-   "shadow": 35.0,
-   "reason": "TRON Lightcycle / Run (posted 75) down 510 min; same-land displacement +5"
-  },
-  {
-   "id": "cb-280",
+   "id": "cb-288",
    "type": "D2",
-   "event_ride": "The Many Adventures of Winnie the Pooh",
-   "ride": "The Many Adventures of Winnie the Pooh",
+   "event_ride": "Tomorrowland Speedway",
+   "ride": "Tomorrowland Speedway",
    "horizon": 30,
-   "base": 20.0,
+   "base": 15.0,
    "shadow": 5.0,
-   "reason": "reopened after 510 min down; shadow = first posted wait at reopen"
+   "reason": "reopened after 515 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-289",
+   "type": "D2",
+   "event_ride": "Tomorrowland Transit Authority PeopleMover",
+   "ride": "Tomorrowland Transit Authority PeopleMover",
+   "horizon": 30,
+   "base": 5.0,
+   "shadow": 5.0,
+   "reason": "reopened after 515 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-290",
+   "type": "D2",
+   "event_ride": "Under the Sea - Journey of The Little Mermaid",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
+   "horizon": 30,
+   "base": 5.0,
+   "shadow": 5.0,
+   "reason": "reopened after 515 min down; shadow = first posted wait at reopen"
   }
  ],
  "debug": ""
