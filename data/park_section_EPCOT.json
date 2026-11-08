@@ -1,41 +1,41 @@
 {
- "updated": "2026-11-08T14:40:48.055136+00:00",
- "last_sample": "2026-11-08T14:40:27+00:00",
- "samples": 48008,
+ "updated": "2026-11-08T14:46:21.870390+00:00",
+ "last_sample": "2026-11-08T14:45:32+00:00",
+ "samples": 48212,
  "history_samples": 0,
  "rides": [
   {
    "name": "Guardians of the Galaxy: Cosmic Rewind",
-   "now": 70,
-   "trend30": 0,
+   "now": 65,
+   "trend30": -5,
    "why": {
-    "lag60": null,
+    "lag60": 50,
     "lag120": null,
     "lag_yday": 80,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
-   "f30": 70,
-   "score30_mae": 13.0,
+   "f30": 65,
+   "score30_mae": 13.1,
    "score30_in5": 31,
-   "score30_in10": 53,
-   "score30_pairs": 138,
+   "score30_in10": 52,
+   "score30_pairs": 139,
    "d30": 0,
    "f60": 70,
-   "f60_lo": 60,
-   "f60_hi": 75,
+   "f60_lo": 55,
+   "f60_hi": 80,
    "score60_mae": 17.3,
    "score60_in5": 30,
    "score60_in10": 48,
-   "score60_pairs": 131,
-   "d60": 0,
-   "d60_lo": -10,
-   "d60_hi": 5,
-   "f90": 80,
+   "score60_pairs": 132,
+   "d60": 5,
+   "d60_lo": -15,
+   "d60_hi": 10,
+   "f90": 75,
    "f90_lo": 60,
    "f90_hi": 80,
    "score90_mae": 18.0,
@@ -43,8 +43,8 @@
    "score90_in10": 46,
    "score90_pairs": 126,
    "d90": 10,
-   "d90_lo": -20,
-   "d90_hi": 0,
+   "d90_lo": -15,
+   "d90_hi": 5,
    "f120": 75,
    "f120_lo": 60,
    "f120_hi": 80,
@@ -52,42 +52,95 @@
    "score120_in5": 24,
    "score120_in10": 46,
    "score120_pairs": 120,
-   "d120": 5,
+   "d120": 10,
    "d120_lo": -15,
    "d120_hi": 5,
    "people": null
   },
   {
-   "name": "Test Track",
+   "name": "Frozen Ever After",
    "now": 60,
-   "trend30": 0,
+   "trend30": 20,
    "why": {
     "lag60": null,
+    "lag120": null,
+    "lag_yday": 50,
+    "down60": 10,
+    "reopened": false,
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
+   },
+   "f30": 60,
+   "score30_mae": 10.1,
+   "score30_in5": 51,
+   "score30_in10": 72,
+   "score30_pairs": 134,
+   "d30": 0,
+   "f60": 60,
+   "f60_lo": 45,
+   "f60_hi": 65,
+   "score60_mae": 9.8,
+   "score60_in5": 47,
+   "score60_in10": 73,
+   "score60_pairs": 129,
+   "d60": 0,
+   "d60_lo": -15,
+   "d60_hi": 5,
+   "f90": 55,
+   "f90_lo": 50,
+   "f90_hi": 65,
+   "score90_mae": 9.5,
+   "score90_in5": 49,
+   "score90_in10": 79,
+   "score90_pairs": 126,
+   "d90": -5,
+   "d90_lo": -5,
+   "d90_hi": 10,
+   "f120": 55,
+   "f120_lo": 50,
+   "f120_hi": 70,
+   "score120_mae": 10.5,
+   "score120_in5": 45,
+   "score120_in10": 70,
+   "score120_pairs": 120,
+   "d120": -5,
+   "d120_lo": -5,
+   "d120_hi": 15,
+   "people": null
+  },
+  {
+   "name": "Test Track",
+   "now": 50,
+   "trend30": -10,
+   "why": {
+    "lag60": 35,
     "lag120": null,
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
-   "f30": 60,
-   "score30_mae": 9.6,
-   "score30_in5": 53,
-   "score30_in10": 77,
-   "score30_pairs": 117,
+   "f30": 50,
+   "score30_mae": 9.8,
+   "score30_in5": 52,
+   "score30_in10": 76,
+   "score30_pairs": 123,
    "d30": 0,
-   "f60": 50,
-   "f60_lo": 50,
-   "f60_hi": 65,
-   "score60_mae": 16.7,
-   "score60_in5": 14,
-   "score60_in10": 34,
-   "score60_pairs": 108,
-   "d60": -10,
-   "d60_lo": 0,
-   "d60_hi": 15,
+   "f60": 60,
+   "f60_lo": 45,
+   "f60_hi": 60,
+   "score60_mae": 16.4,
+   "score60_in5": 15,
+   "score60_in10": 35,
+   "score60_pairs": 111,
+   "d60": 10,
+   "d60_lo": -15,
+   "d60_hi": 0,
    "f90": 55,
    "f90_lo": 45,
    "f90_hi": 65,
@@ -95,72 +148,19 @@
    "score90_in5": 24,
    "score90_in10": 44,
    "score90_pairs": 102,
-   "d90": -5,
+   "d90": 5,
    "d90_lo": -10,
    "d90_hi": 10,
-   "f120": 60,
-   "f120_lo": 50,
-   "f120_hi": 70,
+   "f120": 55,
+   "f120_lo": 45,
+   "f120_hi": 65,
    "score120_mae": 15.0,
    "score120_in5": 18,
    "score120_in10": 39,
    "score120_pairs": 96,
-   "d120": 0,
+   "d120": 5,
    "d120_lo": -10,
    "d120_hi": 10,
-   "people": null
-  },
-  {
-   "name": "Frozen Ever After",
-   "now": 60,
-   "trend30": 40,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 55,
-    "down60": 25,
-    "reopened": true,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
-   },
-   "f30": 60,
-   "score30_mae": 9.2,
-   "score30_in5": 53,
-   "score30_in10": 76,
-   "score30_pairs": 135,
-   "d30": 0,
-   "f60": 80,
-   "f60_lo": 60,
-   "f60_hi": 85,
-   "score60_mae": 9.6,
-   "score60_in5": 48,
-   "score60_in10": 73,
-   "score60_pairs": 131,
-   "d60": 20,
-   "d60_lo": -20,
-   "d60_hi": 5,
-   "f90": 75,
-   "f90_lo": 55,
-   "f90_hi": 85,
-   "score90_mae": 9.5,
-   "score90_in5": 49,
-   "score90_in10": 79,
-   "score90_pairs": 126,
-   "d90": 15,
-   "d90_lo": -20,
-   "d90_hi": 10,
-   "f120": 70,
-   "f120_lo": 60,
-   "f120_hi": 70,
-   "score120_mae": 10.5,
-   "score120_in5": 45,
-   "score120_in10": 70,
-   "score120_pairs": 120,
-   "d120": 10,
-   "d120_lo": -10,
-   "d120_hi": 0,
    "people": null
   },
   {
@@ -168,41 +168,41 @@
    "now": 30,
    "trend30": -10,
    "why": {
-    "lag60": null,
+    "lag60": 45,
     "lag120": null,
-    "lag_yday": 50,
+    "lag_yday": 40,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 30,
-   "score30_mae": 9.6,
-   "score30_in5": 52,
+   "score30_mae": 9.8,
+   "score30_in5": 48,
    "score30_in10": 64,
-   "score30_pairs": 122,
+   "score30_pairs": 123,
    "d30": 0,
-   "f60": 30,
-   "f60_lo": 25,
-   "f60_hi": 40,
+   "f60": 45,
+   "f60_lo": 30,
+   "f60_hi": 45,
    "score60_mae": 12.8,
    "score60_in5": 47,
-   "score60_in10": 61,
-   "score60_pairs": 111,
-   "d60": 0,
-   "d60_lo": -5,
-   "d60_hi": 10,
-   "f90": 35,
+   "score60_in10": 62,
+   "score60_pairs": 112,
+   "d60": 15,
+   "d60_lo": -15,
+   "d60_hi": 0,
+   "f90": 40,
    "f90_lo": 25,
-   "f90_hi": 40,
+   "f90_hi": 45,
    "score90_mae": 15.5,
    "score90_in5": 42,
    "score90_in10": 60,
    "score90_pairs": 106,
-   "d90": 5,
-   "d90_lo": -10,
+   "d90": 10,
+   "d90_lo": -15,
    "d90_hi": 5,
    "f120": 35,
    "f120_lo": 25,
@@ -217,44 +217,7 @@
    "people": null
   },
   {
-   "name": "Impressions de France",
-   "now": 20,
-   "trend30": 0,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 25,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
-   },
-   "f30": 20,
-   "d30": 0,
-   "f60": 25,
-   "f60_lo": 20,
-   "f60_hi": 20,
-   "d60": 5,
-   "d60_lo": -5,
-   "d60_hi": -5,
-   "f90": 25,
-   "f90_lo": 20,
-   "f90_hi": 20,
-   "d90": 5,
-   "d90_lo": -5,
-   "d90_hi": -5,
-   "f120": 25,
-   "f120_lo": 20,
-   "f120_hi": 30,
-   "d120": 5,
-   "d120_lo": -5,
-   "d120_hi": 5,
-   "people": null
-  },
-  {
-   "name": "Mission: SPACE",
+   "name": "Turtle Talk With Crush",
    "now": 15,
    "trend30": 0,
    "why": {
@@ -263,16 +226,69 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
+   },
+   "f30": 15,
+   "score30_mae": 0.0,
+   "score30_in5": 100,
+   "score30_in10": 100,
+   "score30_pairs": 126,
+   "d30": 0,
+   "f60": 15,
+   "f60_lo": 15,
+   "f60_hi": 20,
+   "score60_mae": 0.0,
+   "score60_in5": 100,
+   "score60_in10": 100,
+   "score60_pairs": 120,
+   "d60": 0,
+   "d60_lo": 0,
+   "d60_hi": 5,
+   "f90": 15,
+   "f90_lo": 15,
+   "f90_hi": 20,
+   "score90_mae": 0.0,
+   "score90_in5": 100,
+   "score90_in10": 100,
+   "score90_pairs": 114,
+   "d90": 0,
+   "d90_lo": 0,
+   "d90_hi": 5,
+   "f120": 15,
+   "f120_lo": 15,
+   "f120_hi": 20,
+   "score120_mae": 0.0,
+   "score120_in5": 100,
+   "score120_in10": 100,
+   "score120_pairs": 108,
+   "d120": 0,
+   "d120_lo": 0,
+   "d120_hi": 5,
+   "people": null
+  },
+  {
+   "name": "Mission: SPACE",
+   "now": 15,
+   "trend30": 0,
+   "why": {
+    "lag60": 15,
+    "lag120": null,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 15,
    "score30_mae": 0.4,
    "score30_in5": 96,
    "score30_in10": 100,
-   "score30_pairs": 137,
+   "score30_pairs": 138,
    "d30": 0,
    "f60": 15,
    "f60_lo": 15,
@@ -316,16 +332,16 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 15,
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 135,
+   "score30_pairs": 133,
    "d30": 0,
    "f60": 15,
    "f60_lo": 15,
@@ -333,60 +349,7 @@
    "score60_mae": 0.0,
    "score60_in5": 100,
    "score60_in10": 100,
-   "score60_pairs": 131,
-   "d60": 0,
-   "d60_lo": 0,
-   "d60_hi": 0,
-   "f90": 15,
-   "f90_lo": 15,
-   "f90_hi": 15,
-   "score90_mae": 0.0,
-   "score90_in5": 100,
-   "score90_in10": 100,
-   "score90_pairs": 126,
-   "d90": 0,
-   "d90_lo": 0,
-   "d90_hi": 0,
-   "f120": 15,
-   "f120_lo": 15,
-   "f120_hi": 20,
-   "score120_mae": 0.0,
-   "score120_in5": 100,
-   "score120_in10": 100,
-   "score120_pairs": 120,
-   "d120": 0,
-   "d120_lo": 0,
-   "d120_hi": 5,
-   "people": null
-  },
-  {
-   "name": "Reflections of China",
-   "now": 15,
-   "trend30": 0,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 15,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
-   },
-   "f30": 15,
-   "score30_mae": 0.0,
-   "score30_in5": 100,
-   "score30_in10": 100,
-   "score30_pairs": 135,
-   "d30": 0,
-   "f60": 15,
-   "f60_lo": 15,
-   "f60_hi": 15,
-   "score60_mae": 0.0,
-   "score60_in5": 100,
-   "score60_in10": 100,
-   "score60_pairs": 131,
+   "score60_pairs": 129,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -417,32 +380,32 @@
    "now": 15,
    "trend30": 5,
    "why": {
-    "lag60": null,
+    "lag60": 10,
     "lag120": null,
-    "lag_yday": 10,
+    "lag_yday": 20,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 15,
-   "score30_mae": 8.5,
-   "score30_in5": 43,
-   "score30_in10": 69,
-   "score30_pairs": 137,
+   "score30_mae": 8.1,
+   "score30_in5": 46,
+   "score30_in10": 71,
+   "score30_pairs": 138,
    "d30": 0,
-   "f60": 35,
+   "f60": 40,
    "f60_lo": 15,
    "f60_hi": 45,
    "score60_mae": 8.4,
    "score60_in5": 48,
    "score60_in10": 76,
    "score60_pairs": 131,
-   "d60": 20,
-   "d60_lo": -20,
-   "d60_hi": 10,
+   "d60": 25,
+   "d60_lo": -25,
+   "d60_hi": 5,
    "f90": 45,
    "f90_lo": 15,
    "f90_hi": 45,
@@ -453,15 +416,121 @@
    "d90": 30,
    "d90_lo": -30,
    "d90_hi": 0,
-   "f120": 50,
+   "f120": 40,
    "f120_lo": 15,
-   "f120_hi": 50,
+   "f120_hi": 35,
    "score120_mae": 9.5,
    "score120_in5": 35,
    "score120_in10": 68,
    "score120_pairs": 120,
-   "d120": 35,
-   "d120_lo": -35,
+   "d120": 25,
+   "d120_lo": -25,
+   "d120_hi": -5,
+   "people": null
+  },
+  {
+   "name": "Reflections of China",
+   "now": 15,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
+   },
+   "f30": 15,
+   "score30_mae": 0.0,
+   "score30_in5": 100,
+   "score30_in10": 100,
+   "score30_pairs": 132,
+   "d30": 0,
+   "f60": 15,
+   "f60_lo": 15,
+   "f60_hi": 15,
+   "score60_mae": 0.0,
+   "score60_in5": 100,
+   "score60_in10": 100,
+   "score60_pairs": 129,
+   "d60": 0,
+   "d60_lo": 0,
+   "d60_hi": 0,
+   "f90": 15,
+   "f90_lo": 15,
+   "f90_hi": 15,
+   "score90_mae": 0.0,
+   "score90_in5": 100,
+   "score90_in10": 100,
+   "score90_pairs": 126,
+   "d90": 0,
+   "d90_lo": 0,
+   "d90_hi": 0,
+   "f120": 15,
+   "f120_lo": 15,
+   "f120_hi": 20,
+   "score120_mae": 0.0,
+   "score120_in5": 100,
+   "score120_in10": 100,
+   "score120_pairs": 120,
+   "d120": 0,
+   "d120_lo": 0,
+   "d120_hi": 5,
+   "people": null
+  },
+  {
+   "name": "Spaceship Earth",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": 5,
+    "lag120": null,
+    "lag_yday": 15,
+    "down60": 45,
+    "reopened": true,
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
+   },
+   "f30": 10,
+   "score30_mae": 4.6,
+   "score30_in5": 78,
+   "score30_in10": 96,
+   "score30_pairs": 113,
+   "d30": 0,
+   "f60": 30,
+   "f60_lo": 10,
+   "f60_hi": 35,
+   "score60_mae": 4.1,
+   "score60_in5": 89,
+   "score60_in10": 97,
+   "score60_pairs": 115,
+   "d60": 20,
+   "d60_lo": -20,
+   "d60_hi": 5,
+   "f90": 35,
+   "f90_lo": 10,
+   "f90_hi": 45,
+   "score90_mae": 4.0,
+   "score90_in5": 88,
+   "score90_in10": 97,
+   "score90_pairs": 113,
+   "d90": 25,
+   "d90_lo": -25,
+   "d90_hi": 10,
+   "f120": 35,
+   "f120_lo": 10,
+   "f120_hi": 35,
+   "score120_mae": 6.4,
+   "score120_in5": 56,
+   "score120_in10": 93,
+   "score120_pairs": 107,
+   "d120": 25,
+   "d120_lo": -25,
    "d120_hi": 0,
    "people": null
   },
@@ -475,47 +544,47 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 5,
-   "score30_mae": 4.4,
+   "score30_mae": 4.5,
    "score30_in5": 73,
    "score30_in10": 87,
-   "score30_pairs": 135,
+   "score30_pairs": 133,
    "d30": 0,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 10,
-   "score60_mae": 5.3,
-   "score60_in5": 75,
+   "score60_mae": 5.4,
+   "score60_in5": 74,
    "score60_in10": 99,
-   "score60_pairs": 131,
+   "score60_pairs": 129,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 5,
-   "f90": 5,
+   "f90": 10,
    "f90_lo": 5,
    "f90_hi": 15,
    "score90_mae": 6.1,
    "score90_in5": 62,
    "score90_in10": 97,
    "score90_pairs": 125,
-   "d90": 0,
-   "d90_lo": 0,
-   "d90_hi": 10,
-   "f120": 10,
+   "d90": 5,
+   "d90_lo": -5,
+   "d90_hi": 5,
+   "f120": 15,
    "f120_lo": 5,
    "f120_hi": 20,
    "score120_mae": 7.0,
    "score120_in5": 55,
    "score120_in10": 89,
    "score120_pairs": 119,
-   "d120": 5,
-   "d120_lo": -5,
-   "d120_hi": 10,
+   "d120": 10,
+   "d120_lo": -10,
+   "d120_hi": 5,
    "people": null
   },
   {
@@ -528,37 +597,37 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 5,
-   "score30_mae": 3.8,
-   "score30_in5": 84,
+   "score30_mae": 3.9,
+   "score30_in5": 83,
    "score30_in10": 94,
-   "score30_pairs": 129,
+   "score30_pairs": 127,
    "d30": 0,
-   "f60": 5,
+   "f60": 15,
    "f60_lo": 5,
-   "f60_hi": 15,
+   "f60_hi": 20,
    "score60_mae": 3.0,
    "score60_in5": 93,
    "score60_in10": 100,
-   "score60_pairs": 124,
-   "d60": 0,
-   "d60_lo": 0,
-   "d60_hi": 10,
-   "f90": 15,
+   "score60_pairs": 123,
+   "d60": 10,
+   "d60_lo": -10,
+   "d60_hi": 5,
+   "f90": 20,
    "f90_lo": 5,
    "f90_hi": 20,
    "score90_mae": 3.7,
    "score90_in5": 86,
    "score90_in10": 99,
    "score90_pairs": 119,
-   "d90": 10,
-   "d90_lo": -10,
-   "d90_hi": 5,
+   "d90": 15,
+   "d90_lo": -15,
+   "d90_hi": 0,
    "f120": 20,
    "f120_lo": 5,
    "f120_hi": 20,
@@ -581,47 +650,47 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 5,
-   "score30_mae": 7.0,
-   "score30_in5": 61,
-   "score30_in10": 85,
-   "score30_pairs": 135,
+   "score30_mae": 6.6,
+   "score30_in5": 62,
+   "score30_in10": 87,
+   "score30_pairs": 133,
    "d30": 0,
-   "f60": 20,
+   "f60": 25,
    "f60_lo": 5,
    "f60_hi": 30,
-   "score60_mae": 4.9,
-   "score60_in5": 71,
-   "score60_in10": 92,
-   "score60_pairs": 131,
-   "d60": 15,
-   "d60_lo": -15,
-   "d60_hi": 10,
+   "score60_mae": 4.8,
+   "score60_in5": 72,
+   "score60_in10": 91,
+   "score60_pairs": 129,
+   "d60": 20,
+   "d60_lo": -20,
+   "d60_hi": 5,
    "f90": 30,
    "f90_lo": 5,
-   "f90_hi": 30,
+   "f90_hi": 35,
    "score90_mae": 5.4,
    "score90_in5": 75,
    "score90_in10": 90,
    "score90_pairs": 126,
    "d90": 25,
    "d90_lo": -25,
-   "d90_hi": 0,
+   "d90_hi": 5,
    "f120": 30,
    "f120_lo": 10,
-   "f120_hi": 35,
+   "f120_hi": 30,
    "score120_mae": 5.0,
    "score120_in5": 78,
    "score120_in10": 90,
    "score120_pairs": 120,
    "d120": 25,
    "d120_lo": -20,
-   "d120_hi": 5,
+   "d120_hi": 0,
    "people": null
   },
   {
@@ -629,68 +698,68 @@
    "now": 5,
    "trend30": 0,
    "why": {
-    "lag60": null,
+    "lag60": 5,
     "lag120": null,
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 23,
-    "park_busy": 12,
-    "mins_open": 20,
-    "mins_close": 700
+    "park_mean": 22,
+    "park_busy": 9,
+    "mins_open": 50,
+    "mins_close": 670
    },
    "f30": 5,
-   "score30_mae": 6.1,
-   "score30_in5": 65,
-   "score30_in10": 84,
-   "score30_pairs": 130,
+   "score30_mae": 5.8,
+   "score30_in5": 67,
+   "score30_in10": 85,
+   "score30_pairs": 131,
    "d30": 0,
-   "f60": 20,
+   "f60": 30,
    "f60_lo": 5,
-   "f60_hi": 25,
-   "score60_mae": 5.1,
-   "score60_in5": 75,
-   "score60_in10": 89,
-   "score60_pairs": 125,
-   "d60": 15,
-   "d60_lo": -15,
-   "d60_hi": 5,
-   "f90": 30,
-   "f90_lo": 5,
+   "f60_hi": 40,
+   "score60_mae": 4.8,
+   "score60_in5": 77,
+   "score60_in10": 90,
+   "score60_pairs": 126,
+   "d60": 25,
+   "d60_lo": -25,
+   "d60_hi": 10,
+   "f90": 35,
+   "f90_lo": 10,
    "f90_hi": 40,
    "score90_mae": 4.7,
    "score90_in5": 82,
    "score90_in10": 89,
    "score90_pairs": 120,
-   "d90": 25,
+   "d90": 30,
    "d90_lo": -25,
-   "d90_hi": 10,
-   "f120": 35,
+   "d90_hi": 5,
+   "f120": 40,
    "f120_lo": 5,
-   "f120_hi": 45,
+   "f120_hi": 40,
    "score120_mae": 4.1,
    "score120_in5": 84,
    "score120_in10": 95,
    "score120_pairs": 114,
-   "d120": 30,
-   "d120_lo": -30,
-   "d120_hi": 10,
+   "d120": 35,
+   "d120_lo": -35,
+   "d120_hi": 0,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 9133,
-   "train_rows": 7181,
-   "test_rows": 1898,
+   "available_pairs": 9187,
+   "train_rows": 7223,
+   "test_rows": 1892,
    "model": "persistence (model did not beat baseline)",
-   "mae": 5.2,
-   "rmse": 9.4,
+   "mae": 5.3,
+   "rmse": 9.5,
    "within10": 85,
    "within5": 72,
    "mape_ge20": 18.0,
    "bias": 0.0,
-   "baseline_mae": 5.2,
+   "baseline_mae": 5.3,
    "baseline_mape_ge20": 18.0,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
@@ -699,25 +768,25 @@
     "wait",
     "lag_60",
     "lag_yday",
-    "lag_5",
-    "hour_sin"
+    "hour_sin",
+    "diff_30"
    ],
    "candidate_mae": 5.4
   },
   "60": {
-   "available_pairs": 8641,
+   "available_pairs": 8660,
    "train_rows": 6783,
-   "test_rows": 1807,
+   "test_rows": 1803,
    "model": "gradient boosting (delta+round5)",
    "mae": 6.0,
    "rmse": 10.5,
    "within10": 85,
    "within5": 72,
-   "mape_ge20": 20.8,
-   "bias": -3.7,
-   "baseline_mae": 6.7,
-   "baseline_mape_ge20": 23.3,
-   "improvement_pct": 10.7,
+   "mape_ge20": 20.7,
+   "bias": -3.6,
+   "baseline_mae": 6.8,
+   "baseline_mape_ge20": 23.1,
+   "improvement_pct": 10.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -805,6 +874,80 @@
     "t": "09:20",
     "actual": 70,
     "p30": 50
+   },
+   {
+    "t": "09:25",
+    "actual": 70,
+    "p30": 50
+   },
+   {
+    "t": "09:30",
+    "actual": 70,
+    "p30": 50
+   },
+   {
+    "t": "09:35",
+    "actual": 70,
+    "p30": 70
+   },
+   {
+    "t": "09:40",
+    "actual": 70,
+    "p30": 70
+   },
+   {
+    "t": "09:45",
+    "actual": 70,
+    "p30": 70
+   },
+   {
+    "t": "09:50",
+    "actual": 65,
+    "p30": 70,
+    "p60": 70
+   }
+  ],
+  "Frozen Ever After": [
+   {
+    "t": "08:40",
+    "closed": 1
+   },
+   {
+    "t": "08:55",
+    "closed": 1
+   },
+   {
+    "t": "09:10",
+    "actual": 20
+   },
+   {
+    "t": "09:20",
+    "actual": 40
+   },
+   {
+    "t": "09:25",
+    "actual": 40
+   },
+   {
+    "t": "09:30",
+    "actual": 55
+   },
+   {
+    "t": "09:35",
+    "actual": 60
+   },
+   {
+    "t": "09:40",
+    "actual": 60
+   },
+   {
+    "t": "09:45",
+    "actual": 60
+   },
+   {
+    "t": "09:50",
+    "actual": 60,
+    "p30": 40
    }
   ],
   "Test Track": [
@@ -824,6 +967,37 @@
     "t": "09:20",
     "actual": 60,
     "p30": 35
+   },
+   {
+    "t": "09:25",
+    "actual": 60,
+    "p30": 35
+   },
+   {
+    "t": "09:30",
+    "actual": 60,
+    "p30": 35
+   },
+   {
+    "t": "09:35",
+    "actual": 60,
+    "p30": 45
+   },
+   {
+    "t": "09:40",
+    "actual": 60,
+    "p30": 60
+   },
+   {
+    "t": "09:45",
+    "actual": 60,
+    "p30": 60
+   },
+   {
+    "t": "09:50",
+    "actual": 50,
+    "p30": 60,
+    "p60": 70
    }
   ],
   "Remy's Ratatouille Adventure": [
@@ -843,9 +1017,40 @@
     "t": "09:20",
     "actual": 40,
     "p30": 45
+   },
+   {
+    "t": "09:25",
+    "actual": 40,
+    "p30": 40
+   },
+   {
+    "t": "09:30",
+    "actual": 30,
+    "p30": 40
+   },
+   {
+    "t": "09:35",
+    "actual": 30,
+    "p30": 40
+   },
+   {
+    "t": "09:40",
+    "actual": 30,
+    "p30": 40
+   },
+   {
+    "t": "09:45",
+    "actual": 30,
+    "p30": 40
+   },
+   {
+    "t": "09:50",
+    "actual": 30,
+    "p30": 40,
+    "p60": 35
    }
   ],
-  "Frozen Ever After": [
+  "Turtle Talk With Crush": [
    {
     "t": "08:40",
     "closed": 1
@@ -856,29 +1061,35 @@
    },
    {
     "t": "09:10",
-    "actual": 20
-   },
-   {
-    "t": "09:20",
-    "actual": 40
-   }
-  ],
-  "Impressions de France": [
-   {
-    "t": "08:40",
     "closed": 1
    },
    {
-    "t": "08:55",
+    "t": "09:20",
     "closed": 1
    },
    {
-    "t": "09:10",
-    "actual": 20
+    "t": "09:25",
+    "closed": 1
    },
    {
-    "t": "09:20",
-    "actual": 20
+    "t": "09:30",
+    "closed": 1
+   },
+   {
+    "t": "09:35",
+    "closed": 1
+   },
+   {
+    "t": "09:40",
+    "closed": 1
+   },
+   {
+    "t": "09:45",
+    "closed": 1
+   },
+   {
+    "t": "09:50",
+    "actual": 15
    }
   ],
   "Mission: SPACE": [
@@ -894,6 +1105,37 @@
     "t": "09:20",
     "actual": 15,
     "p30": 15
+   },
+   {
+    "t": "09:25",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "09:30",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "09:35",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "09:40",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "09:45",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "09:50",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
    }
   ],
   "Canada Far and Wide in Circle-Vision 360": [
@@ -912,20 +1154,31 @@
    {
     "t": "09:20",
     "actual": 15
-   }
-  ],
-  "Reflections of China": [
-   {
-    "t": "08:40",
-    "closed": 1
    },
    {
-    "t": "08:55",
-    "closed": 1
-   },
-   {
-    "t": "09:20",
+    "t": "09:25",
     "actual": 15
+   },
+   {
+    "t": "09:30",
+    "actual": 15
+   },
+   {
+    "t": "09:35",
+    "actual": 15
+   },
+   {
+    "t": "09:40",
+    "actual": 15
+   },
+   {
+    "t": "09:45",
+    "actual": 15
+   },
+   {
+    "t": "09:50",
+    "actual": 15,
+    "p30": 15
    }
   ],
   "Soarin' Across America": [
@@ -941,6 +1194,120 @@
     "t": "09:20",
     "actual": 10,
     "p30": 10
+   },
+   {
+    "t": "09:25",
+    "actual": 10,
+    "p30": 10
+   },
+   {
+    "t": "09:30",
+    "actual": 10,
+    "p30": 10
+   },
+   {
+    "t": "09:35",
+    "actual": 10,
+    "p30": 10
+   },
+   {
+    "t": "09:40",
+    "actual": 15,
+    "p30": 15
+   },
+   {
+    "t": "09:45",
+    "actual": 15,
+    "p30": 10
+   },
+   {
+    "t": "09:50",
+    "actual": 15,
+    "p30": 10,
+    "p60": 25
+   }
+  ],
+  "Reflections of China": [
+   {
+    "t": "08:40",
+    "closed": 1
+   },
+   {
+    "t": "08:55",
+    "closed": 1
+   },
+   {
+    "t": "09:20",
+    "actual": 15
+   },
+   {
+    "t": "09:25",
+    "actual": 15
+   },
+   {
+    "t": "09:30",
+    "actual": 15
+   },
+   {
+    "t": "09:35",
+    "actual": 15
+   },
+   {
+    "t": "09:40",
+    "actual": 15
+   },
+   {
+    "t": "09:45",
+    "actual": 15
+   },
+   {
+    "t": "09:50",
+    "actual": 15,
+    "p30": 15
+   }
+  ],
+  "Spaceship Earth": [
+   {
+    "t": "08:40",
+    "actual": 5
+   },
+   {
+    "t": "08:55",
+    "closed": 1
+   },
+   {
+    "t": "09:10",
+    "closed": 1
+   },
+   {
+    "t": "09:20",
+    "closed": 1,
+    "p30": 5
+   },
+   {
+    "t": "09:25",
+    "closed": 1
+   },
+   {
+    "t": "09:30",
+    "closed": 1
+   },
+   {
+    "t": "09:35",
+    "closed": 1
+   },
+   {
+    "t": "09:40",
+    "actual": 10
+   },
+   {
+    "t": "09:45",
+    "actual": 10
+   },
+   {
+    "t": "09:50",
+    "actual": 10,
+    "p60": 15
    }
   ],
   "Gran Fiesta Tour Starring The Three Caballeros": [
@@ -959,6 +1326,31 @@
    {
     "t": "09:20",
     "actual": 5
+   },
+   {
+    "t": "09:25",
+    "actual": 5
+   },
+   {
+    "t": "09:30",
+    "actual": 5
+   },
+   {
+    "t": "09:35",
+    "actual": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5
+   },
+   {
+    "t": "09:45",
+    "actual": 5
+   },
+   {
+    "t": "09:50",
+    "actual": 5,
+    "p30": 5
    }
   ],
   "Journey Into Imagination With Figment": [
@@ -977,6 +1369,31 @@
    {
     "t": "09:20",
     "actual": 5
+   },
+   {
+    "t": "09:25",
+    "actual": 5
+   },
+   {
+    "t": "09:30",
+    "actual": 5
+   },
+   {
+    "t": "09:35",
+    "actual": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5
+   },
+   {
+    "t": "09:45",
+    "actual": 5
+   },
+   {
+    "t": "09:50",
+    "actual": 5,
+    "p30": 5
    }
   ],
   "Living with the Land": [
@@ -995,6 +1412,31 @@
    {
     "t": "09:20",
     "actual": 5
+   },
+   {
+    "t": "09:25",
+    "actual": 5
+   },
+   {
+    "t": "09:30",
+    "actual": 5
+   },
+   {
+    "t": "09:35",
+    "actual": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5
+   },
+   {
+    "t": "09:45",
+    "actual": 5
+   },
+   {
+    "t": "09:50",
+    "actual": 5,
+    "p30": 5
    }
   ],
   "The Seas with Nemo & Friends": [
@@ -1014,23 +1456,61 @@
     "t": "09:20",
     "actual": 5,
     "p30": 5
+   },
+   {
+    "t": "09:25",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:30",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:35",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:45",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:50",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
    }
   ]
  },
  "today": {
   "date": "2026-11-08",
-  "graded": 6,
-  "exact": 50,
-  "in5": 67,
-  "in10": 67,
-  "in15": 67,
+  "graded": 55,
+  "exact": 58,
+  "in5": 71,
+  "in10": 84,
+  "in15": 85,
   "by_horizon": {
    "30": {
-    "graded": 6,
-    "exact": 50,
-    "in5": 67,
-    "in10": 67,
-    "in15": 67
+    "graded": 48,
+    "exact": 62,
+    "in5": 71,
+    "in10": 83,
+    "in15": 85
+   },
+   "60": {
+    "graded": 7,
+    "exact": 29,
+    "in5": 71,
+    "in10": 86,
+    "in15": 86
    }
   }
  },
