@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-08T11:45:42.524051+00:00",
- "last_sample": "2026-11-08T11:45:25+00:00",
- "samples": 61645,
+ "updated": "2026-11-08T11:51:02.480700+00:00",
+ "last_sample": "2026-11-08T11:50:33+00:00",
+ "samples": 61681,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -10,15 +10,15 @@
    "train_rows": 21745,
    "test_rows": 6590,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.6,
-   "rmse": 7.6,
+   "mae": 4.7,
+   "rmse": 7.7,
    "within10": 90,
    "within5": 77,
-   "mape_ge20": 22.1,
-   "bias": -2.5,
+   "mape_ge20": 22.3,
+   "bias": -2.6,
    "baseline_mae": 5.3,
    "baseline_mape_ge20": 25.4,
-   "improvement_pct": 12.6,
+   "improvement_pct": 11.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -34,15 +34,15 @@
    "train_rows": 20599,
    "test_rows": 6305,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.1,
-   "rmse": 8.5,
+   "mae": 5.2,
+   "rmse": 8.4,
    "within10": 89,
    "within5": 76,
-   "mape_ge20": 24.0,
+   "mape_ge20": 23.6,
    "bias": -2.6,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 28.9,
-   "improvement_pct": 18.2,
+   "improvement_pct": 17.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_30"
+    "lag_yday"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 19505,
    "test_rows": 6003,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.5,
-   "rmse": 8.7,
+   "mae": 5.3,
+   "rmse": 8.6,
    "within10": 88,
    "within5": 74,
-   "mape_ge20": 25.7,
-   "bias": -3.2,
+   "mape_ge20": 25.1,
+   "bias": -3.0,
    "baseline_mae": 6.7,
    "baseline_mape_ge20": 29.7,
-   "improvement_pct": 18.4,
+   "improvement_pct": 21.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -87,10 +87,10 @@
    "within10": 88,
    "within5": 72,
    "mape_ge20": 26.9,
-   "bias": -3.3,
+   "bias": -3.2,
    "baseline_mae": 7.1,
    "baseline_mape_ge20": 30.6,
-   "improvement_pct": 23.5,
+   "improvement_pct": 22.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -98,7 +98,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_120"
+    "lag_60"
    ]
   }
  },
