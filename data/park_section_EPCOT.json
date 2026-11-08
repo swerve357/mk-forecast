@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-08T19:45:57.385720+00:00",
- "last_sample": "2026-11-08T19:45:30+00:00",
+ "updated": "2026-11-08T19:51:00.690710+00:00",
+ "last_sample": "2026-11-08T19:50:30+00:00",
  "samples": 50116,
  "history_samples": 0,
  "rides": [
   {
    "name": "Frozen Ever After",
    "now": 65,
-   "trend30": -5,
+   "trend30": 0,
    "why": {
     "lag60": 50,
     "lag120": null,
@@ -60,7 +60,7 @@
   {
    "name": "Test Track",
    "now": 65,
-   "trend30": -10,
+   "trend30": 5,
    "why": {
     "lag60": 55,
     "lag120": 65,
@@ -166,7 +166,7 @@
   {
    "name": "Remy's Ratatouille Adventure",
    "now": 50,
-   "trend30": 0,
+   "trend30": 5,
    "why": {
     "lag60": 55,
     "lag120": 30,
@@ -219,7 +219,7 @@
   {
    "name": "Soarin' Across America",
    "now": 35,
-   "trend30": 0,
+   "trend30": 20,
    "why": {
     "lag60": 30,
     "lag120": 35,
@@ -642,8 +642,8 @@
   },
   {
    "name": "Living with the Land",
-   "now": 10,
-   "trend30": -5,
+   "now": 15,
+   "trend30": 0,
    "why": {
     "lag60": 15,
     "lag120": 25,
@@ -655,15 +655,15 @@
     "mins_open": 330,
     "mins_close": 390
    },
-   "f30": 10,
+   "f30": 15,
    "score30_mae": 6.0,
    "score30_in5": 67,
    "score30_in10": 90,
    "score30_pairs": 144,
    "d30": 0,
-   "f60": 5,
+   "f60": 10,
    "f60_lo": 5,
-   "f60_hi": 15,
+   "f60_hi": 20,
    "score60_mae": 5.1,
    "score60_in5": 72,
    "score60_in10": 96,
@@ -671,9 +671,9 @@
    "d60": -5,
    "d60_lo": -5,
    "d60_hi": 10,
-   "f90": 5,
+   "f90": 10,
    "f90_lo": 5,
-   "f90_hi": 10,
+   "f90_hi": 15,
    "score90_mae": 5.3,
    "score90_in5": 71,
    "score90_in10": 91,
@@ -681,9 +681,9 @@
    "d90": -5,
    "d90_lo": -10,
    "d90_hi": 5,
-   "f120": 5,
+   "f120": 10,
    "f120_lo": 5,
-   "f120_hi": 10,
+   "f120_hi": 15,
    "score120_mae": 5.3,
    "score120_in5": 75,
    "score120_in10": 90,
