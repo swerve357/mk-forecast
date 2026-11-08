@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-08T14:10:54.996124+00:00",
- "last_sample": "2026-11-08T14:10:28+00:00",
- "samples": 22496,
+ "updated": "2026-11-08T14:16:36.419255+00:00",
+ "last_sample": "2026-11-08T14:15:29+00:00",
+ "samples": 22592,
  "history_samples": 0,
  "rides": [
   {
@@ -9,52 +9,56 @@
    "now": 60,
    "trend30": 20,
    "why": {
-    "lag60": null,
+    "lag60": 25,
     "lag120": null,
-    "lag_yday": 35,
+    "lag_yday": 70,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 12,
-    "mins_open": 50,
-    "mins_close": 610
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
    },
-   "f30": 60,
-   "score30_mae": 9.8,
-   "score30_in5": 49,
-   "score30_in10": 66,
-   "score30_pairs": 82,
-   "d30": 0,
-   "f60": 75,
-   "f60_lo": 60,
-   "f60_hi": 80,
+   "f30": 55,
+   "f30_lo": 50,
+   "f30_hi": 65,
+   "score30_mae": 8.5,
+   "score30_in5": 47,
+   "score30_in10": 81,
+   "score30_pairs": 83,
+   "d30": -5,
+   "d30_lo": -5,
+   "d30_hi": 10,
+   "f60": 65,
+   "f60_lo": 55,
+   "f60_hi": 70,
    "score60_mae": 12.1,
-   "score60_in5": 41,
-   "score60_in10": 52,
-   "score60_pairs": 79,
-   "d60": 15,
-   "d60_lo": -15,
+   "score60_in5": 43,
+   "score60_in10": 55,
+   "score60_pairs": 77,
+   "d60": 5,
+   "d60_lo": -10,
    "d60_hi": 5,
-   "f90": 80,
-   "f90_lo": 65,
-   "f90_hi": 75,
-   "score90_mae": 10.9,
-   "score90_in5": 44,
-   "score90_in10": 68,
-   "score90_pairs": 75,
-   "d90": 20,
-   "d90_lo": -15,
-   "d90_hi": -5,
-   "f120": 85,
-   "f120_lo": 60,
-   "f120_hi": 80,
+   "f90": 65,
+   "f90_lo": 55,
+   "f90_hi": 70,
+   "score90_mae": 11.4,
+   "score90_in5": 42,
+   "score90_in10": 67,
+   "score90_pairs": 73,
+   "d90": 5,
+   "d90_lo": -10,
+   "d90_hi": 5,
+   "f120": 50,
+   "f120_lo": 50,
+   "f120_hi": 55,
    "score120_mae": 14.8,
    "score120_in5": 23,
    "score120_in10": 49,
    "score120_pairs": 69,
-   "d120": 25,
-   "d120_lo": -25,
-   "d120_hi": -5,
+   "d120": -10,
+   "d120_lo": 0,
+   "d120_hi": 5,
    "people": null
   },
   {
@@ -62,52 +66,56 @@
    "now": 35,
    "trend30": -5,
    "why": {
-    "lag60": 35,
+    "lag60": 50,
     "lag120": null,
-    "lag_yday": 40,
+    "lag_yday": 45,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 12,
-    "mins_open": 50,
-    "mins_close": 610
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
    },
-   "f30": 35,
-   "score30_mae": 10.4,
-   "score30_in5": 39,
-   "score30_in10": 71,
-   "score30_pairs": 127,
-   "d30": 0,
-   "f60": 50,
-   "f60_lo": 30,
-   "f60_hi": 50,
-   "score60_mae": 13.3,
-   "score60_in5": 40,
-   "score60_in10": 56,
-   "score60_pairs": 121,
-   "d60": 15,
+   "f30": 55,
+   "f30_lo": 35,
+   "f30_hi": 50,
+   "score30_mae": 10.7,
+   "score30_in5": 47,
+   "score30_in10": 67,
+   "score30_pairs": 128,
+   "d30": 20,
+   "d30_lo": -20,
+   "d30_hi": -5,
+   "f60": 55,
+   "f60_lo": 35,
+   "f60_hi": 60,
+   "score60_mae": 13.4,
+   "score60_in5": 41,
+   "score60_in10": 59,
+   "score60_pairs": 122,
+   "d60": 20,
    "d60_lo": -20,
-   "d60_hi": 0,
-   "f90": 55,
+   "d60_hi": 5,
+   "f90": 50,
    "f90_lo": 35,
-   "f90_hi": 55,
-   "score90_mae": 13.9,
+   "f90_hi": 60,
+   "score90_mae": 13.5,
    "score90_in5": 39,
    "score90_in10": 58,
-   "score90_pairs": 114,
-   "d90": 20,
-   "d90_lo": -20,
-   "d90_hi": 0,
-   "f120": 50,
-   "f120_lo": 30,
-   "f120_hi": 50,
+   "score90_pairs": 115,
+   "d90": 15,
+   "d90_lo": -15,
+   "d90_hi": 10,
+   "f120": 45,
+   "f120_lo": 35,
+   "f120_hi": 60,
    "score120_mae": 16.0,
    "score120_in5": 34,
    "score120_in10": 59,
    "score120_pairs": 108,
-   "d120": 15,
-   "d120_lo": -20,
-   "d120_hi": 0,
+   "d120": 10,
+   "d120_lo": -10,
+   "d120_hi": 15,
    "people": null
   },
   {
@@ -115,52 +123,56 @@
    "now": 35,
    "trend30": 0,
    "why": {
-    "lag60": 10,
+    "lag60": 15,
     "lag120": null,
-    "lag_yday": 20,
+    "lag_yday": 35,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 12,
-    "mins_open": 50,
-    "mins_close": 610
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
    },
-   "f30": 35,
-   "score30_mae": 8.4,
-   "score30_in5": 54,
-   "score30_in10": 74,
-   "score30_pairs": 127,
-   "d30": 0,
-   "f60": 35,
-   "f60_lo": 30,
+   "f30": 45,
+   "f30_lo": 35,
+   "f30_hi": 50,
+   "score30_mae": 8.2,
+   "score30_in5": 48,
+   "score30_in10": 77,
+   "score30_pairs": 128,
+   "d30": 10,
+   "d30_lo": -10,
+   "d30_hi": 5,
+   "f60": 40,
+   "f60_lo": 35,
    "f60_hi": 50,
-   "score60_mae": 8.5,
-   "score60_in5": 51,
+   "score60_mae": 9.1,
+   "score60_in5": 47,
    "score60_in10": 74,
-   "score60_pairs": 121,
-   "d60": 0,
+   "score60_pairs": 122,
+   "d60": 5,
    "d60_lo": -5,
-   "d60_hi": 15,
-   "f90": 50,
+   "d60_hi": 10,
+   "f90": 45,
    "f90_lo": 35,
-   "f90_hi": 50,
-   "score90_mae": 10.2,
+   "f90_hi": 55,
+   "score90_mae": 9.8,
    "score90_in5": 39,
-   "score90_in10": 62,
-   "score90_pairs": 114,
-   "d90": 15,
-   "d90_lo": -15,
-   "d90_hi": 0,
-   "f120": 50,
+   "score90_in10": 67,
+   "score90_pairs": 115,
+   "d90": 10,
+   "d90_lo": -10,
+   "d90_hi": 10,
+   "f120": 35,
    "f120_lo": 35,
    "f120_hi": 50,
    "score120_mae": 9.7,
    "score120_in5": 47,
    "score120_in10": 72,
    "score120_pairs": 108,
-   "d120": 15,
-   "d120_lo": -15,
-   "d120_hi": 0,
+   "d120": 0,
+   "d120_lo": 0,
+   "d120_hi": 15,
    "people": null
   },
   {
@@ -173,47 +185,108 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 12,
-    "mins_open": 50,
-    "mins_close": 610
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
    },
    "f30": 10,
-   "score30_mae": 1.8,
-   "score30_in5": 92,
+   "f30_lo": 10,
+   "f30_hi": 10,
+   "score30_mae": 2.1,
+   "score30_in5": 95,
    "score30_in10": 96,
-   "score30_pairs": 127,
+   "score30_pairs": 128,
    "d30": 0,
+   "d30_lo": 0,
+   "d30_hi": 0,
    "f60": 10,
    "f60_lo": 10,
    "f60_hi": 10,
-   "score60_mae": 3.5,
-   "score60_in5": 84,
-   "score60_in10": 96,
-   "score60_pairs": 121,
+   "score60_mae": 3.4,
+   "score60_in5": 88,
+   "score60_in10": 92,
+   "score60_pairs": 122,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
-   "f90": 10,
-   "f90_lo": 10,
+   "f90": 15,
+   "f90_lo": 15,
    "f90_hi": 15,
-   "score90_mae": 3.9,
+   "score90_mae": 4.0,
    "score90_in5": 80,
-   "score90_in10": 90,
-   "score90_pairs": 114,
-   "d90": 0,
+   "score90_in10": 91,
+   "score90_pairs": 115,
+   "d90": 5,
    "d90_lo": 0,
-   "d90_hi": 5,
-   "f120": 15,
+   "d90_hi": 0,
+   "f120": 20,
    "f120_lo": 10,
    "f120_hi": 15,
    "score120_mae": 3.5,
    "score120_in5": 89,
    "score120_in10": 95,
    "score120_pairs": 108,
-   "d120": 5,
+   "d120": 10,
+   "d120_lo": -10,
+   "d120_hi": -5,
+   "people": null
+  },
+  {
+   "name": "Wildlife Express Train",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
+   },
+   "f30": 10,
+   "f30_lo": 10,
+   "f30_hi": 10,
+   "score30_mae": 1.4,
+   "score30_in5": 100,
+   "score30_in10": 100,
+   "score30_pairs": 68,
+   "d30": 0,
+   "d30_lo": 0,
+   "d30_hi": 0,
+   "f60": 10,
+   "f60_lo": 5,
+   "f60_hi": 10,
+   "score60_mae": 4.1,
+   "score60_in5": 78,
+   "score60_in10": 100,
+   "score60_pairs": 68,
+   "d60": 0,
+   "d60_lo": -5,
+   "d60_hi": 0,
+   "f90": 10,
+   "f90_lo": 5,
+   "f90_hi": 10,
+   "score90_mae": 3.1,
+   "score90_in5": 82,
+   "score90_in10": 100,
+   "score90_pairs": 67,
+   "d90": 0,
+   "d90_lo": -5,
+   "d90_hi": 0,
+   "f120": 10,
+   "f120_lo": 5,
+   "f120_hi": 15,
+   "score120_mae": 5.1,
+   "score120_in5": 76,
+   "score120_in10": 100,
+   "score120_pairs": 63,
+   "d120": 0,
    "d120_lo": -5,
-   "d120_hi": 0,
+   "d120_hi": 5,
    "people": null
   },
   {
@@ -223,37 +296,41 @@
    "why": {
     "lag60": 5,
     "lag120": null,
-    "lag_yday": 5,
+    "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 12,
-    "mins_open": 50,
-    "mins_close": 610
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
    },
-   "f30": 5,
-   "score30_mae": 9.8,
-   "score30_in5": 50,
-   "score30_in10": 73,
-   "score30_pairs": 127,
-   "d30": 0,
-   "f60": 20,
+   "f30": 15,
+   "f30_lo": 5,
+   "f30_hi": 20,
+   "score30_mae": 7.9,
+   "score30_in5": 59,
+   "score30_in10": 80,
+   "score30_pairs": 128,
+   "d30": 10,
+   "d30_lo": -10,
+   "d30_hi": 5,
+   "f60": 25,
    "f60_lo": 5,
-   "f60_hi": 20,
-   "score60_mae": 9.9,
-   "score60_in5": 46,
-   "score60_in10": 74,
-   "score60_pairs": 121,
-   "d60": 15,
-   "d60_lo": -15,
+   "f60_hi": 25,
+   "score60_mae": 9.6,
+   "score60_in5": 51,
+   "score60_in10": 73,
+   "score60_pairs": 122,
+   "d60": 20,
+   "d60_lo": -20,
    "d60_hi": 0,
    "f90": 25,
    "f90_lo": 5,
    "f90_hi": 25,
    "score90_mae": 11.3,
-   "score90_in5": 41,
-   "score90_in10": 70,
-   "score90_pairs": 114,
+   "score90_in5": 45,
+   "score90_in10": 68,
+   "score90_pairs": 115,
    "d90": 20,
    "d90_lo": -20,
    "d90_hi": 0,
@@ -270,6 +347,63 @@
    "people": null
   },
   {
+   "name": "Kali River Rapids",
+   "now": 5,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
+   },
+   "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 10,
+   "score30_mae": 3.9,
+   "score30_in5": 85,
+   "score30_in10": 100,
+   "score30_pairs": 89,
+   "d30": 0,
+   "d30_lo": 0,
+   "d30_hi": 5,
+   "f60": 5,
+   "f60_lo": 5,
+   "f60_hi": 10,
+   "score60_mae": 4.2,
+   "score60_in5": 93,
+   "score60_in10": 100,
+   "score60_pairs": 89,
+   "d60": 0,
+   "d60_lo": 0,
+   "d60_hi": 5,
+   "f90": 10,
+   "f90_lo": 5,
+   "f90_hi": 15,
+   "score90_mae": 5.1,
+   "score90_in5": 80,
+   "score90_in10": 94,
+   "score90_pairs": 88,
+   "d90": 5,
+   "d90_lo": -5,
+   "d90_hi": 5,
+   "f120": 15,
+   "f120_lo": 5,
+   "f120_hi": 20,
+   "score120_mae": 5.1,
+   "score120_in5": 71,
+   "score120_in10": 95,
+   "score120_pairs": 84,
+   "d120": 10,
+   "d120_lo": -10,
+   "d120_hi": 5,
+   "people": null
+  },
+  {
    "name": "Gorilla Falls Exploration Trail",
    "now": 5,
    "trend30": 0,
@@ -279,24 +413,28 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 12,
-    "mins_open": 50,
-    "mins_close": 610
+    "park_mean": 21,
+    "park_busy": 6,
+    "mins_open": 80,
+    "mins_close": 580
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 76,
+   "score30_pairs": 77,
    "d30": 0,
+   "d30_lo": 0,
+   "d30_hi": 0,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
    "score60_mae": 0.0,
    "score60_in5": 100,
    "score60_in10": 100,
-   "score60_pairs": 76,
+   "score60_pairs": 71,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -306,7 +444,7 @@
    "score90_mae": 0.0,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 72,
+   "score90_pairs": 70,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
@@ -325,44 +463,43 @@
  ],
  "metrics": {
   "30": {
-   "available_pairs": 4895,
-   "train_rows": 3876,
-   "test_rows": 960,
-   "model": "persistence (model did not beat baseline)",
+   "available_pairs": 4931,
+   "train_rows": 3925,
+   "test_rows": 946,
+   "model": "gradient boosting (delta+round5)",
    "mae": 5.4,
-   "rmse": 9.0,
+   "rmse": 8.9,
    "within10": 86,
    "within5": 72,
-   "mape_ge20": 22.9,
-   "bias": 0.3,
-   "baseline_mae": 5.4,
-   "baseline_mape_ge20": 22.9,
-   "improvement_pct": 0.0,
+   "mape_ge20": 21.1,
+   "bias": -2.2,
+   "baseline_mae": 5.5,
+   "baseline_mape_ge20": 23.5,
+   "improvement_pct": 1.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
-    "lag_yday",
     "wait",
-    "lag_60",
+    "lag_yday",
+    "hour_sin",
     "diff_15",
-    "hour_sin"
-   ],
-   "candidate_mae": 5.7
+    "diff_30"
+   ]
   },
   "60": {
-   "available_pairs": 4568,
-   "train_rows": 3565,
-   "test_rows": 926,
+   "available_pairs": 4595,
+   "train_rows": 3594,
+   "test_rows": 904,
    "model": "gradient boosting (delta+round5)",
-   "mae": 6.8,
-   "rmse": 10.6,
-   "within10": 81,
-   "within5": 66,
-   "mape_ge20": 24.7,
-   "bias": -3.5,
-   "baseline_mae": 7.1,
-   "baseline_mape_ge20": 29.7,
-   "improvement_pct": 3.9,
+   "mae": 6.9,
+   "rmse": 10.8,
+   "within10": 80,
+   "within5": 67,
+   "mape_ge20": 25.0,
+   "bias": -3.6,
+   "baseline_mae": 7.3,
+   "baseline_mape_ge20": 30.4,
+   "improvement_pct": 4.7,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -370,31 +507,31 @@
     "hour_sin",
     "lag_yday",
     "diff_30",
-    "lag_60"
+    "diff_15"
    ]
   },
   "90": {
-   "available_pairs": 4266,
-   "train_rows": 3305,
-   "test_rows": 868,
+   "available_pairs": 4278,
+   "train_rows": 3313,
+   "test_rows": 862,
    "model": "gradient boosting (delta+round5)",
    "mae": 7.4,
-   "rmse": 11.6,
+   "rmse": 11.5,
    "within10": 79,
    "within5": 63,
-   "mape_ge20": 28.2,
-   "bias": -4.1,
+   "mape_ge20": 27.7,
+   "bias": -4.3,
    "baseline_mae": 7.8,
-   "baseline_mape_ge20": 31.2,
-   "improvement_pct": 5.3,
+   "baseline_mape_ge20": 31.4,
+   "improvement_pct": 5.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_sin",
+    "lag_yday",
     "diff_30",
-    "roll_mean_30",
-    "lag_yday"
+    "diff_15"
    ]
   },
   "120": {
@@ -433,6 +570,76 @@
  },
  "demo": false,
  "lookback": {
+  "Kilimanjaro Safaris": [
+   {
+    "t": "07:40",
+    "closed": 1
+   },
+   {
+    "t": "07:55",
+    "closed": 1
+   },
+   {
+    "t": "08:10",
+    "actual": 20
+   },
+   {
+    "t": "08:25",
+    "actual": 25
+   },
+   {
+    "t": "08:30",
+    "actual": 30
+   },
+   {
+    "t": "08:35",
+    "actual": 40
+   },
+   {
+    "t": "08:40",
+    "actual": 40
+   },
+   {
+    "t": "08:45",
+    "actual": 40
+   },
+   {
+    "t": "08:50",
+    "actual": 40,
+    "p30": 25
+   },
+   {
+    "t": "08:55",
+    "actual": 45,
+    "p30": 25
+   },
+   {
+    "t": "09:00",
+    "actual": 45,
+    "p30": 30
+   },
+   {
+    "t": "09:05",
+    "actual": 45,
+    "p30": 40
+   },
+   {
+    "t": "09:10",
+    "actual": 55,
+    "p30": 40
+   },
+   {
+    "t": "09:15",
+    "actual": 60,
+    "p30": 40
+   },
+   {
+    "t": "09:20",
+    "actual": 60,
+    "p30": 40,
+    "p60": 45
+   }
+  ],
   "Avatar Flight of Passage": [
    {
     "t": "07:40",
@@ -475,45 +682,42 @@
     "t": "08:50",
     "actual": 40,
     "p30": 50
-   }
-  ],
-  "Kilimanjaro Safaris": [
-   {
-    "t": "07:40",
-    "closed": 1
    },
    {
-    "t": "07:55",
-    "closed": 1
-   },
-   {
-    "t": "08:10",
-    "actual": 20
-   },
-   {
-    "t": "08:25",
-    "actual": 25
-   },
-   {
-    "t": "08:30",
-    "actual": 30
-   },
-   {
-    "t": "08:35",
-    "actual": 40
-   },
-   {
-    "t": "08:40",
-    "actual": 40
-   },
-   {
-    "t": "08:45",
-    "actual": 40
-   },
-   {
-    "t": "08:50",
+    "t": "08:55",
     "actual": 40,
-    "p30": 25
+    "p30": 50,
+    "p60": 35
+   },
+   {
+    "t": "09:00",
+    "actual": 40,
+    "p30": 40,
+    "p60": 40
+   },
+   {
+    "t": "09:05",
+    "actual": 45,
+    "p30": 45,
+    "p60": 40
+   },
+   {
+    "t": "09:10",
+    "actual": 40,
+    "p30": 45,
+    "p60": 40
+   },
+   {
+    "t": "09:15",
+    "actual": 35,
+    "p30": 40,
+    "p60": 45
+   },
+   {
+    "t": "09:20",
+    "actual": 35,
+    "p30": 40,
+    "p60": 45
    }
   ],
   "Na'vi River Journey": [
@@ -558,6 +762,42 @@
     "t": "08:50",
     "actual": 35,
     "p30": 15
+   },
+   {
+    "t": "08:55",
+    "actual": 35,
+    "p30": 20,
+    "p60": 25
+   },
+   {
+    "t": "09:00",
+    "actual": 35,
+    "p30": 20,
+    "p60": 25
+   },
+   {
+    "t": "09:05",
+    "actual": 30,
+    "p30": 25,
+    "p60": 25
+   },
+   {
+    "t": "09:10",
+    "actual": 30,
+    "p30": 30,
+    "p60": 25
+   },
+   {
+    "t": "09:15",
+    "actual": 35,
+    "p30": 35,
+    "p60": 30
+   },
+   {
+    "t": "09:20",
+    "actual": 35,
+    "p30": 35,
+    "p60": 35
    }
   ],
   "Zootopia: Better Zoogether!": [
@@ -602,6 +842,104 @@
     "t": "08:50",
     "actual": 10,
     "p30": 10
+   },
+   {
+    "t": "08:55",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10
+   },
+   {
+    "t": "09:00",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10
+   },
+   {
+    "t": "09:05",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10
+   },
+   {
+    "t": "09:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10
+   },
+   {
+    "t": "09:15",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10
+   },
+   {
+    "t": "09:20",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10
+   }
+  ],
+  "Wildlife Express Train": [
+   {
+    "t": "07:40",
+    "closed": 1
+   },
+   {
+    "t": "07:55",
+    "closed": 1
+   },
+   {
+    "t": "08:10",
+    "closed": 1
+   },
+   {
+    "t": "08:25",
+    "closed": 1
+   },
+   {
+    "t": "08:30",
+    "closed": 1
+   },
+   {
+    "t": "08:35",
+    "closed": 1
+   },
+   {
+    "t": "08:40",
+    "closed": 1
+   },
+   {
+    "t": "08:45",
+    "closed": 1
+   },
+   {
+    "t": "08:50",
+    "closed": 1
+   },
+   {
+    "t": "08:55",
+    "closed": 1
+   },
+   {
+    "t": "09:00",
+    "closed": 1
+   },
+   {
+    "t": "09:05",
+    "closed": 1
+   },
+   {
+    "t": "09:10",
+    "actual": 10
+   },
+   {
+    "t": "09:15",
+    "actual": 10
+   },
+   {
+    "t": "09:20",
+    "actual": 10
    }
   ],
   "Expedition Everest - Legend of the Forbidden Mountain": [
@@ -646,6 +984,104 @@
     "t": "08:50",
     "actual": 5,
     "p30": 5
+   },
+   {
+    "t": "08:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "09:00",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "09:05",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "09:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "09:15",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "09:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10
+   }
+  ],
+  "Kali River Rapids": [
+   {
+    "t": "07:40",
+    "closed": 1
+   },
+   {
+    "t": "07:55",
+    "closed": 1
+   },
+   {
+    "t": "08:10",
+    "closed": 1
+   },
+   {
+    "t": "08:25",
+    "closed": 1
+   },
+   {
+    "t": "08:30",
+    "closed": 1
+   },
+   {
+    "t": "08:35",
+    "closed": 1
+   },
+   {
+    "t": "08:40",
+    "closed": 1
+   },
+   {
+    "t": "08:45",
+    "closed": 1
+   },
+   {
+    "t": "08:50",
+    "closed": 1
+   },
+   {
+    "t": "08:55",
+    "closed": 1
+   },
+   {
+    "t": "09:00",
+    "closed": 1
+   },
+   {
+    "t": "09:05",
+    "closed": 1
+   },
+   {
+    "t": "09:10",
+    "actual": 5
+   },
+   {
+    "t": "09:15",
+    "actual": 5
+   },
+   {
+    "t": "09:20",
+    "actual": 5
    }
   ],
   "Gorilla Falls Exploration Trail": [
@@ -684,23 +1120,55 @@
    {
     "t": "08:50",
     "actual": 5
+   },
+   {
+    "t": "08:55",
+    "actual": 5
+   },
+   {
+    "t": "09:00",
+    "actual": 5
+   },
+   {
+    "t": "09:05",
+    "actual": 5
+   },
+   {
+    "t": "09:10",
+    "actual": 5
+   },
+   {
+    "t": "09:15",
+    "actual": 5
+   },
+   {
+    "t": "09:20",
+    "actual": 5,
+    "p30": 5
    }
   ]
  },
  "today": {
   "date": "2026-11-08",
-  "graded": 25,
-  "exact": 56,
-  "in5": 60,
-  "in10": 80,
-  "in15": 88,
+  "graded": 81,
+  "exact": 57,
+  "in5": 72,
+  "in10": 84,
+  "in15": 93,
   "by_horizon": {
    "30": {
+    "graded": 56,
+    "exact": 57,
+    "in5": 68,
+    "in10": 79,
+    "in15": 89
+   },
+   "60": {
     "graded": 25,
     "exact": 56,
-    "in5": 60,
-    "in10": 80,
-    "in15": 88
+    "in5": 80,
+    "in10": 96,
+    "in15": 100
    }
   }
  },
