@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-09T12:00:46.944355+00:00",
- "last_sample": "2026-11-09T12:00:32+00:00",
- "samples": 72085,
+ "updated": "2026-11-09T12:05:43.697046+00:00",
+ "last_sample": "2026-11-09T12:05:26+00:00",
+ "samples": 72121,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -9,26 +9,25 @@
    "available_pairs": 32864,
    "train_rows": 25485,
    "test_rows": 7207,
-   "model": "persistence (model did not beat baseline)",
-   "mae": 4.4,
-   "rmse": 8.0,
-   "within10": 89,
-   "within5": 77,
-   "mape_ge20": 25.2,
-   "bias": 0.1,
+   "model": "gradient boosting (delta+round5)",
+   "mae": 4.2,
+   "rmse": 6.9,
+   "within10": 92,
+   "within5": 79,
+   "mape_ge20": 20.3,
+   "bias": 0.6,
    "baseline_mae": 4.4,
    "baseline_mape_ge20": 25.2,
-   "improvement_pct": 0.0,
+   "improvement_pct": 5.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
-    "ride_code",
     "wait",
+    "ride_code",
     "hour_cos",
-    "lag_60",
     "lag_yday",
+    "lag_60",
     "diff_30"
-   ],
-   "candidate_mae": 4.4
+   ]
   },
   "60": {
    "available_pairs": 31400,
@@ -36,10 +35,10 @@
    "test_rows": 6854,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.6,
-   "rmse": 7.5,
-   "within10": 92,
+   "rmse": 7.4,
+   "within10": 91,
    "within5": 78,
-   "mape_ge20": 21.6,
+   "mape_ge20": 22.0,
    "bias": -0.1,
    "baseline_mae": 5.4,
    "baseline_mape_ge20": 28.2,
@@ -50,8 +49,8 @@
     "ride_code",
     "hour_cos",
     "diff_30",
-    "hour_sin",
-    "roll_std_60"
+    "roll_mean_60",
+    "hour_sin"
    ]
   },
   "90": {
@@ -61,13 +60,13 @@
    "model": "gradient boosting (delta+round5)",
    "mae": 4.7,
    "rmse": 7.7,
-   "within10": 91,
+   "within10": 90,
    "within5": 78,
-   "mape_ge20": 23.2,
+   "mape_ge20": 23.3,
    "bias": -0.2,
    "baseline_mae": 5.9,
    "baseline_mape_ge20": 30.1,
-   "improvement_pct": 19.9,
+   "improvement_pct": 20.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -75,7 +74,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "park_mean"
+    "lag_60"
    ]
   },
   "120": {
@@ -85,9 +84,9 @@
    "model": "gradient boosting (delta+round5)",
    "mae": 5.1,
    "rmse": 8.2,
-   "within10": 89,
-   "within5": 76,
-   "mape_ge20": 25.5,
+   "within10": 90,
+   "within5": 75,
+   "mape_ge20": 25.0,
    "bias": -0.4,
    "baseline_mae": 6.2,
    "baseline_mape_ge20": 30.8,
@@ -99,7 +98,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_60"
+    "lag_120"
    ]
   }
  },
