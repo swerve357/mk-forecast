@@ -1,21 +1,20 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-09T14:36:04.916475+00:00",
+ "updated": "2026-11-09T14:41:03.329589+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-08 17:10:00-05:00",
-  "Haunted Mansion": "2026-11-09 09:40:00-05:00",
-  "Under the Sea - Journey of The Little Mermaid": "2026-11-09 09:20:00-05:00"
+  "Haunted Mansion": "2026-11-09 09:40:00-05:00"
  },
- "decisions_open": 5,
+ "decisions_open": 2,
  "graded_all": {
-  "n": 321,
+  "n": 325,
   "wins": 78,
   "losses": 163,
-  "ties": 80,
-  "mae_base": 5.31,
-  "mae_shadow": 7.1
+  "ties": 84,
+  "mae_base": 5.25,
+  "mae_shadow": 7.02
  },
  "by_type": {
   "D1": {
@@ -27,26 +26,26 @@
    "mae_shadow": 8.53
   },
   "D2": {
-   "n": 154,
+   "n": 158,
    "wins": 37,
    "losses": 37,
-   "ties": 80,
-   "mae_base": 4.58,
-   "mae_shadow": 5.55
+   "ties": 84,
+   "mae_base": 4.47,
+   "mae_shadow": 5.41
   }
  },
  "new_decisions_this_run": 1,
- "graded_this_run": 0,
+ "graded_this_run": 4,
  "last_decisions": [
   {
-   "id": "cb-345",
+   "id": "cb-346",
    "type": "D2",
-   "event_ride": "Enchanted Tales with Belle",
-   "ride": "Enchanted Tales with Belle",
+   "event_ride": "Under the Sea - Journey of The Little Mermaid",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
    "horizon": 30,
-   "base": 15.0,
-   "shadow": 15.0,
-   "reason": "reopened after 960 min down; shadow = first posted wait at reopen"
+   "base": 5.0,
+   "shadow": 5.0,
+   "reason": "reopened after 25 min down; shadow = first posted wait at reopen"
   }
  ],
  "debug": ""
