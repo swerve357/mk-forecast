@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-09T16:21:02.317049+00:00",
+ "updated": "2026-11-09T16:25:43.707423+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-08 17:10:00-05:00",
-  "Haunted Mansion": "2026-11-09 09:40:00-05:00"
+  "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-08 17:10:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 1,
  "graded_all": {
   "n": 327,
   "wins": 78,
@@ -34,8 +33,19 @@
    "mae_shadow": 5.38
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-347",
+   "type": "D2",
+   "event_ride": "Haunted Mansion",
+   "ride": "Haunted Mansion",
+   "horizon": 30,
+   "base": 13.0,
+   "shadow": 13.0,
+   "reason": "reopened after 110 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
