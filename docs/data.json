@@ -1,99 +1,55 @@
 {
- "updated": "2026-11-09T03:45:45.771222+00:00",
- "last_sample": "2026-11-09T03:45:29+00:00",
- "samples": 68521,
+ "updated": "2026-11-09T03:51:05.996384+00:00",
+ "last_sample": "2026-11-09T03:50:33+00:00",
+ "samples": 68557,
  "history_samples": 11713,
  "rides": [
   {
    "name": "TRON Lightcycle / Run",
    "now": 30,
-   "trend30": 10,
+   "trend30": 5,
    "why": {
     "lag60": 30,
-    "lag120": 35,
+    "lag120": 30,
     "lag_yday": 60,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
-   "f30": 30,
+   "f30": 25,
+   "f30_lo": 15,
+   "f30_hi": 40,
    "f60": 30,
-   "f60_lo": 15,
+   "f60_lo": 20,
    "f60_hi": 40,
    "f90": 25,
-   "f90_lo": 15,
-   "f90_hi": 40,
-   "f120": 30,
+   "f90_lo": 10,
+   "f90_hi": 35,
+   "f120": 25,
    "f120_lo": 10,
    "f120_hi": 40,
-   "score30_mae": 11.5,
-   "score30_in10": 64,
-   "score30_in5": 44,
+   "score30_mae": 10.0,
+   "score30_in10": 69,
+   "score30_in5": 53,
    "score30_pairs": 277,
    "score60_mae": 12.0,
-   "score60_in10": 64,
-   "score60_in5": 48,
+   "score60_in10": 65,
+   "score60_in5": 47,
    "score60_pairs": 266,
-   "score90_mae": 11.9,
-   "score90_in10": 65,
-   "score90_in5": 47,
+   "score90_mae": 12.1,
+   "score90_in10": 63,
+   "score90_in5": 48,
    "score90_pairs": 256,
-   "score120_mae": 13.1,
+   "score120_mae": 13.2,
    "score120_in10": 63,
-   "score120_in5": 40,
+   "score120_in5": 45,
    "score120_pairs": 245,
    "people": null,
    "people_lo": 150,
    "people_hi": 504,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
-  },
-  {
-   "name": "Seven Dwarfs Mine Train",
-   "now": 25,
-   "trend30": 10,
-   "why": {
-    "lag60": 30,
-    "lag120": 25,
-    "lag_yday": 25,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 11,
-    "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
-   },
-   "f30": 25,
-   "f60": 15,
-   "f60_lo": 10,
-   "f60_hi": 25,
-   "f90": 15,
-   "f90_lo": 10,
-   "f90_hi": 30,
-   "f120": 15,
-   "f120_lo": 5,
-   "f120_hi": 25,
-   "score30_mae": 9.3,
-   "score30_in10": 71,
-   "score30_in5": 50,
-   "score30_pairs": 282,
-   "score60_mae": 8.0,
-   "score60_in10": 80,
-   "score60_in5": 62,
-   "score60_pairs": 271,
-   "score90_mae": 7.4,
-   "score90_in10": 84,
-   "score90_in5": 64,
-   "score90_pairs": 261,
-   "score120_mae": 8.6,
-   "score120_in10": 79,
-   "score120_in5": 55,
-   "score120_pairs": 250,
-   "people": null,
-   "people_lo": 125,
-   "people_hi": 412,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
@@ -106,35 +62,37 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
-   "f30": 25,
+   "f30": 15,
+   "f30_lo": 5,
+   "f30_hi": 25,
    "f60": 10,
    "f60_lo": 5,
    "f60_hi": 25,
    "f90": 10,
    "f90_lo": 5,
    "f90_hi": 25,
-   "f120": 10,
+   "f120": 15,
    "f120_lo": 5,
    "f120_hi": 20,
-   "score30_mae": 7.9,
-   "score30_in10": 73,
-   "score30_in5": 59,
+   "score30_mae": 6.5,
+   "score30_in10": 88,
+   "score30_in5": 64,
    "score30_pairs": 248,
-   "score60_mae": 6.9,
+   "score60_mae": 6.7,
    "score60_in10": 86,
    "score60_in5": 60,
    "score60_pairs": 226,
-   "score90_mae": 7.4,
-   "score90_in10": 86,
-   "score90_in5": 60,
+   "score90_mae": 7.1,
+   "score90_in10": 84,
+   "score90_in5": 61,
    "score90_pairs": 210,
-   "score120_mae": 7.3,
-   "score120_in10": 84,
+   "score120_mae": 7.6,
+   "score120_in10": 82,
    "score120_in5": 57,
    "score120_pairs": 199,
    "people": null,
@@ -143,93 +101,100 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
+   "name": "Seven Dwarfs Mine Train",
+   "now": 20,
+   "trend30": -5,
+   "why": {
+    "lag60": 15,
+    "lag120": 25,
+    "lag_yday": 25,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 10,
+    "park_busy": 0,
+    "mins_open": 895,
+    "mins_close": -295
+   },
+   "f30": 20,
+   "f30_lo": 10,
+   "f30_hi": 30,
+   "f60": 15,
+   "f60_lo": 10,
+   "f60_hi": 25,
+   "f90": 15,
+   "f90_lo": 10,
+   "f90_hi": 25,
+   "f120": 20,
+   "f120_lo": 10,
+   "f120_hi": 25,
+   "score30_mae": 7.3,
+   "score30_in10": 85,
+   "score30_in5": 62,
+   "score30_pairs": 282,
+   "score60_mae": 7.8,
+   "score60_in10": 83,
+   "score60_in5": 59,
+   "score60_pairs": 271,
+   "score90_mae": 7.3,
+   "score90_in10": 84,
+   "score90_in5": 67,
+   "score90_pairs": 261,
+   "score120_mae": 8.4,
+   "score120_in10": 82,
+   "score120_in5": 55,
+   "score120_pairs": 250,
+   "people": null,
+   "people_lo": 100,
+   "people_hi": 330,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
    "name": "Space Mountain",
    "now": 20,
-   "trend30": 10,
+   "trend30": 5,
    "why": {
     "lag60": 20,
     "lag120": 10,
     "lag_yday": 20,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 20,
-   "f60": 15,
+   "f30_lo": 5,
+   "f30_hi": 25,
+   "f60": 20,
    "f60_lo": 5,
    "f60_hi": 25,
    "f90": 10,
    "f90_lo": 5,
-   "f90_hi": 25,
-   "f120": 10,
+   "f90_hi": 20,
+   "f120": 15,
    "f120_lo": 5,
-   "f120_hi": 20,
-   "score30_mae": 8.3,
-   "score30_in10": 73,
-   "score30_in5": 50,
+   "f120_hi": 25,
+   "score30_mae": 7.6,
+   "score30_in10": 81,
+   "score30_in5": 60,
    "score30_pairs": 277,
    "score60_mae": 8.1,
-   "score60_in10": 80,
+   "score60_in10": 79,
    "score60_in5": 52,
    "score60_pairs": 261,
-   "score90_mae": 8.6,
-   "score90_in10": 78,
+   "score90_mae": 8.5,
+   "score90_in10": 80,
    "score90_in5": 49,
    "score90_pairs": 251,
-   "score120_mae": 9.3,
-   "score120_in10": 70,
+   "score120_mae": 9.7,
+   "score120_in10": 67,
    "score120_in5": 45,
    "score120_pairs": 240,
    "people": null,
    "people_lo": 120,
    "people_hi": 400,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
-  },
-  {
-   "name": "Jingle Cruise",
-   "now": 15,
-   "trend30": 5,
-   "why": {
-    "lag60": 30,
-    "lag120": 10,
-    "lag_yday": 10,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 11,
-    "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
-   },
-   "f30": 15,
-   "f60": 15,
-   "f60_lo": 5,
-   "f60_hi": 20,
-   "f90": 15,
-   "f90_lo": 5,
-   "f90_hi": 15,
-   "f120": 10,
-   "f120_lo": 5,
-   "f120_hi": 20,
-   "score30_mae": 10.1,
-   "score30_in10": 71,
-   "score30_in5": 53,
-   "score30_pairs": 247,
-   "score60_mae": 9.0,
-   "score60_in10": 74,
-   "score60_in5": 54,
-   "score60_pairs": 239,
-   "score90_mae": 9.1,
-   "score90_in10": 73,
-   "score90_in5": 54,
-   "score90_pairs": 228,
-   "score120_mae": 10.4,
-   "score120_in10": 69,
-   "score120_in5": 50,
-   "score120_pairs": 216,
-   "people": null
   },
   {
    "name": "Peter Pan's Flight",
@@ -241,36 +206,38 @@
     "lag_yday": 30,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 15,
+   "f30_lo": 10,
+   "f30_hi": 20,
    "f60": 15,
    "f60_lo": 10,
    "f60_hi": 15,
    "f90": 15,
-   "f90_lo": 10,
+   "f90_lo": 5,
    "f90_hi": 15,
    "f120": 15,
-   "f120_lo": 5,
-   "f120_hi": 15,
-   "score30_mae": 7.8,
-   "score30_in10": 81,
-   "score30_in5": 53,
+   "f120_lo": 10,
+   "f120_hi": 20,
+   "score30_mae": 6.8,
+   "score30_in10": 87,
+   "score30_in5": 61,
    "score30_pairs": 276,
-   "score60_mae": 6.6,
+   "score60_mae": 6.5,
    "score60_in10": 86,
-   "score60_in5": 65,
-   "score60_pairs": 265,
-   "score90_mae": 7.1,
-   "score90_in10": 85,
+   "score60_in5": 62,
+   "score60_pairs": 266,
+   "score90_mae": 7.0,
+   "score90_in10": 82,
    "score90_in5": 61,
    "score90_pairs": 257,
-   "score120_mae": 7.5,
-   "score120_in10": 83,
-   "score120_in5": 53,
+   "score120_mae": 7.8,
+   "score120_in10": 81,
+   "score120_in5": 52,
    "score120_pairs": 246,
    "people": null,
    "people_lo": 40,
@@ -282,41 +249,43 @@
    "now": 15,
    "trend30": 10,
    "why": {
-    "lag60": 10,
+    "lag60": 5,
     "lag120": 5,
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
-   "f30": 15,
-   "f60": 5,
+   "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 15,
+   "f60": 10,
    "f60_lo": 5,
-   "f60_hi": 15,
+   "f60_hi": 20,
    "f90": 5,
    "f90_lo": 5,
    "f90_hi": 15,
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 15,
-   "score30_mae": 4.6,
-   "score30_in10": 94,
-   "score30_in5": 78,
+   "score30_mae": 5.6,
+   "score30_in10": 99,
+   "score30_in5": 74,
    "score30_pairs": 282,
-   "score60_mae": 4.7,
+   "score60_mae": 4.6,
    "score60_in10": 99,
-   "score60_in5": 80,
+   "score60_in5": 83,
    "score60_pairs": 271,
-   "score90_mae": 4.5,
+   "score90_mae": 4.4,
    "score90_in10": 99,
-   "score90_in5": 85,
+   "score90_in5": 84,
    "score90_pairs": 261,
    "score120_mae": 4.5,
    "score120_in10": 99,
-   "score120_in5": 82,
+   "score120_in5": 83,
    "score120_pairs": 250,
    "people": null,
    "people_lo": 55,
@@ -333,41 +302,88 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
-   "f30": 13,
+   "f30": 15,
+   "f30_lo": 10,
+   "f30_hi": 15,
    "f60": 10,
    "f60_lo": 10,
    "f60_hi": 15,
    "f90": 15,
    "f90_lo": 10,
-   "f90_hi": 15,
+   "f90_hi": 10,
    "f120": 15,
    "f120_lo": 10,
    "f120_hi": 15,
-   "score30_mae": 5.3,
-   "score30_in10": 87,
-   "score30_in5": 72,
+   "score30_mae": 4.8,
+   "score30_in10": 98,
+   "score30_in5": 74,
    "score30_pairs": 249,
-   "score60_mae": 4.5,
-   "score60_in10": 96,
-   "score60_in5": 79,
+   "score60_mae": 4.6,
+   "score60_in10": 95,
+   "score60_in5": 81,
    "score60_pairs": 228,
-   "score90_mae": 4.9,
+   "score90_mae": 4.7,
    "score90_in10": 96,
-   "score90_in5": 77,
+   "score90_in5": 76,
    "score90_pairs": 212,
-   "score120_mae": 5.3,
-   "score120_in10": 93,
-   "score120_in5": 74,
+   "score120_mae": 5.6,
+   "score120_in10": 89,
+   "score120_in5": 72,
    "score120_pairs": 201,
    "people": null,
    "people_lo": 104,
    "people_hi": 338,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Jingle Cruise",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": 30,
+    "lag120": 10,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 10,
+    "park_busy": 0,
+    "mins_open": 895,
+    "mins_close": -295
+   },
+   "f30": 20,
+   "f30_lo": 5,
+   "f30_hi": 25,
+   "f60": 10,
+   "f60_lo": 5,
+   "f60_hi": 15,
+   "f90": 10,
+   "f90_lo": 5,
+   "f90_hi": 15,
+   "f120": 15,
+   "f120_lo": 5,
+   "f120_hi": 20,
+   "score30_mae": 7.5,
+   "score30_in10": 81,
+   "score30_in5": 59,
+   "score30_pairs": 247,
+   "score60_mae": 8.9,
+   "score60_in10": 72,
+   "score60_in5": 55,
+   "score60_pairs": 239,
+   "score90_mae": 8.5,
+   "score90_in10": 75,
+   "score90_in5": 56,
+   "score90_pairs": 228,
+   "score120_mae": 10.4,
+   "score120_in10": 69,
+   "score120_in5": 50,
+   "score120_pairs": 216,
+   "people": null
   },
   {
    "name": "Monsters, Inc. Laugh Floor",
@@ -379,12 +395,14 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 10,
+   "f30_lo": 10,
+   "f30_hi": 10,
    "f60": 10,
    "f60_lo": 10,
    "f60_hi": 10,
@@ -422,12 +440,14 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -437,21 +457,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 2.6,
-   "score30_in10": 98,
-   "score30_in5": 91,
+   "score30_mae": 3.4,
+   "score30_in10": 99,
+   "score30_in5": 87,
    "score30_pairs": 270,
-   "score60_mae": 3.3,
+   "score60_mae": 3.6,
    "score60_in10": 99,
-   "score60_in5": 88,
+   "score60_in5": 84,
    "score60_pairs": 256,
-   "score90_mae": 3.7,
+   "score90_mae": 3.6,
    "score90_in10": 97,
-   "score90_in5": 84,
+   "score90_in5": 82,
    "score90_pairs": 246,
-   "score120_mae": 4.1,
+   "score120_mae": 3.9,
    "score120_in10": 97,
-   "score120_in5": 79,
+   "score120_in5": 80,
    "score120_pairs": 235,
    "people": null,
    "people_lo": 17,
@@ -461,43 +481,45 @@
   {
    "name": "The Many Adventures of Winnie the Pooh",
    "now": 5,
-   "trend30": -10,
+   "trend30": 0,
    "why": {
     "lag60": 15,
-    "lag120": 15,
+    "lag120": 10,
     "lag_yday": 10,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 10,
    "f60": 10,
    "f60_lo": 5,
-   "f60_hi": 10,
+   "f60_hi": 5,
    "f90": 5,
    "f90_lo": 5,
-   "f90_hi": 10,
-   "f120": 5,
+   "f90_hi": 5,
+   "f120": 10,
    "f120_lo": 5,
-   "f120_hi": 15,
-   "score30_mae": 7.3,
-   "score30_in10": 82,
-   "score30_in5": 62,
+   "f120_hi": 10,
+   "score30_mae": 4.9,
+   "score30_in10": 92,
+   "score30_in5": 76,
    "score30_pairs": 271,
-   "score60_mae": 5.2,
+   "score60_mae": 5.3,
    "score60_in10": 92,
-   "score60_in5": 73,
+   "score60_in5": 77,
    "score60_pairs": 260,
-   "score90_mae": 5.3,
+   "score90_mae": 5.5,
    "score90_in10": 89,
-   "score90_in5": 74,
+   "score90_in5": 72,
    "score90_pairs": 250,
-   "score120_mae": 5.8,
+   "score120_mae": 6.2,
    "score120_in10": 86,
-   "score120_in5": 70,
+   "score120_in5": 68,
    "score120_pairs": 239,
    "people": null,
    "people_lo": 15,
@@ -509,17 +531,19 @@
    "now": 5,
    "trend30": 0,
    "why": {
-    "lag60": 5,
+    "lag60": null,
     "lag120": 5,
     "lag_yday": 5,
-    "down60": 30,
-    "reopened": true,
-    "park_mean": 11,
+    "down60": 25,
+    "reopened": false,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -529,21 +553,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 0.7,
+   "score30_mae": 1.1,
    "score30_in10": 100,
    "score30_in5": 100,
    "score30_pairs": 235,
-   "score60_mae": 2.8,
+   "score60_mae": 3.4,
    "score60_in10": 100,
    "score60_in5": 98,
-   "score60_pairs": 228,
-   "score90_mae": 3.7,
+   "score60_pairs": 227,
+   "score90_mae": 3.2,
    "score90_in10": 100,
-   "score90_in5": 98,
+   "score90_in5": 94,
    "score90_pairs": 218,
-   "score120_mae": 3.8,
+   "score120_mae": 4.4,
    "score120_in10": 100,
-   "score120_in5": 91,
+   "score120_in5": 96,
    "score120_pairs": 211,
    "people": null,
    "people_lo": 100,
@@ -560,12 +584,14 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -600,15 +626,17 @@
    "why": {
     "lag60": 5,
     "lag120": 5,
-    "lag_yday": 10,
+    "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -618,21 +646,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 4.9,
-   "score30_in10": 90,
-   "score30_in5": 77,
+   "score30_mae": 3.9,
+   "score30_in10": 94,
+   "score30_in5": 83,
    "score30_pairs": 277,
-   "score60_mae": 4.5,
-   "score60_in10": 97,
-   "score60_in5": 76,
+   "score60_mae": 4.8,
+   "score60_in10": 93,
+   "score60_in5": 77,
    "score60_pairs": 266,
-   "score90_mae": 5.6,
-   "score90_in10": 90,
-   "score90_in5": 71,
+   "score90_mae": 5.2,
+   "score90_in10": 92,
+   "score90_in5": 78,
    "score90_pairs": 256,
-   "score120_mae": 5.3,
-   "score120_in10": 90,
-   "score120_in5": 69,
+   "score120_mae": 5.5,
+   "score120_in10": 88,
+   "score120_in5": 71,
    "score120_pairs": 245,
    "people": null,
    "people_lo": 47,
@@ -649,12 +677,14 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -664,21 +694,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 5.2,
-   "score30_in10": 88,
-   "score30_in5": 72,
+   "score30_mae": 5.1,
+   "score30_in10": 89,
+   "score30_in5": 71,
    "score30_pairs": 262,
-   "score60_mae": 5.3,
-   "score60_in10": 83,
+   "score60_mae": 5.7,
+   "score60_in10": 84,
    "score60_in5": 68,
    "score60_pairs": 248,
-   "score90_mae": 6.5,
-   "score90_in10": 84,
-   "score90_in5": 64,
+   "score90_mae": 6.0,
+   "score90_in10": 83,
+   "score90_in5": 68,
    "score90_pairs": 236,
-   "score120_mae": 6.7,
+   "score120_mae": 6.5,
    "score120_in10": 83,
-   "score120_in5": 65,
+   "score120_in5": 67,
    "score120_pairs": 223,
    "people": null,
    "people_lo": 33,
@@ -692,39 +722,41 @@
    "why": {
     "lag60": 10,
     "lag120": 10,
-    "lag_yday": 20,
+    "lag_yday": 10,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 15,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 10,
-   "f90": 10,
+   "f90": 5,
    "f90_lo": 5,
    "f90_hi": 10,
-   "f120": 5,
+   "f120": 10,
    "f120_lo": 5,
    "f120_hi": 10,
-   "score30_mae": 8.3,
-   "score30_in10": 75,
-   "score30_in5": 52,
+   "score30_mae": 7.9,
+   "score30_in10": 82,
+   "score30_in5": 56,
    "score30_pairs": 267,
-   "score60_mae": 7.7,
+   "score60_mae": 7.4,
    "score60_in10": 82,
-   "score60_in5": 58,
+   "score60_in5": 64,
    "score60_pairs": 256,
-   "score90_mae": 7.9,
-   "score90_in10": 82,
-   "score90_in5": 58,
+   "score90_mae": 8.5,
+   "score90_in10": 80,
+   "score90_in5": 53,
    "score90_pairs": 250,
-   "score120_mae": 8.9,
-   "score120_in10": 75,
-   "score120_in5": 49,
+   "score120_mae": 9.0,
+   "score120_in10": 76,
+   "score120_in5": 48,
    "score120_pairs": 239,
    "people": null,
    "people_lo": 33,
@@ -741,12 +773,14 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -756,21 +790,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 5.0,
-   "score30_in10": 86,
-   "score30_in5": 72,
+   "score30_mae": 6.3,
+   "score30_in10": 90,
+   "score30_in5": 71,
    "score30_pairs": 282,
-   "score60_mae": 5.6,
-   "score60_in10": 89,
-   "score60_in5": 76,
+   "score60_mae": 5.3,
+   "score60_in10": 90,
+   "score60_in5": 82,
    "score60_pairs": 271,
-   "score90_mae": 4.9,
-   "score90_in10": 90,
+   "score90_mae": 5.1,
+   "score90_in10": 89,
    "score90_in5": 79,
    "score90_pairs": 261,
-   "score120_mae": 5.5,
+   "score120_mae": 4.8,
    "score120_in10": 92,
-   "score120_in5": 77,
+   "score120_in5": 80,
    "score120_pairs": 250,
    "people": null,
    "people_lo": 18,
@@ -787,12 +821,14 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -802,21 +838,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 3.2,
-   "score30_in10": 95,
-   "score30_in5": 86,
+   "score30_mae": 3.6,
+   "score30_in10": 96,
+   "score30_in5": 83,
    "score30_pairs": 278,
    "score60_mae": 4.4,
-   "score60_in10": 95,
-   "score60_in5": 79,
+   "score60_in10": 97,
+   "score60_in5": 78,
    "score60_pairs": 267,
-   "score90_mae": 4.3,
+   "score90_mae": 4.0,
    "score90_in10": 95,
-   "score90_in5": 83,
+   "score90_in5": 81,
    "score90_pairs": 257,
-   "score120_mae": 4.8,
+   "score120_mae": 4.4,
    "score120_in10": 92,
-   "score120_in5": 79,
+   "score120_in5": 80,
    "score120_pairs": 248,
    "people": null,
    "people_lo": 12,
@@ -833,12 +869,14 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -848,19 +886,19 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 3.1,
-   "score30_in10": 92,
-   "score30_in5": 86,
+   "score30_mae": 3.4,
+   "score30_in10": 95,
+   "score30_in5": 85,
    "score30_pairs": 275,
-   "score60_mae": 3.6,
+   "score60_mae": 3.7,
    "score60_in10": 96,
-   "score60_in5": 89,
+   "score60_in5": 87,
    "score60_pairs": 265,
-   "score90_mae": 3.9,
-   "score90_in10": 97,
-   "score90_in5": 85,
+   "score90_mae": 3.7,
+   "score90_in10": 95,
+   "score90_in5": 87,
    "score90_pairs": 254,
-   "score120_mae": 3.2,
+   "score120_mae": 3.1,
    "score120_in10": 95,
    "score120_in5": 93,
    "score120_pairs": 243,
@@ -879,12 +917,14 @@
     "lag_yday": 10,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 10,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 10,
@@ -894,21 +934,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 10,
-   "score30_mae": 4.3,
-   "score30_in10": 90,
-   "score30_in5": 76,
+   "score30_mae": 5.0,
+   "score30_in10": 95,
+   "score30_in5": 85,
    "score30_pairs": 282,
-   "score60_mae": 5.7,
+   "score60_mae": 5.4,
    "score60_in10": 94,
-   "score60_in5": 80,
+   "score60_in5": 79,
    "score60_pairs": 271,
-   "score90_mae": 5.9,
+   "score90_mae": 5.4,
    "score90_in10": 92,
-   "score90_in5": 71,
+   "score90_in5": 72,
    "score90_pairs": 261,
-   "score120_mae": 5.7,
+   "score120_mae": 5.6,
    "score120_in10": 93,
-   "score120_in5": 75,
+   "score120_in5": 74,
    "score120_pairs": 250,
    "people": null,
    "people_lo": 29,
@@ -925,12 +965,14 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
@@ -940,21 +982,21 @@
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score30_mae": 5.1,
-   "score30_in10": 88,
-   "score30_in5": 73,
+   "score30_mae": 5.7,
+   "score30_in10": 93,
+   "score30_in5": 70,
    "score30_pairs": 282,
-   "score60_mae": 5.3,
+   "score60_mae": 6.5,
    "score60_in10": 90,
-   "score60_in5": 71,
+   "score60_in5": 64,
    "score60_pairs": 271,
-   "score90_mae": 5.8,
-   "score90_in10": 87,
-   "score90_in5": 69,
+   "score90_mae": 5.6,
+   "score90_in10": 88,
+   "score90_in5": 70,
    "score90_pairs": 261,
-   "score120_mae": 5.9,
+   "score120_mae": 6.3,
    "score120_in10": 87,
-   "score120_in5": 66,
+   "score120_in5": 63,
    "score120_pairs": 250,
    "people": null,
    "people_lo": 47,
@@ -971,36 +1013,38 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 10,
     "park_busy": 0,
-    "mins_open": 890,
-    "mins_close": -290
+    "mins_open": 895,
+    "mins_close": -295
    },
    "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
    "f90": 5,
    "f90_lo": 5,
-   "f90_hi": 10,
+   "f90_hi": 5,
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 10,
    "score30_mae": 3.6,
-   "score30_in10": 94,
-   "score30_in5": 82,
+   "score30_in10": 97,
+   "score30_in5": 84,
    "score30_pairs": 261,
    "score60_mae": 4.9,
-   "score60_in10": 91,
-   "score60_in5": 75,
+   "score60_in10": 90,
+   "score60_in5": 76,
    "score60_pairs": 249,
-   "score90_mae": 4.7,
-   "score90_in10": 91,
-   "score90_in5": 83,
+   "score90_mae": 5.1,
+   "score90_in10": 90,
+   "score90_in5": 78,
    "score90_pairs": 239,
-   "score120_mae": 5.5,
-   "score120_in10": 89,
-   "score120_in5": 72,
+   "score120_mae": 5.3,
+   "score120_in10": 91,
+   "score120_in5": 75,
    "score120_pairs": 232,
    "people": null,
    "people_lo": 267,
@@ -1010,19 +1054,19 @@
  ],
  "metrics": {
   "30": {
-   "available_pairs": 32534,
-   "train_rows": 25138,
-   "test_rows": 7222,
-   "model": "persistence (model did not beat baseline)",
-   "mae": 4.5,
-   "rmse": 8.0,
-   "within10": 88,
-   "within5": 77,
-   "mape_ge20": 25.1,
-   "bias": 0.1,
+   "available_pairs": 32556,
+   "train_rows": 25167,
+   "test_rows": 7215,
+   "model": "gradient boosting (delta+round5)",
+   "mae": 4.3,
+   "rmse": 6.9,
+   "within10": 93,
+   "within5": 79,
+   "mape_ge20": 19.3,
+   "bias": 0.7,
    "baseline_mae": 4.5,
    "baseline_mape_ge20": 25.1,
-   "improvement_pct": 0.0,
+   "improvement_pct": 6.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -1031,47 +1075,22 @@
     "lag_yday",
     "lag_60",
     "diff_30"
-   ],
-   "candidate_mae": 4.6
+   ]
   },
   "60": {
-   "available_pairs": 31076,
-   "train_rows": 23852,
-   "test_rows": 6876,
+   "available_pairs": 31097,
+   "train_rows": 23881,
+   "test_rows": 6869,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.6,
+   "mae": 4.7,
    "rmse": 7.5,
    "within10": 91,
    "within5": 78,
-   "mape_ge20": 21.2,
-   "bias": -0.1,
+   "mape_ge20": 21.0,
+   "bias": -0.0,
    "baseline_mae": 5.5,
    "baseline_mape_ge20": 28.2,
-   "improvement_pct": 16.0,
-   "evaluation": "chronological holdout with horizon embargo",
-   "top_features": [
-    "wait",
-    "ride_code",
-    "hour_cos",
-    "diff_30",
-    "lag_yday",
-    "hour_sin"
-   ]
-  },
-  "90": {
-   "available_pairs": 29667,
-   "train_rows": 22584,
-   "test_rows": 6576,
-   "model": "gradient boosting (delta+round5)",
-   "mae": 4.8,
-   "rmse": 7.7,
-   "within10": 91,
-   "within5": 78,
-   "mape_ge20": 22.7,
-   "bias": -0.2,
-   "baseline_mae": 6.0,
-   "baseline_mape_ge20": 30.0,
-   "improvement_pct": 19.7,
+   "improvement_pct": 14.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -1079,23 +1098,47 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
+    "roll_std_60"
+   ]
+  },
+  "90": {
+   "available_pairs": 29689,
+   "train_rows": 22611,
+   "test_rows": 6569,
+   "model": "gradient boosting (delta+round5)",
+   "mae": 4.7,
+   "rmse": 7.8,
+   "within10": 91,
+   "within5": 78,
+   "mape_ge20": 23.5,
+   "bias": -0.6,
+   "baseline_mae": 6.0,
+   "baseline_mape_ge20": 30.0,
+   "improvement_pct": 21.0,
+   "evaluation": "chronological holdout with horizon embargo",
+   "top_features": [
+    "wait",
+    "ride_code",
+    "hour_cos",
+    "hour_sin",
+    "diff_30",
     "lag_60"
    ]
   },
   "120": {
-   "available_pairs": 28383,
-   "train_rows": 21461,
-   "test_rows": 6264,
+   "available_pairs": 28405,
+   "train_rows": 21486,
+   "test_rows": 6257,
    "model": "gradient boosting (delta+round5)",
    "mae": 5.2,
-   "rmse": 8.2,
+   "rmse": 8.3,
    "within10": 89,
    "within5": 75,
-   "mape_ge20": 24.8,
+   "mape_ge20": 25.2,
    "bias": -0.7,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 30.4,
-   "improvement_pct": 18.0,
+   "improvement_pct": 17.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -1121,482 +1164,227 @@
  "lookback": {
   "TRON Lightcycle / Run": [
    {
-    "t": "18:50",
-    "actual": 50,
-    "p60": 55,
-    "p90": 70,
-    "p120": 55
-   },
-   {
-    "t": "19:05",
-    "actual": 40,
+    "t": "18:55",
+    "actual": 45,
     "p60": 60,
     "p90": 70,
-    "p120": 65
+    "p120": 50
    },
    {
-    "t": "19:20",
-    "actual": 30,
+    "t": "19:10",
+    "actual": 35,
     "p30": 50,
-    "p90": 45,
-    "p120": 65
+    "p90": 60,
+    "p120": 60
    },
    {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 35,
     "p30": 45,
-    "p90": 60,
-    "p120": 50
-   },
-   {
-    "t": "19:50",
-    "actual": 40,
-    "p30": 45,
-    "p60": 60,
+    "p90": 50,
     "p120": 55
    },
    {
-    "t": "20:05",
+    "t": "19:40",
+    "actual": 40,
+    "p30": 40,
+    "p60": 50,
+    "p120": 65
+   },
+   {
+    "t": "19:55",
     "actual": 35,
-    "p30": 30,
-    "p60": 45,
+    "p30": 35,
+    "p60": 50,
     "p120": 50
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 35,
-    "p30": 30,
+    "p30": 35,
     "p60": 40,
-    "p90": 55
+    "p90": 50
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 35,
-    "p30": 40,
-    "p60": 40,
-    "p90": 55
+    "p30": 35,
+    "p60": 35,
+    "p90": 45
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 35,
-    "p30": 40,
-    "p60": 45,
-    "p90": 50,
+    "p30": 45,
+    "p60": 50,
+    "p90": 45,
     "p120": 70
    },
    {
-    "t": "21:05",
-    "actual": 35,
+    "t": "20:55",
+    "actual": 30,
     "p30": 35,
+    "p60": 50,
+    "p90": 50,
+    "p120": 65
+   },
+   {
+    "t": "21:10",
+    "actual": 30,
+    "p30": 40,
     "p60": 55,
     "p90": 45,
     "p120": 55
    },
    {
-    "t": "21:20",
-    "actual": 25,
+    "t": "21:25",
+    "actual": 30,
     "p30": 30,
     "p60": 50,
-    "p90": 40,
+    "p90": 35,
     "p120": 45
    },
    {
-    "t": "21:35",
+    "t": "21:40",
     "actual": 35,
-    "p30": 30,
-    "p60": 45,
+    "p30": 35,
+    "p60": 35,
     "p90": 40,
-    "p120": 45
+    "p120": 40
    },
    {
-    "t": "21:50",
+    "t": "21:55",
     "actual": 30,
     "p30": 30,
-    "p60": 40,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "22:05",
-    "actual": 20,
-    "p30": 35,
     "p60": 30,
     "p90": 35,
     "p120": 40
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "actual": 20,
     "p30": 30,
     "p60": 25,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "22:25",
+    "actual": 25,
+    "p30": 25,
+    "p60": 20,
     "p90": 30,
     "p120": 35
    },
    {
-    "t": "22:35",
-    "actual": 50,
-    "p30": 25,
-    "p60": 25,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "22:50",
-    "actual": 30,
-    "p30": 25,
-    "p60": 25,
-    "p90": 20,
-    "p120": 40
-   }
-  ],
-  "Seven Dwarfs Mine Train": [
-   {
-    "t": "18:50",
+    "t": "22:40",
     "actual": 45,
-    "p60": 35,
-    "p90": 35,
-    "p120": 35
-   },
-   {
-    "t": "19:05",
-    "actual": 30,
-    "p60": 30,
-    "p90": 35,
-    "p120": 35
-   },
-   {
-    "t": "19:20",
-    "actual": 30,
-    "p30": 45,
-    "p90": 40,
-    "p120": 35
-   },
-   {
-    "t": "19:35",
-    "actual": 30,
-    "p30": 35,
-    "p90": 30,
-    "p120": 30
-   },
-   {
-    "t": "19:50",
-    "actual": 25,
-    "p30": 40,
-    "p60": 40,
-    "p120": 30
-   },
-   {
-    "t": "20:05",
-    "actual": 30,
-    "p30": 25,
-    "p60": 30,
-    "p120": 25
-   },
-   {
-    "t": "20:20",
-    "actual": 30,
-    "p30": 25,
-    "p60": 30,
-    "p90": 35
-   },
-   {
-    "t": "20:35",
-    "actual": 35,
-    "p30": 30,
-    "p60": 30,
-    "p90": 35
-   },
-   {
-    "t": "20:50",
-    "actual": 25,
-    "p30": 30,
-    "p60": 35,
-    "p90": 35,
-    "p120": 40
-   },
-   {
-    "t": "21:05",
-    "actual": 25,
-    "p30": 30,
-    "p60": 30,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "21:20",
-    "actual": 25,
-    "p30": 25,
-    "p60": 30,
-    "p90": 30,
-    "p120": 30
-   },
-   {
-    "t": "21:35",
-    "actual": 30,
-    "p30": 30,
-    "p60": 30,
-    "p90": 30,
-    "p120": 30
-   },
-   {
-    "t": "21:50",
-    "actual": 30,
-    "p30": 30,
-    "p60": 25,
-    "p90": 25,
-    "p120": 30
-   },
-   {
-    "t": "22:05",
-    "actual": 15,
     "p30": 30,
     "p60": 20,
     "p90": 25,
-    "p120": 30
+    "p120": 35
    },
    {
-    "t": "22:20",
-    "actual": 15,
-    "p30": 25,
-    "p60": 20,
-    "p90": 30,
-    "p120": 25
-   },
-   {
-    "t": "22:35",
+    "t": "22:55",
     "actual": 30,
-    "p30": 25,
+    "p30": 30,
     "p60": 20,
-    "p90": 20,
-    "p120": 25
-   },
-   {
-    "t": "22:50",
-    "actual": 25,
-    "p30": 20,
-    "p60": 25,
-    "p90": 20,
+    "p90": 25,
     "p120": 30
    }
   ],
   "Big Thunder Mountain Railroad": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "closed": 1,
     "p60": 25,
     "p90": 25,
     "p120": 25
    },
    {
-    "t": "19:05",
-    "closed": 1,
-    "p60": 25,
-    "p90": 25,
-    "p120": 20
-   },
-   {
-    "t": "19:20",
-    "closed": 1,
-    "p90": 15,
-    "p120": 25
-   },
-   {
-    "t": "19:35",
+    "t": "19:10",
     "closed": 1,
     "p90": 25,
     "p120": 20
    },
    {
-    "t": "19:50",
+    "t": "19:25",
+    "closed": 1,
+    "p90": 25,
+    "p120": 20
+   },
+   {
+    "t": "19:40",
     "actual": 5,
     "p120": 20
    },
    {
-    "t": "20:05",
-    "actual": 35,
-    "p120": 15
+    "t": "19:55",
+    "actual": 5,
+    "p120": 20
    },
    {
-    "t": "20:20",
+    "t": "20:10",
+    "actual": 35,
+    "p30": 10
+   },
+   {
+    "t": "20:25",
     "actual": 10,
     "p30": 10
    },
    {
-    "t": "20:35",
-    "actual": 10,
-    "p30": 30
-   },
-   {
-    "t": "20:50",
-    "actual": 10,
-    "p30": 15,
-    "p60": 15
-   },
-   {
-    "t": "21:05",
+    "t": "20:40",
     "actual": 10,
     "p30": 25,
-    "p60": 35
+    "p60": 20
    },
    {
-    "t": "21:20",
-    "actual": 25,
+    "t": "20:55",
+    "actual": 10,
     "p30": 15,
-    "p60": 15,
+    "p60": 20
+   },
+   {
+    "t": "21:10",
+    "actual": 20,
+    "p30": 20,
+    "p60": 25,
     "p90": 15
    },
    {
-    "t": "21:35",
+    "t": "21:25",
     "actual": 25,
     "p30": 15,
-    "p60": 20,
-    "p90": 30
-   },
-   {
-    "t": "21:50",
-    "actual": 10,
-    "p30": 20,
     "p60": 15,
-    "p90": 15,
-    "p120": 20
+    "p90": 10
    },
    {
-    "t": "22:05",
-    "actual": 10,
-    "p30": 20,
-    "p60": 15,
-    "p90": 25,
-    "p120": 35
-   },
-   {
-    "t": "22:20",
-    "actual": 10,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 20
-   },
-   {
-    "t": "22:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "22:50",
-    "actual": 25,
-    "p30": 15,
-    "p60": 10,
-    "p90": 10,
-    "p120": 20
-   }
-  ],
-  "Space Mountain": [
-   {
-    "t": "18:50",
-    "actual": 15,
-    "p60": 30,
-    "p90": 25,
-    "p120": 15
-   },
-   {
-    "t": "19:05",
-    "actual": 20,
-    "p90": 25,
-    "p120": 15
-   },
-   {
-    "t": "19:20",
-    "actual": 25,
-    "p30": 30,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "19:35",
+    "t": "21:40",
     "actual": 25,
     "p30": 20,
-    "p120": 20
-   },
-   {
-    "t": "19:50",
-    "actual": 25,
-    "p30": 20,
-    "p60": 25,
-    "p120": 15
-   },
-   {
-    "t": "20:05",
-    "actual": 25,
-    "p30": 15,
-    "p60": 15
-   },
-   {
-    "t": "20:20",
-    "actual": 25,
-    "p30": 10,
-    "p60": 15,
-    "p90": 20
-   },
-   {
-    "t": "20:35",
-    "actual": 25,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15
-   },
-   {
-    "t": "20:50",
-    "actual": 10,
-    "p30": 25,
-    "p60": 25,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "21:05",
-    "actual": 10,
-    "p30": 20,
-    "p60": 35,
-    "p90": 20,
-    "p120": 25
-   },
-   {
-    "t": "21:20",
-    "actual": 10,
-    "p30": 15,
-    "p60": 25,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "21:35",
-    "actual": 20,
-    "p30": 15,
     "p60": 20,
     "p90": 25,
     "p120": 20
    },
    {
-    "t": "21:50",
-    "actual": 20,
-    "p30": 15,
-    "p60": 15,
-    "p90": 20,
-    "p120": 15
-   },
-   {
-    "t": "22:05",
+    "t": "21:55",
     "actual": 10,
     "p30": 20,
-    "p60": 10,
-    "p90": 20,
+    "p60": 15,
+    "p90": 15,
     "p120": 20
    },
    {
-    "t": "22:20",
+    "t": "22:10",
+    "actual": 10,
+    "p30": 20,
+    "p60": 15,
+    "p90": 15,
+    "p120": 25
+   },
+   {
+    "t": "22:25",
     "actual": 10,
     "p30": 15,
     "p60": 15,
@@ -1604,79 +1392,724 @@
     "p120": 20
    },
    {
-    "t": "22:35",
-    "actual": 25,
-    "p30": 5,
+    "t": "22:40",
+    "actual": 15,
+    "p30": 20,
     "p60": 15,
-    "p90": 10,
+    "p90": 15,
     "p120": 20
    },
    {
-    "t": "22:50",
-    "actual": 20,
+    "t": "22:55",
+    "actual": 25,
     "p30": 10,
     "p60": 10,
-    "p90": 10,
+    "p90": 15,
     "p120": 15
    }
   ],
-  "Jingle Cruise": [
+  "Seven Dwarfs Mine Train": [
    {
-    "t": "18:50",
-    "actual": 45,
+    "t": "18:55",
+    "actual": 35,
     "p60": 35,
     "p90": 35,
     "p120": 35
    },
    {
-    "t": "19:05",
-    "actual": 35,
+    "t": "19:10",
+    "actual": 30,
+    "p30": 40,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "19:25",
+    "actual": 30,
+    "p30": 35,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "19:40",
+    "actual": 30,
+    "p30": 35,
+    "p60": 35,
+    "p120": 30
+   },
+   {
+    "t": "19:55",
+    "actual": 25,
+    "p30": 30,
+    "p60": 30,
+    "p120": 30
+   },
+   {
+    "t": "20:10",
+    "actual": 25,
+    "p30": 25,
+    "p60": 30,
+    "p90": 30
+   },
+   {
+    "t": "20:25",
+    "actual": 30,
+    "p30": 25,
+    "p60": 25,
+    "p90": 25
+   },
+   {
+    "t": "20:40",
+    "actual": 30,
+    "p30": 30,
     "p60": 30,
     "p90": 30,
     "p120": 35
    },
    {
-    "t": "19:20",
-    "actual": 40,
-    "p30": 35,
-    "p90": 30,
+    "t": "20:55",
+    "actual": 25,
+    "p30": 30,
+    "p60": 35,
+    "p90": 40,
     "p120": 35
    },
    {
-    "t": "19:35",
-    "closed": 1,
-    "p30": 35,
+    "t": "21:10",
+    "actual": 25,
+    "p30": 30,
+    "p60": 30,
     "p90": 30,
+    "p120": 30
+   },
+   {
+    "t": "21:25",
+    "actual": 30,
+    "p30": 25,
+    "p60": 30,
+    "p90": 25,
     "p120": 25
    },
    {
-    "t": "19:50",
+    "t": "21:40",
     "actual": 30,
+    "p30": 25,
+    "p60": 25,
+    "p90": 30,
+    "p120": 30
+   },
+   {
+    "t": "21:55",
+    "actual": 15,
+    "p30": 25,
+    "p60": 25,
+    "p90": 30,
+    "p120": 30
+   },
+   {
+    "t": "22:10",
+    "actual": 15,
+    "p30": 30,
+    "p60": 20,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "22:25",
+    "actual": 25,
+    "p30": 20,
+    "p60": 15,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "22:40",
+    "actual": 25,
+    "p30": 20,
+    "p60": 20,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "22:55",
+    "actual": 20,
+    "p30": 20,
+    "p60": 15,
+    "p90": 25,
+    "p120": 25
+   }
+  ],
+  "Space Mountain": [
+   {
+    "t": "18:55",
+    "actual": 15,
+    "p90": 25,
+    "p120": 15
+   },
+   {
+    "t": "19:10",
+    "actual": 20,
+    "p90": 20,
+    "p120": 15
+   },
+   {
+    "t": "19:25",
+    "actual": 25,
+    "p30": 25,
+    "p120": 20
+   },
+   {
+    "t": "19:40",
+    "actual": 25,
+    "p30": 20,
+    "p120": 20
+   },
+   {
+    "t": "19:55",
+    "actual": 25,
+    "p30": 20,
+    "p60": 25
+   },
+   {
+    "t": "20:10",
+    "actual": 25,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "20:25",
+    "actual": 25,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15
+   },
+   {
+    "t": "20:40",
+    "actual": 25,
+    "p30": 20,
+    "p60": 25,
+    "p90": 20
+   },
+   {
+    "t": "20:55",
+    "actual": 10,
+    "p30": 20,
+    "p60": 30,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "21:10",
+    "actual": 10,
+    "p30": 20,
+    "p60": 30,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "21:25",
+    "actual": 10,
+    "p30": 10,
+    "p60": 25,
+    "p90": 20,
+    "p120": 15
+   },
+   {
+    "t": "21:40",
+    "actual": 20,
+    "p30": 10,
+    "p60": 20,
+    "p90": 20,
+    "p120": 15
+   },
+   {
+    "t": "21:55",
+    "actual": 20,
+    "p30": 10,
+    "p60": 15,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "22:10",
+    "actual": 5,
+    "p30": 20,
+    "p60": 10,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "22:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "22:40",
+    "actual": 25,
+    "p30": 5,
+    "p60": 10,
+    "p90": 10,
+    "p120": 20
+   },
+   {
+    "t": "22:55",
+    "actual": 20,
+    "p30": 15,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   }
+  ],
+  "Peter Pan's Flight": [
+   {
+    "t": "18:55",
+    "actual": 45,
+    "p60": 30,
+    "p90": 35,
+    "p120": 25
+   },
+   {
+    "t": "19:10",
+    "actual": 25,
+    "p30": 35,
+    "p90": 25,
+    "p120": 35
+   },
+   {
+    "t": "19:25",
+    "actual": 25,
+    "p30": 40,
+    "p90": 30,
+    "p120": 30
+   },
+   {
+    "t": "19:40",
+    "actual": 25,
+    "p30": 30,
+    "p60": 35,
+    "p120": 30
+   },
+   {
+    "t": "19:55",
+    "actual": 25,
     "p30": 30,
     "p60": 35,
     "p120": 25
    },
    {
-    "t": "20:05",
-    "actual": 30,
-    "p60": 20,
-    "p120": 15
-   },
-   {
-    "t": "20:20",
-    "actual": 25,
-    "p30": 20,
-    "p60": 25,
-    "p90": 25
-   },
-   {
-    "t": "20:35",
-    "actual": 25,
+    "t": "20:10",
+    "actual": 20,
     "p30": 25,
+    "p60": 30,
     "p90": 30
    },
    {
-    "t": "20:50",
+    "t": "20:25",
+    "actual": 20,
+    "p30": 25,
+    "p60": 30,
+    "p90": 30
+   },
+   {
+    "t": "20:40",
+    "actual": 25,
+    "p30": 25,
+    "p60": 30,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "20:55",
+    "actual": 20,
+    "p30": 25,
+    "p60": 30,
+    "p90": 30,
+    "p120": 35
+   },
+   {
+    "t": "21:10",
+    "actual": 20,
+    "p30": 25,
+    "p60": 30,
+    "p90": 30,
+    "p120": 30
+   },
+   {
+    "t": "21:25",
+    "actual": 30,
+    "p30": 20,
+    "p60": 25,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "21:40",
+    "actual": 20,
+    "p30": 20,
+    "p60": 25,
+    "p90": 25,
+    "p120": 30
+   },
+   {
+    "t": "21:55",
+    "actual": 20,
+    "p30": 25,
+    "p60": 20,
+    "p90": 25,
+    "p120": 30
+   },
+   {
+    "t": "22:10",
+    "actual": 15,
+    "p30": 20,
+    "p60": 15,
+    "p90": 20,
+    "p120": 30
+   },
+   {
+    "t": "22:25",
+    "actual": 15,
+    "p30": 20,
+    "p60": 15,
+    "p90": 25,
+    "p120": 30
+   },
+   {
+    "t": "22:40",
+    "actual": 15,
+    "p30": 20,
+    "p60": 20,
+    "p90": 20,
+    "p120": 25
+   },
+   {
+    "t": "22:55",
+    "actual": 15,
+    "p30": 15,
+    "p60": 20,
+    "p90": 25,
+    "p120": 30
+   }
+  ],
+  "Tomorrowland Speedway": [
+   {
+    "t": "18:55",
+    "actual": 15,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "19:10",
+    "actual": 15,
+    "p30": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "19:25",
+    "actual": 10,
+    "p30": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "19:40",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p120": 10
+   },
+   {
+    "t": "19:55",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p120": 10
+   },
+   {
+    "t": "20:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10
+   },
+   {
+    "t": "20:25",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10
+   },
+   {
+    "t": "20:40",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "20:55",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "21:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "21:25",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "21:40",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "21:55",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 5,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:40",
+    "actual": 15,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "22:55",
+    "actual": 15,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   }
+  ],
+  "Haunted Mansion": [
+   {
+    "t": "18:55",
+    "actual": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "19:10",
+    "actual": 20,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:25",
+    "actual": 15,
+    "p30": 20,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "19:40",
+    "actual": 15,
+    "p30": 20,
+    "p120": 15
+   },
+   {
+    "t": "19:55",
+    "actual": 15,
+    "p30": 15,
+    "p60": 20,
+    "p120": 10
+   },
+   {
+    "t": "20:10",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "20:25",
+    "actual": 13,
+    "p30": 15,
+    "p60": 10,
+    "p90": 15
+   },
+   {
+    "t": "20:40",
+    "actual": 13,
+    "p30": 15,
+    "p60": 15,
+    "p90": 20
+   },
+   {
+    "t": "20:55",
+    "actual": 13,
+    "p30": 15,
+    "p60": 15,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "21:10",
+    "actual": 13,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 25
+   },
+   {
+    "t": "21:25",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "21:40",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "21:55",
+    "actual": 13,
+    "p30": 15,
+    "p60": 15,
+    "p90": 20,
+    "p120": 15
+   },
+   {
+    "t": "22:10",
+    "actual": 13,
+    "p30": 10,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "22:25",
+    "actual": 13,
+    "p30": 15,
+    "p60": 10,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "22:40",
+    "actual": 13,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "22:55",
+    "actual": 13,
+    "p30": 15,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   }
+  ],
+  "Jingle Cruise": [
+   {
+    "t": "18:55",
+    "actual": 40,
+    "p60": 35,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "19:10",
+    "actual": 35,
+    "p30": 40,
+    "p90": 30,
+    "p120": 35
+   },
+   {
+    "t": "19:25",
+    "actual": 35,
+    "p30": 35,
+    "p90": 30,
+    "p120": 30
+   },
+   {
+    "t": "19:40",
+    "closed": 1,
+    "p30": 35,
+    "p60": 35,
+    "p120": 25
+   },
+   {
+    "t": "19:55",
+    "actual": 30,
+    "p30": 25,
+    "p60": 30,
+    "p120": 25
+   },
+   {
+    "t": "20:10",
+    "actual": 25,
+    "p60": 25,
+    "p90": 35
+   },
+   {
+    "t": "20:25",
+    "actual": 25,
+    "p30": 20,
+    "p60": 20,
+    "p90": 25
+   },
+   {
+    "t": "20:40",
+    "actual": 15,
+    "p30": 25,
+    "p90": 35,
+    "p120": 40
+   },
+   {
+    "t": "20:55",
     "actual": 10,
     "p30": 30,
     "p60": 30,
@@ -1684,446 +2117,63 @@
     "p120": 40
    },
    {
-    "t": "21:05",
-    "actual": 5,
-    "p30": 25,
-    "p60": 35,
-    "p120": 35
+    "t": "21:10",
+    "actual": 20,
+    "p30": 20,
+    "p60": 30,
+    "p120": 30
    },
    {
-    "t": "21:20",
+    "t": "21:25",
     "actual": 30,
     "p30": 15,
-    "p60": 30,
-    "p90": 30,
+    "p60": 25,
+    "p90": 20,
     "p120": 25
    },
    {
-    "t": "21:35",
+    "t": "21:40",
     "actual": 35,
-    "p30": 20,
-    "p60": 25,
-    "p90": 30
+    "p30": 15,
+    "p60": 20,
+    "p90": 25
    },
    {
-    "t": "21:50",
+    "t": "21:55",
     "actual": 30,
     "p30": 20,
-    "p60": 15,
-    "p90": 20,
-    "p120": 30
-   },
-   {
-    "t": "22:05",
-    "actual": 25,
-    "p30": 25,
     "p60": 10,
     "p90": 20,
-    "p120": 30
+    "p120": 25
    },
    {
-    "t": "22:20",
-    "actual": 10,
+    "t": "22:10",
+    "actual": 25,
     "p30": 15,
     "p60": 10,
     "p90": 15,
-    "p120": 20
+    "p120": 25
    },
    {
-    "t": "22:35",
+    "t": "22:25",
+    "actual": 10,
+    "p30": 25,
+    "p60": 10,
+    "p90": 15,
+    "p120": 25
+   },
+   {
+    "t": "22:40",
     "actual": 35,
     "p30": 20,
-    "p60": 15,
-    "p90": 10,
+    "p60": 20,
+    "p90": 15,
     "p120": 20
    },
    {
-    "t": "22:50",
-    "actual": 15,
-    "p30": 20,
-    "p60": 15,
-    "p90": 20,
-    "p120": 15
-   }
-  ],
-  "Peter Pan's Flight": [
-   {
-    "t": "18:50",
-    "actual": 45,
-    "p60": 35,
-    "p90": 35,
-    "p120": 25
-   },
-   {
-    "t": "19:05",
-    "actual": 25,
-    "p60": 35,
-    "p90": 35,
-    "p120": 30
-   },
-   {
-    "t": "19:20",
-    "actual": 25,
-    "p30": 40,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "19:35",
-    "actual": 25,
-    "p30": 25,
-    "p90": 30,
-    "p120": 30
-   },
-   {
-    "t": "19:50",
-    "actual": 25,
-    "p30": 35,
-    "p60": 40,
-    "p120": 25
-   },
-   {
-    "t": "20:05",
-    "actual": 20,
-    "p30": 25,
-    "p60": 25,
-    "p120": 25
-   },
-   {
-    "t": "20:20",
-    "actual": 20,
-    "p30": 25,
-    "p60": 30,
-    "p90": 30
-   },
-   {
-    "t": "20:35",
-    "actual": 25,
-    "p30": 20,
-    "p60": 25,
-    "p90": 30
-   },
-   {
-    "t": "20:50",
-    "actual": 20,
-    "p30": 25,
-    "p60": 30,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "21:05",
-    "actual": 20,
-    "p30": 25,
-    "p60": 25,
-    "p90": 25,
-    "p120": 30
-   },
-   {
-    "t": "21:20",
-    "actual": 20,
-    "p30": 20,
-    "p60": 25,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "21:35",
-    "actual": 20,
-    "p30": 25,
-    "p60": 20,
-    "p90": 25,
-    "p120": 30
-   },
-   {
-    "t": "21:50",
-    "actual": 20,
-    "p30": 20,
-    "p60": 20,
-    "p90": 20,
-    "p120": 30
-   },
-   {
-    "t": "22:05",
-    "actual": 15,
-    "p30": 25,
-    "p60": 15,
-    "p90": 25,
-    "p120": 30
-   },
-   {
-    "t": "22:20",
-    "actual": 15,
-    "p30": 20,
-    "p60": 20,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "22:35",
-    "actual": 15,
-    "p30": 20,
-    "p60": 20,
-    "p90": 20,
-    "p120": 25
-   },
-   {
-    "t": "22:50",
-    "actual": 15,
-    "p30": 20,
-    "p60": 20,
-    "p90": 20,
-    "p120": 30
-   }
-  ],
-  "Tomorrowland Speedway": [
-   {
-    "t": "18:50",
-    "actual": 15,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:05",
-    "actual": 15,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:20",
+    "t": "22:55",
     "actual": 10,
-    "p30": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:35",
-    "actual": 10,
-    "p30": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:50",
-    "actual": 15,
-    "p30": 10,
-    "p60": 10,
-    "p120": 10
-   },
-   {
-    "t": "20:05",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p120": 10
-   },
-   {
-    "t": "20:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p90": 10
-   },
-   {
-    "t": "20:35",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10
-   },
-   {
-    "t": "20:50",
-    "actual": 5,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
-    "p120": 10
-   },
-   {
-    "t": "21:05",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "21:20",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "21:35",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "21:50",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "22:05",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "22:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "22:35",
-    "actual": 15,
-    "p30": 5,
-    "p60": 5,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "22:50",
-    "actual": 15,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   }
-  ],
-  "Haunted Mansion": [
-   {
-    "t": "18:50",
-    "closed": 1,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "19:05",
-    "actual": 20,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "19:20",
-    "actual": 20,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "19:35",
-    "actual": 15,
-    "p30": 15,
-    "p120": 15
-   },
-   {
-    "t": "19:50",
-    "actual": 15,
-    "p30": 15,
-    "p120": 15
-   },
-   {
-    "t": "20:05",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15
-   },
-   {
-    "t": "20:20",
-    "actual": 13,
-    "p30": 15,
-    "p60": 15
-   },
-   {
-    "t": "20:35",
-    "actual": 13,
-    "p30": 15,
-    "p60": 15,
-    "p90": 20
-   },
-   {
-    "t": "20:50",
-    "actual": 13,
     "p30": 20,
-    "p60": 15,
-    "p90": 20
-   },
-   {
-    "t": "21:05",
-    "actual": 13,
-    "p30": 15,
-    "p60": 20,
-    "p90": 20,
-    "p120": 25
-   },
-   {
-    "t": "21:20",
-    "actual": 13,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 25
-   },
-   {
-    "t": "21:35",
-    "actual": 10,
-    "p30": 15,
-    "p60": 15,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "21:50",
-    "actual": 13,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "22:05",
-    "actual": 13,
-    "p30": 10,
-    "p60": 15,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "22:20",
-    "actual": 13,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "22:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "22:50",
-    "actual": 13,
-    "p30": 15,
     "p60": 15,
     "p90": 15,
     "p120": 15
@@ -2131,75 +2181,56 @@
   ],
   "Monsters, Inc. Laugh Floor": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 10,
     "p60": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "19:05",
-    "closed": 1,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 10,
     "p30": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 10,
+    "p30": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 10,
     "p30": 10,
     "p60": 10,
     "p120": 10
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 10,
     "p30": 10,
+    "p60": 10,
     "p120": 10
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 10,
     "p30": 10,
     "p60": 10,
     "p90": 10
    },
    {
-    "t": "20:35",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10
-   },
-   {
-    "t": "20:50",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "21:05",
+    "t": "20:25",
     "actual": 10,
     "p30": 10,
     "p60": 10,
     "p90": 10
    },
    {
-    "t": "21:20",
+    "t": "20:40",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -2207,7 +2238,7 @@
     "p120": 10
    },
    {
-    "t": "21:35",
+    "t": "20:55",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -2215,7 +2246,7 @@
     "p120": 10
    },
    {
-    "t": "21:50",
+    "t": "21:10",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -2223,7 +2254,7 @@
     "p120": 10
    },
    {
-    "t": "22:05",
+    "t": "21:25",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -2231,7 +2262,7 @@
     "p120": 10
    },
    {
-    "t": "22:20",
+    "t": "21:40",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -2239,7 +2270,7 @@
     "p120": 10
    },
    {
-    "t": "22:35",
+    "t": "21:55",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -2247,7 +2278,31 @@
     "p120": 10
    },
    {
-    "t": "22:50",
+    "t": "22:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:25",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:40",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:55",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -2257,79 +2312,56 @@
   ],
   "Mad Tea Party": [
    {
-    "t": "18:50",
-    "actual": 15,
+    "t": "18:55",
+    "actual": 10,
     "p60": 10,
     "p90": 10,
     "p120": 5
    },
    {
-    "t": "19:05",
-    "actual": 5,
-    "p60": 10,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 10,
     "p30": 10,
     "p90": 10,
     "p120": 5
    },
    {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 5,
-    "p30": 5,
+    "p30": 10,
     "p90": 10,
     "p120": 5
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 5,
     "p30": 5,
     "p60": 10,
     "p120": 5
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 5,
     "p30": 5,
-    "p60": 5,
+    "p60": 10,
     "p120": 5
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
-    "p90": 5
+    "p90": 10
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
-    "p90": 5
+    "p90": 10
    },
    {
-    "t": "20:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "21:05",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "21:20",
+    "t": "20:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2337,7 +2369,23 @@
     "p120": 10
    },
    {
-    "t": "21:35",
+    "t": "20:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "21:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2345,7 +2393,7 @@
     "p120": 5
    },
    {
-    "t": "21:50",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2353,7 +2401,7 @@
     "p120": 5
    },
    {
-    "t": "22:05",
+    "t": "21:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2361,7 +2409,7 @@
     "p120": 5
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2369,7 +2417,7 @@
     "p120": 5
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2377,7 +2425,15 @@
     "p120": 5
    },
    {
-    "t": "22:50",
+    "t": "22:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2387,193 +2443,187 @@
   ],
   "The Many Adventures of Winnie the Pooh": [
    {
-    "t": "18:50",
-    "actual": 35,
-    "p60": 25,
+    "t": "18:55",
+    "actual": 30,
+    "p60": 20,
     "p90": 25,
     "p120": 30
    },
    {
-    "t": "19:05",
+    "t": "19:10",
     "actual": 20,
-    "p60": 25,
+    "p30": 25,
     "p90": 20,
     "p120": 25
    },
    {
-    "t": "19:20",
+    "t": "19:25",
     "actual": 25,
-    "p30": 30,
-    "p90": 20,
-    "p120": 25
-   },
-   {
-    "t": "19:35",
-    "actual": 15,
-    "p30": 20,
+    "p30": 25,
     "p90": 20,
     "p120": 20
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 15,
     "p30": 25,
-    "p60": 30,
+    "p60": 25,
     "p120": 20
    },
    {
-    "t": "20:05",
-    "actual": 25,
-    "p30": 15,
-    "p60": 15,
-    "p120": 15
+    "t": "19:55",
+    "actual": 10,
+    "p30": 25,
+    "p60": 20,
+    "p120": 20
    },
    {
-    "t": "20:20",
-    "actual": 15,
-    "p30": 15,
+    "t": "20:10",
+    "actual": 25,
+    "p30": 20,
     "p60": 20,
     "p90": 20
    },
    {
-    "t": "20:35",
-    "actual": 5,
-    "p30": 20,
-    "p60": 20,
-    "p90": 25
+    "t": "20:25",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15,
+    "p90": 20
    },
    {
-    "t": "20:50",
-    "actual": 15,
-    "p30": 25,
+    "t": "20:40",
+    "actual": 5,
+    "p30": 20,
     "p60": 25,
     "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "20:55",
+    "actual": 10,
+    "p30": 20,
+    "p60": 20,
+    "p90": 30,
     "p120": 30
    },
    {
-    "t": "21:05",
+    "t": "21:10",
     "actual": 20,
-    "p30": 30,
+    "p30": 20,
     "p60": 20,
     "p90": 20,
     "p120": 25
    },
    {
-    "t": "21:20",
-    "actual": 20,
-    "p30": 15,
-    "p60": 20,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "21:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 20
-   },
-   {
-    "t": "21:50",
-    "actual": 15,
-    "p30": 20,
-    "p60": 10,
-    "p90": 20,
-    "p120": 15
-   },
-   {
-    "t": "22:05",
-    "actual": 15,
-    "p30": 15,
-    "p60": 10,
-    "p90": 20,
-    "p120": 15
-   },
-   {
-    "t": "22:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "22:35",
+    "t": "21:25",
     "actual": 5,
     "p30": 15,
     "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "21:40",
+    "actual": 15,
+    "p30": 10,
+    "p60": 15,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "21:55",
+    "actual": 15,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "22:10",
+    "actual": 15,
+    "p30": 15,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "22:25",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "22:40",
+    "actual": 5,
+    "p30": 15,
+    "p60": 10,
     "p90": 10,
     "p120": 15
    },
    {
-    "t": "22:50",
+    "t": "22:55",
     "actual": 5,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
+    "p30": 10,
+    "p60": 5,
+    "p90": 10,
     "p120": 15
    }
   ],
   "Prince Charming Regal Carrousel": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 5,
     "p60": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:05",
-    "actual": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 5,
     "p30": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 5,
     "p30": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 5
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 5
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2581,7 +2631,7 @@
     "p120": 5
    },
    {
-    "t": "21:05",
+    "t": "20:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2589,7 +2639,7 @@
     "p120": 5
    },
    {
-    "t": "21:20",
+    "t": "21:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2597,7 +2647,7 @@
     "p120": 5
    },
    {
-    "t": "21:35",
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2605,7 +2655,7 @@
     "p120": 5
    },
    {
-    "t": "21:50",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2613,7 +2663,7 @@
     "p120": 5
    },
    {
-    "t": "22:05",
+    "t": "21:55",
     "closed": 1,
     "p30": 5,
     "p60": 5,
@@ -2621,7 +2671,7 @@
     "p120": 5
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "closed": 1,
     "p30": 5,
     "p60": 5,
@@ -2629,79 +2679,79 @@
     "p120": 5
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 5,
     "p60": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "22:50",
+    "t": "22:40",
     "actual": 5,
     "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:55",
+    "actual": 5,
+    "p30": 5,
     "p90": 5,
     "p120": 5
    }
   ],
   "Swiss Family Treehouse": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 5,
     "p60": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:05",
-    "actual": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 5,
     "p30": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 5,
     "p30": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 5
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 5
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2709,7 +2759,7 @@
     "p120": 5
    },
    {
-    "t": "21:05",
+    "t": "20:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2717,7 +2767,7 @@
     "p120": 5
    },
    {
-    "t": "21:20",
+    "t": "21:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2725,7 +2775,7 @@
     "p120": 5
    },
    {
-    "t": "21:35",
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2733,7 +2783,7 @@
     "p120": 5
    },
    {
-    "t": "21:50",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2741,7 +2791,7 @@
     "p120": 5
    },
    {
-    "t": "22:05",
+    "t": "21:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2749,7 +2799,7 @@
     "p120": 5
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2757,7 +2807,7 @@
     "p120": 5
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2765,7 +2815,15 @@
     "p120": 5
    },
    {
-    "t": "22:50",
+    "t": "22:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2775,63 +2833,56 @@
   ],
   "Pirates of the Caribbean": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 10,
     "p60": 10,
     "p90": 10,
-    "p120": 10
+    "p120": 5
    },
    {
-    "t": "19:05",
-    "actual": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 10,
     "p30": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 10,
     "p30": 10,
-    "p90": 5,
-    "p120": 10
+    "p90": 10,
+    "p120": 5
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 10,
     "p30": 10,
     "p60": 10,
     "p120": 5
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 10,
     "p30": 10,
     "p60": 10,
     "p120": 5
    },
    {
-    "t": "20:20",
+    "t": "20:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 5
+   },
+   {
+    "t": "20:25",
     "actual": 5,
     "p30": 10,
     "p60": 10,
     "p90": 10
    },
    {
-    "t": "20:35",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10
-   },
-   {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 5,
     "p30": 10,
     "p60": 10,
@@ -2839,7 +2890,15 @@
     "p120": 10
    },
    {
-    "t": "21:05",
+    "t": "20:55",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "21:10",
     "actual": 5,
     "p30": 5,
     "p60": 10,
@@ -2847,7 +2906,7 @@
     "p120": 10
    },
    {
-    "t": "21:20",
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 10,
@@ -2855,15 +2914,23 @@
     "p120": 10
    },
    {
-    "t": "21:35",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
-    "p60": 10,
+    "p60": 5,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "21:50",
+    "t": "21:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2871,7 +2938,7 @@
     "p120": 10
    },
    {
-    "t": "22:05",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2879,96 +2946,85 @@
     "p120": 10
    },
    {
-    "t": "22:20",
+    "t": "22:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5,
     "p120": 5
-   },
-   {
-    "t": "22:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "22:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
    }
   ],
   "Under the Sea - Journey of The Little Mermaid": [
    {
-    "t": "18:50",
-    "actual": 5,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:05",
+    "t": "18:55",
     "closed": 1,
-    "p60": 5,
-    "p120": 10
-   },
-   {
-    "t": "19:20",
-    "actual": 5,
-    "p30": 5,
-    "p120": 5
-   },
-   {
-    "t": "19:35",
-    "actual": 5,
-    "p90": 5
-   },
-   {
-    "t": "19:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "20:05",
-    "actual": 5,
-    "p30": 5,
-    "p120": 5
-   },
-   {
-    "t": "20:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5
-   },
-   {
-    "t": "20:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "20:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "21:05",
+    "t": "19:10",
+    "closed": 1,
+    "p30": 5,
+    "p120": 10
+   },
+   {
+    "t": "19:25",
+    "actual": 5,
+    "p120": 10
+   },
+   {
+    "t": "19:40",
+    "actual": 5,
+    "p60": 5
+   },
+   {
+    "t": "19:55",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "20:10",
+    "actual": 5,
+    "p30": 5,
+    "p90": 10
+   },
+   {
+    "t": "20:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "20:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p120": 10
+   },
+   {
+    "t": "20:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "21:20",
+    "t": "21:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5
+   },
+   {
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2976,7 +3032,7 @@
     "p120": 5
    },
    {
-    "t": "21:35",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -2984,15 +3040,7 @@
     "p120": 5
    },
    {
-    "t": "21:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "22:05",
+    "t": "21:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3000,7 +3048,7 @@
     "p120": 10
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3008,7 +3056,7 @@
     "p120": 5
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3016,7 +3064,15 @@
     "p120": 5
    },
    {
-    "t": "22:50",
+    "t": "22:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3026,63 +3082,64 @@
   ],
   "Buzz Lightyear\u2019s Space Ranger Spin": [
    {
-    "t": "18:50",
-    "actual": 30,
+    "t": "18:55",
+    "actual": 20,
     "p60": 30,
     "p90": 30,
     "p120": 25
    },
    {
-    "t": "19:05",
+    "t": "19:10",
     "actual": 20,
-    "p60": 30,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "19:20",
-    "actual": 15,
     "p30": 30,
-    "p90": 25,
+    "p90": 20,
     "p120": 30
    },
    {
-    "t": "19:35",
-    "actual": 25,
-    "p30": 25,
-    "p90": 30,
+    "t": "19:25",
+    "actual": 15,
+    "p30": 30,
+    "p90": 25,
     "p120": 25
    },
    {
-    "t": "19:50",
-    "actual": 20,
+    "t": "19:40",
+    "actual": 25,
     "p30": 25,
     "p60": 25,
-    "p120": 15
+    "p120": 25
    },
    {
-    "t": "20:05",
-    "actual": 15,
+    "t": "19:55",
+    "actual": 20,
     "p30": 20,
     "p60": 20,
     "p120": 20
    },
    {
-    "t": "20:20",
-    "actual": 10,
+    "t": "20:10",
+    "actual": 15,
     "p30": 20,
-    "p60": 15,
+    "p60": 20,
     "p90": 20
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 10,
     "p30": 20,
-    "p60": 25,
-    "p90": 35
+    "p60": 15,
+    "p90": 15
    },
    {
-    "t": "20:50",
+    "t": "20:40",
+    "actual": 10,
+    "p30": 30,
+    "p60": 30,
+    "p90": 25,
+    "p120": 30
+   },
+   {
+    "t": "20:55",
     "actual": 10,
     "p30": 25,
     "p60": 30,
@@ -3090,55 +3147,47 @@
     "p120": 30
    },
    {
-    "t": "21:05",
+    "t": "21:10",
     "actual": 10,
     "p30": 20,
-    "p60": 25,
+    "p60": 30,
     "p90": 25,
     "p120": 25
    },
    {
-    "t": "21:20",
+    "t": "21:25",
     "actual": 10,
     "p30": 15,
     "p60": 20,
     "p90": 20,
-    "p120": 20
+    "p120": 15
    },
    {
-    "t": "21:35",
+    "t": "21:40",
     "actual": 10,
-    "p30": 20,
+    "p30": 15,
     "p60": 15,
     "p90": 25,
     "p120": 15
    },
    {
-    "t": "21:50",
+    "t": "21:55",
     "actual": 10,
     "p30": 15,
     "p60": 10,
     "p90": 15,
-    "p120": 15
+    "p120": 20
    },
    {
-    "t": "22:05",
+    "t": "22:10",
     "actual": 10,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "22:20",
-    "actual": 5,
     "p30": 10,
     "p60": 10,
-    "p90": 10,
-    "p120": 10
+    "p90": 15,
+    "p120": 15
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 5,
     "p30": 10,
     "p60": 10,
@@ -3146,73 +3195,74 @@
     "p120": 15
    },
    {
-    "t": "22:50",
+    "t": "22:40",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 10,
-    "p90": 10,
+    "p90": 15,
     "p120": 15
    }
   ],
   "Dumbo the Flying Elephant": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 10,
     "p60": 10,
     "p90": 10,
-    "p120": 5
+    "p120": 10
    },
    {
-    "t": "19:05",
-    "actual": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 10,
     "p30": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "19:35",
-    "actual": 5,
+    "t": "19:25",
+    "actual": 10,
     "p30": 10,
-    "p90": 5,
+    "p90": 10,
     "p120": 10
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 5,
     "p30": 10,
     "p60": 10,
     "p120": 10
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 5,
-    "p30": 5,
-    "p60": 5,
+    "p30": 10,
+    "p60": 10,
     "p120": 10
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 10,
     "p90": 10
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
-    "p60": 5,
-    "p90": 10
+    "p60": 10,
+    "p90": 5
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3220,39 +3270,47 @@
     "p120": 10
    },
    {
-    "t": "21:05",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "21:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "21:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "21:50",
+    "t": "20:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "21:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "21:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "21:40",
+    "actual": 5,
+    "p30": 10,
+    "p60": 5,
+    "p90": 5,
     "p120": 5
    },
    {
-    "t": "22:05",
+    "t": "21:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3260,15 +3318,7 @@
     "p120": 10
    },
    {
-    "t": "22:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3276,7 +3326,15 @@
     "p120": 10
    },
    {
-    "t": "22:50",
+    "t": "22:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3286,63 +3344,56 @@
   ],
   "The Barnstormer": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 5,
     "p60": 10,
     "p90": 10,
     "p120": 5
    },
    {
-    "t": "19:05",
-    "actual": 5,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 5,
     "p30": 5,
     "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:35",
-    "actual": 5,
-    "p30": 5,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
     "p120": 5
    },
    {
-    "t": "20:05",
+    "t": "19:25",
+    "actual": 5,
+    "p30": 5,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "19:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 10
    },
    {
-    "t": "20:20",
+    "t": "19:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p120": 10
+   },
+   {
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3350,7 +3401,15 @@
     "p120": 5
    },
    {
-    "t": "21:05",
+    "t": "20:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "21:10",
     "closed": 1,
     "p30": 5,
     "p60": 5,
@@ -3358,7 +3417,7 @@
     "p120": 5
    },
    {
-    "t": "21:20",
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3366,14 +3425,14 @@
     "p120": 5
    },
    {
-    "t": "21:35",
+    "t": "21:40",
     "actual": 5,
     "p60": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "21:50",
+    "t": "21:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3381,14 +3440,14 @@
     "p120": 5
    },
    {
-    "t": "22:05",
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "22:20",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3396,14 +3455,14 @@
     "p120": 5
    },
    {
-    "t": "22:35",
+    "t": "22:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 5
    },
    {
-    "t": "22:50",
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3413,61 +3472,56 @@
   ],
   "The Magic Carpets of Aladdin": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 5,
     "p60": 10,
-    "p90": 5,
+    "p90": 10,
     "p120": 5
    },
    {
-    "t": "19:05",
-    "actual": 5,
-    "p60": 5,
-    "p120": 5
-   },
-   {
-    "t": "19:20",
+    "t": "19:10",
     "actual": 5,
     "p30": 5,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 5,
     "p30": 5,
-    "p90": 10
+    "p90": 10,
+    "p120": 5
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 10
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p120": 10
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3475,7 +3529,7 @@
     "p120": 5
    },
    {
-    "t": "21:05",
+    "t": "20:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3483,7 +3537,7 @@
     "p120": 5
    },
    {
-    "t": "21:20",
+    "t": "21:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3491,7 +3545,7 @@
     "p120": 5
    },
    {
-    "t": "21:35",
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3499,7 +3553,7 @@
     "p120": 5
    },
    {
-    "t": "21:50",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3507,7 +3561,7 @@
     "p120": 5
    },
    {
-    "t": "22:05",
+    "t": "21:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3515,7 +3569,7 @@
     "p120": 5
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3523,7 +3577,7 @@
     "p120": 5
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3531,7 +3585,15 @@
     "p120": 5
    },
    {
-    "t": "22:50",
+    "t": "22:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3541,209 +3603,211 @@
   ],
   "Astro Orbiter": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 10,
     "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:10",
+    "actual": 10,
+    "p30": 10,
     "p90": 15,
     "p120": 10
    },
    {
-    "t": "19:05",
+    "t": "19:25",
     "actual": 10,
-    "p60": 15,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:20",
-    "actual": 10,
-    "p30": 15,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:35",
-    "actual": 5,
     "p30": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "19:50",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p120": 15
-   },
-   {
-    "t": "20:05",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p120": 10
-   },
-   {
-    "t": "20:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p90": 10
-   },
-   {
-    "t": "20:35",
+    "t": "19:40",
     "actual": 5,
     "p30": 10,
     "p60": 5,
-    "p90": 10
-   },
-   {
-    "t": "20:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p90": 15,
     "p120": 15
    },
    {
-    "t": "21:05",
+    "t": "19:55",
     "actual": 5,
-    "p30": 5,
+    "p30": 10,
     "p60": 10,
-    "p90": 10,
     "p120": 10
    },
    {
-    "t": "21:20",
+    "t": "20:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10
+   },
+   {
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
     "p60": 10,
-    "p90": 10,
-    "p120": 10
+    "p90": 10
    },
    {
-    "t": "21:35",
+    "t": "20:40",
     "actual": 5,
     "p30": 10,
     "p60": 10,
     "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "20:55",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "21:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "21:25",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "21:40",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "21:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 5,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "22:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "22:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "22:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
     "p120": 5
-   },
-   {
-    "t": "21:50",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "22:05",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "22:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "22:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "22:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
    }
   ],
   "\"it's a small world\"": [
    {
-    "t": "18:50",
+    "t": "18:55",
     "actual": 25,
     "p60": 5,
+    "p90": 10,
+    "p120": 5
+   },
+   {
+    "t": "19:10",
+    "actual": 15,
+    "p30": 5,
+    "p90": 5,
+    "p120": 10
+   },
+   {
+    "t": "19:25",
+    "actual": 15,
+    "p30": 10,
     "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:05",
+    "t": "19:40",
     "actual": 15,
+    "p30": 10,
     "p60": 5,
-    "p90": 5,
     "p120": 5
    },
    {
-    "t": "19:20",
-    "actual": 15,
-    "p30": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "19:35",
-    "actual": 15,
-    "p30": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "19:50",
-    "actual": 15,
-    "p30": 10,
-    "p60": 10,
-    "p120": 5
-   },
-   {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 5,
     "p30": 10,
     "p60": 5,
     "p120": 5
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
     "p90": 5
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
-    "p60": 5,
-    "p90": 10
+    "p60": 10,
+    "p90": 5
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 5,
     "p30": 10,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "20:55",
+    "actual": 5,
+    "p30": 5,
     "p60": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "21:05",
+    "t": "21:10",
     "actual": 5,
     "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
+    "p60": 10,
+    "p90": 10,
+    "p120": 5
    },
    {
-    "t": "21:20",
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3751,7 +3815,7 @@
     "p120": 5
    },
    {
-    "t": "21:35",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3759,7 +3823,7 @@
     "p120": 5
    },
    {
-    "t": "21:50",
+    "t": "21:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3767,7 +3831,7 @@
     "p120": 5
    },
    {
-    "t": "22:05",
+    "t": "22:10",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3775,7 +3839,7 @@
     "p120": 5
    },
    {
-    "t": "22:20",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3783,7 +3847,7 @@
     "p120": 5
    },
    {
-    "t": "22:35",
+    "t": "22:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3791,7 +3855,7 @@
     "p120": 5
    },
    {
-    "t": "22:50",
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3801,87 +3865,112 @@
   ],
   "Tomorrowland Transit Authority PeopleMover": [
    {
-    "t": "18:50",
-    "actual": 20,
-    "p60": 15,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "19:05",
+    "t": "18:55",
     "actual": 10,
     "p60": 15,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "19:20",
-    "actual": 10,
-    "p30": 15,
-    "p90": 10,
-    "p120": 15
-   },
-   {
-    "t": "19:35",
-    "actual": 5,
-    "p30": 10,
     "p90": 15,
     "p120": 10
    },
    {
-    "t": "19:50",
-    "actual": 5,
-    "p30": 10,
-    "p60": 15,
+    "t": "19:10",
+    "actual": 10,
+    "p30": 15,
+    "p90": 15,
     "p120": 10
    },
    {
-    "t": "20:05",
+    "t": "19:25",
+    "actual": 10,
+    "p30": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "19:40",
     "actual": 5,
-    "p30": 5,
+    "p30": 10,
     "p60": 10,
     "p120": 10
    },
    {
-    "t": "20:20",
+    "t": "19:55",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p120": 10
+   },
+   {
+    "t": "20:10",
     "actual": 5,
     "p30": 5,
     "p60": 10,
     "p90": 10
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 5,
     "p30": 5,
     "p60": 10,
-    "p90": 15
+    "p90": 10
    },
    {
-    "t": "20:50",
+    "t": "20:40",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "20:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "21:10",
     "actual": 5,
     "p30": 5,
     "p60": 10,
-    "p90": 10,
+    "p90": 5,
     "p120": 15
    },
    {
-    "t": "21:05",
+    "t": "21:25",
     "actual": 5,
     "p30": 5,
-    "p60": 10,
+    "p60": 5,
     "p90": 5,
     "p120": 10
    },
    {
-    "t": "21:20",
+    "t": "21:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
-    "p90": 10,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "21:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "22:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
     "p120": 10
    },
    {
-    "t": "21:35",
+    "t": "22:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3889,7 +3978,7 @@
     "p120": 5
    },
    {
-    "t": "21:50",
+    "t": "22:40",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3897,31 +3986,7 @@
     "p120": 5
    },
    {
-    "t": "22:05",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "22:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "22:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "22:50",
+    "t": "22:55",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3932,35 +3997,35 @@
  },
  "today": {
   "date": "2026-11-08",
-  "graded": 15023,
+  "graded": 15110,
   "exact": 49,
   "in5": 81,
   "in10": 94,
   "in15": 98,
   "by_horizon": {
    "30": {
-    "graded": 4036,
+    "graded": 4058,
     "exact": 56,
     "in5": 85,
     "in10": 96,
     "in15": 99
    },
    "60": {
-    "graded": 3843,
+    "graded": 3864,
     "exact": 50,
     "in5": 82,
     "in10": 94,
     "in15": 98
    },
    "90": {
-    "graded": 3659,
+    "graded": 3681,
     "exact": 46,
     "in5": 79,
     "in10": 93,
     "in15": 98
    },
    "120": {
-    "graded": 3485,
+    "graded": 3507,
     "exact": 45,
     "in5": 79,
     "in10": 93,
@@ -3968,12 +4033,12 @@
    }
   }
  },
- "lookback_debug": "log rows 25524; act (1493, 31) idx 2026-10-30 04:00:00+00:00..2026-11-09 03:50:00+00:00; slots 17; lookback rides 22; today graded 15023",
+ "lookback_debug": "log rows 25496; act (1494, 31) idx 2026-10-30 04:00:00+00:00..2026-11-09 03:55:00+00:00; slots 17; lookback rides 22; today graded 15110",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-09T03:26:06.460968+00:00",
-   "last_sample": "2026-11-09T03:25:26+00:00",
-   "samples": 53346,
+   "updated": "2026-11-09T03:51:26.138471+00:00",
+   "last_sample": "2026-11-09T03:50:33+00:00",
+   "samples": 53516,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -4127,9 +4192,9 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-09T03:26:21.141273+00:00",
-   "last_sample": "2026-11-09T03:25:26+00:00",
-   "samples": 20397,
+   "updated": "2026-11-09T03:51:45.367438+00:00",
+   "last_sample": "2026-11-09T03:50:33+00:00",
+   "samples": 20462,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -4282,9 +4347,9 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-09T03:26:31.935974+00:00",
-   "last_sample": "2026-11-09T03:25:26+00:00",
-   "samples": 25104,
+   "updated": "2026-11-09T03:52:00.133712+00:00",
+   "last_sample": "2026-11-09T03:50:33+00:00",
+   "samples": 25184,
    "history_samples": 0,
    "rides": [],
    "metrics": {
