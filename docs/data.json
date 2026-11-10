@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-10T05:20:49.977581+00:00",
- "last_sample": "2026-11-10T05:20:32+00:00",
- "samples": 79501,
+ "updated": "2026-11-10T05:25:49.419625+00:00",
+ "last_sample": "2026-11-10T05:25:31+00:00",
+ "samples": 79537,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -26,9 +26,9 @@
     "hour_cos",
     "lag_yday",
     "diff_30",
-    "lag_30"
+    "roll_mean_30"
    ],
-   "candidate_mae": 3.6
+   "candidate_mae": 3.7
   },
   "60": {
    "available_pairs": 35526,
@@ -50,7 +50,7 @@
     "ride_code",
     "hour_cos",
     "diff_30",
-    "hour_sin",
+    "lag_yday",
     "lag_30"
    ],
    "candidate_mae": 4.0
@@ -103,7 +103,7 @@
     "hour_sin",
     "lag_30"
    ],
-   "candidate_mae": 5.1
+   "candidate_mae": 5.3
   }
  },
  "context": {
