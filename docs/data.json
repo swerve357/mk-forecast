@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-10T09:15:52.022314+00:00",
- "last_sample": "2026-11-10T09:15:34+00:00",
- "samples": 81193,
+ "updated": "2026-11-10T09:20:51.206584+00:00",
+ "last_sample": "2026-11-10T09:20:33+00:00",
+ "samples": 81229,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -26,9 +26,9 @@
     "hour_cos",
     "lag_yday",
     "diff_30",
-    "roll_mean_30"
+    "lag_30"
    ],
-   "candidate_mae": 3.7
+   "candidate_mae": 3.6
   },
   "60": {
    "available_pairs": 35526,
@@ -51,9 +51,9 @@
     "hour_cos",
     "diff_30",
     "lag_30",
-    "hour_sin"
+    "roll_mean_60"
    ],
-   "candidate_mae": 4.0
+   "candidate_mae": 4.2
   },
   "90": {
    "available_pairs": 33939,
@@ -76,9 +76,9 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "roll_mean_60"
+    "lag_30"
    ],
-   "candidate_mae": 4.6
+   "candidate_mae": 4.8
   },
   "120": {
    "available_pairs": 32496,
@@ -103,7 +103,7 @@
     "hour_sin",
     "lag_30"
    ],
-   "candidate_mae": 5.2
+   "candidate_mae": 5.0
   }
  },
  "context": {
@@ -155,7 +155,7 @@
    }
   }
  },
- "lookback_debug": "log rows 20800; act (1698, 31) idx 2026-10-30 04:00:00+00:00..2026-11-10 05:05:00+00:00; slots 0; lookback rides 0; today graded 174",
+ "lookback_debug": "log rows 20716; act (1698, 31) idx 2026-10-30 04:00:00+00:00..2026-11-10 05:05:00+00:00; slots 0; lookback rides 0; today graded 174",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-10T09:00:57.445727+00:00",
