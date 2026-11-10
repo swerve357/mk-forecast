@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-10T17:51:00.888745+00:00",
+ "updated": "2026-11-10T17:56:06.144346+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Enchanted Tales with Belle": "2026-11-09 17:40:00-05:00",
-  "Seven Dwarfs Mine Train": "2026-11-10 12:35:00-05:00"
+  "Enchanted Tales with Belle": "2026-11-09 17:40:00-05:00"
  },
- "decisions_open": 30,
+ "decisions_open": 31,
  "graded_all": {
   "n": 375,
   "wins": 78,
@@ -34,8 +33,19 @@
    "mae_shadow": 5.51
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-425",
+   "type": "D2",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Seven Dwarfs Mine Train",
+   "horizon": 30,
+   "base": 30.0,
+   "shadow": 30.0,
+   "reason": "reopened after 25 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
