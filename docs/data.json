@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-10T08:25:48.252799+00:00",
- "last_sample": "2026-11-10T08:25:32+00:00",
- "samples": 80833,
+ "updated": "2026-11-10T08:30:58.513249+00:00",
+ "last_sample": "2026-11-10T08:30:40+00:00",
+ "samples": 80869,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -26,9 +26,9 @@
     "hour_cos",
     "lag_yday",
     "diff_30",
-    "lag_60"
+    "hour_sin"
    ],
-   "candidate_mae": 3.6
+   "candidate_mae": 3.7
   },
   "60": {
    "available_pairs": 35526,
@@ -51,9 +51,9 @@
     "hour_cos",
     "diff_30",
     "lag_30",
-    "roll_std_60"
+    "roll_mean_60"
    ],
-   "candidate_mae": 4.1
+   "candidate_mae": 3.9
   },
   "90": {
    "available_pairs": 33939,
@@ -76,9 +76,9 @@
     "hour_cos",
     "diff_30",
     "lag_30",
-    "roll_mean_60"
+    "hour_sin"
    ],
-   "candidate_mae": 5.0
+   "candidate_mae": 4.7
   },
   "120": {
    "available_pairs": 32496,
@@ -103,7 +103,7 @@
     "hour_sin",
     "lag_30"
    ],
-   "candidate_mae": 5.3
+   "candidate_mae": 5.1
   }
  },
  "context": {
@@ -155,12 +155,12 @@
    }
   }
  },
- "lookback_debug": "log rows 21660; act (1698, 31) idx 2026-10-30 04:00:00+00:00..2026-11-10 05:05:00+00:00; slots 3; lookback rides 0; today graded 174",
+ "lookback_debug": "log rows 21572; act (1698, 31) idx 2026-10-30 04:00:00+00:00..2026-11-10 05:05:00+00:00; slots 3; lookback rides 0; today graded 174",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-10T08:01:20.074757+00:00",
-   "last_sample": "2026-11-10T08:00:40+00:00",
-   "samples": 64703,
+   "updated": "2026-11-10T08:31:21.753868+00:00",
+   "last_sample": "2026-11-10T08:30:40+00:00",
+   "samples": 64901,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -172,20 +172,20 @@
      "mae": 4.0,
      "rmse": 7.3,
      "within10": 91,
-     "within5": 80,
-     "mape_ge20": 19.3,
-     "bias": -0.5,
+     "within5": 81,
+     "mape_ge20": 19.2,
+     "bias": -0.6,
      "baseline_mae": 4.4,
      "baseline_mape_ge20": 21.5,
-     "improvement_pct": 8.8,
+     "improvement_pct": 9.2,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "ride_code",
       "wait",
       "lag_yday",
       "hour_cos",
-      "lag_60",
-      "hour_sin"
+      "hour_sin",
+      "lag_60"
      ]
     },
     "60": {
@@ -276,9 +276,9 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-10T08:01:39.352592+00:00",
-   "last_sample": "2026-11-10T08:00:40+00:00",
-   "samples": 24830,
+   "updated": "2026-11-10T08:31:42.319192+00:00",
+   "last_sample": "2026-11-10T08:30:40+00:00",
+   "samples": 24908,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -394,9 +394,9 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-10T08:01:53.929075+00:00",
-   "last_sample": "2026-11-10T08:00:40+00:00",
-   "samples": 30560,
+   "updated": "2026-11-10T08:31:57.768076+00:00",
+   "last_sample": "2026-11-10T08:30:40+00:00",
+   "samples": 30656,
    "history_samples": 0,
    "rides": [],
    "metrics": {
