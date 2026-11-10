@@ -1,21 +1,21 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-10T14:05:51.782762+00:00",
+ "updated": "2026-11-10T14:11:16.785186+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-09 17:10:00-05:00",
   "Enchanted Tales with Belle": "2026-11-09 17:40:00-05:00",
   "The Hall of Presidents": "2026-11-09 16:10:00-05:00"
  },
- "decisions_open": 20,
+ "decisions_open": 9,
  "graded_all": {
-  "n": 354,
+  "n": 365,
   "wins": 78,
   "losses": 163,
-  "ties": 113,
-  "mae_base": 5.28,
-  "mae_shadow": 6.9
+  "ties": 124,
+  "mae_base": 5.2,
+  "mae_shadow": 6.77
  },
  "by_type": {
   "D1": {
@@ -27,67 +27,16 @@
    "mae_shadow": 8.53
   },
   "D2": {
-   "n": 187,
+   "n": 198,
    "wins": 37,
    "losses": 37,
-   "ties": 113,
-   "mae_base": 4.64,
-   "mae_shadow": 5.44
+   "ties": 124,
+   "mae_base": 4.54,
+   "mae_shadow": 5.29
   }
  },
- "new_decisions_this_run": 8,
- "graded_this_run": 0,
- "last_decisions": [
-  {
-   "id": "cb-389",
-   "type": "D2",
-   "event_ride": "Pirates of the Caribbean",
-   "ride": "Pirates of the Caribbean",
-   "horizon": 30,
-   "base": 5.0,
-   "shadow": 5.0,
-   "reason": "reopened after 540 min down; shadow = first posted wait at reopen"
-  },
-  {
-   "id": "cb-390",
-   "type": "D2",
-   "event_ride": "Swiss Family Treehouse",
-   "ride": "Swiss Family Treehouse",
-   "horizon": 30,
-   "base": 5.0,
-   "shadow": 5.0,
-   "reason": "reopened after 540 min down; shadow = first posted wait at reopen"
-  },
-  {
-   "id": "cb-391",
-   "type": "D2",
-   "event_ride": "TRON Lightcycle / Run",
-   "ride": "TRON Lightcycle / Run",
-   "horizon": 30,
-   "base": 25.0,
-   "shadow": 25.0,
-   "reason": "reopened after 540 min down; shadow = first posted wait at reopen"
-  },
-  {
-   "id": "cb-392",
-   "type": "D2",
-   "event_ride": "The Magic Carpets of Aladdin",
-   "ride": "The Magic Carpets of Aladdin",
-   "horizon": 30,
-   "base": 5.0,
-   "shadow": 5.0,
-   "reason": "reopened after 540 min down; shadow = first posted wait at reopen"
-  },
-  {
-   "id": "cb-393",
-   "type": "D2",
-   "event_ride": "Walt Disney's Enchanted Tiki Room",
-   "ride": "Walt Disney's Enchanted Tiki Room",
-   "horizon": 30,
-   "base": 10.0,
-   "shadow": 10.0,
-   "reason": "reopened after 900 min down; shadow = first posted wait at reopen"
-  }
- ],
+ "new_decisions_this_run": 0,
+ "graded_this_run": 11,
+ "last_decisions": [],
  "debug": ""
 }
