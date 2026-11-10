@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-10T11:15:46.241595+00:00",
- "last_sample": "2026-11-10T11:15:30+00:00",
- "samples": 82057,
+ "updated": "2026-11-10T11:20:47.365379+00:00",
+ "last_sample": "2026-11-10T11:20:31+00:00",
+ "samples": 82093,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -26,7 +26,7 @@
     "hour_cos",
     "lag_yday",
     "diff_30",
-    "lag_30"
+    "hour_sin"
    ],
    "candidate_mae": 3.6
   },
@@ -50,10 +50,10 @@
     "ride_code",
     "hour_cos",
     "diff_30",
-    "lag_30",
-    "roll_mean_60"
+    "lag_yday",
+    "lag_30"
    ],
-   "candidate_mae": 3.9
+   "candidate_mae": 4.0
   },
   "90": {
    "available_pairs": 33939,
@@ -75,10 +75,10 @@
     "ride_code",
     "hour_cos",
     "diff_30",
-    "hour_sin",
-    "lag_30"
+    "lag_30",
+    "hour_sin"
    ],
-   "candidate_mae": 4.8
+   "candidate_mae": 4.9
   },
   "120": {
    "available_pairs": 32496,
@@ -103,7 +103,7 @@
     "hour_sin",
     "lag_30"
    ],
-   "candidate_mae": 5.3
+   "candidate_mae": 5.1
   }
  },
  "context": {
