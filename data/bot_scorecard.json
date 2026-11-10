@@ -1,14 +1,14 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-10T21:46:01.272838+00:00",
+ "updated": "2026-11-10T21:51:10.108690+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "Main Street Vehicles": "2026-11-10 16:10:00-05:00",
   "Seven Dwarfs Mine Train": "2026-11-10 16:40:00-05:00",
   "Space Mountain": "2026-11-10 16:25:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 33,
  "graded_all": {
   "n": 407,
   "wins": 83,
@@ -35,8 +35,59 @@
    "mae_shadow": 5.56
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 33,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-455",
+   "type": "D1",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
+   "horizon": 60,
+   "base": 25.0,
+   "shadow": 30.0,
+   "reason": "Seven Dwarfs Mine Train (posted 65) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-456",
+   "type": "D1",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
+   "horizon": 90,
+   "base": 30.0,
+   "shadow": 35.0,
+   "reason": "Seven Dwarfs Mine Train (posted 65) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-457",
+   "type": "D1",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Walt Disney World Railroad - Fantasyland",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Seven Dwarfs Mine Train (posted 65) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-458",
+   "type": "D1",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Walt Disney World Railroad - Fantasyland",
+   "horizon": 60,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Seven Dwarfs Mine Train (posted 65) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-459",
+   "type": "D1",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Walt Disney World Railroad - Fantasyland",
+   "horizon": 90,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Seven Dwarfs Mine Train (posted 65) down 15 min; same-land displacement +5"
+  }
+ ],
  "debug": ""
 }
