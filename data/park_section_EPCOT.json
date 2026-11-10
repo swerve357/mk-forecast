@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-10T08:31:21.753868+00:00",
- "last_sample": "2026-11-10T08:30:40+00:00",
- "samples": 64901,
+ "updated": "2026-11-10T09:00:57.445727+00:00",
+ "last_sample": "2026-11-10T09:00:32+00:00",
+ "samples": 65099,
  "history_samples": 0,
  "rides": [],
  "metrics": {
@@ -10,23 +10,23 @@
    "train_rows": 10481,
    "test_rows": 2743,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.0,
-   "rmse": 7.3,
+   "mae": 4.1,
+   "rmse": 7.5,
    "within10": 91,
-   "within5": 81,
-   "mape_ge20": 19.2,
-   "bias": -0.6,
+   "within5": 80,
+   "mape_ge20": 19.7,
+   "bias": -0.8,
    "baseline_mae": 4.4,
    "baseline_mape_ge20": 21.5,
-   "improvement_pct": 9.2,
+   "improvement_pct": 6.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
     "lag_yday",
     "hour_cos",
-    "hour_sin",
-    "lag_60"
+    "lag_60",
+    "hour_sin"
    ]
   },
   "60": {
