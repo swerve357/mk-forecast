@@ -1,28 +1,17 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-11T14:01:20.411190+00:00",
+ "updated": "2026-11-11T14:06:13.933621+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-10 17:10:00-05:00",
-  "Big Thunder Mountain Railroad": "2026-11-10 23:05:00-05:00",
-  "Country Bear Musical Jamboree": "2026-11-10 23:05:00-05:00",
   "Enchanted Tales with Belle": "2026-11-10 19:40:00-05:00",
   "Haunted Mansion": "2026-11-10 23:05:00-05:00",
-  "Jingle Cruise": "2026-11-10 22:10:00-05:00",
-  "Main Street Vehicles": "2026-11-10 16:10:00-05:00",
-  "Monsters, Inc. Laugh Floor": "2026-11-10 22:10:00-05:00",
-  "Pirates of the Caribbean": "2026-11-10 23:05:00-05:00",
   "Space Mountain": "2026-11-10 23:05:00-05:00",
-  "Swiss Family Treehouse": "2026-11-10 23:05:00-05:00",
   "The Hall of Presidents": "2026-11-10 21:10:00-05:00",
-  "The Magic Carpets of Aladdin": "2026-11-10 23:05:00-05:00",
-  "The Many Adventures of Winnie the Pooh": "2026-11-10 23:05:00-05:00",
-  "Walt Disney World Railroad - Fantasyland": "2026-11-10 18:35:00-05:00",
-  "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-10 18:35:00-05:00",
-  "Walt Disney's Enchanted Tiki Room": "2026-11-10 23:05:00-05:00"
+  "The Many Adventures of Winnie the Pooh": "2026-11-10 23:05:00-05:00"
  },
- "decisions_open": 21,
+ "decisions_open": 27,
  "graded_all": {
   "n": 445,
   "wins": 100,
@@ -49,28 +38,58 @@
    "mae_shadow": 5.64
   }
  },
- "new_decisions_this_run": 2,
+ "new_decisions_this_run": 6,
  "graded_this_run": 0,
  "last_decisions": [
   {
-   "id": "cb-484",
+   "id": "cb-487",
    "type": "D2",
-   "event_ride": "Mickey's PhilharMagic",
-   "ride": "Mickey's PhilharMagic",
+   "event_ride": "Jingle Cruise",
+   "ride": "Jingle Cruise",
    "horizon": 30,
-   "base": 15.0,
+   "base": 30.0,
    "shadow": 15.0,
-   "reason": "reopened after 600 min down; shadow = first posted wait at reopen"
+   "reason": "reopened after 660 min down; shadow = first posted wait at reopen"
   },
   {
-   "id": "cb-485",
+   "id": "cb-488",
    "type": "D2",
-   "event_ride": "TRON Lightcycle / Run",
-   "ride": "TRON Lightcycle / Run",
+   "event_ride": "Pirates of the Caribbean",
+   "ride": "Pirates of the Caribbean",
    "horizon": 30,
-   "base": 50.0,
-   "shadow": 25.0,
-   "reason": "reopened after 600 min down; shadow = first posted wait at reopen"
+   "base": 10.0,
+   "shadow": 5.0,
+   "reason": "reopened after 605 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-489",
+   "type": "D2",
+   "event_ride": "Swiss Family Treehouse",
+   "ride": "Swiss Family Treehouse",
+   "horizon": 30,
+   "base": 5.0,
+   "shadow": 5.0,
+   "reason": "reopened after 605 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-490",
+   "type": "D2",
+   "event_ride": "The Magic Carpets of Aladdin",
+   "ride": "The Magic Carpets of Aladdin",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 5.0,
+   "reason": "reopened after 605 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-491",
+   "type": "D2",
+   "event_ride": "Walt Disney's Enchanted Tiki Room",
+   "ride": "Walt Disney's Enchanted Tiki Room",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 605 min down; shadow = first posted wait at reopen"
   }
  ],
  "debug": ""
