@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-11T12:25:54.789475+00:00",
- "last_sample": "2026-11-11T12:25:25+00:00",
- "samples": 92893,
+ "updated": "2026-11-11T12:31:10.424785+00:00",
+ "last_sample": "2026-11-11T12:30:37+00:00",
+ "samples": 92929,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -14,11 +14,11 @@
    "rmse": 6.6,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.8,
-   "bias": -0.3,
+   "mape_ge20": 18.5,
+   "bias": -0.2,
    "baseline_mae": 4.6,
    "baseline_mape_ge20": 23.7,
-   "improvement_pct": 14.2,
+   "improvement_pct": 14.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -34,15 +34,15 @@
    "train_rows": 30882,
    "test_rows": 8388,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.5,
-   "rmse": 7.1,
+   "mae": 4.3,
+   "rmse": 7.0,
    "within10": 91,
-   "within5": 78,
-   "mape_ge20": 20.9,
-   "bias": -0.4,
+   "within5": 79,
+   "mape_ge20": 20.5,
+   "bias": -0.7,
    "baseline_mae": 5.5,
    "baseline_mape_ge20": 27.5,
-   "improvement_pct": 19.0,
+   "improvement_pct": 21.7,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_60"
+    "park_mean"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 29367,
    "test_rows": 8008,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.5,
+   "mae": 4.4,
    "rmse": 7.0,
-   "within10": 91,
-   "within5": 77,
-   "mape_ge20": 19.8,
-   "bias": 0.0,
+   "within10": 92,
+   "within5": 78,
+   "mape_ge20": 19.6,
+   "bias": -0.1,
    "baseline_mae": 6.2,
    "baseline_mape_ge20": 29.9,
-   "improvement_pct": 27.0,
+   "improvement_pct": 28.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -83,14 +83,14 @@
    "test_rows": 7653,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.7,
-   "rmse": 7.0,
+   "rmse": 7.1,
    "within10": 91,
-   "within5": 77,
-   "mape_ge20": 20.2,
-   "bias": 0.3,
+   "within5": 75,
+   "mape_ge20": 20.4,
+   "bias": 0.4,
    "baseline_mae": 6.8,
    "baseline_mape_ge20": 31.4,
-   "improvement_pct": 31.1,
+   "improvement_pct": 30.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -117,9 +117,9 @@
  "lookback_debug": "log rows 17740; act (1870, 31) idx 2026-10-30 04:00:00+00:00..2026-11-11 04:00:00+00:00; slots 0; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-11T12:06:27.510356+00:00",
-   "last_sample": "2026-11-11T12:05:35+00:00",
-   "samples": 75791,
+   "updated": "2026-11-11T12:31:31.633135+00:00",
+   "last_sample": "2026-11-11T12:30:37+00:00",
+   "samples": 75956,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -129,22 +129,22 @@
      "test_rows": 2925,
      "model": "gradient boosting (delta+round5)",
      "mae": 4.3,
-     "rmse": 7.4,
-     "within10": 90,
-     "within5": 79,
-     "mape_ge20": 18.4,
+     "rmse": 7.3,
+     "within10": 91,
+     "within5": 78,
+     "mape_ge20": 18.3,
      "bias": 0.6,
      "baseline_mae": 4.7,
      "baseline_mape_ge20": 21.0,
-     "improvement_pct": 8.4,
+     "improvement_pct": 8.1,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "ride_code",
       "wait",
-      "lag_60",
+      "lag_yday",
       "hour_cos",
       "hour_sin",
-      "lag_yday"
+      "lag_60"
      ]
     },
     "60": {
@@ -152,15 +152,15 @@
      "train_rows": 11330,
      "test_rows": 2758,
      "model": "gradient boosting (delta+round5)",
-     "mae": 4.5,
-     "rmse": 7.5,
-     "within10": 90,
-     "within5": 79,
-     "mape_ge20": 18.7,
+     "mae": 4.6,
+     "rmse": 7.7,
+     "within10": 89,
+     "within5": 77,
+     "mape_ge20": 19.1,
      "bias": 0.6,
      "baseline_mae": 6.2,
      "baseline_mape_ge20": 28.2,
-     "improvement_pct": 28.2,
+     "improvement_pct": 25.3,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "wait",
@@ -180,19 +180,19 @@
      "rmse": 7.9,
      "within10": 89,
      "within5": 77,
-     "mape_ge20": 19.2,
-     "bias": 0.6,
+     "mape_ge20": 19.8,
+     "bias": 0.5,
      "baseline_mae": 7.2,
      "baseline_mape_ge20": 31.9,
-     "improvement_pct": 35.6,
+     "improvement_pct": 35.1,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "wait",
       "ride_code",
       "hour_sin",
       "hour_cos",
-      "diff_30",
-      "lag_yday"
+      "lag_yday",
+      "diff_30"
      ]
     },
     "120": {
@@ -201,14 +201,14 @@
      "test_rows": 2489,
      "model": "gradient boosting (delta+round5)",
      "mae": 4.8,
-     "rmse": 7.7,
-     "within10": 89,
-     "within5": 76,
-     "mape_ge20": 20.7,
-     "bias": 0.1,
+     "rmse": 7.8,
+     "within10": 88,
+     "within5": 75,
+     "mape_ge20": 20.6,
+     "bias": 0.3,
      "baseline_mae": 7.7,
      "baseline_mape_ge20": 33.0,
-     "improvement_pct": 38.4,
+     "improvement_pct": 38.0,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "ride_code",
@@ -216,7 +216,7 @@
       "hour_sin",
       "hour_cos",
       "diff_30",
-      "roll_mean_30"
+      "lag_30"
      ]
     }
    },
@@ -235,9 +235,9 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-11T12:06:44.191415+00:00",
-   "last_sample": "2026-11-11T12:05:35+00:00",
-   "samples": 29198,
+   "updated": "2026-11-11T12:31:50.103447+00:00",
+   "last_sample": "2026-11-11T12:30:37+00:00",
+   "samples": 29263,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -353,9 +353,9 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-11T12:06:54.098037+00:00",
-   "last_sample": "2026-11-11T12:05:35+00:00",
-   "samples": 35936,
+   "updated": "2026-11-11T12:32:00.808873+00:00",
+   "last_sample": "2026-11-11T12:30:37+00:00",
+   "samples": 36016,
    "history_samples": 0,
    "rides": [],
    "metrics": {
