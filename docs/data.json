@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-11T10:01:16.500029+00:00",
- "last_sample": "2026-11-11T10:00:41+00:00",
- "samples": 91849,
+ "updated": "2026-11-11T10:06:09.971451+00:00",
+ "last_sample": "2026-11-11T10:05:31+00:00",
+ "samples": 91885,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -14,11 +14,11 @@
    "rmse": 6.5,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.5,
-   "bias": -0.2,
+   "mape_ge20": 18.7,
+   "bias": -0.3,
    "baseline_mae": 4.6,
    "baseline_mape_ge20": 23.7,
-   "improvement_pct": 15.8,
+   "improvement_pct": 15.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -34,15 +34,15 @@
    "train_rows": 30882,
    "test_rows": 8388,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.4,
+   "mae": 4.3,
    "rmse": 7.0,
-   "within10": 92,
+   "within10": 91,
    "within5": 79,
-   "mape_ge20": 20.2,
-   "bias": -0.4,
+   "mape_ge20": 20.5,
+   "bias": -0.6,
    "baseline_mae": 5.5,
    "baseline_mape_ge20": 27.5,
-   "improvement_pct": 20.4,
+   "improvement_pct": 22.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -59,14 +59,14 @@
    "test_rows": 8008,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.5,
-   "rmse": 7.1,
+   "rmse": 7.0,
    "within10": 91,
    "within5": 77,
-   "mape_ge20": 19.9,
-   "bias": 0.0,
+   "mape_ge20": 19.8,
+   "bias": -0.0,
    "baseline_mae": 6.2,
    "baseline_mape_ge20": 29.9,
-   "improvement_pct": 27.2,
+   "improvement_pct": 27.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -74,7 +74,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "mins_to_party_start"
+    "park_mean"
    ]
   },
   "120": {
@@ -82,23 +82,23 @@
    "train_rows": 27977,
    "test_rows": 7653,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.6,
-   "rmse": 7.0,
-   "within10": 92,
-   "within5": 77,
-   "mape_ge20": 20.2,
-   "bias": 0.1,
+   "mae": 4.8,
+   "rmse": 7.2,
+   "within10": 91,
+   "within5": 76,
+   "mape_ge20": 20.3,
+   "bias": 0.5,
    "baseline_mae": 6.8,
    "baseline_mape_ge20": 31.4,
-   "improvement_pct": 31.4,
+   "improvement_pct": 29.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
     "hour_sin",
-    "diff_30",
-    "mins_to_party_start"
+    "mins_to_party_start",
+    "diff_30"
    ]
   }
  },
@@ -114,7 +114,7 @@
  "demo": false,
  "lookback": {},
  "today": {},
- "lookback_debug": "log rows 18884; act (1870, 31) idx 2026-10-30 04:00:00+00:00..2026-11-11 04:00:00+00:00; slots 0; lookback rides 0; today graded 0",
+ "lookback_debug": "log rows 18796; act (1870, 31) idx 2026-10-30 04:00:00+00:00..2026-11-11 04:00:00+00:00; slots 0; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-11T09:46:35.347099+00:00",
