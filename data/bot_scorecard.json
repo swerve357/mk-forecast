@@ -1,17 +1,17 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-11T00:30:58.454744+00:00",
+ "updated": "2026-11-11T00:36:09.488937+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-10 17:10:00-05:00",
   "Casey Jr. Splash 'N' Soak Station": "2026-11-10 18:10:00-05:00",
+  "Enchanted Tales with Belle": "2026-11-10 19:40:00-05:00",
   "Main Street Vehicles": "2026-11-10 16:10:00-05:00",
-  "Space Mountain": "2026-11-10 16:25:00-05:00",
   "Walt Disney World Railroad - Fantasyland": "2026-11-10 18:35:00-05:00",
   "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-10 18:35:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 1,
  "graded_all": {
   "n": 441,
   "wins": 99,
@@ -38,8 +38,19 @@
    "mae_shadow": 5.72
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-461",
+   "type": "D2",
+   "event_ride": "Space Mountain",
+   "ride": "Space Mountain",
+   "horizon": 30,
+   "base": 25.0,
+   "shadow": 35.0,
+   "reason": "reopened after 195 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
