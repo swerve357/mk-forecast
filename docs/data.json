@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-11T17:16:02.287347+00:00",
- "last_sample": "2026-11-11T17:15:30+00:00",
- "samples": 94981,
+ "updated": "2026-11-11T17:21:00.736735+00:00",
+ "last_sample": "2026-11-11T17:20:31+00:00",
+ "samples": 95017,
  "history_samples": 11713,
  "rides": [
   {
    "name": "TRON Lightcycle / Run",
    "now": 55,
-   "trend30": 10,
+   "trend30": 20,
    "why": {
     "lag60": 50,
     "lag120": 45,
@@ -16,36 +16,36 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
-   "f30": 50,
+   "f30": 45,
    "f30_lo": 40,
    "f30_hi": 60,
    "f60": 50,
    "f60_lo": 40,
    "f60_hi": 55,
-   "f90": 50,
+   "f90": 45,
    "f90_lo": 40,
-   "f90_hi": 60,
+   "f90_hi": 55,
    "f120": 45,
    "f120_lo": 40,
-   "f120_hi": 60,
-   "score30_mae": 9.1,
-   "score30_in10": 74,
-   "score30_in5": 49,
+   "f120_hi": 55,
+   "score30_mae": 9.3,
+   "score30_in10": 72,
+   "score30_in5": 50,
    "score30_pairs": 351,
    "score60_mae": 8.8,
-   "score60_in10": 76,
-   "score60_in5": 51,
+   "score60_in10": 77,
+   "score60_in5": 50,
    "score60_pairs": 337,
-   "score90_mae": 9.6,
-   "score90_in10": 67,
-   "score90_in5": 46,
-   "score90_pairs": 322,
-   "score120_mae": 9.4,
-   "score120_in10": 71,
-   "score120_in5": 44,
+   "score90_mae": 9.1,
+   "score90_in10": 71,
+   "score90_in5": 47,
+   "score90_pairs": 323,
+   "score120_mae": 9.9,
+   "score120_in10": 70,
+   "score120_in5": 43,
    "score120_pairs": 308,
    "people": null,
    "people_lo": 275,
@@ -64,8 +64,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 45,
    "f30_lo": 35,
@@ -73,32 +73,77 @@
    "f60": 40,
    "f60_lo": 35,
    "f60_hi": 55,
-   "f90": 45,
+   "f90": 40,
    "f90_lo": 35,
    "f90_hi": 55,
    "f120": 40,
    "f120_lo": 35,
    "f120_hi": 50,
-   "score30_mae": 7.6,
-   "score30_in10": 81,
+   "score30_mae": 7.7,
+   "score30_in10": 79,
    "score30_in5": 53,
    "score30_pairs": 352,
    "score60_mae": 7.9,
-   "score60_in10": 79,
-   "score60_in5": 56,
+   "score60_in10": 80,
+   "score60_in5": 55,
    "score60_pairs": 338,
-   "score90_mae": 7.8,
-   "score90_in10": 81,
-   "score90_in5": 55,
-   "score90_pairs": 323,
-   "score120_mae": 7.9,
-   "score120_in10": 80,
-   "score120_in5": 53,
-   "score120_pairs": 313,
+   "score90_mae": 7.4,
+   "score90_in10": 83,
+   "score90_in5": 58,
+   "score90_pairs": 324,
+   "score120_mae": 7.7,
+   "score120_in10": 83,
+   "score120_in5": 51,
+   "score120_pairs": 312,
    "people": null,
    "people_lo": 133,
    "people_hi": 450,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Jingle Cruise",
+   "now": 45,
+   "trend30": 5,
+   "why": {
+    "lag60": 40,
+    "lag120": 40,
+    "lag_yday": 55,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 21,
+    "park_busy": 14,
+    "mins_open": 205,
+    "mins_close": 635
+   },
+   "f30": 40,
+   "f30_lo": 35,
+   "f30_hi": 50,
+   "f60": 40,
+   "f60_lo": 35,
+   "f60_hi": 50,
+   "f90": 40,
+   "f90_lo": 35,
+   "f90_hi": 50,
+   "f120": 40,
+   "f120_lo": 35,
+   "f120_hi": 50,
+   "score30_mae": 7.5,
+   "score30_in10": 81,
+   "score30_in5": 58,
+   "score30_pairs": 339,
+   "score60_mae": 7.9,
+   "score60_in10": 82,
+   "score60_in5": 56,
+   "score60_pairs": 325,
+   "score90_mae": 8.2,
+   "score90_in10": 78,
+   "score90_in5": 55,
+   "score90_pairs": 311,
+   "score120_mae": 8.4,
+   "score120_in10": 76,
+   "score120_in5": 53,
+   "score120_pairs": 296,
+   "people": null
   },
   {
    "name": "Space Mountain",
@@ -112,8 +157,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 35,
    "f30_lo": 25,
@@ -121,94 +166,49 @@
    "f60": 35,
    "f60_lo": 25,
    "f60_hi": 45,
-   "f90": 35,
-   "f90_lo": 20,
+   "f90": 30,
+   "f90_lo": 25,
    "f90_hi": 45,
-   "f120": 25,
-   "f120_lo": 15,
+   "f120": 30,
+   "f120_lo": 20,
    "f120_hi": 45,
-   "score30_mae": 7.5,
-   "score30_in10": 82,
-   "score30_in5": 63,
+   "score30_mae": 7.1,
+   "score30_in10": 83,
+   "score30_in5": 64,
    "score30_pairs": 303,
-   "score60_mae": 8.6,
-   "score60_in10": 76,
-   "score60_in5": 57,
+   "score60_mae": 8.3,
+   "score60_in10": 78,
+   "score60_in5": 56,
    "score60_pairs": 283,
-   "score90_mae": 8.8,
-   "score90_in10": 73,
-   "score90_in5": 46,
-   "score90_pairs": 262,
-   "score120_mae": 7.7,
-   "score120_in10": 72,
-   "score120_in5": 57,
-   "score120_pairs": 240,
+   "score90_mae": 8.6,
+   "score90_in10": 74,
+   "score90_in5": 47,
+   "score90_pairs": 263,
+   "score120_mae": 8.0,
+   "score120_in10": 74,
+   "score120_in5": 52,
+   "score120_pairs": 241,
    "people": null,
    "people_lo": 270,
    "people_hi": 900,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
-   "name": "Jingle Cruise",
-   "now": 40,
-   "trend30": 0,
-   "why": {
-    "lag60": 40,
-    "lag120": 40,
-    "lag_yday": 55,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 21,
-    "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
-   },
-   "f30": 40,
-   "f30_lo": 30,
-   "f30_hi": 50,
-   "f60": 40,
-   "f60_lo": 30,
-   "f60_hi": 45,
-   "f90": 45,
-   "f90_lo": 30,
-   "f90_hi": 50,
-   "f120": 40,
-   "f120_lo": 30,
-   "f120_hi": 45,
-   "score30_mae": 7.7,
-   "score30_in10": 82,
-   "score30_in5": 57,
-   "score30_pairs": 339,
-   "score60_mae": 8.1,
-   "score60_in10": 79,
-   "score60_in5": 56,
-   "score60_pairs": 325,
-   "score90_mae": 8.3,
-   "score90_in10": 74,
-   "score90_in5": 55,
-   "score90_pairs": 310,
-   "score120_mae": 8.3,
-   "score120_in10": 75,
-   "score120_in5": 56,
-   "score120_pairs": 296,
-   "people": null
-  },
-  {
    "name": "Seven Dwarfs Mine Train",
    "now": 40,
-   "trend30": 0,
+   "trend30": -5,
    "why": {
-    "lag60": 45,
-    "lag120": 35,
+    "lag60": 35,
+    "lag120": 40,
     "lag_yday": 50,
     "down60": 0,
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
-   "f30": 45,
+   "f30": 50,
    "f30_lo": 35,
    "f30_hi": 50,
    "f60": 45,
@@ -216,29 +216,77 @@
    "f60_hi": 50,
    "f90": 45,
    "f90_lo": 35,
-   "f90_hi": 55,
+   "f90_hi": 50,
    "f120": 45,
    "f120_lo": 35,
-   "f120_hi": 50,
-   "score30_mae": 6.0,
-   "score30_in10": 89,
-   "score30_in5": 72,
+   "f120_hi": 45,
+   "score30_mae": 5.7,
+   "score30_in10": 90,
+   "score30_in5": 73,
    "score30_pairs": 322,
-   "score60_mae": 5.6,
+   "score60_mae": 5.3,
    "score60_in10": 92,
-   "score60_in5": 68,
+   "score60_in5": 73,
    "score60_pairs": 302,
-   "score90_mae": 5.5,
-   "score90_in10": 94,
-   "score90_in5": 70,
-   "score90_pairs": 281,
+   "score90_mae": 5.6,
+   "score90_in10": 92,
+   "score90_in5": 71,
+   "score90_pairs": 282,
    "score120_mae": 6.4,
-   "score120_in10": 90,
-   "score120_in5": 62,
+   "score120_in10": 92,
+   "score120_in5": 63,
    "score120_pairs": 263,
    "people": null,
    "people_lo": 200,
    "people_hi": 660,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "The Many Adventures of Winnie the Pooh",
+   "now": 35,
+   "trend30": 0,
+   "why": {
+    "lag60": 30,
+    "lag120": 25,
+    "lag_yday": 45,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 21,
+    "park_busy": 14,
+    "mins_open": 205,
+    "mins_close": 635
+   },
+   "f30": 35,
+   "f30_lo": 25,
+   "f30_hi": 40,
+   "f60": 30,
+   "f60_lo": 25,
+   "f60_hi": 40,
+   "f90": 30,
+   "f90_lo": 25,
+   "f90_hi": 40,
+   "f120": 30,
+   "f120_lo": 25,
+   "f120_hi": 40,
+   "score30_mae": 5.3,
+   "score30_in10": 90,
+   "score30_in5": 75,
+   "score30_pairs": 315,
+   "score60_mae": 5.7,
+   "score60_in10": 89,
+   "score60_in5": 71,
+   "score60_pairs": 294,
+   "score90_mae": 5.5,
+   "score90_in10": 93,
+   "score90_in5": 71,
+   "score90_pairs": 284,
+   "score120_mae": 5.9,
+   "score120_in10": 91,
+   "score120_in5": 65,
+   "score120_pairs": 274,
+   "people": null,
+   "people_lo": 105,
+   "people_hi": 350,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
@@ -247,19 +295,19 @@
    "trend30": 10,
    "why": {
     "lag60": 30,
-    "lag120": 25,
+    "lag120": 20,
     "lag_yday": 45,
     "down60": 0,
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 30,
    "f30_lo": 25,
    "f30_hi": 40,
-   "f60": 35,
+   "f60": 30,
    "f60_lo": 25,
    "f60_hi": 40,
    "f90": 30,
@@ -268,22 +316,22 @@
    "f120": 25,
    "f120_lo": 20,
    "f120_hi": 35,
-   "score30_mae": 4.2,
-   "score30_in10": 94,
-   "score30_in5": 82,
-   "score30_pairs": 314,
+   "score30_mae": 4.3,
+   "score30_in10": 95,
+   "score30_in5": 80,
+   "score30_pairs": 315,
    "score60_mae": 5.2,
-   "score60_in10": 90,
-   "score60_in5": 72,
-   "score60_pairs": 296,
-   "score90_mae": 5.3,
+   "score60_in10": 92,
+   "score60_in5": 73,
+   "score60_pairs": 297,
+   "score90_mae": 5.1,
    "score90_in10": 91,
-   "score90_in5": 70,
-   "score90_pairs": 278,
-   "score120_mae": 6.0,
-   "score120_in10": 89,
-   "score120_in5": 66,
-   "score120_pairs": 264,
+   "score90_in5": 71,
+   "score90_pairs": 279,
+   "score120_mae": 6.2,
+   "score120_in10": 90,
+   "score120_in5": 62,
+   "score120_pairs": 265,
    "people": null,
    "people_lo": 280,
    "people_hi": 910,
@@ -291,8 +339,8 @@
   },
   {
    "name": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "now": 35,
-   "trend30": -10,
+   "now": 30,
+   "trend30": -15,
    "why": {
     "lag60": 30,
     "lag120": 20,
@@ -301,88 +349,40 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 40,
    "f30_lo": 30,
-   "f30_hi": 50,
-   "f60": 40,
-   "f60_lo": 30,
-   "f60_hi": 45,
-   "f90": 40,
-   "f90_lo": 25,
-   "f90_hi": 50,
-   "f120": 35,
-   "f120_lo": 30,
-   "f120_hi": 45,
-   "score30_mae": 7.2,
-   "score30_in10": 84,
-   "score30_in5": 59,
-   "score30_pairs": 361,
-   "score60_mae": 6.7,
-   "score60_in10": 85,
-   "score60_in5": 61,
-   "score60_pairs": 346,
-   "score90_mae": 6.6,
-   "score90_in10": 85,
-   "score90_in5": 66,
-   "score90_pairs": 331,
-   "score120_mae": 7.1,
-   "score120_in10": 85,
-   "score120_in5": 59,
-   "score120_pairs": 317,
-   "people": null,
-   "people_lo": 233,
-   "people_hi": 770,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
-  },
-  {
-   "name": "The Many Adventures of Winnie the Pooh",
-   "now": 30,
-   "trend30": -5,
-   "why": {
-    "lag60": 30,
-    "lag120": 25,
-    "lag_yday": 45,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 21,
-    "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
-   },
-   "f30": 35,
-   "f30_lo": 25,
-   "f30_hi": 40,
+   "f30_hi": 45,
    "f60": 35,
    "f60_lo": 25,
-   "f60_hi": 40,
+   "f60_hi": 45,
    "f90": 35,
    "f90_lo": 25,
-   "f90_hi": 40,
-   "f120": 30,
-   "f120_lo": 20,
-   "f120_hi": 40,
-   "score30_mae": 5.2,
-   "score30_in10": 92,
-   "score30_in5": 76,
-   "score30_pairs": 315,
-   "score60_mae": 5.8,
-   "score60_in10": 90,
-   "score60_in5": 67,
-   "score60_pairs": 294,
-   "score90_mae": 5.2,
-   "score90_in10": 94,
-   "score90_in5": 73,
-   "score90_pairs": 283,
-   "score120_mae": 5.9,
-   "score120_in10": 91,
-   "score120_in5": 67,
-   "score120_pairs": 274,
+   "f90_hi": 45,
+   "f120": 35,
+   "f120_lo": 25,
+   "f120_hi": 45,
+   "score30_mae": 7.1,
+   "score30_in10": 85,
+   "score30_in5": 60,
+   "score30_pairs": 361,
+   "score60_mae": 6.8,
+   "score60_in10": 85,
+   "score60_in5": 63,
+   "score60_pairs": 346,
+   "score90_mae": 7.0,
+   "score90_in10": 86,
+   "score90_in5": 63,
+   "score90_pairs": 332,
+   "score120_mae": 6.9,
+   "score120_in10": 86,
+   "score120_in5": 60,
+   "score120_pairs": 317,
    "people": null,
-   "people_lo": 90,
-   "people_hi": 300,
+   "people_lo": 200,
+   "people_hi": 660,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
@@ -397,13 +397,13 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 25,
-   "f30_lo": 20,
+   "f30_lo": 15,
    "f30_hi": 30,
-   "f60": 25,
+   "f60": 20,
    "f60_lo": 15,
    "f60_hi": 30,
    "f90": 20,
@@ -412,20 +412,20 @@
    "f120": 15,
    "f120_lo": 10,
    "f120_hi": 25,
-   "score30_mae": 4.0,
-   "score30_in10": 96,
-   "score30_in5": 80,
+   "score30_mae": 3.9,
+   "score30_in10": 97,
+   "score30_in5": 82,
    "score30_pairs": 346,
-   "score60_mae": 5.1,
+   "score60_mae": 5.3,
    "score60_in10": 89,
-   "score60_in5": 72,
+   "score60_in5": 69,
    "score60_pairs": 332,
-   "score90_mae": 5.2,
-   "score90_in10": 91,
-   "score90_in5": 73,
-   "score90_pairs": 318,
-   "score120_mae": 5.5,
-   "score120_in10": 90,
+   "score90_mae": 5.9,
+   "score90_in10": 89,
+   "score90_in5": 69,
+   "score90_pairs": 319,
+   "score120_mae": 5.6,
+   "score120_in10": 88,
    "score120_in5": 72,
    "score120_pairs": 303,
    "people": null,
@@ -434,47 +434,95 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
-   "name": "Big Thunder Mountain Railroad",
+   "name": "Under the Sea - Journey of The Little Mermaid",
    "now": 25,
-   "trend30": 0,
+   "trend30": 20,
    "why": {
-    "lag60": 20,
-    "lag120": 10,
+    "lag60": 5,
+    "lag120": 5,
     "lag_yday": 35,
     "down60": 0,
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
+   },
+   "f30": 20,
+   "f30_lo": 10,
+   "f30_hi": 30,
+   "f60": 15,
+   "f60_lo": 5,
+   "f60_hi": 25,
+   "f90": 15,
+   "f90_lo": 5,
+   "f90_hi": 30,
+   "f120": 15,
+   "f120_lo": 10,
+   "f120_hi": 30,
+   "score30_mae": 4.6,
+   "score30_in10": 92,
+   "score30_in5": 73,
+   "score30_pairs": 357,
+   "score60_mae": 6.1,
+   "score60_in10": 85,
+   "score60_in5": 67,
+   "score60_pairs": 343,
+   "score90_mae": 6.7,
+   "score90_in10": 83,
+   "score90_in5": 61,
+   "score90_pairs": 329,
+   "score120_mae": 7.4,
+   "score120_in10": 80,
+   "score120_in5": 55,
+   "score120_pairs": 314,
+   "people": null,
+   "people_lo": 167,
+   "people_hi": 550,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Big Thunder Mountain Railroad",
+   "now": 25,
+   "trend30": 0,
+   "why": {
+    "lag60": 20,
+    "lag120": 20,
+    "lag_yday": 40,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 21,
+    "park_busy": 14,
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 30,
    "f30_lo": 20,
    "f30_hi": 35,
-   "f60": 30,
+   "f60": 25,
    "f60_lo": 20,
    "f60_hi": 35,
    "f90": 25,
    "f90_lo": 20,
    "f90_hi": 35,
-   "f120": 25,
+   "f120": 20,
    "f120_lo": 20,
    "f120_hi": 30,
-   "score30_mae": 6.6,
+   "score30_mae": 6.5,
    "score30_in10": 85,
    "score30_in5": 65,
    "score30_pairs": 350,
-   "score60_mae": 7.4,
+   "score60_mae": 7.2,
    "score60_in10": 84,
-   "score60_in5": 58,
+   "score60_in5": 57,
    "score60_pairs": 336,
    "score90_mae": 7.2,
-   "score90_in10": 85,
-   "score90_in5": 56,
-   "score90_pairs": 321,
-   "score120_mae": 7.0,
-   "score120_in10": 85,
-   "score120_in5": 64,
+   "score90_in10": 84,
+   "score90_in5": 55,
+   "score90_pairs": 322,
+   "score120_mae": 6.9,
+   "score120_in10": 88,
+   "score120_in5": 63,
    "score120_pairs": 307,
    "people": null,
    "people_lo": 175,
@@ -486,15 +534,15 @@
    "now": 20,
    "trend30": 0,
    "why": {
-    "lag60": 10,
+    "lag60": 15,
     "lag120": 5,
     "lag_yday": 25,
     "down60": 0,
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 20,
    "f30_lo": 15,
@@ -502,7 +550,7 @@
    "f60": 20,
    "f60_lo": 10,
    "f60_hi": 25,
-   "f90": 20,
+   "f90": 15,
    "f90_lo": 10,
    "f90_hi": 25,
    "f120": 15,
@@ -510,19 +558,19 @@
    "f120_hi": 25,
    "score30_mae": 3.3,
    "score30_in10": 95,
-   "score30_in5": 84,
+   "score30_in5": 87,
    "score30_pairs": 345,
-   "score60_mae": 4.3,
+   "score60_mae": 4.2,
    "score60_in10": 92,
-   "score60_in5": 84,
+   "score60_in5": 83,
    "score60_pairs": 334,
-   "score90_mae": 4.5,
-   "score90_in10": 91,
-   "score90_in5": 81,
-   "score90_pairs": 321,
-   "score120_mae": 4.3,
+   "score90_mae": 4.4,
+   "score90_in10": 92,
+   "score90_in5": 82,
+   "score90_pairs": 322,
+   "score120_mae": 4.4,
    "score120_in10": 94,
-   "score120_in5": 82,
+   "score120_in5": 81,
    "score120_pairs": 307,
    "people": null,
    "people_lo": 47,
@@ -541,8 +589,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 20,
    "f30_lo": 10,
@@ -552,25 +600,25 @@
    "f60_hi": 30,
    "f90": 15,
    "f90_lo": 10,
-   "f90_hi": 30,
-   "f120": 10,
+   "f90_hi": 25,
+   "f120": 15,
    "f120_lo": 10,
    "f120_hi": 25,
    "score30_mae": 5.6,
    "score30_in10": 90,
-   "score30_in5": 70,
+   "score30_in5": 69,
    "score30_pairs": 354,
-   "score60_mae": 5.9,
-   "score60_in10": 90,
-   "score60_in5": 64,
+   "score60_mae": 6.2,
+   "score60_in10": 86,
+   "score60_in5": 65,
    "score60_pairs": 341,
-   "score90_mae": 6.4,
+   "score90_mae": 6.0,
    "score90_in10": 88,
-   "score90_in5": 62,
-   "score90_pairs": 327,
-   "score120_mae": 6.4,
-   "score120_in10": 87,
-   "score120_in5": 63,
+   "score90_in5": 66,
+   "score90_pairs": 328,
+   "score120_mae": 7.0,
+   "score120_in10": 88,
+   "score120_in5": 62,
    "score120_pairs": 313,
    "people": null,
    "people_lo": 117,
@@ -589,8 +637,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 20,
    "f30_lo": 20,
@@ -599,76 +647,28 @@
    "f60_lo": 15,
    "f60_hi": 20,
    "f90": 20,
-   "f90_lo": 20,
+   "f90_lo": 15,
    "f90_hi": 20,
    "f120": 20,
-   "f120_lo": 15,
+   "f120_lo": 20,
    "f120_hi": 20,
    "score30_mae": 0.7,
-   "score30_in10": 100,
+   "score30_in10": 99,
    "score30_in5": 97,
-   "score30_pairs": 209,
+   "score30_pairs": 210,
    "score60_mae": 0.8,
    "score60_in10": 100,
-   "score60_in5": 96,
-   "score60_pairs": 191,
+   "score60_in5": 95,
+   "score60_pairs": 192,
    "score90_mae": 0.7,
    "score90_in10": 100,
    "score90_in5": 95,
-   "score90_pairs": 173,
+   "score90_pairs": 174,
    "score120_mae": 0.6,
    "score120_in10": 100,
-   "score120_in5": 95,
-   "score120_pairs": 155,
-   "people": null
-  },
-  {
-   "name": "Mad Tea Party",
-   "now": 15,
-   "trend30": 5,
-   "why": {
-    "lag60": 5,
-    "lag120": 5,
-    "lag_yday": 20,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 21,
-    "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
-   },
-   "f30": 15,
-   "f30_lo": 5,
-   "f30_hi": 20,
-   "f60": 10,
-   "f60_lo": 5,
-   "f60_hi": 15,
-   "f90": 10,
-   "f90_lo": 5,
-   "f90_hi": 20,
-   "f120": 10,
-   "f120_lo": 5,
-   "f120_hi": 15,
-   "score30_mae": 2.4,
-   "score30_in10": 100,
-   "score30_in5": 95,
-   "score30_pairs": 362,
-   "score60_mae": 2.5,
-   "score60_in10": 99,
-   "score60_in5": 96,
-   "score60_pairs": 348,
-   "score90_mae": 2.6,
-   "score90_in10": 100,
-   "score90_in5": 94,
-   "score90_pairs": 333,
-   "score120_mae": 2.8,
-   "score120_in10": 100,
    "score120_in5": 94,
-   "score120_pairs": 319,
-   "people": null,
-   "people_lo": 50,
-   "people_hi": 165,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+   "score120_pairs": 156,
+   "people": null
   },
   {
    "name": "The Hall of Presidents",
@@ -682,8 +682,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 15,
    "f30_lo": 15,
@@ -695,24 +695,24 @@
    "f90_lo": 10,
    "f90_hi": 15,
    "f120": 15,
-   "f120_lo": 10,
+   "f120_lo": 15,
    "f120_hi": 15,
-   "score30_mae": 0.1,
+   "score30_mae": 0.0,
    "score30_in10": 100,
    "score30_in5": 100,
    "score30_pairs": 155,
    "score60_mae": 0.0,
    "score60_in10": 100,
    "score60_in5": 100,
-   "score60_pairs": 137,
-   "score90_mae": 0.3,
+   "score60_pairs": 138,
+   "score90_mae": 0.1,
    "score90_in10": 100,
    "score90_in5": 100,
-   "score90_pairs": 119,
+   "score90_pairs": 120,
    "score120_mae": 0.0,
    "score120_in10": 100,
    "score120_in5": 100,
-   "score120_pairs": 102,
+   "score120_pairs": 103,
    "people": null
   },
   {
@@ -727,8 +727,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 15,
    "f30_lo": 10,
@@ -742,18 +742,18 @@
    "f120": 10,
    "f120_lo": 5,
    "f120_hi": 20,
-   "score30_mae": 2.9,
+   "score30_mae": 2.8,
    "score30_in10": 99,
-   "score30_in5": 91,
+   "score30_in5": 93,
    "score30_pairs": 350,
    "score60_mae": 3.4,
    "score60_in10": 100,
-   "score60_in5": 90,
+   "score60_in5": 91,
    "score60_pairs": 336,
-   "score90_mae": 4.2,
-   "score90_in10": 99,
-   "score90_in5": 81,
-   "score90_pairs": 321,
+   "score90_mae": 3.8,
+   "score90_in10": 100,
+   "score90_in5": 85,
+   "score90_pairs": 322,
    "score120_mae": 3.9,
    "score120_in10": 100,
    "score120_in5": 85,
@@ -775,8 +775,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 10,
    "f30_lo": 10,
@@ -797,15 +797,15 @@
    "score60_mae": 0.0,
    "score60_in10": 100,
    "score60_in5": 100,
-   "score60_pairs": 269,
+   "score60_pairs": 270,
    "score90_mae": 0.0,
    "score90_in10": 100,
    "score90_in5": 100,
-   "score90_pairs": 251,
+   "score90_pairs": 252,
    "score120_mae": 0.0,
    "score120_in10": 100,
    "score120_in5": 100,
-   "score120_pairs": 233,
+   "score120_pairs": 234,
    "people": null
   },
   {
@@ -820,8 +820,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 10,
    "f30_lo": 10,
@@ -842,15 +842,15 @@
    "score60_mae": 0.0,
    "score60_in10": 100,
    "score60_in5": 100,
-   "score60_pairs": 272,
+   "score60_pairs": 273,
    "score90_mae": 0.0,
    "score90_in10": 100,
    "score90_in5": 100,
-   "score90_pairs": 254,
-   "score120_mae": 0.0,
+   "score90_pairs": 255,
+   "score120_mae": 0.1,
    "score120_in10": 100,
    "score120_in5": 100,
-   "score120_pairs": 236,
+   "score120_pairs": 237,
    "people": null
   },
   {
@@ -865,12 +865,12 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 10,
    "f30_lo": 10,
-   "f30_hi": 10,
+   "f30_hi": 15,
    "f60": 10,
    "f60_lo": 10,
    "f60_hi": 10,
@@ -879,20 +879,20 @@
    "f90_hi": 15,
    "f120": 10,
    "f120_lo": 10,
-   "f120_hi": 15,
-   "score30_mae": 1.3,
+   "f120_hi": 10,
+   "score30_mae": 1.2,
    "score30_in10": 100,
    "score30_in5": 100,
    "score30_pairs": 291,
-   "score60_mae": 1.8,
+   "score60_mae": 1.9,
    "score60_in10": 100,
    "score60_in5": 100,
    "score60_pairs": 277,
-   "score90_mae": 2.1,
+   "score90_mae": 2.2,
    "score90_in10": 100,
    "score90_in5": 99,
-   "score90_pairs": 262,
-   "score120_mae": 2.5,
+   "score90_pairs": 263,
+   "score120_mae": 2.4,
    "score120_in10": 100,
    "score120_in5": 99,
    "score120_pairs": 248,
@@ -903,42 +903,42 @@
    "now": 10,
    "trend30": -5,
    "why": {
-    "lag60": 10,
+    "lag60": 15,
     "lag120": 10,
-    "lag_yday": 30,
+    "lag_yday": 20,
     "down60": 0,
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 15,
    "f30_lo": 5,
-   "f30_hi": 20,
-   "f60": 10,
+   "f30_hi": 15,
+   "f60": 15,
    "f60_lo": 5,
    "f60_hi": 20,
    "f90": 10,
    "f90_lo": 5,
-   "f90_hi": 20,
-   "f120": 5,
+   "f90_hi": 15,
+   "f120": 10,
    "f120_lo": 5,
-   "f120_hi": 20,
-   "score30_mae": 2.8,
+   "f120_hi": 15,
+   "score30_mae": 2.6,
    "score30_in10": 98,
-   "score30_in5": 88,
+   "score30_in5": 89,
    "score30_pairs": 348,
-   "score60_mae": 3.5,
+   "score60_mae": 3.2,
    "score60_in10": 95,
-   "score60_in5": 84,
+   "score60_in5": 86,
    "score60_pairs": 334,
-   "score90_mae": 3.7,
+   "score90_mae": 3.6,
    "score90_in10": 93,
    "score90_in5": 86,
-   "score90_pairs": 319,
+   "score90_pairs": 320,
    "score120_mae": 3.7,
-   "score120_in10": 90,
+   "score120_in10": 91,
    "score120_in5": 86,
    "score120_pairs": 305,
    "people": null,
@@ -958,37 +958,37 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 10,
    "f30_lo": 10,
    "f30_hi": 10,
    "f60": 10,
-   "f60_lo": 5,
-   "f60_hi": 10,
+   "f60_lo": 10,
+   "f60_hi": 15,
    "f90": 10,
-   "f90_lo": 10,
-   "f90_hi": 15,
+   "f90_lo": 5,
+   "f90_hi": 10,
    "f120": 10,
    "f120_lo": 10,
    "f120_hi": 15,
-   "score30_mae": 0.7,
+   "score30_mae": 0.6,
    "score30_in10": 100,
    "score30_in5": 97,
-   "score30_pairs": 209,
-   "score60_mae": 2.0,
+   "score30_pairs": 210,
+   "score60_mae": 2.2,
    "score60_in10": 100,
    "score60_in5": 94,
-   "score60_pairs": 191,
+   "score60_pairs": 192,
    "score90_mae": 1.9,
    "score90_in10": 100,
    "score90_in5": 100,
-   "score90_pairs": 173,
-   "score120_mae": 1.6,
+   "score90_pairs": 174,
+   "score120_mae": 1.2,
    "score120_in10": 100,
-   "score120_in5": 100,
-   "score120_pairs": 155,
+   "score120_in5": 97,
+   "score120_pairs": 156,
    "people": null
   },
   {
@@ -1003,8 +1003,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 10,
    "f30_lo": 10,
@@ -1017,24 +1017,72 @@
    "f90_hi": 10,
    "f120": 10,
    "f120_lo": 10,
-   "f120_hi": 15,
+   "f120_hi": 10,
    "score30_mae": 0.4,
    "score30_in10": 99,
    "score30_in5": 98,
    "score30_pairs": 331,
-   "score60_mae": 0.5,
+   "score60_mae": 0.6,
    "score60_in10": 99,
    "score60_in5": 99,
-   "score60_pairs": 307,
+   "score60_pairs": 308,
    "score90_mae": 1.0,
    "score90_in10": 99,
    "score90_in5": 99,
-   "score90_pairs": 289,
-   "score120_mae": 1.3,
+   "score90_pairs": 290,
+   "score120_mae": 1.4,
    "score120_in10": 99,
    "score120_in5": 99,
-   "score120_pairs": 271,
+   "score120_pairs": 272,
    "people": null
+  },
+  {
+   "name": "Tomorrowland Speedway",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": 15,
+    "lag120": 10,
+    "lag_yday": 20,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 21,
+    "park_busy": 14,
+    "mins_open": 205,
+    "mins_close": 635
+   },
+   "f30": 10,
+   "f30_lo": 5,
+   "f30_hi": 20,
+   "f60": 10,
+   "f60_lo": 5,
+   "f60_hi": 15,
+   "f90": 10,
+   "f90_lo": 5,
+   "f90_hi": 20,
+   "f120": 10,
+   "f120_lo": 5,
+   "f120_hi": 20,
+   "score30_mae": 4.3,
+   "score30_in10": 96,
+   "score30_in5": 87,
+   "score30_pairs": 361,
+   "score60_mae": 4.4,
+   "score60_in10": 95,
+   "score60_in5": 86,
+   "score60_pairs": 347,
+   "score90_mae": 4.7,
+   "score90_in10": 95,
+   "score90_in5": 85,
+   "score90_pairs": 333,
+   "score120_mae": 4.8,
+   "score120_in10": 95,
+   "score120_in5": 83,
+   "score120_pairs": 318,
+   "people": null,
+   "people_lo": 37,
+   "people_hi": 130,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
    "name": "\"it's a small world\"",
@@ -1048,40 +1096,88 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 15,
    "f30_lo": 5,
    "f30_hi": 25,
    "f60": 15,
    "f60_lo": 5,
-   "f60_hi": 20,
-   "f90": 15,
+   "f60_hi": 25,
+   "f90": 10,
    "f90_lo": 10,
    "f90_hi": 20,
    "f120": 10,
    "f120_lo": 5,
    "f120_hi": 20,
-   "score30_mae": 4.6,
-   "score30_in10": 92,
-   "score30_in5": 80,
+   "score30_mae": 4.4,
+   "score30_in10": 95,
+   "score30_in5": 81,
    "score30_pairs": 357,
-   "score60_mae": 5.3,
-   "score60_in10": 89,
-   "score60_in5": 78,
+   "score60_mae": 5.1,
+   "score60_in10": 91,
+   "score60_in5": 76,
    "score60_pairs": 343,
-   "score90_mae": 5.3,
-   "score90_in10": 90,
-   "score90_in5": 68,
-   "score90_pairs": 328,
-   "score120_mae": 5.7,
-   "score120_in10": 89,
-   "score120_in5": 67,
+   "score90_mae": 5.5,
+   "score90_in10": 88,
+   "score90_in5": 67,
+   "score90_pairs": 329,
+   "score120_mae": 5.4,
+   "score120_in10": 93,
+   "score120_in5": 68,
    "score120_pairs": 314,
    "people": null,
    "people_lo": 93,
    "people_hi": 300,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Mad Tea Party",
+   "now": 5,
+   "trend30": -5,
+   "why": {
+    "lag60": 10,
+    "lag120": 5,
+    "lag_yday": 20,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 21,
+    "park_busy": 14,
+    "mins_open": 205,
+    "mins_close": 635
+   },
+   "f30": 10,
+   "f30_lo": 5,
+   "f30_hi": 10,
+   "f60": 10,
+   "f60_lo": 5,
+   "f60_hi": 15,
+   "f90": 10,
+   "f90_lo": 5,
+   "f90_hi": 15,
+   "f120": 5,
+   "f120_lo": 5,
+   "f120_hi": 10,
+   "score30_mae": 2.3,
+   "score30_in10": 100,
+   "score30_in5": 96,
+   "score30_pairs": 362,
+   "score60_mae": 2.4,
+   "score60_in10": 100,
+   "score60_in5": 96,
+   "score60_pairs": 348,
+   "score90_mae": 2.7,
+   "score90_in10": 100,
+   "score90_in5": 93,
+   "score90_pairs": 334,
+   "score120_mae": 3.1,
+   "score120_in10": 100,
+   "score120_in5": 93,
+   "score120_pairs": 319,
+   "people": null,
+   "people_lo": 17,
+   "people_hi": 55,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
@@ -1096,22 +1192,22 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 5,
    "f30_lo": 5,
    "f30_hi": 10,
    "f60": 5,
    "f60_lo": 5,
-   "f60_hi": 15,
+   "f60_hi": 10,
    "f90": 5,
    "f90_lo": 5,
    "f90_hi": 10,
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 10,
-   "score30_mae": 1.3,
+   "score30_mae": 1.4,
    "score30_in10": 100,
    "score30_in5": 97,
    "score30_pairs": 323,
@@ -1119,13 +1215,13 @@
    "score60_in10": 100,
    "score60_in5": 94,
    "score60_pairs": 306,
-   "score90_mae": 3.1,
+   "score90_mae": 2.9,
    "score90_in10": 100,
-   "score90_in5": 92,
-   "score90_pairs": 292,
-   "score120_mae": 3.1,
+   "score90_in5": 93,
+   "score90_pairs": 293,
+   "score120_mae": 2.9,
    "score120_in10": 100,
-   "score120_in5": 90,
+   "score120_in5": 91,
    "score120_pairs": 282,
    "people": null,
    "people_lo": 100,
@@ -1144,8 +1240,8 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
    "f30": 5,
    "f30_lo": 5,
@@ -1170,60 +1266,12 @@
    "score90_mae": 0.0,
    "score90_in10": 100,
    "score90_in5": 100,
-   "score90_pairs": 321,
+   "score90_pairs": 322,
    "score120_mae": 0.0,
    "score120_in10": 100,
    "score120_in5": 100,
    "score120_pairs": 307,
    "people": null
-  },
-  {
-   "name": "Under the Sea - Journey of The Little Mermaid",
-   "now": 5,
-   "trend30": 0,
-   "why": {
-    "lag60": 5,
-    "lag120": 5,
-    "lag_yday": 35,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 21,
-    "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
-   },
-   "f30": 10,
-   "f30_lo": 5,
-   "f30_hi": 20,
-   "f60": 10,
-   "f60_lo": 5,
-   "f60_hi": 20,
-   "f90": 10,
-   "f90_lo": 5,
-   "f90_hi": 20,
-   "f120": 5,
-   "f120_lo": 5,
-   "f120_hi": 20,
-   "score30_mae": 4.6,
-   "score30_in10": 91,
-   "score30_in5": 75,
-   "score30_pairs": 356,
-   "score60_mae": 6.3,
-   "score60_in10": 85,
-   "score60_in5": 66,
-   "score60_pairs": 343,
-   "score90_mae": 6.7,
-   "score90_in10": 84,
-   "score90_in5": 62,
-   "score90_pairs": 328,
-   "score120_mae": 6.9,
-   "score120_in10": 82,
-   "score120_in5": 63,
-   "score120_pairs": 314,
-   "people": null,
-   "people_lo": 33,
-   "people_hi": 110,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
    "name": "Dumbo the Flying Elephant",
@@ -1237,85 +1285,37 @@
     "reopened": false,
     "park_mean": 21,
     "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
+    "mins_open": 205,
+    "mins_close": 635
    },
-   "f30": 10,
+   "f30": 15,
    "f30_lo": 5,
    "f30_hi": 20,
    "f60": 10,
    "f60_lo": 5,
    "f60_hi": 20,
-   "f90": 10,
+   "f90": 5,
    "f90_lo": 5,
-   "f90_hi": 20,
-   "f120": 10,
+   "f90_hi": 15,
+   "f120": 5,
    "f120_lo": 5,
    "f120_hi": 15,
-   "score30_mae": 4.1,
-   "score30_in10": 93,
-   "score30_in5": 80,
+   "score30_mae": 3.9,
+   "score30_in10": 92,
+   "score30_in5": 81,
    "score30_pairs": 362,
-   "score60_mae": 4.8,
-   "score60_in10": 92,
-   "score60_in5": 78,
-   "score60_pairs": 348,
-   "score90_mae": 5.5,
-   "score90_in10": 89,
-   "score90_in5": 71,
-   "score90_pairs": 333,
-   "score120_mae": 5.4,
-   "score120_in10": 92,
-   "score120_in5": 73,
-   "score120_pairs": 319,
-   "people": null,
-   "people_lo": 18,
-   "people_hi": 65,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
-  },
-  {
-   "name": "Tomorrowland Speedway",
-   "now": 5,
-   "trend30": -5,
-   "why": {
-    "lag60": 15,
-    "lag120": 10,
-    "lag_yday": 20,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 21,
-    "park_busy": 14,
-    "mins_open": 200,
-    "mins_close": 640
-   },
-   "f30": 10,
-   "f30_lo": 5,
-   "f30_hi": 15,
-   "f60": 10,
-   "f60_lo": 5,
-   "f60_hi": 15,
-   "f90": 10,
-   "f90_lo": 5,
-   "f90_hi": 20,
-   "f120": 10,
-   "f120_lo": 5,
-   "f120_hi": 15,
-   "score30_mae": 4.3,
-   "score30_in10": 96,
-   "score30_in5": 86,
-   "score30_pairs": 361,
    "score60_mae": 4.7,
-   "score60_in10": 95,
-   "score60_in5": 82,
-   "score60_pairs": 347,
-   "score90_mae": 4.4,
-   "score90_in10": 95,
-   "score90_in5": 87,
-   "score90_pairs": 332,
-   "score120_mae": 4.4,
-   "score120_in10": 95,
-   "score120_in5": 86,
-   "score120_pairs": 318,
+   "score60_in10": 91,
+   "score60_in5": 79,
+   "score60_pairs": 348,
+   "score90_mae": 5.6,
+   "score90_in10": 88,
+   "score90_in5": 71,
+   "score90_pairs": 334,
+   "score120_mae": 5.8,
+   "score120_in10": 91,
+   "score120_in5": 68,
+   "score120_pairs": 319,
    "people": null,
    "people_lo": 18,
    "people_hi": 65,
@@ -1324,43 +1324,43 @@
  ],
  "metrics": {
   "30": {
-   "available_pairs": 42318,
-   "train_rows": 33048,
-   "test_rows": 9142,
+   "available_pairs": 42346,
+   "train_rows": 33070,
+   "test_rows": 9146,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.0,
-   "rmse": 6.6,
+   "mae": 3.9,
+   "rmse": 6.5,
    "within10": 93,
    "within5": 81,
-   "mape_ge20": 18.8,
+   "mape_ge20": 18.6,
    "bias": -0.4,
    "baseline_mae": 4.6,
    "baseline_mape_ge20": 23.8,
-   "improvement_pct": 14.9,
+   "improvement_pct": 15.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
-    "diff_30",
     "park_mean",
-    "lag_60"
+    "diff_30",
+    "hour_sin"
    ]
   },
   "60": {
-   "available_pairs": 40307,
-   "train_rows": 31413,
-   "test_rows": 8686,
+   "available_pairs": 40335,
+   "train_rows": 31422,
+   "test_rows": 8693,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.5,
-   "rmse": 7.1,
-   "within10": 91,
-   "within5": 78,
-   "mape_ge20": 20.2,
-   "bias": -0.5,
+   "mae": 4.4,
+   "rmse": 7.0,
+   "within10": 92,
+   "within5": 79,
+   "mape_ge20": 20.0,
+   "bias": -0.4,
    "baseline_mae": 5.6,
    "baseline_mape_ge20": 27.7,
-   "improvement_pct": 21.0,
+   "improvement_pct": 22.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -1372,15 +1372,15 @@
    ]
   },
   "90": {
-   "available_pairs": 38375,
+   "available_pairs": 38403,
    "train_rows": 29991,
-   "test_rows": 8231,
+   "test_rows": 8259,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.6,
    "rmse": 7.1,
    "within10": 91,
    "within5": 76,
-   "mape_ge20": 19.5,
+   "mape_ge20": 19.3,
    "bias": 0.2,
    "baseline_mae": 6.3,
    "baseline_mape_ge20": 30.3,
@@ -1391,24 +1391,24 @@
     "ride_code",
     "hour_cos",
     "hour_sin",
-    "diff_30",
-    "park_mean"
+    "park_mean",
+    "diff_30"
    ]
   },
   "120": {
-   "available_pairs": 36591,
+   "available_pairs": 36618,
    "train_rows": 28708,
-   "test_rows": 7807,
+   "test_rows": 7814,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.7,
+   "mae": 4.8,
    "rmse": 7.2,
    "within10": 91,
-   "within5": 76,
-   "mape_ge20": 20.3,
-   "bias": 0.2,
+   "within5": 75,
+   "mape_ge20": 20.1,
+   "bias": 0.5,
    "baseline_mae": 6.8,
    "baseline_mape_ge20": 31.9,
-   "improvement_pct": 30.6,
+   "improvement_pct": 29.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -1523,6 +1523,14 @@
     "p60": 55,
     "p90": 55,
     "p120": 55
+   },
+   {
+    "t": "12:25",
+    "actual": 55,
+    "p30": 55,
+    "p60": 55,
+    "p90": 50,
+    "p120": 55
    }
   ],
   "Peter Pan's Flight": [
@@ -1622,88 +1630,13 @@
     "p60": 45,
     "p90": 50,
     "p120": 50
-   }
-  ],
-  "Space Mountain": [
-   {
-    "t": "08:40",
-    "closed": 1
    },
    {
-    "t": "08:55",
-    "closed": 1
-   },
-   {
-    "t": "09:10",
-    "closed": 1
-   },
-   {
-    "t": "09:25",
-    "closed": 1
-   },
-   {
-    "t": "09:40",
-    "closed": 1
-   },
-   {
-    "t": "09:55",
-    "actual": 15
-   },
-   {
-    "t": "10:10",
-    "actual": 20
-   },
-   {
-    "t": "10:25",
-    "actual": 30,
-    "p30": 35
-   },
-   {
-    "t": "10:40",
-    "actual": 30,
-    "p30": 35
-   },
-   {
-    "t": "10:55",
-    "actual": 40,
-    "p30": 30,
-    "p60": 35
-   },
-   {
-    "t": "11:10",
-    "actual": 40,
-    "p30": 30,
-    "p60": 40
-   },
-   {
-    "t": "11:25",
-    "actual": 40,
-    "p30": 35,
-    "p60": 40,
-    "p90": 45
-   },
-   {
-    "t": "11:40",
-    "actual": 30,
-    "p30": 35,
+    "t": "12:25",
+    "actual": 50,
+    "p30": 40,
     "p60": 45,
     "p90": 45
-   },
-   {
-    "t": "11:55",
-    "actual": 30,
-    "p30": 30,
-    "p60": 35,
-    "p90": 40,
-    "p120": 45
-   },
-   {
-    "t": "12:10",
-    "actual": 45,
-    "p30": 30,
-    "p60": 35,
-    "p90": 35,
-    "p120": 50
    }
   ],
   "Jingle Cruise": [
@@ -1798,6 +1731,104 @@
     "p60": 45,
     "p90": 45,
     "p120": 50
+   },
+   {
+    "t": "12:25",
+    "actual": 45,
+    "p30": 40,
+    "p60": 45,
+    "p90": 40,
+    "p120": 50
+   }
+  ],
+  "Space Mountain": [
+   {
+    "t": "08:40",
+    "closed": 1
+   },
+   {
+    "t": "08:55",
+    "closed": 1
+   },
+   {
+    "t": "09:10",
+    "closed": 1
+   },
+   {
+    "t": "09:25",
+    "closed": 1
+   },
+   {
+    "t": "09:40",
+    "closed": 1
+   },
+   {
+    "t": "09:55",
+    "actual": 15
+   },
+   {
+    "t": "10:10",
+    "actual": 20
+   },
+   {
+    "t": "10:25",
+    "actual": 30,
+    "p30": 35
+   },
+   {
+    "t": "10:40",
+    "actual": 30,
+    "p30": 35
+   },
+   {
+    "t": "10:55",
+    "actual": 40,
+    "p30": 30,
+    "p60": 35
+   },
+   {
+    "t": "11:10",
+    "actual": 40,
+    "p30": 30,
+    "p60": 40
+   },
+   {
+    "t": "11:25",
+    "actual": 40,
+    "p30": 35,
+    "p60": 40,
+    "p90": 45
+   },
+   {
+    "t": "11:40",
+    "actual": 30,
+    "p30": 35,
+    "p60": 45,
+    "p90": 45
+   },
+   {
+    "t": "11:55",
+    "actual": 30,
+    "p30": 30,
+    "p60": 35,
+    "p90": 40,
+    "p120": 45
+   },
+   {
+    "t": "12:10",
+    "actual": 45,
+    "p30": 30,
+    "p60": 35,
+    "p90": 35,
+    "p120": 50
+   },
+   {
+    "t": "12:25",
+    "actual": 45,
+    "p30": 30,
+    "p60": 35,
+    "p90": 30,
+    "p120": 40
    }
   ],
   "Seven Dwarfs Mine Train": [
@@ -1900,6 +1931,112 @@
     "p60": 40,
     "p90": 45,
     "p120": 50
+   },
+   {
+    "t": "12:25",
+    "actual": 40,
+    "p30": 45,
+    "p60": 45,
+    "p90": 45,
+    "p120": 50
+   }
+  ],
+  "The Many Adventures of Winnie the Pooh": [
+   {
+    "t": "08:40",
+    "closed": 1
+   },
+   {
+    "t": "08:55",
+    "closed": 1
+   },
+   {
+    "t": "09:10",
+    "closed": 1
+   },
+   {
+    "t": "09:25",
+    "actual": 25
+   },
+   {
+    "t": "09:40",
+    "actual": 40
+   },
+   {
+    "t": "09:55",
+    "actual": 30,
+    "p30": 40
+   },
+   {
+    "t": "10:10",
+    "actual": 35,
+    "p30": 35
+   },
+   {
+    "t": "10:25",
+    "actual": 25,
+    "p30": 35,
+    "p60": 35
+   },
+   {
+    "t": "10:40",
+    "actual": 55,
+    "p30": 35,
+    "p60": 40
+   },
+   {
+    "t": "10:55",
+    "actual": 25,
+    "p30": 35,
+    "p60": 40,
+    "p90": 45
+   },
+   {
+    "t": "11:10",
+    "actual": 30,
+    "p30": 40,
+    "p60": 40,
+    "p90": 35
+   },
+   {
+    "t": "11:25",
+    "actual": 30,
+    "p30": 35,
+    "p60": 35,
+    "p90": 40,
+    "p120": 45
+   },
+   {
+    "t": "11:40",
+    "actual": 30,
+    "p30": 40,
+    "p60": 45,
+    "p90": 35,
+    "p120": 40
+   },
+   {
+    "t": "11:55",
+    "actual": 35,
+    "p30": 35,
+    "p60": 35,
+    "p90": 35,
+    "p120": 45
+   },
+   {
+    "t": "12:10",
+    "actual": 35,
+    "p30": 35,
+    "p60": 35,
+    "p90": 35,
+    "p120": 40
+   },
+   {
+    "t": "12:25",
+    "actual": 35,
+    "p30": 30,
+    "p60": 30,
+    "p90": 35,
+    "p120": 40
    }
   ],
   "Haunted Mansion": [
@@ -1986,6 +2123,14 @@
     "p60": 30,
     "p90": 35,
     "p120": 45
+   },
+   {
+    "t": "12:25",
+    "actual": 35,
+    "p30": 30,
+    "p60": 35,
+    "p90": 35,
+    "p120": 40
    }
   ],
   "Buzz Lightyear\u2019s Space Ranger Spin": [
@@ -2088,95 +2233,13 @@
     "p60": 35,
     "p90": 30,
     "p120": 45
-   }
-  ],
-  "The Many Adventures of Winnie the Pooh": [
-   {
-    "t": "08:40",
-    "closed": 1
    },
    {
-    "t": "08:55",
-    "closed": 1
-   },
-   {
-    "t": "09:10",
-    "closed": 1
-   },
-   {
-    "t": "09:25",
-    "actual": 25
-   },
-   {
-    "t": "09:40",
-    "actual": 40
-   },
-   {
-    "t": "09:55",
-    "actual": 30,
-    "p30": 40
-   },
-   {
-    "t": "10:10",
-    "actual": 35,
-    "p30": 35
-   },
-   {
-    "t": "10:25",
-    "actual": 25,
-    "p30": 35,
-    "p60": 35
-   },
-   {
-    "t": "10:40",
-    "actual": 55,
-    "p30": 35,
-    "p60": 40
-   },
-   {
-    "t": "10:55",
-    "actual": 25,
-    "p30": 35,
-    "p60": 40,
-    "p90": 45
-   },
-   {
-    "t": "11:10",
-    "actual": 30,
-    "p30": 40,
-    "p60": 40,
-    "p90": 35
-   },
-   {
-    "t": "11:25",
+    "t": "12:25",
     "actual": 30,
     "p30": 35,
     "p60": 35,
-    "p90": 40,
-    "p120": 45
-   },
-   {
-    "t": "11:40",
-    "actual": 30,
-    "p30": 40,
-    "p60": 45,
-    "p90": 35,
-    "p120": 40
-   },
-   {
-    "t": "11:55",
-    "actual": 35,
-    "p30": 35,
-    "p60": 35,
-    "p90": 35,
-    "p120": 45
-   },
-   {
-    "t": "12:10",
-    "actual": 35,
-    "p30": 35,
-    "p60": 35,
-    "p90": 35,
+    "p90": 30,
     "p120": 40
    }
   ],
@@ -2272,6 +2335,124 @@
     "p60": 20,
     "p90": 30,
     "p120": 35
+   },
+   {
+    "t": "12:25",
+    "actual": 25,
+    "p30": 20,
+    "p60": 20,
+    "p90": 25,
+    "p120": 35
+   }
+  ],
+  "Under the Sea - Journey of The Little Mermaid": [
+   {
+    "t": "08:40",
+    "actual": 5
+   },
+   {
+    "t": "08:55",
+    "actual": 5
+   },
+   {
+    "t": "09:10",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:25",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "09:55",
+    "actual": 10,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "10:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10
+   },
+   {
+    "t": "10:25",
+    "actual": 5,
+    "p30": 10,
+    "p60": 15,
+    "p90": 15
+   },
+   {
+    "t": "10:40",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "10:55",
+    "actual": 10,
+    "p30": 15,
+    "p60": 20,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "11:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 20,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "11:25",
+    "actual": 5,
+    "p30": 15,
+    "p60": 15,
+    "p90": 25,
+    "p120": 30
+   },
+   {
+    "t": "11:40",
+    "actual": 5,
+    "p30": 15,
+    "p60": 20,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "11:55",
+    "actual": 5,
+    "p30": 10,
+    "p60": 15,
+    "p90": 20,
+    "p120": 30
+   },
+   {
+    "t": "12:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 20,
+    "p120": 30
+   },
+   {
+    "t": "12:25",
+    "actual": 25,
+    "p30": 15,
+    "p60": 10,
+    "p90": 20,
+    "p120": 30
    }
   ],
   "Big Thunder Mountain Railroad": [
@@ -2366,6 +2547,14 @@
     "p60": 30,
     "p90": 35,
     "p120": 30
+   },
+   {
+    "t": "12:25",
+    "actual": 25,
+    "p30": 30,
+    "p60": 30,
+    "p90": 40,
+    "p120": 35
    }
   ],
   "The Barnstormer": [
@@ -2466,6 +2655,14 @@
     "actual": 20,
     "p30": 15,
     "p60": 10,
+    "p90": 15,
+    "p120": 25
+   },
+   {
+    "t": "12:25",
+    "actual": 20,
+    "p30": 20,
+    "p60": 15,
     "p90": 15,
     "p120": 25
    }
@@ -2570,6 +2767,14 @@
     "p60": 15,
     "p90": 15,
     "p120": 25
+   },
+   {
+    "t": "12:25",
+    "actual": 20,
+    "p30": 15,
+    "p60": 10,
+    "p90": 10,
+    "p120": 20
    }
   ],
   "Walt Disney World Railroad - Main Street, U.S.A.": [
@@ -2648,108 +2853,14 @@
     "p60": 5,
     "p90": 10,
     "p120": 10
-   }
-  ],
-  "Mad Tea Party": [
-   {
-    "t": "08:40",
-    "actual": 5
    },
    {
-    "t": "08:55",
-    "actual": 10
-   },
-   {
-    "t": "09:10",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "09:25",
-    "actual": 5,
-    "p30": 10
-   },
-   {
-    "t": "09:40",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "09:55",
-    "actual": 10,
-    "p30": 5,
-    "p60": 10
-   },
-   {
-    "t": "10:10",
-    "actual": 5,
-    "p30": 5,
-    "p60": 10,
-    "p90": 10
-   },
-   {
-    "t": "10:25",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10
-   },
-   {
-    "t": "10:40",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
+    "t": "12:25",
+    "actual": 20,
+    "p30": 15,
+    "p60": 5,
     "p90": 10,
-    "p120": 15
-   },
-   {
-    "t": "10:55",
-    "actual": 5,
-    "p30": 10,
-    "p60": 15,
-    "p90": 15,
-    "p120": 20
-   },
-   {
-    "t": "11:10",
-    "actual": 5,
-    "p30": 10,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "11:25",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 15,
-    "p120": 20
-   },
-   {
-    "t": "11:40",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "11:55",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "12:10",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 20
+    "p120": 10
    }
   ],
   "The Hall of Presidents": [
@@ -2820,6 +2931,14 @@
     "p30": 15,
     "p60": 15,
     "p90": 15
+   },
+   {
+    "t": "12:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Tomorrowland Transit Authority PeopleMover": [
@@ -2922,6 +3041,14 @@
     "p60": 10,
     "p90": 10,
     "p120": 15
+   },
+   {
+    "t": "12:25",
+    "actual": 15,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 15
    }
   ],
   "Country Bear Musical Jamboree": [
@@ -3003,6 +3130,14 @@
    },
    {
     "t": "12:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "12:25",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -3102,6 +3237,14 @@
     "p60": 10,
     "p90": 10,
     "p120": 10
+   },
+   {
+    "t": "12:25",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
    }
   ],
   "Mickey's PhilharMagic": [
@@ -3191,6 +3334,14 @@
    },
    {
     "t": "12:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "12:25",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -3290,6 +3441,14 @@
     "p60": 15,
     "p90": 15,
     "p120": 20
+   },
+   {
+    "t": "12:25",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
    }
   ],
   "Walt Disney World Railroad - Fantasyland": [
@@ -3365,6 +3524,14 @@
     "t": "12:10",
     "actual": 10,
     "p30": 5,
+    "p60": 5,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "12:25",
+    "actual": 10,
+    "p30": 10,
     "p60": 5,
     "p90": 10,
     "p120": 10
@@ -3453,6 +3620,116 @@
     "p30": 10,
     "p60": 10,
     "p90": 10,
+    "p120": 15
+   },
+   {
+    "t": "12:25",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 15
+   }
+  ],
+  "Tomorrowland Speedway": [
+   {
+    "t": "08:55",
+    "actual": 5
+   },
+   {
+    "t": "09:10",
+    "actual": 10
+   },
+   {
+    "t": "09:25",
+    "actual": 5,
+    "p30": 15
+   },
+   {
+    "t": "09:40",
+    "actual": 5,
+    "p30": 15
+   },
+   {
+    "t": "09:55",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "10:10",
+    "actual": 15,
+    "p30": 10,
+    "p60": 20
+   },
+   {
+    "t": "10:25",
+    "actual": 10,
+    "p30": 10,
+    "p60": 15,
+    "p90": 15
+   },
+   {
+    "t": "10:40",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15
+   },
+   {
+    "t": "10:55",
+    "actual": 15,
+    "p30": 10,
+    "p60": 15,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "11:10",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "11:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "11:40",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 20,
+    "p120": 15
+   },
+   {
+    "t": "11:55",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "12:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "12:25",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
     "p120": 15
    }
   ],
@@ -3556,6 +3833,124 @@
     "p60": 10,
     "p90": 20,
     "p120": 30
+   },
+   {
+    "t": "12:25",
+    "actual": 10,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 30
+   }
+  ],
+  "Mad Tea Party": [
+   {
+    "t": "08:40",
+    "actual": 5
+   },
+   {
+    "t": "08:55",
+    "actual": 10
+   },
+   {
+    "t": "09:10",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "09:25",
+    "actual": 5,
+    "p30": 10
+   },
+   {
+    "t": "09:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
+   },
+   {
+    "t": "09:55",
+    "actual": 10,
+    "p30": 5,
+    "p60": 10
+   },
+   {
+    "t": "10:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 10,
+    "p90": 10
+   },
+   {
+    "t": "10:25",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10
+   },
+   {
+    "t": "10:40",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 15
+   },
+   {
+    "t": "10:55",
+    "actual": 5,
+    "p30": 10,
+    "p60": 15,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "11:10",
+    "actual": 5,
+    "p30": 10,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "11:25",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "11:40",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "11:55",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "12:10",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 20
+   },
+   {
+    "t": "12:25",
+    "actual": 5,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 20
    }
   ],
   "Prince Charming Regal Carrousel": [
@@ -3637,6 +4032,14 @@
    },
    {
     "t": "12:10",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 10,
+    "p120": 15
+   },
+   {
+    "t": "12:25",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -3736,108 +4139,14 @@
     "p60": 5,
     "p90": 5,
     "p120": 5
-   }
-  ],
-  "Under the Sea - Journey of The Little Mermaid": [
-   {
-    "t": "08:40",
-    "actual": 5
    },
    {
-    "t": "08:55",
-    "actual": 5
-   },
-   {
-    "t": "09:10",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "09:25",
-    "actual": 5,
-    "p30": 5
-   },
-   {
-    "t": "09:40",
+    "t": "12:25",
     "actual": 5,
     "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "09:55",
-    "actual": 10,
-    "p30": 5,
-    "p60": 5
-   },
-   {
-    "t": "10:10",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10
-   },
-   {
-    "t": "10:25",
-    "actual": 5,
-    "p30": 10,
-    "p60": 15,
-    "p90": 15
-   },
-   {
-    "t": "10:40",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "10:55",
-    "actual": 10,
-    "p30": 15,
-    "p60": 20,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "11:10",
-    "actual": 5,
-    "p30": 10,
-    "p60": 20,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "11:25",
-    "actual": 5,
-    "p30": 15,
-    "p60": 15,
-    "p90": 25,
-    "p120": 30
-   },
-   {
-    "t": "11:40",
-    "actual": 5,
-    "p30": 15,
-    "p60": 20,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "11:55",
-    "actual": 5,
-    "p30": 10,
-    "p60": 15,
-    "p90": 20,
-    "p120": 30
-   },
-   {
-    "t": "12:10",
-    "actual": 5,
-    "p30": 10,
-    "p60": 10,
-    "p90": 20,
-    "p120": 30
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
    }
   ],
   "Dumbo the Flying Elephant": [
@@ -3940,146 +4249,60 @@
     "p60": 20,
     "p90": 15,
     "p120": 30
-   }
-  ],
-  "Tomorrowland Speedway": [
-   {
-    "t": "08:55",
-    "actual": 5
    },
    {
-    "t": "09:10",
-    "actual": 10
-   },
-   {
-    "t": "09:25",
+    "t": "12:25",
     "actual": 5,
-    "p30": 15
-   },
-   {
-    "t": "09:40",
-    "actual": 5,
-    "p30": 15
-   },
-   {
-    "t": "09:55",
-    "actual": 10,
-    "p30": 15,
-    "p60": 15
-   },
-   {
-    "t": "10:10",
-    "actual": 15,
-    "p30": 10,
-    "p60": 20
-   },
-   {
-    "t": "10:25",
-    "actual": 10,
-    "p30": 10,
-    "p60": 15,
-    "p90": 15
-   },
-   {
-    "t": "10:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15
-   },
-   {
-    "t": "10:55",
-    "actual": 15,
-    "p30": 10,
-    "p60": 15,
-    "p90": 20,
-    "p120": 20
-   },
-   {
-    "t": "11:10",
-    "actual": 10,
     "p30": 15,
     "p60": 15,
     "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "11:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 20
-   },
-   {
-    "t": "11:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 20,
-    "p120": 15
-   },
-   {
-    "t": "11:55",
-    "actual": 10,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "12:10",
-    "actual": 10,
-    "p30": 10,
-    "p60": 15,
-    "p90": 15,
-    "p120": 20
+    "p120": 30
    }
   ]
  },
  "today": {
   "date": "2026-11-11",
-  "graded": 2787,
+  "graded": 2898,
   "exact": 37,
-  "in5": 70,
+  "in5": 71,
   "in10": 88,
   "in15": 96,
   "by_horizon": {
    "30": {
-    "graded": 948,
+    "graded": 976,
     "exact": 51,
     "in5": 85,
     "in10": 96,
     "in15": 99
    },
    "60": {
-    "graded": 780,
-    "exact": 34,
+    "graded": 808,
+    "exact": 35,
     "in5": 71,
     "in10": 92,
     "in15": 99
    },
    "90": {
-    "graded": 612,
+    "graded": 640,
     "exact": 31,
-    "in5": 62,
-    "in10": 82,
-    "in15": 94
+    "in5": 63,
+    "in10": 83,
+    "in15": 95
    },
    "120": {
-    "graded": 447,
-    "exact": 21,
+    "graded": 474,
+    "exact": 22,
     "in5": 50,
     "in10": 74,
-    "in15": 88
+    "in15": 89
    }
   }
  },
- "lookback_debug": "log rows 22212; act (1915, 31) idx 2026-10-30 04:00:00+00:00..2026-11-11 17:20:00+00:00; slots 15; lookback rides 28; today graded 2787",
+ "lookback_debug": "log rows 22324; act (1916, 31) idx 2026-10-30 04:00:00+00:00..2026-11-11 17:25:00+00:00; slots 16; lookback rides 28; today graded 2898",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-11T17:16:21.905851+00:00",
-   "last_sample": "2026-11-11T17:15:30+00:00",
+   "updated": "2026-11-11T17:21:02.093931+00:00",
+   "last_sample": "2026-11-11T17:20:31+00:00",
    "samples": 77837,
    "history_samples": 0,
    "rides": [
@@ -4142,7 +4365,7 @@
     },
     {
      "name": "Guardians of the Galaxy: Cosmic Rewind",
-     "now": 80,
+     "now": 75,
      "trend30": -5,
      "why": {
       "lag60": 70,
@@ -4155,9 +4378,9 @@
       "mins_open": 200,
       "mins_close": 520
      },
-     "f30": 75,
-     "f30_lo": 60,
-     "f30_hi": 85,
+     "f30": 70,
+     "f30_lo": 55,
+     "f30_hi": 80,
      "score30_mae": 9.7,
      "score30_in5": 50,
      "score30_in10": 71,
@@ -4165,9 +4388,9 @@
      "d30": -5,
      "d30_lo": -15,
      "d30_hi": 10,
-     "f60": 70,
-     "f60_lo": 60,
-     "f60_hi": 85,
+     "f60": 65,
+     "f60_lo": 55,
+     "f60_hi": 80,
      "score60_mae": 9.6,
      "score60_in5": 47,
      "score60_in10": 68,
@@ -4175,9 +4398,9 @@
      "d60": -10,
      "d60_lo": -10,
      "d60_hi": 15,
-     "f90": 70,
-     "f90_lo": 65,
-     "f90_hi": 95,
+     "f90": 65,
+     "f90_lo": 60,
+     "f90_hi": 90,
      "score90_mae": 11.1,
      "score90_in5": 42,
      "score90_in10": 64,
@@ -4185,9 +4408,9 @@
      "d90": -10,
      "d90_lo": -5,
      "d90_hi": 25,
-     "f120": 70,
-     "f120_lo": 65,
-     "f120_hi": 85,
+     "f120": 65,
+     "f120_lo": 60,
+     "f120_hi": 80,
      "score120_mae": 11.0,
      "score120_in5": 42,
      "score120_in10": 64,
@@ -4200,7 +4423,7 @@
     {
      "name": "Frozen Ever After",
      "now": 65,
-     "trend30": 10,
+     "trend30": 5,
      "why": {
       "lag60": 55,
       "lag120": 55,
@@ -4370,8 +4593,8 @@
     },
     {
      "name": "Living with the Land",
-     "now": 40,
-     "trend30": 5,
+     "now": 30,
+     "trend30": -5,
      "why": {
       "lag60": 20,
       "lag120": 30,
@@ -4383,9 +4606,9 @@
       "mins_open": 200,
       "mins_close": 520
      },
-     "f30": 25,
-     "f30_lo": 20,
-     "f30_hi": 45,
+     "f30": 15,
+     "f30_lo": 10,
+     "f30_hi": 35,
      "score30_mae": 4.4,
      "score30_in5": 83,
      "score30_in10": 93,
@@ -4393,9 +4616,9 @@
      "d30": -15,
      "d30_lo": -5,
      "d30_hi": 20,
-     "f60": 25,
-     "f60_lo": 20,
-     "f60_hi": 45,
+     "f60": 15,
+     "f60_lo": 10,
+     "f60_hi": 35,
      "score60_mae": 4.1,
      "score60_in5": 84,
      "score60_in10": 92,
@@ -4403,9 +4626,9 @@
      "d60": -15,
      "d60_lo": -5,
      "d60_hi": 20,
-     "f90": 25,
-     "f90_lo": 25,
-     "f90_hi": 40,
+     "f90": 15,
+     "f90_lo": 15,
+     "f90_hi": 30,
      "score90_mae": 4.9,
      "score90_in5": 79,
      "score90_in10": 91,
@@ -4413,9 +4636,9 @@
      "d90": -15,
      "d90_lo": 0,
      "d90_hi": 15,
-     "f120": 25,
-     "f120_lo": 25,
-     "f120_hi": 35,
+     "f120": 15,
+     "f120_lo": 15,
+     "f120_hi": 25,
      "score120_mae": 4.5,
      "score120_in5": 80,
      "score120_in10": 95,
@@ -4428,7 +4651,7 @@
     {
      "name": "The Seas with Nemo & Friends",
      "now": 30,
-     "trend30": 15,
+     "trend30": 10,
      "why": {
       "lag60": null,
       "lag120": 20,
@@ -8672,8 +8895,8 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-11T17:16:39.395987+00:00",
-   "last_sample": "2026-11-11T17:15:30+00:00",
+   "updated": "2026-11-11T17:21:02.177018+00:00",
+   "last_sample": "2026-11-11T17:20:31+00:00",
    "samples": 30004,
    "history_samples": 0,
    "rides": [
@@ -8736,8 +8959,8 @@
     },
     {
      "name": "Slinky Dog Dash",
-     "now": 65,
-     "trend30": 5,
+     "now": 75,
+     "trend30": 20,
      "why": {
       "lag60": 105,
       "lag120": 140,
@@ -8749,9 +8972,9 @@
       "mins_open": 200,
       "mins_close": 520
      },
-     "f30": 65,
-     "f30_lo": 55,
-     "f30_hi": 75,
+     "f30": 75,
+     "f30_lo": 65,
+     "f30_hi": 85,
      "score30_mae": 11.5,
      "score30_in5": 48,
      "score30_in10": 68,
@@ -8759,9 +8982,9 @@
      "d30": 0,
      "d30_lo": -10,
      "d30_hi": 10,
-     "f60": 70,
-     "f60_lo": 50,
-     "f60_hi": 75,
+     "f60": 80,
+     "f60_lo": 60,
+     "f60_hi": 85,
      "score60_mae": 14.0,
      "score60_in5": 42,
      "score60_in10": 67,
@@ -8769,9 +8992,9 @@
      "d60": 5,
      "d60_lo": -20,
      "d60_hi": 5,
-     "f90": 65,
-     "f90_lo": 50,
-     "f90_hi": 70,
+     "f90": 75,
+     "f90_lo": 60,
+     "f90_hi": 80,
      "score90_mae": 13.2,
      "score90_in5": 49,
      "score90_in10": 71,
@@ -8779,9 +9002,9 @@
      "d90": 0,
      "d90_lo": -15,
      "d90_hi": 5,
-     "f120": 65,
-     "f120_lo": 45,
-     "f120_hi": 70,
+     "f120": 75,
+     "f120_lo": 55,
+     "f120_hi": 80,
      "score120_mae": 11.6,
      "score120_in5": 49,
      "score120_in10": 71,
@@ -8789,63 +9012,6 @@
      "d120": 0,
      "d120_lo": -20,
      "d120_hi": 5,
-     "people": null
-    },
-    {
-     "name": "Mickey & Minnie's Runaway Railway",
-     "now": 65,
-     "trend30": -10,
-     "why": {
-      "lag60": 40,
-      "lag120": 55,
-      "lag_yday": 50,
-      "down60": 0,
-      "reopened": false,
-      "park_mean": 47,
-      "park_busy": 46,
-      "mins_open": 200,
-      "mins_close": 520
-     },
-     "f30": 50,
-     "f30_lo": 45,
-     "f30_hi": 70,
-     "score30_mae": 6.4,
-     "score30_in5": 70,
-     "score30_in10": 86,
-     "score30_pairs": 220,
-     "d30": -15,
-     "d30_lo": -5,
-     "d30_hi": 20,
-     "f60": 45,
-     "f60_lo": 40,
-     "f60_hi": 60,
-     "score60_mae": 6.8,
-     "score60_in5": 65,
-     "score60_in10": 87,
-     "score60_pairs": 202,
-     "d60": -20,
-     "d60_lo": -5,
-     "d60_hi": 15,
-     "f90": 55,
-     "f90_lo": 45,
-     "f90_hi": 65,
-     "score90_mae": 6.7,
-     "score90_in5": 64,
-     "score90_in10": 84,
-     "score90_pairs": 194,
-     "d90": -10,
-     "d90_lo": -10,
-     "d90_hi": 10,
-     "f120": 50,
-     "f120_lo": 40,
-     "f120_hi": 60,
-     "score120_mae": 6.3,
-     "score120_in5": 70,
-     "score120_in10": 89,
-     "score120_pairs": 192,
-     "d120": -15,
-     "d120_lo": -10,
-     "d120_hi": 10,
      "people": null
     },
     {
@@ -8906,9 +9072,66 @@
      "people": null
     },
     {
+     "name": "Mickey & Minnie's Runaway Railway",
+     "now": 55,
+     "trend30": -20,
+     "why": {
+      "lag60": 40,
+      "lag120": 55,
+      "lag_yday": 50,
+      "down60": 0,
+      "reopened": false,
+      "park_mean": 47,
+      "park_busy": 46,
+      "mins_open": 200,
+      "mins_close": 520
+     },
+     "f30": 40,
+     "f30_lo": 35,
+     "f30_hi": 60,
+     "score30_mae": 6.4,
+     "score30_in5": 70,
+     "score30_in10": 86,
+     "score30_pairs": 220,
+     "d30": -15,
+     "d30_lo": -5,
+     "d30_hi": 20,
+     "f60": 35,
+     "f60_lo": 30,
+     "f60_hi": 50,
+     "score60_mae": 6.8,
+     "score60_in5": 65,
+     "score60_in10": 87,
+     "score60_pairs": 202,
+     "d60": -20,
+     "d60_lo": -5,
+     "d60_hi": 15,
+     "f90": 45,
+     "f90_lo": 35,
+     "f90_hi": 55,
+     "score90_mae": 6.7,
+     "score90_in5": 64,
+     "score90_in10": 84,
+     "score90_pairs": 194,
+     "d90": -10,
+     "d90_lo": -10,
+     "d90_hi": 10,
+     "f120": 40,
+     "f120_lo": 30,
+     "f120_hi": 50,
+     "score120_mae": 6.3,
+     "score120_in5": 70,
+     "score120_in10": 89,
+     "score120_pairs": 192,
+     "d120": -15,
+     "d120_lo": -10,
+     "d120_hi": 10,
+     "people": null
+    },
+    {
      "name": "Toy Story Mania!",
-     "now": 45,
-     "trend30": -5,
+     "now": 50,
+     "trend30": 0,
      "why": {
       "lag60": 65,
       "lag120": 50,
@@ -8920,9 +9143,9 @@
       "mins_open": 200,
       "mins_close": 520
      },
-     "f30": 50,
-     "f30_lo": 40,
-     "f30_hi": 55,
+     "f30": 55,
+     "f30_lo": 45,
+     "f30_hi": 60,
      "score30_mae": 6.4,
      "score30_in5": 65,
      "score30_in10": 88,
@@ -8930,9 +9153,9 @@
      "d30": 5,
      "d30_lo": -10,
      "d30_hi": 5,
-     "f60": 45,
-     "f60_lo": 40,
-     "f60_hi": 55,
+     "f60": 50,
+     "f60_lo": 45,
+     "f60_hi": 60,
      "score60_mae": 6.1,
      "score60_in5": 66,
      "score60_in10": 85,
@@ -8940,9 +9163,9 @@
      "d60": 0,
      "d60_lo": -5,
      "d60_hi": 10,
-     "f90": 45,
-     "f90_lo": 40,
-     "f90_hi": 50,
+     "f90": 50,
+     "f90_lo": 45,
+     "f90_hi": 55,
      "score90_mae": 5.9,
      "score90_in5": 68,
      "score90_in10": 87,
@@ -8950,9 +9173,9 @@
      "d90": 0,
      "d90_lo": -5,
      "d90_hi": 5,
-     "f120": 45,
-     "f120_lo": 35,
-     "f120_hi": 55,
+     "f120": 50,
+     "f120_lo": 40,
+     "f120_hi": 60,
      "score120_mae": 6.4,
      "score120_in5": 68,
      "score120_in10": 82,
@@ -9136,7 +9359,7 @@
     {
      "name": "Alien Swirling Saucers",
      "now": 35,
-     "trend30": 0,
+     "trend30": 5,
      "why": {
       "lag60": 50,
       "lag120": 40,
@@ -11772,8 +11995,8 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-11T17:16:51.397156+00:00",
-   "last_sample": "2026-11-11T17:15:30+00:00",
+   "updated": "2026-11-11T17:21:02.255088+00:00",
+   "last_sample": "2026-11-11T17:20:31+00:00",
    "samples": 36928,
    "history_samples": 0,
    "rides": [
@@ -11829,7 +12052,7 @@
     {
      "name": "Expedition Everest - Legend of the Forbidden Mountain",
      "now": 50,
-     "trend30": 15,
+     "trend30": 10,
      "why": {
       "lag60": 40,
       "lag120": 35,
@@ -11878,7 +12101,7 @@
     {
      "name": "Na'vi River Journey",
      "now": 45,
-     "trend30": -20,
+     "trend30": -15,
      "why": {
       "lag60": 55,
       "lag120": 35,
@@ -11976,7 +12199,7 @@
     {
      "name": "Kali River Rapids",
      "now": 30,
-     "trend30": 5,
+     "trend30": 0,
      "why": {
       "lag60": 20,
       "lag120": 5,
@@ -12074,7 +12297,7 @@
     {
      "name": "Wildlife Express Train",
      "now": 20,
-     "trend30": 5,
+     "trend30": 0,
      "why": {
       "lag60": 45,
       "lag120": 10,
