@@ -1,13 +1,13 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-12T21:01:00.009399+00:00",
+ "updated": "2026-11-12T21:06:24.683716+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Prince Charming Regal Carrousel": "2026-11-12 16:00:00-05:00",
-  "The Many Adventures of Winnie the Pooh": "2026-11-12 15:30:00-05:00"
+  "Main Street Vehicles": "2026-11-12 16:10:00-05:00",
+  "Prince Charming Regal Carrousel": "2026-11-12 16:00:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 1,
  "graded_all": {
   "n": 516,
   "wins": 112,
@@ -34,8 +34,19 @@
    "mae_shadow": 5.5
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-555",
+   "type": "D2",
+   "event_ride": "The Many Adventures of Winnie the Pooh",
+   "ride": "The Many Adventures of Winnie the Pooh",
+   "horizon": 30,
+   "base": 35.0,
+   "shadow": 20.0,
+   "reason": "reopened after 40 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
