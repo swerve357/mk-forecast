@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12T04:51:05.199052+00:00",
- "last_sample": "2026-11-12T04:50:32+00:00",
- "samples": 99337,
+ "updated": "2026-11-12T04:56:00.554882+00:00",
+ "last_sample": "2026-11-12T04:55:29+00:00",
+ "samples": 99373,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -13,12 +13,12 @@
    "mae": 4.0,
    "rmse": 6.6,
    "within10": 93,
-   "within5": 81,
-   "mape_ge20": 19.5,
+   "within5": 80,
+   "mape_ge20": 19.6,
    "bias": -0.5,
    "baseline_mae": 4.7,
    "baseline_mape_ge20": 24.7,
-   "improvement_pct": 16.3,
+   "improvement_pct": 16.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -26,7 +26,7 @@
     "hour_cos",
     "park_mean",
     "diff_30",
-    "lag_yday"
+    "lag_60"
    ]
   },
   "60": {
@@ -35,11 +35,11 @@
    "test_rows": 9035,
    "model": "gradient boosting (delta+round5)",
    "mae": 4.4,
-   "rmse": 7.2,
+   "rmse": 7.1,
    "within10": 91,
    "within5": 78,
-   "mape_ge20": 21.8,
-   "bias": -0.8,
+   "mape_ge20": 21.5,
+   "bias": -0.7,
    "baseline_mae": 5.9,
    "baseline_mape_ge20": 28.9,
    "improvement_pct": 24.5,
@@ -50,7 +50,7 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_60"
+    "park_mean"
    ]
   },
   "90": {
@@ -58,15 +58,15 @@
    "train_rows": 31665,
    "test_rows": 8593,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.4,
-   "rmse": 7.0,
+   "mae": 4.5,
+   "rmse": 7.1,
    "within10": 91,
    "within5": 78,
-   "mape_ge20": 21.0,
-   "bias": -0.6,
+   "mape_ge20": 21.3,
+   "bias": -0.7,
    "baseline_mae": 6.5,
    "baseline_mape_ge20": 31.2,
-   "improvement_pct": 32.0,
+   "improvement_pct": 30.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -85,9 +85,9 @@
    "mae": 4.4,
    "rmse": 6.9,
    "within10": 91,
-   "within5": 78,
-   "mape_ge20": 21.3,
-   "bias": -0.8,
+   "within5": 77,
+   "mape_ge20": 21.6,
+   "bias": -0.7,
    "baseline_mae": 7.1,
    "baseline_mape_ge20": 33.1,
    "improvement_pct": 37.6,
@@ -103,55 +103,19 @@
   }
  },
  "context": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "open": "09:00",
-  "close": "23:00",
+  "close": "18:00",
   "early_entry": "08:30",
-  "ticketed_event": "",
-  "ll_multipass_usd": 39.0,
+  "ticketed_event": "Special Ticketed Event",
+  "ll_multipass_usd": 35.0,
+  "event": "Mickey's Very Merry Christmas Party",
   "is_party_night": false
  },
  "demo": false,
  "lookback": {},
- "today": {
-  "date": "2026-11-11",
-  "graded": 12776,
-  "exact": 50,
-  "in5": 81,
-  "in10": 93,
-  "in15": 97,
-  "by_horizon": {
-   "30": {
-    "graded": 3639,
-    "exact": 54,
-    "in5": 85,
-    "in10": 95,
-    "in15": 98
-   },
-   "60": {
-    "graded": 3318,
-    "exact": 49,
-    "in5": 81,
-    "in10": 93,
-    "in15": 98
-   },
-   "90": {
-    "graded": 3004,
-    "exact": 49,
-    "in5": 79,
-    "in10": 92,
-    "in15": 97
-   },
-   "120": {
-    "graded": 2815,
-    "exact": 46,
-    "in5": 78,
-    "in10": 91,
-    "in15": 96
-   }
-  }
- },
- "lookback_debug": "log rows 22360; act (2025, 31) idx 2026-10-30 04:00:00+00:00..2026-11-12 04:00:00+00:00; slots 13; lookback rides 0; today graded 12776",
+ "today": {},
+ "lookback_debug": "log rows 22256; act (2025, 31) idx 2026-10-30 04:00:00+00:00..2026-11-12 04:00:00+00:00; slots 13; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-12T04:46:36.000543+00:00",
