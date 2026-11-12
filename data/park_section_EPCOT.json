@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12T04:46:36.000543+00:00",
- "last_sample": "2026-11-12T04:45:34+00:00",
- "samples": 81797,
+ "updated": "2026-11-12T05:16:25.872935+00:00",
+ "last_sample": "2026-11-12T05:15:31+00:00",
+ "samples": 81995,
  "history_samples": 0,
  "rides": [],
  "metrics": {
@@ -10,23 +10,23 @@
    "train_rows": 13334,
    "test_rows": 3306,
    "model": "gradient boosting (delta+round5)",
-   "mae": 4.5,
-   "rmse": 7.9,
+   "mae": 4.6,
+   "rmse": 8.0,
    "within10": 90,
-   "within5": 78,
-   "mape_ge20": 18.3,
-   "bias": -0.8,
+   "within5": 77,
+   "mape_ge20": 18.4,
+   "bias": -0.5,
    "baseline_mae": 5.4,
    "baseline_mape_ge20": 22.5,
-   "improvement_pct": 16.8,
+   "improvement_pct": 14.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
+    "lag_60",
     "hour_sin",
     "lag_yday",
-    "hour_cos",
-    "lag_60"
+    "hour_cos"
    ]
   },
   "60": {
@@ -35,21 +35,21 @@
    "test_rows": 3107,
    "model": "gradient boosting (delta+round5)",
    "mae": 5.2,
-   "rmse": 8.8,
+   "rmse": 8.7,
    "within10": 88,
-   "within5": 75,
-   "mape_ge20": 19.7,
-   "bias": 0.3,
+   "within5": 76,
+   "mape_ge20": 19.4,
+   "bias": 0.5,
    "baseline_mae": 7.2,
    "baseline_mape_ge20": 29.1,
-   "improvement_pct": 28.0,
+   "improvement_pct": 27.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
-    "ride_code",
     "wait",
+    "ride_code",
+    "lag_yday",
     "hour_sin",
     "hour_cos",
-    "lag_yday",
     "diff_30"
    ]
   },
@@ -58,22 +58,22 @@
    "train_rows": 11779,
    "test_rows": 2890,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.1,
-   "rmse": 8.5,
-   "within10": 88,
-   "within5": 75,
-   "mape_ge20": 18.5,
-   "bias": 0.2,
+   "mae": 4.9,
+   "rmse": 8.2,
+   "within10": 89,
+   "within5": 76,
+   "mape_ge20": 18.1,
+   "bias": 0.4,
    "baseline_mae": 8.1,
    "baseline_mape_ge20": 31.9,
-   "improvement_pct": 36.5,
+   "improvement_pct": 39.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_sin",
-    "hour_cos",
     "lag_yday",
+    "hour_cos",
     "diff_30"
    ]
   },
@@ -82,15 +82,15 @@
    "train_rows": 11095,
    "test_rows": 2717,
    "model": "gradient boosting (delta+round5)",
-   "mae": 5.2,
-   "rmse": 8.9,
+   "mae": 5.3,
+   "rmse": 8.8,
    "within10": 88,
-   "within5": 75,
-   "mape_ge20": 19.9,
-   "bias": 0.4,
+   "within5": 73,
+   "mape_ge20": 20.0,
+   "bias": 0.5,
    "baseline_mae": 8.4,
    "baseline_mape_ge20": 31.5,
-   "improvement_pct": 38.5,
+   "improvement_pct": 36.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
@@ -98,12 +98,12 @@
     "hour_sin",
     "hour_cos",
     "diff_30",
-    "lag_yday"
+    "lag_60"
    ]
   }
  },
  "context": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "open": "09:00",
   "close": "21:00",
   "early_entry": "08:30",
@@ -113,43 +113,6 @@
  },
  "demo": false,
  "lookback": {},
- "today": {
-  "date": "2026-11-11",
-  "graded": 5227,
-  "exact": 45,
-  "in5": 67,
-  "in10": 81,
-  "in15": 89,
-  "by_horizon": {
-   "30": {
-    "graded": 1549,
-    "exact": 49,
-    "in5": 69,
-    "in10": 84,
-    "in15": 91
-   },
-   "60": {
-    "graded": 1376,
-    "exact": 46,
-    "in5": 67,
-    "in10": 79,
-    "in15": 87
-   },
-   "90": {
-    "graded": 1206,
-    "exact": 42,
-    "in5": 66,
-    "in10": 82,
-    "in15": 89
-   },
-   "120": {
-    "graded": 1096,
-    "exact": 43,
-    "in5": 64,
-    "in10": 80,
-    "in15": 89
-   }
-  }
- },
+ "today": {},
  "park_label": "EPCOT"
 }
