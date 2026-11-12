@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12T02:26:08.088393+00:00",
- "last_sample": "2026-11-12T02:25:23+00:00",
- "samples": 31200,
+ "updated": "2026-11-12T02:51:41.492475+00:00",
+ "last_sample": "2026-11-12T02:50:32+00:00",
+ "samples": 31265,
  "history_samples": 0,
  "rides": [],
  "metrics": {
@@ -18,14 +18,14 @@
    "bias": -0.2,
    "baseline_mae": 8.3,
    "baseline_mape_ge20": 23.9,
-   "improvement_pct": 14.7,
+   "improvement_pct": 14.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
-    "diff_30",
     "hour_sin",
+    "diff_30",
     "lag_yday"
    ]
   },
