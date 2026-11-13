@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-13T20:51:16.421462+00:00",
+ "updated": "2026-11-13T20:57:16.692422+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "\"it's a small world\"": "2026-11-13 15:05:00-05:00",
   "Tomorrowland Transit Authority PeopleMover": "2026-11-13 12:45:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 1,
  "graded_all": {
   "n": 568,
   "wins": 121,
@@ -34,8 +33,19 @@
    "mae_shadow": 5.21
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-607",
+   "type": "D2",
+   "event_ride": "\"it's a small world\"",
+   "ride": "\"it's a small world\"",
+   "horizon": 30,
+   "base": 20.0,
+   "shadow": 15.0,
+   "reason": "reopened after 55 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
