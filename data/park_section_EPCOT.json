@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-13T03:57:10.275531+00:00",
- "last_sample": "2026-11-13T03:55:28+00:00",
- "samples": 90971,
+ "updated": "2026-11-13T04:27:08.890984+00:00",
+ "last_sample": "2026-11-13T04:25:26+00:00",
+ "samples": 91169,
  "history_samples": 0,
  "rides": [],
  "metrics": {
@@ -14,19 +14,19 @@
    "rmse": 9.3,
    "within10": 86,
    "within5": 72,
-   "mape_ge20": 20.5,
-   "bias": -2.8,
+   "mape_ge20": 20.2,
+   "bias": -3.0,
    "baseline_mae": 5.9,
    "baseline_mape_ge20": 23.5,
-   "improvement_pct": 5.6,
+   "improvement_pct": 6.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
     "lag_60",
     "lag_yday",
-    "hour_sin",
-    "hour_cos"
+    "hour_cos",
+    "hour_sin"
    ]
   },
   "60": {
@@ -35,21 +35,21 @@
    "test_rows": 3588,
    "model": "gradient boosting (delta+round5)",
    "mae": 5.7,
-   "rmse": 9.7,
-   "within10": 84,
-   "within5": 71,
-   "mape_ge20": 20.9,
-   "bias": -2.2,
+   "rmse": 9.6,
+   "within10": 85,
+   "within5": 72,
+   "mape_ge20": 20.8,
+   "bias": -2.0,
    "baseline_mae": 7.7,
    "baseline_mape_ge20": 29.5,
-   "improvement_pct": 25.4,
+   "improvement_pct": 25.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
-    "lag_yday",
     "hour_sin",
     "hour_cos",
+    "lag_yday",
     "lag_60"
    ]
   },
@@ -73,8 +73,8 @@
     "ride_code",
     "hour_sin",
     "hour_cos",
-    "diff_30",
-    "lag_yday"
+    "lag_yday",
+    "diff_30"
    ]
   },
   "120": {
@@ -86,11 +86,11 @@
    "rmse": 9.4,
    "within10": 86,
    "within5": 71,
-   "mape_ge20": 21.6,
+   "mape_ge20": 21.3,
    "bias": -1.3,
    "baseline_mae": 8.4,
    "baseline_mape_ge20": 30.9,
-   "improvement_pct": 33.0,
+   "improvement_pct": 33.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
