@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-13T17:45:59.764784+00:00",
+ "updated": "2026-11-13T17:51:03.653059+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Seven Dwarfs Mine Train": "2026-11-13 12:40:00-05:00",
   "Tomorrowland Transit Authority PeopleMover": "2026-11-13 12:45:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 1,
  "graded_all": {
   "n": 562,
   "wins": 121,
@@ -34,8 +33,19 @@
    "mae_shadow": 5.2
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-601",
+   "type": "D2",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Seven Dwarfs Mine Train",
+   "horizon": 30,
+   "base": 45.0,
+   "shadow": 40.0,
+   "reason": "reopened after 15 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
