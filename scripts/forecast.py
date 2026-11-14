@@ -52,6 +52,11 @@ MIN_QUANTILE_ROWS = 3000      # pooled rows before interval models ship
 TRAIN_WINDOW_DAYS = 60        # train on the most recent 60 days only:
                               # bounds the 5-min retrain cost as data grows
                               # and lets the engine adapt to the season
+SEED, SEED2 = 0, 1            # pinned fit seeds (2026-11-12): an unseeded
+                              # HGBT fit is a lottery — EPCOT +30 scored
+                              # 4.8-6.4 MAE on identical data across draws
+GATE_CLOSE_MAE = 0.3          # ship margins under this are re-fit with SEED2
+                              # and decided on the two seeds' mean MAE
 
 X_COLS = [
     "wait", "lag_5", "lag_15", "lag_30", "lag_60", "lag_120", "lag_yday",
@@ -313,7 +318,8 @@ def main():
                         and (c == "ride_code" or tr[c].nunique(dropna=True) > 1)]
                 cat = [cols.index("ride_code")] if "ride_code" in cols else None
                 m = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
-                                                  categorical_features=cat)
+                                                  categorical_features=cat,
+                                                  random_state=SEED)
                 # Delta target + round-to-5 (adopted 2026-11-03 after A/B:
                 # the model learns the CHANGE from the current wait, and
                 # predictions snap to Disney's 5-minute posted steps. The
@@ -327,10 +333,24 @@ def main():
                     return np.clip(np.round(p / 5.0) * 5, 5, None)
                 s = score(ship_pred(te, m), te[f"y{h}"].values, te["wait"].values)
                 entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)), evaluation="chronological holdout with horizon embargo")
+                # Seed discipline: a ship margin under GATE_CLOSE_MAE could
+                # be one lucky draw, so re-fit with SEED2 and decide on the
+                # two seeds' mean MAE (minimal seed fix, Dan approved
+                # 2026-11-12 after the EPCOT +30 seed-lottery finding).
+                gate_mae = s["mae"]
+                if abs(gate_mae - s["baseline_mae"]) < GATE_CLOSE_MAE:
+                    m2 = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
+                                                       categorical_features=cat,
+                                                       random_state=SEED2)
+                    m2.fit(tr[cols], tr[f"y{h}"] - tr["wait"])
+                    s2 = score(ship_pred(te, m2), te[f"y{h}"].values, te["wait"].values)
+                    gate_mae = round((s["mae"] + s2["mae"]) / 2, 1)
+                    entry["gate_mae_2seed"] = gate_mae
+                    entry["candidate_mae_seed2"] = s2["mae"]
                 # Score the predictor that will actually ship (the model if
                 # it won, else persistence), per ride, for the dashboard's
                 # per-horizon score columns.
-                shipped_pred = (ship_pred(te, m) if s["mae"] < s["baseline_mae"]
+                shipped_pred = (ship_pred(te, m) if gate_mae < s["baseline_mae"]
                                 else te["wait"].values)
                 tmp = pd.DataFrame({"name": te["name"].values,
                                     "err": np.abs(np.asarray(shipped_pred, float)
@@ -351,7 +371,7 @@ def main():
                                              if pi.importances_mean[i] > 0][:6]
                 except Exception as e:
                     print(f"importance {h}: {e}")
-                if s["mae"] < s["baseline_mae"]:   # only ship a model that wins
+                if gate_mae < s["baseline_mae"]:   # only ship a model that wins
                     m.fit(d[cols], d[f"y{h}"] - d["wait"])
                     models[h] = (m, cols)
                     entry["model"] = "gradient boosting (delta+round5)"
@@ -359,10 +379,12 @@ def main():
                         try:
                             lo = HistGradientBoostingRegressor(
                                 loss="quantile", quantile=0.1, max_iter=150,
-                                learning_rate=0.07, categorical_features=cat)
+                                learning_rate=0.07, categorical_features=cat,
+                                random_state=SEED)
                             hi = HistGradientBoostingRegressor(
                                 loss="quantile", quantile=0.9, max_iter=150,
-                                learning_rate=0.07, categorical_features=cat)
+                                learning_rate=0.07, categorical_features=cat,
+                                random_state=SEED)
                             lo.fit(d[cols], d[f"y{h}"] - d["wait"]); hi.fit(d[cols], d[f"y{h}"] - d["wait"])
                             intervals[h] = (lo, hi, cols)
                         except Exception as e:

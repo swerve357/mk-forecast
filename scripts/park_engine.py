@@ -144,7 +144,8 @@ def run_park(park):
                         and (c == "ride_code" or tr[c].nunique(dropna=True) > 1)]
                 cat = [cols.index("ride_code")] if "ride_code" in cols else None
                 m = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
-                                                  categorical_features=cat)
+                                                  categorical_features=cat,
+                                                  random_state=F.SEED)
                 m.fit(tr[cols], tr[f"y{h}"] - tr["wait"])
 
                 def ship_pred(frame, model):
@@ -155,7 +156,20 @@ def run_park(park):
                 s = F.score(ship_pred(te, m), te[f"y{h}"].values, te["wait"].values)
                 entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)),
                              evaluation="chronological holdout with horizon embargo")
-                shipped_pred = (ship_pred(te, m) if s["mae"] < s["baseline_mae"]
+                # Seed discipline (see forecast.py): a ship margin under
+                # F.GATE_CLOSE_MAE is re-fit with F.SEED2 and decided on the
+                # two seeds' mean MAE — one unseeded draw is a lottery.
+                gate_mae = s["mae"]
+                if abs(gate_mae - s["baseline_mae"]) < F.GATE_CLOSE_MAE:
+                    m2 = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
+                                                       categorical_features=cat,
+                                                       random_state=F.SEED2)
+                    m2.fit(tr[cols], tr[f"y{h}"] - tr["wait"])
+                    s2 = F.score(ship_pred(te, m2), te[f"y{h}"].values, te["wait"].values)
+                    gate_mae = round((s["mae"] + s2["mae"]) / 2, 1)
+                    entry["gate_mae_2seed"] = gate_mae
+                    entry["candidate_mae_seed2"] = s2["mae"]
+                shipped_pred = (ship_pred(te, m) if gate_mae < s["baseline_mae"]
                                 else te["wait"].values)
                 tmp = pd.DataFrame({"name": te["name"].values,
                                     "err": np.abs(np.asarray(shipped_pred, float)
@@ -177,7 +191,7 @@ def run_park(park):
                                              if pi.importances_mean[i] > 0][:6]
                 except Exception as e:
                     print(f"{park} importance {h}: {e}")
-                if s["mae"] < s["baseline_mae"]:
+                if gate_mae < s["baseline_mae"]:
                     m.fit(d[cols], d[f"y{h}"] - d["wait"])
                     models[h] = (m, cols)
                     entry["model"] = "gradient boosting (delta+round5)"
@@ -185,10 +199,12 @@ def run_park(park):
                         try:
                             lo = HistGradientBoostingRegressor(
                                 loss="quantile", quantile=0.1, max_iter=150,
-                                learning_rate=0.07, categorical_features=cat)
+                                learning_rate=0.07, categorical_features=cat,
+                                random_state=F.SEED)
                             hi = HistGradientBoostingRegressor(
                                 loss="quantile", quantile=0.9, max_iter=150,
-                                learning_rate=0.07, categorical_features=cat)
+                                learning_rate=0.07, categorical_features=cat,
+                                random_state=F.SEED)
                             lo.fit(d[cols], d[f"y{h}"] - d["wait"])
                             hi.fit(d[cols], d[f"y{h}"] - d["wait"])
                             intervals[h] = (lo, hi, cols)
