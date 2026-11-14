@@ -1,13 +1,14 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-14T21:47:09.995641+00:00",
+ "updated": "2026-11-14T21:51:06.420666+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "Big Thunder Mountain Railroad": "2026-11-14 16:40:00-05:00",
-  "Main Street Vehicles": "2026-11-14 16:10:00-05:00"
+  "Main Street Vehicles": "2026-11-14 16:10:00-05:00",
+  "Under the Sea - Journey of The Little Mermaid": "2026-11-14 16:55:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 3,
  "graded_all": {
   "n": 723,
   "wins": 175,
@@ -34,8 +35,39 @@
    "mae_shadow": 5.52
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 3,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-763",
+   "type": "D1",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Country Bear Musical Jamboree",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Big Thunder Mountain Railroad (posted 75) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-764",
+   "type": "D1",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Country Bear Musical Jamboree",
+   "horizon": 60,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Big Thunder Mountain Railroad (posted 75) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-765",
+   "type": "D1",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Country Bear Musical Jamboree",
+   "horizon": 90,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Big Thunder Mountain Railroad (posted 75) down 15 min; same-land displacement +5"
+  }
+ ],
  "debug": ""
 }
