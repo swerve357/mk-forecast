@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-15T04:50:53.615804+00:00",
- "last_sample": "2026-11-15T04:50:26+00:00",
- "samples": 130441,
+ "updated": "2026-11-15T04:56:03.478255+00:00",
+ "last_sample": "2026-11-15T04:55:34+00:00",
+ "samples": 130477,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -103,55 +103,19 @@
   }
  },
  "context": {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "open": "08:00",
-  "close": "23:00",
+  "close": "18:00",
   "early_entry": "07:30",
-  "ticketed_event": "",
-  "ll_multipass_usd": 42.0,
+  "ticketed_event": "Special Ticketed Event",
+  "ll_multipass_usd": 37.0,
+  "event": "Mickey's Very Merry Christmas Party",
   "is_party_night": false
  },
  "demo": false,
  "lookback": {},
- "today": {
-  "date": "2026-11-14",
-  "graded": 16675,
-  "exact": 39,
-  "in5": 70,
-  "in10": 87,
-  "in15": 94,
-  "by_horizon": {
-   "30": {
-    "graded": 4454,
-    "exact": 45,
-    "in5": 75,
-    "in10": 90,
-    "in15": 96
-   },
-   "60": {
-    "graded": 4261,
-    "exact": 39,
-    "in5": 71,
-    "in10": 88,
-    "in15": 95
-   },
-   "90": {
-    "graded": 4074,
-    "exact": 35,
-    "in5": 69,
-    "in10": 86,
-    "in15": 94
-   },
-   "120": {
-    "graded": 3886,
-    "exact": 35,
-    "in5": 66,
-    "in10": 83,
-    "in15": 92
-   }
-  }
- },
- "lookback_debug": "log rows 24352; act (2583, 31) idx 2026-10-30 04:00:00+00:00..2026-11-15 04:05:00+00:00; slots 13; lookback rides 0; today graded 16675",
+ "today": {},
+ "lookback_debug": "log rows 24252; act (2583, 31) idx 2026-10-30 04:00:00+00:00..2026-11-15 04:05:00+00:00; slots 13; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-15T04:47:23.002666+00:00",
@@ -311,15 +275,15 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-15T04:50:54.805091+00:00",
-   "last_sample": "2026-11-15T04:50:26+00:00",
+   "updated": "2026-11-15T04:56:04.673569+00:00",
+   "last_sample": "2026-11-15T04:55:34+00:00",
    "samples": 42796,
    "history_samples": 0,
    "rides": [
     {
      "name": "Slinky Dog Dash",
-     "now": 45,
-     "trend30": 5,
+     "now": 40,
+     "trend30": 10,
      "why": {
       "lag60": 35,
       "lag120": null,
@@ -331,9 +295,9 @@
       "mins_open": 920,
       "mins_close": -290
      },
-     "f30": 30,
-     "f30_lo": 25,
-     "f30_hi": 50,
+     "f30": 25,
+     "f30_lo": 20,
+     "f30_hi": 45,
      "score30_mae": 13.3,
      "score30_in5": 33,
      "score30_in10": 53,
@@ -341,9 +305,9 @@
      "d30": -15,
      "d30_lo": -5,
      "d30_hi": 20,
-     "f60": 30,
-     "f60_lo": 25,
-     "f60_hi": 50,
+     "f60": 25,
+     "f60_lo": 20,
+     "f60_hi": 45,
      "score60_mae": 15.7,
      "score60_in5": 26,
      "score60_in10": 46,
@@ -351,9 +315,9 @@
      "d60": -15,
      "d60_lo": -5,
      "d60_hi": 20,
-     "f90": 30,
-     "f90_lo": 20,
-     "f90_hi": 45,
+     "f90": 25,
+     "f90_lo": 15,
+     "f90_hi": 40,
      "score90_mae": 18.7,
      "score90_in5": 25,
      "score90_in10": 41,
@@ -361,9 +325,9 @@
      "d90": -15,
      "d90_lo": -10,
      "d90_hi": 15,
-     "f120": 25,
-     "f120_lo": 15,
-     "f120_hi": 45,
+     "f120": 20,
+     "f120_lo": 10,
+     "f120_hi": 40,
      "score120_mae": 22.0,
      "score120_in5": 17,
      "score120_in10": 33,
