@@ -1,13 +1,14 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-15T21:41:11.379447+00:00",
+ "updated": "2026-11-15T21:45:51.499363+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "Main Street Vehicles": "2026-11-15 16:10:00-05:00",
-  "Peter Pan's Flight": "2026-11-15 16:35:00-05:00"
+  "Peter Pan's Flight": "2026-11-15 16:35:00-05:00",
+  "Pirates of the Caribbean": "2026-11-15 16:50:00-05:00"
  },
- "decisions_open": 1,
+ "decisions_open": 31,
  "graded_all": {
   "n": 851,
   "wins": 201,
@@ -34,8 +35,59 @@
    "mae_shadow": 5.59
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 30,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-929",
+   "type": "D1",
+   "event_ride": "Peter Pan's Flight",
+   "ride": "The Many Adventures of Winnie the Pooh",
+   "horizon": 60,
+   "base": 30.0,
+   "shadow": 35.0,
+   "reason": "Peter Pan's Flight (posted 45) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-930",
+   "type": "D1",
+   "event_ride": "Peter Pan's Flight",
+   "ride": "The Many Adventures of Winnie the Pooh",
+   "horizon": 90,
+   "base": 30.0,
+   "shadow": 35.0,
+   "reason": "Peter Pan's Flight (posted 45) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-931",
+   "type": "D1",
+   "event_ride": "Peter Pan's Flight",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
+   "horizon": 30,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Peter Pan's Flight (posted 45) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-932",
+   "type": "D1",
+   "event_ride": "Peter Pan's Flight",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
+   "horizon": 60,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Peter Pan's Flight (posted 45) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-933",
+   "type": "D1",
+   "event_ride": "Peter Pan's Flight",
+   "ride": "Under the Sea - Journey of The Little Mermaid",
+   "horizon": 90,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Peter Pan's Flight (posted 45) down 15 min; same-land displacement +5"
+  }
+ ],
  "debug": ""
 }
