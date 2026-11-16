@@ -1,30 +1,29 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-16T18:56:19.719907+00:00",
+ "updated": "2026-11-16T19:01:22.607904+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "Big Thunder Mountain Railroad": "2026-11-16 13:55:00-05:00",
-  "Haunted Mansion": "2026-11-16 13:10:00-05:00",
-  "Space Mountain": "2026-11-16 12:15:00-05:00"
+  "Haunted Mansion": "2026-11-16 13:10:00-05:00"
  },
- "decisions_open": 14,
+ "decisions_open": 9,
  "graded_all": {
-  "n": 964,
-  "wins": 241,
-  "losses": 464,
+  "n": 970,
+  "wins": 244,
+  "losses": 467,
   "ties": 259,
-  "mae_base": 5.27,
-  "mae_shadow": 6.84
+  "mae_base": 5.25,
+  "mae_shadow": 6.82
  },
  "by_type": {
   "D1": {
-   "n": 524,
-   "wins": 159,
-   "losses": 365,
+   "n": 530,
+   "wins": 162,
+   "losses": 368,
    "ties": 0,
-   "mae_base": 5.81,
-   "mae_shadow": 7.78
+   "mae_base": 5.77,
+   "mae_shadow": 7.72
   },
   "D2": {
    "n": 440,
@@ -35,8 +34,19 @@
    "mae_shadow": 5.73
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 1,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 6,
+ "last_decisions": [
+  {
+   "id": "cb-1052",
+   "type": "D2",
+   "event_ride": "Space Mountain",
+   "ride": "Space Mountain",
+   "horizon": 30,
+   "base": 65.0,
+   "shadow": 75.0,
+   "reason": "reopened after 110 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
