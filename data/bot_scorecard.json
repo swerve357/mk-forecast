@@ -1,13 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-16T17:31:23.050363+00:00",
+ "updated": "2026-11-16T17:36:06.287907+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Seven Dwarfs Mine Train": "2026-11-16 12:05:00-05:00",
   "Space Mountain": "2026-11-16 12:15:00-05:00"
  },
- "decisions_open": 52,
+ "decisions_open": 53,
  "graded_all": {
   "n": 923,
   "wins": 223,
@@ -34,8 +33,19 @@
    "mae_shadow": 5.73
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-1048",
+   "type": "D2",
+   "event_ride": "Seven Dwarfs Mine Train",
+   "ride": "Seven Dwarfs Mine Train",
+   "horizon": 30,
+   "base": 65.0,
+   "shadow": 55.0,
+   "reason": "reopened after 35 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
