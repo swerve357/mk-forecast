@@ -1,29 +1,29 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-16T18:16:10.348922+00:00",
+ "updated": "2026-11-16T18:21:10.470259+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "Haunted Mansion": "2026-11-16 13:10:00-05:00",
   "Space Mountain": "2026-11-16 12:15:00-05:00"
  },
- "decisions_open": 40,
+ "decisions_open": 32,
  "graded_all": {
-  "n": 935,
-  "wins": 230,
-  "losses": 446,
+  "n": 946,
+  "wins": 234,
+  "losses": 453,
   "ties": 259,
   "mae_base": 5.28,
   "mae_shadow": 6.86
  },
  "by_type": {
   "D1": {
-   "n": 495,
-   "wins": 148,
-   "losses": 347,
+   "n": 506,
+   "wins": 152,
+   "losses": 354,
    "ties": 0,
-   "mae_base": 5.86,
-   "mae_shadow": 7.87
+   "mae_base": 5.84,
+   "mae_shadow": 7.84
   },
   "D2": {
    "n": 440,
@@ -34,8 +34,39 @@
    "mae_shadow": 5.73
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 0,
- "last_decisions": [],
+ "new_decisions_this_run": 3,
+ "graded_this_run": 11,
+ "last_decisions": [
+  {
+   "id": "cb-1049",
+   "type": "D1",
+   "event_ride": "Haunted Mansion",
+   "ride": "The Hall of Presidents",
+   "horizon": 30,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Haunted Mansion (posted 40) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-1050",
+   "type": "D1",
+   "event_ride": "Haunted Mansion",
+   "ride": "The Hall of Presidents",
+   "horizon": 60,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Haunted Mansion (posted 40) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-1051",
+   "type": "D1",
+   "event_ride": "Haunted Mansion",
+   "ride": "The Hall of Presidents",
+   "horizon": 90,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Haunted Mansion (posted 40) down 15 min; same-land displacement +5"
+  }
+ ],
  "debug": ""
 }
