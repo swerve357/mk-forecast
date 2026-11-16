@@ -1,12 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-16T19:04:46.983056+00:00",
+ "updated": "2026-11-16T19:07:23.421976+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "Big Thunder Mountain Railroad": "2026-11-16 13:55:00-05:00"
  },
- "decisions_open": 10,
+ "decisions_open": 13,
  "graded_all": {
   "n": 970,
   "wins": 244,
@@ -33,18 +33,38 @@
    "mae_shadow": 5.73
   }
  },
- "new_decisions_this_run": 1,
+ "new_decisions_this_run": 3,
  "graded_this_run": 0,
  "last_decisions": [
   {
-   "id": "cb-1053",
-   "type": "D2",
-   "event_ride": "Haunted Mansion",
-   "ride": "Haunted Mansion",
+   "id": "cb-1054",
+   "type": "D1",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Country Bear Musical Jamboree",
    "horizon": 30,
-   "base": 40.0,
-   "shadow": 20.0,
-   "reason": "reopened after 55 min down; shadow = first posted wait at reopen"
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Big Thunder Mountain Railroad (posted 110) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-1055",
+   "type": "D1",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Country Bear Musical Jamboree",
+   "horizon": 60,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Big Thunder Mountain Railroad (posted 110) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-1056",
+   "type": "D1",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Country Bear Musical Jamboree",
+   "horizon": 90,
+   "base": 10.0,
+   "shadow": 15.0,
+   "reason": "Big Thunder Mountain Railroad (posted 110) down 15 min; same-land displacement +5"
   }
  ],
  "debug": ""
