@@ -1,62 +1,42 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-17T14:36:20.586472+00:00",
+ "updated": "2026-11-17T14:41:22.939509+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-16 17:10:00-05:00",
+  "Haunted Mansion": "2026-11-17 09:45:00-05:00",
   "The Hall of Presidents": "2026-11-16 21:05:00-05:00"
  },
- "decisions_open": 16,
+ "decisions_open": 6,
  "graded_all": {
-  "n": 997,
+  "n": 1007,
   "wins": 246,
-  "losses": 481,
-  "ties": 270,
-  "mae_base": 5.23,
-  "mae_shadow": 6.82
+  "losses": 486,
+  "ties": 275,
+  "mae_base": 5.19,
+  "mae_shadow": 6.81
  },
  "by_type": {
   "D1": {
-   "n": 539,
+   "n": 543,
    "wins": 162,
-   "losses": 377,
+   "losses": 381,
    "ties": 0,
-   "mae_base": 5.71,
+   "mae_base": 5.68,
    "mae_shadow": 7.7
   },
   "D2": {
-   "n": 458,
+   "n": 464,
    "wins": 84,
-   "losses": 104,
-   "ties": 270,
-   "mae_base": 4.66,
-   "mae_shadow": 5.79
+   "losses": 105,
+   "ties": 275,
+   "mae_base": 4.62,
+   "mae_shadow": 5.77
   }
  },
- "new_decisions_this_run": 2,
- "graded_this_run": 0,
- "last_decisions": [
-  {
-   "id": "cb-1091",
-   "type": "D2",
-   "event_ride": "Big Thunder Mountain Railroad",
-   "ride": "Big Thunder Mountain Railroad",
-   "horizon": 30,
-   "base": 25.0,
-   "shadow": 10.0,
-   "reason": "reopened after 630 min down; shadow = first posted wait at reopen"
-  },
-  {
-   "id": "cb-1092",
-   "type": "D2",
-   "event_ride": "Enchanted Tales with Belle",
-   "ride": "Enchanted Tales with Belle",
-   "horizon": 30,
-   "base": 10.0,
-   "shadow": 10.0,
-   "reason": "reopened after 845 min down; shadow = first posted wait at reopen"
-  }
- ],
+ "new_decisions_this_run": 0,
+ "graded_this_run": 10,
+ "last_decisions": [],
  "debug": ""
 }
