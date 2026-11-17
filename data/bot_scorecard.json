@@ -1,15 +1,13 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-17T14:31:07.679565+00:00",
+ "updated": "2026-11-17T14:36:20.586472+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-16 17:10:00-05:00",
-  "Big Thunder Mountain Railroad": "2026-11-16 23:10:00-05:00",
-  "Enchanted Tales with Belle": "2026-11-16 19:35:00-05:00",
   "The Hall of Presidents": "2026-11-16 21:05:00-05:00"
  },
- "decisions_open": 14,
+ "decisions_open": 16,
  "graded_all": {
   "n": 997,
   "wins": 246,
@@ -36,8 +34,29 @@
    "mae_shadow": 5.79
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 2,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-1091",
+   "type": "D2",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Big Thunder Mountain Railroad",
+   "horizon": 30,
+   "base": 25.0,
+   "shadow": 10.0,
+   "reason": "reopened after 630 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-1092",
+   "type": "D2",
+   "event_ride": "Enchanted Tales with Belle",
+   "ride": "Enchanted Tales with Belle",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 845 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
