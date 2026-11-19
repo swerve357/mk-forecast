@@ -25,7 +25,8 @@ import json, os, sys
 from datetime import datetime, timezone
 
 import numpy as np, pandas as pd
-from sklearn.ensemble import HistGradientBoostingRegressor
+from sklearn.ensemble import (HistGradientBoostingClassifier,
+                              HistGradientBoostingRegressor)
 from sklearn.inspection import permutation_importance
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -143,17 +144,74 @@ def run_park(park):
                 cols = [c for c in X_COLS if tr[c].notna().any()
                         and (c == "ride_code" or tr[c].nunique(dropna=True) > 1)]
                 cat = [cols.index("ride_code")] if "ride_code" in cols else None
-                m = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
-                                                  categorical_features=cat,
-                                                  random_state=F.SEED)
-                m.fit(tr[cols], tr[f"y{h}"] - tr["wait"])
-
-                def ship_pred(frame, model):
+                # T2 change gate (adopted 2026-11-19, same port as
+                # forecast.py): a classifier estimates P(the posted wait
+                # changes at all by this horizon); below tau the call is
+                # exactly the current wait, above it the regression
+                # decides. tau is picked on an inner split of the
+                # training window, never on the ship-gate holdout.
+                def reg_pred(frame, model):
                     p = frame["wait"].values + model.predict(frame[cols])
                     # Posted waits never go below 5 (verified across all
                     # banked data), so predictions floor at 5, not 0.
                     return np.clip(np.round(p / 5.0) * 5, 5, None)
-                s = F.score(ship_pred(te, m), te[f"y{h}"].values, te["wait"].values)
+
+                def fit_candidate(frame, seed, tau=None):
+                    reg = HistGradientBoostingRegressor(
+                        max_iter=250, learning_rate=0.07,
+                        categorical_features=cat, random_state=seed)
+                    reg.fit(frame[cols], frame[f"y{h}"] - frame["wait"])
+                    try:
+                        chg = lambda f: (np.round(
+                            (f[f"y{h}"] - f["wait"]) / 5) != 0).astype(int)
+                        if tau is None:
+                            itimes = np.sort(frame.index.unique())
+                            icut = itimes[int(len(itimes) * 0.8)]
+                            sub = frame[frame.index + pd.Timedelta(minutes=h) < icut]
+                            val = frame[frame.index >= icut]
+                            g_sub = HistGradientBoostingClassifier(
+                                max_iter=250, learning_rate=0.07,
+                                early_stopping=False, categorical_features=cat,
+                                random_state=seed)
+                            g_sub.fit(sub[cols], chg(sub))
+                            r_sub = HistGradientBoostingRegressor(
+                                max_iter=250, learning_rate=0.07,
+                                categorical_features=cat, random_state=seed)
+                            r_sub.fit(sub[cols], sub[f"y{h}"] - sub["wait"])
+                            pv = g_sub.predict_proba(val[cols])[
+                                :, list(g_sub.classes_).index(1)]
+                            rv = reg_pred(val, r_sub)
+                            yv, wv = val[f"y{h}"].values, val["wait"].values
+                            best_ex = -1.0
+                            tau = 0.5
+                            for t in (0.3, 0.4, 0.5, 0.6, 0.7):
+                                pp = np.where(pv < t, wv, rv)
+                                ex = float((pp == yv).mean())
+                                if ex > best_ex:
+                                    best_ex, tau = ex, t
+                        gate = HistGradientBoostingClassifier(
+                            max_iter=250, learning_rate=0.07,
+                            early_stopping=False, categorical_features=cat,
+                            random_state=seed)
+                        gate.fit(frame[cols], chg(frame))
+                        return reg, gate, tau
+                    except Exception as e:
+                        print(f"{park} gate {h}: {e} — ungated candidate")
+                        return reg, None, None
+
+                def cand_pred(frame, reg, gate, tau):
+                    p = reg_pred(frame, reg)
+                    if gate is None:
+                        return p
+                    if 1 not in list(gate.classes_):
+                        return np.clip(frame["wait"].values, 5, None)
+                    pc = gate.predict_proba(frame[cols])[
+                        :, list(gate.classes_).index(1)]
+                    return np.where(pc < tau,
+                                    np.clip(frame["wait"].values, 5, None), p)
+
+                m, g, tau = fit_candidate(tr, F.SEED)
+                s = F.score(cand_pred(te, m, g, tau), te[f"y{h}"].values, te["wait"].values)
                 entry.update(s, train_rows=int(len(tr)), test_rows=int(len(te)),
                              evaluation="chronological holdout with horizon embargo")
                 # Seed discipline (see forecast.py): a ship margin under
@@ -161,15 +219,12 @@ def run_park(park):
                 # two seeds' mean MAE — one unseeded draw is a lottery.
                 gate_mae = s["mae"]
                 if abs(gate_mae - s["baseline_mae"]) < F.GATE_CLOSE_MAE:
-                    m2 = HistGradientBoostingRegressor(max_iter=250, learning_rate=0.07,
-                                                       categorical_features=cat,
-                                                       random_state=F.SEED2)
-                    m2.fit(tr[cols], tr[f"y{h}"] - tr["wait"])
-                    s2 = F.score(ship_pred(te, m2), te[f"y{h}"].values, te["wait"].values)
+                    m2, g2, tau2 = fit_candidate(tr, F.SEED2)
+                    s2 = F.score(cand_pred(te, m2, g2, tau2), te[f"y{h}"].values, te["wait"].values)
                     gate_mae = round((s["mae"] + s2["mae"]) / 2, 1)
                     entry["gate_mae_2seed"] = gate_mae
                     entry["candidate_mae_seed2"] = s2["mae"]
-                shipped_pred = (ship_pred(te, m) if gate_mae < s["baseline_mae"]
+                shipped_pred = (cand_pred(te, m, g, tau) if gate_mae < s["baseline_mae"]
                                 else te["wait"].values)
                 tmp = pd.DataFrame({"name": te["name"].values,
                                     "err": np.abs(np.asarray(shipped_pred, float)
@@ -192,9 +247,12 @@ def run_park(park):
                 except Exception as e:
                     print(f"{park} importance {h}: {e}")
                 if gate_mae < s["baseline_mae"]:
-                    m.fit(d[cols], d[f"y{h}"] - d["wait"])
-                    models[h] = (m, cols)
-                    entry["model"] = "gradient boosting (delta+round5)"
+                    # Refit on all data with the chosen tau fixed (see
+                    # forecast.py — tau is a selected hyperparameter).
+                    m, g, tau = fit_candidate(d, F.SEED, tau=tau)
+                    models[h] = (m, cols, g, tau)
+                    entry["model"] = "gradient boosting (delta+round5 + change gate)"
+                    entry["gate_tau"] = tau
                     if len(d) >= F.MIN_QUANTILE_ROWS:
                         try:
                             lo = HistGradientBoostingRegressor(
@@ -232,9 +290,14 @@ def run_park(park):
                       "mins_open": _n(r.get("mins_since_open")), "mins_close": _n(r.get("mins_to_close"))}
         for h in F.HORIZONS:
             if h in models:
-                mdl, mcols = models[h]
+                mdl, mcols, gmdl, gtau = models[h]
                 p = float(r["wait"]) + float(mdl.predict(pd.DataFrame([r])[mcols])[0])
                 p = max(5.0, round(p / 5.0) * 5)
+                if gmdl is not None and 1 in list(gmdl.classes_):
+                    pc = float(gmdl.predict_proba(
+                        pd.DataFrame([r])[mcols])[:, list(gmdl.classes_).index(1)][0])
+                    if pc < gtau:
+                        p = max(5.0, float(r["wait"]))
             else:
                 p = max(5.0, float(r["wait"]))
             row[f"f{h}"] = int(p)
