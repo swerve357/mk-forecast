@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-19T04:51:19.975528+00:00",
- "last_sample": "2026-11-19T04:50:33+00:00",
- "samples": 171589,
+ "updated": "2026-11-19T04:56:02.613324+00:00",
+ "last_sample": "2026-11-19T04:55:26+00:00",
+ "samples": 171625,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -103,55 +103,19 @@
   }
  },
  "context": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "open": "09:00",
-  "close": "22:00",
+  "close": "18:00",
   "early_entry": "08:30",
-  "ticketed_event": "",
-  "ll_multipass_usd": 39.0,
+  "ticketed_event": "Special Ticketed Event",
+  "ll_multipass_usd": 35.0,
+  "event": "Mickey's Very Merry Christmas Party",
   "is_party_night": false
  },
  "demo": false,
  "lookback": {},
- "today": {
-  "date": "2026-11-18",
-  "graded": 14524,
-  "exact": 45,
-  "in5": 75,
-  "in10": 89,
-  "in15": 97,
-  "by_horizon": {
-   "30": {
-    "graded": 3894,
-    "exact": 49,
-    "in5": 78,
-    "in10": 92,
-    "in15": 98
-   },
-   "60": {
-    "graded": 3718,
-    "exact": 46,
-    "in5": 76,
-    "in10": 90,
-    "in15": 97
-   },
-   "90": {
-    "graded": 3543,
-    "exact": 43,
-    "in5": 73,
-    "in10": 88,
-    "in15": 96
-   },
-   "120": {
-    "graded": 3369,
-    "exact": 42,
-    "in5": 71,
-    "in10": 87,
-    "in15": 95
-   }
-  }
- },
- "lookback_debug": "log rows 22052; act (3286, 31) idx 2026-10-30 04:00:00+00:00..2026-11-19 03:05:00+00:00; slots 9; lookback rides 0; today graded 14524",
+ "today": {},
+ "lookback_debug": "log rows 21956; act (3286, 31) idx 2026-10-30 04:00:00+00:00..2026-11-19 03:05:00+00:00; slots 9; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-19T04:42:59.426318+00:00",
