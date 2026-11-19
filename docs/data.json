@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-19T12:46:19.595450+00:00",
- "last_sample": "2026-11-19T12:45:37+00:00",
- "samples": 175009,
+ "updated": "2026-11-19T12:51:23.052675+00:00",
+ "last_sample": "2026-11-19T12:50:35+00:00",
+ "samples": 175045,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -118,9 +118,9 @@
  "lookback_debug": "log rows 16328; act (3286, 31) idx 2026-10-30 04:00:00+00:00..2026-11-19 03:05:00+00:00; slots 0; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-19T12:26:47.048977+00:00",
-   "last_sample": "2026-11-19T12:25:33+00:00",
-   "samples": 151064,
+   "updated": "2026-11-19T12:51:49.023665+00:00",
+   "last_sample": "2026-11-19T12:50:35+00:00",
+   "samples": 151229,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -239,9 +239,9 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-19T12:27:08.207372+00:00",
-   "last_sample": "2026-11-19T12:25:33+00:00",
-   "samples": 58851,
+   "updated": "2026-11-19T12:52:10.616688+00:00",
+   "last_sample": "2026-11-19T12:50:35+00:00",
+   "samples": 58916,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -358,11 +358,208 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-19T12:27:26.087127+00:00",
-   "last_sample": "2026-11-19T12:25:33+00:00",
-   "samples": 72432,
+   "updated": "2026-11-19T12:52:28.893288+00:00",
+   "last_sample": "2026-11-19T12:50:35+00:00",
+   "samples": 72512,
    "history_samples": 0,
-   "rides": [],
+   "rides": [
+    {
+     "name": "Avatar Flight of Passage",
+     "now": 30,
+     "trend30": 0,
+     "why": {
+      "lag60": null,
+      "lag120": null,
+      "lag_yday": 15,
+      "down60": 0,
+      "reopened": false,
+      "park_mean": 14,
+      "park_busy": 0,
+      "mins_open": -5,
+      "mins_close": 605
+     },
+     "f30": 30,
+     "score30_mae": 9.8,
+     "score30_in5": 48,
+     "score30_in10": 68,
+     "score30_pairs": 405,
+     "d30": 0,
+     "f60": 30,
+     "score60_mae": 12.9,
+     "score60_in5": 45,
+     "score60_in10": 58,
+     "score60_pairs": 385,
+     "d60": 0,
+     "f90": 30,
+     "f90_lo": 15,
+     "f90_hi": 45,
+     "score90_mae": 13.1,
+     "score90_in5": 36,
+     "score90_in10": 57,
+     "score90_pairs": 365,
+     "d90": 0,
+     "d90_lo": -15,
+     "d90_hi": 15,
+     "f120": 45,
+     "f120_lo": 25,
+     "f120_hi": 60,
+     "score120_mae": 13.2,
+     "score120_in5": 36,
+     "score120_in10": 63,
+     "score120_pairs": 346,
+     "d120": 15,
+     "d120_lo": -20,
+     "d120_hi": 15,
+     "people": null
+    },
+    {
+     "name": "Zootopia: Better Zoogether!",
+     "now": 10,
+     "trend30": 0,
+     "why": {
+      "lag60": null,
+      "lag120": null,
+      "lag_yday": 5,
+      "down60": 0,
+      "reopened": false,
+      "park_mean": 14,
+      "park_busy": 0,
+      "mins_open": -5,
+      "mins_close": 605
+     },
+     "f30": 10,
+     "score30_mae": 1.1,
+     "score30_in5": 96,
+     "score30_in10": 98,
+     "score30_pairs": 405,
+     "d30": 0,
+     "f60": 10,
+     "score60_mae": 2.0,
+     "score60_in5": 92,
+     "score60_in10": 96,
+     "score60_pairs": 385,
+     "d60": 0,
+     "f90": 10,
+     "f90_lo": 10,
+     "f90_hi": 10,
+     "score90_mae": 3.9,
+     "score90_in5": 86,
+     "score90_in10": 95,
+     "score90_pairs": 365,
+     "d90": 0,
+     "d90_lo": 0,
+     "d90_hi": 0,
+     "f120": 10,
+     "f120_lo": 10,
+     "f120_hi": 15,
+     "score120_mae": 3.4,
+     "score120_in5": 95,
+     "score120_in10": 95,
+     "score120_pairs": 346,
+     "d120": 0,
+     "d120_lo": 0,
+     "d120_hi": 5,
+     "people": null
+    },
+    {
+     "name": "Na'vi River Journey",
+     "now": 10,
+     "trend30": 0,
+     "why": {
+      "lag60": null,
+      "lag120": null,
+      "lag_yday": 5,
+      "down60": 0,
+      "reopened": false,
+      "park_mean": 14,
+      "park_busy": 0,
+      "mins_open": -5,
+      "mins_close": 605
+     },
+     "f30": 10,
+     "score30_mae": 7.2,
+     "score30_in5": 62,
+     "score30_in10": 83,
+     "score30_pairs": 395,
+     "d30": 0,
+     "f60": 10,
+     "score60_mae": 9.3,
+     "score60_in5": 51,
+     "score60_in10": 72,
+     "score60_pairs": 375,
+     "d60": 0,
+     "f90": 25,
+     "f90_lo": 10,
+     "f90_hi": 30,
+     "score90_mae": 9.7,
+     "score90_in5": 45,
+     "score90_in10": 67,
+     "score90_pairs": 359,
+     "d90": 15,
+     "d90_lo": -15,
+     "d90_hi": 5,
+     "f120": 30,
+     "f120_lo": 15,
+     "f120_hi": 40,
+     "score120_mae": 10.0,
+     "score120_in5": 49,
+     "score120_in10": 69,
+     "score120_pairs": 341,
+     "d120": 20,
+     "d120_lo": -15,
+     "d120_hi": 10,
+     "people": null
+    },
+    {
+     "name": "Expedition Everest - Legend of the Forbidden Mountain",
+     "now": 5,
+     "trend30": 0,
+     "why": {
+      "lag60": null,
+      "lag120": null,
+      "lag_yday": 5,
+      "down60": 0,
+      "reopened": false,
+      "park_mean": 14,
+      "park_busy": 0,
+      "mins_open": -5,
+      "mins_close": 605
+     },
+     "f30": 5,
+     "score30_mae": 3.3,
+     "score30_in5": 85,
+     "score30_in10": 92,
+     "score30_pairs": 266,
+     "d30": 0,
+     "f60": 5,
+     "score60_mae": 3.5,
+     "score60_in5": 84,
+     "score60_in10": 92,
+     "score60_pairs": 231,
+     "d60": 0,
+     "f90": 5,
+     "f90_lo": 5,
+     "f90_hi": 15,
+     "score90_mae": 6.0,
+     "score90_in5": 67,
+     "score90_in10": 92,
+     "score90_pairs": 203,
+     "d90": 0,
+     "d90_lo": 0,
+     "d90_hi": 10,
+     "f120": 10,
+     "f120_lo": 5,
+     "f120_hi": 25,
+     "score120_mae": 5.6,
+     "score120_in5": 74,
+     "score120_in10": 90,
+     "score120_pairs": 193,
+     "d120": 5,
+     "d120_lo": -5,
+     "d120_hi": 15,
+     "people": null
+    }
+   ],
    "metrics": {
     "30": {
      "available_pairs": 15247,
@@ -475,7 +672,48 @@
     "is_party_night": false
    },
    "demo": false,
-   "lookback": {},
+   "lookback": {
+    "Avatar Flight of Passage": [
+     {
+      "t": "07:40",
+      "actual": 30
+     },
+     {
+      "t": "07:55",
+      "actual": 30
+     }
+    ],
+    "Zootopia: Better Zoogether!": [
+     {
+      "t": "07:40",
+      "actual": 10
+     },
+     {
+      "t": "07:55",
+      "actual": 10
+     }
+    ],
+    "Na'vi River Journey": [
+     {
+      "t": "07:40",
+      "actual": 10
+     },
+     {
+      "t": "07:55",
+      "actual": 10
+     }
+    ],
+    "Expedition Everest - Legend of the Forbidden Mountain": [
+     {
+      "t": "07:40",
+      "actual": 5
+     },
+     {
+      "t": "07:55",
+      "actual": 5
+     }
+    ]
+   },
    "today": {},
    "park_label": "Animal Kingdom"
   }
