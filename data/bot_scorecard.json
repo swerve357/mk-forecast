@@ -1,11 +1,10 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-20T01:36:28.621260+00:00",
+ "updated": "2026-11-20T01:41:21.991524+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-19 17:10:00-05:00",
-  "Big Thunder Mountain Railroad": "2026-11-19 19:15:00-05:00",
   "Casey Jr. Splash 'N' Soak Station": "2026-11-19 17:05:00-05:00",
   "Cinderella Castle": "2026-11-19 18:10:00-05:00",
   "Country Bear Musical Jamboree": "2026-11-19 18:10:00-05:00",
@@ -19,12 +18,12 @@
  },
  "decisions_open": 1,
  "graded_all": {
-  "n": 1200,
+  "n": 1201,
   "wins": 283,
   "losses": 574,
-  "ties": 343,
-  "mae_base": 4.92,
-  "mae_shadow": 6.57
+  "ties": 344,
+  "mae_base": 4.93,
+  "mae_shadow": 6.58
  },
  "by_type": {
   "D1": {
@@ -36,16 +35,27 @@
    "mae_shadow": 7.5
   },
   "D2": {
-   "n": 575,
+   "n": 576,
    "wins": 100,
    "losses": 132,
-   "ties": 343,
-   "mae_base": 4.38,
-   "mae_shadow": 5.56
+   "ties": 344,
+   "mae_base": 4.39,
+   "mae_shadow": 5.58
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 1,
  "graded_this_run": 1,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-1302",
+   "type": "D2",
+   "event_ride": "Big Thunder Mountain Railroad",
+   "ride": "Big Thunder Mountain Railroad",
+   "horizon": 30,
+   "base": 20.0,
+   "shadow": 15.0,
+   "reason": "reopened after 90 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
