@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-20T13:42:03.126898+00:00",
- "last_sample": "2026-11-20T13:40:34+00:00",
- "samples": 185773,
+ "updated": "2026-11-20T13:46:44.649130+00:00",
+ "last_sample": "2026-11-20T13:45:30+00:00",
+ "samples": 185809,
  "history_samples": 11713,
  "rides": [
   {
    "name": "Peter Pan's Flight",
-   "now": 35,
+   "now": 40,
    "trend30": 0,
    "why": {
     "lag60": null,
@@ -15,18 +15,18 @@
     "down60": 5,
     "reopened": true,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 35,
    "f30_lo": 30,
    "f30_hi": 50,
-   "f60": 35,
+   "f60": 30,
    "f60_lo": 25,
-   "f60_hi": 45,
+   "f60_hi": 50,
    "f90": 35,
-   "f90_lo": 30,
+   "f90_lo": 35,
    "f90_hi": 50,
    "f120": 35,
    "f120_lo": 30,
@@ -48,56 +48,8 @@
    "score120_in5": 59,
    "score120_pairs": 573,
    "people": null,
-   "people_lo": 93,
-   "people_hi": 315,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
-  },
-  {
-   "name": "The Many Adventures of Winnie the Pooh",
-   "now": 30,
-   "trend30": 0,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 30,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
-   },
-   "f30": 30,
-   "f30_lo": 25,
-   "f30_hi": 40,
-   "f60": 30,
-   "f60_lo": 25,
-   "f60_hi": 40,
-   "f90": 30,
-   "f90_lo": 25,
-   "f90_hi": 40,
-   "f120": 30,
-   "f120_lo": 25,
-   "f120_hi": 45,
-   "score30_mae": 5.9,
-   "score30_in10": 90,
-   "score30_in5": 67,
-   "score30_pairs": 583,
-   "score60_mae": 6.1,
-   "score60_in10": 88,
-   "score60_in5": 65,
-   "score60_pairs": 562,
-   "score90_mae": 6.6,
-   "score90_in10": 85,
-   "score90_in5": 62,
-   "score90_pairs": 540,
-   "score120_mae": 6.7,
-   "score120_in10": 86,
-   "score120_in5": 61,
-   "score120_pairs": 517,
-   "people": null,
-   "people_lo": 90,
-   "people_hi": 300,
+   "people_lo": 107,
+   "people_hi": 360,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
@@ -111,9 +63,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 35,
    "f30_lo": 25,
@@ -149,6 +101,54 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
+   "name": "The Many Adventures of Winnie the Pooh",
+   "now": 25,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 30,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 12,
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
+   },
+   "f30": 25,
+   "f30_lo": 20,
+   "f30_hi": 35,
+   "f60": 25,
+   "f60_lo": 20,
+   "f60_hi": 35,
+   "f90": 25,
+   "f90_lo": 20,
+   "f90_hi": 40,
+   "f120": 30,
+   "f120_lo": 20,
+   "f120_hi": 40,
+   "score30_mae": 5.9,
+   "score30_in10": 90,
+   "score30_in5": 67,
+   "score30_pairs": 583,
+   "score60_mae": 6.1,
+   "score60_in10": 88,
+   "score60_in5": 65,
+   "score60_pairs": 562,
+   "score90_mae": 6.6,
+   "score90_in10": 85,
+   "score90_in5": 62,
+   "score90_pairs": 540,
+   "score120_mae": 6.7,
+   "score120_in10": 86,
+   "score120_in5": 61,
+   "score120_pairs": 517,
+   "people": null,
+   "people_lo": 75,
+   "people_hi": 250,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
    "name": "Buzz Lightyear\u2019s Space Ranger Spin",
    "now": 10,
    "trend30": 0,
@@ -159,11 +159,11 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
-   "f30": 15,
+   "f30": 20,
    "f30_lo": 5,
    "f30_hi": 30,
    "f60": 20,
@@ -207,9 +207,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -255,9 +255,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -303,9 +303,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -351,9 +351,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -399,9 +399,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -447,9 +447,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -495,9 +495,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -543,9 +543,9 @@
     "down60": 0,
     "reopened": false,
     "park_mean": 12,
-    "park_busy": 0,
-    "mins_open": -15,
-    "mins_close": 555
+    "park_busy": 3,
+    "mins_open": -10,
+    "mins_close": 550
    },
    "f30": 5,
    "f30_lo": 5,
@@ -701,16 +701,16 @@
     "closed": 1
    }
   ],
-  "The Many Adventures of Winnie the Pooh": [
-   {
-    "t": "08:40",
-    "actual": 25
-   }
-  ],
   "Seven Dwarfs Mine Train": [
    {
     "t": "08:40",
     "actual": 30
+   }
+  ],
+  "The Many Adventures of Winnie the Pooh": [
+   {
+    "t": "08:40",
+    "actual": 25
    }
   ],
   "Buzz Lightyear\u2019s Space Ranger Spin": [
@@ -788,7 +788,7 @@
    }
   }
  },
- "lookback_debug": "log rows 17640; act (3468, 31) idx 2026-10-30 04:00:00+00:00..2026-11-20 13:45:00+00:00; slots 1; lookback rides 9; today graded 172",
+ "lookback_debug": "log rows 17688; act (3469, 31) idx 2026-10-30 04:00:00+00:00..2026-11-20 13:50:00+00:00; slots 1; lookback rides 9; today graded 172",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-20T13:22:56.503845+00:00",
@@ -1041,8 +1041,8 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-20T13:42:04.922197+00:00",
-   "last_sample": "2026-11-20T13:40:34+00:00",
+   "updated": "2026-11-20T13:46:46.058544+00:00",
+   "last_sample": "2026-11-20T13:45:30+00:00",
    "samples": 77216,
    "history_samples": 0,
    "rides": [
@@ -1138,8 +1138,8 @@
     },
     {
      "name": "Na'vi River Journey",
-     "now": 10,
-     "trend30": 5,
+     "now": 15,
+     "trend30": 10,
      "why": {
       "lag60": null,
       "lag120": null,
@@ -1151,27 +1151,27 @@
       "mins_open": 25,
       "mins_close": 575
      },
-     "f30": 10,
+     "f30": 15,
      "score30_mae": 5.9,
      "score30_in5": 67,
      "score30_in10": 90,
      "score30_pairs": 419,
      "d30": 0,
-     "f60": 10,
+     "f60": 15,
      "score60_mae": 7.4,
      "score60_in5": 59,
      "score60_in10": 80,
      "score60_pairs": 398,
      "d60": 0,
-     "f90": 10,
+     "f90": 15,
      "score90_mae": 9.3,
      "score90_in5": 44,
      "score90_in10": 70,
      "score90_pairs": 381,
      "d90": 0,
-     "f120": 30,
-     "f120_lo": 10,
-     "f120_hi": 35,
+     "f120": 35,
+     "f120_lo": 15,
+     "f120_hi": 40,
      "score120_mae": 11.7,
      "score120_in5": 42,
      "score120_in10": 59,
