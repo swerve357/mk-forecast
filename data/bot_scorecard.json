@@ -1,14 +1,12 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-20T20:36:36.267541+00:00",
+ "updated": "2026-11-20T20:42:10.189259+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "Country Bear Musical Jamboree": "2026-11-19 18:10:00-05:00",
-  "Pirates of the Caribbean": "2026-11-20 15:30:00-05:00",
-  "The Many Adventures of Winnie the Pooh": "2026-11-20 15:15:00-05:00"
+  "Country Bear Musical Jamboree": "2026-11-19 18:10:00-05:00"
  },
- "decisions_open": 0,
+ "decisions_open": 2,
  "graded_all": {
   "n": 1232,
   "wins": 286,
@@ -35,8 +33,29 @@
    "mae_shadow": 5.54
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 2,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-1333",
+   "type": "D2",
+   "event_ride": "Pirates of the Caribbean",
+   "ride": "Pirates of the Caribbean",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 15 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-1334",
+   "type": "D2",
+   "event_ride": "The Many Adventures of Winnie the Pooh",
+   "ride": "The Many Adventures of Winnie the Pooh",
+   "horizon": 30,
+   "base": 35.0,
+   "shadow": 25.0,
+   "reason": "reopened after 30 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
