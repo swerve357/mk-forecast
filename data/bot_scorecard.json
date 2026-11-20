@@ -1,20 +1,18 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-20T15:02:22.653433+00:00",
+ "updated": "2026-11-20T15:07:01.880958+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-19 17:10:00-05:00",
-  "Country Bear Musical Jamboree": "2026-11-19 18:10:00-05:00",
-  "The Hall of Presidents": "2026-11-19 18:10:00-05:00",
-  "The Many Adventures of Winnie the Pooh": "2026-11-20 09:45:00-05:00"
+  "Country Bear Musical Jamboree": "2026-11-19 18:10:00-05:00"
  },
  "decisions_open": 2,
  "graded_all": {
-  "n": 1224,
+  "n": 1225,
   "wins": 285,
   "losses": 577,
-  "ties": 362,
+  "ties": 363,
   "mae_base": 4.9,
   "mae_shadow": 6.53
  },
@@ -28,16 +26,27 @@
    "mae_shadow": 7.5
   },
   "D2": {
-   "n": 599,
+   "n": 600,
    "wins": 102,
    "losses": 135,
-   "ties": 362,
-   "mae_base": 4.36,
-   "mae_shadow": 5.53
+   "ties": 363,
+   "mae_base": 4.35,
+   "mae_shadow": 5.52
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 0,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 1,
+ "last_decisions": [
+  {
+   "id": "cb-1327",
+   "type": "D2",
+   "event_ride": "The Many Adventures of Winnie the Pooh",
+   "ride": "The Many Adventures of Winnie the Pooh",
+   "horizon": 30,
+   "base": 30.0,
+   "shadow": 25.0,
+   "reason": "reopened after 25 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
