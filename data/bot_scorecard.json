@@ -1,7 +1,7 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-21T00:01:57.472387+00:00",
+ "updated": "2026-11-21T00:07:46.590983+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-20 17:05:00-05:00",
@@ -12,20 +12,19 @@
   "Enchanted Tales with Belle": "2026-11-20 17:40:00-05:00",
   "Main Street Vehicles": "2026-11-20 16:05:00-05:00",
   "Mickey's PhilharMagic": "2026-11-20 18:05:00-05:00",
-  "Monsters, Inc. Laugh Floor": "2026-11-20 18:05:00-05:00",
   "The Hall of Presidents": "2026-11-20 18:05:00-05:00",
   "Walt Disney World Railroad - Fantasyland": "2026-11-20 17:05:00-05:00",
   "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-20 17:05:00-05:00",
   "Walt Disney's Enchanted Tiki Room": "2026-11-20 18:05:00-05:00"
  },
- "decisions_open": 22,
+ "decisions_open": 3,
  "graded_all": {
-  "n": 1234,
+  "n": 1254,
   "wins": 286,
-  "losses": 580,
-  "ties": 368,
-  "mae_base": 4.89,
-  "mae_shadow": 6.53
+  "losses": 583,
+  "ties": 385,
+  "mae_base": 4.86,
+  "mae_shadow": 6.5
  },
  "by_type": {
   "D1": {
@@ -37,16 +36,27 @@
    "mae_shadow": 7.5
   },
   "D2": {
-   "n": 609,
+   "n": 629,
    "wins": 103,
-   "losses": 138,
-   "ties": 368,
-   "mae_base": 4.34,
-   "mae_shadow": 5.55
+   "losses": 141,
+   "ties": 385,
+   "mae_base": 4.3,
+   "mae_shadow": 5.51
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 0,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 20,
+ "last_decisions": [
+  {
+   "id": "cb-1357",
+   "type": "D2",
+   "event_ride": "Monsters, Inc. Laugh Floor",
+   "ride": "Monsters, Inc. Laugh Floor",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 65 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
