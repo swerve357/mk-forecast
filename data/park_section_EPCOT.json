@@ -1,121 +1,178 @@
 {
- "updated": "2026-11-21T00:42:10.077894+00:00",
- "last_sample": "2026-11-21T00:40:35+00:00",
- "samples": 165254,
+ "updated": "2026-11-21T00:47:15.302503+00:00",
+ "last_sample": "2026-11-21T00:45:37+00:00",
+ "samples": 165452,
  "history_samples": 0,
  "rides": [
   {
+   "name": "Test Track",
+   "now": 70,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 75,
+    "down60": 30,
+    "reopened": true,
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
+   },
+   "f30": 70,
+   "f30_lo": 55,
+   "f30_hi": 80,
+   "score30_mae": 12.3,
+   "score30_in5": 45,
+   "score30_in10": 61,
+   "score30_pairs": 172,
+   "d30": 0,
+   "d30_lo": -15,
+   "d30_hi": 10,
+   "f60": 60,
+   "f60_lo": 45,
+   "f60_hi": 80,
+   "score60_mae": 16.1,
+   "score60_in5": 32,
+   "score60_in10": 48,
+   "score60_pairs": 142,
+   "d60": -10,
+   "d60_lo": -15,
+   "d60_hi": 20,
+   "f90": 55,
+   "f90_lo": 40,
+   "f90_hi": 85,
+   "score90_mae": 15.4,
+   "score90_in5": 28,
+   "score90_in10": 53,
+   "score90_pairs": 117,
+   "d90": -15,
+   "d90_lo": -15,
+   "d90_hi": 30,
+   "f120": 35,
+   "f120_lo": 30,
+   "f120_hi": 75,
+   "score120_mae": 14.1,
+   "score120_in5": 37,
+   "score120_in10": 55,
+   "score120_pairs": 95,
+   "d120": -35,
+   "d120_lo": -5,
+   "d120_hi": 40,
+   "people": null
+  },
+  {
    "name": "Guardians of the Galaxy: Cosmic Rewind",
    "now": 60,
-   "trend30": -5,
+   "trend30": 0,
    "why": {
     "lag60": 70,
-    "lag120": 55,
-    "lag_yday": 85,
+    "lag120": 65,
+    "lag_yday": 65,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 65,
-   "f30_lo": 55,
-   "f30_hi": 75,
-   "score30_mae": 7.4,
-   "score30_in5": 60,
+   "f30_lo": 50,
+   "f30_hi": 70,
+   "score30_mae": 7.5,
+   "score30_in5": 58,
    "score30_in10": 80,
-   "score30_pairs": 498,
+   "score30_pairs": 500,
    "d30": 5,
-   "d30_lo": -10,
-   "d30_hi": 10,
-   "f60": 70,
-   "f60_lo": 55,
-   "f60_hi": 75,
-   "score60_mae": 9.2,
-   "score60_in5": 48,
-   "score60_in10": 74,
-   "score60_pairs": 476,
-   "d60": 10,
-   "d60_lo": -15,
+   "d30_lo": -15,
+   "d30_hi": 5,
+   "f60": 65,
+   "f60_lo": 45,
+   "f60_hi": 70,
+   "score60_mae": 8.1,
+   "score60_in5": 55,
+   "score60_in10": 79,
+   "score60_pairs": 477,
+   "d60": 5,
+   "d60_lo": -20,
    "d60_hi": 5,
-   "f90": 60,
+   "f90": 55,
    "f90_lo": 45,
-   "f90_hi": 70,
-   "score90_mae": 8.5,
-   "score90_in5": 48,
-   "score90_in10": 78,
-   "score90_pairs": 454,
-   "d90": 0,
-   "d90_lo": -15,
+   "f90_hi": 65,
+   "score90_mae": 8.9,
+   "score90_in5": 47,
+   "score90_in10": 76,
+   "score90_pairs": 455,
+   "d90": -5,
+   "d90_lo": -10,
    "d90_hi": 10,
-   "f120": 60,
-   "f120_lo": 45,
-   "f120_hi": 70,
-   "score120_mae": 9.5,
+   "f120": 55,
+   "f120_lo": 35,
+   "f120_hi": 65,
+   "score120_mae": 9.4,
    "score120_in5": 43,
-   "score120_in10": 69,
-   "score120_pairs": 433,
-   "d120": 0,
-   "d120_lo": -15,
+   "score120_in10": 67,
+   "score120_pairs": 434,
+   "d120": -5,
+   "d120_lo": -20,
    "d120_hi": 10,
    "people": null
   },
   {
    "name": "Frozen Ever After",
    "now": 55,
-   "trend30": 5,
+   "trend30": -5,
    "why": {
     "lag60": 50,
-    "lag120": 55,
+    "lag120": 60,
     "lag_yday": 45,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
-   "f30": 45,
-   "f30_lo": 35,
-   "f30_hi": 65,
-   "score30_mae": 5.9,
-   "score30_in5": 68,
-   "score30_in10": 87,
-   "score30_pairs": 503,
-   "d30": -10,
-   "d30_lo": -10,
-   "d30_hi": 20,
-   "f60": 40,
-   "f60_lo": 30,
-   "f60_hi": 55,
-   "score60_mae": 8.4,
-   "score60_in5": 55,
-   "score60_in10": 75,
-   "score60_pairs": 481,
-   "d60": -15,
-   "d60_lo": -10,
-   "d60_hi": 15,
-   "f90": 30,
+   "f30": 55,
+   "f30_lo": 40,
+   "f30_hi": 60,
+   "score30_mae": 6.0,
+   "score30_in5": 70,
+   "score30_in10": 85,
+   "score30_pairs": 505,
+   "d30": 0,
+   "d30_lo": -15,
+   "d30_hi": 5,
+   "f60": 35,
+   "f60_lo": 35,
+   "f60_hi": 60,
+   "score60_mae": 8.1,
+   "score60_in5": 58,
+   "score60_in10": 79,
+   "score60_pairs": 482,
+   "d60": -20,
+   "d60_lo": 0,
+   "d60_hi": 25,
+   "f90": 35,
    "f90_lo": 25,
    "f90_hi": 60,
-   "score90_mae": 8.8,
-   "score90_in5": 47,
-   "score90_in10": 76,
-   "score90_pairs": 459,
-   "d90": -25,
-   "d90_lo": -5,
-   "d90_hi": 30,
-   "f120": 25,
+   "score90_mae": 7.2,
+   "score90_in5": 62,
+   "score90_in10": 84,
+   "score90_pairs": 460,
+   "d90": -20,
+   "d90_lo": -10,
+   "d90_hi": 25,
+   "f120": 30,
    "f120_lo": 20,
-   "f120_hi": 55,
-   "score120_mae": 7.8,
-   "score120_in5": 50,
-   "score120_in10": 82,
-   "score120_pairs": 438,
-   "d120": -30,
-   "d120_lo": -5,
-   "d120_hi": 30,
+   "f120_hi": 50,
+   "score120_mae": 8.7,
+   "score120_in5": 49,
+   "score120_in10": 76,
+   "score120_pairs": 439,
+   "d120": -25,
+   "d120_lo": -10,
+   "d120_hi": 20,
    "people": null
   },
   {
@@ -123,54 +180,54 @@
    "now": 45,
    "trend30": 0,
    "why": {
-    "lag60": 70,
-    "lag120": 65,
-    "lag_yday": 40,
+    "lag60": 45,
+    "lag120": 70,
+    "lag_yday": 35,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
-   "f30": 45,
+   "f30": 40,
    "f30_lo": 35,
-   "f30_hi": 55,
-   "score30_mae": 6.5,
-   "score30_in5": 65,
+   "f30_hi": 50,
+   "score30_mae": 6.7,
+   "score30_in5": 62,
    "score30_in10": 87,
-   "score30_pairs": 473,
-   "d30": 0,
-   "d30_lo": -10,
+   "score30_pairs": 475,
+   "d30": -5,
+   "d30_lo": -5,
    "d30_hi": 10,
-   "f60": 40,
-   "f60_lo": 35,
+   "f60": 35,
+   "f60_lo": 20,
    "f60_hi": 50,
-   "score60_mae": 7.6,
-   "score60_in5": 57,
-   "score60_in10": 81,
-   "score60_pairs": 440,
-   "d60": -5,
-   "d60_lo": -5,
-   "d60_hi": 10,
-   "f90": 40,
-   "f90_lo": 25,
-   "f90_hi": 50,
+   "score60_mae": 7.4,
+   "score60_in5": 58,
+   "score60_in10": 83,
+   "score60_pairs": 442,
+   "d60": -10,
+   "d60_lo": -15,
+   "d60_hi": 15,
+   "f90": 35,
+   "f90_lo": 20,
+   "f90_hi": 45,
    "score90_mae": 7.7,
-   "score90_in5": 60,
+   "score90_in5": 61,
    "score90_in10": 79,
-   "score90_pairs": 418,
-   "d90": -5,
+   "score90_pairs": 424,
+   "d90": -10,
    "d90_lo": -15,
    "d90_hi": 10,
-   "f120": 30,
-   "f120_lo": 20,
-   "f120_hi": 45,
-   "score120_mae": 7.5,
-   "score120_in5": 62,
-   "score120_in10": 83,
-   "score120_pairs": 400,
-   "d120": -15,
+   "f120": 25,
+   "f120_lo": 15,
+   "f120_hi": 40,
+   "score120_mae": 7.1,
+   "score120_in5": 67,
+   "score120_in10": 84,
+   "score120_pairs": 406,
+   "d120": -20,
    "d120_lo": -10,
    "d120_hi": 15,
    "people": null
@@ -185,10 +242,10 @@
     "lag_yday": 20,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 25,
    "f30_lo": 25,
@@ -196,28 +253,28 @@
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 45,
+   "score30_pairs": 49,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
    "f60": 25,
-   "f60_lo": 20,
+   "f60_lo": 15,
    "f60_hi": 25,
    "d60": 0,
-   "d60_lo": -5,
+   "d60_lo": -10,
    "d60_hi": 0,
    "f90": 25,
-   "f90_lo": 20,
+   "f90_lo": 10,
    "f90_hi": 25,
    "d90": 0,
-   "d90_lo": -5,
+   "d90_lo": -15,
    "d90_hi": 0,
    "f120": 20,
    "f120_lo": 5,
-   "f120_hi": 25,
+   "f120_hi": 15,
    "d120": -5,
    "d120_lo": -15,
-   "d120_hi": 5,
+   "d120_hi": -5,
    "people": null
   },
   {
@@ -225,111 +282,54 @@
    "now": 20,
    "trend30": 0,
    "why": {
-    "lag60": 25,
+    "lag60": 20,
     "lag120": 25,
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 20,
    "f30_lo": 10,
-   "f30_hi": 25,
+   "f30_hi": 20,
    "score30_mae": 5.1,
    "score30_in5": 72,
-   "score30_in10": 89,
-   "score30_pairs": 508,
+   "score30_in10": 90,
+   "score30_pairs": 510,
    "d30": 0,
    "d30_lo": -10,
-   "d30_hi": 5,
+   "d30_hi": 0,
    "f60": 15,
    "f60_lo": 10,
    "f60_hi": 20,
    "score60_mae": 5.5,
-   "score60_in5": 75,
-   "score60_in10": 92,
-   "score60_pairs": 486,
+   "score60_in5": 74,
+   "score60_in10": 91,
+   "score60_pairs": 487,
    "d60": -5,
    "d60_lo": -5,
    "d60_hi": 5,
    "f90": 15,
-   "f90_lo": 5,
+   "f90_lo": 10,
    "f90_hi": 20,
    "score90_mae": 5.9,
-   "score90_in5": 73,
+   "score90_in5": 74,
    "score90_in10": 89,
-   "score90_pairs": 464,
-   "d90": -5,
-   "d90_lo": -10,
-   "d90_hi": 5,
-   "f120": 10,
-   "f120_lo": 5,
-   "f120_hi": 20,
-   "score120_mae": 5.9,
-   "score120_in5": 71,
-   "score120_in10": 92,
-   "score120_pairs": 443,
-   "d120": -10,
-   "d120_lo": -5,
-   "d120_hi": 10,
-   "people": null
-  },
-  {
-   "name": "Living with the Land",
-   "now": 15,
-   "trend30": 5,
-   "why": {
-    "lag60": 25,
-    "lag120": 5,
-    "lag_yday": 20,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
-   },
-   "f30": 15,
-   "f30_lo": 10,
-   "f30_hi": 20,
-   "score30_mae": 4.7,
-   "score30_in5": 70,
-   "score30_in10": 93,
-   "score30_pairs": 457,
-   "d30": 0,
-   "d30_lo": -5,
-   "d30_hi": 5,
-   "f60": 15,
-   "f60_lo": 5,
-   "f60_hi": 15,
-   "score60_mae": 6.3,
-   "score60_in5": 66,
-   "score60_in10": 84,
-   "score60_pairs": 432,
-   "d60": 0,
-   "d60_lo": -10,
-   "d60_hi": 0,
-   "f90": 10,
-   "f90_lo": 5,
-   "f90_hi": 15,
-   "score90_mae": 6.4,
-   "score90_in5": 60,
-   "score90_in10": 87,
-   "score90_pairs": 410,
+   "score90_pairs": 465,
    "d90": -5,
    "d90_lo": -5,
    "d90_hi": 5,
    "f120": 10,
    "f120_lo": 5,
    "f120_hi": 15,
-   "score120_mae": 6.8,
-   "score120_in5": 65,
-   "score120_in10": 86,
-   "score120_pairs": 391,
-   "d120": -5,
+   "score120_mae": 5.4,
+   "score120_in5": 74,
+   "score120_in10": 92,
+   "score120_pairs": 444,
+   "d120": -10,
    "d120_lo": -5,
    "d120_hi": 5,
    "people": null
@@ -344,10 +344,10 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 15,
    "f30_lo": 15,
@@ -355,27 +355,27 @@
    "score30_mae": 0.5,
    "score30_in5": 95,
    "score30_in10": 100,
-   "score30_pairs": 454,
+   "score30_pairs": 456,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
    "f60": 15,
    "f60_lo": 15,
    "f60_hi": 15,
-   "score60_mae": 1.1,
-   "score60_in5": 89,
+   "score60_mae": 1.0,
+   "score60_in5": 91,
    "score60_in10": 100,
-   "score60_pairs": 432,
+   "score60_pairs": 433,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
    "f90": 15,
    "f90_lo": 15,
    "f90_hi": 15,
-   "score90_mae": 0.8,
-   "score90_in5": 92,
+   "score90_mae": 0.7,
+   "score90_in5": 93,
    "score90_in10": 100,
-   "score90_pairs": 410,
+   "score90_pairs": 411,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
@@ -385,7 +385,7 @@
    "score120_mae": 0.7,
    "score120_in5": 94,
    "score120_in10": 100,
-   "score120_pairs": 389,
+   "score120_pairs": 390,
    "d120": 0,
    "d120_lo": 0,
    "d120_hi": 0,
@@ -401,10 +401,10 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 15,
    "f30_lo": 15,
@@ -412,7 +412,7 @@
    "score30_mae": 0.7,
    "score30_in5": 97,
    "score30_in10": 98,
-   "score30_pairs": 502,
+   "score30_pairs": 504,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
@@ -422,7 +422,7 @@
    "score60_mae": 0.8,
    "score60_in5": 96,
    "score60_in10": 97,
-   "score60_pairs": 480,
+   "score60_pairs": 481,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -432,7 +432,7 @@
    "score90_mae": 0.9,
    "score90_in5": 95,
    "score90_in10": 98,
-   "score90_pairs": 458,
+   "score90_pairs": 459,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
@@ -442,7 +442,7 @@
    "score120_mae": 0.9,
    "score120_in5": 96,
    "score120_in10": 98,
-   "score120_pairs": 437,
+   "score120_pairs": 438,
    "d120": 0,
    "d120_lo": 0,
    "d120_hi": 0,
@@ -458,10 +458,10 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 15,
    "f30_lo": 15,
@@ -469,7 +469,7 @@
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 474,
+   "score30_pairs": 476,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
@@ -479,7 +479,7 @@
    "score60_mae": 0.0,
    "score60_in5": 100,
    "score60_in10": 100,
-   "score60_pairs": 451,
+   "score60_pairs": 452,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -489,7 +489,7 @@
    "score90_mae": 0.0,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 429,
+   "score90_pairs": 430,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
@@ -499,7 +499,7 @@
    "score120_mae": 0.0,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 408,
+   "score120_pairs": 409,
    "d120": 0,
    "d120_lo": 0,
    "d120_hi": 0,
@@ -515,10 +515,10 @@
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 15,
    "f30_lo": 15,
@@ -526,7 +526,7 @@
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 483,
+   "score30_pairs": 485,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
@@ -536,7 +536,7 @@
    "score60_mae": 0.0,
    "score60_in5": 100,
    "score60_in10": 100,
-   "score60_pairs": 461,
+   "score60_pairs": 462,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -546,7 +546,7 @@
    "score90_mae": 0.0,
    "score90_in5": 100,
    "score90_in10": 100,
-   "score90_pairs": 439,
+   "score90_pairs": 440,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
@@ -556,7 +556,7 @@
    "score120_mae": 0.0,
    "score120_in5": 100,
    "score120_in10": 100,
-   "score120_pairs": 418,
+   "score120_pairs": 419,
    "d120": 0,
    "d120_lo": 0,
    "d120_hi": 0,
@@ -567,43 +567,43 @@
    "now": 5,
    "trend30": 0,
    "why": {
-    "lag60": 15,
+    "lag60": 5,
     "lag120": 15,
     "lag_yday": 10,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 5,
    "f30_lo": 5,
-   "f30_hi": 10,
+   "f30_hi": 5,
    "score30_mae": 0.9,
    "score30_in5": 96,
    "score30_in10": 100,
-   "score30_pairs": 475,
+   "score30_pairs": 477,
    "d30": 0,
    "d30_lo": 0,
-   "d30_hi": 5,
+   "d30_hi": 0,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
-   "score60_mae": 1.8,
+   "score60_mae": 1.7,
    "score60_in5": 94,
    "score60_in10": 100,
-   "score60_pairs": 453,
+   "score60_pairs": 454,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
    "f90": 5,
    "f90_lo": 5,
    "f90_hi": 5,
-   "score90_mae": 1.8,
+   "score90_mae": 2.1,
    "score90_in5": 93,
    "score90_in10": 100,
-   "score90_pairs": 431,
+   "score90_pairs": 432,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
@@ -611,9 +611,9 @@
    "f120_lo": 5,
    "f120_hi": 5,
    "score120_mae": 2.2,
-   "score120_in5": 96,
+   "score120_in5": 93,
    "score120_in10": 100,
-   "score120_pairs": 410,
+   "score120_pairs": 411,
    "d120": 0,
    "d120_lo": 0,
    "d120_hi": 0,
@@ -624,56 +624,56 @@
    "now": 5,
    "trend30": 0,
    "why": {
-    "lag60": null,
-    "lag120": 5,
-    "lag_yday": 10,
-    "down60": 10,
+    "lag60": 15,
+    "lag120": 15,
+    "lag_yday": 15,
+    "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 5,
    "f30_lo": 5,
-   "f30_hi": 10,
-   "score30_mae": 3.4,
-   "score30_in5": 85,
-   "score30_in10": 99,
-   "score30_pairs": 462,
+   "f30_hi": 5,
+   "score30_mae": 3.5,
+   "score30_in5": 86,
+   "score30_in10": 98,
+   "score30_pairs": 464,
    "d30": 0,
    "d30_lo": 0,
-   "d30_hi": 5,
+   "d30_hi": 0,
    "f60": 5,
    "f60_lo": 5,
-   "f60_hi": 10,
-   "score60_mae": 5.5,
-   "score60_in5": 67,
+   "f60_hi": 5,
+   "score60_mae": 5.1,
+   "score60_in5": 75,
    "score60_in10": 97,
-   "score60_pairs": 436,
+   "score60_pairs": 435,
    "d60": 0,
    "d60_lo": 0,
-   "d60_hi": 5,
+   "d60_hi": 0,
    "f90": 5,
    "f90_lo": 5,
-   "f90_hi": 10,
-   "score90_mae": 4.5,
-   "score90_in5": 79,
-   "score90_in10": 97,
+   "f90_hi": 5,
+   "score90_mae": 4.7,
+   "score90_in5": 76,
+   "score90_in10": 96,
    "score90_pairs": 418,
    "d90": 0,
    "d90_lo": 0,
-   "d90_hi": 5,
+   "d90_hi": 0,
    "f120": 5,
    "f120_lo": 5,
-   "f120_hi": 10,
-   "score120_mae": 5.1,
-   "score120_in5": 66,
-   "score120_in10": 93,
-   "score120_pairs": 403,
+   "f120_hi": 5,
+   "score120_mae": 4.7,
+   "score120_in5": 70,
+   "score120_in10": 94,
+   "score120_pairs": 404,
    "d120": 0,
    "d120_lo": 0,
-   "d120_hi": 5,
+   "d120_hi": 0,
    "people": null
   },
   {
@@ -686,10 +686,10 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 5,
    "f30_lo": 5,
@@ -697,7 +697,7 @@
    "score30_mae": 0.6,
    "score30_in5": 98,
    "score30_in10": 100,
-   "score30_pairs": 466,
+   "score30_pairs": 468,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
@@ -707,7 +707,7 @@
    "score60_mae": 0.8,
    "score60_in5": 97,
    "score60_in10": 100,
-   "score60_pairs": 443,
+   "score60_pairs": 444,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -715,19 +715,19 @@
    "f90_lo": 5,
    "f90_hi": 5,
    "score90_mae": 1.4,
-   "score90_in5": 94,
+   "score90_in5": 93,
    "score90_in10": 98,
-   "score90_pairs": 421,
+   "score90_pairs": 422,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score120_mae": 2.2,
+   "score120_mae": 1.8,
    "score120_in5": 90,
-   "score120_in10": 94,
-   "score120_pairs": 400,
+   "score120_in10": 95,
+   "score120_pairs": 401,
    "d120": 0,
    "d120_lo": 0,
    "d120_hi": 0,
@@ -743,48 +743,48 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 22,
-    "park_busy": 9,
-    "mins_open": 620,
-    "mins_close": 100
+    "park_mean": 25,
+    "park_busy": 12,
+    "mins_open": 650,
+    "mins_close": 70
    },
    "f30": 5,
    "f30_lo": 5,
    "f30_hi": 5,
-   "score30_mae": 3.1,
+   "score30_mae": 3.0,
    "score30_in5": 82,
    "score30_in10": 92,
-   "score30_pairs": 478,
+   "score30_pairs": 481,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
-   "score60_mae": 4.6,
-   "score60_in5": 71,
-   "score60_in10": 86,
-   "score60_pairs": 456,
+   "score60_mae": 4.5,
+   "score60_in5": 72,
+   "score60_in10": 83,
+   "score60_pairs": 460,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
    "f90": 5,
    "f90_lo": 5,
    "f90_hi": 5,
-   "score90_mae": 4.8,
-   "score90_in5": 71,
+   "score90_mae": 4.6,
+   "score90_in5": 75,
    "score90_in10": 85,
-   "score90_pairs": 434,
+   "score90_pairs": 440,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
    "f120": 5,
    "f120_lo": 5,
    "f120_hi": 5,
-   "score120_mae": 5.2,
-   "score120_in5": 68,
-   "score120_in10": 88,
-   "score120_pairs": 410,
+   "score120_mae": 5.0,
+   "score120_in5": 75,
+   "score120_in10": 87,
+   "score120_pairs": 416,
    "d120": 0,
    "d120_lo": 0,
    "d120_hi": 0,
@@ -793,108 +793,106 @@
  ],
  "metrics": {
   "30": {
-   "available_pairs": 33854,
-   "train_rows": 26970,
-   "test_rows": 6800,
+   "available_pairs": 33934,
+   "train_rows": 27026,
+   "test_rows": 6824,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 3.1,
    "rmse": 6.3,
-   "within10": 94,
+   "within10": 93,
    "within5": 83,
-   "mape_ge20": 17.0,
-   "bias": 0.5,
+   "mape_ge20": 17.2,
+   "bias": 0.4,
    "baseline_mae": 3.3,
-   "baseline_mape_ge20": 19.2,
-   "improvement_pct": 7.5,
+   "baseline_mape_ge20": 19.0,
+   "improvement_pct": 6.3,
    "evaluation": "chronological holdout with horizon embargo",
-   "gate_mae_2seed": 3.2,
-   "candidate_mae_seed2": 3.2,
+   "gate_mae_2seed": 3.1,
+   "candidate_mae_seed2": 3.1,
    "top_features": [
     "ride_code",
     "wait",
     "lag_yday",
     "lag_60",
-    "hour_sin",
-    "hour_cos"
+    "hour_cos",
+    "hour_sin"
    ],
    "gate_tau": 0.7
   },
   "60": {
-   "available_pairs": 31953,
-   "train_rows": 25365,
-   "test_rows": 6423,
+   "available_pairs": 32027,
+   "train_rows": 25435,
+   "test_rows": 6431,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 4.0,
-   "rmse": 7.5,
+   "mae": 3.9,
+   "rmse": 7.2,
    "within10": 91,
-   "within5": 78,
-   "mape_ge20": 20.7,
-   "bias": 1.6,
+   "within5": 80,
+   "mape_ge20": 19.6,
+   "bias": 1.4,
    "baseline_mae": 4.3,
    "baseline_mape_ge20": 24.7,
-   "improvement_pct": 7.0,
+   "improvement_pct": 10.5,
    "evaluation": "chronological holdout with horizon embargo",
-   "gate_mae_2seed": 4.0,
-   "candidate_mae_seed2": 4.0,
    "top_features": [
-    "ride_code",
     "wait",
+    "ride_code",
     "lag_yday",
     "hour_sin",
-    "hour_cos",
-    "diff_30"
+    "diff_30",
+    "hour_cos"
    ],
-   "gate_tau": 0.7
+   "gate_tau": 0.6
   },
   "90": {
-   "available_pairs": 30210,
-   "train_rows": 23885,
-   "test_rows": 6076,
+   "available_pairs": 30285,
+   "train_rows": 23955,
+   "test_rows": 6091,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 4.0,
+   "mae": 3.9,
    "rmse": 7.1,
    "within10": 91,
-   "within5": 78,
-   "mape_ge20": 20.5,
-   "bias": 1.7,
+   "within5": 79,
+   "mape_ge20": 20.3,
+   "bias": 1.3,
    "baseline_mae": 4.8,
    "baseline_mape_ge20": 27.1,
-   "improvement_pct": 17.3,
+   "improvement_pct": 18.5,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_sin",
-    "lag_yday",
     "hour_cos",
+    "lag_yday",
     "diff_30"
    ],
    "gate_tau": 0.7
   },
   "120": {
-   "available_pairs": 28603,
-   "train_rows": 22518,
-   "test_rows": 5760,
+   "available_pairs": 28679,
+   "train_rows": 22583,
+   "test_rows": 5775,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 4.1,
-   "rmse": 7.2,
-   "within10": 91,
-   "within5": 77,
-   "mape_ge20": 20.7,
-   "bias": 1.5,
+   "rmse": 7.3,
+   "within10": 90,
+   "within5": 78,
+   "mape_ge20": 21.1,
+   "bias": 1.3,
    "baseline_mae": 5.0,
-   "baseline_mape_ge20": 27.3,
-   "improvement_pct": 18.3,
+   "baseline_mape_ge20": 27.4,
+   "improvement_pct": 19.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
+    "hour_sin",
     "diff_30",
     "hour_cos",
-    "hour_sin",
     "lag_30"
    ],
-   "gate_tau": 0.6
+   "gate_tau": 0.7
   }
  },
  "context": {
@@ -908,55 +906,618 @@
  },
  "demo": false,
  "lookback": {
+  "Test Track": [
+   {
+    "t": "15:50",
+    "actual": 35,
+    "p90": 55,
+    "p120": 55
+   },
+   {
+    "t": "15:55",
+    "actual": 55,
+    "p90": 60
+   },
+   {
+    "t": "16:00",
+    "closed": 1,
+    "p90": 65
+   },
+   {
+    "t": "16:05",
+    "actual": 60,
+    "p90": 65
+   },
+   {
+    "t": "16:10",
+    "actual": 60,
+    "p90": 65
+   },
+   {
+    "t": "16:15",
+    "closed": 1
+   },
+   {
+    "t": "16:20",
+    "closed": 1,
+    "p120": 50
+   },
+   {
+    "t": "16:25",
+    "closed": 1,
+    "p120": 55
+   },
+   {
+    "t": "16:30",
+    "closed": 1,
+    "p120": 60
+   },
+   {
+    "t": "16:35",
+    "closed": 1,
+    "p30": 60,
+    "p120": 60
+   },
+   {
+    "t": "16:40",
+    "closed": 1,
+    "p30": 60,
+    "p120": 60
+   },
+   {
+    "t": "16:45",
+    "closed": 1
+   },
+   {
+    "t": "16:50",
+    "closed": 1
+   },
+   {
+    "t": "16:55",
+    "closed": 1
+   },
+   {
+    "t": "17:00",
+    "closed": 1
+   },
+   {
+    "t": "17:05",
+    "closed": 1,
+    "p60": 75
+   },
+   {
+    "t": "17:10",
+    "closed": 1,
+    "p60": 75
+   },
+   {
+    "t": "17:15",
+    "closed": 1
+   },
+   {
+    "t": "17:20",
+    "closed": 1
+   },
+   {
+    "t": "17:25",
+    "closed": 1
+   },
+   {
+    "t": "17:30",
+    "closed": 1
+   },
+   {
+    "t": "17:35",
+    "closed": 1,
+    "p90": 70
+   },
+   {
+    "t": "17:40",
+    "closed": 1,
+    "p90": 70
+   },
+   {
+    "t": "17:45",
+    "closed": 1
+   },
+   {
+    "t": "17:50",
+    "closed": 1
+   },
+   {
+    "t": "17:55",
+    "closed": 1
+   },
+   {
+    "t": "18:00",
+    "closed": 1
+   },
+   {
+    "t": "18:05",
+    "closed": 1,
+    "p120": 65
+   },
+   {
+    "t": "18:10",
+    "closed": 1,
+    "p120": 65
+   },
+   {
+    "t": "18:15",
+    "closed": 1
+   },
+   {
+    "t": "18:20",
+    "closed": 1
+   },
+   {
+    "t": "18:25",
+    "closed": 1
+   },
+   {
+    "t": "18:30",
+    "closed": 1
+   },
+   {
+    "t": "18:35",
+    "closed": 1
+   },
+   {
+    "t": "18:40",
+    "closed": 1
+   },
+   {
+    "t": "18:45",
+    "closed": 1
+   },
+   {
+    "t": "18:50",
+    "closed": 1
+   },
+   {
+    "t": "18:55",
+    "closed": 1
+   },
+   {
+    "t": "19:00",
+    "closed": 1
+   },
+   {
+    "t": "19:05",
+    "closed": 1
+   },
+   {
+    "t": "19:10",
+    "closed": 1
+   },
+   {
+    "t": "19:15",
+    "closed": 1
+   },
+   {
+    "t": "19:20",
+    "closed": 1
+   },
+   {
+    "t": "19:25",
+    "actual": 30
+   },
+   {
+    "t": "19:30",
+    "actual": 30
+   },
+   {
+    "t": "19:35",
+    "actual": 30
+   },
+   {
+    "t": "19:40",
+    "actual": 50
+   },
+   {
+    "t": "19:45",
+    "actual": 65
+   },
+   {
+    "t": "19:50",
+    "actual": 70
+   }
+  ],
+  "Guardians of the Galaxy: Cosmic Rewind": [
+   {
+    "t": "15:50",
+    "actual": 70,
+    "p30": 60,
+    "p60": 65,
+    "p90": 55,
+    "p120": 55
+   },
+   {
+    "t": "15:55",
+    "actual": 70,
+    "p30": 60,
+    "p60": 65,
+    "p90": 55,
+    "p120": 55
+   },
+   {
+    "t": "16:00",
+    "actual": 55,
+    "p30": 55,
+    "p60": 75,
+    "p90": 60,
+    "p120": 55
+   },
+   {
+    "t": "16:05",
+    "actual": 50,
+    "p30": 55,
+    "p60": 75,
+    "p90": 60,
+    "p120": 55
+   },
+   {
+    "t": "16:10",
+    "actual": 50,
+    "p30": 60,
+    "p60": 60,
+    "p90": 60,
+    "p120": 45
+   },
+   {
+    "t": "16:15",
+    "actual": 55,
+    "p30": 60,
+    "p60": 60,
+    "p90": 55,
+    "p120": 45
+   },
+   {
+    "t": "16:20",
+    "actual": 55,
+    "p30": 70,
+    "p60": 50,
+    "p90": 65,
+    "p120": 60
+   },
+   {
+    "t": "16:25",
+    "actual": 55,
+    "p30": 70,
+    "p60": 50,
+    "p90": 65,
+    "p120": 60
+   },
+   {
+    "t": "16:30",
+    "actual": 55,
+    "p30": 55,
+    "p60": 45,
+    "p90": 75,
+    "p120": 65
+   },
+   {
+    "t": "16:35",
+    "actual": 55,
+    "p30": 50,
+    "p60": 45,
+    "p90": 75,
+    "p120": 65
+   },
+   {
+    "t": "16:40",
+    "actual": 55,
+    "p30": 50,
+    "p60": 60,
+    "p90": 65,
+    "p120": 65
+   },
+   {
+    "t": "16:45",
+    "actual": 55,
+    "p30": 55,
+    "p60": 60,
+    "p90": 65,
+    "p120": 60
+   },
+   {
+    "t": "16:50",
+    "actual": 55,
+    "p30": 55,
+    "p60": 70,
+    "p90": 55,
+    "p120": 70
+   },
+   {
+    "t": "16:55",
+    "actual": 55,
+    "p30": 55,
+    "p60": 70,
+    "p90": 55,
+    "p120": 70
+   },
+   {
+    "t": "17:00",
+    "actual": 55,
+    "p30": 55,
+    "p60": 55,
+    "p90": 50,
+    "p120": 80
+   },
+   {
+    "t": "17:05",
+    "actual": 55,
+    "p30": 55,
+    "p60": 65,
+    "p90": 50,
+    "p120": 80
+   },
+   {
+    "t": "17:10",
+    "actual": 55,
+    "p30": 55,
+    "p60": 65,
+    "p90": 65,
+    "p120": 70
+   },
+   {
+    "t": "17:15",
+    "actual": 55,
+    "p30": 55,
+    "p60": 70,
+    "p90": 65,
+    "p120": 70
+   },
+   {
+    "t": "17:20",
+    "actual": 55,
+    "p30": 55,
+    "p60": 70,
+    "p90": 75,
+    "p120": 60
+   },
+   {
+    "t": "17:25",
+    "actual": 55,
+    "p30": 55,
+    "p60": 70,
+    "p90": 75,
+    "p120": 60
+   },
+   {
+    "t": "17:30",
+    "actual": 55,
+    "p30": 55,
+    "p60": 70,
+    "p90": 60,
+    "p120": 55
+   },
+   {
+    "t": "17:35",
+    "actual": 55,
+    "p30": 60,
+    "p60": 55,
+    "p90": 60,
+    "p120": 55
+   },
+   {
+    "t": "17:40",
+    "actual": 65,
+    "p30": 60,
+    "p60": 55,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "17:45",
+    "actual": 65,
+    "p30": 60,
+    "p60": 55,
+    "p90": 65,
+    "p120": 65
+   },
+   {
+    "t": "17:50",
+    "actual": 65,
+    "p30": 60,
+    "p60": 55,
+    "p90": 65,
+    "p120": 75
+   },
+   {
+    "t": "17:55",
+    "actual": 65,
+    "p30": 60,
+    "p60": 55,
+    "p90": 65,
+    "p120": 75
+   },
+   {
+    "t": "18:00",
+    "actual": 65,
+    "p30": 60,
+    "p60": 55,
+    "p90": 65,
+    "p120": 60
+   },
+   {
+    "t": "18:05",
+    "actual": 65,
+    "p30": 55,
+    "p60": 60,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "18:10",
+    "actual": 65,
+    "p30": 65,
+    "p60": 60,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "18:15",
+    "actual": 65,
+    "p30": 65,
+    "p60": 60,
+    "p90": 60,
+    "p120": 70
+   },
+   {
+    "t": "18:20",
+    "actual": 70,
+    "p30": 65,
+    "p60": 60,
+    "p90": 60,
+    "p120": 70
+   },
+   {
+    "t": "18:25",
+    "actual": 70,
+    "p30": 65,
+    "p60": 60,
+    "p90": 60,
+    "p120": 70
+   },
+   {
+    "t": "18:30",
+    "actual": 80,
+    "p30": 60,
+    "p60": 60,
+    "p90": 60,
+    "p120": 70
+   },
+   {
+    "t": "18:35",
+    "actual": 80,
+    "p30": 60,
+    "p60": 60,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "18:40",
+    "actual": 80,
+    "p30": 60,
+    "p60": 70,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "18:45",
+    "actual": 80,
+    "p30": 60,
+    "p60": 70,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "18:50",
+    "actual": 70,
+    "p30": 65,
+    "p60": 70,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "18:55",
+    "actual": 70,
+    "p30": 65,
+    "p60": 70,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "19:00",
+    "actual": 70,
+    "p30": 75,
+    "p60": 60,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "19:05",
+    "actual": 65,
+    "p30": 75,
+    "p60": 60,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "19:10",
+    "actual": 65,
+    "p30": 75,
+    "p60": 60,
+    "p90": 70,
+    "p120": 65
+   },
+   {
+    "t": "19:15",
+    "actual": 65,
+    "p30": 75,
+    "p60": 60,
+    "p90": 70,
+    "p120": 65
+   },
+   {
+    "t": "19:20",
+    "actual": 60,
+    "p30": 65,
+    "p60": 65,
+    "p90": 70,
+    "p120": 65
+   },
+   {
+    "t": "19:25",
+    "actual": 90,
+    "p30": 65,
+    "p60": 65,
+    "p90": 70,
+    "p120": 65
+   },
+   {
+    "t": "19:30",
+    "actual": 80,
+    "p30": 65,
+    "p60": 70,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "19:35",
+    "actual": 65,
+    "p30": 60,
+    "p60": 70,
+    "p90": 60,
+    "p120": 65
+   },
+   {
+    "t": "19:40",
+    "actual": 60,
+    "p30": 60,
+    "p60": 70,
+    "p90": 60,
+    "p120": 75
+   },
+   {
+    "t": "19:45",
+    "actual": 60,
+    "p30": 60,
+    "p60": 70,
+    "p90": 60,
+    "p120": 75
+   },
+   {
+    "t": "19:50",
+    "actual": 60,
+    "p30": 65,
+    "p60": 60,
+    "p90": 65,
+    "p120": 75
+   }
+  ],
   "Frozen Ever After": [
-   {
-    "t": "15:20",
-    "actual": 55,
-    "p30": 60,
-    "p60": 55,
-    "p90": 55,
-    "p120": 60
-   },
-   {
-    "t": "15:25",
-    "actual": 55,
-    "p30": 60,
-    "p60": 45,
-    "p90": 55,
-    "p120": 60
-   },
-   {
-    "t": "15:30",
-    "actual": 50,
-    "p30": 55,
-    "p60": 45,
-    "p90": 55,
-    "p120": 60
-   },
-   {
-    "t": "15:35",
-    "actual": 50,
-    "p30": 55,
-    "p60": 45,
-    "p90": 55,
-    "p120": 60
-   },
-   {
-    "t": "15:40",
-    "actual": 50,
-    "p30": 55,
-    "p60": 45,
-    "p90": 50,
-    "p120": 60
-   },
-   {
-    "t": "15:45",
-    "actual": 50,
-    "p30": 55,
-    "p60": 55,
-    "p90": 50,
-    "p120": 60
-   },
    {
     "t": "15:50",
     "actual": 50,
@@ -1300,451 +1861,57 @@
     "p60": 40,
     "p90": 55,
     "p120": 45
-   }
-  ],
-  "Guardians of the Galaxy: Cosmic Rewind": [
+   },
    {
-    "t": "15:20",
+    "t": "19:25",
     "actual": 60,
-    "p30": 60,
-    "p60": 55,
-    "p90": 55,
-    "p120": 75
-   },
-   {
-    "t": "15:25",
-    "actual": 60,
-    "p30": 60,
-    "p60": 55,
-    "p90": 55,
-    "p120": 60
-   },
-   {
-    "t": "15:30",
-    "actual": 55,
-    "p30": 70,
-    "p60": 60,
-    "p90": 55,
-    "p120": 60
-   },
-   {
-    "t": "15:35",
-    "actual": 55,
-    "p30": 70,
-    "p60": 60,
-    "p90": 55,
-    "p120": 60
-   },
-   {
-    "t": "15:40",
-    "actual": 60,
-    "p30": 70,
-    "p60": 60,
-    "p90": 45,
-    "p120": 60
-   },
-   {
-    "t": "15:45",
-    "actual": 60,
-    "p30": 70,
-    "p60": 55,
-    "p90": 45,
-    "p120": 60
-   },
-   {
-    "t": "15:50",
-    "actual": 70,
-    "p30": 60,
-    "p60": 65,
-    "p90": 55,
-    "p120": 55
-   },
-   {
-    "t": "15:55",
-    "actual": 70,
-    "p30": 60,
-    "p60": 65,
-    "p90": 55,
-    "p120": 55
-   },
-   {
-    "t": "16:00",
-    "actual": 55,
-    "p30": 55,
-    "p60": 75,
-    "p90": 60,
-    "p120": 55
-   },
-   {
-    "t": "16:05",
-    "actual": 50,
-    "p30": 55,
-    "p60": 75,
-    "p90": 60,
-    "p120": 55
-   },
-   {
-    "t": "16:10",
-    "actual": 50,
-    "p30": 60,
-    "p60": 60,
-    "p90": 60,
-    "p120": 45
-   },
-   {
-    "t": "16:15",
-    "actual": 55,
-    "p30": 60,
-    "p60": 60,
+    "p30": 45,
+    "p60": 40,
     "p90": 55,
     "p120": 45
    },
    {
-    "t": "16:20",
-    "actual": 55,
-    "p30": 70,
-    "p60": 50,
-    "p90": 65,
-    "p120": 60
-   },
-   {
-    "t": "16:25",
-    "actual": 55,
-    "p30": 70,
-    "p60": 50,
-    "p90": 65,
-    "p120": 60
-   },
-   {
-    "t": "16:30",
-    "actual": 55,
-    "p30": 55,
-    "p60": 45,
-    "p90": 75,
-    "p120": 65
-   },
-   {
-    "t": "16:35",
-    "actual": 55,
-    "p30": 50,
-    "p60": 45,
-    "p90": 75,
-    "p120": 65
-   },
-   {
-    "t": "16:40",
-    "actual": 55,
-    "p30": 50,
-    "p60": 60,
-    "p90": 65,
-    "p120": 65
-   },
-   {
-    "t": "16:45",
-    "actual": 55,
-    "p30": 55,
-    "p60": 60,
-    "p90": 65,
-    "p120": 60
-   },
-   {
-    "t": "16:50",
-    "actual": 55,
-    "p30": 55,
-    "p60": 70,
-    "p90": 55,
-    "p120": 70
-   },
-   {
-    "t": "16:55",
-    "actual": 55,
-    "p30": 55,
-    "p60": 70,
-    "p90": 55,
-    "p120": 70
-   },
-   {
-    "t": "17:00",
-    "actual": 55,
-    "p30": 55,
-    "p60": 55,
-    "p90": 50,
-    "p120": 80
-   },
-   {
-    "t": "17:05",
-    "actual": 55,
-    "p30": 55,
-    "p60": 65,
-    "p90": 50,
-    "p120": 80
-   },
-   {
-    "t": "17:10",
-    "actual": 55,
-    "p30": 55,
-    "p60": 65,
-    "p90": 65,
-    "p120": 70
-   },
-   {
-    "t": "17:15",
-    "actual": 55,
-    "p30": 55,
-    "p60": 70,
-    "p90": 65,
-    "p120": 70
-   },
-   {
-    "t": "17:20",
-    "actual": 55,
-    "p30": 55,
-    "p60": 70,
-    "p90": 75,
-    "p120": 60
-   },
-   {
-    "t": "17:25",
-    "actual": 55,
-    "p30": 55,
-    "p60": 70,
-    "p90": 75,
-    "p120": 60
-   },
-   {
-    "t": "17:30",
-    "actual": 55,
-    "p30": 55,
-    "p60": 70,
-    "p90": 60,
-    "p120": 55
-   },
-   {
-    "t": "17:35",
-    "actual": 55,
-    "p30": 60,
-    "p60": 55,
-    "p90": 60,
-    "p120": 55
-   },
-   {
-    "t": "17:40",
-    "actual": 65,
-    "p30": 60,
-    "p60": 55,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "17:45",
-    "actual": 65,
-    "p30": 60,
-    "p60": 55,
-    "p90": 65,
-    "p120": 65
-   },
-   {
-    "t": "17:50",
-    "actual": 65,
-    "p30": 60,
-    "p60": 55,
-    "p90": 65,
-    "p120": 75
-   },
-   {
-    "t": "17:55",
-    "actual": 65,
-    "p30": 60,
-    "p60": 55,
-    "p90": 65,
-    "p120": 75
-   },
-   {
-    "t": "18:00",
-    "actual": 65,
-    "p30": 60,
-    "p60": 55,
-    "p90": 65,
-    "p120": 60
-   },
-   {
-    "t": "18:05",
-    "actual": 65,
-    "p30": 55,
-    "p60": 60,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "18:10",
-    "actual": 65,
-    "p30": 65,
-    "p60": 60,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "18:15",
-    "actual": 65,
-    "p30": 65,
-    "p60": 60,
-    "p90": 60,
-    "p120": 70
-   },
-   {
-    "t": "18:20",
-    "actual": 70,
-    "p30": 65,
-    "p60": 60,
-    "p90": 60,
-    "p120": 70
-   },
-   {
-    "t": "18:25",
-    "actual": 70,
-    "p30": 65,
-    "p60": 60,
-    "p90": 60,
-    "p120": 70
-   },
-   {
-    "t": "18:30",
-    "actual": 80,
-    "p30": 60,
-    "p60": 60,
-    "p90": 60,
-    "p120": 70
-   },
-   {
-    "t": "18:35",
-    "actual": 80,
-    "p30": 60,
-    "p60": 60,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "18:40",
-    "actual": 80,
-    "p30": 60,
-    "p60": 70,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "18:45",
-    "actual": 80,
-    "p30": 60,
-    "p60": 70,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "18:50",
-    "actual": 70,
-    "p30": 65,
-    "p60": 70,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "18:55",
-    "actual": 70,
-    "p30": 65,
-    "p60": 70,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "19:00",
-    "actual": 70,
-    "p30": 75,
-    "p60": 60,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "19:05",
-    "actual": 65,
-    "p30": 75,
-    "p60": 60,
-    "p90": 60,
-    "p120": 65
-   },
-   {
-    "t": "19:10",
-    "actual": 65,
-    "p30": 75,
-    "p60": 60,
-    "p90": 70,
-    "p120": 65
-   },
-   {
-    "t": "19:15",
-    "actual": 65,
-    "p30": 75,
-    "p60": 60,
-    "p90": 70,
-    "p120": 65
-   },
-   {
-    "t": "19:20",
+    "t": "19:30",
     "actual": 60,
-    "p30": 65,
-    "p60": 65,
-    "p90": 70,
-    "p120": 65
+    "p30": 45,
+    "p60": 50,
+    "p90": 50,
+    "p120": 45
+   },
+   {
+    "t": "19:35",
+    "actual": 50,
+    "p30": 45,
+    "p60": 50,
+    "p90": 50,
+    "p120": 50
+   },
+   {
+    "t": "19:40",
+    "actual": 50,
+    "p30": 45,
+    "p60": 50,
+    "p90": 50,
+    "p120": 50
+   },
+   {
+    "t": "19:45",
+    "actual": 55,
+    "p30": 45,
+    "p60": 50,
+    "p90": 45,
+    "p120": 50
+   },
+   {
+    "t": "19:50",
+    "actual": 55,
+    "p30": 50,
+    "p60": 50,
+    "p90": 40,
+    "p120": 50
    }
   ],
   "Remy's Ratatouille Adventure": [
-   {
-    "t": "15:20",
-    "actual": 35,
-    "p30": 60,
-    "p60": 50,
-    "p90": 50,
-    "p120": 55
-   },
-   {
-    "t": "15:25",
-    "actual": 35,
-    "p30": 60,
-    "p60": 50,
-    "p90": 50,
-    "p120": 50
-   },
-   {
-    "t": "15:30",
-    "actual": 40,
-    "p30": 60,
-    "p60": 55,
-    "p90": 50,
-    "p120": 50
-   },
-   {
-    "t": "15:35",
-    "actual": 40,
-    "p30": 60,
-    "p60": 55,
-    "p90": 50,
-    "p120": 50
-   },
-   {
-    "t": "15:40",
-    "actual": 40,
-    "p30": 35,
-    "p60": 55,
-    "p90": 50,
-    "p120": 50
-   },
-   {
-    "t": "15:45",
-    "actual": 40,
-    "p30": 35,
-    "p60": 50,
-    "p90": 50,
-    "p120": 50
-   },
    {
     "t": "15:50",
     "actual": 40,
@@ -2088,34 +2255,58 @@
     "p60": 50,
     "p90": 50,
     "p120": 35
+   },
+   {
+    "t": "19:25",
+    "actual": 45,
+    "p30": 40,
+    "p60": 5,
+    "p90": 50,
+    "p120": 35
+   },
+   {
+    "t": "19:30",
+    "actual": 45,
+    "p30": 40,
+    "p60": 35,
+    "p90": 45,
+    "p120": 40
+   },
+   {
+    "t": "19:35",
+    "actual": 45,
+    "p30": 40,
+    "p60": 35,
+    "p90": 45,
+    "p120": 55
+   },
+   {
+    "t": "19:40",
+    "actual": 45,
+    "p30": 40,
+    "p60": 25,
+    "p90": 45,
+    "p120": 55
+   },
+   {
+    "t": "19:45",
+    "actual": 45,
+    "p30": 40,
+    "p60": 40,
+    "p90": 45,
+    "p120": 55
+   },
+   {
+    "t": "19:50",
+    "actual": 45,
+    "p30": 45,
+    "p60": 55,
+    "p90": 45,
+    "p120": 55
    }
   ],
   "Impressions de France": [
    {
-    "t": "15:20",
-    "closed": 1
-   },
-   {
-    "t": "15:25",
-    "closed": 1
-   },
-   {
-    "t": "15:30",
-    "closed": 1
-   },
-   {
-    "t": "15:35",
-    "closed": 1
-   },
-   {
-    "t": "15:40",
-    "closed": 1
-   },
-   {
-    "t": "15:45",
-    "closed": 1
-   },
-   {
     "t": "15:50",
     "closed": 1
    },
@@ -2286,58 +2477,35 @@
    {
     "t": "19:20",
     "actual": 25
+   },
+   {
+    "t": "19:25",
+    "actual": 25
+   },
+   {
+    "t": "19:30",
+    "actual": 25
+   },
+   {
+    "t": "19:35",
+    "actual": 25
+   },
+   {
+    "t": "19:40",
+    "actual": 25
+   },
+   {
+    "t": "19:45",
+    "actual": 25
+   },
+   {
+    "t": "19:50",
+    "actual": 25,
+    "p30": 25
    }
   ],
   "Soarin' Across America": [
    {
-    "t": "15:20",
-    "actual": 20,
-    "p30": 35,
-    "p60": 20,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "15:25",
-    "actual": 20,
-    "p30": 25,
-    "p60": 20,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "15:30",
-    "actual": 20,
-    "p30": 25,
-    "p60": 20,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "15:35",
-    "actual": 20,
-    "p30": 25,
-    "p60": 20,
-    "p90": 15,
-    "p120": 25
-   },
-   {
-    "t": "15:40",
-    "actual": 20,
-    "p30": 25,
-    "p60": 25,
-    "p90": 15,
-    "p120": 25
-   },
-   {
-    "t": "15:45",
-    "actual": 20,
-    "p30": 25,
-    "p60": 25,
-    "p90": 15,
-    "p120": 25
-   },
-   {
     "t": "15:50",
     "actual": 20,
     "p30": 20,
@@ -2680,58 +2848,58 @@
     "p60": 20,
     "p90": 15,
     "p120": 30
+   },
+   {
+    "t": "19:25",
+    "actual": 20,
+    "p30": 20,
+    "p60": 20,
+    "p90": 15,
+    "p120": 30
+   },
+   {
+    "t": "19:30",
+    "actual": 20,
+    "p30": 20,
+    "p60": 15,
+    "p90": 15,
+    "p120": 30
+   },
+   {
+    "t": "19:35",
+    "actual": 20,
+    "p30": 20,
+    "p60": 15,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "19:40",
+    "actual": 20,
+    "p30": 20,
+    "p60": 10,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "19:45",
+    "actual": 20,
+    "p30": 20,
+    "p60": 10,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "19:50",
+    "actual": 20,
+    "p30": 20,
+    "p60": 10,
+    "p90": 15,
+    "p120": 10
    }
   ],
   "Turtle Talk With Crush": [
    {
-    "t": "15:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:30",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:45",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
     "t": "15:50",
     "actual": 15,
     "p30": 15,
@@ -3069,6 +3237,54 @@
    },
    {
     "t": "19:20",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:30",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:35",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:40",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:45",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:50",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -3078,54 +3294,6 @@
   ],
   "Mission: SPACE": [
    {
-    "t": "15:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:30",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:45",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
     "t": "15:50",
     "actual": 15,
     "p30": 15,
@@ -3468,57 +3636,57 @@
     "p60": 15,
     "p90": 15,
     "p120": 15
+   },
+   {
+    "t": "19:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:30",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:35",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:40",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:45",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:50",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Canada Far and Wide in Circle-Vision 360": [
-   {
-    "t": "15:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:30",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:45",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
    {
     "t": "15:50",
     "actual": 15,
@@ -3834,452 +4002,58 @@
     "p60": 15,
     "p90": 15,
     "p120": 15
-   }
-  ],
-  "Living with the Land": [
-   {
-    "t": "15:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
    },
    {
-    "t": "15:25",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:30",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:40",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:45",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:55",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:00",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:05",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:10",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:15",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:25",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:30",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:40",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:45",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:55",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:00",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:05",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:10",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:15",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:25",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:30",
+    "t": "19:25",
     "actual": 15,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:35",
-    "actual": 15,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:40",
-    "actual": 15,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:45",
-    "actual": 15,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:50",
-    "actual": 15,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "17:55",
-    "actual": 25,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:00",
-    "actual": 25,
     "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:05",
-    "actual": 25,
-    "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:10",
-    "actual": 25,
-    "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:15",
-    "actual": 25,
-    "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:20",
-    "actual": 25,
-    "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:25",
-    "actual": 25,
-    "p30": 25,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:30",
-    "actual": 25,
-    "p30": 25,
-    "p60": 15,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:35",
-    "actual": 15,
-    "p30": 25,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:40",
-    "actual": 15,
-    "p30": 25,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:45",
-    "actual": 20,
-    "p30": 25,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:50",
-    "actual": 15,
-    "p30": 25,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "18:55",
-    "actual": 20,
-    "p30": 25,
-    "p60": 20,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "19:00",
-    "actual": 20,
-    "p30": 20,
     "p60": 15,
     "p90": 15,
-    "p120": 5
+    "p120": 15
    },
    {
-    "t": "19:05",
-    "actual": 10,
-    "p30": 10,
-    "p60": 15,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "19:10",
-    "actual": 10,
-    "p30": 10,
-    "p60": 15,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "19:15",
-    "actual": 10,
+    "t": "19:30",
+    "actual": 15,
     "p30": 15,
     "p60": 15,
-    "p90": 10,
-    "p120": 5
+    "p90": 15,
+    "p120": 15
    },
    {
-    "t": "19:20",
+    "t": "19:35",
     "actual": 15,
-    "p30": 10,
+    "p30": 15,
     "p60": 15,
-    "p90": 10,
-    "p120": 5
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:40",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:45",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:50",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Reflections of China": [
    {
-    "t": "15:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:30",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "15:45",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
     "t": "15:50",
     "actual": 15,
     "p30": 15,
@@ -4617,6 +4391,54 @@
    },
    {
     "t": "19:20",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:25",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:30",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:35",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:40",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:45",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:50",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -4626,54 +4448,6 @@
   ],
   "Gran Fiesta Tour Starring The Three Caballeros": [
    {
-    "t": "15:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:30",
-    "actual": 15,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
-    "p120": 5
-   },
-   {
-    "t": "15:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
-    "p120": 5
-   },
-   {
-    "t": "15:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 10,
-    "p90": 15,
-    "p120": 5
-   },
-   {
-    "t": "15:45",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 5
-   },
-   {
     "t": "15:50",
     "actual": 15,
     "p30": 15,
@@ -5016,56 +4790,57 @@
     "p60": 15,
     "p90": 15,
     "p120": 15
+   },
+   {
+    "t": "19:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:30",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:35",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:45",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "19:50",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 15,
+    "p120": 15
    }
   ],
   "Spaceship Earth": [
-   {
-    "t": "15:20",
-    "actual": 10,
-    "p30": 10,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "15:25",
-    "actual": 5,
-    "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "15:30",
-    "actual": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:35",
-    "actual": 5,
-    "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:40",
-    "actual": 5,
-    "p30": 15,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:45",
-    "actual": 10,
-    "p30": 10,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
    {
     "t": "15:50",
     "actual": 10,
@@ -5398,57 +5173,50 @@
     "actual": 5,
     "p90": 15,
     "p120": 5
+   },
+   {
+    "t": "19:25",
+    "actual": 5,
+    "p30": 5,
+    "p90": 15,
+    "p120": 5
+   },
+   {
+    "t": "19:30",
+    "actual": 5,
+    "p30": 5,
+    "p90": 10,
+    "p120": 5
+   },
+   {
+    "t": "19:35",
+    "actual": 5,
+    "p30": 5,
+    "p90": 10,
+    "p120": 5
+   },
+   {
+    "t": "19:40",
+    "actual": 5,
+    "p30": 5,
+    "p90": 10,
+    "p120": 5
+   },
+   {
+    "t": "19:45",
+    "actual": 5,
+    "p30": 5,
+    "p90": 10,
+    "p120": 5
+   },
+   {
+    "t": "19:50",
+    "actual": 5,
+    "p30": 5,
+    "p120": 15
    }
   ],
   "Journey Into Imagination With Figment": [
-   {
-    "t": "15:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:25",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:30",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:40",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:45",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
    {
     "t": "15:50",
     "actual": 5,
@@ -5787,6 +5555,54 @@
    },
    {
     "t": "19:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:30",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:35",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:45",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:50",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -5796,54 +5612,6 @@
   ],
   "The Seas with Nemo & Friends": [
    {
-    "t": "15:20",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:25",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "15:30",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "15:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "15:40",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "15:45",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
     "t": "15:50",
     "actual": 5,
     "p30": 5,
@@ -6181,6 +5949,54 @@
    },
    {
     "t": "19:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:25",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:30",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:35",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:45",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "19:50",
     "actual": 5,
     "p30": 5,
     "p60": 5,
@@ -6191,37 +6007,37 @@
  },
  "today": {
   "date": "2026-11-20",
-  "graded": 5952,
+  "graded": 6250,
   "exact": 62,
   "in5": 76,
   "in10": 90,
   "in15": 95,
   "by_horizon": {
    "30": {
-    "graded": 1617,
-    "exact": 68,
+    "graded": 1694,
+    "exact": 69,
     "in5": 80,
     "in10": 92,
-    "in15": 96
+    "in15": 97
    },
    "60": {
-    "graded": 1533,
+    "graded": 1603,
     "exact": 60,
     "in5": 75,
     "in10": 89,
     "in15": 94
    },
    "90": {
-    "graded": 1445,
+    "graded": 1520,
     "exact": 58,
     "in5": 74,
     "in10": 89,
     "in15": 94
    },
    "120": {
-    "graded": 1357,
+    "graded": 1433,
     "exact": 59,
-    "in5": 76,
+    "in5": 75,
     "in10": 90,
     "in15": 95
    }
