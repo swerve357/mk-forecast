@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-23T01:12:14.677412+00:00",
- "last_sample": "2026-11-23T01:10:35+00:00",
- "samples": 88624,
+ "updated": "2026-11-23T01:19:30.942260+00:00",
+ "last_sample": "2026-11-23T01:15:38+00:00",
+ "samples": 88720,
  "history_samples": 0,
  "rides": [
   {
@@ -9,33 +9,29 @@
    "now": 5,
    "trend30": 0,
    "why": {
-    "lag60": null,
-    "lag120": 5,
+    "lag60": 5,
+    "lag120": null,
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
     "park_mean": 5,
     "park_busy": 0,
-    "mins_open": 710,
-    "mins_close": -50
+    "mins_open": 740,
+    "mins_close": -80
    },
    "f30": 5,
-   "f30_lo": 5,
-   "f30_hi": 5,
    "score30_mae": 0.9,
    "score30_in5": 99,
-   "score30_in10": 100,
-   "score30_pairs": 377,
+   "score30_in10": 99,
+   "score30_pairs": 383,
    "d30": 0,
-   "d30_lo": 0,
-   "d30_hi": 0,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 5,
    "score60_mae": 1.5,
    "score60_in5": 99,
    "score60_in10": 100,
-   "score60_pairs": 345,
+   "score60_pairs": 349,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -51,67 +47,67 @@
    "d90_hi": 0,
    "f120": 5,
    "f120_lo": 5,
-   "f120_hi": 5,
+   "f120_hi": 10,
    "score120_mae": 1.2,
    "score120_in5": 99,
    "score120_in10": 100,
-   "score120_pairs": 313,
+   "score120_pairs": 316,
    "d120": 0,
    "d120_lo": 0,
-   "d120_hi": 0,
+   "d120_hi": 5,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 18974,
+   "available_pairs": 18980,
    "train_rows": 15247,
-   "test_rows": 3723,
-   "model": "gradient boosting (delta+round5 + change gate)",
+   "test_rows": 3709,
+   "model": "persistence (model did not beat baseline)",
    "mae": 4.1,
-   "rmse": 8.1,
+   "rmse": 8.0,
    "within10": 90,
    "within5": 79,
-   "mape_ge20": 21.4,
-   "bias": -0.9,
+   "mape_ge20": 22.8,
+   "bias": 0.0,
    "baseline_mae": 4.1,
    "baseline_mape_ge20": 22.8,
-   "improvement_pct": -0.5,
+   "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
-   "gate_mae_2seed": 4.0,
-   "candidate_mae_seed2": 4.0,
+   "gate_mae_2seed": 4.2,
+   "candidate_mae_seed2": 4.2,
    "top_features": [
     "wait",
     "ride_code",
     "hour_sin",
+    "precip_prob",
     "lag_60",
-    "park_mean",
-    "dow"
+    "park_mean"
    ],
-   "gate_tau": 0.7
+   "candidate_mae": 4.1
   },
   "60": {
-   "available_pairs": 17653,
-   "train_rows": 14140,
-   "test_rows": 3470,
+   "available_pairs": 17657,
+   "train_rows": 14191,
+   "test_rows": 3462,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 4.9,
    "rmse": 9.3,
    "within10": 88,
    "within5": 77,
-   "mape_ge20": 23.3,
+   "mape_ge20": 23.5,
    "bias": -1.1,
    "baseline_mae": 5.8,
    "baseline_mape_ge20": 30.4,
-   "improvement_pct": 15.2,
+   "improvement_pct": 14.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_sin",
     "dow",
-    "lag_60",
-    "lag_yday"
+    "roll_mean_60",
+    "lag_60"
    ],
    "gate_tau": 0.7
   },
@@ -141,27 +137,27 @@
    "gate_tau": 0.7
   },
   "120": {
-   "available_pairs": 15350,
+   "available_pairs": 15353,
    "train_rows": 12318,
-   "test_rows": 3008,
+   "test_rows": 3001,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 5.6,
-   "rmse": 9.8,
-   "within10": 85,
+   "mae": 5.4,
+   "rmse": 9.6,
+   "within10": 86,
    "within5": 73,
-   "mape_ge20": 25.1,
-   "bias": -0.4,
+   "mape_ge20": 24.5,
+   "bias": -0.6,
    "baseline_mae": 7.7,
-   "baseline_mape_ge20": 38.7,
-   "improvement_pct": 28.0,
+   "baseline_mape_ge20": 38.6,
+   "improvement_pct": 29.5,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "hour_sin",
     "ride_code",
     "dow",
-    "diff_30",
-    "lag_60"
+    "lag_60",
+    "diff_30"
    ],
    "gate_tau": 0.7
   }
@@ -178,50 +174,6 @@
  "demo": false,
  "lookback": {
   "Kali River Rapids": [
-   {
-    "t": "15:50",
-    "closed": 1,
-    "p30": 10,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "15:55",
-    "actual": 10,
-    "p30": 25,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:00",
-    "actual": 10,
-    "p60": 10,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "16:05",
-    "actual": 5,
-    "p60": 10,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "16:10",
-    "actual": 5,
-    "p60": 10,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "16:15",
-    "actual": 5,
-    "p60": 10,
-    "p90": 10,
-    "p120": 5
-   },
    {
     "t": "16:20",
     "actual": 5,
@@ -525,26 +477,62 @@
     "actual": 5,
     "p30": 5,
     "p120": 5
+   },
+   {
+    "t": "19:55",
+    "actual": 5,
+    "p30": 5,
+    "p120": 5
+   },
+   {
+    "t": "20:00",
+    "actual": 5,
+    "p30": 5,
+    "p120": 5
+   },
+   {
+    "t": "20:05",
+    "actual": 5,
+    "p30": 5,
+    "p120": 5
+   },
+   {
+    "t": "20:10",
+    "actual": 5,
+    "p30": 5,
+    "p120": 5
+   },
+   {
+    "t": "20:15",
+    "actual": 5,
+    "p30": 5,
+    "p120": 5
+   },
+   {
+    "t": "20:20",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5
    }
   ]
  },
  "today": {
   "date": "2026-11-22",
-  "graded": 3561,
+  "graded": 3573,
   "exact": 47,
   "in5": 69,
   "in10": 82,
   "in15": 89,
   "by_horizon": {
    "30": {
-    "graded": 979,
-    "exact": 55,
-    "in5": 75,
+    "graded": 985,
+    "exact": 56,
+    "in5": 76,
     "in10": 87,
     "in15": 93
    },
    "60": {
-    "graded": 915,
+    "graded": 916,
     "exact": 48,
     "in5": 68,
     "in10": 81,
@@ -558,8 +546,8 @@
     "in15": 88
    },
    "120": {
-    "graded": 804,
-    "exact": 40,
+    "graded": 809,
+    "exact": 41,
     "in5": 65,
     "in10": 78,
     "in15": 88
