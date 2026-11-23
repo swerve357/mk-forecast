@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-23T04:16:37.803550+00:00",
- "last_sample": "2026-11-23T04:15:33+00:00",
- "samples": 212809,
+ "updated": "2026-11-23T04:22:15.441220+00:00",
+ "last_sample": "2026-11-23T04:20:37+00:00",
+ "samples": 212845,
  "history_samples": 11713,
  "rides": [
   {
@@ -16,14 +16,14 @@
     "reopened": false,
     "park_mean": 15,
     "park_busy": 0,
-    "mins_open": 860,
-    "mins_close": -20
+    "mins_open": 865,
+    "mins_close": -25
    },
    "f30": 20,
    "f30_lo": 5,
    "f30_hi": 20,
-   "f60": 15,
-   "f60_lo": 5,
+   "f60": 20,
+   "f60_lo": 10,
    "f60_hi": 20,
    "f90": 15,
    "f90_lo": 5,
@@ -31,20 +31,20 @@
    "f120": 15,
    "f120_lo": 5,
    "f120_hi": 20,
-   "score30_mae": 4.8,
-   "score30_in10": 90,
-   "score30_in5": 76,
+   "score30_mae": 4.5,
+   "score30_in10": 91,
+   "score30_in5": 79,
    "score30_pairs": 445,
-   "score60_mae": 4.2,
-   "score60_in10": 95,
-   "score60_in5": 82,
+   "score60_mae": 4.3,
+   "score60_in10": 94,
+   "score60_in5": 81,
    "score60_pairs": 411,
-   "score90_mae": 3.9,
-   "score90_in10": 97,
-   "score90_in5": 81,
-   "score90_pairs": 379,
-   "score120_mae": 4.0,
-   "score120_in10": 95,
+   "score90_mae": 4.0,
+   "score90_in10": 96,
+   "score90_in5": 80,
+   "score90_pairs": 378,
+   "score120_mae": 4.1,
+   "score120_in10": 96,
    "score120_in5": 83,
    "score120_pairs": 351,
    "people": null
@@ -61,8 +61,8 @@
     "reopened": false,
     "park_mean": 15,
     "park_busy": 0,
-    "mins_open": 860,
-    "mins_close": -20
+    "mins_open": 865,
+    "mins_close": -25
    },
    "f30": 15,
    "f30_lo": 15,
@@ -87,7 +87,7 @@
    "score90_mae": 0.1,
    "score90_in10": 100,
    "score90_in5": 99,
-   "score90_pairs": 337,
+   "score90_pairs": 336,
    "score120_mae": 0.1,
    "score120_in10": 100,
    "score120_in5": 99,
@@ -106,8 +106,8 @@
     "reopened": false,
     "park_mean": 15,
     "park_busy": 0,
-    "mins_open": 860,
-    "mins_close": -20
+    "mins_open": 865,
+    "mins_close": -25
    },
    "f30": 10,
    "f30_lo": 10,
@@ -120,15 +120,15 @@
    "f90_hi": 10,
    "f120": 10,
    "f120_lo": 10,
-   "f120_hi": 10,
+   "f120_hi": 15,
    "score30_mae": 0.3,
    "score30_in10": 99,
    "score30_in5": 99,
-   "score30_pairs": 676,
+   "score30_pairs": 675,
    "score60_mae": 0.5,
    "score60_in10": 99,
    "score60_in5": 99,
-   "score60_pairs": 637,
+   "score60_pairs": 636,
    "score90_mae": 0.6,
    "score90_in10": 99,
    "score90_in5": 99,
@@ -136,25 +136,50 @@
    "score120_mae": 0.7,
    "score120_in10": 99,
    "score120_in5": 98,
-   "score120_pairs": 583,
+   "score120_pairs": 584,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 90761,
-   "train_rows": 71918,
-   "test_rows": 18693,
+   "available_pairs": 90763,
+   "train_rows": 71943,
+   "test_rows": 18670,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 4.2,
-   "rmse": 7.4,
+   "rmse": 7.3,
    "within10": 90,
    "within5": 78,
-   "mape_ge20": 21.1,
+   "mape_ge20": 21.0,
    "bias": -0.7,
    "baseline_mae": 4.9,
    "baseline_mape_ge20": 24.4,
-   "improvement_pct": 13.6,
+   "improvement_pct": 13.7,
+   "evaluation": "chronological holdout with horizon embargo",
+   "top_features": [
+    "wait",
+    "ride_code",
+    "hour_cos",
+    "park_mean",
+    "diff_30",
+    "lag_60"
+   ],
+   "gate_tau": 0.7
+  },
+  "60": {
+   "available_pairs": 86519,
+   "train_rows": 68435,
+   "test_rows": 17783,
+   "model": "gradient boosting (delta+round5 + change gate)",
+   "mae": 4.5,
+   "rmse": 7.5,
+   "within10": 90,
+   "within5": 77,
+   "mape_ge20": 21.8,
+   "bias": -1.0,
+   "baseline_mae": 5.7,
+   "baseline_mape_ge20": 27.3,
+   "improvement_pct": 20.7,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -162,49 +187,24 @@
     "hour_cos",
     "diff_30",
     "park_mean",
-    "lag_60"
-   ],
-   "gate_tau": 0.7
-  },
-  "60": {
-   "available_pairs": 86517,
-   "train_rows": 68409,
-   "test_rows": 17806,
-   "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 4.5,
-   "rmse": 7.5,
-   "within10": 90,
-   "within5": 77,
-   "mape_ge20": 21.7,
-   "bias": -1.0,
-   "baseline_mae": 5.7,
-   "baseline_mape_ge20": 27.3,
-   "improvement_pct": 20.9,
-   "evaluation": "chronological holdout with horizon embargo",
-   "top_features": [
-    "wait",
-    "ride_code",
-    "hour_cos",
-    "diff_30",
-    "mins_to_party_start",
-    "park_mean"
+    "mins_to_party_start"
    ],
    "gate_tau": 0.7
   },
   "90": {
-   "available_pairs": 82551,
-   "train_rows": 65111,
-   "test_rows": 16986,
+   "available_pairs": 82552,
+   "train_rows": 65137,
+   "test_rows": 16962,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 4.6,
-   "rmse": 7.6,
+   "mae": 4.5,
+   "rmse": 7.5,
    "within10": 90,
    "within5": 76,
    "mape_ge20": 21.6,
    "bias": -1.1,
    "baseline_mae": 5.9,
-   "baseline_mape_ge20": 28.3,
-   "improvement_pct": 22.7,
+   "baseline_mape_ge20": 28.4,
+   "improvement_pct": 23.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -217,19 +217,19 @@
    "gate_tau": 0.7
   },
   "120": {
-   "available_pairs": 78933,
+   "available_pairs": 78934,
    "train_rows": 62113,
-   "test_rows": 16214,
+   "test_rows": 16215,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 4.7,
    "rmse": 7.7,
    "within10": 89,
-   "within5": 76,
-   "mape_ge20": 22.3,
-   "bias": -1.5,
+   "within5": 75,
+   "mape_ge20": 22.5,
+   "bias": -1.6,
    "baseline_mae": 6.4,
    "baseline_mape_ge20": 29.9,
-   "improvement_pct": 26.6,
+   "improvement_pct": 26.4,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -255,7 +255,7 @@
  "lookback": {
   "Enchanted Tales with Belle": [
    {
-    "t": "19:20",
+    "t": "19:25",
     "actual": 10,
     "p30": 15,
     "p60": 15,
@@ -263,15 +263,15 @@
     "p120": 10
    },
    {
-    "t": "19:35",
-    "actual": 10,
+    "t": "19:40",
+    "closed": 1,
     "p30": 15,
-    "p60": 15,
+    "p60": 10,
     "p90": 10,
-    "p120": 5
+    "p120": 10
    },
    {
-    "t": "19:50",
+    "t": "19:55",
     "closed": 1,
     "p30": 10,
     "p60": 10,
@@ -279,87 +279,83 @@
     "p120": 10
    },
    {
-    "t": "20:05",
-    "closed": 1,
-    "p30": 10,
-    "p60": 15,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "20:20",
-    "closed": 1,
-    "p60": 10,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "20:35",
+    "t": "20:10",
     "closed": 1,
     "p60": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "20:50",
+    "t": "20:25",
+    "closed": 1,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "20:40",
     "closed": 1,
     "p90": 15,
     "p120": 10
    },
    {
-    "t": "21:05",
+    "t": "20:55",
     "closed": 1,
-    "p90": 10,
+    "p90": 15,
+    "p120": 10
+   },
+   {
+    "t": "21:10",
+    "closed": 1,
     "p120": 15
    },
    {
-    "t": "21:20",
-    "closed": 1,
-    "p120": 15
-   },
-   {
-    "t": "21:35",
+    "t": "21:25",
     "closed": 1,
     "p120": 10
    },
    {
-    "t": "21:50",
+    "t": "21:40",
     "closed": 1
    },
    {
-    "t": "22:05",
+    "t": "21:55",
+    "closed": 1
+   },
+   {
+    "t": "22:10",
     "actual": 20
    },
    {
-    "t": "22:20",
+    "t": "22:25",
     "actual": 20
    },
    {
-    "t": "22:35",
-    "actual": 20,
-    "p30": 15
-   },
-   {
-    "t": "22:50",
+    "t": "22:40",
     "actual": 20,
     "p30": 20
    },
    {
-    "t": "23:05",
+    "t": "22:55",
+    "actual": 20,
+    "p30": 15
+   },
+   {
+    "t": "23:10",
     "actual": 20,
     "p30": 20,
     "p60": 15
    },
    {
-    "t": "23:20",
+    "t": "23:25",
     "actual": 20,
-    "p30": 15,
+    "p30": 20,
     "p60": 15
    }
   ],
   "The Hall of Presidents": [
    {
-    "t": "19:20",
+    "t": "19:25",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -367,7 +363,7 @@
     "p120": 15
    },
    {
-    "t": "19:35",
+    "t": "19:40",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -375,7 +371,7 @@
     "p120": 15
    },
    {
-    "t": "19:50",
+    "t": "19:55",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -383,7 +379,7 @@
     "p120": 15
    },
    {
-    "t": "20:05",
+    "t": "20:10",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -391,7 +387,7 @@
     "p120": 15
    },
    {
-    "t": "20:20",
+    "t": "20:25",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -399,7 +395,7 @@
     "p120": 15
    },
    {
-    "t": "20:35",
+    "t": "20:40",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -407,7 +403,7 @@
     "p120": 15
    },
    {
-    "t": "20:50",
+    "t": "20:55",
     "actual": 15,
     "p30": 15,
     "p60": 15,
@@ -415,7 +411,7 @@
     "p120": 15
    },
    {
-    "t": "21:05",
+    "t": "21:10",
     "closed": 1,
     "p30": 15,
     "p60": 15,
@@ -423,7 +419,7 @@
     "p120": 15
    },
    {
-    "t": "21:20",
+    "t": "21:25",
     "closed": 1,
     "p30": 15,
     "p60": 15,
@@ -431,55 +427,51 @@
     "p120": 15
    },
    {
-    "t": "21:35",
-    "closed": 1,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "21:50",
+    "t": "21:40",
     "closed": 1,
     "p60": 15,
     "p90": 15,
     "p120": 15
    },
    {
-    "t": "22:05",
-    "actual": 15,
+    "t": "21:55",
+    "closed": 1,
     "p60": 15,
     "p90": 15,
     "p120": 15
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "actual": 15,
     "p90": 15,
     "p120": 15
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "actual": 15,
-    "p30": 15,
     "p90": 15,
     "p120": 15
    },
    {
-    "t": "22:50",
+    "t": "22:40",
     "actual": 15,
     "p30": 15,
     "p120": 15
    },
    {
-    "t": "23:05",
+    "t": "22:55",
     "actual": 15,
     "p30": 15,
-    "p60": 15,
     "p120": 15
    },
    {
-    "t": "23:20",
+    "t": "23:10",
+    "actual": 15,
+    "p30": 15,
+    "p60": 15
+   },
+   {
+    "t": "23:25",
     "actual": 15,
     "p30": 15,
     "p60": 15
@@ -487,15 +479,7 @@
   ],
   "Monsters, Inc. Laugh Floor": [
    {
-    "t": "19:20",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "19:35",
+    "t": "19:25",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -503,7 +487,7 @@
     "p120": 15
    },
    {
-    "t": "19:50",
+    "t": "19:40",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -511,7 +495,7 @@
     "p120": 15
    },
    {
-    "t": "20:05",
+    "t": "19:55",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -519,7 +503,7 @@
     "p120": 10
    },
    {
-    "t": "20:20",
+    "t": "20:10",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -527,7 +511,7 @@
     "p120": 10
    },
    {
-    "t": "20:35",
+    "t": "20:25",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -535,7 +519,7 @@
     "p120": 10
    },
    {
-    "t": "20:50",
+    "t": "20:40",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -543,7 +527,7 @@
     "p120": 10
    },
    {
-    "t": "21:05",
+    "t": "20:55",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -551,7 +535,7 @@
     "p120": 10
    },
    {
-    "t": "21:20",
+    "t": "21:10",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -559,7 +543,7 @@
     "p120": 10
    },
    {
-    "t": "21:35",
+    "t": "21:25",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -567,7 +551,7 @@
     "p120": 10
    },
    {
-    "t": "21:50",
+    "t": "21:40",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -575,7 +559,7 @@
     "p120": 10
    },
    {
-    "t": "22:05",
+    "t": "21:55",
     "actual": 10,
     "p30": 10,
     "p60": 10,
@@ -583,7 +567,7 @@
     "p120": 10
    },
    {
-    "t": "22:20",
+    "t": "22:10",
     "closed": 1,
     "p30": 10,
     "p60": 10,
@@ -591,7 +575,7 @@
     "p120": 10
    },
    {
-    "t": "22:35",
+    "t": "22:25",
     "closed": 1,
     "p30": 10,
     "p60": 10,
@@ -599,21 +583,27 @@
     "p120": 10
    },
    {
-    "t": "22:50",
+    "t": "22:40",
     "closed": 1,
     "p60": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "23:05",
-    "actual": 10,
+    "t": "22:55",
+    "closed": 1,
     "p60": 10,
     "p90": 10,
     "p120": 10
    },
    {
-    "t": "23:20",
+    "t": "23:10",
+    "actual": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "23:25",
     "actual": 10,
     "p90": 10,
     "p120": 10
@@ -622,35 +612,35 @@
  },
  "today": {
   "date": "2026-11-22",
-  "graded": 16859,
+  "graded": 16865,
   "exact": 37,
   "in5": 65,
   "in10": 82,
   "in15": 92,
   "by_horizon": {
    "30": {
-    "graded": 4479,
+    "graded": 4481,
     "exact": 40,
     "in5": 67,
     "in10": 84,
     "in15": 93
    },
    "60": {
-    "graded": 4288,
+    "graded": 4290,
     "exact": 37,
     "in5": 65,
     "in10": 82,
     "in15": 92
    },
    "90": {
-    "graded": 4125,
+    "graded": 4126,
     "exact": 36,
     "in5": 64,
     "in10": 82,
     "in15": 92
    },
    "120": {
-    "graded": 3967,
+    "graded": 3968,
     "exact": 35,
     "in5": 63,
     "in10": 81,
@@ -658,11 +648,11 @@
    }
   }
  },
- "lookback_debug": "log rows 25980; act (3996, 31) idx 2026-10-30 04:00:00+00:00..2026-11-23 04:20:00+00:00; slots 17; lookback rides 3; today graded 16859",
+ "lookback_debug": "log rows 25880; act (3997, 31) idx 2026-10-30 04:00:00+00:00..2026-11-23 04:25:00+00:00; slots 17; lookback rides 3; today graded 16865",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-23T04:16:39.179645+00:00",
-   "last_sample": "2026-11-23T04:15:33+00:00",
+   "updated": "2026-11-23T04:22:17.403975+00:00",
+   "last_sample": "2026-11-23T04:20:37+00:00",
    "samples": 185780,
    "history_samples": 0,
    "rides": [
@@ -5410,8 +5400,8 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-23T04:16:39.299287+00:00",
-   "last_sample": "2026-11-23T04:15:33+00:00",
+   "updated": "2026-11-23T04:22:17.577705+00:00",
+   "last_sample": "2026-11-23T04:20:37+00:00",
    "samples": 72527,
    "history_samples": 0,
    "rides": [
@@ -9654,8 +9644,8 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-23T04:16:39.400876+00:00",
-   "last_sample": "2026-11-23T04:15:33+00:00",
+   "updated": "2026-11-23T04:22:17.721686+00:00",
+   "last_sample": "2026-11-23T04:20:37+00:00",
    "samples": 89264,
    "history_samples": 0,
    "rides": [
