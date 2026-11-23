@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-23T04:57:09.483528+00:00",
- "last_sample": "2026-11-23T04:55:34+00:00",
- "samples": 213097,
+ "updated": "2026-11-23T05:01:49.220933+00:00",
+ "last_sample": "2026-11-23T05:00:44+00:00",
+ "samples": 213133,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -118,12 +118,12 @@
  "demo": false,
  "lookback": {},
  "today": {},
- "lookback_debug": "log rows 25068; act (3997, 31) idx 2026-10-30 04:00:00+00:00..2026-11-23 04:25:00+00:00; slots 14; lookback rides 0; today graded 0",
+ "lookback_debug": "log rows 24952; act (3997, 31) idx 2026-10-30 04:00:00+00:00..2026-11-23 04:25:00+00:00; slots 14; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-23T04:33:09.747583+00:00",
-   "last_sample": "2026-11-23T04:30:39+00:00",
-   "samples": 185945,
+   "updated": "2026-11-23T05:02:28.019717+00:00",
+   "last_sample": "2026-11-23T05:00:44+00:00",
+   "samples": 186143,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -231,60 +231,23 @@
     }
    },
    "context": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "open": "09:00",
     "close": "21:00",
     "early_entry": "08:30",
-    "event": "",
-    "ll_multipass_usd": 32.0,
+    "event": "Extended Evening",
+    "ll_multipass_usd": 35.0,
     "is_party_night": false
    },
    "demo": false,
    "lookback": {},
-   "today": {
-    "date": "2026-11-22",
-    "graded": 7643,
-    "exact": 52,
-    "in5": 73,
-    "in10": 86,
-    "in15": 92,
-    "by_horizon": {
-     "30": {
-      "graded": 2067,
-      "exact": 59,
-      "in5": 77,
-      "in10": 90,
-      "in15": 95
-     },
-     "60": {
-      "graded": 1930,
-      "exact": 52,
-      "in5": 74,
-      "in10": 86,
-      "in15": 94
-     },
-     "90": {
-      "graded": 1843,
-      "exact": 49,
-      "in5": 71,
-      "in10": 84,
-      "in15": 91
-     },
-     "120": {
-      "graded": 1803,
-      "exact": 46,
-      "in5": 70,
-      "in10": 82,
-      "in15": 88
-     }
-    }
-   },
+   "today": {},
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-23T04:33:53.025842+00:00",
-   "last_sample": "2026-11-23T04:30:39+00:00",
-   "samples": 72592,
+   "updated": "2026-11-23T05:02:58.055623+00:00",
+   "last_sample": "2026-11-23T05:00:44+00:00",
+   "samples": 72670,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -301,7 +264,7 @@
      "bias": -2.6,
      "baseline_mae": 8.7,
      "baseline_mape_ge20": 24.6,
-     "improvement_pct": 5.7,
+     "improvement_pct": 5.6,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "wait",
@@ -322,7 +285,7 @@
      "rmse": 13.1,
      "within10": 76,
      "within5": 56,
-     "mape_ge20": 22.0,
+     "mape_ge20": 22.1,
      "bias": -3.2,
      "baseline_mae": 10.5,
      "baseline_mape_ge20": 28.8,
@@ -390,60 +353,23 @@
     }
    },
    "context": {
-    "date": "2026-11-22",
-    "open": "09:00",
-    "close": "21:00",
-    "early_entry": "08:30",
-    "event": "",
-    "ll_multipass_usd": 37.0,
+    "date": "2026-11-23",
+    "open": "08:30",
+    "close": "19:00",
+    "early_entry": "08:00",
+    "event": "Special Ticketed Event",
+    "ll_multipass_usd": 39.0,
     "is_party_night": false
    },
    "demo": false,
    "lookback": {},
-   "today": {
-    "date": "2026-11-22",
-    "graded": 5622,
-    "exact": 23,
-    "in5": 47,
-    "in10": 63,
-    "in15": 75,
-    "by_horizon": {
-     "30": {
-      "graded": 1496,
-      "exact": 24,
-      "in5": 51,
-      "in10": 68,
-      "in15": 80
-     },
-     "60": {
-      "graded": 1406,
-      "exact": 24,
-      "in5": 46,
-      "in10": 61,
-      "in15": 74
-     },
-     "90": {
-      "graded": 1369,
-      "exact": 23,
-      "in5": 46,
-      "in10": 63,
-      "in15": 75
-     },
-     "120": {
-      "graded": 1351,
-      "exact": 20,
-      "in5": 43,
-      "in10": 59,
-      "in15": 71
-     }
-    }
-   },
+   "today": {},
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-23T04:34:27.801006+00:00",
-   "last_sample": "2026-11-23T04:30:39+00:00",
-   "samples": 89344,
+   "updated": "2026-11-23T05:03:22.050409+00:00",
+   "last_sample": "2026-11-23T05:00:44+00:00",
+   "samples": 89440,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -549,54 +475,17 @@
     }
    },
    "context": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "open": "08:00",
-    "close": "19:00",
+    "close": "20:00",
     "early_entry": "07:30",
     "event": "",
-    "ll_multipass_usd": 25.0,
+    "ll_multipass_usd": 29.0,
     "is_party_night": false
    },
    "demo": false,
    "lookback": {},
-   "today": {
-    "date": "2026-11-22",
-    "graded": 4017,
-    "exact": 50,
-    "in5": 70,
-    "in10": 82,
-    "in15": 89,
-    "by_horizon": {
-     "30": {
-      "graded": 1126,
-      "exact": 61,
-      "in5": 79,
-      "in10": 89,
-      "in15": 94
-     },
-     "60": {
-      "graded": 1033,
-      "exact": 51,
-      "in5": 69,
-      "in10": 80,
-      "in15": 88
-     },
-     "90": {
-      "graded": 959,
-      "exact": 45,
-      "in5": 67,
-      "in10": 79,
-      "in15": 87
-     },
-     "120": {
-      "graded": 899,
-      "exact": 42,
-      "in5": 64,
-      "in10": 77,
-      "in15": 88
-     }
-    }
-   },
+   "today": {},
    "park_label": "Animal Kingdom"
   }
  }

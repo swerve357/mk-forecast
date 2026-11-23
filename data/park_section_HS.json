@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-23T04:33:53.025842+00:00",
- "last_sample": "2026-11-23T04:30:39+00:00",
- "samples": 72592,
+ "updated": "2026-11-23T05:02:58.055623+00:00",
+ "last_sample": "2026-11-23T05:00:44+00:00",
+ "samples": 72670,
  "history_samples": 0,
  "rides": [],
  "metrics": {
@@ -18,7 +18,7 @@
    "bias": -2.6,
    "baseline_mae": 8.7,
    "baseline_mape_ge20": 24.6,
-   "improvement_pct": 5.7,
+   "improvement_pct": 5.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -39,7 +39,7 @@
    "rmse": 13.1,
    "within10": 76,
    "within5": 56,
-   "mape_ge20": 22.0,
+   "mape_ge20": 22.1,
    "bias": -3.2,
    "baseline_mae": 10.5,
    "baseline_mape_ge20": 28.8,
@@ -107,53 +107,16 @@
   }
  },
  "context": {
-  "date": "2026-11-22",
-  "open": "09:00",
-  "close": "21:00",
-  "early_entry": "08:30",
-  "event": "",
-  "ll_multipass_usd": 37.0,
+  "date": "2026-11-23",
+  "open": "08:30",
+  "close": "19:00",
+  "early_entry": "08:00",
+  "event": "Special Ticketed Event",
+  "ll_multipass_usd": 39.0,
   "is_party_night": false
  },
  "demo": false,
  "lookback": {},
- "today": {
-  "date": "2026-11-22",
-  "graded": 5622,
-  "exact": 23,
-  "in5": 47,
-  "in10": 63,
-  "in15": 75,
-  "by_horizon": {
-   "30": {
-    "graded": 1496,
-    "exact": 24,
-    "in5": 51,
-    "in10": 68,
-    "in15": 80
-   },
-   "60": {
-    "graded": 1406,
-    "exact": 24,
-    "in5": 46,
-    "in10": 61,
-    "in15": 74
-   },
-   "90": {
-    "graded": 1369,
-    "exact": 23,
-    "in5": 46,
-    "in10": 63,
-    "in15": 75
-   },
-   "120": {
-    "graded": 1351,
-    "exact": 20,
-    "in5": 43,
-    "in10": 59,
-    "in15": 71
-   }
-  }
- },
+ "today": {},
  "park_label": "Hollywood Studios"
 }
