@@ -1,14 +1,14 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-23T21:16:52.900237+00:00",
+ "updated": "2026-11-23T21:21:58.566234+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "Big Thunder Mountain Railroad": "2026-11-22 23:10:00-05:00",
   "Haunted Mansion": "2026-11-23 16:10:00-05:00",
   "Main Street Vehicles": "2026-11-23 16:10:00-05:00"
  },
- "decisions_open": 8,
+ "decisions_open": 11,
  "graded_all": {
   "n": 1463,
   "wins": 343,
@@ -35,8 +35,39 @@
    "mae_shadow": 5.61
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 3,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-1580",
+   "type": "D1",
+   "event_ride": "Haunted Mansion",
+   "ride": "The Hall of Presidents",
+   "horizon": 30,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Haunted Mansion (posted 55) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-1581",
+   "type": "D1",
+   "event_ride": "Haunted Mansion",
+   "ride": "The Hall of Presidents",
+   "horizon": 60,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Haunted Mansion (posted 55) down 15 min; same-land displacement +5"
+  },
+  {
+   "id": "cb-1582",
+   "type": "D1",
+   "event_ride": "Haunted Mansion",
+   "ride": "The Hall of Presidents",
+   "horizon": 90,
+   "base": 15.0,
+   "shadow": 20.0,
+   "reason": "Haunted Mansion (posted 55) down 15 min; same-land displacement +5"
+  }
+ ],
  "debug": ""
 }
