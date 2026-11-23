@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-23T02:37:05.477796+00:00",
- "last_sample": "2026-11-23T02:35:35+00:00",
- "samples": 185054,
+ "updated": "2026-11-23T02:42:38.869872+00:00",
+ "last_sample": "2026-11-23T02:40:33+00:00",
+ "samples": 185219,
  "history_samples": 0,
  "rides": [
   {
@@ -16,8 +16,8 @@
     "reopened": false,
     "park_mean": 15,
     "park_busy": 0,
-    "mins_open": 740,
-    "mins_close": -20
+    "mins_open": 765,
+    "mins_close": -45
    },
    "f30": 15,
    "f30_lo": 15,
@@ -25,17 +25,17 @@
    "score30_mae": 0.4,
    "score30_in5": 96,
    "score30_in10": 100,
-   "score30_pairs": 506,
+   "score30_pairs": 509,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
    "f60": 15,
    "f60_lo": 15,
    "f60_hi": 15,
-   "score60_mae": 0.8,
-   "score60_in5": 92,
+   "score60_mae": 0.7,
+   "score60_in5": 93,
    "score60_in10": 100,
-   "score60_pairs": 483,
+   "score60_pairs": 488,
    "d60": 0,
    "d60_lo": 0,
    "d60_hi": 0,
@@ -45,20 +45,20 @@
    "score90_mae": 1.0,
    "score90_in5": 90,
    "score90_in10": 100,
-   "score90_pairs": 459,
+   "score90_pairs": 464,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 0,
    "f120": 15,
    "f120_lo": 15,
-   "f120_hi": 20,
+   "f120_hi": 15,
    "score120_mae": 0.7,
    "score120_in5": 94,
    "score120_in10": 100,
-   "score120_pairs": 435,
+   "score120_pairs": 440,
    "d120": 0,
    "d120_lo": 0,
-   "d120_hi": 5,
+   "d120_hi": 0,
    "people": null
   },
   {
@@ -73,8 +73,8 @@
     "reopened": false,
     "park_mean": 15,
     "park_busy": 0,
-    "mins_open": 740,
-    "mins_close": -20
+    "mins_open": 765,
+    "mins_close": -45
    },
    "f30": 15,
    "f30_lo": 15,
@@ -82,7 +82,7 @@
    "score30_mae": 0.0,
    "score30_in5": 100,
    "score30_in10": 100,
-   "score30_pairs": 282,
+   "score30_pairs": 285,
    "d30": 0,
    "d30_lo": 0,
    "d30_hi": 0,
@@ -121,48 +121,23 @@
  ],
  "metrics": {
   "30": {
-   "available_pairs": 37847,
-   "train_rows": 30269,
-   "test_rows": 7535,
+   "available_pairs": 37853,
+   "train_rows": 30287,
+   "test_rows": 7508,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 4.1,
+   "mae": 4.0,
    "rmse": 7.7,
    "within10": 91,
    "within5": 78,
-   "mape_ge20": 18.3,
-   "bias": -0.7,
+   "mape_ge20": 18.2,
+   "bias": -0.6,
    "baseline_mae": 4.5,
-   "baseline_mape_ge20": 20.7,
-   "improvement_pct": 9.3,
+   "baseline_mape_ge20": 20.6,
+   "improvement_pct": 10.1,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "ride_code",
     "wait",
-    "lag_60",
-    "lag_yday",
-    "hour_sin",
-    "diff_30"
-   ],
-   "gate_tau": 0.7
-  },
-  "60": {
-   "available_pairs": 35721,
-   "train_rows": 28552,
-   "test_rows": 7094,
-   "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 4.7,
-   "rmse": 8.8,
-   "within10": 89,
-   "within5": 75,
-   "mape_ge20": 21.3,
-   "bias": -1.6,
-   "baseline_mae": 5.9,
-   "baseline_mape_ge20": 26.5,
-   "improvement_pct": 19.4,
-   "evaluation": "chronological holdout with horizon embargo",
-   "top_features": [
-    "wait",
-    "ride_code",
     "lag_yday",
     "lag_60",
     "hour_sin",
@@ -170,20 +145,45 @@
    ],
    "gate_tau": 0.7
   },
-  "90": {
-   "available_pairs": 33774,
-   "train_rows": 27001,
-   "test_rows": 6698,
+  "60": {
+   "available_pairs": 35726,
+   "train_rows": 28562,
+   "test_rows": 7052,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 4.8,
-   "rmse": 8.7,
+   "rmse": 8.9,
+   "within10": 88,
+   "within5": 75,
+   "mape_ge20": 21.7,
+   "bias": -1.7,
+   "baseline_mae": 5.8,
+   "baseline_mape_ge20": 26.4,
+   "improvement_pct": 18.3,
+   "evaluation": "chronological holdout with horizon embargo",
+   "top_features": [
+    "wait",
+    "ride_code",
+    "lag_yday",
+    "lag_60",
+    "hour_cos",
+    "hour_sin"
+   ],
+   "gate_tau": 0.7
+  },
+  "90": {
+   "available_pairs": 33779,
+   "train_rows": 27001,
+   "test_rows": 6656,
+   "model": "gradient boosting (delta+round5 + change gate)",
+   "mae": 4.9,
+   "rmse": 8.9,
    "within10": 89,
    "within5": 75,
-   "mape_ge20": 20.7,
-   "bias": -1.5,
+   "mape_ge20": 20.9,
+   "bias": -1.7,
    "baseline_mae": 6.6,
-   "baseline_mape_ge20": 29.1,
-   "improvement_pct": 26.9,
+   "baseline_mape_ge20": 28.9,
+   "improvement_pct": 25.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -196,23 +196,23 @@
    "gate_tau": 0.7
   },
   "120": {
-   "available_pairs": 31985,
+   "available_pairs": 31990,
    "train_rows": 25577,
-   "test_rows": 6335,
+   "test_rows": 6296,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 5.0,
-   "rmse": 9.0,
+   "rmse": 8.8,
    "within10": 89,
    "within5": 74,
-   "mape_ge20": 21.5,
+   "mape_ge20": 21.6,
    "bias": -1.4,
    "baseline_mae": 7.0,
-   "baseline_mape_ge20": 30.2,
-   "improvement_pct": 28.1,
+   "baseline_mape_ge20": 30.1,
+   "improvement_pct": 28.6,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
-    "wait",
     "ride_code",
+    "wait",
     "hour_sin",
     "diff_30",
     "hour_cos",
@@ -234,46 +234,6 @@
  "lookback": {
   "Turtle Talk With Crush": [
    {
-    "t": "17:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:30",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
     "t": "17:45",
     "actual": 15,
     "p30": 15,
@@ -619,6 +579,41 @@
    },
    {
     "t": "21:20",
+    "actual": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "21:25",
+    "actual": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "21:30",
+    "actual": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "21:35",
+    "actual": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "21:40",
+    "actual": 15,
+    "p60": 15,
+    "p90": 15,
+    "p120": 15
+   },
+   {
+    "t": "21:45",
     "actual": 15,
     "p60": 15,
     "p90": 15,
@@ -627,46 +622,6 @@
   ],
   "Beauty and the Beast Sing-Along": [
    {
-    "t": "17:20",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:25",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:30",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:35",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
-    "t": "17:40",
-    "actual": 15,
-    "p30": 15,
-    "p60": 15,
-    "p90": 15,
-    "p120": 15
-   },
-   {
     "t": "17:45",
     "actual": 15,
     "p30": 15,
@@ -945,12 +900,32 @@
    {
     "t": "21:20",
     "actual": 15
+   },
+   {
+    "t": "21:25",
+    "actual": 15
+   },
+   {
+    "t": "21:30",
+    "actual": 15
+   },
+   {
+    "t": "21:35",
+    "actual": 15
+   },
+   {
+    "t": "21:40",
+    "actual": 15
+   },
+   {
+    "t": "21:45",
+    "actual": 15
    }
   ]
  },
  "today": {
   "date": "2026-11-22",
-  "graded": 7153,
+  "graded": 7168,
   "exact": 51,
   "in5": 74,
   "in10": 87,
@@ -964,23 +939,23 @@
     "in15": 95
    },
    "60": {
-    "graded": 1834,
+    "graded": 1839,
     "exact": 51,
     "in5": 74,
     "in10": 86,
     "in15": 94
    },
    "90": {
-    "graded": 1735,
+    "graded": 1740,
     "exact": 49,
     "in5": 72,
     "in10": 86,
     "in15": 93
    },
    "120": {
-    "graded": 1647,
+    "graded": 1652,
     "exact": 47,
-    "in5": 72,
+    "in5": 73,
     "in10": 86,
     "in15": 91
    }
