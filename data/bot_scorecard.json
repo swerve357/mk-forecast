@@ -1,20 +1,15 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-24T14:02:34.384004+00:00",
+ "updated": "2026-11-24T14:07:14.505871+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
+  "\"it's a small world\"": "2026-11-24 09:10:00-05:00",
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-23 17:10:00-05:00",
   "Country Bear Musical Jamboree": "2026-11-23 23:10:00-05:00",
-  "Enchanted Tales with Belle": "2026-11-23 19:40:00-05:00",
-  "Main Street Vehicles": "2026-11-23 16:10:00-05:00",
-  "Monsters, Inc. Laugh Floor": "2026-11-23 22:10:00-05:00",
-  "The Hall of Presidents": "2026-11-23 21:10:00-05:00",
-  "Walt Disney World Railroad - Fantasyland": "2026-11-23 18:40:00-05:00",
-  "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-23 18:40:00-05:00",
-  "Walt Disney's Enchanted Tiki Room": "2026-11-23 23:10:00-05:00"
+  "Enchanted Tales with Belle": "2026-11-23 19:40:00-05:00"
  },
- "decisions_open": 4,
+ "decisions_open": 6,
  "graded_all": {
   "n": 1514,
   "wins": 351,
@@ -41,8 +36,29 @@
    "mae_shadow": 5.82
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 2,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-1628",
+   "type": "D2",
+   "event_ride": "Monsters, Inc. Laugh Floor",
+   "ride": "Monsters, Inc. Laugh Floor",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 660 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-1629",
+   "type": "D2",
+   "event_ride": "Walt Disney's Enchanted Tiki Room",
+   "ride": "Walt Disney's Enchanted Tiki Room",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 600 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
