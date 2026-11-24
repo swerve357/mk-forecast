@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-24T05:03:20.193487+00:00",
- "last_sample": "2026-11-24T05:00:40+00:00",
- "samples": 223465,
+ "updated": "2026-11-24T05:06:46.240391+00:00",
+ "last_sample": "2026-11-24T05:05:31+00:00",
+ "samples": 223501,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -119,7 +119,7 @@
  "demo": false,
  "lookback": {},
  "today": {},
- "lookback_debug": "log rows 23772; act (4170, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 04:05:00+00:00; slots 13; lookback rides 0; today graded 0",
+ "lookback_debug": "log rows 23656; act (4170, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 04:05:00+00:00; slots 12; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-24T04:44:06.568901+00:00",
@@ -283,8 +283,8 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-24T05:03:22.022467+00:00",
-   "last_sample": "2026-11-24T05:00:40+00:00",
+   "updated": "2026-11-24T05:06:47.714807+00:00",
+   "last_sample": "2026-11-24T05:05:31+00:00",
    "samples": 76349,
    "history_samples": 0,
    "rides": [
@@ -347,8 +347,8 @@
     },
     {
      "name": "Toy Story Mania!",
-     "now": 25,
-     "trend30": 10,
+     "now": 20,
+     "trend30": 5,
      "why": {
       "lag60": 25,
       "lag120": 20,
@@ -360,9 +360,9 @@
       "mins_open": 915,
       "mins_close": -285
      },
-     "f30": 25,
-     "f30_lo": 20,
-     "f30_hi": 30,
+     "f30": 20,
+     "f30_lo": 15,
+     "f30_hi": 25,
      "score30_mae": 8.6,
      "score30_in5": 55,
      "score30_in10": 75,
@@ -370,9 +370,9 @@
      "d30": 0,
      "d30_lo": -5,
      "d30_hi": 5,
-     "f60": 30,
-     "f60_lo": 20,
-     "f60_hi": 30,
+     "f60": 25,
+     "f60_lo": 15,
+     "f60_hi": 25,
      "score60_mae": 10.1,
      "score60_in5": 50,
      "score60_in10": 70,
@@ -380,9 +380,9 @@
      "d60": 5,
      "d60_lo": -10,
      "d60_hi": 0,
-     "f90": 25,
-     "f90_lo": 20,
-     "f90_hi": 30,
+     "f90": 20,
+     "f90_lo": 15,
+     "f90_hi": 25,
      "score90_mae": 9.4,
      "score90_in5": 51,
      "score90_in10": 74,
@@ -390,9 +390,9 @@
      "d90": 0,
      "d90_lo": -5,
      "d90_hi": 5,
-     "f120": 25,
-     "f120_lo": 15,
-     "f120_hi": 30,
+     "f120": 20,
+     "f120_lo": 10,
+     "f120_hi": 25,
      "score120_mae": 10.1,
      "score120_in5": 48,
      "score120_in10": 70,
@@ -405,7 +405,7 @@
     {
      "name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
      "now": 20,
-     "trend30": -5,
+     "trend30": -10,
      "why": {
       "lag60": 35,
       "lag120": 25,
