@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-24T05:13:06.474673+00:00",
- "last_sample": "2026-11-24T05:10:35+00:00",
- "samples": 223537,
+ "updated": "2026-11-24T05:16:31.444789+00:00",
+ "last_sample": "2026-11-24T05:15:30+00:00",
+ "samples": 223573,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -119,7 +119,7 @@
  "demo": false,
  "lookback": {},
  "today": {},
- "lookback_debug": "log rows 23540; act (4170, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 04:05:00+00:00; slots 12; lookback rides 0; today graded 0",
+ "lookback_debug": "log rows 23424; act (4170, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 04:05:00+00:00; slots 12; lookback rides 0; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-24T05:13:52.076263+00:00",
@@ -246,15 +246,15 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-24T05:14:30.433241+00:00",
-   "last_sample": "2026-11-24T05:10:35+00:00",
+   "updated": "2026-11-24T05:16:32.575696+00:00",
+   "last_sample": "2026-11-24T05:15:30+00:00",
    "samples": 76427,
    "history_samples": 0,
    "rides": [
     {
      "name": "Slinky Dog Dash",
      "now": 30,
-     "trend30": -10,
+     "trend30": 0,
      "why": {
       "lag60": 40,
       "lag120": 45,
@@ -368,7 +368,7 @@
     {
      "name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
      "now": 20,
-     "trend30": -15,
+     "trend30": -10,
      "why": {
       "lag60": 25,
       "lag120": 20,
@@ -425,7 +425,7 @@
     {
      "name": "Millennium Falcon: Smugglers Run",
      "now": 15,
-     "trend30": 5,
+     "trend30": 10,
      "why": {
       "lag60": 10,
       "lag120": 10,
@@ -494,7 +494,7 @@
       "mins_open": -495,
       "mins_close": 1245
      },
-     "f30": 13,
+     "f30": 15,
      "f30_lo": 15,
      "f30_hi": 15,
      "score30_mae": 9.6,
@@ -504,7 +504,7 @@
      "d30": 0,
      "d30_lo": 2,
      "d30_hi": 2,
-     "f60": 13,
+     "f60": 15,
      "f60_lo": 15,
      "f60_hi": 15,
      "score60_mae": 10.4,
@@ -514,7 +514,7 @@
      "d60": 0,
      "d60_lo": 2,
      "d60_hi": 2,
-     "f90": 13,
+     "f90": 15,
      "f90_lo": 15,
      "f90_hi": 20,
      "score90_mae": 10.0,
@@ -524,7 +524,7 @@
      "d90": 0,
      "d90_lo": 2,
      "d90_hi": 7,
-     "f120": 13,
+     "f120": 15,
      "f120_lo": 15,
      "f120_hi": 15,
      "score120_mae": 10.7,
