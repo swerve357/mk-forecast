@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-24T12:47:15.534184+00:00",
- "last_sample": "2026-11-24T12:45:36+00:00",
- "samples": 226813,
+ "updated": "2026-11-24T12:53:17.766349+00:00",
+ "last_sample": "2026-11-24T12:50:37+00:00",
+ "samples": 226849,
  "history_samples": 11713,
  "rides": [
   {
@@ -14,10 +14,10 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
    "f30": 40,
    "f30_lo": 25,
@@ -28,9 +28,9 @@
    "f90": 45,
    "f90_lo": 40,
    "f90_hi": 60,
-   "f120": 45,
+   "f120": 40,
    "f120_lo": 30,
-   "f120_hi": 65,
+   "f120_hi": 60,
    "score30_mae": 7.3,
    "score30_in10": 80,
    "score30_in5": 59,
@@ -54,7 +54,7 @@
   },
   {
    "name": "The Many Adventures of Winnie the Pooh",
-   "now": 15,
+   "now": 20,
    "trend30": 0,
    "why": {
     "lag60": null,
@@ -62,21 +62,21 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
-   "f30": 25,
-   "f30_lo": 10,
-   "f30_hi": 35,
+   "f30": 30,
+   "f30_lo": 15,
+   "f30_hi": 40,
    "f60": 25,
-   "f60_lo": 10,
-   "f60_hi": 30,
+   "f60_lo": 15,
+   "f60_hi": 35,
    "f90": 25,
-   "f90_lo": 10,
-   "f90_hi": 35,
-   "f120": 30,
+   "f90_lo": 15,
+   "f90_hi": 40,
+   "f120": 35,
    "f120_lo": 15,
    "f120_hi": 40,
    "score30_mae": 6.7,
@@ -96,13 +96,13 @@
    "score120_in5": 59,
    "score120_pairs": 596,
    "people": null,
-   "people_lo": 45,
-   "people_hi": 150,
+   "people_lo": 60,
+   "people_hi": 200,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
    "name": "Peter Pan's Flight",
-   "now": 10,
+   "now": 20,
    "trend30": 0,
    "why": {
     "lag60": null,
@@ -110,22 +110,22 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
-   "f30": 20,
-   "f30_lo": 10,
-   "f30_hi": 30,
+   "f30": 30,
+   "f30_lo": 15,
+   "f30_hi": 40,
    "f60": 30,
-   "f60_lo": 10,
+   "f60_lo": 15,
    "f60_hi": 35,
-   "f90": 30,
-   "f90_lo": 10,
-   "f90_hi": 35,
-   "f120": 40,
-   "f120_lo": 10,
+   "f90": 35,
+   "f90_lo": 20,
+   "f90_hi": 45,
+   "f120": 45,
+   "f120_lo": 15,
    "f120_hi": 50,
    "score30_mae": 6.8,
    "score30_in10": 84,
@@ -144,8 +144,56 @@
    "score120_in5": 59,
    "score120_pairs": 689,
    "people": null,
-   "people_lo": 27,
-   "people_hi": 90,
+   "people_lo": 53,
+   "people_hi": 180,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Buzz Lightyear\u2019s Space Ranger Spin",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": null,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 12,
+    "park_busy": 3,
+    "mins_open": -5,
+    "mins_close": 605
+   },
+   "f30": 10,
+   "f30_lo": 5,
+   "f30_hi": 35,
+   "f60": 25,
+   "f60_lo": 10,
+   "f60_hi": 35,
+   "f90": 25,
+   "f90_lo": 10,
+   "f90_hi": 35,
+   "f120": 35,
+   "f120_lo": 10,
+   "f120_hi": 50,
+   "score30_mae": 9.4,
+   "score30_in10": 75,
+   "score30_in5": 49,
+   "score30_pairs": 772,
+   "score60_mae": 10.1,
+   "score60_in10": 72,
+   "score60_in5": 48,
+   "score60_pairs": 743,
+   "score90_mae": 10.2,
+   "score90_in10": 71,
+   "score90_in5": 46,
+   "score90_pairs": 712,
+   "score120_mae": 10.8,
+   "score120_in10": 68,
+   "score120_in5": 46,
+   "score120_pairs": 683,
+   "people": null,
+   "people_lo": 67,
+   "people_hi": 220,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
@@ -158,23 +206,23 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
-   "f30": 10,
+   "f30": 20,
    "f30_lo": 5,
    "f30_hi": 35,
    "f60": 20,
    "f60_lo": 5,
-   "f60_hi": 35,
+   "f60_hi": 30,
    "f90": 15,
    "f90_lo": 5,
    "f90_hi": 35,
-   "f120": 10,
+   "f120": 30,
    "f120_lo": 5,
-   "f120_hi": 45,
+   "f120_hi": 40,
    "score30_mae": 10.8,
    "score30_in10": 68,
    "score30_in5": 45,
@@ -206,10 +254,10 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
    "f30": 5,
    "f30_lo": 5,
@@ -254,10 +302,10 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
    "f30": 5,
    "f30_lo": 5,
@@ -270,7 +318,7 @@
    "f90_hi": 10,
    "f120": 5,
    "f120_lo": 5,
-   "f120_hi": 20,
+   "f120_hi": 15,
    "score30_mae": 2.0,
    "score30_in10": 97,
    "score30_in5": 92,
@@ -302,10 +350,10 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
    "f30": 5,
    "f30_lo": 5,
@@ -318,7 +366,7 @@
    "f90_hi": 20,
    "f120": 5,
    "f120_lo": 5,
-   "f120_hi": 30,
+   "f120_hi": 25,
    "score30_mae": 6.1,
    "score30_in10": 82,
    "score30_in5": 66,
@@ -341,54 +389,6 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
-   "name": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "now": 5,
-   "trend30": 0,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": null,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 11,
-    "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
-   },
-   "f30": 5,
-   "f30_lo": 5,
-   "f30_hi": 30,
-   "f60": 25,
-   "f60_lo": 5,
-   "f60_hi": 30,
-   "f90": 25,
-   "f90_lo": 5,
-   "f90_hi": 30,
-   "f120": 35,
-   "f120_lo": 5,
-   "f120_hi": 45,
-   "score30_mae": 9.4,
-   "score30_in10": 75,
-   "score30_in5": 49,
-   "score30_pairs": 772,
-   "score60_mae": 10.1,
-   "score60_in10": 72,
-   "score60_in5": 48,
-   "score60_pairs": 743,
-   "score90_mae": 10.2,
-   "score90_in10": 71,
-   "score90_in5": 46,
-   "score90_pairs": 712,
-   "score120_mae": 10.8,
-   "score120_in10": 68,
-   "score120_in5": 46,
-   "score120_pairs": 683,
-   "people": null,
-   "people_lo": 33,
-   "people_hi": 110,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
-  },
-  {
    "name": "Astro Orbiter",
    "now": 5,
    "trend30": 0,
@@ -398,10 +398,10 @@
     "lag_yday": null,
     "down60": 5,
     "reopened": true,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
    "f30": 5,
    "f30_lo": 5,
@@ -437,6 +437,54 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
+   "name": "Tomorrowland Speedway",
+   "now": 5,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": null,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 12,
+    "park_busy": 3,
+    "mins_open": -5,
+    "mins_close": 605
+   },
+   "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 20,
+   "f60": 5,
+   "f60_lo": 5,
+   "f60_hi": 20,
+   "f90": 15,
+   "f90_lo": 5,
+   "f90_hi": 20,
+   "f120": 15,
+   "f120_lo": 5,
+   "f120_hi": 25,
+   "score30_mae": 5.0,
+   "score30_in10": 92,
+   "score30_in5": 76,
+   "score30_pairs": 782,
+   "score60_mae": 5.4,
+   "score60_in10": 92,
+   "score60_in5": 74,
+   "score60_pairs": 753,
+   "score90_mae": 5.5,
+   "score90_in10": 91,
+   "score90_in5": 76,
+   "score90_pairs": 724,
+   "score120_mae": 6.4,
+   "score120_in10": 86,
+   "score120_in5": 69,
+   "score120_pairs": 695,
+   "people": null,
+   "people_lo": 18,
+   "people_hi": 65,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
    "name": "\"it's a small world\"",
    "now": 5,
    "trend30": 0,
@@ -446,10 +494,10 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
    "f30": 5,
    "f30_lo": 5,
@@ -494,10 +542,10 @@
     "lag_yday": null,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
+    "park_mean": 12,
     "park_busy": 3,
-    "mins_open": -10,
-    "mins_close": 610
+    "mins_open": -5,
+    "mins_close": 605
    },
    "f30": 5,
    "f30_lo": 5,
@@ -651,17 +699,39 @@
    {
     "t": "07:40",
     "actual": 45
+   },
+   {
+    "t": "07:55",
+    "actual": 50
    }
   ],
   "The Many Adventures of Winnie the Pooh": [
    {
     "t": "07:40",
     "actual": 10
+   },
+   {
+    "t": "07:55",
+    "actual": 20
    }
   ],
   "Peter Pan's Flight": [
    {
     "t": "07:40",
+    "actual": 10
+   },
+   {
+    "t": "07:55",
+    "actual": 20
+   }
+  ],
+  "Buzz Lightyear\u2019s Space Ranger Spin": [
+   {
+    "t": "07:40",
+    "actual": 10
+   },
+   {
+    "t": "07:55",
     "actual": 10
    }
   ],
@@ -669,11 +739,19 @@
    {
     "t": "07:40",
     "actual": 10
+   },
+   {
+    "t": "07:55",
+    "actual": 10
    }
   ],
   "Mad Tea Party": [
    {
     "t": "07:40",
+    "actual": 5
+   },
+   {
+    "t": "07:55",
     "actual": 5
    }
   ],
@@ -681,29 +759,45 @@
    {
     "t": "07:40",
     "actual": 5
+   },
+   {
+    "t": "07:55",
+    "actual": 5
    }
   ],
   "Under the Sea - Journey of The Little Mermaid": [
    {
     "t": "07:40",
     "actual": 5
-   }
-  ],
-  "Buzz Lightyear\u2019s Space Ranger Spin": [
+   },
    {
-    "t": "07:40",
-    "actual": 10
+    "t": "07:55",
+    "actual": 5
    }
   ],
   "Astro Orbiter": [
    {
     "t": "07:40",
     "closed": 1
+   },
+   {
+    "t": "07:55",
+    "actual": 5
+   }
+  ],
+  "Tomorrowland Speedway": [
+   {
+    "t": "07:55",
+    "actual": 5
    }
   ],
   "\"it's a small world\"": [
    {
     "t": "07:40",
+    "actual": 5
+   },
+   {
+    "t": "07:55",
     "actual": 5
    }
   ],
@@ -711,11 +805,15 @@
    {
     "t": "07:40",
     "actual": 5
+   },
+   {
+    "t": "07:55",
+    "actual": 5
    }
   ]
  },
  "today": {},
- "lookback_debug": "log rows 17444; act (4173, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 12:50:00+00:00; slots 1; lookback rides 11; today graded 0",
+ "lookback_debug": "log rows 17492; act (4174, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 12:55:00+00:00; slots 2; lookback rides 12; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-24T12:33:16.269086+00:00",
