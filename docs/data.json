@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-24T04:26:53.890448+00:00",
- "last_sample": "2026-11-24T04:25:29+00:00",
- "samples": 223213,
+ "updated": "2026-11-24T04:33:18.873075+00:00",
+ "last_sample": "2026-11-24T04:30:39+00:00",
+ "samples": 223249,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -155,7 +155,7 @@
    }
   }
  },
- "lookback_debug": "log rows 24568; act (4170, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 04:05:00+00:00; slots 15; lookback rides 0; today graded 15117",
+ "lookback_debug": "log rows 24460; act (4170, 31) idx 2026-10-30 04:00:00+00:00..2026-11-24 04:05:00+00:00; slots 15; lookback rides 0; today graded 15117",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-24T04:13:48.721489+00:00",
@@ -319,15 +319,15 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-24T04:26:55.352361+00:00",
-   "last_sample": "2026-11-24T04:25:29+00:00",
+   "updated": "2026-11-24T04:33:20.726733+00:00",
+   "last_sample": "2026-11-24T04:30:39+00:00",
    "samples": 76271,
    "history_samples": 0,
    "rides": [
     {
      "name": "Slinky Dog Dash",
      "now": 40,
-     "trend30": -5,
+     "trend30": 0,
      "why": {
       "lag60": 45,
       "lag120": 35,
@@ -384,7 +384,7 @@
     {
      "name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
      "now": 25,
-     "trend30": 5,
+     "trend30": 0,
      "why": {
       "lag60": 20,
       "lag120": 25,
@@ -440,7 +440,7 @@
     },
     {
      "name": "Toy Story Mania!",
-     "now": 20,
+     "now": 15,
      "trend30": -5,
      "why": {
       "lag60": 25,
@@ -453,9 +453,9 @@
       "mins_open": 885,
       "mins_close": -255
      },
-     "f30": 20,
-     "f30_lo": 10,
-     "f30_hi": 25,
+     "f30": 15,
+     "f30_lo": 5,
+     "f30_hi": 20,
      "score30_mae": 8.9,
      "score30_in5": 53,
      "score30_in10": 73,
@@ -463,9 +463,9 @@
      "d30": 0,
      "d30_lo": -10,
      "d30_hi": 5,
-     "f60": 20,
-     "f60_lo": 10,
-     "f60_hi": 25,
+     "f60": 15,
+     "f60_lo": 5,
+     "f60_hi": 20,
      "score60_mae": 10.5,
      "score60_in5": 46,
      "score60_in10": 64,
@@ -473,9 +473,9 @@
      "d60": 0,
      "d60_lo": -10,
      "d60_hi": 5,
-     "f90": 20,
-     "f90_lo": 10,
-     "f90_hi": 25,
+     "f90": 15,
+     "f90_lo": 5,
+     "f90_hi": 20,
      "score90_mae": 9.7,
      "score90_in5": 51,
      "score90_in10": 72,
@@ -483,9 +483,9 @@
      "d90": 0,
      "d90_lo": -10,
      "d90_hi": 5,
-     "f120": 20,
-     "f120_lo": 10,
-     "f120_hi": 20,
+     "f120": 15,
+     "f120_lo": 5,
+     "f120_hi": 15,
      "score120_mae": 10.0,
      "score120_in5": 50,
      "score120_in10": 70,
@@ -555,7 +555,7 @@
     {
      "name": "The Twilight Zone\u2122 Tower of Terror",
      "now": 13,
-     "trend30": -7,
+     "trend30": 0,
      "why": {
       "lag60": 13,
       "lag120": 13,
@@ -725,8 +725,8 @@
     },
     {
      "name": "Alien Swirling Saucers",
-     "now": 10,
-     "trend30": 5,
+     "now": 5,
+     "trend30": 0,
      "why": {
       "lag60": 5,
       "lag120": 10,
@@ -738,9 +738,9 @@
       "mins_open": 885,
       "mins_close": -255
      },
-     "f30": 10,
+     "f30": 5,
      "f30_lo": 5,
-     "f30_hi": 10,
+     "f30_hi": 5,
      "score30_mae": 11.3,
      "score30_in5": 49,
      "score30_in10": 68,
@@ -748,9 +748,9 @@
      "d30": 0,
      "d30_lo": -5,
      "d30_hi": 0,
-     "f60": 10,
+     "f60": 5,
      "f60_lo": 5,
-     "f60_hi": 10,
+     "f60_hi": 5,
      "score60_mae": 10.7,
      "score60_in5": 51,
      "score60_in10": 69,
@@ -758,9 +758,9 @@
      "d60": 0,
      "d60_lo": -5,
      "d60_hi": 0,
-     "f90": 10,
+     "f90": 5,
      "f90_lo": 5,
-     "f90_hi": 10,
+     "f90_hi": 5,
      "score90_mae": 10.3,
      "score90_in5": 54,
      "score90_in10": 71,
@@ -768,9 +768,9 @@
      "d90": 0,
      "d90_lo": -5,
      "d90_hi": 0,
-     "f120": 10,
-     "f120_lo": 10,
-     "f120_hi": 10,
+     "f120": 5,
+     "f120_lo": 5,
+     "f120_hi": 5,
      "score120_mae": 10.2,
      "score120_in5": 55,
      "score120_in10": 72,
