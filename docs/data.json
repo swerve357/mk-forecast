@@ -1,9 +1,151 @@
 {
- "updated": "2026-11-25T22:12:20.200520+00:00",
- "last_sample": "2026-11-25T22:10:37+00:00",
- "samples": 241069,
+ "updated": "2026-11-25T22:17:16.240084+00:00",
+ "last_sample": "2026-11-25T22:15:34+00:00",
+ "samples": 241105,
  "history_samples": 11713,
- "rides": [],
+ "rides": [
+  {
+   "name": "Peter Pan's Flight",
+   "now": 40,
+   "trend30": 0,
+   "why": {
+    "lag60": 25,
+    "lag120": 50,
+    "lag_yday": 40,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 22,
+    "park_busy": 3,
+    "mins_open": 500,
+    "mins_close": 40
+   },
+   "f30": 35,
+   "f30_lo": 30,
+   "f30_hi": 50,
+   "f60": 35,
+   "f60_lo": 30,
+   "f60_hi": 45,
+   "f90": 35,
+   "f90_lo": 25,
+   "f90_hi": 45,
+   "f120": 25,
+   "f120_lo": 20,
+   "f120_hi": 40,
+   "score30_mae": 6.8,
+   "score30_in10": 84,
+   "score30_in5": 63,
+   "score30_pairs": 824,
+   "score60_mae": 7.4,
+   "score60_in10": 82,
+   "score60_in5": 62,
+   "score60_pairs": 793,
+   "score90_mae": 6.8,
+   "score90_in10": 85,
+   "score90_in5": 64,
+   "score90_pairs": 762,
+   "score120_mae": 7.1,
+   "score120_in10": 83,
+   "score120_in5": 63,
+   "score120_pairs": 731,
+   "people": null,
+   "people_lo": 107,
+   "people_hi": 360,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Haunted Mansion",
+   "now": 15,
+   "trend30": 0,
+   "why": {
+    "lag60": 10,
+    "lag120": 15,
+    "lag_yday": 30,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 22,
+    "park_busy": 3,
+    "mins_open": 500,
+    "mins_close": 40
+   },
+   "f30": 15,
+   "f30_lo": 10,
+   "f30_hi": 25,
+   "f60": 15,
+   "f60_lo": 10,
+   "f60_hi": 20,
+   "f90": 15,
+   "f90_lo": 10,
+   "f90_hi": 20,
+   "f120": 15,
+   "f120_lo": 5,
+   "f120_hi": 15,
+   "score30_mae": 6.3,
+   "score30_in10": 85,
+   "score30_in5": 62,
+   "score30_pairs": 672,
+   "score60_mae": 6.1,
+   "score60_in10": 85,
+   "score60_in5": 65,
+   "score60_pairs": 642,
+   "score90_mae": 5.7,
+   "score90_in10": 89,
+   "score90_in5": 72,
+   "score90_pairs": 619,
+   "score120_mae": 5.9,
+   "score120_in10": 88,
+   "score120_in5": 69,
+   "score120_pairs": 590,
+   "people": null,
+   "people_lo": 120,
+   "people_hi": 390,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Monsters, Inc. Laugh Floor",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": 10,
+    "lag120": 10,
+    "lag_yday": 10,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 22,
+    "park_busy": 3,
+    "mins_open": 500,
+    "mins_close": 40
+   },
+   "f30": 10,
+   "f30_lo": 10,
+   "f30_hi": 10,
+   "f60": 10,
+   "f60_lo": 10,
+   "f60_hi": 10,
+   "f90": 10,
+   "f90_lo": 10,
+   "f90_hi": 10,
+   "f120": 10,
+   "f120_lo": 10,
+   "f120_hi": 10,
+   "score30_mae": 0.5,
+   "score30_in10": 100,
+   "score30_in5": 98,
+   "score30_pairs": 741,
+   "score60_mae": 0.8,
+   "score60_in10": 100,
+   "score60_in5": 97,
+   "score60_pairs": 700,
+   "score90_mae": 1.0,
+   "score90_in10": 100,
+   "score90_in5": 95,
+   "score90_pairs": 671,
+   "score120_mae": 1.2,
+   "score120_in10": 100,
+   "score120_in5": 93,
+   "score120_pairs": 642,
+   "people": null
+  }
+ ],
  "metrics": {
   "30": {
    "available_pairs": 101184,
@@ -31,19 +173,19 @@
    "gate_tau": 0.7
   },
   "60": {
-   "available_pairs": 96414,
-   "train_rows": 76280,
-   "test_rows": 19810,
+   "available_pairs": 96417,
+   "train_rows": 76307,
+   "test_rows": 19786,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 5.7,
    "rmse": 9.4,
    "within10": 85,
-   "within5": 71,
-   "mape_ge20": 22.4,
-   "bias": -3.0,
+   "within5": 70,
+   "mape_ge20": 22.6,
+   "bias": -3.1,
    "baseline_mae": 6.9,
    "baseline_mape_ge20": 27.3,
-   "improvement_pct": 17.9,
+   "improvement_pct": 17.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -51,21 +193,21 @@
     "hour_cos",
     "diff_30",
     "hour_sin",
-    "lag_60"
+    "mins_to_party_start"
    ],
    "gate_tau": 0.7
   },
   "90": {
-   "available_pairs": 91940,
-   "train_rows": 72604,
-   "test_rows": 18858,
+   "available_pairs": 91942,
+   "train_rows": 72630,
+   "test_rows": 18836,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 5.6,
    "rmse": 9.2,
    "within10": 86,
    "within5": 71,
-   "mape_ge20": 22.1,
-   "bias": -2.9,
+   "mape_ge20": 22.4,
+   "bias": -3.0,
    "baseline_mae": 7.5,
    "baseline_mape_ge20": 29.0,
    "improvement_pct": 25.0,
@@ -76,24 +218,24 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "lag_60"
+    "mins_to_party_start"
    ],
    "gate_tau": 0.7
   },
   "120": {
-   "available_pairs": 87844,
-   "train_rows": 69195,
-   "test_rows": 18023,
+   "available_pairs": 87847,
+   "train_rows": 69221,
+   "test_rows": 18001,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 6.1,
-   "rmse": 9.9,
+   "rmse": 9.8,
    "within10": 84,
-   "within5": 68,
-   "mape_ge20": 24.5,
-   "bias": -3.5,
+   "within5": 69,
+   "mape_ge20": 24.3,
+   "bias": -3.4,
    "baseline_mae": 8.2,
    "baseline_mape_ge20": 31.1,
-   "improvement_pct": 25.7,
+   "improvement_pct": 26.3,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -114,13 +256,309 @@
   "ticketed_event": "Special Ticketed Event",
   "ll_multipass_usd": 39.0,
   "event": "Mickey's Very Merry Christmas Party",
-  "is_party_night": false
+  "is_party_night": true
  },
  "demo": false,
- "lookback": {},
+ "lookback": {
+  "Peter Pan's Flight": [
+   {
+    "t": "13:20",
+    "actual": 30,
+    "p30": 35,
+    "p60": 35,
+    "p90": 40
+   },
+   {
+    "t": "13:35",
+    "actual": 30,
+    "p30": 35,
+    "p60": 40,
+    "p90": 40,
+    "p120": 40
+   },
+   {
+    "t": "13:50",
+    "actual": 45,
+    "p30": 35,
+    "p60": 35,
+    "p90": 35,
+    "p120": 40
+   },
+   {
+    "t": "14:05",
+    "actual": 30,
+    "p30": 30,
+    "p60": 35,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "14:20",
+    "actual": 45,
+    "p30": 35,
+    "p60": 35,
+    "p90": 35,
+    "p120": 30
+   },
+   {
+    "t": "14:35",
+    "actual": 35,
+    "p30": 35,
+    "p60": 30,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "14:50",
+    "actual": 45,
+    "p30": 40,
+    "p60": 35,
+    "p90": 35,
+    "p120": 40
+   },
+   {
+    "t": "15:05",
+    "actual": 45,
+    "p30": 40,
+    "p60": 35,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "15:20",
+    "actual": 50,
+    "p30": 40,
+    "p60": 40,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "15:35",
+    "actual": 40,
+    "p30": 35,
+    "p60": 35,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "15:50",
+    "actual": 20,
+    "p30": 40,
+    "p60": 40,
+    "p90": 40,
+    "p120": 35
+   },
+   {
+    "t": "16:20",
+    "actual": 25,
+    "p30": 35,
+    "p60": 40,
+    "p90": 40,
+    "p120": 40
+   },
+   {
+    "t": "17:10",
+    "actual": 40,
+    "p90": 40,
+    "p120": 40
+   }
+  ],
+  "Haunted Mansion": [
+   {
+    "t": "13:20",
+    "actual": 20,
+    "p30": 13,
+    "p60": 25,
+    "p90": 25
+   },
+   {
+    "t": "13:35",
+    "actual": 13,
+    "p30": 20,
+    "p60": 25,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "13:50",
+    "actual": 13,
+    "p30": 20,
+    "p60": 20,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "14:05",
+    "actual": 13,
+    "p30": 13,
+    "p60": 20,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "14:20",
+    "actual": 13,
+    "p30": 13,
+    "p60": 20,
+    "p90": 13,
+    "p120": 20
+   },
+   {
+    "t": "14:35",
+    "actual": 20,
+    "p30": 13,
+    "p60": 15,
+    "p90": 20,
+    "p120": 20
+   },
+   {
+    "t": "14:50",
+    "actual": 10,
+    "p30": 13,
+    "p60": 13,
+    "p90": 20,
+    "p120": 13
+   },
+   {
+    "t": "15:05",
+    "actual": 15,
+    "p30": 20,
+    "p60": 13,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "15:20",
+    "actual": 15,
+    "p30": 10,
+    "p60": 13,
+    "p90": 15,
+    "p120": 20
+   },
+   {
+    "t": "15:35",
+    "actual": 25,
+    "p30": 15,
+    "p60": 15,
+    "p90": 13,
+    "p120": 13
+   },
+   {
+    "t": "16:20",
+    "actual": 10,
+    "p60": 15,
+    "p90": 10,
+    "p120": 13
+   }
+  ],
+  "Monsters, Inc. Laugh Floor": [
+   {
+    "t": "13:20",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10
+   },
+   {
+    "t": "13:35",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "13:50",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "14:05",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "14:20",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "14:35",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "14:50",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "15:05",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "15:20",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "15:35",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "15:50",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "16:20",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   },
+   {
+    "t": "17:10",
+    "actual": 10,
+    "p60": 10,
+    "p90": 10,
+    "p120": 10
+   }
+  ]
+ },
  "today": {
   "date": "2026-11-25",
-  "graded": 6970,
+  "graded": 6978,
   "exact": 66,
   "in5": 84,
   "in10": 94,
@@ -134,21 +572,21 @@
     "in15": 99
    },
    "60": {
-    "graded": 1814,
+    "graded": 1817,
     "exact": 65,
     "in5": 83,
     "in10": 94,
     "in15": 98
    },
    "90": {
-    "graded": 1676,
+    "graded": 1678,
     "exact": 64,
     "in5": 83,
     "in10": 94,
     "in15": 98
    },
    "120": {
-    "graded": 1533,
+    "graded": 1536,
     "exact": 63,
     "in5": 83,
     "in10": 93,
@@ -156,11 +594,11 @@
    }
   }
  },
- "lookback_debug": "log rows 24440; act (4453, 31) idx 2026-10-30 04:00:00+00:00..2026-11-25 22:10:00+00:00; slots 14; lookback rides 0; today graded 6970",
+ "lookback_debug": "log rows 24336; act (4454, 31) idx 2026-10-30 04:00:00+00:00..2026-11-25 22:20:00+00:00; slots 14; lookback rides 3; today graded 6978",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-25T22:13:20.231275+00:00",
-   "last_sample": "2026-11-25T22:10:37+00:00",
+   "updated": "2026-11-25T22:17:18.219267+00:00",
+   "last_sample": "2026-11-25T22:15:34+00:00",
    "samples": 211751,
    "history_samples": 0,
    "rides": [
@@ -761,8 +1199,8 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-25T22:13:57.634695+00:00",
-   "last_sample": "2026-11-25T22:10:37+00:00",
+   "updated": "2026-11-25T22:17:18.381858+00:00",
+   "last_sample": "2026-11-25T22:15:34+00:00",
    "samples": 82758,
    "history_samples": 0,
    "rides": [
@@ -1784,8 +2222,8 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-25T22:14:33.124216+00:00",
-   "last_sample": "2026-11-25T22:10:37+00:00",
+   "updated": "2026-11-25T22:17:18.542327+00:00",
+   "last_sample": "2026-11-25T22:15:34+00:00",
    "samples": 101856,
    "history_samples": 0,
    "rides": [
