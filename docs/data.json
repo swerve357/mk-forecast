@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-25T05:17:00.586785+00:00",
- "last_sample": "2026-11-25T05:15:33+00:00",
- "samples": 233941,
+ "updated": "2026-11-25T05:21:38.375242+00:00",
+ "last_sample": "2026-11-25T05:20:32+00:00",
+ "samples": 233977,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -156,12 +156,12 @@
    }
   }
  },
- "lookback_debug": "log rows 24736; act (4362, 31) idx 2026-10-30 04:00:00+00:00..2026-11-25 05:05:00+00:00; slots 16; lookback rides 0; today graded 174",
+ "lookback_debug": "log rows 24624; act (4362, 31) idx 2026-10-30 04:00:00+00:00..2026-11-25 05:05:00+00:00; slots 15; lookback rides 0; today graded 174",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-25T04:53:11.605609+00:00",
-   "last_sample": "2026-11-25T04:50:36+00:00",
-   "samples": 205052,
+   "updated": "2026-11-25T05:22:12.246076+00:00",
+   "last_sample": "2026-11-25T05:20:32+00:00",
+   "samples": 205250,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -269,7 +269,7 @@
     }
    },
    "context": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "open": "09:00",
     "close": "21:00",
     "early_entry": "08:30",
@@ -279,50 +279,13 @@
    },
    "demo": false,
    "lookback": {},
-   "today": {
-    "date": "2026-11-24",
-    "graded": 6722,
-    "exact": 47,
-    "in5": 70,
-    "in10": 83,
-    "in15": 91,
-    "by_horizon": {
-     "30": {
-      "graded": 1820,
-      "exact": 56,
-      "in5": 74,
-      "in10": 86,
-      "in15": 91
-     },
-     "60": {
-      "graded": 1725,
-      "exact": 45,
-      "in5": 70,
-      "in10": 82,
-      "in15": 91
-     },
-     "90": {
-      "graded": 1632,
-      "exact": 41,
-      "in5": 67,
-      "in10": 83,
-      "in15": 92
-     },
-     "120": {
-      "graded": 1545,
-      "exact": 43,
-      "in5": 69,
-      "in10": 82,
-      "in15": 91
-     }
-    }
-   },
+   "today": {},
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-25T04:53:51.543650+00:00",
-   "last_sample": "2026-11-25T04:50:36+00:00",
-   "samples": 80119,
+   "updated": "2026-11-25T05:22:37.644051+00:00",
+   "last_sample": "2026-11-25T05:20:32+00:00",
+   "samples": 80197,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -430,60 +393,23 @@
     }
    },
    "context": {
-    "date": "2026-11-24",
-    "open": "08:30",
+    "date": "2026-11-25",
+    "open": "09:00",
     "close": "21:00",
-    "early_entry": "08:00",
+    "early_entry": "08:30",
     "event": "",
     "ll_multipass_usd": 39.0,
     "is_party_night": false
    },
    "demo": false,
    "lookback": {},
-   "today": {
-    "date": "2026-11-24",
-    "graded": 5389,
-    "exact": 22,
-    "in5": 42,
-    "in10": 58,
-    "in15": 71,
-    "by_horizon": {
-     "30": {
-      "graded": 1441,
-      "exact": 25,
-      "in5": 49,
-      "in10": 66,
-      "in15": 77
-     },
-     "60": {
-      "graded": 1380,
-      "exact": 20,
-      "in5": 42,
-      "in10": 56,
-      "in15": 68
-     },
-     "90": {
-      "graded": 1317,
-      "exact": 20,
-      "in5": 37,
-      "in10": 54,
-      "in15": 69
-     },
-     "120": {
-      "graded": 1251,
-      "exact": 22,
-      "in5": 41,
-      "in10": 55,
-      "in15": 69
-     }
-    }
-   },
+   "today": {},
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-25T04:54:16.630122+00:00",
-   "last_sample": "2026-11-25T04:50:36+00:00",
-   "samples": 98608,
+   "updated": "2026-11-25T05:22:52.415704+00:00",
+   "last_sample": "2026-11-25T05:20:32+00:00",
+   "samples": 98704,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -589,54 +515,17 @@
     }
    },
    "context": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "open": "08:00",
-    "close": "20:00",
+    "close": "18:00",
     "early_entry": "07:30",
-    "event": "",
+    "event": "Extended Evening",
     "ll_multipass_usd": 29.0,
     "is_party_night": false
    },
    "demo": false,
    "lookback": {},
-   "today": {
-    "date": "2026-11-24",
-    "graded": 3752,
-    "exact": 40,
-    "in5": 62,
-    "in10": 76,
-    "in15": 85,
-    "by_horizon": {
-     "30": {
-      "graded": 1035,
-      "exact": 48,
-      "in5": 68,
-      "in10": 80,
-      "in15": 88
-     },
-     "60": {
-      "graded": 969,
-      "exact": 41,
-      "in5": 61,
-      "in10": 72,
-      "in15": 83
-     },
-     "90": {
-      "graded": 904,
-      "exact": 35,
-      "in5": 59,
-      "in10": 74,
-      "in15": 84
-     },
-     "120": {
-      "graded": 844,
-      "exact": 34,
-      "in5": 61,
-      "in10": 76,
-      "in15": 87
-     }
-    }
-   },
+   "today": {},
    "park_label": "Animal Kingdom"
   }
  }
