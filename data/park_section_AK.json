@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-25T13:36:41.019580+00:00",
- "last_sample": "2026-11-25T13:35:28+00:00",
- "samples": 100208,
+ "updated": "2026-11-25T13:43:37.474816+00:00",
+ "last_sample": "2026-11-25T13:40:32+00:00",
+ "samples": 100304,
  "history_samples": 0,
  "rides": [
   {
@@ -9,21 +9,21 @@
    "now": 45,
    "trend30": 15,
    "why": {
-    "lag60": null,
+    "lag60": 30,
     "lag120": null,
-    "lag_yday": 95,
+    "lag_yday": 115,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
-    "park_busy": 0,
-    "mins_open": 15,
-    "mins_close": 585
+    "park_mean": 13,
+    "park_busy": 6,
+    "mins_open": 45,
+    "mins_close": 555
    },
    "f30": 45,
-   "score30_mae": 12.8,
-   "score30_in5": 48,
-   "score30_in10": 61,
-   "score30_pairs": 553,
+   "score30_mae": 13.0,
+   "score30_in5": 47,
+   "score30_in10": 60,
+   "score30_pairs": 554,
    "d30": 0,
    "f60": 45,
    "score60_mae": 17.0,
@@ -46,30 +46,71 @@
    "people": null
   },
   {
+   "name": "Kilimanjaro Safaris",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 55,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 13,
+    "park_busy": 6,
+    "mins_open": 45,
+    "mins_close": 555
+   },
+   "f30": 10,
+   "score30_mae": 8.8,
+   "score30_in5": 50,
+   "score30_in10": 74,
+   "score30_pairs": 368,
+   "d30": 0,
+   "f60": 10,
+   "score60_mae": 11.2,
+   "score60_in5": 41,
+   "score60_in10": 58,
+   "score60_pairs": 349,
+   "d60": 0,
+   "f90": 10,
+   "score90_mae": 13.9,
+   "score90_in5": 33,
+   "score90_in10": 49,
+   "score90_pairs": 324,
+   "d90": 0,
+   "f120": 10,
+   "score120_mae": 16.2,
+   "score120_in5": 16,
+   "score120_in10": 39,
+   "score120_pairs": 293,
+   "d120": 0,
+   "people": null
+  },
+  {
    "name": "Na'vi River Journey",
    "now": 10,
    "trend30": 5,
    "why": {
-    "lag60": null,
+    "lag60": 5,
     "lag120": null,
-    "lag_yday": 5,
+    "lag_yday": 20,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
-    "park_busy": 0,
-    "mins_open": 15,
-    "mins_close": 585
+    "park_mean": 13,
+    "park_busy": 6,
+    "mins_open": 45,
+    "mins_close": 555
    },
    "f30": 10,
-   "score30_mae": 9.2,
-   "score30_in5": 53,
-   "score30_in10": 73,
-   "score30_pairs": 521,
+   "score30_mae": 9.1,
+   "score30_in5": 54,
+   "score30_in10": 74,
+   "score30_pairs": 522,
    "d30": 0,
    "f60": 10,
-   "score60_mae": 13.0,
-   "score60_in5": 40,
-   "score60_in10": 58,
+   "score60_mae": 12.9,
+   "score60_in5": 41,
+   "score60_in10": 59,
    "score60_pairs": 494,
    "d60": 0,
    "f90": 10,
@@ -87,66 +128,25 @@
    "people": null
   },
   {
-   "name": "Kilimanjaro Safaris",
-   "now": 5,
-   "trend30": -5,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 25,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 11,
-    "park_busy": 0,
-    "mins_open": 15,
-    "mins_close": 585
-   },
-   "f30": 5,
-   "score30_mae": 8.9,
-   "score30_in5": 49,
-   "score30_in10": 74,
-   "score30_pairs": 371,
-   "d30": 0,
-   "f60": 5,
-   "score60_mae": 11.2,
-   "score60_in5": 41,
-   "score60_in10": 58,
-   "score60_pairs": 351,
-   "d60": 0,
-   "f90": 5,
-   "score90_mae": 13.9,
-   "score90_in5": 33,
-   "score90_in10": 49,
-   "score90_pairs": 324,
-   "d90": 0,
-   "f120": 5,
-   "score120_mae": 16.2,
-   "score120_in5": 16,
-   "score120_in10": 39,
-   "score120_pairs": 293,
-   "d120": 0,
-   "people": null
-  },
-  {
    "name": "Zootopia: Better Zoogether!",
    "now": 5,
    "trend30": 0,
    "why": {
-    "lag60": null,
+    "lag60": 5,
     "lag120": null,
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
-    "park_busy": 0,
-    "mins_open": 15,
-    "mins_close": 585
+    "park_mean": 13,
+    "park_busy": 6,
+    "mins_open": 45,
+    "mins_close": 555
    },
    "f30": 5,
    "score30_mae": 1.2,
    "score30_in5": 95,
    "score30_in10": 98,
-   "score30_pairs": 552,
+   "score30_pairs": 553,
    "d30": 0,
    "f60": 5,
    "score60_mae": 2.0,
@@ -173,21 +173,21 @@
    "now": 5,
    "trend30": 0,
    "why": {
-    "lag60": null,
+    "lag60": 5,
     "lag120": null,
-    "lag_yday": 5,
+    "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 11,
-    "park_busy": 0,
-    "mins_open": 15,
-    "mins_close": 585
+    "park_mean": 13,
+    "park_busy": 6,
+    "mins_open": 45,
+    "mins_close": 555
    },
    "f30": 5,
    "score30_mae": 8.1,
-   "score30_in5": 55,
+   "score30_in5": 56,
    "score30_in10": 79,
-   "score30_pairs": 516,
+   "score30_pairs": 517,
    "d30": 0,
    "f60": 5,
    "score60_mae": 10.9,
@@ -208,20 +208,61 @@
    "score120_pairs": 424,
    "d120": 0,
    "people": null
+  },
+  {
+   "name": "Gorilla Falls Exploration Trail",
+   "now": 5,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 13,
+    "park_busy": 6,
+    "mins_open": 45,
+    "mins_close": 555
+   },
+   "f30": 5,
+   "score30_mae": 0.0,
+   "score30_in5": 100,
+   "score30_in10": 100,
+   "score30_pairs": 324,
+   "d30": 0,
+   "f60": 5,
+   "score60_mae": 0.0,
+   "score60_in5": 100,
+   "score60_in10": 100,
+   "score60_pairs": 301,
+   "d60": 0,
+   "f90": 5,
+   "score90_mae": 0.0,
+   "score90_in5": 100,
+   "score90_in10": 100,
+   "score90_pairs": 277,
+   "d90": 0,
+   "f120": 5,
+   "score120_mae": 0.0,
+   "score120_in5": 100,
+   "score120_in10": 100,
+   "score120_pairs": 251,
+   "d120": 0,
+   "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 21253,
-   "train_rows": 17122,
-   "test_rows": 4083,
+   "available_pairs": 21279,
+   "train_rows": 17162,
+   "test_rows": 4067,
    "model": "persistence (model did not beat baseline)",
    "mae": 5.5,
    "rmse": 10.2,
    "within10": 84,
    "within5": 73,
    "mape_ge20": 19.1,
-   "bias": -0.2,
+   "bias": -0.1,
    "baseline_mae": 5.5,
    "baseline_mape_ge20": 19.1,
    "improvement_pct": 0.0,
@@ -230,36 +271,36 @@
     "ride_code",
     "wait",
     "lag_yday",
-    "lag_120",
+    "lag_60",
     "hour_sin",
-    "lag_60"
+    "lag_120"
    ],
-   "candidate_mae": 6.6
+   "candidate_mae": 7.0
   },
   "60": {
-   "available_pairs": 19768,
-   "train_rows": 15886,
-   "test_rows": 3809,
+   "available_pairs": 19776,
+   "train_rows": 15896,
+   "test_rows": 3801,
    "model": "persistence (model did not beat baseline)",
    "mae": 7.6,
    "rmse": 13.3,
    "within10": 76,
    "within5": 65,
-   "mape_ge20": 25.6,
+   "mape_ge20": 25.5,
    "bias": -0.2,
    "baseline_mae": 7.6,
-   "baseline_mape_ge20": 25.6,
+   "baseline_mape_ge20": 25.5,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
-    "lag_yday",
-    "lag_60",
     "hour_sin",
+    "lag_60",
+    "lag_yday",
     "diff_30"
    ],
-   "candidate_mae": 8.0
+   "candidate_mae": 8.2
   },
   "90": {
    "available_pairs": 18397,
@@ -335,6 +376,36 @@
    {
     "t": "08:10",
     "actual": 30
+   },
+   {
+    "t": "08:20",
+    "actual": 45,
+    "p30": 30
+   },
+   {
+    "t": "08:25",
+    "actual": 45,
+    "p30": 30
+   },
+   {
+    "t": "08:30",
+    "actual": 45,
+    "p30": 30
+   },
+   {
+    "t": "08:35",
+    "actual": 45,
+    "p30": 30
+   },
+   {
+    "t": "08:40",
+    "actual": 45,
+    "p30": 30
+   },
+   {
+    "t": "08:45",
+    "actual": 45,
+    "p30": 30
    }
   ],
   "Kilimanjaro Safaris": [
@@ -349,34 +420,31 @@
    {
     "t": "08:10",
     "actual": 10
-   }
-  ],
-  "Zootopia: Better Zoogether!": [
+   },
    {
-    "t": "07:40",
+    "t": "08:20",
     "actual": 5
    },
    {
-    "t": "07:55",
+    "t": "08:25",
     "actual": 5
    },
    {
-    "t": "08:10",
-    "actual": 5
-   }
-  ],
-  "Expedition Everest - Legend of the Forbidden Mountain": [
-   {
-    "t": "07:40",
+    "t": "08:30",
     "actual": 5
    },
    {
-    "t": "07:55",
+    "t": "08:35",
     "actual": 5
    },
    {
-    "t": "08:10",
+    "t": "08:40",
     "actual": 5
+   },
+   {
+    "t": "08:45",
+    "actual": 10,
+    "p30": 10
    }
   ],
   "Na'vi River Journey": [
@@ -391,9 +459,181 @@
    {
     "t": "08:10",
     "actual": 5
+   },
+   {
+    "t": "08:20",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:25",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:30",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:35",
+    "actual": 10,
+    "p30": 5
+   },
+   {
+    "t": "08:40",
+    "actual": 10,
+    "p30": 5
+   },
+   {
+    "t": "08:45",
+    "actual": 10,
+    "p30": 5
+   }
+  ],
+  "Zootopia: Better Zoogether!": [
+   {
+    "t": "07:40",
+    "actual": 5
+   },
+   {
+    "t": "07:55",
+    "actual": 5
+   },
+   {
+    "t": "08:10",
+    "actual": 5
+   },
+   {
+    "t": "08:20",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:25",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:30",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:35",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:40",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:45",
+    "actual": 5,
+    "p30": 5
+   }
+  ],
+  "Expedition Everest - Legend of the Forbidden Mountain": [
+   {
+    "t": "07:40",
+    "actual": 5
+   },
+   {
+    "t": "07:55",
+    "actual": 5
+   },
+   {
+    "t": "08:10",
+    "actual": 5
+   },
+   {
+    "t": "08:20",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:25",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:30",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:35",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:40",
+    "actual": 5,
+    "p30": 5
+   },
+   {
+    "t": "08:45",
+    "actual": 5,
+    "p30": 5
+   }
+  ],
+  "Gorilla Falls Exploration Trail": [
+   {
+    "t": "07:40",
+    "closed": 1
+   },
+   {
+    "t": "07:55",
+    "closed": 1
+   },
+   {
+    "t": "08:10",
+    "closed": 1
+   },
+   {
+    "t": "08:20",
+    "closed": 1
+   },
+   {
+    "t": "08:25",
+    "actual": 5
+   },
+   {
+    "t": "08:30",
+    "actual": 5
+   },
+   {
+    "t": "08:35",
+    "actual": 5
+   },
+   {
+    "t": "08:40",
+    "actual": 5
+   },
+   {
+    "t": "08:45",
+    "actual": 5
    }
   ]
  },
- "today": {},
+ "today": {
+  "date": "2026-11-25",
+  "graded": 25,
+  "exact": 64,
+  "in5": 76,
+  "in10": 76,
+  "in15": 100,
+  "by_horizon": {
+   "30": {
+    "graded": 25,
+    "exact": 64,
+    "in5": 76,
+    "in10": 76,
+    "in15": 100
+   }
+  }
+ },
  "park_label": "Animal Kingdom"
 }
