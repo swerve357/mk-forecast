@@ -1,35 +1,35 @@
 {
- "updated": "2026-11-25T23:37:06.508026+00:00",
- "last_sample": "2026-11-25T23:35:31+00:00",
- "samples": 102048,
+ "updated": "2026-11-25T23:45:28.127741+00:00",
+ "last_sample": "2026-11-25T23:40:38+00:00",
+ "samples": 102144,
  "history_samples": 0,
  "rides": [
   {
    "name": "Avatar Flight of Passage",
    "now": 20,
-   "trend30": -5,
+   "trend30": -10,
    "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 75,
+    "lag60": 35,
+    "lag120": 30,
+    "lag_yday": 70,
     "down60": 0,
     "reopened": false,
-    "park_mean": 16,
+    "park_mean": 11,
     "park_busy": 0,
-    "mins_open": 615,
-    "mins_close": -15
+    "mins_open": 645,
+    "mins_close": -45
    },
    "f30": 20,
    "score30_mae": 12.8,
    "score30_in5": 46,
    "score30_in10": 61,
-   "score30_pairs": 562,
+   "score30_pairs": 563,
    "d30": 0,
    "f60": 20,
-   "score60_mae": 16.8,
+   "score60_mae": 16.6,
    "score60_in5": 36,
    "score60_in10": 52,
-   "score60_pairs": 533,
+   "score60_pairs": 534,
    "d60": 0,
    "f90": 20,
    "score90_mae": 16.7,
@@ -38,51 +38,10 @@
    "score90_pairs": 501,
    "d90": 0,
    "f120": 20,
-   "score120_mae": 17.0,
+   "score120_mae": 16.9,
    "score120_in5": 34,
-   "score120_in10": 46,
+   "score120_in10": 47,
    "score120_pairs": 470,
-   "d120": 0,
-   "people": null
-  },
-  {
-   "name": "Na'vi River Journey",
-   "now": 10,
-   "trend30": -10,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 70,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 16,
-    "park_busy": 0,
-    "mins_open": 615,
-    "mins_close": -15
-   },
-   "f30": 10,
-   "score30_mae": 9.2,
-   "score30_in5": 53,
-   "score30_in10": 73,
-   "score30_pairs": 526,
-   "d30": 0,
-   "f60": 10,
-   "score60_mae": 13.0,
-   "score60_in5": 41,
-   "score60_in10": 57,
-   "score60_pairs": 497,
-   "d60": 0,
-   "f90": 10,
-   "score90_mae": 15.0,
-   "score90_in5": 35,
-   "score90_in10": 51,
-   "score90_pairs": 465,
-   "d90": 0,
-   "f120": 10,
-   "score120_mae": 15.5,
-   "score120_in5": 36,
-   "score120_in10": 52,
-   "score120_pairs": 434,
    "d120": 0,
    "people": null
   },
@@ -91,68 +50,109 @@
    "now": 10,
    "trend30": 0,
    "why": {
-    "lag60": null,
+    "lag60": 10,
     "lag120": null,
     "lag_yday": 15,
     "down60": 0,
     "reopened": false,
-    "park_mean": 16,
+    "park_mean": 11,
     "park_busy": 0,
-    "mins_open": 615,
-    "mins_close": -15
+    "mins_open": 645,
+    "mins_close": -45
    },
    "f30": 10,
    "score30_mae": 1.3,
    "score30_in5": 95,
    "score30_in10": 98,
-   "score30_pairs": 558,
+   "score30_pairs": 559,
    "d30": 0,
    "f60": 10,
    "score60_mae": 2.1,
    "score60_in5": 92,
    "score60_in10": 96,
-   "score60_pairs": 529,
+   "score60_pairs": 530,
    "d60": 0,
    "f90": 10,
    "score90_mae": 2.8,
    "score90_in5": 89,
    "score90_in10": 94,
-   "score90_pairs": 496,
+   "score90_pairs": 495,
    "d90": 0,
    "f120": 10,
    "score120_mae": 3.7,
    "score120_in5": 85,
    "score120_in10": 89,
-   "score120_pairs": 465,
+   "score120_pairs": 464,
+   "d120": 0,
+   "people": null
+  },
+  {
+   "name": "Na'vi River Journey",
+   "now": 10,
+   "trend30": -10,
+   "why": {
+    "lag60": 35,
+    "lag120": null,
+    "lag_yday": 55,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 11,
+    "park_busy": 0,
+    "mins_open": 645,
+    "mins_close": -45
+   },
+   "f30": 10,
+   "score30_mae": 9.2,
+   "score30_in5": 53,
+   "score30_in10": 73,
+   "score30_pairs": 527,
+   "d30": 0,
+   "f60": 10,
+   "score60_mae": 13.1,
+   "score60_in5": 41,
+   "score60_in10": 56,
+   "score60_pairs": 498,
+   "d60": 0,
+   "f90": 10,
+   "score90_mae": 15.0,
+   "score90_in5": 35,
+   "score90_in10": 51,
+   "score90_pairs": 463,
+   "d90": 0,
+   "f120": 10,
+   "score120_mae": 15.5,
+   "score120_in5": 36,
+   "score120_in10": 52,
+   "score120_pairs": 433,
    "d120": 0,
    "people": null
   },
   {
    "name": "Expedition Everest - Legend of the Forbidden Mountain",
    "now": 5,
-   "trend30": -15,
+   "trend30": 0,
    "why": {
-    "lag60": null,
+    "lag60": 20,
     "lag120": null,
-    "lag_yday": 40,
+    "lag_yday": 50,
     "down60": 0,
     "reopened": false,
-    "park_mean": 16,
+    "park_mean": 11,
     "park_busy": 0,
-    "mins_open": 615,
-    "mins_close": -15
+    "mins_open": 645,
+    "mins_close": -45
    },
    "f30": 5,
    "score30_mae": 7.8,
-   "score30_in5": 57,
-   "score30_in10": 80,
-   "score30_pairs": 532,
+   "score30_in5": 56,
+   "score30_in10": 79,
+   "score30_pairs": 538,
    "d30": 0,
    "f60": 5,
-   "score60_mae": 10.7,
+   "score60_mae": 10.8,
    "score60_in5": 42,
-   "score60_in10": 65,
-   "score60_pairs": 498,
+   "score60_in10": 64,
+   "score60_pairs": 503,
    "d60": 0,
    "f90": 5,
    "score90_mae": 12.6,
@@ -161,19 +161,19 @@
    "score90_pairs": 473,
    "d90": 0,
    "f120": 5,
-   "score120_mae": 15.0,
-   "score120_in5": 33,
+   "score120_mae": 15.1,
+   "score120_in5": 32,
    "score120_in10": 49,
-   "score120_pairs": 451,
+   "score120_pairs": 453,
    "d120": 0,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 22007,
-   "train_rows": 17864,
-   "test_rows": 4122,
+   "available_pairs": 22031,
+   "train_rows": 17882,
+   "test_rows": 4131,
    "model": "persistence (model did not beat baseline)",
    "mae": 5.3,
    "rmse": 10.0,
@@ -186,44 +186,46 @@
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
-    "ride_code",
     "wait",
+    "ride_code",
+    "lag_60",
     "lag_yday",
-    "lag_120",
-    "roll_std_60",
-    "lag_60"
+    "hour_sin",
+    "lag_120"
    ],
-   "candidate_mae": 6.4
+   "candidate_mae": 6.1
   },
   "60": {
-   "available_pairs": 20457,
-   "train_rows": 16565,
-   "test_rows": 3823,
+   "available_pairs": 20477,
+   "train_rows": 16598,
+   "test_rows": 3831,
    "model": "persistence (model did not beat baseline)",
    "mae": 7.3,
    "rmse": 13.1,
    "within10": 77,
-   "within5": 67,
-   "mape_ge20": 25.7,
-   "bias": -0.4,
+   "within5": 66,
+   "mape_ge20": 25.8,
+   "bias": -0.3,
    "baseline_mae": 7.3,
-   "baseline_mape_ge20": 25.7,
+   "baseline_mape_ge20": 25.8,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
+   "gate_mae_2seed": 7.6,
+   "candidate_mae_seed2": 7.6,
    "top_features": [
     "wait",
     "ride_code",
-    "lag_yday",
     "hour_sin",
+    "lag_yday",
     "lag_60",
-    "diff_30"
+    "lag_120"
    ],
-   "candidate_mae": 7.8
+   "candidate_mae": 7.6
   },
   "90": {
-   "available_pairs": 19046,
-   "train_rows": 15397,
-   "test_rows": 3555,
+   "available_pairs": 19049,
+   "train_rows": 15415,
+   "test_rows": 3552,
    "model": "persistence (model did not beat baseline)",
    "mae": 8.4,
    "rmse": 14.4,
@@ -235,21 +237,19 @@
    "baseline_mape_ge20": 29.4,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
-   "gate_mae_2seed": 8.4,
-   "candidate_mae_seed2": 8.3,
    "top_features": [
     "wait",
     "ride_code",
     "hour_sin",
-    "lag_60",
     "lag_yday",
+    "lag_60",
     "diff_30"
    ],
-   "candidate_mae": 8.4
+   "candidate_mae": 8.8
   },
   "120": {
-   "available_pairs": 17797,
-   "train_rows": 14382,
+   "available_pairs": 17806,
+   "train_rows": 14403,
    "test_rows": 3315,
    "model": "persistence (model did not beat baseline)",
    "mae": 9.4,
@@ -257,13 +257,13 @@
    "within10": 69,
    "within5": 59,
    "mape_ge20": 32.7,
-   "bias": -0.8,
+   "bias": -0.7,
    "baseline_mae": 9.4,
    "baseline_mape_ge20": 32.7,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
-   "gate_mae_2seed": 9.6,
-   "candidate_mae_seed2": 9.8,
+   "gate_mae_2seed": 9.7,
+   "candidate_mae_seed2": 9.9,
    "top_features": [
     "wait",
     "ride_code",
@@ -272,7 +272,7 @@
     "diff_30",
     "park_frac_busy"
    ],
-   "candidate_mae": 9.3
+   "candidate_mae": 9.4
   }
  },
  "context": {
@@ -287,54 +287,6 @@
  "demo": false,
  "lookback": {
   "Avatar Flight of Passage": [
-   {
-    "t": "14:15",
-    "actual": 45,
-    "p30": 45,
-    "p60": 50,
-    "p90": 50,
-    "p120": 50
-   },
-   {
-    "t": "14:20",
-    "actual": 40,
-    "p30": 45,
-    "p60": 50,
-    "p90": 50,
-    "p120": 55
-   },
-   {
-    "t": "14:25",
-    "actual": 40,
-    "p30": 45,
-    "p60": 45,
-    "p90": 45,
-    "p120": 55
-   },
-   {
-    "t": "14:30",
-    "actual": 40,
-    "p30": 45,
-    "p60": 45,
-    "p90": 45,
-    "p120": 55
-   },
-   {
-    "t": "14:35",
-    "actual": 40,
-    "p30": 45,
-    "p60": 40,
-    "p90": 45,
-    "p120": 50
-   },
-   {
-    "t": "14:40",
-    "actual": 35,
-    "p30": 45,
-    "p60": 40,
-    "p90": 45,
-    "p120": 50
-   },
    {
     "t": "14:45",
     "actual": 35,
@@ -551,285 +503,45 @@
     "actual": 30,
     "p30": 35,
     "p90": 30
-   }
-  ],
-  "Na'vi River Journey": [
-   {
-    "t": "14:15",
-    "actual": 35,
-    "p30": 25,
-    "p60": 35,
-    "p90": 40,
-    "p120": 55
    },
    {
-    "t": "14:20",
-    "actual": 35,
-    "p30": 25,
-    "p60": 35,
-    "p90": 40,
-    "p120": 50
-   },
-   {
-    "t": "14:25",
-    "actual": 40,
-    "p30": 25,
-    "p60": 35,
-    "p90": 35,
-    "p120": 50
-   },
-   {
-    "t": "14:30",
-    "actual": 40,
-    "p30": 25,
-    "p60": 25,
-    "p90": 35,
-    "p120": 50
-   },
-   {
-    "t": "14:35",
-    "actual": 40,
-    "p30": 25,
-    "p60": 25,
-    "p90": 35,
-    "p120": 50
-   },
-   {
-    "t": "14:40",
-    "actual": 35,
+    "t": "18:20",
+    "actual": 25,
     "p30": 35,
-    "p60": 25,
-    "p90": 35,
-    "p120": 45
+    "p120": 20
    },
    {
-    "t": "14:45",
-    "actual": 35,
-    "p30": 35,
-    "p60": 25,
-    "p90": 40,
-    "p120": 40
-   },
-   {
-    "t": "14:50",
-    "actual": 35,
-    "p30": 35,
-    "p60": 25,
-    "p90": 40,
-    "p120": 40
-   },
-   {
-    "t": "14:55",
-    "actual": 45,
-    "p30": 40,
-    "p60": 25,
-    "p90": 40,
-    "p120": 35
-   },
-   {
-    "t": "15:00",
-    "actual": 45,
-    "p30": 40,
-    "p60": 25,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "15:05",
-    "actual": 40,
-    "p30": 40,
-    "p60": 25,
-    "p90": 25,
-    "p120": 30
-   },
-   {
-    "t": "15:10",
-    "actual": 40,
-    "p30": 35,
-    "p60": 35,
-    "p90": 25,
-    "p120": 30
-   },
-   {
-    "t": "15:15",
-    "actual": 40,
-    "p30": 35,
-    "p60": 35,
-    "p90": 25,
-    "p120": 35
-   },
-   {
-    "t": "15:20",
-    "actual": 40,
-    "p30": 35,
-    "p60": 35,
-    "p90": 25,
-    "p120": 35
-   },
-   {
-    "t": "15:25",
-    "actual": 35,
-    "p30": 45,
-    "p60": 40,
-    "p90": 25,
-    "p120": 35
-   },
-   {
-    "t": "15:30",
-    "actual": 30,
-    "p30": 45,
-    "p60": 40,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "15:35",
-    "actual": 30,
-    "p30": 40,
-    "p60": 40,
-    "p90": 25,
-    "p120": 25
-   },
-   {
-    "t": "15:40",
-    "actual": 30,
-    "p30": 40,
-    "p60": 35,
-    "p90": 35,
-    "p120": 25
-   },
-   {
-    "t": "16:05",
+    "t": "18:25",
     "actual": 25,
     "p30": 30,
-    "p60": 40,
-    "p90": 40,
     "p120": 25
    },
    {
-    "t": "16:10",
-    "actual": 25,
-    "p30": 30,
-    "p60": 40,
-    "p90": 35,
-    "p120": 35
-   },
-   {
-    "t": "16:20",
-    "actual": 25,
-    "p60": 40,
-    "p90": 35,
-    "p120": 35
-   },
-   {
-    "t": "16:25",
-    "actual": 30,
-    "p60": 35,
-    "p90": 45,
-    "p120": 40
-   },
-   {
-    "t": "17:25",
-    "actual": 30,
-    "p60": 30,
-    "p120": 35
-   },
-   {
-    "t": "17:30",
-    "actual": 35,
-    "p120": 30
-   },
-   {
-    "t": "17:35",
-    "actual": 35,
-    "p120": 30
-   },
-   {
-    "t": "17:40",
-    "actual": 35,
-    "p120": 30
-   },
-   {
-    "t": "17:45",
-    "actual": 35
-   },
-   {
-    "t": "17:50",
+    "t": "18:30",
     "actual": 20,
+    "p30": 25,
     "p90": 35
    },
    {
-    "t": "17:55",
+    "t": "18:35",
     "actual": 20,
-    "p90": 40
+    "p30": 25
    },
    {
-    "t": "18:00",
-    "actual": 20
-   },
-   {
-    "t": "18:05",
-    "actual": 20
-   },
-   {
-    "t": "18:10",
-    "actual": 20
-   },
-   {
-    "t": "18:15",
+    "t": "18:40",
     "actual": 20,
-    "p30": 35
+    "p30": 25,
+    "p90": 35
+   },
+   {
+    "t": "18:45",
+    "actual": 20,
+    "p30": 30,
+    "p60": 35,
+    "p120": 30
    }
   ],
   "Zootopia: Better Zoogether!": [
-   {
-    "t": "14:15",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "14:20",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "14:25",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "14:30",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "14:35",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
-   {
-    "t": "14:40",
-    "actual": 10,
-    "p30": 10,
-    "p60": 10,
-    "p90": 10,
-    "p120": 10
-   },
    {
     "t": "14:45",
     "actual": 10,
@@ -1013,57 +725,255 @@
     "t": "18:15",
     "actual": 10,
     "p30": 10
+   },
+   {
+    "t": "18:20",
+    "actual": 10,
+    "p30": 10,
+    "p120": 10
+   },
+   {
+    "t": "18:25",
+    "actual": 10,
+    "p30": 10,
+    "p120": 10
+   },
+   {
+    "t": "18:30",
+    "actual": 10,
+    "p30": 10
+   },
+   {
+    "t": "18:35",
+    "actual": 10,
+    "p30": 10
+   },
+   {
+    "t": "18:40",
+    "actual": 10,
+    "p30": 10
+   },
+   {
+    "t": "18:45",
+    "actual": 10,
+    "p30": 10,
+    "p60": 10
+   }
+  ],
+  "Na'vi River Journey": [
+   {
+    "t": "14:45",
+    "actual": 35,
+    "p30": 35,
+    "p60": 25,
+    "p90": 40,
+    "p120": 40
+   },
+   {
+    "t": "14:50",
+    "actual": 35,
+    "p30": 35,
+    "p60": 25,
+    "p90": 40,
+    "p120": 40
+   },
+   {
+    "t": "14:55",
+    "actual": 45,
+    "p30": 40,
+    "p60": 25,
+    "p90": 40,
+    "p120": 35
+   },
+   {
+    "t": "15:00",
+    "actual": 45,
+    "p30": 40,
+    "p60": 25,
+    "p90": 30,
+    "p120": 35
+   },
+   {
+    "t": "15:05",
+    "actual": 40,
+    "p30": 40,
+    "p60": 25,
+    "p90": 25,
+    "p120": 30
+   },
+   {
+    "t": "15:10",
+    "actual": 40,
+    "p30": 35,
+    "p60": 35,
+    "p90": 25,
+    "p120": 30
+   },
+   {
+    "t": "15:15",
+    "actual": 40,
+    "p30": 35,
+    "p60": 35,
+    "p90": 25,
+    "p120": 35
+   },
+   {
+    "t": "15:20",
+    "actual": 40,
+    "p30": 35,
+    "p60": 35,
+    "p90": 25,
+    "p120": 35
+   },
+   {
+    "t": "15:25",
+    "actual": 35,
+    "p30": 45,
+    "p60": 40,
+    "p90": 25,
+    "p120": 35
+   },
+   {
+    "t": "15:30",
+    "actual": 30,
+    "p30": 45,
+    "p60": 40,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "15:35",
+    "actual": 30,
+    "p30": 40,
+    "p60": 40,
+    "p90": 25,
+    "p120": 25
+   },
+   {
+    "t": "15:40",
+    "actual": 30,
+    "p30": 40,
+    "p60": 35,
+    "p90": 35,
+    "p120": 25
+   },
+   {
+    "t": "16:05",
+    "actual": 25,
+    "p30": 30,
+    "p60": 40,
+    "p90": 40,
+    "p120": 25
+   },
+   {
+    "t": "16:10",
+    "actual": 25,
+    "p30": 30,
+    "p60": 40,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "16:20",
+    "actual": 25,
+    "p60": 40,
+    "p90": 35,
+    "p120": 35
+   },
+   {
+    "t": "16:25",
+    "actual": 30,
+    "p60": 35,
+    "p90": 45,
+    "p120": 40
+   },
+   {
+    "t": "17:25",
+    "actual": 30,
+    "p60": 30,
+    "p120": 35
+   },
+   {
+    "t": "17:30",
+    "actual": 35,
+    "p120": 30
+   },
+   {
+    "t": "17:35",
+    "actual": 35,
+    "p120": 30
+   },
+   {
+    "t": "17:40",
+    "actual": 35,
+    "p120": 30
+   },
+   {
+    "t": "17:45",
+    "actual": 35
+   },
+   {
+    "t": "17:50",
+    "actual": 20,
+    "p90": 35
+   },
+   {
+    "t": "17:55",
+    "actual": 20,
+    "p90": 40
+   },
+   {
+    "t": "18:00",
+    "actual": 20
+   },
+   {
+    "t": "18:05",
+    "actual": 20
+   },
+   {
+    "t": "18:10",
+    "actual": 20
+   },
+   {
+    "t": "18:15",
+    "actual": 20,
+    "p30": 35
+   },
+   {
+    "t": "18:20",
+    "actual": 10,
+    "p30": 20,
+    "p120": 25
+   },
+   {
+    "t": "18:25",
+    "actual": 10,
+    "p30": 20,
+    "p120": 30
+   },
+   {
+    "t": "18:30",
+    "actual": 10,
+    "p30": 20
+   },
+   {
+    "t": "18:35",
+    "actual": 10,
+    "p30": 20
+   },
+   {
+    "t": "18:40",
+    "actual": 10,
+    "p30": 20
+   },
+   {
+    "t": "18:45",
+    "actual": 10,
+    "p30": 20,
+    "p60": 35
    }
   ],
   "Expedition Everest - Legend of the Forbidden Mountain": [
-   {
-    "t": "14:15",
-    "actual": 25,
-    "p30": 25,
-    "p60": 25,
-    "p90": 25,
-    "p120": 45
-   },
-   {
-    "t": "14:20",
-    "actual": 20,
-    "p30": 35,
-    "p60": 25,
-    "p90": 25,
-    "p120": 35
-   },
-   {
-    "t": "14:25",
-    "actual": 20,
-    "p30": 35,
-    "p60": 25,
-    "p90": 25,
-    "p120": 35
-   },
-   {
-    "t": "14:30",
-    "actual": 20,
-    "p30": 30,
-    "p60": 25,
-    "p90": 25,
-    "p120": 35
-   },
-   {
-    "t": "14:35",
-    "actual": 20,
-    "p30": 30,
-    "p60": 30,
-    "p90": 20,
-    "p120": 35
-   },
-   {
-    "t": "14:40",
-    "actual": 20,
-    "p30": 30,
-    "p60": 25,
-    "p90": 20,
-    "p120": 30
-   },
    {
     "t": "14:45",
     "actual": 25,
@@ -1241,42 +1151,75 @@
     "t": "18:15",
     "actual": 5,
     "p30": 20
+   },
+   {
+    "t": "18:20",
+    "actual": 5,
+    "p30": 20,
+    "p120": 45
+   },
+   {
+    "t": "18:25",
+    "actual": 5,
+    "p30": 20,
+    "p120": 45
+   },
+   {
+    "t": "18:30",
+    "actual": 5,
+    "p30": 20
+   },
+   {
+    "t": "18:35",
+    "actual": 5,
+    "p30": 20
+   },
+   {
+    "t": "18:40",
+    "actual": 5,
+    "p30": 20
+   },
+   {
+    "t": "18:45",
+    "actual": 5,
+    "p30": 5,
+    "p60": 20
    }
   ]
  },
  "today": {
   "date": "2026-11-25",
-  "graded": 2606,
+  "graded": 2645,
   "exact": 61,
   "in5": 79,
   "in10": 88,
   "in15": 94,
   "by_horizon": {
    "30": {
-    "graded": 722,
-    "exact": 70,
-    "in5": 85,
-    "in10": 94,
+    "graded": 746,
+    "exact": 68,
+    "in5": 84,
+    "in10": 93,
     "in15": 99
    },
    "60": {
-    "graded": 667,
+    "graded": 671,
     "exact": 62,
-    "in5": 82,
-    "in10": 89,
+    "in5": 81,
+    "in10": 88,
     "in15": 95
    },
    "90": {
-    "graded": 624,
+    "graded": 626,
     "exact": 57,
     "in5": 76,
     "in10": 85,
     "in15": 91
    },
    "120": {
-    "graded": 593,
+    "graded": 602,
     "exact": 55,
-    "in5": 74,
+    "in5": 73,
     "in10": 83,
     "in15": 89
    }
