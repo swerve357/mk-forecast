@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-26T08:57:16.382172+00:00",
- "last_sample": "2026-11-26T08:55:31+00:00",
- "samples": 84370,
+ "updated": "2026-11-26T09:03:30.205981+00:00",
+ "last_sample": "2026-11-26T09:00:37+00:00",
+ "samples": 84448,
  "history_samples": 0,
  "rides": [
   {
@@ -16,58 +16,58 @@
     "reopened": false,
     "park_mean": 5,
     "park_busy": 0,
-    "mins_open": -325,
-    "mins_close": 1045
+    "mins_open": -295,
+    "mins_close": 1015
    },
    "f30": 5,
-   "score30_mae": 8.2,
+   "score30_mae": 8.1,
    "score30_in5": 59,
-   "score30_in10": 74,
-   "score30_pairs": 649,
+   "score30_in10": 75,
+   "score30_pairs": 652,
    "d30": 0,
    "f60": 5,
-   "score60_mae": 9.5,
+   "score60_mae": 9.4,
    "score60_in5": 53,
    "score60_in10": 70,
-   "score60_pairs": 617,
+   "score60_pairs": 620,
    "d60": 0,
    "f90": 5,
    "f90_lo": 5,
-   "f90_hi": 40,
+   "f90_hi": 35,
    "score90_mae": 10.0,
-   "score90_in5": 48,
+   "score90_in5": 49,
    "score90_in10": 66,
-   "score90_pairs": 588,
+   "score90_pairs": 590,
    "d90": 0,
    "d90_lo": 0,
-   "d90_hi": 35,
-   "f120": 35,
+   "d90_hi": 30,
+   "f120": 5,
    "f120_lo": 10,
-   "f120_hi": 50,
-   "score120_mae": 10.2,
-   "score120_in5": 50,
+   "f120_hi": 40,
+   "score120_mae": 9.8,
+   "score120_in5": 49,
    "score120_in10": 72,
-   "score120_pairs": 559,
-   "d120": 30,
-   "d120_lo": -25,
-   "d120_hi": 15,
+   "score120_pairs": 560,
+   "d120": 0,
+   "d120_lo": 5,
+   "d120_hi": 35,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 31072,
-   "train_rows": 25381,
-   "test_rows": 5646,
+   "available_pairs": 31078,
+   "train_rows": 25438,
+   "test_rows": 5616,
    "model": "persistence (model did not beat baseline)",
    "mae": 10.0,
    "rmse": 15.1,
    "within10": 69,
    "within5": 52,
-   "mape_ge20": 22.7,
-   "bias": -0.3,
+   "mape_ge20": 22.5,
+   "bias": -0.2,
    "baseline_mae": 10.0,
-   "baseline_mape_ge20": 22.7,
+   "baseline_mape_ge20": 22.5,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
@@ -78,23 +78,25 @@
     "lag_60",
     "lag_120"
    ],
-   "candidate_mae": 10.4
+   "candidate_mae": 10.5
   },
   "60": {
-   "available_pairs": 29363,
-   "train_rows": 23986,
-   "test_rows": 5293,
+   "available_pairs": 29369,
+   "train_rows": 24082,
+   "test_rows": 5263,
    "model": "persistence (model did not beat baseline)",
-   "mae": 12.5,
-   "rmse": 18.0,
+   "mae": 12.4,
+   "rmse": 17.9,
    "within10": 61,
    "within5": 45,
-   "mape_ge20": 28.0,
-   "bias": 0.1,
-   "baseline_mae": 12.5,
-   "baseline_mape_ge20": 28.0,
+   "mape_ge20": 27.8,
+   "bias": 0.2,
+   "baseline_mae": 12.4,
+   "baseline_mape_ge20": 27.8,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
+   "gate_mae_2seed": 12.8,
+   "candidate_mae_seed2": 13.0,
    "top_features": [
     "wait",
     "ride_code",
@@ -103,57 +105,57 @@
     "hour_sin",
     "diff_30"
    ],
-   "candidate_mae": 13.2
+   "candidate_mae": 12.7
   },
   "90": {
-   "available_pairs": 27930,
+   "available_pairs": 27936,
    "train_rows": 22906,
-   "test_rows": 4961,
+   "test_rows": 4930,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 11.9,
-   "rmse": 17.6,
-   "within10": 64,
-   "within5": 47,
-   "mape_ge20": 23.0,
+   "mae": 12.1,
+   "rmse": 17.7,
+   "within10": 63,
+   "within5": 46,
+   "mape_ge20": 23.3,
    "bias": -7.8,
-   "baseline_mae": 13.7,
-   "baseline_mape_ge20": 30.9,
-   "improvement_pct": 12.6,
+   "baseline_mae": 13.6,
+   "baseline_mape_ge20": 30.8,
+   "improvement_pct": 10.9,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
     "ride_code",
     "hour_sin",
-    "hour_cos",
-    "lag_60",
-    "diff_30"
-   ],
-   "gate_tau": 0.7
-  },
-  "120": {
-   "available_pairs": 26619,
-   "train_rows": 21796,
-   "test_rows": 4690,
-   "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 12.9,
-   "rmse": 18.8,
-   "within10": 61,
-   "within5": 44,
-   "mape_ge20": 24.9,
-   "bias": -9.0,
-   "baseline_mae": 14.5,
-   "baseline_mape_ge20": 32.5,
-   "improvement_pct": 11.0,
-   "evaluation": "chronological holdout with horizon embargo",
-   "top_features": [
-    "wait",
-    "hour_sin",
-    "ride_code",
     "hour_cos",
     "diff_30",
     "lag_60"
    ],
-   "gate_tau": 0.6
+   "gate_tau": 0.7
+  },
+  "120": {
+   "available_pairs": 26625,
+   "train_rows": 21796,
+   "test_rows": 4646,
+   "model": "gradient boosting (delta+round5 + change gate)",
+   "mae": 12.7,
+   "rmse": 18.3,
+   "within10": 61,
+   "within5": 44,
+   "mape_ge20": 24.7,
+   "bias": -8.6,
+   "baseline_mae": 14.4,
+   "baseline_mape_ge20": 32.6,
+   "improvement_pct": 12.4,
+   "evaluation": "chronological holdout with horizon embargo",
+   "top_features": [
+    "wait",
+    "ride_code",
+    "hour_sin",
+    "hour_cos",
+    "diff_30",
+    "lag_60"
+   ],
+   "gate_tau": 0.5
   }
  },
  "context": {
@@ -168,54 +170,6 @@
  "demo": false,
  "lookback": {
   "Mickey & Minnie's Runaway Railway": [
-   {
-    "t": "23:35",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 10
-   },
-   {
-    "t": "23:40",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "23:45",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "23:50",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "23:55",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
-   {
-    "t": "00:00",
-    "actual": 5,
-    "p30": 5,
-    "p60": 5,
-    "p90": 5,
-    "p120": 5
-   },
    {
     "t": "00:05",
     "actual": 5,
@@ -559,44 +513,92 @@
     "p60": 5,
     "p90": 35,
     "p120": 25
+   },
+   {
+    "t": "03:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 35,
+    "p120": 25
+   },
+   {
+    "t": "03:45",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 35,
+    "p120": 25
+   },
+   {
+    "t": "03:50",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 35,
+    "p120": 25
+   },
+   {
+    "t": "03:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 35,
+    "p120": 25
+   },
+   {
+    "t": "04:00",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 35,
+    "p120": 25
+   },
+   {
+    "t": "04:05",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 30,
+    "p120": 35
    }
   ]
  },
  "today": {
   "date": "2026-11-26",
-  "graded": 176,
-  "exact": 95,
-  "in5": 95,
-  "in10": 95,
-  "in15": 95,
+  "graded": 200,
+  "exact": 90,
+  "in5": 90,
+  "in10": 90,
+  "in15": 90,
   "by_horizon": {
    "30": {
-    "graded": 44,
+    "graded": 50,
     "exact": 100,
     "in5": 100,
     "in10": 100,
     "in15": 100
    },
    "60": {
-    "graded": 44,
+    "graded": 50,
     "exact": 100,
     "in5": 100,
     "in10": 100,
     "in15": 100
    },
    "90": {
-    "graded": 44,
-    "exact": 84,
-    "in5": 84,
-    "in10": 84,
-    "in15": 84
+    "graded": 50,
+    "exact": 74,
+    "in5": 74,
+    "in10": 74,
+    "in15": 74
    },
    "120": {
-    "graded": 44,
-    "exact": 98,
-    "in5": 98,
-    "in10": 98,
-    "in15": 98
+    "graded": 50,
+    "exact": 86,
+    "in5": 86,
+    "in10": 86,
+    "in15": 86
    }
   }
  },
