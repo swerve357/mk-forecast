@@ -1,47 +1,88 @@
 {
- "updated": "2026-11-26T13:17:26.547052+00:00",
- "last_sample": "2026-11-26T13:15:40+00:00",
- "samples": 104672,
+ "updated": "2026-11-26T13:24:58.265111+00:00",
+ "last_sample": "2026-11-26T13:20:33+00:00",
+ "samples": 104768,
  "history_samples": 0,
  "rides": [
   {
    "name": "Avatar Flight of Passage",
-   "now": 125,
-   "trend30": 80,
+   "now": 115,
+   "trend30": 70,
    "why": {
     "lag60": null,
     "lag120": null,
-    "lag_yday": 30,
+    "lag_yday": 45,
     "down60": 0,
     "reopened": false,
-    "park_mean": 19,
+    "park_mean": 36,
     "park_busy": 6,
-    "mins_open": -5,
-    "mins_close": 605
+    "mins_open": 25,
+    "mins_close": 575
    },
-   "f30": 125,
-   "score30_mae": 12.5,
+   "f30": 115,
+   "score30_mae": 12.8,
    "score30_in5": 48,
    "score30_in10": 63,
-   "score30_pairs": 566,
+   "score30_pairs": 567,
    "d30": 0,
-   "f60": 125,
+   "f60": 115,
    "score60_mae": 16.3,
    "score60_in5": 37,
    "score60_in10": 53,
    "score60_pairs": 537,
    "d60": 0,
-   "f90": 125,
+   "f90": 115,
    "score90_mae": 16.8,
    "score90_in5": 32,
    "score90_in10": 55,
    "score90_pairs": 504,
    "d90": 0,
-   "f120": 125,
+   "f120": 115,
    "score120_mae": 16.9,
    "score120_in5": 34,
    "score120_in10": 47,
    "score120_pairs": 473,
+   "d120": 0,
+   "people": null
+  },
+  {
+   "name": "Kilimanjaro Safaris",
+   "now": 20,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 36,
+    "park_busy": 6,
+    "mins_open": 25,
+    "mins_close": 575
+   },
+   "f30": 20,
+   "score30_mae": 7.5,
+   "score30_in5": 60,
+   "score30_in10": 77,
+   "score30_pairs": 372,
+   "d30": 0,
+   "f60": 20,
+   "score60_mae": 9.5,
+   "score60_in5": 53,
+   "score60_in10": 67,
+   "score60_pairs": 349,
+   "d60": 0,
+   "f90": 20,
+   "score90_mae": 11.7,
+   "score90_in5": 45,
+   "score90_in10": 62,
+   "score90_pairs": 326,
+   "d90": 0,
+   "f120": 20,
+   "score120_mae": 13.1,
+   "score120_in5": 33,
+   "score120_in10": 54,
+   "score120_pairs": 302,
    "d120": 0,
    "people": null
   },
@@ -55,16 +96,16 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 19,
+    "park_mean": 36,
     "park_busy": 6,
-    "mins_open": -5,
-    "mins_close": 605
+    "mins_open": 25,
+    "mins_close": 575
    },
    "f30": 20,
    "score30_mae": 8.8,
    "score30_in5": 55,
-   "score30_in10": 75,
-   "score30_pairs": 530,
+   "score30_in10": 76,
+   "score30_pairs": 531,
    "d30": 0,
    "f60": 20,
    "score60_mae": 12.8,
@@ -96,16 +137,16 @@
     "lag_yday": 5,
     "down60": 0,
     "reopened": false,
-    "park_mean": 19,
+    "park_mean": 36,
     "park_busy": 6,
-    "mins_open": -5,
-    "mins_close": 605
+    "mins_open": 25,
+    "mins_close": 575
    },
    "f30": 15,
    "score30_mae": 1.3,
    "score30_in5": 95,
    "score30_in10": 98,
-   "score30_pairs": 562,
+   "score30_pairs": 563,
    "d30": 0,
    "f60": 15,
    "score60_mae": 2.1,
@@ -129,38 +170,38 @@
   },
   {
    "name": "Expedition Everest - Legend of the Forbidden Mountain",
-   "now": 5,
-   "trend30": 0,
+   "now": 10,
+   "trend30": 5,
    "why": {
     "lag60": null,
     "lag120": null,
     "lag_yday": 5,
     "down60": 15,
-    "reopened": true,
-    "park_mean": 19,
+    "reopened": false,
+    "park_mean": 36,
     "park_busy": 6,
-    "mins_open": -5,
-    "mins_close": 605
+    "mins_open": 25,
+    "mins_close": 575
    },
-   "f30": 5,
+   "f30": 10,
    "score30_mae": 7.6,
    "score30_in5": 57,
    "score30_in10": 80,
-   "score30_pairs": 552,
+   "score30_pairs": 553,
    "d30": 0,
-   "f60": 5,
+   "f60": 10,
    "score60_mae": 10.6,
    "score60_in5": 42,
    "score60_in10": 64,
    "score60_pairs": 518,
    "d60": 0,
-   "f90": 5,
+   "f90": 10,
    "score90_mae": 12.6,
    "score90_in5": 40,
    "score90_in10": 56,
    "score90_pairs": 487,
    "d90": 0,
-   "f120": 5,
+   "f120": 10,
    "score120_mae": 15.0,
    "score120_in5": 32,
    "score120_in10": 49,
@@ -171,18 +212,18 @@
  ],
  "metrics": {
   "30": {
-   "available_pairs": 22093,
-   "train_rows": 17926,
-   "test_rows": 4149,
+   "available_pairs": 22106,
+   "train_rows": 17935,
+   "test_rows": 4153,
    "model": "persistence (model did not beat baseline)",
    "mae": 5.2,
-   "rmse": 9.9,
+   "rmse": 10.1,
    "within10": 85,
    "within5": 75,
-   "mape_ge20": 19.3,
-   "bias": -0.2,
+   "mape_ge20": 19.4,
+   "bias": -0.3,
    "baseline_mae": 5.2,
-   "baseline_mape_ge20": 19.3,
+   "baseline_mape_ge20": 19.4,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
@@ -190,10 +231,10 @@
     "ride_code",
     "lag_yday",
     "lag_60",
-    "hour_sin",
-    "lag_120"
+    "lag_120",
+    "hour_sin"
    ],
-   "candidate_mae": 6.3
+   "candidate_mae": 6.5
   },
   "60": {
    "available_pairs": 20540,
@@ -292,16 +333,29 @@
    {
     "t": "07:55",
     "actual": 45
+   },
+   {
+    "t": "08:10",
+    "actual": 65
+   },
+   {
+    "t": "08:25",
+    "actual": 115,
+    "p30": 45
    }
   ],
-  "Zootopia: Better Zoogether!": [
+  "Kilimanjaro Safaris": [
    {
     "t": "07:40",
-    "actual": 15
+    "closed": 1
    },
    {
     "t": "07:55",
-    "actual": 15
+    "closed": 1
+   },
+   {
+    "t": "08:25",
+    "actual": 20
    }
   ],
   "Na'vi River Journey": [
@@ -312,6 +366,34 @@
    {
     "t": "07:55",
     "actual": 10
+   },
+   {
+    "t": "08:10",
+    "actual": 10
+   },
+   {
+    "t": "08:25",
+    "actual": 20,
+    "p30": 10
+   }
+  ],
+  "Zootopia: Better Zoogether!": [
+   {
+    "t": "07:40",
+    "actual": 15
+   },
+   {
+    "t": "07:55",
+    "actual": 15
+   },
+   {
+    "t": "08:10",
+    "actual": 15
+   },
+   {
+    "t": "08:25",
+    "actual": 15,
+    "p30": 15
    }
   ],
   "Expedition Everest - Legend of the Forbidden Mountain": [
@@ -322,9 +404,34 @@
    {
     "t": "07:55",
     "actual": 5
+   },
+   {
+    "t": "08:10",
+    "actual": 5
+   },
+   {
+    "t": "08:25",
+    "actual": 10,
+    "p30": 5
    }
   ]
  },
- "today": {},
+ "today": {
+  "date": "2026-11-26",
+  "graded": 4,
+  "exact": 25,
+  "in5": 50,
+  "in10": 75,
+  "in15": 75,
+  "by_horizon": {
+   "30": {
+    "graded": 4,
+    "exact": 25,
+    "in5": 50,
+    "in10": 75,
+    "in15": 75
+   }
+  }
+ },
  "park_label": "Animal Kingdom"
 }
