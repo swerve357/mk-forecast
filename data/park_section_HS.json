@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-26T05:57:02.724099+00:00",
- "last_sample": "2026-11-26T05:55:30+00:00",
- "samples": 83902,
+ "updated": "2026-11-26T06:03:32.043321+00:00",
+ "last_sample": "2026-11-26T06:00:38+00:00",
+ "samples": 83980,
  "history_samples": 0,
  "rides": [
   {
@@ -16,52 +16,52 @@
     "reopened": false,
     "park_mean": 5,
     "park_busy": 0,
-    "mins_open": -505,
-    "mins_close": 1225
+    "mins_open": -475,
+    "mins_close": 1195
    },
    "f30": 5,
-   "score30_mae": 8.6,
-   "score30_in5": 56,
+   "score30_mae": 8.5,
+   "score30_in5": 57,
    "score30_in10": 73,
-   "score30_pairs": 618,
+   "score30_pairs": 624,
    "d30": 0,
    "f60": 5,
-   "score60_mae": 10.1,
+   "score60_mae": 10.0,
    "score60_in5": 50,
    "score60_in10": 68,
-   "score60_pairs": 581,
+   "score60_pairs": 587,
    "d60": 0,
    "f90": 5,
    "f90_lo": 5,
    "f90_hi": 20,
-   "score90_mae": 10.2,
-   "score90_in5": 45,
-   "score90_in10": 68,
-   "score90_pairs": 557,
+   "score90_mae": 10.5,
+   "score90_in5": 44,
+   "score90_in10": 64,
+   "score90_pairs": 563,
    "d90": 0,
    "d90_lo": 0,
    "d90_hi": 15,
    "f120": 5,
    "f120_lo": 5,
-   "f120_hi": 10,
+   "f120_hi": 20,
    "score120_mae": 10.9,
-   "score120_in5": 43,
-   "score120_in10": 65,
-   "score120_pairs": 538,
+   "score120_in5": 45,
+   "score120_in10": 69,
+   "score120_pairs": 544,
    "d120": 0,
    "d120_lo": 0,
-   "d120_hi": 5,
+   "d120_hi": 15,
    "people": null
   }
  ],
  "metrics": {
   "30": {
-   "available_pairs": 31036,
-   "train_rows": 25161,
-   "test_rows": 5827,
+   "available_pairs": 31042,
+   "train_rows": 25193,
+   "test_rows": 5801,
    "model": "persistence (model did not beat baseline)",
    "mae": 9.9,
-   "rmse": 14.9,
+   "rmse": 15.0,
    "within10": 70,
    "within5": 53,
    "mape_ge20": 22.7,
@@ -74,53 +74,53 @@
     "wait",
     "ride_code",
     "hour_cos",
-    "park_mean",
+    "lag_60",
     "lag_120",
-    "lag_60"
+    "park_mean"
    ],
-   "candidate_mae": 10.5
+   "candidate_mae": 10.9
   },
   "60": {
-   "available_pairs": 29327,
-   "train_rows": 23754,
-   "test_rows": 5477,
+   "available_pairs": 29333,
+   "train_rows": 23794,
+   "test_rows": 5443,
    "model": "persistence (model did not beat baseline)",
    "mae": 12.3,
    "rmse": 17.8,
    "within10": 62,
-   "within5": 46,
-   "mape_ge20": 27.9,
+   "within5": 45,
+   "mape_ge20": 28.0,
    "bias": 0.2,
    "baseline_mae": 12.3,
-   "baseline_mape_ge20": 27.9,
+   "baseline_mape_ge20": 28.0,
    "improvement_pct": 0.0,
    "evaluation": "chronological holdout with horizon embargo",
    "gate_mae_2seed": 12.3,
-   "candidate_mae_seed2": 12.2,
+   "candidate_mae_seed2": 12.1,
    "top_features": [
     "wait",
     "ride_code",
     "hour_cos",
-    "lag_60",
     "hour_sin",
-    "park_mean"
+    "lag_60",
+    "diff_30"
    ],
-   "candidate_mae": 12.4
+   "candidate_mae": 12.5
   },
   "90": {
-   "available_pairs": 27894,
-   "train_rows": 22610,
-   "test_rows": 5140,
+   "available_pairs": 27900,
+   "train_rows": 22650,
+   "test_rows": 5106,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 11.9,
-   "rmse": 17.5,
-   "within10": 64,
+   "mae": 12.0,
+   "rmse": 17.7,
+   "within10": 63,
    "within5": 47,
    "mape_ge20": 23.3,
-   "bias": -7.4,
+   "bias": -7.8,
    "baseline_mae": 13.7,
    "baseline_mape_ge20": 31.3,
-   "improvement_pct": 12.9,
+   "improvement_pct": 12.2,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -133,19 +133,19 @@
    "gate_tau": 0.7
   },
   "120": {
-   "available_pairs": 26583,
-   "train_rows": 21524,
-   "test_rows": 4883,
+   "available_pairs": 26589,
+   "train_rows": 21548,
+   "test_rows": 4852,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 12.6,
-   "rmse": 18.3,
-   "within10": 61,
-   "within5": 44,
-   "mape_ge20": 24.3,
-   "bias": -8.6,
+   "mae": 13.1,
+   "rmse": 19.0,
+   "within10": 60,
+   "within5": 43,
+   "mape_ge20": 24.9,
+   "bias": -9.7,
    "baseline_mae": 14.8,
-   "baseline_mape_ge20": 33.0,
-   "improvement_pct": 15.0,
+   "baseline_mape_ge20": 33.1,
+   "improvement_pct": 11.7,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -155,7 +155,7 @@
     "diff_30",
     "lag_60"
    ],
-   "gate_tau": 0.5
+   "gate_tau": 0.4
   }
  },
  "context": {
@@ -170,54 +170,6 @@
  "demo": false,
  "lookback": {
   "Mickey & Minnie's Runaway Railway": [
-   {
-    "t": "20:35",
-    "actual": 25,
-    "p30": 30,
-    "p60": 35,
-    "p90": 45,
-    "p120": 20
-   },
-   {
-    "t": "20:40",
-    "actual": 20,
-    "p30": 30,
-    "p60": 35,
-    "p90": 40,
-    "p120": 25
-   },
-   {
-    "t": "20:45",
-    "actual": 15,
-    "p30": 30,
-    "p60": 30,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "20:50",
-    "actual": 15,
-    "p30": 25,
-    "p60": 30,
-    "p90": 30,
-    "p120": 35
-   },
-   {
-    "t": "20:55",
-    "actual": 15,
-    "p30": 25,
-    "p60": 30,
-    "p90": 30,
-    "p120": 45
-   },
-   {
-    "t": "21:00",
-    "actual": 15,
-    "p30": 25,
-    "p60": 30,
-    "p90": 25,
-    "p120": 45
-   },
    {
     "t": "21:05",
     "actual": 5,
@@ -561,40 +513,88 @@
     "p60": 5,
     "p90": 5,
     "p120": 5
+   },
+   {
+    "t": "00:40",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "00:45",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "00:50",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "00:55",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "01:00",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "01:05",
+    "actual": 5,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
    }
   ]
  },
  "today": {
   "date": "2026-11-26",
-  "graded": 32,
+  "graded": 56,
   "exact": 100,
   "in5": 100,
   "in10": 100,
   "in15": 100,
   "by_horizon": {
    "30": {
-    "graded": 8,
+    "graded": 14,
     "exact": 100,
     "in5": 100,
     "in10": 100,
     "in15": 100
    },
    "60": {
-    "graded": 8,
+    "graded": 14,
     "exact": 100,
     "in5": 100,
     "in10": 100,
     "in15": 100
    },
    "90": {
-    "graded": 8,
+    "graded": 14,
     "exact": 100,
     "in5": 100,
     "in10": 100,
     "in15": 100
    },
    "120": {
-    "graded": 8,
+    "graded": 14,
     "exact": 100,
     "in5": 100,
     "in10": 100,
