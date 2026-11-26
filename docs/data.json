@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-26T09:26:40.744867+00:00",
- "last_sample": "2026-11-26T09:25:30+00:00",
- "samples": 245929,
+ "updated": "2026-11-26T09:33:16.511548+00:00",
+ "last_sample": "2026-11-26T09:30:40+00:00",
+ "samples": 245965,
  "history_samples": 11713,
  "rides": [
   {
@@ -16,37 +16,37 @@
     "reopened": false,
     "park_mean": 0,
     "park_busy": 0,
-    "mins_open": -210,
-    "mins_close": 1110
+    "mins_open": -205,
+    "mins_close": 1105
    },
    "f30": 5,
    "f30_lo": 5,
    "f30_hi": 5,
    "f60": 5,
    "f60_lo": 5,
-   "f60_hi": 10,
+   "f60_hi": 5,
    "f90": 5,
    "f90_lo": 5,
    "f90_hi": 10,
    "f120": 5,
    "f120_lo": 5,
-   "f120_hi": 15,
-   "score30_mae": 6.0,
+   "f120_hi": 10,
+   "score30_mae": 5.8,
    "score30_in10": 85,
    "score30_in5": 72,
    "score30_pairs": 832,
-   "score60_mae": 6.5,
-   "score60_in10": 83,
-   "score60_in5": 68,
+   "score60_mae": 6.7,
+   "score60_in10": 82,
+   "score60_in5": 67,
    "score60_pairs": 799,
-   "score90_mae": 6.8,
-   "score90_in10": 85,
-   "score90_in5": 66,
-   "score90_pairs": 763,
-   "score120_mae": 7.7,
-   "score120_in10": 81,
-   "score120_in5": 60,
-   "score120_pairs": 731,
+   "score90_mae": 6.6,
+   "score90_in10": 84,
+   "score90_in5": 68,
+   "score90_pairs": 764,
+   "score120_mae": 7.9,
+   "score120_in10": 80,
+   "score120_in5": 61,
+   "score120_pairs": 732,
    "people": null,
    "people_lo": 0,
    "people_hi": 0,
@@ -64,8 +64,8 @@
     "reopened": false,
     "park_mean": 0,
     "park_busy": 0,
-    "mins_open": -210,
-    "mins_close": 1110
+    "mins_open": -205,
+    "mins_close": 1105
    },
    "f30": 5,
    "f30_lo": 5,
@@ -83,18 +83,18 @@
    "score30_in10": 91,
    "score30_in5": 80,
    "score30_pairs": 788,
-   "score60_mae": 4.9,
+   "score60_mae": 4.8,
    "score60_in10": 92,
-   "score60_in5": 81,
+   "score60_in5": 82,
    "score60_pairs": 748,
    "score90_mae": 4.7,
    "score90_in10": 94,
    "score90_in5": 78,
-   "score90_pairs": 709,
+   "score90_pairs": 710,
    "score120_mae": 4.7,
    "score120_in10": 93,
-   "score120_in5": 80,
-   "score120_pairs": 684,
+   "score120_in5": 83,
+   "score120_pairs": 685,
    "people": null,
    "people_lo": 0,
    "people_hi": 0,
@@ -103,19 +103,44 @@
  ],
  "metrics": {
   "30": {
-   "available_pairs": 102705,
-   "train_rows": 82466,
-   "test_rows": 20090,
+   "available_pairs": 102707,
+   "train_rows": 82490,
+   "test_rows": 20066,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 5.2,
-   "rmse": 8.9,
+   "rmse": 8.8,
    "within10": 87,
    "within5": 73,
-   "mape_ge20": 19.9,
+   "mape_ge20": 19.8,
    "bias": -1.9,
    "baseline_mae": 5.8,
    "baseline_mape_ge20": 23.4,
-   "improvement_pct": 11.0,
+   "improvement_pct": 11.1,
+   "evaluation": "chronological holdout with horizon embargo",
+   "top_features": [
+    "wait",
+    "ride_code",
+    "hour_cos",
+    "lag_60",
+    "diff_30",
+    "lag_120"
+   ],
+   "gate_tau": 0.7
+  },
+  "60": {
+   "available_pairs": 97863,
+   "train_rows": 78487,
+   "test_rows": 19085,
+   "model": "gradient boosting (delta+round5 + change gate)",
+   "mae": 5.4,
+   "rmse": 8.9,
+   "within10": 87,
+   "within5": 72,
+   "mape_ge20": 20.7,
+   "bias": -2.1,
+   "baseline_mae": 7.0,
+   "baseline_mape_ge20": 26.9,
+   "improvement_pct": 21.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -123,49 +148,24 @@
     "hour_cos",
     "diff_30",
     "lag_60",
-    "lag_120"
-   ],
-   "gate_tau": 0.7
-  },
-  "60": {
-   "available_pairs": 97861,
-   "train_rows": 78464,
-   "test_rows": 19108,
-   "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 5.5,
-   "rmse": 9.1,
-   "within10": 86,
-   "within5": 72,
-   "mape_ge20": 21.0,
-   "bias": -2.4,
-   "baseline_mae": 7.0,
-   "baseline_mape_ge20": 26.9,
-   "improvement_pct": 20.5,
-   "evaluation": "chronological holdout with horizon embargo",
-   "top_features": [
-    "wait",
-    "ride_code",
-    "hour_cos",
-    "diff_30",
-    "hour_sin",
-    "lag_60"
+    "mins_to_party_start"
    ],
    "gate_tau": 0.7
   },
   "90": {
-   "available_pairs": 93347,
+   "available_pairs": 93349,
    "train_rows": 74767,
-   "test_rows": 18140,
+   "test_rows": 18142,
    "model": "gradient boosting (delta+round5 + change gate)",
    "mae": 5.7,
-   "rmse": 9.4,
-   "within10": 85,
+   "rmse": 9.3,
+   "within10": 86,
    "within5": 71,
    "mape_ge20": 22.0,
    "bias": -2.7,
    "baseline_mae": 7.6,
    "baseline_mape_ge20": 28.7,
-   "improvement_pct": 24.6,
+   "improvement_pct": 25.0,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -178,19 +178,19 @@
    "gate_tau": 0.7
   },
   "120": {
-   "available_pairs": 89207,
+   "available_pairs": 89209,
    "train_rows": 71373,
-   "test_rows": 17256,
+   "test_rows": 17258,
    "model": "gradient boosting (delta+round5 + change gate)",
-   "mae": 6.1,
-   "rmse": 9.9,
+   "mae": 6.2,
+   "rmse": 10.0,
    "within10": 84,
    "within5": 69,
-   "mape_ge20": 23.6,
-   "bias": -3.3,
+   "mape_ge20": 24.0,
+   "bias": -3.5,
    "baseline_mae": 8.2,
    "baseline_mape_ge20": 30.7,
-   "improvement_pct": 26.2,
+   "improvement_pct": 24.8,
    "evaluation": "chronological holdout with horizon embargo",
    "top_features": [
     "wait",
@@ -198,7 +198,7 @@
     "hour_cos",
     "hour_sin",
     "diff_30",
-    "mins_to_party_start"
+    "lag_60"
    ],
    "gate_tau": 0.7
   }
@@ -217,7 +217,7 @@
  "lookback": {
   "Astro Orbiter": [
    {
-    "t": "00:30",
+    "t": "00:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -225,7 +225,7 @@
     "p120": 5
    },
    {
-    "t": "00:45",
+    "t": "00:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -233,7 +233,7 @@
     "p120": 5
    },
    {
-    "t": "01:00",
+    "t": "01:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -241,7 +241,7 @@
     "p120": 5
    },
    {
-    "t": "01:15",
+    "t": "01:20",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -249,7 +249,7 @@
     "p120": 5
    },
    {
-    "t": "01:30",
+    "t": "01:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -257,7 +257,7 @@
     "p120": 5
    },
    {
-    "t": "01:45",
+    "t": "01:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -265,7 +265,7 @@
     "p120": 5
    },
    {
-    "t": "02:00",
+    "t": "02:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -273,7 +273,7 @@
     "p120": 5
    },
    {
-    "t": "02:15",
+    "t": "02:20",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -281,7 +281,7 @@
     "p120": 5
    },
    {
-    "t": "02:30",
+    "t": "02:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -289,15 +289,7 @@
     "p120": 5
    },
    {
-    "t": "02:45",
-    "actual": 0,
-    "p30": 5,
-    "p60": 5,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "03:00",
+    "t": "02:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -305,7 +297,7 @@
     "p120": 5
    },
    {
-    "t": "03:15",
+    "t": "03:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -313,7 +305,7 @@
     "p120": 5
    },
    {
-    "t": "03:30",
+    "t": "03:20",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -321,7 +313,7 @@
     "p120": 5
    },
    {
-    "t": "03:45",
+    "t": "03:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -329,7 +321,7 @@
     "p120": 5
    },
    {
-    "t": "04:00",
+    "t": "03:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -337,15 +329,23 @@
     "p120": 5
    },
    {
-    "t": "04:15",
+    "t": "04:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
     "p90": 5,
-    "p120": 10
+    "p120": 5
    },
    {
-    "t": "04:30",
+    "t": "04:20",
+    "actual": 0,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "04:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -355,7 +355,7 @@
   ],
   "Tomorrowland Transit Authority PeopleMover": [
    {
-    "t": "00:30",
+    "t": "00:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -363,7 +363,7 @@
     "p120": 5
    },
    {
-    "t": "00:45",
+    "t": "00:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -371,7 +371,7 @@
     "p120": 5
    },
    {
-    "t": "01:00",
+    "t": "01:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -379,7 +379,7 @@
     "p120": 5
    },
    {
-    "t": "01:15",
+    "t": "01:20",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -387,7 +387,7 @@
     "p120": 5
    },
    {
-    "t": "01:30",
+    "t": "01:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -395,7 +395,7 @@
     "p120": 5
    },
    {
-    "t": "01:45",
+    "t": "01:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -403,7 +403,7 @@
     "p120": 5
    },
    {
-    "t": "02:00",
+    "t": "02:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -411,7 +411,7 @@
     "p120": 5
    },
    {
-    "t": "02:15",
+    "t": "02:20",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -419,7 +419,7 @@
     "p120": 5
    },
    {
-    "t": "02:30",
+    "t": "02:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -427,15 +427,7 @@
     "p120": 5
    },
    {
-    "t": "02:45",
-    "actual": 0,
-    "p30": 5,
-    "p60": 5,
-    "p90": 10,
-    "p120": 5
-   },
-   {
-    "t": "03:00",
+    "t": "02:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -443,7 +435,7 @@
     "p120": 5
    },
    {
-    "t": "03:15",
+    "t": "03:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -451,7 +443,7 @@
     "p120": 5
    },
    {
-    "t": "03:30",
+    "t": "03:20",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -459,7 +451,7 @@
     "p120": 5
    },
    {
-    "t": "03:45",
+    "t": "03:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -467,7 +459,7 @@
     "p120": 5
    },
    {
-    "t": "04:00",
+    "t": "03:50",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -475,7 +467,7 @@
     "p120": 5
    },
    {
-    "t": "04:15",
+    "t": "04:05",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -483,7 +475,15 @@
     "p120": 5
    },
    {
-    "t": "04:30",
+    "t": "04:20",
+    "actual": 0,
+    "p30": 5,
+    "p60": 5,
+    "p90": 5,
+    "p120": 5
+   },
+   {
+    "t": "04:35",
     "actual": 0,
     "p30": 5,
     "p60": 5,
@@ -494,35 +494,35 @@
  },
  "today": {
   "date": "2026-11-26",
-  "graded": 592,
-  "exact": 17,
+  "graded": 600,
+  "exact": 16,
   "in5": 94,
   "in10": 98,
   "in15": 99,
   "by_horizon": {
    "30": {
-    "graded": 148,
-    "exact": 18,
+    "graded": 150,
+    "exact": 17,
     "in5": 95,
     "in10": 99,
     "in15": 99
    },
    "60": {
-    "graded": 148,
-    "exact": 16,
+    "graded": 150,
+    "exact": 15,
     "in5": 94,
     "in10": 98,
     "in15": 99
    },
    "90": {
-    "graded": 148,
+    "graded": 150,
     "exact": 16,
     "in5": 95,
     "in10": 99,
     "in15": 99
    },
    "120": {
-    "graded": 148,
+    "graded": 150,
     "exact": 17,
     "in5": 93,
     "in10": 97,
@@ -530,12 +530,12 @@
    }
   }
  },
- "lookback_debug": "log rows 18096; act (4588, 31) idx 2026-10-30 04:00:00+00:00..2026-11-26 09:30:00+00:00; slots 17; lookback rides 2; today graded 592",
+ "lookback_debug": "log rows 18016; act (4589, 31) idx 2026-10-30 04:00:00+00:00..2026-11-26 09:35:00+00:00; slots 17; lookback rides 2; today graded 600",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-26T09:02:56.408177+00:00",
-   "last_sample": "2026-11-26T09:00:37+00:00",
-   "samples": 216041,
+   "updated": "2026-11-26T09:34:10.880387+00:00",
+   "last_sample": "2026-11-26T09:30:40+00:00",
+   "samples": 216239,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -657,9 +657,9 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-26T09:26:41.977973+00:00",
-   "last_sample": "2026-11-26T09:25:30+00:00",
-   "samples": 84448,
+   "updated": "2026-11-26T09:34:52.631595+00:00",
+   "last_sample": "2026-11-26T09:30:40+00:00",
+   "samples": 84526,
    "history_samples": 0,
    "rides": [
     {
@@ -674,60 +674,62 @@
       "reopened": false,
       "park_mean": 5,
       "park_busy": 0,
-      "mins_open": -295,
-      "mins_close": 1015
+      "mins_open": -265,
+      "mins_close": 985
      },
      "f30": 5,
-     "score30_mae": 8.1,
-     "score30_in5": 59,
+     "score30_mae": 8.0,
+     "score30_in5": 60,
      "score30_in10": 75,
-     "score30_pairs": 652,
+     "score30_pairs": 653,
      "d30": 0,
      "f60": 5,
-     "score60_mae": 9.4,
-     "score60_in5": 53,
+     "score60_mae": 9.3,
+     "score60_in5": 54,
      "score60_in10": 70,
-     "score60_pairs": 620,
+     "score60_pairs": 622,
      "d60": 0,
      "f90": 5,
      "f90_lo": 5,
-     "f90_hi": 35,
-     "score90_mae": 10.0,
+     "f90_hi": 25,
+     "score90_mae": 9.6,
      "score90_in5": 49,
-     "score90_in10": 66,
-     "score90_pairs": 590,
+     "score90_in10": 69,
+     "score90_pairs": 591,
      "d90": 0,
      "d90_lo": 0,
-     "d90_hi": 30,
+     "d90_hi": 20,
      "f120": 5,
      "f120_lo": 10,
-     "f120_hi": 40,
-     "score120_mae": 9.8,
-     "score120_in5": 49,
-     "score120_in10": 72,
-     "score120_pairs": 560,
+     "f120_hi": 35,
+     "score120_mae": 9.6,
+     "score120_in5": 52,
+     "score120_in10": 70,
+     "score120_pairs": 564,
      "d120": 0,
      "d120_lo": 5,
-     "d120_hi": 35,
+     "d120_hi": 30,
      "people": null
     }
    ],
    "metrics": {
     "30": {
-     "available_pairs": 31078,
-     "train_rows": 25438,
-     "test_rows": 5616,
+     "available_pairs": 31084,
+     "train_rows": 25454,
+     "test_rows": 5580,
      "model": "persistence (model did not beat baseline)",
      "mae": 10.0,
-     "rmse": 15.1,
-     "within10": 69,
+     "rmse": 15.0,
+     "within10": 70,
      "within5": 52,
      "mape_ge20": 22.5,
-     "bias": -0.2,
+     "bias": -0.1,
      "baseline_mae": 10.0,
      "baseline_mape_ge20": 22.5,
      "improvement_pct": 0.0,
      "evaluation": "chronological holdout with horizon embargo",
+     "gate_mae_2seed": 10.2,
+     "candidate_mae_seed2": 10.4,
      "top_features": [
       "wait",
       "ride_code",
@@ -736,84 +738,84 @@
       "lag_60",
       "lag_120"
      ],
-     "candidate_mae": 10.5
+     "candidate_mae": 10.0
     },
     "60": {
-     "available_pairs": 29369,
+     "available_pairs": 29375,
      "train_rows": 24082,
-     "test_rows": 5263,
+     "test_rows": 5236,
      "model": "persistence (model did not beat baseline)",
      "mae": 12.4,
-     "rmse": 17.9,
-     "within10": 61,
+     "rmse": 17.8,
+     "within10": 62,
      "within5": 45,
-     "mape_ge20": 27.8,
-     "bias": 0.2,
+     "mape_ge20": 27.7,
+     "bias": 0.3,
      "baseline_mae": 12.4,
-     "baseline_mape_ge20": 27.8,
+     "baseline_mape_ge20": 27.7,
      "improvement_pct": 0.0,
      "evaluation": "chronological holdout with horizon embargo",
-     "gate_mae_2seed": 12.8,
-     "candidate_mae_seed2": 13.0,
+     "gate_mae_2seed": 12.6,
+     "candidate_mae_seed2": 12.5,
      "top_features": [
       "wait",
       "ride_code",
       "lag_60",
       "hour_cos",
       "hour_sin",
-      "diff_30"
+      "park_mean"
      ],
      "candidate_mae": 12.7
     },
     "90": {
-     "available_pairs": 27936,
+     "available_pairs": 27942,
      "train_rows": 22906,
-     "test_rows": 4930,
+     "test_rows": 4886,
      "model": "gradient boosting (delta+round5 + change gate)",
-     "mae": 12.1,
-     "rmse": 17.7,
-     "within10": 63,
-     "within5": 46,
-     "mape_ge20": 23.3,
-     "bias": -7.8,
-     "baseline_mae": 13.6,
-     "baseline_mape_ge20": 30.8,
-     "improvement_pct": 10.9,
+     "mae": 11.9,
+     "rmse": 17.5,
+     "within10": 64,
+     "within5": 48,
+     "mape_ge20": 23.0,
+     "bias": -7.6,
+     "baseline_mae": 13.5,
+     "baseline_mape_ge20": 30.7,
+     "improvement_pct": 11.8,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "wait",
       "ride_code",
-      "hour_sin",
       "hour_cos",
-      "diff_30",
-      "lag_60"
+      "hour_sin",
+      "lag_60",
+      "diff_30"
      ],
      "gate_tau": 0.7
     },
     "120": {
-     "available_pairs": 26625,
-     "train_rows": 21796,
-     "test_rows": 4646,
+     "available_pairs": 26631,
+     "train_rows": 21804,
+     "test_rows": 4605,
      "model": "gradient boosting (delta+round5 + change gate)",
-     "mae": 12.7,
-     "rmse": 18.3,
-     "within10": 61,
-     "within5": 44,
-     "mape_ge20": 24.7,
-     "bias": -8.6,
+     "mae": 12.5,
+     "rmse": 18.1,
+     "within10": 62,
+     "within5": 45,
+     "mape_ge20": 24.3,
+     "bias": -9.0,
      "baseline_mae": 14.4,
-     "baseline_mape_ge20": 32.6,
-     "improvement_pct": 12.4,
+     "baseline_mape_ge20": 32.7,
+     "improvement_pct": 13.3,
      "evaluation": "chronological holdout with horizon embargo",
      "top_features": [
       "wait",
       "ride_code",
       "hour_sin",
       "hour_cos",
-      "diff_30",
-      "lag_60"
+      "lag_60",
+      "diff_30"
      ],
-     "gate_tau": 0.5
+     "gate_tau": 0.6
     }
    },
    "context": {
@@ -828,54 +830,6 @@
    "demo": false,
    "lookback": {
     "Mickey & Minnie's Runaway Railway": [
-     {
-      "t": "00:05",
-      "actual": 5,
-      "p30": 5,
-      "p60": 5,
-      "p90": 5,
-      "p120": 5
-     },
-     {
-      "t": "00:10",
-      "actual": 5,
-      "p30": 5,
-      "p60": 5,
-      "p90": 5,
-      "p120": 5
-     },
-     {
-      "t": "00:15",
-      "actual": 5,
-      "p30": 5,
-      "p60": 5,
-      "p90": 5,
-      "p120": 5
-     },
-     {
-      "t": "00:20",
-      "actual": 5,
-      "p30": 5,
-      "p60": 5,
-      "p90": 5,
-      "p120": 5
-     },
-     {
-      "t": "00:25",
-      "actual": 5,
-      "p30": 5,
-      "p60": 5,
-      "p90": 5,
-      "p120": 5
-     },
-     {
-      "t": "00:30",
-      "actual": 5,
-      "p30": 5,
-      "p60": 5,
-      "p90": 5,
-      "p120": 5
-     },
      {
       "t": "00:35",
       "actual": 5,
@@ -1219,53 +1173,101 @@
       "p60": 5,
       "p90": 30,
       "p120": 35
+     },
+     {
+      "t": "04:10",
+      "actual": 5,
+      "p30": 5,
+      "p60": 5,
+      "p90": 30,
+      "p120": 35
+     },
+     {
+      "t": "04:15",
+      "actual": 5,
+      "p30": 5,
+      "p60": 5,
+      "p90": 30,
+      "p120": 35
+     },
+     {
+      "t": "04:20",
+      "actual": 5,
+      "p30": 5,
+      "p60": 5,
+      "p90": 30,
+      "p120": 35
+     },
+     {
+      "t": "04:25",
+      "actual": 5,
+      "p30": 5,
+      "p60": 5,
+      "p90": 30,
+      "p120": 35
+     },
+     {
+      "t": "04:30",
+      "actual": 5,
+      "p30": 5,
+      "p60": 5,
+      "p90": 30,
+      "p120": 35
+     },
+     {
+      "t": "04:35",
+      "actual": 5,
+      "p30": 5,
+      "p60": 5,
+      "p90": 25,
+      "p120": 35
      }
     ]
    },
    "today": {
     "date": "2026-11-26",
-    "graded": 200,
-    "exact": 90,
-    "in5": 90,
-    "in10": 90,
-    "in15": 90,
+    "graded": 224,
+    "exact": 86,
+    "in5": 86,
+    "in10": 86,
+    "in15": 86,
     "by_horizon": {
      "30": {
-      "graded": 50,
+      "graded": 56,
       "exact": 100,
       "in5": 100,
       "in10": 100,
       "in15": 100
      },
      "60": {
-      "graded": 50,
+      "graded": 56,
       "exact": 100,
       "in5": 100,
       "in10": 100,
       "in15": 100
      },
      "90": {
-      "graded": 50,
-      "exact": 74,
-      "in5": 74,
-      "in10": 74,
-      "in15": 74
+      "graded": 56,
+      "exact": 66,
+      "in5": 66,
+      "in10": 66,
+      "in15": 66
      },
      "120": {
-      "graded": 50,
-      "exact": 86,
-      "in5": 86,
-      "in10": 86,
-      "in15": 86
+      "graded": 56,
+      "exact": 77,
+      "in5": 77,
+      "in10": 77,
+      "in15": 77
      }
     }
    },
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-26T09:03:53.406198+00:00",
-   "last_sample": "2026-11-26T09:00:37+00:00",
-   "samples": 103936,
+   "updated": "2026-11-26T09:35:19.337222+00:00",
+   "last_sample": "2026-11-26T09:30:40+00:00",
+   "samples": 104032,
    "history_samples": 0,
    "rides": [],
    "metrics": {
