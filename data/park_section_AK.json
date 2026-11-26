@@ -1,9 +1,174 @@
 {
- "updated": "2026-11-26T12:23:23.838936+00:00",
- "last_sample": "2026-11-26T12:20:42+00:00",
- "samples": 104576,
+ "updated": "2026-11-26T12:54:28.406143+00:00",
+ "last_sample": "2026-11-26T12:50:41+00:00",
+ "samples": 104672,
  "history_samples": 0,
- "rides": [],
+ "rides": [
+  {
+   "name": "Avatar Flight of Passage",
+   "now": 45,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 30,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 19,
+    "park_busy": 6,
+    "mins_open": -5,
+    "mins_close": 605
+   },
+   "f30": 45,
+   "score30_mae": 12.5,
+   "score30_in5": 48,
+   "score30_in10": 63,
+   "score30_pairs": 566,
+   "d30": 0,
+   "f60": 45,
+   "score60_mae": 16.3,
+   "score60_in5": 37,
+   "score60_in10": 53,
+   "score60_pairs": 537,
+   "d60": 0,
+   "f90": 45,
+   "score90_mae": 16.8,
+   "score90_in5": 32,
+   "score90_in10": 55,
+   "score90_pairs": 504,
+   "d90": 0,
+   "f120": 45,
+   "score120_mae": 16.9,
+   "score120_in5": 34,
+   "score120_in10": 47,
+   "score120_pairs": 473,
+   "d120": 0,
+   "people": null
+  },
+  {
+   "name": "Zootopia: Better Zoogether!",
+   "now": 15,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 19,
+    "park_busy": 6,
+    "mins_open": -5,
+    "mins_close": 605
+   },
+   "f30": 15,
+   "score30_mae": 1.3,
+   "score30_in5": 95,
+   "score30_in10": 98,
+   "score30_pairs": 562,
+   "d30": 0,
+   "f60": 15,
+   "score60_mae": 2.1,
+   "score60_in5": 92,
+   "score60_in10": 96,
+   "score60_pairs": 533,
+   "d60": 0,
+   "f90": 15,
+   "score90_mae": 2.8,
+   "score90_in5": 89,
+   "score90_in10": 94,
+   "score90_pairs": 498,
+   "d90": 0,
+   "f120": 15,
+   "score120_mae": 3.7,
+   "score120_in5": 85,
+   "score120_in10": 89,
+   "score120_pairs": 466,
+   "d120": 0,
+   "people": null
+  },
+  {
+   "name": "Na'vi River Journey",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 19,
+    "park_busy": 6,
+    "mins_open": -5,
+    "mins_close": 605
+   },
+   "f30": 10,
+   "score30_mae": 8.8,
+   "score30_in5": 55,
+   "score30_in10": 75,
+   "score30_pairs": 530,
+   "d30": 0,
+   "f60": 10,
+   "score60_mae": 12.8,
+   "score60_in5": 41,
+   "score60_in10": 57,
+   "score60_pairs": 501,
+   "d60": 0,
+   "f90": 10,
+   "score90_mae": 15.0,
+   "score90_in5": 34,
+   "score90_in10": 51,
+   "score90_pairs": 466,
+   "d90": 0,
+   "f120": 10,
+   "score120_mae": 15.4,
+   "score120_in5": 36,
+   "score120_in10": 53,
+   "score120_pairs": 434,
+   "d120": 0,
+   "people": null
+  },
+  {
+   "name": "Expedition Everest - Legend of the Forbidden Mountain",
+   "now": 5,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 15,
+    "reopened": true,
+    "park_mean": 19,
+    "park_busy": 6,
+    "mins_open": -5,
+    "mins_close": 605
+   },
+   "f30": 5,
+   "score30_mae": 7.6,
+   "score30_in5": 57,
+   "score30_in10": 80,
+   "score30_pairs": 552,
+   "d30": 0,
+   "f60": 5,
+   "score60_mae": 10.6,
+   "score60_in5": 42,
+   "score60_in10": 64,
+   "score60_pairs": 518,
+   "d60": 0,
+   "f90": 5,
+   "score90_mae": 12.6,
+   "score90_in5": 40,
+   "score90_in10": 56,
+   "score90_pairs": 487,
+   "d90": 0,
+   "f120": 5,
+   "score120_mae": 15.0,
+   "score120_in5": 32,
+   "score120_in10": 49,
+   "score120_pairs": 461,
+   "d120": 0,
+   "people": null
+  }
+ ],
  "metrics": {
   "30": {
    "available_pairs": 22093,
@@ -118,7 +283,48 @@
   "is_party_night": false
  },
  "demo": false,
- "lookback": {},
+ "lookback": {
+  "Avatar Flight of Passage": [
+   {
+    "t": "07:40",
+    "actual": 45
+   },
+   {
+    "t": "07:55",
+    "actual": 45
+   }
+  ],
+  "Zootopia: Better Zoogether!": [
+   {
+    "t": "07:40",
+    "actual": 15
+   },
+   {
+    "t": "07:55",
+    "actual": 15
+   }
+  ],
+  "Na'vi River Journey": [
+   {
+    "t": "07:40",
+    "actual": 10
+   },
+   {
+    "t": "07:55",
+    "actual": 10
+   }
+  ],
+  "Expedition Everest - Legend of the Forbidden Mountain": [
+   {
+    "t": "07:40",
+    "closed": 1
+   },
+   {
+    "t": "07:55",
+    "actual": 5
+   }
+  ]
+ },
  "today": {},
  "park_label": "Animal Kingdom"
 }
