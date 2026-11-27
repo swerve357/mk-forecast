@@ -1,43 +1,53 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-27T14:31:50.225560+00:00",
+ "updated": "2026-11-27T14:37:26.133294+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-26 17:05:00-05:00",
-  "Enchanted Tales with Belle": "2026-11-26 19:40:00-05:00",
   "The Hall of Presidents": "2026-11-26 21:05:00-05:00",
   "Under the Sea - Journey of The Little Mermaid": "2026-11-27 09:35:00-05:00"
  },
- "decisions_open": 16,
+ "decisions_open": 8,
  "graded_all": {
-  "n": 1793,
+  "n": 1802,
   "wins": 397,
-  "losses": 841,
-  "ties": 555,
-  "mae_base": 4.92,
-  "mae_shadow": 6.64
+  "losses": 848,
+  "ties": 557,
+  "mae_base": 4.91,
+  "mae_shadow": 6.65
  },
  "by_type": {
   "D1": {
-   "n": 931,
+   "n": 937,
    "wins": 273,
-   "losses": 657,
+   "losses": 663,
    "ties": 1,
-   "mae_base": 5.45,
-   "mae_shadow": 7.49
+   "mae_base": 5.44,
+   "mae_shadow": 7.51
   },
   "D2": {
-   "n": 862,
+   "n": 865,
    "wins": 124,
-   "losses": 184,
-   "ties": 554,
-   "mae_base": 4.35,
-   "mae_shadow": 5.73
+   "losses": 185,
+   "ties": 556,
+   "mae_base": 4.34,
+   "mae_shadow": 5.72
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 0,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 9,
+ "last_decisions": [
+  {
+   "id": "cb-1945",
+   "type": "D2",
+   "event_ride": "Enchanted Tales with Belle",
+   "ride": "Enchanted Tales with Belle",
+   "horizon": 30,
+   "base": 10.0,
+   "shadow": 10.0,
+   "reason": "reopened after 840 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
