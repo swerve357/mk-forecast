@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-27T13:32:29.579170+00:00",
- "last_sample": "2026-11-27T13:30:38+00:00",
- "samples": 258061,
+ "updated": "2026-11-27T13:37:04.921859+00:00",
+ "last_sample": "2026-11-27T13:35:31+00:00",
+ "samples": 258097,
  "history_samples": 11713,
  "rides": [
   {
@@ -16,19 +16,19 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 35,
    "f30_lo": 20,
    "f30_hi": 40,
-   "f60": 30,
+   "f60": 35,
    "f60_lo": 20,
    "f60_hi": 35,
    "f90": 40,
    "f90_lo": 25,
    "f90_hi": 40,
-   "f120": 40,
+   "f120": 45,
    "f120_lo": 20,
    "f120_hi": 50,
    "score30_mae": 9.4,
@@ -64,12 +64,12 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 25,
    "f30_lo": 10,
-   "f30_hi": 30,
+   "f30_hi": 35,
    "f60": 30,
    "f60_lo": 10,
    "f60_hi": 35,
@@ -101,19 +101,67 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
+   "name": "Tomorrowland Speedway",
+   "now": 10,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 15,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 8,
+    "park_busy": 0,
+    "mins_open": -20,
+    "mins_close": 560
+   },
+   "f30": 10,
+   "f30_lo": 5,
+   "f30_hi": 20,
+   "f60": 15,
+   "f60_lo": 5,
+   "f60_hi": 20,
+   "f90": 15,
+   "f90_lo": 5,
+   "f90_hi": 20,
+   "f120": 20,
+   "f120_lo": 5,
+   "f120_hi": 25,
+   "score30_mae": 5.1,
+   "score30_in10": 93,
+   "score30_in5": 76,
+   "score30_pairs": 815,
+   "score60_mae": 6.0,
+   "score60_in10": 90,
+   "score60_in5": 68,
+   "score60_pairs": 784,
+   "score90_mae": 5.5,
+   "score90_in10": 91,
+   "score90_in5": 72,
+   "score90_pairs": 751,
+   "score120_mae": 6.5,
+   "score120_in10": 85,
+   "score120_in5": 66,
+   "score120_pairs": 716,
+   "people": null,
+   "people_lo": 37,
+   "people_hi": 130,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
    "name": "Mad Tea Party",
    "now": 5,
    "trend30": 0,
    "why": {
     "lag60": null,
     "lag120": null,
-    "lag_yday": 0,
+    "lag_yday": 5,
     "down60": 0,
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
@@ -160,8 +208,8 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
@@ -208,8 +256,8 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
@@ -245,6 +293,54 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
+   "name": "Under the Sea - Journey of The Little Mermaid",
+   "now": 5,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 8,
+    "park_busy": 0,
+    "mins_open": -20,
+    "mins_close": 560
+   },
+   "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 10,
+   "f60": 5,
+   "f60_lo": 5,
+   "f60_hi": 10,
+   "f90": 5,
+   "f90_lo": 5,
+   "f90_hi": 15,
+   "f120": 5,
+   "f120_lo": 5,
+   "f120_hi": 20,
+   "score30_mae": 5.8,
+   "score30_in10": 82,
+   "score30_in5": 65,
+   "score30_pairs": 813,
+   "score60_mae": 6.4,
+   "score60_in10": 79,
+   "score60_in5": 66,
+   "score60_pairs": 781,
+   "score90_mae": 6.4,
+   "score90_in10": 80,
+   "score90_in5": 65,
+   "score90_pairs": 748,
+   "score120_mae": 6.6,
+   "score120_in10": 79,
+   "score120_in5": 63,
+   "score120_pairs": 711,
+   "people": null,
+   "people_lo": 33,
+   "people_hi": 110,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
    "name": "Buzz Lightyear\u2019s Space Ranger Spin",
    "now": 5,
    "trend30": 0,
@@ -256,8 +352,8 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
@@ -304,12 +400,12 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
-   "f30_hi": 5,
+   "f30_hi": 10,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 10,
@@ -352,12 +448,12 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
-   "f30_hi": 5,
+   "f30_hi": 10,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 10,
@@ -400,8 +496,8 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
@@ -409,7 +505,7 @@
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 15,
-   "f90": 10,
+   "f90": 15,
    "f90_lo": 5,
    "f90_hi": 15,
    "f120": 15,
@@ -437,54 +533,6 @@
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   },
   {
-   "name": "Tomorrowland Speedway",
-   "now": 5,
-   "trend30": 0,
-   "why": {
-    "lag60": null,
-    "lag120": null,
-    "lag_yday": 15,
-    "down60": 0,
-    "reopened": false,
-    "park_mean": 8,
-    "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
-   },
-   "f30": 5,
-   "f30_lo": 5,
-   "f30_hi": 10,
-   "f60": 10,
-   "f60_lo": 5,
-   "f60_hi": 15,
-   "f90": 15,
-   "f90_lo": 5,
-   "f90_hi": 20,
-   "f120": 15,
-   "f120_lo": 5,
-   "f120_hi": 20,
-   "score30_mae": 5.1,
-   "score30_in10": 93,
-   "score30_in5": 76,
-   "score30_pairs": 815,
-   "score60_mae": 6.0,
-   "score60_in10": 90,
-   "score60_in5": 68,
-   "score60_pairs": 784,
-   "score90_mae": 5.5,
-   "score90_in10": 91,
-   "score90_in5": 72,
-   "score90_pairs": 751,
-   "score120_mae": 6.5,
-   "score120_in10": 85,
-   "score120_in5": 66,
-   "score120_pairs": 716,
-   "people": null,
-   "people_lo": 18,
-   "people_hi": 65,
-   "people_basis": "Uncalibrated operating scenario; not measured attendance"
-  },
-  {
    "name": "\"it's a small world\"",
    "now": 5,
    "trend30": 0,
@@ -496,12 +544,12 @@
     "reopened": false,
     "park_mean": 8,
     "park_busy": 0,
-    "mins_open": -25,
-    "mins_close": 565
+    "mins_open": -20,
+    "mins_close": 560
    },
    "f30": 5,
    "f30_lo": 5,
-   "f30_hi": 5,
+   "f30_hi": 10,
    "f60": 5,
    "f60_lo": 5,
    "f60_hi": 10,
@@ -530,6 +578,54 @@
    "people": null,
    "people_lo": 47,
    "people_hi": 150,
+   "people_basis": "Uncalibrated operating scenario; not measured attendance"
+  },
+  {
+   "name": "Tomorrowland Transit Authority PeopleMover",
+   "now": 5,
+   "trend30": 0,
+   "why": {
+    "lag60": null,
+    "lag120": null,
+    "lag_yday": 5,
+    "down60": 0,
+    "reopened": false,
+    "park_mean": 8,
+    "park_busy": 0,
+    "mins_open": -20,
+    "mins_close": 560
+   },
+   "f30": 5,
+   "f30_lo": 5,
+   "f30_hi": 5,
+   "f60": 5,
+   "f60_lo": 5,
+   "f60_hi": 5,
+   "f90": 5,
+   "f90_lo": 5,
+   "f90_hi": 15,
+   "f120": 5,
+   "f120_lo": 5,
+   "f120_hi": 15,
+   "score30_mae": 4.2,
+   "score30_in10": 93,
+   "score30_in5": 82,
+   "score30_pairs": 825,
+   "score60_mae": 5.1,
+   "score60_in10": 91,
+   "score60_in5": 77,
+   "score60_pairs": 783,
+   "score90_mae": 4.9,
+   "score90_in10": 94,
+   "score90_in5": 79,
+   "score90_pairs": 744,
+   "score120_mae": 5.3,
+   "score120_in10": 92,
+   "score120_in5": 74,
+   "score120_pairs": 718,
+   "people": null,
+   "people_lo": 267,
+   "people_hi": 300,
    "people_basis": "Uncalibrated operating scenario; not measured attendance"
   }
  ],
@@ -659,6 +755,12 @@
     "actual": 15
    }
   ],
+  "Tomorrowland Speedway": [
+   {
+    "t": "08:35",
+    "actual": 5
+   }
+  ],
   "Mad Tea Party": [
    {
     "t": "08:35",
@@ -675,6 +777,12 @@
    {
     "t": "08:35",
     "actual": 5
+   }
+  ],
+  "Under the Sea - Journey of The Little Mermaid": [
+   {
+    "t": "08:35",
+    "closed": 1
    }
   ],
   "Buzz Lightyear\u2019s Space Ranger Spin": [
@@ -701,12 +809,6 @@
     "actual": 5
    }
   ],
-  "Tomorrowland Speedway": [
-   {
-    "t": "08:35",
-    "actual": 5
-   }
-  ],
   "\"it's a small world\"": [
    {
     "t": "08:35",
@@ -715,7 +817,7 @@
   ]
  },
  "today": {},
- "lookback_debug": "log rows 19308; act (4784, 31) idx 2026-10-30 04:00:00+00:00..2026-11-27 13:35:00+00:00; slots 1; lookback rides 11; today graded 0",
+ "lookback_debug": "log rows 19352; act (4785, 31) idx 2026-10-30 04:00:00+00:00..2026-11-27 13:40:00+00:00; slots 1; lookback rides 12; today graded 0",
  "parks": {
   "EPCOT": {
    "updated": "2026-11-27T13:23:23.608700+00:00",
@@ -964,15 +1066,15 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-27T13:32:31.477893+00:00",
-   "last_sample": "2026-11-27T13:30:38+00:00",
+   "updated": "2026-11-27T13:37:06.685527+00:00",
+   "last_sample": "2026-11-27T13:35:31+00:00",
    "samples": 109376,
    "history_samples": 0,
    "rides": [
     {
      "name": "Avatar Flight of Passage",
      "now": 45,
-     "trend30": 15,
+     "trend30": 0,
      "why": {
       "lag60": null,
       "lag120": null,
@@ -1024,8 +1126,8 @@
     },
     {
      "name": "Kilimanjaro Safaris",
-     "now": 10,
-     "trend30": 0,
+     "now": 25,
+     "trend30": -5,
      "why": {
       "lag60": null,
       "lag120": null,
@@ -1037,15 +1139,15 @@
       "mins_open": 25,
       "mins_close": 575
      },
-     "f30": 10,
+     "f30": 25,
      "score30_mae": 7.6,
      "score30_in5": 59,
      "score30_in10": 78,
      "score30_pairs": 383,
      "d30": 0,
-     "f60": 30,
-     "f60_lo": 10,
-     "f60_hi": 40,
+     "f60": 45,
+     "f60_lo": 25,
+     "f60_hi": 55,
      "score60_mae": 10.1,
      "score60_in5": 43,
      "score60_in10": 63,
@@ -1053,9 +1155,9 @@
      "d60": 20,
      "d60_lo": -20,
      "d60_hi": 10,
-     "f90": 45,
-     "f90_lo": 20,
-     "f90_hi": 50,
+     "f90": 60,
+     "f90_lo": 35,
+     "f90_hi": 65,
      "score90_mae": 11.6,
      "score90_in5": 35,
      "score90_in10": 58,
@@ -1063,9 +1165,9 @@
      "d90": 35,
      "d90_lo": -25,
      "d90_hi": 5,
-     "f120": 45,
-     "f120_lo": 15,
-     "f120_hi": 50,
+     "f120": 60,
+     "f120_lo": 30,
+     "f120_hi": 65,
      "score120_mae": 13.7,
      "score120_in5": 31,
      "score120_in10": 50,
@@ -1131,7 +1233,7 @@
     {
      "name": "Expedition Everest - Legend of the Forbidden Mountain",
      "now": 10,
-     "trend30": 5,
+     "trend30": 0,
      "why": {
       "lag60": null,
       "lag120": null,
