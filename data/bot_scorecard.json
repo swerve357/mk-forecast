@@ -1,20 +1,19 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-28T14:17:27.241946+00:00",
+ "updated": "2026-11-28T14:21:47.462250+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-27 17:10:00-05:00",
-  "Astro Orbiter": "2026-11-28 00:10:00-05:00",
   "Enchanted Tales with Belle": "2026-11-27 17:40:00-05:00",
   "The Hall of Presidents": "2026-11-27 18:10:00-05:00"
  },
  "decisions_open": 9,
  "graded_all": {
-  "n": 1882,
+  "n": 1883,
   "wins": 409,
   "losses": 885,
-  "ties": 588,
+  "ties": 589,
   "mae_base": 4.88,
   "mae_shadow": 6.62
  },
@@ -28,16 +27,27 @@
    "mae_shadow": 7.5
   },
   "D2": {
-   "n": 906,
+   "n": 907,
    "wins": 128,
    "losses": 191,
-   "ties": 587,
-   "mae_base": 4.32,
+   "ties": 588,
+   "mae_base": 4.33,
    "mae_shadow": 5.66
   }
  },
- "new_decisions_this_run": 0,
- "graded_this_run": 0,
- "last_decisions": [],
+ "new_decisions_this_run": 1,
+ "graded_this_run": 1,
+ "last_decisions": [
+  {
+   "id": "cb-2028",
+   "type": "D2",
+   "event_ride": "Astro Orbiter",
+   "ride": "Astro Orbiter",
+   "horizon": 30,
+   "base": 5.0,
+   "shadow": 5.0,
+   "reason": "reopened after 555 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
