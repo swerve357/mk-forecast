@@ -1,10 +1,9 @@
 {
  "bot": "closure_bot",
  "mode": "shadow",
- "updated": "2026-11-28T03:17:09.399267+00:00",
+ "updated": "2026-11-28T03:22:11.184102+00:00",
  "charter": "Own the bounce-back: displacement while a headliner is down (D1) and the reopen settle (D2).",
  "active_spells": {
-  "\"it's a small world\"": "2026-11-27 21:55:00-05:00",
   "A Pirate's Adventure ~ Treasures of the Seven Seas": "2026-11-27 17:10:00-05:00",
   "Casey Jr. Splash 'N' Soak Station": "2026-11-27 18:10:00-05:00",
   "Cinderella Castle": "2026-11-27 18:10:00-05:00",
@@ -12,13 +11,12 @@
   "Enchanted Tales with Belle": "2026-11-27 17:40:00-05:00",
   "Main Street Vehicles": "2026-11-27 16:10:00-05:00",
   "Mickey's PhilharMagic": "2026-11-27 18:10:00-05:00",
-  "Prince Charming Regal Carrousel": "2026-11-27 21:55:00-05:00",
   "The Hall of Presidents": "2026-11-27 18:10:00-05:00",
   "Walt Disney World Railroad - Fantasyland": "2026-11-27 17:10:00-05:00",
   "Walt Disney World Railroad - Main Street, U.S.A.": "2026-11-27 17:10:00-05:00",
   "Walt Disney's Enchanted Tiki Room": "2026-11-27 18:10:00-05:00"
  },
- "decisions_open": 1,
+ "decisions_open": 3,
  "graded_all": {
   "n": 1869,
   "wins": 406,
@@ -45,8 +43,29 @@
    "mae_shadow": 5.68
   }
  },
- "new_decisions_this_run": 0,
+ "new_decisions_this_run": 2,
  "graded_this_run": 0,
- "last_decisions": [],
+ "last_decisions": [
+  {
+   "id": "cb-2007",
+   "type": "D2",
+   "event_ride": "\"it's a small world\"",
+   "ride": "\"it's a small world\"",
+   "horizon": 30,
+   "base": 5.0,
+   "shadow": 0.0,
+   "reason": "reopened after 30 min down; shadow = first posted wait at reopen"
+  },
+  {
+   "id": "cb-2008",
+   "type": "D2",
+   "event_ride": "Prince Charming Regal Carrousel",
+   "ride": "Prince Charming Regal Carrousel",
+   "horizon": 30,
+   "base": 5.0,
+   "shadow": 5.0,
+   "reason": "reopened after 30 min down; shadow = first posted wait at reopen"
+  }
+ ],
  "debug": ""
 }
