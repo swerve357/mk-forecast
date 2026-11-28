@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-28T13:26:46.667988+00:00",
- "last_sample": "2026-11-28T13:25:32+00:00",
- "samples": 268357,
+ "updated": "2026-11-28T13:31:47.385643+00:00",
+ "last_sample": "2026-11-28T13:30:33+00:00",
+ "samples": 268393,
  "history_samples": 11713,
  "rides": [],
  "metrics": {
@@ -158,9 +158,9 @@
  "lookback_debug": "log rows 17832; act (4963, 31) idx 2026-10-30 04:00:00+00:00..2026-11-28 05:05:00+00:00; slots 0; lookback rides 0; today graded 169",
  "parks": {
   "EPCOT": {
-   "updated": "2026-11-28T13:03:45.911531+00:00",
-   "last_sample": "2026-11-28T13:00:47+00:00",
-   "samples": 236600,
+   "updated": "2026-11-28T13:32:25.767831+00:00",
+   "last_sample": "2026-11-28T13:30:33+00:00",
+   "samples": 236798,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -282,9 +282,9 @@
    "park_label": "EPCOT"
   },
   "HS": {
-   "updated": "2026-11-28T13:04:39.161941+00:00",
-   "last_sample": "2026-11-28T13:00:47+00:00",
-   "samples": 92547,
+   "updated": "2026-11-28T13:32:57.414120+00:00",
+   "last_sample": "2026-11-28T13:30:33+00:00",
+   "samples": 92625,
    "history_samples": 0,
    "rides": [],
    "metrics": {
@@ -406,9 +406,9 @@
    "park_label": "Hollywood Studios"
   },
   "AK": {
-   "updated": "2026-11-28T13:26:47.955188+00:00",
-   "last_sample": "2026-11-28T13:25:32+00:00",
-   "samples": 113904,
+   "updated": "2026-11-28T13:33:22.363752+00:00",
+   "last_sample": "2026-11-28T13:30:33+00:00",
+   "samples": 114000,
    "history_samples": 0,
    "rides": [
     {
@@ -418,49 +418,102 @@
      "why": {
       "lag60": null,
       "lag120": null,
-      "lag_yday": 30,
+      "lag_yday": 45,
       "down60": 0,
       "reopened": false,
-      "park_mean": 18,
+      "park_mean": 15,
       "park_busy": 6,
-      "mins_open": 5,
-      "mins_close": 595
+      "mins_open": 35,
+      "mins_close": 565
      },
      "f30": 45,
-     "score30_mae": 13.2,
+     "score30_mae": 13.0,
      "score30_in5": 44,
-     "score30_in10": 59,
-     "score30_pairs": 633,
+     "score30_in10": 60,
+     "score30_pairs": 634,
      "d30": 0,
      "f60": 60,
-     "f60_lo": 35,
-     "f60_hi": 90,
+     "f60_lo": 40,
+     "f60_hi": 70,
      "score60_mae": 15.8,
      "score60_in5": 38,
      "score60_in10": 56,
      "score60_pairs": 602,
      "d60": 15,
-     "d60_lo": -25,
-     "d60_hi": 30,
+     "d60_lo": -20,
+     "d60_hi": 10,
      "f90": 60,
      "f90_lo": 45,
-     "f90_hi": 85,
+     "f90_hi": 65,
      "score90_mae": 17.0,
      "score90_in5": 29,
      "score90_in10": 50,
      "score90_pairs": 572,
      "d90": 15,
      "d90_lo": -15,
-     "d90_hi": 25,
-     "f120": 70,
+     "d90_hi": 5,
+     "f120": 60,
      "f120_lo": 45,
-     "f120_hi": 75,
+     "f120_hi": 70,
      "score120_mae": 18.1,
      "score120_in5": 26,
      "score120_in10": 41,
      "score120_pairs": 543,
-     "d120": 25,
-     "d120_lo": -25,
+     "d120": 15,
+     "d120_lo": -15,
+     "d120_hi": 10,
+     "people": null
+    },
+    {
+     "name": "Kilimanjaro Safaris",
+     "now": 15,
+     "trend30": 0,
+     "why": {
+      "lag60": null,
+      "lag120": null,
+      "lag_yday": 10,
+      "down60": 0,
+      "reopened": false,
+      "park_mean": 15,
+      "park_busy": 6,
+      "mins_open": 35,
+      "mins_close": 565
+     },
+     "f30": 15,
+     "score30_mae": 7.7,
+     "score30_in5": 60,
+     "score30_in10": 78,
+     "score30_pairs": 465,
+     "d30": 0,
+     "f60": 40,
+     "f60_lo": 15,
+     "f60_hi": 45,
+     "score60_mae": 11.1,
+     "score60_in5": 38,
+     "score60_in10": 60,
+     "score60_pairs": 442,
+     "d60": 25,
+     "d60_lo": -25,
+     "d60_hi": 5,
+     "f90": 50,
+     "f90_lo": 20,
+     "f90_hi": 45,
+     "score90_mae": 11.6,
+     "score90_in5": 37,
+     "score90_in10": 61,
+     "score90_pairs": 413,
+     "d90": 35,
+     "d90_lo": -30,
+     "d90_hi": -5,
+     "f120": 55,
+     "f120_lo": 20,
+     "f120_hi": 60,
+     "score120_mae": 12.8,
+     "score120_in5": 40,
+     "score120_in10": 55,
+     "score120_pairs": 383,
+     "d120": 40,
+     "d120_lo": -35,
      "d120_hi": 5,
      "people": null
     },
@@ -474,16 +527,16 @@
       "lag_yday": 10,
       "down60": 0,
       "reopened": false,
-      "park_mean": 18,
+      "park_mean": 15,
       "park_busy": 6,
-      "mins_open": 5,
-      "mins_close": 595
+      "mins_open": 35,
+      "mins_close": 565
      },
      "f30": 10,
      "score30_mae": 1.1,
      "score30_in5": 96,
      "score30_in10": 98,
-     "score30_pairs": 629,
+     "score30_pairs": 630,
      "d30": 0,
      "f60": 10,
      "f60_lo": 10,
@@ -497,14 +550,14 @@
      "d60_hi": 0,
      "f90": 10,
      "f90_lo": 10,
-     "f90_hi": 10,
+     "f90_hi": 15,
      "score90_mae": 2.2,
      "score90_in5": 92,
      "score90_in10": 97,
      "score90_pairs": 566,
      "d90": 0,
      "d90_lo": 0,
-     "d90_hi": 0,
+     "d90_hi": 5,
      "f120": 10,
      "f120_lo": 10,
      "f120_hi": 15,
@@ -524,50 +577,50 @@
      "why": {
       "lag60": null,
       "lag120": null,
-      "lag_yday": 5,
+      "lag_yday": 10,
       "down60": 0,
       "reopened": false,
-      "park_mean": 18,
+      "park_mean": 15,
       "park_busy": 6,
-      "mins_open": 5,
-      "mins_close": 595
+      "mins_open": 35,
+      "mins_close": 565
      },
      "f30": 10,
-     "score30_mae": 7.2,
-     "score30_in5": 61,
-     "score30_in10": 83,
-     "score30_pairs": 624,
+     "score30_mae": 7.1,
+     "score30_in5": 62,
+     "score30_in10": 84,
+     "score30_pairs": 625,
      "d30": 0,
-     "f60": 10,
+     "f60": 20,
      "f60_lo": 10,
-     "f60_hi": 20,
+     "f60_hi": 25,
      "score60_mae": 8.1,
      "score60_in5": 58,
      "score60_in10": 75,
      "score60_pairs": 593,
-     "d60": 0,
-     "d60_lo": 0,
-     "d60_hi": 10,
-     "f90": 25,
-     "f90_lo": 10,
-     "f90_hi": 30,
+     "d60": 10,
+     "d60_lo": -10,
+     "d60_hi": 5,
+     "f90": 30,
+     "f90_lo": 15,
+     "f90_hi": 35,
      "score90_mae": 9.0,
      "score90_in5": 50,
      "score90_in10": 71,
      "score90_pairs": 561,
-     "d90": 15,
+     "d90": 20,
      "d90_lo": -15,
      "d90_hi": 5,
-     "f120": 30,
+     "f120": 35,
      "f120_lo": 10,
      "f120_hi": 40,
      "score120_mae": 11.0,
      "score120_in5": 41,
      "score120_in10": 61,
      "score120_pairs": 531,
-     "d120": 20,
-     "d120_lo": -20,
-     "d120_hi": 10,
+     "d120": 25,
+     "d120_lo": -25,
+     "d120_hi": 5,
      "people": null
     },
     {
@@ -579,78 +632,131 @@
       "lag120": null,
       "lag_yday": 10,
       "down60": 5,
-      "reopened": true,
-      "park_mean": 18,
+      "reopened": false,
+      "park_mean": 15,
       "park_busy": 6,
-      "mins_open": 5,
-      "mins_close": 595
+      "mins_open": 35,
+      "mins_close": 565
      },
      "f30": 5,
      "score30_mae": 9.3,
-     "score30_in5": 48,
-     "score30_in10": 73,
-     "score30_pairs": 603,
+     "score30_in5": 49,
+     "score30_in10": 74,
+     "score30_pairs": 608,
      "d30": 0,
-     "f60": 20,
+     "f60": 30,
      "f60_lo": 5,
      "f60_hi": 30,
      "score60_mae": 11.3,
      "score60_in5": 45,
      "score60_in10": 64,
      "score60_pairs": 571,
-     "d60": 15,
-     "d60_lo": -15,
-     "d60_hi": 10,
-     "f90": 35,
-     "f90_lo": 15,
-     "f90_hi": 35,
+     "d60": 25,
+     "d60_lo": -25,
+     "d60_hi": 0,
+     "f90": 40,
+     "f90_lo": 5,
+     "f90_hi": 40,
      "score90_mae": 12.3,
      "score90_in5": 41,
      "score90_in10": 60,
      "score90_pairs": 538,
-     "d90": 30,
-     "d90_lo": -20,
+     "d90": 35,
+     "d90_lo": -35,
      "d90_hi": 0,
      "f120": 45,
      "f120_lo": 5,
-     "f120_hi": 50,
+     "f120_hi": 55,
      "score120_mae": 14.3,
      "score120_in5": 34,
      "score120_in10": 52,
      "score120_pairs": 506,
      "d120": 40,
      "d120_lo": -40,
+     "d120_hi": 10,
+     "people": null
+    },
+    {
+     "name": "Gorilla Falls Exploration Trail",
+     "now": 5,
+     "trend30": 0,
+     "why": {
+      "lag60": null,
+      "lag120": null,
+      "lag_yday": null,
+      "down60": 0,
+      "reopened": false,
+      "park_mean": 15,
+      "park_busy": 6,
+      "mins_open": 35,
+      "mins_close": 565
+     },
+     "f30": 5,
+     "score30_mae": 0.0,
+     "score30_in5": 100,
+     "score30_in10": 100,
+     "score30_pairs": 417,
+     "d30": 0,
+     "f60": 5,
+     "f60_lo": 5,
+     "f60_hi": 5,
+     "score60_mae": 0.0,
+     "score60_in5": 100,
+     "score60_in10": 100,
+     "score60_pairs": 391,
+     "d60": 0,
+     "d60_lo": 0,
+     "d60_hi": 0,
+     "f90": 5,
+     "f90_lo": 5,
+     "f90_hi": 5,
+     "score90_mae": 0.0,
+     "score90_in5": 100,
+     "score90_in10": 100,
+     "score90_pairs": 361,
+     "d90": 0,
+     "d90_lo": 0,
+     "d90_hi": 0,
+     "f120": 5,
+     "f120_lo": 5,
+     "f120_hi": 10,
+     "score120_mae": 0.0,
+     "score120_in5": 100,
+     "score120_in10": 100,
+     "score120_pairs": 331,
+     "d120": 0,
+     "d120_lo": 0,
      "d120_hi": 5,
      "people": null
     }
    ],
    "metrics": {
     "30": {
-     "available_pairs": 24042,
-     "train_rows": 19129,
-     "test_rows": 4895,
+     "available_pairs": 24065,
+     "train_rows": 19144,
+     "test_rows": 4896,
      "model": "persistence (model did not beat baseline)",
      "mae": 5.1,
-     "rmse": 9.8,
-     "within10": 85,
+     "rmse": 9.7,
+     "within10": 86,
      "within5": 74,
-     "mape_ge20": 20.3,
+     "mape_ge20": 20.2,
      "bias": -0.3,
      "baseline_mae": 5.1,
-     "baseline_mape_ge20": 20.3,
+     "baseline_mape_ge20": 20.2,
      "improvement_pct": 0.0,
      "evaluation": "chronological holdout with horizon embargo",
-     "gate_mae_2seed": 5.2,
-     "candidate_mae_seed2": 5.3,
+     "gate_mae_2seed": 5.1,
+     "candidate_mae_seed2": 5.1,
      "top_features": [
       "wait",
       "ride_code",
-      "lag_60",
       "lag_yday",
       "hour_sin",
-      "lag_120"
+      "lag_60",
+      "diff_30"
      ],
-     "candidate_mae": 5.2
+     "candidate_mae": 5.1
     },
     "60": {
      "available_pairs": 22361,
@@ -747,6 +853,41 @@
      {
       "t": "07:55",
       "actual": 35
+     },
+     {
+      "t": "08:10",
+      "actual": 55
+     },
+     {
+      "t": "08:25",
+      "actual": 45
+     },
+     {
+      "t": "08:35",
+      "actual": 45,
+      "p30": 45
+     }
+    ],
+    "Kilimanjaro Safaris": [
+     {
+      "t": "07:40",
+      "closed": 1
+     },
+     {
+      "t": "07:55",
+      "closed": 1
+     },
+     {
+      "t": "08:10",
+      "actual": 15
+     },
+     {
+      "t": "08:25",
+      "actual": 15
+     },
+     {
+      "t": "08:35",
+      "actual": 15
      }
     ],
     "Zootopia: Better Zoogether!": [
@@ -757,16 +898,19 @@
      {
       "t": "07:55",
       "actual": 10
-     }
-    ],
-    "Na'vi River Journey": [
+     },
      {
-      "t": "07:40",
+      "t": "08:10",
       "actual": 10
      },
      {
-      "t": "07:55",
+      "t": "08:25",
       "actual": 10
+     },
+     {
+      "t": "08:35",
+      "actual": 10,
+      "p30": 10
      }
     ],
     "Expedition Everest - Legend of the Forbidden Mountain": [
@@ -777,10 +921,80 @@
      {
       "t": "07:55",
       "actual": 5
+     },
+     {
+      "t": "08:10",
+      "actual": 5
+     },
+     {
+      "t": "08:25",
+      "actual": 10
+     },
+     {
+      "t": "08:35",
+      "actual": 10,
+      "p30": 5
+     }
+    ],
+    "Na'vi River Journey": [
+     {
+      "t": "07:40",
+      "actual": 10
+     },
+     {
+      "t": "07:55",
+      "actual": 10
+     },
+     {
+      "t": "08:10",
+      "actual": 10
+     },
+     {
+      "t": "08:25",
+      "actual": 10
+     },
+     {
+      "t": "08:35",
+      "actual": 5,
+      "p30": 10
+     }
+    ],
+    "Gorilla Falls Exploration Trail": [
+     {
+      "t": "07:40",
+      "closed": 1
+     },
+     {
+      "t": "07:55",
+      "closed": 1
+     },
+     {
+      "t": "08:10",
+      "closed": 1
+     },
+     {
+      "t": "08:35",
+      "actual": 5
      }
     ]
    },
-   "today": {},
+   "today": {
+    "date": "2026-11-28",
+    "graded": 4,
+    "exact": 50,
+    "in5": 100,
+    "in10": 100,
+    "in15": 100,
+    "by_horizon": {
+     "30": {
+      "graded": 4,
+      "exact": 50,
+      "in5": 100,
+      "in10": 100,
+      "in15": 100
+     }
+    }
+   },
    "park_label": "Animal Kingdom"
   }
  }
